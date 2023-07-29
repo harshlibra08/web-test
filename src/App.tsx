@@ -1,6 +1,29 @@
 import React from "react";
 import { MantineProvider, Button, Stack , Card, Image, Text,  Paper} from "@mantine/core";
 
+const OptionsButton = ({ ...props }) => (
+  <Button
+    styles={{
+      root: {
+        backgroundColor: "#3E3E3E",
+        color: "#555459",
+        fontWeight: 600,
+        lineHeight: "22.4px",
+        border: "1px solid",
+        "&:hover": {
+          backgroundColor: "#5B5B5B",
+          color: "#555459",
+        },
+      },
+      label: {
+        color: "#FFFFFF",
+        textTransform: "uppercase",
+      },
+    }}
+    {...props}
+  />
+);
+
 const PrimaryButton = ({ ...props }) => (
   <Button
     styles={{
@@ -102,12 +125,22 @@ function App() {
     <Paper>
       <Stack align="center">
         <Button color="libra-gray" style={{ textTransform: "uppercase" }}>select options</Button>
+        <OptionsButton>Select Options</OptionsButton>
         <PrimaryButton>add to wishlist</PrimaryButton>
         <SecondaryButton>Apply Now</SecondaryButton>
         <TertiaryButton>View cart</TertiaryButton>
       
      
-      <Card shadow="sm" style={{alignItems:"center", display: "flex", maxWidth: "1212px" , maxHeight: "384px", borderRadius: "4px"}}>
+      <Card shadow="sm" 
+      style={{
+              alignItems:"center", 
+              display: "flex", 
+              maxWidth: "1212px" , 
+              maxHeight: "384px", 
+              borderRadius: "4px", 
+              width:"100%", 
+              justifyContent:"center"
+            }}>
       {/* Left Section - Product Image */}
       <div style={{paddingLeft:"47px", paddingTop:"49px", paddingBottom: "51px"}}>
         <Image
@@ -119,6 +152,8 @@ function App() {
           
           
         />
+
+
       </div>
 
       {/* Center Section - Product Name and Description */}
@@ -141,34 +176,94 @@ function App() {
         </Text>
       </div>
 
+      <Image src="https://generation-sessions.s3.amazonaws.com/513e9ffa8e311059b1addd368adeef8e/img/line-200-1.svg"
+        height={309}
+        left={788}
+        top="38px"
+        width={"1px"}
+      />
+
       {/* Right Section - Price and Buttons */}
-      <div style={{ flex: "0 0 30%", display: "flex", flexDirection: "column", alignItems: "flex-end", padding: "16px" }}>
+      <div 
+        style={{ 
+          flex: "0 0 30%", 
+          display: "flex", 
+          height:"100%", 
+          left:"2px", 
+          top:"174px", 
+          width:"290px", 
+          flexDirection: "column", 
+          alignItems: "flex-end", 
+          padding: "16px" ,
+          justifyContent: "space-between",
+          }}
+      >
        
-        <Text left={852} weight={400} size={"10px"} style={{ letterSpacing:0, marginBottom: 8, marginRight:100 , lineHeight: "normal"}} color="#707070">
-            Prices are inclusive of Delivery Charges.
-        </Text>
+              <Text left={852} weight={400} size={"10px"} style={{top:47, letterSpacing:0, marginRight:100 }} color="#707070">
+                  Prices are inclusive of Delivery Charges.
+              </Text>
+            
+            
+              <Text weight={400} size={"20px"} style={{ top:0, marginRight:112 , marginBottom: 8 }} color="#414141">
+                  ₹12,600 – ₹14,700
+              </Text>
+
+        <div style={{height: "67px", left:0, top:"63px", width:"296px"}}>
+          <div style={{ display: "flex", alignItems: "center" }}>
+                <Image
+                  src="https://generation-sessions.s3.amazonaws.com/513e9ffa8e311059b1addd368adeef8e/img/frame-2.svg"
+                  height={"18px"}
+                  width={"18px"}
+                  left={0}
+                  top={"3px"}
+                  style={{ marginRight: "4px" }}
+                />
+                  <Text weight={700} size={"12px"} color="#414141">
+                    In Stock
+                  </Text>
+          </div>
+            
+            
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <Image
+              src="https://generation-sessions.s3.amazonaws.com/513e9ffa8e311059b1addd368adeef8e/img/frame-1.svg"
+              height={"16px"}
+              width={"16px"}
+              style={{ marginRight: "8px" }}
+            />
+              <Text weight={400} size={"12px"} color="#555459">
+                Get 5% Instant Discount Up to ₹1250 On Lea...
+              </Text>
+          </div>
+
+
+
+
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <Image
+              src="https://generation-sessions.s3.amazonaws.com/513e9ffa8e311059b1addd368adeef8e/img/frame-1.svg"
+              height={"16px"}
+              width={"16px"}
+              style={{ marginRight: "8px" }}
+            />
+              <Text weight={400} size={"12px"} color="#555459">
+              Get 10% Instant Discount Up to ₹2250
+              </Text>
+          </div>
        
        
-        <Text weight={400} size={"20px"} style={{  marginRight:112 , marginBottom: 8 }} color="#414141">
-            ₹12,600 – ₹14,700
-        </Text>
+        </div>
 
-        <Text  weight={700} size={"12px"} style={{letterSpacing:0, lineHeight: "normal" ,marginBottom: 8,  }} color="#414141">
-        <p>In Stock</p>
-        
-        </Text>
+        <div style={{ position:"relative",height:"84px"}}>
+        <div style={{left:0, top:0,  width:"290px", }}>
+        <OptionsButton style={{ marginBottom: 8, }}>Select Options</OptionsButton>
+        </div>
+        <div style={{top:"46px", width:"290px"}}>
+        <PrimaryButton style={{ marginBottom: 8 }}>Add to Wishlist</PrimaryButton>
+        </div>
+        </div>
 
-        <Text weight={400} size={"12px"} style={{lineHeight: "19.2px", }} color="#555459" >
-        <p>Get 5% Instant Discount Up to ₹1250 On Lea...</p>
-        <p>Get 10% Instant Discount Up to ₹2250 </p>
-        </Text>
 
-        <Button color="blue" style={{ marginBottom: 8 }}>
-          Add to Cart
-        </Button>
-        <Button color="red" style={{ marginBottom: 8 }}>
-          Buy Now
-        </Button>
       </div>
         </Card>
 
