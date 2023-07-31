@@ -8,10 +8,19 @@ import {
 	Text,
 	Paper,
 	List,
-	Grid,
 	Divider,
 	Group,
+	TextInput,
+	Autocomplete,
+	Header,
+	createStyles,
+	
+
 } from "@mantine/core";
+
+
+import { IconSearch, IconUser, IconHeart, IconShoppingCart,  } from '@tabler/icons-react';
+
 
 const OptionsButton = ({ ...props }) => (
 	<Button
@@ -102,8 +111,129 @@ const TertiaryButton = ({ ...props }) => (
 	/>
 );
 
+
 function App() {
+
+	const links = [
+		{ link: "#", label: "About us" },
+		{ link: "#", label: "Products" },
+		{ link: "#", label: "Journal" },
+		{ link: "#", label: "Contact us" },
+		// Add more links here as needed
+	  ];
+	
+	const useStyles = createStyles((theme) => ({
+		header: {
+			paddingLeft: theme.spacing.md,
+			paddingRight: theme.spacing.md,
+		  },
+		
+		  inner: {
+	
+			display: 'flex',
+			
+			
+		  },
+		
+		  links: {
+			[theme.fn.smallerThan('md')]: {
+			  
+			  marginLeft:0
+			},
+			marginLeft: theme.spacing.lg,
+			paddingRight: 13,
+			paddingTop:23,
+			paddingBottom:21,
+		
+			color: "#292929", 
+			textAlign: "center", 
+			left:"361px",
+			fontSize: "14px",
+			fontStyle: "normal",
+			fontWeight: 400, 
+			lineHeight: "normal", 
+		  },
+		
+		  search: {
+			[theme.fn.smallerThan('xs')]: {
+			  display: 'none',
+			},
+			
+		  },
+		
+		  link: {
+			display: 'block',
+			lineHeight: 1,
+			padding: " 0 64px",
+			borderRadius: theme.radius.sm,
+			textDecoration: 'none',
+			color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.colors.gray[7],
+			fontSize: theme.fontSizes.sm,
+			fontWeight: 500,
+			
+						
+		
+		  },
+	  }));
+
+	  interface HeaderSearchProps {
+		links: { link: string; label: string }[];
+	  }
+	  
+	   function HeaderSearch({ links }: HeaderSearchProps) {
+		
+		const { classes } = useStyles();
+	  
+		const items = links.map((link) => (
+		  <a
+			key={link.label}
+			href={link.link}
+			className={classes.link}
+			onClick={(event) => event.preventDefault()}
+		  >
+			{link.label}
+		  </a>
+		));
+
+		return (
+			<Header height={56} className={classes.header} mb={120}>
+			  <div className={classes.inner}>
+				<Group>
+				 
+				  <Image
+					src="https://generation-sessions.s3.amazonaws.com/25b8f529358ae6ac4e9d1cadb72e6272/img/graphic3-5@2x.png"
+					alt="Libratherm Logo"
+					height={"40px"} 
+					width={"107px"}
+					
+					/>
+				</Group>
+	  
+				<Group>
+				  <Group ml={50} spacing={5} className={classes.links}>
+					{items}
+				  </Group>
+				  <Autocomplete
+							className={classes.search}
+							placeholder="Search"
+							icon={<IconSearch size="1rem" stroke={1.5} />} data={[]}					
+				  />
+				</Group>
+				{/* Add the clickable icons and the export options button */}
+				<Group spacing={24} style={{ marginLeft: "auto" }}>
+					<IconUser size={24} color="#555459" />
+					<IconHeart size={24} color="#555459" />
+					<IconShoppingCart size={24} color="#555459" />
+					<OptionsButton >we're Hiring</OptionsButton>
+				</Group>
+			  </div>
+			</Header>
+		  );
+		};
+
+
 	return (
+
 		<MantineProvider
 			withGlobalStyles
 			withNormalizeCSS
@@ -130,6 +260,7 @@ function App() {
 				defaultRadius: "xs",
 			}}
 		>
+			<HeaderSearch links={links} />
 			<Paper>
 				<Stack align="center">
 					<Button color="libra-gray" style={{ textTransform: "uppercase" }}>
@@ -141,15 +272,6 @@ function App() {
 					<TertiaryButton>View cart</TertiaryButton>
 
 					<Card
-						// style={{
-						// 	alignItems: "center",
-						// 	display: "flex",
-						// 	maxWidth: "1212px",
-						// 	maxHeight: "384px",
-						// 	borderRadius: "4px",
-						// 	width: "100%",
-						// 	justifyContent: "center",
-						// }}
 						withBorder
 					>
 						<Group>
@@ -182,11 +304,11 @@ function App() {
 									color="#555459"
 								>
 									<List>
-										<List.Item>
+										<List.Item style={{fontSize:"12px", fontWeight:"400", color:"#555459"}}>
 											Three Phase SCR Power Regulator for Three Phase Heater connected in 3 or 4
 											Wire Star
 										</List.Item>
-										<List.Item>
+										<List.Item style={{fontSize:"12px", fontWeight:"400", color:"#555459"}}>
 											3 Wire Close or Open Delta Configurations with Current Control/Current Limit
 											and Over Load Protection.
 										</List.Item>
@@ -212,7 +334,7 @@ function App() {
 								>
 									₹12,600 – ₹14,700
 								</Text>
-								<div style={{ height: "67px", left: 0, top: "63px", width: "296px" }}>
+								<div style={{ height: "67px", left: 0, top: "63px", width: "296px", paddingTop:"10px" }}>
 									<div style={{ display: "flex", alignItems: "center" }}>
 										<Image
 											src="https://generation-sessions.s3.amazonaws.com/513e9ffa8e311059b1addd368adeef8e/img/frame-2.svg"
@@ -251,36 +373,40 @@ function App() {
 										</Text>
 									</div>
 								</div>
-								{/* <div style={{ position:"relative",height:"84px"}}>
-        <div style={{left:0, top:0,  width:"290px", }}>
-        <OptionsButton style={{ marginBottom: 8, }}>Select Options</OptionsButton>
-        </div>
-        <div style={{top:"46px", width:"290px"}}>
-        <PrimaryButton style={{ marginBottom: 8 }}>Add to Wishlist</PrimaryButton>
-        </div>
-        </div> */}
-								<Stack align="stretch">
+			
+								<Stack spacing="xs" align="stretch" py={15}>
 									<OptionsButton>Select Options</OptionsButton>
 									<PrimaryButton>Add to Wishlist</PrimaryButton>
 								</Stack>
 							</Paper>
 						</Group>
-						{/* Left Section - Product Image */}
-						{/* <div style={{ paddingLeft: "47px", paddingTop: "49px", paddingBottom: "51px" }}></div> */}
-						{/* Center Section - Product Name and Description */}
-						{/* <Image
-							src="https://generation-sessions.s3.amazonaws.com/513e9ffa8e311059b1addd368adeef8e/img/line-200-1.svg"
-							height={309}
-							left={788}
-							top="38px"
-							width={"1px"}
-						/> */}
-						{/* Right Section - Price and Buttons */}
+						
 					</Card>
 				</Stack>
 			</Paper>
+<br/><br/><br/>
+			<TextInput 
+				placeholder="PRANAY KOTADIA"
+				label="Name" 
+				radius="xs"
+				size="md"	
+				style={{width:"288px", height: "43px", fontWeight:"400", color:"#555459", fontSize:"16px", margin:"auto", }}	
+				
+    		/>
+
+			<Autocomplete
+				label="Country"
+				placeholder=""
+				data={['India', 'USA', 'Iran', 'France', 'Canada', 'Antartica']}
+				style={{width:"288px", height: "43px", fontWeight:"400", color:"#555459", fontSize:"16px", margin:" 51px auto", }}
+			/>
+
+			
+				
 		</MantineProvider>
+		
 	);
 }
+
 
 export default App;
