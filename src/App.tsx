@@ -400,84 +400,78 @@ function App() {
 				data={['India', 'USA', 'Iran', 'France', 'Canada', 'Antartica']}
 				style={{width:"288px", height: "43px", fontWeight:"400", color:"#555459", fontSize:"16px", margin:" 51px auto", }}
 			/>
+				
+				
+				
 				<Paper>
-				<Group position="center">
-				<Card
-					shadow="sm"
-					padding="xl"
-					component="a"
-					
-					target="_blank"
-					>
-					<Card.Section>
-						<Image
-						src="https://images.unsplash.com/photo-1579227114347-15d08fc37cae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
-						height={391}
-						width = {391}
-						alt="No way!"
-						/>
-					</Card.Section>
+				<Group>
+				<Card >
+				<div style={{position:'relative', padding:"0 24px",}}>
+					<Image
+					src="https://generation-sessions.s3.amazonaws.com/4598064275a1864482e528adf597534f/img/rectangle-6096.svg"
+					height={391}
+					width={391}
+					alt="Norway"
+					/>
+		
 
-					<Text weight={500} size="xs" mt="xs">
-						You&apos;ve won a million dollars in cash!
-					</Text>
+				<Group position="apart" mt="md" mb="xs" >
+					<Text weight={500}>Glass Manufacture</Text>
+				
+				</Group>
 
-					<Text mt="xs" color="dimmed" size="xs">
-						Please click anywhere on this card to claim your reward, this is not a fraud, trust us
-					</Text>
-					</Card>
+				<Text size="sm" color="dimmed">
+				Libratherm has supplied various types of temperature controllers, thyristor power controllers and control panels to the industries manufacturing Files, Diamond Tools, Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular blades etc… The temperature of the electrical or fuel fired heating systems, used for annealing, hardening, steam bluing and similar such processes, has been in use for precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non contact sensors.
+				</Text>
+				</div>
+				
+				</Card>
 
-					<Card
-					shadow="sm"
-					padding="xl"
-					component="a"
-					
-					target="_blank"
-					>
-					<Card.Section>
-						<Image
-						src="https://images.unsplash.com/photo-1579227114347-15d08fc37cae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
-						height={391}
-						width = {391}
-						alt="No way!"
-						/>
-					</Card.Section>
+				<Card>
+				<div style={{position:'relative', padding:"0 24px"}}>
+					<Image
+					src="https://generation-sessions.s3.amazonaws.com/4598064275a1864482e528adf597534f/img/unsplash-mjwgkmwkdda@2x.png"
+					height={391}
+					width={391}
+					alt="Norway"
+					/>
+		
 
-					<Text weight={500} size="xs" mt="xs">
-						You&apos;ve won a million dollars in cash!
-					</Text>
+				<Group position="apart" mt="md" mb="xs">
+					<Text weight={500}>Jewelry Manufacture</Text>
+				
+				</Group>
 
-					<Text mt="xs" color="dimmed" size="xs">
-						Please 
-					</Text>
-					</Card>
+				<Text size="sm" color="dimmed">
+				Libratherm has supplied various types of temperature controllers, thyristor power controllers and control panels to the industries manufacturing Files, Diamond Tools, Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular blades etc… The temperature of the electrical or fuel fired heating systems, used for annealing, hardening, steam bluing and similar such processes, has been in use for precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non contact sensors.
+				</Text>
+				</div>
+				
+				</Card>
 
-					<Card
-					shadow="sm"
-					padding="xl"
-					component="a"
-					
-					target="_blank"
-					>
-					<Card.Section>
-						<Image
-						src="https://images.unsplash.com/photo-1579227114347-15d08fc37cae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
-						height={391}
-						width = {391}
-						alt="No way!"
-						/>
-					</Card.Section>
+				<Card>
+				<div style={{position:'relative', padding:"0 24px"}}>
+					<Image
+					src="https://generation-sessions.s3.amazonaws.com/4598064275a1864482e528adf597534f/img/unsplash-mjwgkmwkdda-1@2x.png"
+					height={391}
+					width={391}
+					alt="Norway"
+					/>
+		
 
-					<Text weight={500} size="xs" mt="xs">
-						You&apos;ve won a million dollars in cash!
-					</Text>
+				<Group position="apart" mt="md" mb="xs">
+					<Text weight={500}>Steel Plants</Text>
+				
+				</Group>
 
-					<Text mt="xs" color="dimmed" size="xs">
-						Please click anywhere on this card to claim your reward, this is not a fraud, trust us
-					</Text>
-					</Card>
-					</Group>
-					</Paper>
+				<Text size="sm" color="dimmed">
+				Libratherm has supplied various types of temperature controllers, thyristor power controllers and control panels to the industries manufacturing Files, Diamond Tools, Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular blades etc… The temperature of the electrical or fuel fired heating systems, used for annealing, hardening, steam bluing and similar such processes, has been in use for precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non contact sensors.
+				</Text>
+				</div>
+				
+				</Card>
+				</Group>
+				</Paper>
 				
 		</MantineProvider>
 		
