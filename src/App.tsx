@@ -434,7 +434,7 @@ function App() {
 		
 				<Text weight={500}>Glass Manufacture</Text>
     
-				 <Text size="sm" color="dimmed">
+				 <Text size="sm" color="dimmed" >
 				 Libratherm has supplied various types of temperature controllers, thyristor power controllers and control panels to the industries manufacturing Files, Diamond Tools, Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular blades etc… The temperature of the electrical or fuel fired heating systems, used for annealing, hardening, steam bluing and similar such processes, has been in use for precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non contact sensors.
 				</Text>
 				</Card>
@@ -453,7 +453,7 @@ function App() {
 				<Text weight={500}>Jewelry Manufacture</Text>
      	
 				 <Text size="sm" color="dimmed" >
-				 Libratherm has supplied various types of temperature controllers, 
+				 Libratherm has supplied various types of temperature controllers, thyristor power controllers and control panels to the industries manufacturing Files, Diamond Tools, Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular blades etc… The temperature of the electrical or fuel fired heating systems, used for annealing, hardening, steam bluing and similar such processes, has been in use for precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non contact sensors. 
 				</Text>
 				</Card>
 
@@ -470,7 +470,7 @@ function App() {
 				<Text weight={500}>Steel Plants</Text>
      		
 				 <Text size="sm" color="dimmed">
-				 Libratherm has supplied various types of temperature controllers, t
+				 Libratherm has supplied various types of temperature controllers, thyristor power controllers and control panels to the industries manufacturing Files, Diamond Tools, Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular blades etc… The temperature of the electrical or fuel fired heating systems, used for annealing, hardening, steam bluing and similar such processes, has been in use for precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non contact sensors.
 				</Text>
 				</Card>		
 				</Group>
