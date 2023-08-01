@@ -14,6 +14,7 @@ import {
 	Autocomplete,
 	Header,
 	createStyles,
+	ButtonProps,
 	
 
 } from "@mantine/core";
@@ -22,7 +23,7 @@ import {
 import { IconSearch, IconUser, IconHeart, IconShoppingCart,  } from '@tabler/icons-react';
 
 
-const OptionsButton = ({ ...props }) => (
+const OptionsButton = ({ ...props }: ButtonProps ) => (
 	<Button
 		styles={{
 			root: {
@@ -35,14 +36,16 @@ const OptionsButton = ({ ...props }) => (
 					backgroundColor: "#5B5B5B",
 					color: "#555459",
 				},
+				
 			},
 			label: {
 				color: "#FFFFFF",
-				textTransform: "uppercase",
+				
 			},
 		}}
+		uppercase={true}
 		{...props}
-	/>
+		/>
 );
 
 const PrimaryButton = ({ ...props }) => (
@@ -112,6 +115,8 @@ const TertiaryButton = ({ ...props }) => (
 );
 
 
+
+
 function App() {
 
 	const links = [
@@ -158,6 +163,7 @@ function App() {
 			[theme.fn.smallerThan('xs')]: {
 			  display: 'none',
 			},
+		
 			
 		  },
 		
@@ -215,16 +221,29 @@ function App() {
 				  </Group>
 				  <Autocomplete
 							className={classes.search}
-							placeholder="Search"
-							icon={<IconSearch size="1rem" stroke={1.5} />} data={[]}					
+							placeholder="Enter your search"
+							icon={<IconSearch size="20px" stroke={1.5} color="#555459"/>} data={[]}
+							radius={32}			
+						
+							w={308}
+							h={36}		
+							styles={{
+								input: {
+									backgroundColor: "#F0F0F0",
+									"::placeholder":{
+										color:"#555459",
+									},
+									border:'none'
+								}
+							}}
 				  />
 				</Group>
 				{/* Add the clickable icons and the export options button */}
 				<Group spacing={24} style={{ marginLeft: "auto" }}>
 					<IconUser size={24} color="#555459" />
 					<IconHeart size={24} color="#555459" />
-					<IconShoppingCart size={24} color="#555459" />
-					<OptionsButton >we're Hiring</OptionsButton>
+					<IconShoppingCart size={24} color="#555459" /> 
+					<OptionsButton uppercase={false}>We're Hiring</OptionsButton>
 				</Group>
 			  </div>
 			</Header>
@@ -401,77 +420,61 @@ function App() {
 				style={{width:"288px", height: "43px", fontWeight:"400", color:"#555459", fontSize:"16px", margin:" 51px auto", }}
 			/>
 				
-				
-				
-				<Paper>
-				<Group>
+			
+				<Group position="center" spacing="xs" style={{ display: 'flex', justifyContent: 'center' }}>
+					<Card >
+					<Card.Section>
+					<Image
+						src="https://generation-sessions.s3.amazonaws.com/af17357d9cd2ae9855b4d3ee104d414b/img/rectangle-6096.png"
+						height={391}
+						width={391}
+						alt="Glass"
+					/>
+				</Card.Section>
+		
+				<Text weight={500}>Glass Manufacture</Text>
+    
+				 <Text size="sm" color="dimmed">
+				 Libratherm has supplied various types of temperature controllers, thyristor power controllers and control panels to the industries manufacturing Files, Diamond Tools, Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular blades etc… The temperature of the electrical or fuel fired heating systems, used for annealing, hardening, steam bluing and similar such processes, has been in use for precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non contact sensors.
+				</Text>
+				</Card>
+
+
 				<Card >
-				<div style={{position:'relative', padding:"0 24px",}}>
+				<Card.Section>
 					<Image
-					src="https://generation-sessions.s3.amazonaws.com/4598064275a1864482e528adf597534f/img/rectangle-6096.svg"
-					height={391}
-					width={391}
-					alt="Norway"
+						src="https://generation-sessions.s3.amazonaws.com/af17357d9cd2ae9855b4d3ee104d414b/img/unsplash-mjwgkmwkdda-1@2x.png"
+						height={391}
+						width={391}
+						alt="Norway"
 					/>
+				</Card.Section>
 		
-
-				<Group position="apart" mt="md" mb="xs" >
-					<Text weight={500}>Glass Manufacture</Text>
-				
-				</Group>
-
-				<Text size="sm" color="dimmed">
-				Libratherm has supplied various types of temperature controllers, thyristor power controllers and control panels to the industries manufacturing Files, Diamond Tools, Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular blades etc… The temperature of the electrical or fuel fired heating systems, used for annealing, hardening, steam bluing and similar such processes, has been in use for precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non contact sensors.
+				<Text weight={500}>Jewelry Manufacture</Text>
+     	
+				 <Text size="sm" color="dimmed" >
+				 Libratherm has supplied various types of temperature controllers, 
 				</Text>
-				</div>
-				
 				</Card>
 
-				<Card>
-				<div style={{position:'relative', padding:"0 24px"}}>
+				<Card >
+				<Card.Section>
 					<Image
-					src="https://generation-sessions.s3.amazonaws.com/4598064275a1864482e528adf597534f/img/unsplash-mjwgkmwkdda@2x.png"
-					height={391}
-					width={391}
-					alt="Norway"
+						src="https://generation-sessions.s3.amazonaws.com/af17357d9cd2ae9855b4d3ee104d414b/img/unsplash-mjwgkmwkdda@2x.png"
+						height={391}
+						width={391}
+						alt="Norway"
 					/>
-		
-
-				<Group position="apart" mt="md" mb="xs">
-					<Text weight={500}>Jewelry Manufacture</Text>
-				
-				</Group>
-
-				<Text size="sm" color="dimmed">
-				Libratherm has supplied various types of temperature controllers, thyristor power controllers and control panels to the industries manufacturing Files, Diamond Tools, Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular blades etc… The temperature of the electrical or fuel fired heating systems, used for annealing, hardening, steam bluing and similar such processes, has been in use for precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non contact sensors.
+				</Card.Section>
+			
+				<Text weight={500}>Steel Plants</Text>
+     		
+				 <Text size="sm" color="dimmed">
+				 Libratherm has supplied various types of temperature controllers, t
 				</Text>
-				</div>
-				
-				</Card>
-
-				<Card>
-				<div style={{position:'relative', padding:"0 24px"}}>
-					<Image
-					src="https://generation-sessions.s3.amazonaws.com/4598064275a1864482e528adf597534f/img/unsplash-mjwgkmwkdda-1@2x.png"
-					height={391}
-					width={391}
-					alt="Norway"
-					/>
-		
-
-				<Group position="apart" mt="md" mb="xs">
-					<Text weight={500}>Steel Plants</Text>
-				
+				</Card>		
 				</Group>
-
-				<Text size="sm" color="dimmed">
-				Libratherm has supplied various types of temperature controllers, thyristor power controllers and control panels to the industries manufacturing Files, Diamond Tools, Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular blades etc… The temperature of the electrical or fuel fired heating systems, used for annealing, hardening, steam bluing and similar such processes, has been in use for precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non contact sensors.
-				</Text>
-				</div>
-				
-				</Card>
-				</Group>
-				</Paper>
+	
 				
 		</MantineProvider>
 		
