@@ -24,6 +24,7 @@ import {
 } from "@mantine/core";
 import BGImage from "./bgimage.png";
 import LandingImage from "./Rectangle.png";
+import WHO from "./who.png";
 
 import {
   IconSearch,
@@ -128,7 +129,6 @@ function App() {
     { link: "#", label: "Products" },
     { link: "#", label: "Journal" },
     { link: "#", label: "Contact us" },
- 
   ];
 
   /* Navbar Header */
@@ -200,7 +200,7 @@ function App() {
     ));
 
     return (
-      <Header height={56} className={classes.header} >
+      <Header height={56} className={classes.header}>
         <div className={classes.inner}>
           <Group>
             <Image
@@ -234,7 +234,7 @@ function App() {
               }}
             />
           </Group>
-          {/* Add the clickable icons and the export options button */}
+
           <Group spacing={24} style={{ marginLeft: "auto" }}>
             <IconUser size={24} color="#555459" />
             <IconHeart size={24} color="#555459" />
@@ -251,7 +251,7 @@ function App() {
       withGlobalStyles
       withNormalizeCSS
       theme={{
-        fontFamily: "sans-serif", 
+        fontFamily: "sans-serif",
         colors: {
           "libra-gray": [
             "#f8f9fa",
@@ -275,50 +275,63 @@ function App() {
     >
       <HeaderSearch links={links} />
 
-
       {/* Landingpage hero */}
       <Paper w={1440} h={688} withBorder>
         <Container>
           <Grid gutter="lg">
             <Col span={6}>
-              <Text size="32px" w={374} h={102} weight={600} mb={26} mt={123}
-                style={{lineHeight:"51.2px"}}
+              <Text
+                size="32px"
+                w={374}
+                h={102}
+                weight={600}
+                mb={26}
+                mt={123}
+                style={{ lineHeight: "51.2px" }}
               >
                 Partners in <br /> Measurement & Control
               </Text>
-              <Text h={44} w={592} color="#555459" size={14} weight={400}
-                 style={{lineHeight:"22.4px"}}
+              <Text
+                h={44}
+                w={592}
+                color="#555459"
+                size={14}
+                weight={400}
+                style={{ lineHeight: "22.4px" }}
               >
                 Libratherm Instruments Pvt. Ltd. is an ISO 9001:2015 Certified
                 Indian Company engaged in the manufacturing of Electronic
                 Process Control Instruments and Systems since 1991.
               </Text>
               <List mt={24}>
-                    <List.Item
-                      style={{
-                        fontSize: "14px",
-                        fontWeight: "400",
-                        color: "#555459",
-                        lineHeight:"28px",
-                        
-                      }}
-                    >
-                      Field Proven Products : Certified Indian Company engaged in the manufacturing of Electronic Process Control
-                    </List.Item>
-                    <List.Item pt={8}
-                      style={{
-                        fontSize: "14px",
-                        fontWeight: "400",
-                        color: "#555459",
-                        lineHeight:"28px",
-                        marginBottom:"37px"
-
-                      }}
-                    >
-                     Latest Technology : Certified Indian Company engaged in the manufacturing of Electronic Process Control
-                    </List.Item>
-                  </List>
-            <SecondaryButton>Get Started {<IconChevronsDown size="20px"  color="#1D1D1B" />} </SecondaryButton>
+                <List.Item
+                  style={{
+                    fontSize: "14px",
+                    fontWeight: "400",
+                    color: "#555459",
+                    lineHeight: "28px",
+                  }}
+                >
+                  Field Proven Products : Certified Indian Company engaged in
+                  the manufacturing of Electronic Process Control
+                </List.Item>
+                <List.Item
+                  pt={8}
+                  style={{
+                    fontSize: "14px",
+                    fontWeight: "400",
+                    color: "#555459",
+                    lineHeight: "28px",
+                    marginBottom: "37px",
+                  }}
+                >
+                  Latest Technology : Certified Indian Company engaged in the
+                  manufacturing of Electronic Process Control
+                </List.Item>
+              </List>
+              <SecondaryButton>
+                Get Started {<IconChevronsDown size="20px" color="#1D1D1B" />}{" "}
+              </SecondaryButton>
             </Col>
             <Col span={6}>
               <Paper shadow="xs">
@@ -334,6 +347,337 @@ function App() {
         </Container>
       </Paper>
 
+      {/* Industries we serve  */}
+      <Paper w={1500} withBorder>
+        <Group noWrap spacing={0}>
+          <Box w="100%">
+            <Divider
+              size="md"
+              my={"60px"}
+              label={
+                <Text size={"32px"} ml={140}>
+                  Industries we serve
+                </Text>
+              }
+              labelPosition="left"
+            />
+          </Box>
+          <TertiaryButton>View All</TertiaryButton>
+        </Group>
+
+        <Group position="center" spacing="lg">
+          <Card h={500} w={391}>
+            <Card.Section>
+              <Image
+                src="https://generation-sessions.s3.amazonaws.com/af17357d9cd2ae9855b4d3ee104d414b/img/rectangle-6096.png"
+                height={391}
+                width={391}
+                alt="Glass"
+              />
+
+              <Text weight={600} pt={16}>
+                Glass Manufacture
+              </Text>
+
+              <Text size="sm" color="dimmed" lineClamp={5} pt={4}>
+                Libratherm has supplied various types of temperature
+                controllers, thyristor power controllers and control panels to
+                the industries manufacturing Files, Diamond Tools, Machine
+                Tools, Automobile parts, Hack saw blades, Stone cutting tools
+                and circular blades etc… The temperature of the electrical or
+                fuel fired heating systems, used for annealing, hardening, steam
+                bluing and similar such processes, has been in use for precise
+                control up to 1200-C, using our models PRC-300, PRC-309,
+                PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with the sensor
+                input from thermocouples or infrared non contact sensors.
+              </Text>
+            </Card.Section>
+          </Card>
+
+          <Card h={500} w={391}>
+            <Card.Section>
+              <Image
+                src="https://generation-sessions.s3.amazonaws.com/af17357d9cd2ae9855b4d3ee104d414b/img/unsplash-mjwgkmwkdda-1@2x.png"
+                height={391}
+                width={391}
+                alt="Norway"
+              />
+
+              <Text weight={600} pt={16}>
+                Jewelry Manufacture
+              </Text>
+
+              <Text size="sm" color="dimmed" lineClamp={5} pt={4}>
+                Libratherm has supplied various types of temperature
+                controllers, thyristor power controllers and control panels to
+                the industries manufacturing Files, Diamond Tools, Machine
+                Tools, Automobile parts, Hack saw blades, Stone cutting tools
+                and circular blades etc… The temperature of the electrical or
+                fuel fired heating systems, used for annealing, hardening, steam
+                bluing and similar such processes, has been in use for precise
+                control up to 1200-C, using our models PRC-300, PRC-309,
+                PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with the sensor
+                input from thermocouples or infrared non contact sensors.
+              </Text>
+            </Card.Section>
+          </Card>
+
+          <Card h={500} w={391}>
+            <Card.Section>
+              <Image
+                src="https://generation-sessions.s3.amazonaws.com/af17357d9cd2ae9855b4d3ee104d414b/img/unsplash-mjwgkmwkdda@2x.png"
+                height={391}
+                width={391}
+                alt="Norway"
+              />
+
+              <Text weight={600} pt={16}>
+                Steel Plants
+              </Text>
+
+              <Text size="sm" color="dimmed" lineClamp={5} pt={4}>
+                Libratherm has supplied various types of temperature
+                controllers, thyristor power controllers and control panels to
+                the industries manufacturing Files, Diamond Tools, Machine
+                Tools, Automobile parts, Hack saw blades, Stone cutting tools
+                and circular blades etc… The temperature of the electrical or
+                fuel fired heating systems, used for annealing, hardening, steam
+                bluing and similar such processes, has been in use for precise
+                control up to 1200-C, using our models PRC-300, PRC-309,
+                PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with the sensor
+                input from thermocouples or infrared non contact sensors.
+              </Text>
+            </Card.Section>
+          </Card>
+        </Group>
+      </Paper>
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      {/* Our Products components */}
+      <Paper w={1500} withBorder>
+        <Group noWrap spacing={0}>
+          <Box w="100%">
+            <Divider
+              size="md"
+              my={"60px"}
+              label={
+                <Text size={"32px"} ml={140}>
+                  Our Products
+                </Text>
+              }
+              labelPosition="left"
+            />
+          </Box>
+          <TertiaryButton>View All</TertiaryButton>
+        </Group>
+
+        <Group position="center" spacing="lg">
+          <Card withBorder radius={8} h={364} w={288}>
+            <Card.Section>
+              <Text
+                mt="xs"
+                color="#555459"
+                size="sm"
+                weight={600}
+                ml={18}
+                mr={10}
+              >
+                Three Phase Thyristor Power Controller – POW-3-PA
+              </Text>
+              <Image
+                src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/image-273-3@2x.png"
+                height={207}
+                width={207}
+                pt={15}
+                ml={41}
+              />
+            </Card.Section>
+
+            <Text weight={400} size="20px" mt="md" color="#414141" ml={40}>
+              ₹12,600 – ₹14,700
+            </Text>
+          </Card>
+
+          <Card withBorder radius={8} h={364} w={288}>
+            <Card.Section>
+              <Text
+                mt="xs"
+                color="#555459"
+                size="sm"
+                weight={600}
+                ml={18}
+                mr={10}
+              >
+                Three Phase Thyristor Power Controller – POW-3-PA
+              </Text>
+              <Image
+                src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/pow-3-pa-cl-50a-2@2x.png"
+                height={180}
+                width={140}
+                pt={35}
+                ml={70}
+              />
+            </Card.Section>
+
+            <Text weight={400} size="20px" mt="lg" color="#414141" ml={40}>
+              ₹12,600 – ₹14,700
+            </Text>
+          </Card>
+
+          <Card withBorder radius={8} h={364} w={288}>
+            <Card.Section>
+              <Text
+                mt="xs"
+                color="#555459"
+                size="sm"
+                weight={600}
+                ml={18}
+                mr={10}
+              >
+                Three Phase Thyristor Power Controller – POW-3-PA
+              </Text>
+              <Image
+                src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/image-277-1@2x.png"
+                height={207}
+                width={207}
+                pt={15}
+                ml={41}
+              />
+            </Card.Section>
+
+            <Text weight={400} size="20px" mt="md" color="#414141" ml={40}>
+              ₹12,600 – ₹14,700
+            </Text>
+          </Card>
+
+          <Card withBorder radius={8} h={364} w={288}>
+            <Card.Section>
+              <Text
+                mt="xs"
+                color="#555459"
+                size="sm"
+                weight={600}
+                ml={18}
+                mr={10}
+              >
+                Three Phase Thyristor Power Controller – POW-3-PA
+              </Text>
+              <Image
+                src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/image-273-3@2x.png"
+                height={207}
+                width={207}
+                pt={15}
+                ml={41}
+              />
+            </Card.Section>
+
+            <Text weight={400} size="20px" mt="md" color="#414141" ml={40}>
+              ₹12,600 – ₹14,700
+            </Text>
+          </Card>
+        </Group>
+      </Paper>
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      {/* Providing excellence image components */}
+      <Paper w={1441} h={600} withBorder>
+        <BackgroundImage src={BGImage} h={600} w={1441} pos="absolute">
+          <Divider size="sm" mt={150} mb={67} w={1014} ml={223} />
+          <Center p="md">
+            <Text color="#F6F6F6" size="48px" weight={400}>
+              Providing Excellence Since 1991
+            </Text>
+          </Center>
+
+          <Center>
+            <Text
+              color="#F6F6F6"
+              size="14px"
+              weight={400}
+              h={66}
+              w={1014}
+              align="center"
+            >
+              We offer complete solutions for accurate measurement and control
+              of Humidity, Pressure, Flow, Level, pH, Speed, etc. Our products
+              are reliable and excellent in quality and are conforming to
+              EN61010 International Safety Standards.
+            </Text>
+          </Center>
+          <Divider size="sm" mt={67} w={1014} ml={223} />
+        </BackgroundImage>
+      </Paper>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      {/* Who are we Component*/}
+      <Paper w={1440} h={696} withBorder>
+        <Container>
+          <Grid gutter="lg">
+            <Col span={6}>
+              <Text
+              size={14}
+              weight={600}
+              color="#E4E8ED"
+              pt={191}
+              
+              >
+                WHO ARE WE?
+              </Text>
+              <Text
+                size="32px"
+                w={558}
+                h={102}
+                weight={600}
+                pt={16}
+               
+                style={{ lineHeight: "51.2px" }}
+              >
+                How it all began: The Omega <br />
+                moment
+              </Text>
+              <Text
+                h={110}
+                w={500}
+                color="#555459"
+                size={14}
+                weight={400}
+                pt={26}
+                mb={40}
+                style={{ lineHeight: "22.4px" }}
+              >
+                Launching a business isn't easy, which is why having a
+                co-founder can often make things a little smoother, especially
+                if that co-founder is your best friend. While many professionals
+                warn against choosing a close friend as your business partner,
+                there are plenty of examples that prove it can work. The best
+                example is of Airbnb..
+              </Text>
+              
+              
+            </Col>
+            <Col span={6}>
+              <Paper shadow="xs" mt={126} ml={114}>
+                <img src={WHO} alt="Sample" width={493} height={451} />
+              </Paper>
+            </Col>
+          </Grid>
+        </Container>
+      </Paper>
+      <br />
+      <br />
+      <br />
+      <br />
 
       {/* Button components */}
       <Paper>
@@ -346,8 +690,7 @@ function App() {
           <SecondaryButton>Apply Now</SecondaryButton>
           <TertiaryButton>View cart</TertiaryButton>
 
-          
-           {/* Product card */}
+          {/* Product card */}
           <Card withBorder>
             <Group>
               <Paper>
@@ -481,8 +824,8 @@ function App() {
       <br />
       <br />
       <br />
-      
-       {/* Text Input components */}
+
+      {/* Text Input components */}
       <TextInput
         placeholder="PRANAY KOTADIA"
         label="Name"
@@ -511,278 +854,7 @@ function App() {
           margin: " 51px auto",
         }}
       />
-      
-      
-       {/* Industries we serve  */}
-      <Paper w={1500} withBorder>
-        <Group noWrap spacing={0}>
-          <Box w="100%">
-            <Divider
-              size="md"
-              my={"60px"}
-              label={
-                <Text size={"32px"} ml={140}>
-                  Industries we serve
-                </Text>
-              }
-              labelPosition="left"
-            />
-          </Box>
-          <TertiaryButton>View All</TertiaryButton>
-        </Group>
 
-        <Group position="center" spacing="lg">
-          <Card h={500} w={391}>
-            <Card.Section>
-              <Image
-                src="https://generation-sessions.s3.amazonaws.com/af17357d9cd2ae9855b4d3ee104d414b/img/rectangle-6096.png"
-                height={391}
-                width={391}
-                alt="Glass"
-              />
-
-              <Text weight={600} pt={16}>
-                Glass Manufacture
-              </Text>
-
-              <Text size="sm" color="dimmed" lineClamp={5} pt={4}>
-                Libratherm has supplied various types of temperature
-                controllers, thyristor power controllers and control panels to
-                the industries manufacturing Files, Diamond Tools, Machine
-                Tools, Automobile parts, Hack saw blades, Stone cutting tools
-                and circular blades etc… The temperature of the electrical or
-                fuel fired heating systems, used for annealing, hardening, steam
-                bluing and similar such processes, has been in use for precise
-                control up to 1200-C, using our models PRC-300, PRC-309,
-                PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with the sensor
-                input from thermocouples or infrared non contact sensors.
-              </Text>
-            </Card.Section>
-          </Card>
-
-          <Card h={500} w={391}>
-            <Card.Section>
-              <Image
-                src="https://generation-sessions.s3.amazonaws.com/af17357d9cd2ae9855b4d3ee104d414b/img/unsplash-mjwgkmwkdda-1@2x.png"
-                height={391}
-                width={391}
-                alt="Norway"
-              />
-
-              <Text weight={600} pt={16}>
-                Jewelry Manufacture
-              </Text>
-
-              <Text size="sm" color="dimmed" lineClamp={5} pt={4}>
-                Libratherm has supplied various types of temperature
-                controllers, thyristor power controllers and control panels to
-                the industries manufacturing Files, Diamond Tools, Machine
-                Tools, Automobile parts, Hack saw blades, Stone cutting tools
-                and circular blades etc… The temperature of the electrical or
-                fuel fired heating systems, used for annealing, hardening, steam
-                bluing and similar such processes, has been in use for precise
-                control up to 1200-C, using our models PRC-300, PRC-309,
-                PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with the sensor
-                input from thermocouples or infrared non contact sensors.
-              </Text>
-            </Card.Section>
-          </Card>
-
-          <Card h={500} w={391}>
-            <Card.Section>
-              <Image
-                src="https://generation-sessions.s3.amazonaws.com/af17357d9cd2ae9855b4d3ee104d414b/img/unsplash-mjwgkmwkdda@2x.png"
-                height={391}
-                width={391}
-                alt="Norway"
-              />
-
-              <Text weight={600} pt={16}>
-                Steel Plants
-              </Text>
-
-              <Text size="sm" color="dimmed" lineClamp={5} pt={4}>
-                Libratherm has supplied various types of temperature
-                controllers, thyristor power controllers and control panels to
-                the industries manufacturing Files, Diamond Tools, Machine
-                Tools, Automobile parts, Hack saw blades, Stone cutting tools
-                and circular blades etc… The temperature of the electrical or
-                fuel fired heating systems, used for annealing, hardening, steam
-                bluing and similar such processes, has been in use for precise
-                control up to 1200-C, using our models PRC-300, PRC-309,
-                PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with the sensor
-                input from thermocouples or infrared non contact sensors.
-              </Text>
-            </Card.Section>
-          </Card>
-        </Group>
-      </Paper>
-
-      <br />
-      <br />
-      <br />
-      <br />
-
-
-       {/* Our Products components */}
-      <Paper w={1500} withBorder>
-        <Group noWrap spacing={0}>
-          <Box w="100%">
-            <Divider
-              size="md"
-              my={"60px"}
-              label={
-                <Text size={"32px"} ml={140}>
-                  Our Products
-                </Text>
-              }
-              labelPosition="left"
-            />
-          </Box>
-          <TertiaryButton>View All</TertiaryButton>
-        </Group>
-
-        <Group position="center" spacing="lg">
-          <Card withBorder radius={8} h={364} w={288}>
-            <Card.Section>
-              <Text
-                mt="xs"
-                color="#555459"
-                size="sm"
-                weight={600}
-                ml={18}
-                mr={10}
-              >
-                Three Phase Thyristor Power Controller – POW-3-PA
-              </Text>
-              <Image
-                src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/image-273-3@2x.png"
-                height={207}
-                width={207}
-                pt={15}
-                ml={41}
-              />
-            </Card.Section>
-
-            <Text weight={400} size="20px" mt="md" color="#414141" ml={40}>
-              ₹12,600 – ₹14,700
-            </Text>
-          </Card>
-
-          <Card withBorder radius={8} h={364} w={288}>
-            <Card.Section>
-              <Text
-                mt="xs"
-                color="#555459"
-                size="sm"
-                weight={600}
-                ml={18}
-                mr={10}
-              >
-                Three Phase Thyristor Power Controller – POW-3-PA
-              </Text>
-              <Image
-                src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/pow-3-pa-cl-50a-2@2x.png"
-                height={180}
-                width={140}
-                pt={35}
-                ml={70}
-              />
-            </Card.Section>
-
-            <Text weight={400} size="20px" mt="lg" color="#414141" ml={40}>
-              ₹12,600 – ₹14,700
-            </Text>
-          </Card>
-
-          <Card withBorder radius={8} h={364} w={288}>
-            <Card.Section>
-              <Text
-                mt="xs"
-                color="#555459"
-                size="sm"
-                weight={600}
-                ml={18}
-                mr={10}
-              >
-                Three Phase Thyristor Power Controller – POW-3-PA
-              </Text>
-              <Image
-                src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/image-277-1@2x.png"
-                height={207}
-                width={207}
-                pt={15}
-                ml={41}
-              />
-            </Card.Section>
-
-            <Text weight={400} size="20px" mt="md" color="#414141" ml={40}>
-              ₹12,600 – ₹14,700
-            </Text>
-          </Card>
-
-          <Card withBorder radius={8} h={364} w={288}>
-            <Card.Section>
-              <Text
-                mt="xs"
-                color="#555459"
-                size="sm"
-                weight={600}
-                ml={18}
-                mr={10}
-              >
-                Three Phase Thyristor Power Controller – POW-3-PA
-              </Text>
-              <Image
-                src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/image-273-3@2x.png"
-                height={207}
-                width={207}
-                pt={15}
-                ml={41}
-              />
-            </Card.Section>
-
-            <Text weight={400} size="20px" mt="md" color="#414141" ml={40}>
-              ₹12,600 – ₹14,700
-            </Text>
-          </Card>
-        </Group>
-      </Paper>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      
-
-       {/* Providing excellence image components */}
-      <Paper w={1441} h={600} withBorder>
-        <BackgroundImage src={BGImage} h={600} w={1441} pos="absolute">
-          <Divider size="sm" mt={150} mb={67} w={1014} ml={223} />
-          <Center p="md">
-            <Text color="#F6F6F6" size="48px" weight={400}>
-              Providing Excellence Since 1991
-            </Text>
-          </Center>
-
-          <Center>
-            <Text
-              color="#F6F6F6"
-              size="14px"
-              weight={400}
-              h={66}
-              w={1014}
-              align="center"
-            >
-              We offer complete solutions for accurate measurement and control
-              of Humidity, Pressure, Flow, Level, pH, Speed, etc. Our products
-              are reliable and excellent in quality and are conforming to
-              EN61010 International Safety Standards.
-            </Text>
-          </Center>
-          <Divider size="sm" mt={67} w={1014} ml={223} />
-        </BackgroundImage>
-      </Paper>
       <br />
       <br />
       <br />
