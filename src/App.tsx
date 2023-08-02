@@ -15,7 +15,10 @@ import {
   Header,
   createStyles,
   ButtonProps,
-  
+  BackgroundImage,
+  Center,
+
+ 
 } from "@mantine/core";
 
 import {
@@ -24,6 +27,7 @@ import {
   IconHeart,
   IconShoppingCart,
 } from "@tabler/icons-react";
+
 
 const OptionsButton = ({ ...props }: ButtonProps) => (
   <Button
@@ -436,20 +440,19 @@ function App() {
           margin: " 51px auto",
         }}
       />
-      <Paper w={1500} withBorder >
+      <Paper w={1500} withBorder>
         <Divider
           size="md"
           my={"60px"}
           label={
-			  <Group>
+            <Group>
               <Text size={"32px"} ml={140}>
                 Industries we serve
               </Text>
               <TertiaryButton>View All</TertiaryButton>
             </Group>
           }
-		  labelPosition="left"
-		  
+          labelPosition="left"
         />
 
         <Group position="center" spacing="lg">
@@ -462,9 +465,11 @@ function App() {
                 alt="Glass"
               />
 
-              <Text weight={600} pt={16}>Glass Manufacture</Text>
+              <Text weight={600} pt={16}>
+                Glass Manufacture
+              </Text>
 
-              <Text size="sm" color="dimmed"lineClamp={5} pt={4}>
+              <Text size="sm" color="dimmed" lineClamp={5} pt={4}>
                 Libratherm has supplied various types of temperature
                 controllers, thyristor power controllers and control panels to
                 the industries manufacturing Files, Diamond Tools, Machine
@@ -488,7 +493,9 @@ function App() {
                 alt="Norway"
               />
 
-              <Text weight={600} pt={16}>Jewelry Manufacture</Text>
+              <Text weight={600} pt={16}>
+                Jewelry Manufacture
+              </Text>
 
               <Text size="sm" color="dimmed" lineClamp={5} pt={4}>
                 Libratherm has supplied various types of temperature
@@ -514,7 +521,9 @@ function App() {
                 alt="Norway"
               />
 
-              <Text weight={600} pt={16}>Steel Plants</Text>
+              <Text weight={600} pt={16}>
+                Steel Plants
+              </Text>
 
               <Text size="sm" color="dimmed" lineClamp={5} pt={4}>
                 Libratherm has supplied various types of temperature
@@ -533,141 +542,173 @@ function App() {
         </Group>
       </Paper>
 
+      <br />
+      <br />
+      <br />
+      <br />
 
-<br/><br/><br/><br/>
-
-	<Paper w={1500} withBorder >
-	<Divider
+      <Paper w={1500} withBorder>
+        <Divider
           size="md"
           my={"60px"}
           label={
-			  <Group>
+            <Group>
               <Text size={"32px"} ml={140}>
-               Our Products
+                Our Products
               </Text>
               <TertiaryButton>View All</TertiaryButton>
             </Group>
           }
-		  labelPosition="left"
+          labelPosition="left"
         />
-	
 
-	
-	<Group position="center" spacing="lg" >
-	<Card 
-	withBorder 
-	radius={8}
-      h={364} 
-	  w={288}
-     
-   
-    >
-      <Card.Section>
-      <Text mt="xs" color="#555459" size="sm" weight={600} ml={18} mr={10} >
-	  Three Phase Thyristor Power Controller – POW-3-PA
-      </Text>
-        <Image
-          src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/image-273-3@2x.png"
-          height={207}
-		  width={207}
-          pt={15}
-		  ml={41}
-        />
-      </Card.Section>
+        <Group position="center" spacing="lg">
+          <Card withBorder radius={8} h={364} w={288}>
+            <Card.Section>
+              <Text
+                mt="xs"
+                color="#555459"
+                size="sm"
+                weight={600}
+                ml={18}
+                mr={10}
+              >
+                Three Phase Thyristor Power Controller – POW-3-PA
+              </Text>
+              <Image
+                src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/image-273-3@2x.png"
+                height={207}
+                width={207}
+                pt={15}
+                ml={41}
+              />
+            </Card.Section>
 
-      <Text weight={400} size="20px" mt="md" color="#414141"  ml={40}>
-	  ₹12,600 – ₹14,700
-      </Text>
+            <Text weight={400} size="20px" mt="md" color="#414141" ml={40}>
+              ₹12,600 – ₹14,700
+            </Text>
+          </Card>
 
-    </Card>
+          <Card withBorder radius={8} h={364} w={288}>
+            <Card.Section>
+              <Text
+                mt="xs"
+                color="#555459"
+                size="sm"
+                weight={600}
+                ml={18}
+                mr={10}
+              >
+                Three Phase Thyristor Power Controller – POW-3-PA
+              </Text>
+              <Image
+                src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/pow-3-pa-cl-50a-2@2x.png"
+                height={180}
+                width={140}
+                pt={35}
+                ml={70}
+              />
+            </Card.Section>
 
-	<Card
-      withBorder 
-	  radius={8}
-     
-	  h={364} 
-	  w={288}
-    >
-      <Card.Section>
-	  <Text mt="xs" color="#555459" size="sm" weight={600} ml={18} mr={10}>
-	  Three Phase Thyristor Power Controller – POW-3-PA
-      </Text>
-        <Image
-          src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/pow-3-pa-cl-50a-2@2x.png"
-          height={180}
-		  width={140}
-		  pt={35}
-		  
-		  ml={70}
-          
-        />
-      </Card.Section>
+            <Text weight={400} size="20px" mt="lg" color="#414141" ml={40}>
+              ₹12,600 – ₹14,700
+            </Text>
+          </Card>
 
-	  <Text weight={400} size="20px" mt="lg" color="#414141" ml={40}>
-	  ₹12,600 – ₹14,700
-      </Text>
+          <Card withBorder radius={8} h={364} w={288}>
+            <Card.Section>
+              <Text
+                mt="xs"
+                color="#555459"
+                size="sm"
+                weight={600}
+                ml={18}
+                mr={10}
+              >
+                Three Phase Thyristor Power Controller – POW-3-PA
+              </Text>
+              <Image
+                src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/image-277-1@2x.png"
+                height={207}
+                width={207}
+                pt={15}
+                ml={41}
+              />
+            </Card.Section>
+
+            <Text weight={400} size="20px" mt="md" color="#414141" ml={40}>
+              ₹12,600 – ₹14,700
+            </Text>
+          </Card>
+
+          <Card withBorder radius={8} h={364} w={288}>
+            <Card.Section>
+              <Text
+                mt="xs"
+                color="#555459"
+                size="sm"
+                weight={600}
+                ml={18}
+                mr={10}
+              >
+                Three Phase Thyristor Power Controller – POW-3-PA
+              </Text>
+              <Image
+                src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/image-273-3@2x.png"
+                height={207}
+                width={207}
+                pt={15}
+                ml={41}
+              />
+            </Card.Section>
+
+            <Text weight={400} size="20px" mt="md" color="#414141" ml={40}>
+              ₹12,600 – ₹14,700
+            </Text>
+          </Card>
+        </Group>
+      </Paper>
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <Paper w={1441} h={600} withBorder>
+        <BackgroundImage     
+        src="./bgimage.png"
+          h={600}
+          w={1441}
+          pos="absolute"
+      
+        >
+          <Divider size="sm" mt={150} mb={67} w={1014} ml={223} />
+          <Center p="md">
+            <Text color="#F6F6F6" size="48px" weight={400}>
+              Providing Excellence Since 1991
+            </Text>
+          </Center>
+
+          <Center>
+            <Text
+              color="#F6F6F6"
+              size="14px"
+              weight={400}
+              h={66}
+              w={1014}
+              align="center"
+            >
+              We offer complete solutions for accurate measurement and control
+              of Humidity, Pressure, Flow, Level, pH, Speed, etc. Our products
+              are reliable and excellent in quality and are conforming to
+              EN61010 International Safety Standards.
+            </Text>
+          </Center>
+          <Divider size="sm"  mt={67} w={1014} ml={223}/>
+        </BackgroundImage>
+      </Paper>
 
       
-    </Card>
-
-	<Card
-      withBorder 
-	  radius={8}
-	  h={364} 
-	  w={288}
-      
-    >
-      <Card.Section>
-	  <Text mt="xs" color="#555459" size="sm" weight={600} ml={18} mr={10}>
-	  Three Phase Thyristor Power Controller – POW-3-PA
-      </Text>
-        <Image
-          src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/image-277-1@2x.png"
-          height={207}
-		  width={207}
-          pt={15}
-		  ml={41}
-        />
-      </Card.Section>
-
-      <Text weight={400} size="20px" mt="md" color="#414141" ml={40}>
-	  ₹12,600 – ₹14,700
-      </Text>
-
-      
-    </Card>
-
-	<Card
-      withBorder 
-	  radius={8}
-	  h={364} 
-	  w={288}
-     
-    >
-      <Card.Section>
-	  <Text mt="xs" color="#555459" size="sm" weight={600} ml={18} mr={10} >
-	  Three Phase Thyristor Power Controller – POW-3-PA
-      </Text>
-        <Image
-          src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/image-273-3@2x.png"
-          height={207}
-		  width={207}
-          pt={15}
-		  ml={41}
-        />
-      </Card.Section>
-
-	  <Text weight={400} size="20px" mt="md" color="#414141" ml={40}>
-	  ₹12,600 – ₹14,700
-      </Text>
-
-     
-    </Card>
-	</Group>
-	</Paper>
-
-	<br/><br/><br/><br/>
-
     </MantineProvider>
   );
 }
