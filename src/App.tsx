@@ -17,9 +17,11 @@ import {
   ButtonProps,
   BackgroundImage,
   Center,
+  Box,
 
  
 } from "@mantine/core";
+import BGImage from "./bgimage.png";
 
 import {
   IconSearch,
@@ -441,19 +443,22 @@ function App() {
         }}
       />
       <Paper w={1500} withBorder>
+      <Group noWrap spacing={0}>
+          <Box w="100%">
         <Divider
           size="md"
           my={"60px"}
           label={
-            <Group>
+            
               <Text size={"32px"} ml={140}>
                 Industries we serve
               </Text>
+                }
+                labelPosition="left"
+                />
+              </Box>
               <TertiaryButton>View All</TertiaryButton>
             </Group>
-          }
-          labelPosition="left"
-        />
 
         <Group position="center" spacing="lg">
           <Card h={500} w={391}>
@@ -548,19 +553,23 @@ function App() {
       <br />
 
       <Paper w={1500} withBorder>
+        <Group noWrap spacing={0}>
+          <Box w="100%">
         <Divider
           size="md"
           my={"60px"}
           label={
-            <Group>
+            
               <Text size={"32px"} ml={140}>
                 Our Products
               </Text>
+                }
+                labelPosition="left"
+                />
+              </Box>
               <TertiaryButton>View All</TertiaryButton>
             </Group>
-          }
-          labelPosition="left"
-        />
+          
 
         <Group position="center" spacing="lg">
           <Card withBorder radius={8} h={364} w={288}>
@@ -674,9 +683,9 @@ function App() {
       <br />
       <br />
 
-      <Paper w={1441} h={600} withBorder>
+      <Paper w={1441} h={600} withBorder >
         <BackgroundImage     
-        src="./bgimage.png"
+        src={BGImage}
           h={600}
           w={1441}
           pos="absolute"
@@ -707,7 +716,10 @@ function App() {
           <Divider size="sm"  mt={67} w={1014} ml={223}/>
         </BackgroundImage>
       </Paper>
-
+      <br />
+      <br />
+      <br />
+      <br />
       
     </MantineProvider>
   );
