@@ -5,7 +5,6 @@ import {
   Stack,
   Card,
   Image,
-  Text,
   Paper,
   List,
   Divider,
@@ -18,18 +17,21 @@ import {
   BackgroundImage,
   Center,
   Box,
-
- 
+  Container,
+  Grid,
+  Col,
+  Text,
 } from "@mantine/core";
 import BGImage from "./bgimage.png";
+import LandingImage from "./Rectangle.png";
 
 import {
   IconSearch,
   IconUser,
   IconHeart,
   IconShoppingCart,
+  IconChevronsDown,
 } from "@tabler/icons-react";
-
 
 const OptionsButton = ({ ...props }: ButtonProps) => (
   <Button
@@ -126,9 +128,10 @@ function App() {
     { link: "#", label: "Products" },
     { link: "#", label: "Journal" },
     { link: "#", label: "Contact us" },
-    // Add more links here as needed
+ 
   ];
 
+  /* Navbar Header */
   const useStyles = createStyles((theme) => ({
     header: {
       paddingLeft: theme.spacing.md,
@@ -197,7 +200,7 @@ function App() {
     ));
 
     return (
-      <Header height={56} className={classes.header} mb={120}>
+      <Header height={56} className={classes.header} >
         <div className={classes.inner}>
           <Group>
             <Image
@@ -248,7 +251,7 @@ function App() {
       withGlobalStyles
       withNormalizeCSS
       theme={{
-        fontFamily: "sans-serif",
+        fontFamily: "sans-serif", 
         colors: {
           "libra-gray": [
             "#f8f9fa",
@@ -271,6 +274,68 @@ function App() {
       }}
     >
       <HeaderSearch links={links} />
+
+
+      {/* Landingpage hero */}
+      <Paper w={1440} h={688} withBorder>
+        <Container>
+          <Grid gutter="lg">
+            <Col span={6}>
+              <Text size="32px" w={374} h={102} weight={600} mb={26} mt={123}
+                style={{lineHeight:"51.2px"}}
+              >
+                Partners in <br /> Measurement & Control
+              </Text>
+              <Text h={44} w={592} color="#555459" size={14} weight={400}
+                 style={{lineHeight:"22.4px"}}
+              >
+                Libratherm Instruments Pvt. Ltd. is an ISO 9001:2015 Certified
+                Indian Company engaged in the manufacturing of Electronic
+                Process Control Instruments and Systems since 1991.
+              </Text>
+              <List mt={24}>
+                    <List.Item
+                      style={{
+                        fontSize: "14px",
+                        fontWeight: "400",
+                        color: "#555459",
+                        lineHeight:"28px",
+                        
+                      }}
+                    >
+                      Field Proven Products : Certified Indian Company engaged in the manufacturing of Electronic Process Control
+                    </List.Item>
+                    <List.Item pt={8}
+                      style={{
+                        fontSize: "14px",
+                        fontWeight: "400",
+                        color: "#555459",
+                        lineHeight:"28px",
+                        marginBottom:"37px"
+
+                      }}
+                    >
+                     Latest Technology : Certified Indian Company engaged in the manufacturing of Electronic Process Control
+                    </List.Item>
+                  </List>
+            <SecondaryButton>Get Started {<IconChevronsDown size="20px"  color="#1D1D1B" />} </SecondaryButton>
+            </Col>
+            <Col span={6}>
+              <Paper shadow="xs">
+                <img
+                  src={LandingImage}
+                  alt="Sample"
+                  width={1209}
+                  height={688}
+                />
+              </Paper>
+            </Col>
+          </Grid>
+        </Container>
+      </Paper>
+
+
+      {/* Button components */}
       <Paper>
         <Stack align="center">
           <Button color="libra-gray" style={{ textTransform: "uppercase" }}>
@@ -281,6 +346,8 @@ function App() {
           <SecondaryButton>Apply Now</SecondaryButton>
           <TertiaryButton>View cart</TertiaryButton>
 
+          
+           {/* Product card */}
           <Card withBorder>
             <Group>
               <Paper>
@@ -414,6 +481,8 @@ function App() {
       <br />
       <br />
       <br />
+      
+       {/* Text Input components */}
       <TextInput
         placeholder="PRANAY KOTADIA"
         label="Name"
@@ -442,23 +511,25 @@ function App() {
           margin: " 51px auto",
         }}
       />
+      
+      
+       {/* Industries we serve  */}
       <Paper w={1500} withBorder>
-      <Group noWrap spacing={0}>
+        <Group noWrap spacing={0}>
           <Box w="100%">
-        <Divider
-          size="md"
-          my={"60px"}
-          label={
-            
-              <Text size={"32px"} ml={140}>
-                Industries we serve
-              </Text>
-                }
-                labelPosition="left"
-                />
-              </Box>
-              <TertiaryButton>View All</TertiaryButton>
-            </Group>
+            <Divider
+              size="md"
+              my={"60px"}
+              label={
+                <Text size={"32px"} ml={140}>
+                  Industries we serve
+                </Text>
+              }
+              labelPosition="left"
+            />
+          </Box>
+          <TertiaryButton>View All</TertiaryButton>
+        </Group>
 
         <Group position="center" spacing="lg">
           <Card h={500} w={391}>
@@ -552,24 +623,24 @@ function App() {
       <br />
       <br />
 
+
+       {/* Our Products components */}
       <Paper w={1500} withBorder>
         <Group noWrap spacing={0}>
           <Box w="100%">
-        <Divider
-          size="md"
-          my={"60px"}
-          label={
-            
-              <Text size={"32px"} ml={140}>
-                Our Products
-              </Text>
-                }
-                labelPosition="left"
-                />
-              </Box>
-              <TertiaryButton>View All</TertiaryButton>
-            </Group>
-          
+            <Divider
+              size="md"
+              my={"60px"}
+              label={
+                <Text size={"32px"} ml={140}>
+                  Our Products
+                </Text>
+              }
+              labelPosition="left"
+            />
+          </Box>
+          <TertiaryButton>View All</TertiaryButton>
+        </Group>
 
         <Group position="center" spacing="lg">
           <Card withBorder radius={8} h={364} w={288}>
@@ -682,15 +753,11 @@ function App() {
       <br />
       <br />
       <br />
-
-      <Paper w={1441} h={600} withBorder >
-        <BackgroundImage     
-        src={BGImage}
-          h={600}
-          w={1441}
-          pos="absolute"
       
-        >
+
+       {/* Providing excellence image components */}
+      <Paper w={1441} h={600} withBorder>
+        <BackgroundImage src={BGImage} h={600} w={1441} pos="absolute">
           <Divider size="sm" mt={150} mb={67} w={1014} ml={223} />
           <Center p="md">
             <Text color="#F6F6F6" size="48px" weight={400}>
@@ -713,14 +780,13 @@ function App() {
               EN61010 International Safety Standards.
             </Text>
           </Center>
-          <Divider size="sm"  mt={67} w={1014} ml={223}/>
+          <Divider size="sm" mt={67} w={1014} ml={223} />
         </BackgroundImage>
       </Paper>
       <br />
       <br />
       <br />
       <br />
-      
     </MantineProvider>
   );
 }
