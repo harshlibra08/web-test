@@ -25,6 +25,12 @@ import {
 import BGImage from "./bgimage.png";
 import LandingImage from "./Rectangle.png";
 import WHO from "./who.png";
+import Strength1 from "./strength1.png";
+import Strength2 from "./strength2.png";
+import Strength3 from "./strength3.png";
+import Gradient from "./gradient1.png";
+import FooterBg from "./footerbg.png";
+import FooterGrad from "./footergradient.png";
 
 import {
   IconSearch,
@@ -32,6 +38,8 @@ import {
   IconHeart,
   IconShoppingCart,
   IconChevronsDown,
+  IconCircleChevronLeft,
+  IconCircleChevronRight,
 } from "@tabler/icons-react";
 
 const OptionsButton = ({ ...props }: ButtonProps) => (
@@ -620,18 +628,147 @@ function App() {
       <br />
       <br />
 
+      {/*Our Strengths Component */}
+      <Paper w={1440} h={964} withBorder>
+        <Group noWrap spacing={0}>
+          <Box w="100%">
+            <Divider
+              size="md"
+              my={"60px"} mr={"197px"} 
+              label={
+                <Text size={"32px"} ml={140}>
+                  Our Strengths
+                </Text>
+              }
+              labelPosition="left"
+            />
+          </Box>
+            
+          {<IconCircleChevronLeft width={37} height={37} stroke={1}  />}
+          {<IconCircleChevronRight width={37} height={37} stroke={1} />}
+        </Group>
+
+        <Group position="center" spacing="lg">
+          <Card h={700} w={391}>
+            <Card.Section>
+              <Box pos="relative" w={391} h={450}>
+                <Image
+                  src={Strength1}
+                  height={417}
+                  width={329}
+                  alt="Client"
+                  pos="absolute"
+                  top={0}
+                  left={0}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Gradient}
+                  height={417}
+                  width={329}
+                  alt="Client"
+                  pos="absolute"
+                  top={0}
+                  left={0}
+                  w="100%"
+                  h="100%"
+                />
+              <Text weight={600} h={92} w={347} size={40} pos="absolute"  top={283} color="#FFFFFF"
+              >
+                Latest Technology
+              </Text>
+
+              <Text size="14px" weight={600} w={288} h={57} pt={29} pos="absolute"  top={404} color="#000000">
+                We use the latest available and accessible technology for long
+                lasting and trouble-free field performance.
+              </Text>
+              </Box>
+            </Card.Section>
+          </Card>
+
+          <Card h={700} w={391}>
+            <Card.Section>
+              <Box pos="relative" w={391} h={450}>
+                <Image
+                  src={Strength2}
+                  height={417}
+                  width={329}
+                  alt="Client"
+                  pos="absolute"
+                  top={0}
+                  left={0}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Gradient}
+                  height={417}
+                  width={329}
+                  alt="Client"
+                  pos="absolute"
+                  top={0}
+                  left={0}
+                  w="100%"
+                  h="100%"
+                />
+              </Box>
+              <Text weight={600} h={92} w={249} size={40} pos="absolute"  top={283} color="#FFFFFF">
+                Global Standards
+              </Text>
+
+              <Text size="14px" weight={600} w={288} h={57} pt={29} pos="absolute"  top={404} color="#000000">
+                Our products are performing in nearly all the states in the
+                country and in more than 25 countries around the world
+              </Text>
+            </Card.Section>
+          </Card>
+
+          <Card h={700} w={391}>
+            <Card.Section>
+              <Box pos="relative" w={391} h={450}>
+                <Image
+                  src={Strength3}
+                  height={417}
+                  width={329}
+                  alt="Client"
+                  pos="absolute"
+                  top={0}
+                  left={0}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Gradient}
+                  height={417}
+                  width={329}
+                  alt="Client"
+                  pos="absolute"
+                  top={0}
+                  left={0}
+                  w="100%"
+                  h="100%"
+                />
+              </Box>
+              <Text weight={600} h={92} w={347} size={40} pos="absolute"  top={283} color="#FFFFFF">
+                Client Centered Approach
+              </Text>
+
+              <Text size="14px" weight={600} w={288} h={57} pt={29} pos="absolute"  top={404} color="#000000">
+                While designing and manufacturing our products, we sustain a way
+                in which our services benefit the customers.
+              </Text>
+            </Card.Section>
+          </Card>
+        </Group>
+      </Paper>
+
       {/* Who are we Component*/}
       <Paper w={1440} h={696} withBorder>
         <Container>
           <Grid gutter="lg">
             <Col span={6}>
-              <Text
-              size={14}
-              weight={600}
-              color="#E4E8ED"
-              pt={191}
-              
-              >
+              <Text size={14} weight={600} color="#E4E8ED" pt={191}>
                 WHO ARE WE?
               </Text>
               <Text
@@ -640,7 +777,6 @@ function App() {
                 h={102}
                 weight={600}
                 pt={16}
-               
                 style={{ lineHeight: "51.2px" }}
               >
                 How it all began: The Omega <br />
@@ -663,8 +799,6 @@ function App() {
                 there are plenty of examples that prove it can work. The best
                 example is of Airbnb..
               </Text>
-              
-              
             </Col>
             <Col span={6}>
               <Paper shadow="xs" mt={126} ml={114}>
@@ -679,6 +813,33 @@ function App() {
       <br />
       <br />
 
+      {/* Footer Component */}
+
+      <Paper w={1440} h={739} withBorder>
+          <Image 
+            src={FooterBg}
+            
+            ml={64}
+            mt={56}
+            style={{width:"1312px", height:"739px"}}
+
+          />
+          <Text 
+            size={32}
+            weight={"600"}
+            w={347}
+            h={51}
+            mt={96}
+          >
+            REQUEST A CALL BACK
+          </Text>
+
+      </Paper>
+
+      <br />
+      <br />
+      <br />
+      <br />
       {/* Button components */}
       <Paper>
         <Stack align="center">
