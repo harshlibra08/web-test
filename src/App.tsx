@@ -1149,7 +1149,7 @@ function App() {
             <Card
               w={423}
               h={417}
-              withBorder
+              
               bg="#222222"
               style={{
                 position: "relative",
@@ -1188,6 +1188,36 @@ function App() {
                 While designing and manufacturing their products, they sustain a
                 way in which their services benefit us.
               </Text>
+
+              <Image
+              src={Avatar1}
+              width={56}
+              height={56}
+              pos={"absolute"}
+              top={329}
+              left={32}
+              />
+            <Text 
+            pos={"absolute"}
+            color="#FFF"
+            top={329}
+            left={98}
+            size={18}
+            weight={400}
+            >
+              Varuni Vij
+            </Text>
+            <Text 
+            pos={"absolute"}
+            color="#FFF"
+            top={361}
+            left={98}
+            size={12}
+            weight={400}
+            >
+             Former Media Planning & Content Lead, Reckitt India
+            </Text>
+              
             </Card>
           </Carousel.Slide>
 
@@ -1195,7 +1225,7 @@ function App() {
             <Card
               w={423}
               h={417}
-              withBorder
+            
               bg="#222222"
               style={{
                 position: "relative",
@@ -1234,13 +1264,41 @@ function App() {
                 While designing and manufacturing their products, they sustain a
                 way in which their services benefit us.
               </Text>
+              <Image
+              src={Avatar2}
+              width={56}
+              height={56}
+              pos={"absolute"}
+              top={329}
+              left={32}
+              />
+              <Text 
+            pos={"absolute"}
+            color="#FFF"
+            top={329}
+            left={98}
+            size={18}
+            weight={400}
+            >
+              Varuni Vij
+            </Text>
+            <Text 
+            pos={"absolute"}
+            color="#FFF"
+            top={361}
+            left={98}
+            size={12}
+            weight={400}
+            >
+             Former Media Planning & Content Lead, Reckitt India
+            </Text>
             </Card>
           </Carousel.Slide>
           <Carousel.Slide>
             <Card
               w={423}
               h={417}
-              withBorder
+             
               bg="#222222"
               style={{
                 position: "relative",
@@ -1279,6 +1337,34 @@ function App() {
                 While designing and manufacturing their products, they sustain a
                 way in which their services benefit us.
               </Text>
+              <Image
+              src={Avatar3}
+              width={56}
+              height={56}
+              pos={"absolute"}
+              top={329}
+              left={32}
+              />
+              <Text 
+            pos={"absolute"}
+            color="#FFF"
+            top={329}
+            left={98}
+            size={18}
+            weight={400}
+            >
+              Varuni Vij
+            </Text>
+            <Text 
+            pos={"absolute"}
+            color="#FFF"
+            top={361}
+            left={98}
+            size={12}
+            weight={400}
+            >
+             Former Media Planning & Content Lead, Reckitt India
+            </Text>
             </Card>
           </Carousel.Slide>
         </Carousel>
