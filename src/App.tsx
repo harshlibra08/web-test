@@ -29,8 +29,11 @@ import Strength1 from "./strength1.png";
 import Strength2 from "./strength2.png";
 import Strength3 from "./strength3.png";
 import Gradient from "./gradient1.png";
-import FooterBg from "./footerbg.png";
-import FooterGrad from "./footergradient.png";
+import Specialization from "./specialization.png";
+import Worldmap from "./WorldMap.png";
+//import FooterBg from "./footerbg.png";
+//import FooterGrad from "./footergradient.png";
+//import LandingMain from "./landing.svg";
 
 import {
   IconSearch,
@@ -634,7 +637,8 @@ function App() {
           <Box w="100%">
             <Divider
               size="md"
-              my={"60px"} mr={"197px"} 
+              my={"60px"}
+              mr={"157px"}
               label={
                 <Text size={"32px"} ml={140}>
                   Our Strengths
@@ -643,8 +647,8 @@ function App() {
               labelPosition="left"
             />
           </Box>
-            
-          {<IconCircleChevronLeft width={37} height={37} stroke={1}  />}
+
+          {<IconCircleChevronLeft width={37} height={37} stroke={1} />}
           {<IconCircleChevronRight width={37} height={37} stroke={1} />}
         </Group>
 
@@ -674,15 +678,31 @@ function App() {
                   w="100%"
                   h="100%"
                 />
-              <Text weight={600} h={92} w={347} size={40} pos="absolute"  top={283} color="#FFFFFF"
-              >
-                Latest Technology
-              </Text>
+                <Text
+                  weight={600}
+                  h={92}
+                  w={347}
+                  size={40}
+                  pos="absolute"
+                  top={283}
+                  color="#FFFFFF"
+                >
+                  Latest Technology
+                </Text>
 
-              <Text size="14px" weight={600} w={288} h={57} pt={29} pos="absolute"  top={404} color="#000000">
-                We use the latest available and accessible technology for long
-                lasting and trouble-free field performance.
-              </Text>
+                <Text
+                  size="14px"
+                  weight={600}
+                  w={288}
+                  h={57}
+                  pt={29}
+                  pos="absolute"
+                  top={404}
+                  color="#000000"
+                >
+                  We use the latest available and accessible technology for long
+                  lasting and trouble-free field performance.
+                </Text>
               </Box>
             </Card.Section>
           </Card>
@@ -713,11 +733,28 @@ function App() {
                   h="100%"
                 />
               </Box>
-              <Text weight={600} h={92} w={249} size={40} pos="absolute"  top={283} color="#FFFFFF">
+              <Text
+                weight={600}
+                h={92}
+                w={249}
+                size={40}
+                pos="absolute"
+                top={283}
+                color="#FFFFFF"
+              >
                 Global Standards
               </Text>
 
-              <Text size="14px" weight={600} w={288} h={57} pt={29} pos="absolute"  top={404} color="#000000">
+              <Text
+                size="14px"
+                weight={600}
+                w={288}
+                h={57}
+                pt={29}
+                pos="absolute"
+                top={404}
+                color="#000000"
+              >
                 Our products are performing in nearly all the states in the
                 country and in more than 25 countries around the world
               </Text>
@@ -750,11 +787,28 @@ function App() {
                   h="100%"
                 />
               </Box>
-              <Text weight={600} h={92} w={347} size={40} pos="absolute"  top={283} color="#FFFFFF">
+              <Text
+                weight={600}
+                h={92}
+                w={347}
+                size={40}
+                pos="absolute"
+                top={283}
+                color="#FFFFFF"
+              >
                 Client Centered Approach
               </Text>
 
-              <Text size="14px" weight={600} w={288} h={57} pt={29} pos="absolute"  top={404} color="#000000">
+              <Text
+                size="14px"
+                weight={600}
+                w={288}
+                h={57}
+                pt={29}
+                pos="absolute"
+                top={404}
+                color="#000000"
+              >
                 While designing and manufacturing our products, we sustain a way
                 in which our services benefit the customers.
               </Text>
@@ -762,6 +816,10 @@ function App() {
           </Card>
         </Group>
       </Paper>
+      <br />
+      <br />
+      <br />
+      <br />
 
       {/* Who are we Component*/}
       <Paper w={1440} h={696} withBorder>
@@ -813,33 +871,154 @@ function App() {
       <br />
       <br />
 
-      {/* Footer Component */}
+      {/**Our Specialization Component */}
+      <Paper w={1440} h={696} withBorder>
+        <Container>
+          <Grid gutter="lg">
+            <Col span={6}>
+              <Paper shadow="xs" mt={126} mr={833}>
+                <img
+                  src={Specialization}
+                  alt="Sample"
+                  width={493}
+                  height={451}
+                  style={{ flexShrink: "0" }}
+                />
+              </Paper>
+            </Col>
+            <Col span={6}>
+              <Text
+                size="32px"
+                w={596}
+                h={44}
+                weight={600}
+                pt={218}
+                ml={104}
+                style={{ lineHeight: "51.2px" }}
+              >
+                Our Specialization
+              </Text>
+              <Text
+                h={176}
+                w={606}
+                color="#555459"
+                size={16}
+                weight={400}
+                pt={26}
+                mb={40}
+                ml={104}
+                mt={34}
+                style={{ lineHeight: "24px" }}
+              >
+                We are specialized Temperature/Process Indicators, Large Display
+                Temperature/Process Indicators, Digital Portable Thermometer &
+                Hygro-Thermometer, Temperature/Process Controllers, PID
+                Temperature/Process Controllers, Ramp/Soak Programmable
+                Temperature/Processs Controllers
+                <br />
+                <br />
+                Multizone PID Ramp/Soak Programmable Temperature Controllers,
+                Temperature/Process Scanners, Temperature/Process Data Loggers,
+                Data Acquisition Software, Temperature & Humidity (T+Rh) Sensors
+                & Transmitters.
+              </Text>
+            </Col>
+          </Grid>
+        </Container>
+      </Paper>
+      <br />
+      <br />
+      <br />
+      <br />
 
-      <Paper w={1440} h={739} withBorder>
-          <Image 
-            src={FooterBg}
-            
-            ml={64}
-            mt={56}
-            style={{width:"1312px", height:"739px"}}
+      {/** World Component */}
+      <Paper w={1440} h={748} withBorder>
+        <Container>
+          <Grid gutter="lg">
+            <Col span={6}>
+              <Paper>
+              <Text
+                size="32px"
+                //w={558}
+                h={102}
+                color="#292929"
+                weight={600}
+                pt={205}
+                pb={16}
+                style={{ lineHeight: "51.2px" }}
+              >
+                The Global Impact
+              </Text>
+              <Text
+                h={44}
+                w={298}
+                color="#555459"
+                size={16}
+                weight={600}
+                pt={45}
+                mb={40}
+                style={{ lineHeight: "22.4px" }}
+              >
+                The products we’ve manufactured have been used over
+              </Text>
+              <Text
+                size="56px"
+                //w={558}
+                h={76}
+                color="#555459"
+                weight={600}
+                pt={4}
+                pl={40}
+              >
+                100 million
+              </Text>
 
-          />
-          <Text 
-            size={32}
-            weight={"600"}
-            w={347}
-            h={51}
-            mt={96}
-          >
-            REQUEST A CALL BACK
-          </Text>
+              <Text
+               
+                w={298}
+                color="#555459"
+                size={16}
+                weight={600}
+                pt={4}
+                pl={40}
+              >
+                users & has been exported
+              </Text>
 
+              <Text
+                size="56px"
+                h={76}
+                color="#555459"
+                weight={600}
+                pt={4}
+                pl={80}
+                //mr={60}
+              >
+                8 countries
+              </Text>
+
+              <Text
+                h={44}
+                //w={298}
+                color="#555459"
+                size={16}
+                weight={600}
+                mb={40}
+                pl={80}
+              >
+                worldwide
+              </Text>
+              </Paper>
+            </Col>
+            <Col span={6}>
+              <Paper w={698} h={457} mr={141} mt={135}>
+                <img src={Worldmap} alt="World" />
+              </Paper>
+            </Col>
+          </Grid>
+        </Container>
       </Paper>
 
-      <br />
-      <br />
-      <br />
-      <br />
       {/* Button components */}
       <Paper>
         <Stack align="center">
