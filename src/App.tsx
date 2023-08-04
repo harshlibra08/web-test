@@ -31,6 +31,8 @@ import Strength3 from "./strength3.png";
 import Gradient from "./gradient1.png";
 import Specialization from "./specialization.png";
 import Worldmap from "./WorldMap.png";
+import PRC from "./prc.png";
+import PRCBg from "./prcbg.png";
 //import FooterBg from "./footerbg.png";
 //import FooterGrad from "./footergradient.png";
 //import LandingMain from "./landing.svg";
@@ -937,82 +939,129 @@ function App() {
           <Grid gutter="lg">
             <Col span={6}>
               <Paper>
-              <Text
-                size="32px"
-                //w={558}
-                h={102}
-                color="#292929"
-                weight={600}
-                pt={205}
-                pb={16}
-                style={{ lineHeight: "51.2px" }}
-              >
-                The Global Impact
-              </Text>
-              <Text
-                h={44}
-                w={298}
-                color="#555459"
-                size={16}
-                weight={600}
-                pt={45}
-                mb={40}
-                style={{ lineHeight: "22.4px" }}
-              >
-                The products we’ve manufactured have been used over
-              </Text>
-              <Text
-                size="56px"
-                //w={558}
-                h={76}
-                color="#555459"
-                weight={600}
-                pt={4}
-                pl={40}
-              >
-                100 million
-              </Text>
+                <Text
+                  size="32px"
+                  //w={558}
+                  h={102}
+                  color="#292929"
+                  weight={600}
+                  pt={205}
+                  pb={16}
+                  style={{ lineHeight: "51.2px" }}
+                >
+                  The Global Impact
+                </Text>
+                <Text
+                  h={44}
+                  w={298}
+                  color="#555459"
+                  size={16}
+                  weight={600}
+                  pt={45}
+                  mb={40}
+                  style={{ lineHeight: "22.4px" }}
+                >
+                  The products we’ve manufactured have been used over
+                </Text>
+                <Text
+                  size="56px"
+                  //w={558}
+                  h={76}
+                  color="#555459"
+                  weight={600}
+                  pt={4}
+                  pl={40}
+                >
+                  100 million
+                </Text>
 
-              <Text
-               
-                w={298}
-                color="#555459"
-                size={16}
-                weight={600}
-                pt={4}
-                pl={40}
-              >
-                users & has been exported
-              </Text>
+                <Text
+                  w={298}
+                  color="#555459"
+                  size={16}
+                  weight={600}
+                  pt={4}
+                  pl={40}
+                >
+                  users & has been exported
+                </Text>
 
-              <Text
-                size="56px"
-                h={76}
-                color="#555459"
-                weight={600}
-                pt={4}
-                pl={80}
-                //mr={60}
-              >
-                8 countries
-              </Text>
+                <Text
+                  size="56px"
+                  h={76}
+                  color="#555459"
+                  weight={600}
+                  pt={4}
+                  pl={80}
+                  //mr={60}
+                >
+                  8 countries
+                </Text>
 
-              <Text
-                h={44}
-                //w={298}
-                color="#555459"
-                size={16}
-                weight={600}
-                mb={40}
-                pl={80}
-              >
-                worldwide
-              </Text>
+                <Text
+                  h={44}
+                  //w={298}
+                  color="#555459"
+                  size={16}
+                  weight={600}
+                  mb={40}
+                  pl={80}
+                >
+                  worldwide
+                </Text>
               </Paper>
             </Col>
             <Col span={6}>
               <Paper w={698} h={457} mr={141} mt={135}>
                 <img src={Worldmap} alt="World" />
+              </Paper>
+            </Col>
+          </Grid>
+        </Container>
+      </Paper>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      {/** Our process video */}
+      <Paper w={1440} h={696} withBorder>
+        <Container>
+          <Grid>
+            <Col span={2}>
+              <Paper>
+                <Image
+                  src={PRC}
+                  height={696}
+                  width={607}
+                  left={0}
+                  pos={"absolute"}
+                />
+                <Image
+                  src={PRCBg}
+                  height={696}
+                  width={607}
+                  left={0}
+                  pos={"absolute"}
+                />
+              </Paper>
+              <Paper>
+              <Col span={6}>
+              
+              <Text
+                size="32px"
+                w={191}
+                h={44}
+                weight={600}
+                pt={167}
+                pl={730}
+                style={{ lineHeight: "51.2px" }}
+              >
+                Our Process
+              </Text>
+             
+            </Col>
+              
               </Paper>
             </Col>
           </Grid>
@@ -1029,6 +1078,10 @@ function App() {
           <PrimaryButton>add to wishlist</PrimaryButton>
           <SecondaryButton>Apply Now</SecondaryButton>
           <TertiaryButton>View cart</TertiaryButton>
+          <br />
+          <br />
+          <br />
+          <br />
 
           {/* Product card */}
           <Card withBorder>
