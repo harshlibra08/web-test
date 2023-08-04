@@ -33,6 +33,13 @@ import Specialization from "./specialization.png";
 import Worldmap from "./WorldMap.png";
 import PRC from "./prc.png";
 import PRCBg from "./prcbg.png";
+import Tifr from "./tifr.png";
+import Quote from "./quote.png";
+import Bhel from "./bhel.png";
+import Avatar1 from "./avatar1.png";
+import Avatar2 from "./avatar2.png";
+import Avatar3 from "./avatar3.png";
+
 //import FooterBg from "./footerbg.png";
 //import FooterGrad from "./footergradient.png";
 //import LandingMain from "./landing.svg";
@@ -46,6 +53,8 @@ import {
   IconCircleChevronLeft,
   IconCircleChevronRight,
 } from "@tabler/icons-react";
+
+import { Carousel } from "@mantine/carousel";
 
 const OptionsButton = ({ ...props }: ButtonProps) => (
   <Button
@@ -1027,46 +1036,257 @@ function App() {
       {/** Our process video */}
       <Paper w={1440} h={696} withBorder>
         <Container>
-          <Grid>
-            <Col span={2}>
-              <Paper>
+          <Grid gutter="lg">
+            <Col span={6}>
+              <Paper pos={"initial"}>
                 <Image
                   src={PRC}
-                  height={696}
+                  alt="prc"
                   width={607}
+                  height={696}
                   left={0}
-                  pos={"absolute"}
+                  pos="absolute"
+                  pl={0}
+                  ml={0}
                 />
                 <Image
                   src={PRCBg}
-                  height={696}
+                  alt="prc"
                   width={607}
+                  height={696}
                   left={0}
-                  pos={"absolute"}
+                  pl={0}
+                  ml={0}
+                  pos="absolute"
                 />
               </Paper>
-              <Paper>
-              <Col span={6}>
-              
+            </Col>
+
+            <Col span={6}>
               <Text
                 size="32px"
-                w={191}
-                h={44}
+                w={374}
+                h={102}
                 weight={600}
-                pt={167}
-                pl={730}
+                mt={123}
                 style={{ lineHeight: "51.2px" }}
               >
                 Our Process
               </Text>
-             
-            </Col>
-              
-              </Paper>
+              <Text h={44} w={592} color="#555459" size={16} weight={400}>
+                Our systems and instruments are developed and designed by a team
+                of skilled engineers, who hold expertise in their respective
+                field. We offer our clients with modernized development and
+                design services for both software and hardware.
+                <br />
+                <br />
+                <br />
+                Our extensive range of products is closely inspected by
+                industrial experts on stringent quality parameters to ensure its
+                smooth functioning, durability, reliability, sturdy construction
+                and long service life. We are currently supported by 1,50,000
+                instruments, enabling us with an outstanding range of output.
+              </Text>
             </Col>
           </Grid>
         </Container>
       </Paper>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      {/** Carousel Testimonials */}
+      <Paper w={1440} h={696} withBorder style={{ backgroundColor: "black" }}>
+        <Group noWrap spacing={0}>
+          <Box w="100%">
+            <Divider
+              size="md"
+              my={"60px"}
+              mr={"157px"}
+              label={
+                <Text size={"32px"} ml={140} color="#FFFFFF">
+                  Client Testimonals
+                </Text>
+              }
+              labelPosition="left"
+            />
+          </Box>
+
+          {
+            <IconCircleChevronLeft
+              width={37}
+              height={37}
+              stroke={1}
+              color="#FFFFFF"
+            />
+          }
+          {
+            <IconCircleChevronRight
+              width={37}
+              height={37}
+              stroke={1}
+              color="#FFFFFF"
+            />
+          }
+        </Group>
+        <Carousel
+          height={417}
+          slideSize="33.333333%"
+          slideGap={64}
+          loop
+          pl={114}
+          align="start"
+          style={{
+            alignContent: "center",
+          }}
+          breakpoints={[
+            { maxWidth: "md", slideSize: "50%" },
+            { maxWidth: "sm", slideSize: "100%", slideGap: 0 },
+          ]}
+        >
+          <Carousel.Slide>
+            <Card
+              w={423}
+              h={417}
+              withBorder
+              bg="#222222"
+              style={{
+                position: "relative",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <Image
+                src={Tifr}
+                width={127}
+                height={61}
+                pos={"absolute"}
+                top={32}
+                left={32}
+              />
+              <Image
+                src={Quote}
+                width={36.014}
+                height={32}
+                pos={"absolute"}
+                top={31}
+                right={29}
+              />
+              <Text
+                color="#FFFFFF"
+                size={16}
+                w={368}
+                h={110}
+                mt={112}
+                ml={32}
+                mr={23}
+                weight={400}
+              >
+                Libratherm products are performing in nearly all the states in
+                the country and in more than 25 countries around the world.
+                While designing and manufacturing their products, they sustain a
+                way in which their services benefit us.
+              </Text>
+            </Card>
+          </Carousel.Slide>
+
+          <Carousel.Slide>
+            <Card
+              w={423}
+              h={417}
+              withBorder
+              bg="#222222"
+              style={{
+                position: "relative",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <Image
+                src={Bhel}
+                width={83}
+                height={79}
+                pos={"absolute"}
+                top={15}
+                left={26}
+              />
+              <Image
+                src={Quote}
+                width={36.014}
+                height={32}
+                pos={"absolute"}
+                top={31}
+                right={29}
+              />
+              <Text
+                color="#FFFFFF"
+                size={16}
+                w={368}
+                h={110}
+                mt={112}
+                ml={32}
+                mr={23}
+                weight={400}
+              >
+                Libratherm products are performing in nearly all the states in
+                the country and in more than 25 countries around the world.
+                While designing and manufacturing their products, they sustain a
+                way in which their services benefit us.
+              </Text>
+            </Card>
+          </Carousel.Slide>
+          <Carousel.Slide>
+            <Card
+              w={423}
+              h={417}
+              withBorder
+              bg="#222222"
+              style={{
+                position: "relative",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <Image
+                src={Tifr}
+                width={127}
+                height={61}
+                pos={"absolute"}
+                top={32}
+                left={32}
+              />
+              <Image
+                src={Quote}
+                width={36.014}
+                height={32}
+                pos={"absolute"}
+                top={31}
+                right={29}
+              />
+              <Text
+                color="#FFFFFF"
+                size={16}
+                w={368}
+                h={110}
+                mt={112}
+                ml={32}
+                mr={23}
+                weight={400}
+              >
+                Libratherm products are performing in nearly all the states in
+                the country and in more than 25 countries around the world.
+                While designing and manufacturing their products, they sustain a
+                way in which their services benefit us.
+              </Text>
+            </Card>
+          </Carousel.Slide>
+        </Carousel>
+      </Paper>
+      <br />
+      <br />
+      <br />
+      <br />
 
       {/* Button components */}
       <Paper>
