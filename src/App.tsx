@@ -21,9 +21,10 @@ import {
   Grid,
   Col,
   Text,
+  UnstyledButton,
 } from "@mantine/core";
 import BGImage from "./bgimage.png";
-import LandingImage from "./Rectangle.png";
+//import LandingImage from "./Rectangle.png";
 import WHO from "./who.png";
 import Strength1 from "./strength1.png";
 import Strength2 from "./strength2.png";
@@ -39,10 +40,18 @@ import Bhel from "./bhel.png";
 import Avatar1 from "./avatar1.png";
 import Avatar2 from "./avatar2.png";
 import Avatar3 from "./avatar3.png";
+import Event1 from "./event1.png";
+import Event2 from "./event2.png";
+import Event3 from "./event3.png";
+import Event4 from "./event4.png";
+import Event5 from "./event5.png";
+import Event6 from "./event6.png";
+import EventBg from "./eventbg.png";
+import OurTeam from "./team.png";
 
 //import FooterBg from "./footerbg.png";
 //import FooterGrad from "./footergradient.png";
-//import LandingMain from "./landing.svg";
+import LandingMain from "./landing.svg";
 
 import {
   IconSearch,
@@ -52,6 +61,7 @@ import {
   IconChevronsDown,
   IconCircleChevronLeft,
   IconCircleChevronRight,
+  IconChevronDown,
 } from "@tabler/icons-react";
 
 import { Carousel } from "@mantine/carousel";
@@ -298,10 +308,10 @@ function App() {
       <HeaderSearch links={links} />
 
       {/* Landingpage hero */}
-      <Paper w={1440} h={688} withBorder>
+      <Paper w={1400} h={688} withBorder>
         <Container>
           <Grid gutter="lg">
-            <Col span={6}>
+            <Col span={6} style={{ zIndex: 2, position: "relative" }}>
               <Text
                 size="32px"
                 w={374}
@@ -358,10 +368,11 @@ function App() {
             <Col span={6}>
               <Paper shadow="xs">
                 <img
-                  src={LandingImage}
+                  src={LandingMain}
                   alt="Sample"
-                  width={1209}
+                  width={1446}
                   height={688}
+                  style={{ marginLeft: "-600px" }}
                 />
               </Paper>
             </Col>
@@ -1149,7 +1160,6 @@ function App() {
             <Card
               w={423}
               h={417}
-              
               bg="#222222"
               style={{
                 position: "relative",
@@ -1190,34 +1200,33 @@ function App() {
               </Text>
 
               <Image
-              src={Avatar1}
-              width={56}
-              height={56}
-              pos={"absolute"}
-              top={329}
-              left={32}
+                src={Avatar1}
+                width={56}
+                height={56}
+                pos={"absolute"}
+                top={329}
+                left={32}
               />
-            <Text 
-            pos={"absolute"}
-            color="#FFF"
-            top={329}
-            left={98}
-            size={18}
-            weight={400}
-            >
-              Varuni Vij
-            </Text>
-            <Text 
-            pos={"absolute"}
-            color="#FFF"
-            top={361}
-            left={98}
-            size={12}
-            weight={400}
-            >
-             Former Media Planning & Content Lead, Reckitt India
-            </Text>
-              
+              <Text
+                pos={"absolute"}
+                color="#FFF"
+                top={329}
+                left={98}
+                size={18}
+                weight={400}
+              >
+                Varuni Vij
+              </Text>
+              <Text
+                pos={"absolute"}
+                color="#FFF"
+                top={361}
+                left={98}
+                size={12}
+                weight={400}
+              >
+                Former Media Planning & Content Lead, Reckitt India
+              </Text>
             </Card>
           </Carousel.Slide>
 
@@ -1225,7 +1234,6 @@ function App() {
             <Card
               w={423}
               h={417}
-            
               bg="#222222"
               style={{
                 position: "relative",
@@ -1265,40 +1273,39 @@ function App() {
                 way in which their services benefit us.
               </Text>
               <Image
-              src={Avatar2}
-              width={56}
-              height={56}
-              pos={"absolute"}
-              top={329}
-              left={32}
+                src={Avatar2}
+                width={56}
+                height={56}
+                pos={"absolute"}
+                top={329}
+                left={32}
               />
-              <Text 
-            pos={"absolute"}
-            color="#FFF"
-            top={329}
-            left={98}
-            size={18}
-            weight={400}
-            >
-              Varuni Vij
-            </Text>
-            <Text 
-            pos={"absolute"}
-            color="#FFF"
-            top={361}
-            left={98}
-            size={12}
-            weight={400}
-            >
-             Former Media Planning & Content Lead, Reckitt India
-            </Text>
+              <Text
+                pos={"absolute"}
+                color="#FFF"
+                top={329}
+                left={98}
+                size={18}
+                weight={400}
+              >
+                Varuni Vij
+              </Text>
+              <Text
+                pos={"absolute"}
+                color="#FFF"
+                top={361}
+                left={98}
+                size={12}
+                weight={400}
+              >
+                Former Media Planning & Content Lead, Reckitt India
+              </Text>
             </Card>
           </Carousel.Slide>
           <Carousel.Slide>
             <Card
               w={423}
               h={417}
-             
               bg="#222222"
               style={{
                 position: "relative",
@@ -1338,33 +1345,33 @@ function App() {
                 way in which their services benefit us.
               </Text>
               <Image
-              src={Avatar3}
-              width={56}
-              height={56}
-              pos={"absolute"}
-              top={329}
-              left={32}
+                src={Avatar3}
+                width={56}
+                height={56}
+                pos={"absolute"}
+                top={329}
+                left={32}
               />
-              <Text 
-            pos={"absolute"}
-            color="#FFF"
-            top={329}
-            left={98}
-            size={18}
-            weight={400}
-            >
-              Varuni Vij
-            </Text>
-            <Text 
-            pos={"absolute"}
-            color="#FFF"
-            top={361}
-            left={98}
-            size={12}
-            weight={400}
-            >
-             Former Media Planning & Content Lead, Reckitt India
-            </Text>
+              <Text
+                pos={"absolute"}
+                color="#FFF"
+                top={329}
+                left={98}
+                size={18}
+                weight={400}
+              >
+                Varuni Vij
+              </Text>
+              <Text
+                pos={"absolute"}
+                color="#FFF"
+                top={361}
+                left={98}
+                size={12}
+                weight={400}
+              >
+                Former Media Planning & Content Lead, Reckitt India
+              </Text>
             </Card>
           </Carousel.Slide>
         </Carousel>
@@ -1373,6 +1380,282 @@ function App() {
       <br />
       <br />
       <br />
+
+      {/** Events Components */}
+      <Paper w={1440} h={1046} withBorder style={{ backgroundColor: "black" }}>
+        <Text color="#E4E8ED" size={14} mt={106} ml={140}>
+          WHAT HAVE WE BEEN DOING
+        </Text>
+        <Group noWrap spacing={0}>
+          <Box w="100%">
+            <Divider
+              size="md"
+              my={"60px"}
+              mr={"157px"}
+              label={
+                <Text size={"32px"} ml={140} color="#FFF" mt={-40}>
+                  Events
+                </Text>
+              }
+              labelPosition="left"
+            />
+          </Box>
+        </Group>
+        <Group position="center" spacing="lg">
+          <Grid gutter="lg">
+            <Grid.Col span={4}>
+              <Box pos="relative" w={1200} h={280}>
+                <Image
+                  src={EventBg}
+                  height={202}
+                  width={82}
+                  pos="absolute"
+                  top={0}
+                  left={114}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Event1}
+                  height={164}
+                  width={164}
+                  pos="absolute"
+                  top={20}
+                  left={135}
+                  w="100%"
+                  h="100%"
+                />
+                <Text color="#E4E8ED" size={12} ml={319}>
+                  22nd January, 2023.
+                </Text>
+                <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                  Mumbai ACE Tech Exhibition
+                </Text>
+              </Box>
+            </Grid.Col>
+            <Grid.Col span={4}>
+              <Box pos="relative" w={1200} h={280}>
+                <Image
+                  src={EventBg}
+                  height={202}
+                  width={82}
+                  pos="absolute"
+                  top={0}
+                  left={114}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Event2}
+                  height={164}
+                  width={164}
+                  pos="absolute"
+                  top={20}
+                  left={135}
+                  w="100%"
+                  h="100%"
+                />
+                <Text color="#E4E8ED" size={12} ml={319}>
+                  22nd January, 2023.
+                </Text>
+                <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                  Mumbai ACE Tech Exhibition
+                </Text>
+              </Box>
+            </Grid.Col>
+            <Grid.Col span={4}>
+              <Box pos="relative" w={1200} h={280}>
+                <Image
+                  src={EventBg}
+                  height={202}
+                  width={82}
+                  pos="absolute"
+                  top={0}
+                  left={114}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Event3}
+                  height={164}
+                  width={164}
+                  pos="absolute"
+                  top={20}
+                  left={135}
+                  w="100%"
+                  h="100%"
+                />
+                <Text color="#E4E8ED" size={12} ml={319}>
+                  22nd January, 2023.
+                </Text>
+                <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                  Mumbai ACE Tech Exhibition
+                </Text>
+              </Box>
+            </Grid.Col>
+            <Grid.Col span={4}>
+              <Box pos="relative" w={1200} h={280}>
+                <Image
+                  src={EventBg}
+                  height={202}
+                  width={82}
+                  pos="absolute"
+                  top={0}
+                  left={114}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Event4}
+                  height={164}
+                  width={164}
+                  pos="absolute"
+                  top={20}
+                  left={135}
+                  w="100%"
+                  h="100%"
+                />
+                <Text color="#E4E8ED" size={12} ml={319}>
+                  22nd January, 2023.
+                </Text>
+                <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                  Mumbai ACE Tech Exhibition
+                </Text>
+              </Box>
+            </Grid.Col>
+            <Grid.Col span={4}>
+              <Box pos="relative" w={1200} h={280}>
+                <Image
+                  src={EventBg}
+                  height={202}
+                  width={82}
+                  pos="absolute"
+                  top={0}
+                  left={114}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Event5}
+                  height={164}
+                  width={164}
+                  pos="absolute"
+                  top={20}
+                  left={135}
+                  w="100%"
+                  h="100%"
+                />
+                <Text color="#E4E8ED" size={12} ml={319}>
+                  22nd January, 2023.
+                </Text>
+                <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                  Mumbai ACE Tech Exhibition
+                </Text>
+              </Box>
+            </Grid.Col>
+            <Grid.Col span={4}>
+              <Box pos="relative" w={1200} h={280}>
+                <Image
+                  src={EventBg}
+                  height={202}
+                  width={82}
+                  pos="absolute"
+                  top={0}
+                  left={114}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Event6}
+                  height={164}
+                  width={164}
+                  pos="absolute"
+                  top={20}
+                  left={135}
+                  w="100%"
+                  h="100%"
+                />
+                <Text color="#E4E8ED" size={12} ml={319}>
+                  22nd January, 2023.
+                </Text>
+                <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                  Mumbai ACE Tech Exhibition
+                </Text>
+              </Box>
+            </Grid.Col>
+          </Grid>
+          <UnstyledButton>
+            <Group>
+              <Text size="md" color="white">
+                Show more
+              </Text>
+              {<IconChevronDown size="20px" color="#FFF" />}
+            </Group>
+          </UnstyledButton>
+        </Group>
+      </Paper>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      {/** Our team Component */}
+     
+      <Paper w={1440} h={748} withBorder style={{backgroundColor: "black"}}>
+        <Container>
+          <Grid gutter="lg">
+            <Col span={6}>
+              <Paper pos={"initial"}>
+                <Image
+                  src={OurTeam}
+                  alt="prc"
+                  width={493}
+                  height={389}
+                  left={0}
+                  pos="absolute"
+                  pl={114}
+                  ml={0}
+                  pt={140}
+                />
+                
+              </Paper>
+            </Col>
+
+            <Col span={6}>
+              <Text
+                size="32px"
+                w={374}
+                h={102}
+                weight={600}
+                mt={140}
+                color="#FFF"
+               
+              >
+                Our Team
+              </Text>
+              <Text h={44} w={596} color="#FFFFFF" size={16} weight={400}>
+              Our core team comprises of people having the skill, competency,
+                experience, and willingness with the zeal to excel in every
+                assignment keeping the focus on our core purpose and core
+                values.Our highly qualified and trained professionals assist us
+                in effectively and efficiently undertaking our varied business
+                operations.
+                <br />
+                <br />
+           
+                We face every challenge to overcome the impediments
+                for successful execution and implementation of the designed
+                system within our company. We make sure to pass the benefits of
+                our skills, knowledge, experience, and wisdom to our employees
+                and the associates. The legacy of our vision will continue, in
+                spite of reaching the pinnacle of our growth and change of
+                generation. We will be committed to doing the business in the
+                right way.
+              </Text>
+            </Col>
+          </Grid>
+        </Container>
+      </Paper>
 
       {/* Button components */}
       <Paper>
