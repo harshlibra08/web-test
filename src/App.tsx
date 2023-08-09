@@ -2130,8 +2130,8 @@ function App() {
       <br />
       <br />
 
-       {/** Journal page - industry full list*/}
-       <Paper w={1440} h={3140} withBorder bg={"black"}>
+      {/** Journal page - industry full list*/}
+      <Paper w={1440} h={3140} withBorder bg={"black"}>
         <Group noWrap spacing={0}>
           <Box w="100%">
             <Text size={"32px"} mt={91} ml={114} color="#F6F6F6">
@@ -2201,7 +2201,7 @@ function App() {
                 22nd January, 2023.
               </Text>
               <Text color="#F6F6F6" size={32} ml={530} mt={16}>
-              Jewelry Manufacture
+                Jewelry Manufacture
               </Text>
               <Text
                 color="#E4E8ED"
@@ -2247,7 +2247,7 @@ function App() {
                 22nd January, 2023.
               </Text>
               <Text color="#F6F6F6" size={32} ml={530} mt={16}>
-              Pharmaceuticals
+                Pharmaceuticals
               </Text>
               <Text
                 color="#E4E8ED"
@@ -2293,7 +2293,7 @@ function App() {
                 22nd January, 2023.
               </Text>
               <Text color="#F6F6F6" size={32} ml={530} mt={16}>
-              Steel Plants
+                Steel Plants
               </Text>
               <Text
                 color="#E4E8ED"
@@ -2339,7 +2339,7 @@ function App() {
                 22nd January, 2023.
               </Text>
               <Text color="#F6F6F6" size={32} ml={530} mt={16}>
-              Jewelry Manufacture
+                Jewelry Manufacture
               </Text>
               <Text
                 color="#E4E8ED"
@@ -2385,7 +2385,7 @@ function App() {
                 22nd January, 2023.
               </Text>
               <Text color="#F6F6F6" size={32} ml={530} mt={16}>
-              Pharmaceuticals
+                Pharmaceuticals
               </Text>
               <Text
                 color="#E4E8ED"
@@ -2431,7 +2431,7 @@ function App() {
                 22nd January, 2023.
               </Text>
               <Text color="#F6F6F6" size={32} ml={530} mt={16}>
-              Steel Plants
+                Steel Plants
               </Text>
               <Text
                 color="#E4E8ED"
@@ -2491,6 +2491,8 @@ function App() {
               >
                 22nd January, 2023
               </Text>
+              <Box>
+
               <Text
                 size="32px"
                 w={558}
@@ -2500,9 +2502,10 @@ function App() {
                 style={{ lineHeight: "51.2px" }}
                 color="#F6F6F6"
                 ml={-160}
-              >
+                >
                 Glass Manufacture
               </Text>
+                </Box>
               <Text
                 h={154}
                 w={590}
@@ -2551,13 +2554,26 @@ function App() {
           <Card h={700} w={391} bg={"black"}>
             <Card.Section>
               <Box pos="relative" w={391} h={450} bg={"black"}>
+              <Text
+                  weight={400}
+                  h={92}
+                  w={347}
+                  size={24}
+                 
+                  mt={0}
+                  color="#F6F6F6"
+                  >
+                  Glass Bending
+                <Divider size="lg" mr={22} my={14}/>
+                </Text>
+                  </Box>
                 <Image
                   src={RectangleJournal}
                   height={172}
                   width={325}
                   alt="Client"
                   pos="absolute"
-                  top={10}
+                  top={55}
                   left={0}
                   w="100%"
                   h="100%"
@@ -2568,66 +2584,52 @@ function App() {
                   width={293}
                   alt="Client"
                   pos="absolute"
-                  top={26}
+                  top={73}
                   left={16}
                   w="100%"
                   h="100%"
                 />
+                
                 <Text
-                  weight={400}
-                  h={92}
-                  w={347}
-                  size={32}
-                  pos="absolute"
-                  mt={350}
-                  color="#F6F6F6"
-                >
-                  Industries
-                </Text>
-
-                <Text
-                  size="16px"
+                  size="14px"
                   weight={400}
                   w={325}
-                  h={46}
+                  h={136}
                   pos="absolute"
                   top={414}
                   color="#E4E8ED"
-                  lineClamp={2}
+                  lineClamp={5}
                 >
-                  Libratherm has supplied various types of temperature
-                  controllers, thyristor power controllers and control panels to
-                  the industries manufacturing Files, Diamond Tools, Machine
-                  Tools, Automobile parts, Hack saw blades, Stone cutting tools
-                  and circular blades etc… The temperature of the electrical or
-                  fuel fired heating systems, used for annealing, hardening,
-                  steam bluing and similar such processes, has been in use for
-                  precise control up to 1200-C, using our models PRC-300,
-                  PRC-309, PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with
-                  the sensor input from thermocouples or infrared non contact
-                  sensors.
+                  Libratherm offers Ramp Soak PID Temperature Controller -
+                  PRC-300, High Temperature Ramp Soak PID Controller - PRC-309
+                  and Three Phase Thyristor Power Controller - POW-3-PA-CL for
+                  the Glass Bending Process.
                 </Text>
-              </Box>
-              <UnstyledButton>
-                <Group>
-                  <Text size="20px" color="white" mt={32} weight={400}>
-                    Know more
-                  </Text>
-                </Group>
-              </UnstyledButton>
             </Card.Section>
           </Card>
 
           <Card h={700} w={391} bg={"black"}>
             <Card.Section>
               <Box pos="relative" w={391} h={450} bg={"black"}>
+              <Text
+                  weight={400}
+                  h={92}
+                  w={347}
+                  size={24}
+                 
+                  mt={0}
+                  color="#F6F6F6"
+                >
+                  Glass Toughening
+                  <Divider size="lg" mr={22} my={14}/>
+                </Text>
                 <Image
                   src={RectangleJournal}
                   height={172}
                   width={325}
                   alt="Client"
                   pos="absolute"
-                  top={10}
+                  top={55}
                   left={0}
                   w="100%"
                   h="100%"
@@ -2638,66 +2640,53 @@ function App() {
                   width={293}
                   alt="Client"
                   pos="absolute"
-                  top={26}
+                  top={73}
                   left={16}
                   w="100%"
                   h="100%"
                 />
-                <Text
-                  weight={400}
-                  h={92}
-                  w={347}
-                  size={32}
-                  pos="absolute"
-                  mt={350}
-                  color="#F6F6F6"
-                >
-                  Services
-                </Text>
+                
 
                 <Text
-                  size="16px"
+                  size="14px"
                   weight={400}
                   w={325}
-                  h={46}
+                  h={136}
                   pos="absolute"
                   top={414}
                   color="#E4E8ED"
-                  lineClamp={2}
                 >
-                  Libratherm has supplied various types of temperature
-                  controllers, thyristor power controllers and control panels to
-                  the industries manufacturing Files, Diamond Tools, Machine
-                  Tools, Automobile parts, Hack saw blades, Stone cutting tools
-                  and circular blades etc… The temperature of the electrical or
-                  fuel fired heating systems, used for annealing, hardening,
-                  steam bluing and similar such processes, has been in use for
-                  precise control up to 1200-C, using our models PRC-300,
-                  PRC-309, PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with
-                  the sensor input from thermocouples or infrared non contact
-                  sensors.
+                  Libratherm offers Multizone (upto 72 zones) Ramp Soak
+                  Temperature Controller - PRC-8000 with Three Phase Thyristor
+                  Power Controller - POW-3-PA-CL for the Glass Toughening
+                  Process.
                 </Text>
               </Box>
-              <UnstyledButton>
-                <Group>
-                  <Text size="20px" color="white" mt={32} weight={400}>
-                    Know more
-                  </Text>
-                </Group>
-              </UnstyledButton>
             </Card.Section>
           </Card>
 
           <Card h={700} w={391} bg={"black"}>
             <Card.Section>
               <Box pos="relative" w={391} h={450} bg={"black"}>
+              <Text
+                  weight={400}
+                  h={92}
+                  w={347}
+                  size={24}
+                 
+                  mt={0}
+                  color="#F6F6F6"
+                >
+                  Glass Melting
+                  <Divider size="lg" mr={22} my={14}/>
+                </Text>
                 <Image
                   src={RectangleJournal}
                   height={172}
                   width={325}
                   alt="Client"
                   pos="absolute"
-                  top={10}
+                  top={55}
                   left={0}
                   w="100%"
                   h="100%"
@@ -2708,56 +2697,314 @@ function App() {
                   width={293}
                   alt="Client"
                   pos="absolute"
-                  top={26}
+                  top={73}
                   left={16}
                   w="100%"
                   h="100%"
                 />
-                <Text
-                  weight={400}
-                  h={92}
-                  w={347}
-                  size={32}
-                  pos="absolute"
-                  mt={350}
-                  color="#F6F6F6"
-                >
-                  Applications
-                </Text>
+                
 
                 <Text
-                  size="16px"
+                  size="14px"
                   weight={400}
                   w={325}
-                  h={46}
+                  h={136}
                   pos="absolute"
                   top={414}
                   color="#E4E8ED"
-                  lineClamp={2}
+                  lineClamp={5}
                 >
-                  Libratherm has supplied various types of temperature
-                  controllers, thyristor power controllers and control panels to
-                  the industries manufacturing Files, Diamond Tools, Machine
-                  Tools, Automobile parts, Hack saw blades, Stone cutting tools
-                  and circular blades etc… The temperature of the electrical or
-                  fuel fired heating systems, used for annealing, hardening,
-                  steam bluing and similar such processes, has been in use for
-                  precise control up to 1200-C, using our models PRC-300,
-                  PRC-309, PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with
-                  the sensor input from thermocouples or infrared non contact
-                  sensors.
+                  Libratherm offers Thyristor Control Panel incorporating
+                  250KW-500KW Three Phase Thyristor Power Controller -
+                  POW-12-PA-CL and Advanced PID Temperature Controller - PID-966
+                  for Furnace Oil Heating.
                 </Text>
               </Box>
-              <UnstyledButton>
-                <Group>
-                  <Text size="20px" color="white" mt={32} weight={400}>
-                    Know more
-                  </Text>
-                </Group>
-              </UnstyledButton>
             </Card.Section>
           </Card>
         </Group>
+
+        <Group position="center" spacing="lg">
+          <Grid gutter="lg">
+            <Grid.Col span={4}>
+              <Box pos="relative" w={1200} h={280}>
+                <Image
+                  src={EventBg}
+                  height={202}
+                  width={82}
+                  pos="absolute"
+                  top={0}
+                  left={114}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Event1}
+                  height={164}
+                  width={164}
+                  pos="absolute"
+                  top={20}
+                  left={135}
+                  w="100%"
+                  h="100%"
+                />
+                <Text color="#E4E8ED" size={12} ml={319}>
+                  22nd January, 2023.
+                </Text>
+                <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                  Mumbai ACE Tech Exhibition
+                </Text>
+              </Box>
+            </Grid.Col>
+            <Grid.Col span={4}>
+              <Box pos="relative" w={1200} h={280}>
+                <Image
+                  src={EventBg}
+                  height={202}
+                  width={82}
+                  pos="absolute"
+                  top={0}
+                  left={114}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Event2}
+                  height={164}
+                  width={164}
+                  pos="absolute"
+                  top={20}
+                  left={135}
+                  w="100%"
+                  h="100%"
+                />
+                <Text color="#E4E8ED" size={12} ml={319}>
+                  22nd January, 2023.
+                </Text>
+                <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                  Mumbai ACE Tech Exhibition
+                </Text>
+              </Box>
+            </Grid.Col>
+            <Grid.Col span={4}>
+              <Box pos="relative" w={1200} h={280}>
+                <Image
+                  src={EventBg}
+                  height={202}
+                  width={82}
+                  pos="absolute"
+                  top={0}
+                  left={114}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Event3}
+                  height={164}
+                  width={164}
+                  pos="absolute"
+                  top={20}
+                  left={135}
+                  w="100%"
+                  h="100%"
+                />
+                <Text color="#E4E8ED" size={12} ml={319}>
+                  22nd January, 2023.
+                </Text>
+                <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                  Mumbai ACE Tech Exhibition
+                </Text>
+              </Box>
+            </Grid.Col>
+            <Grid.Col span={4}>
+              <Box pos="relative" w={1200} h={280}>
+                <Image
+                  src={EventBg}
+                  height={202}
+                  width={82}
+                  pos="absolute"
+                  top={0}
+                  left={114}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Event4}
+                  height={164}
+                  width={164}
+                  pos="absolute"
+                  top={20}
+                  left={135}
+                  w="100%"
+                  h="100%"
+                />
+                <Text color="#E4E8ED" size={12} ml={319}>
+                  22nd January, 2023.
+                </Text>
+                <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                  Mumbai ACE Tech Exhibition
+                </Text>
+              </Box>
+            </Grid.Col>
+            <Grid.Col span={4}>
+              <Box pos="relative" w={1200} h={280}>
+                <Image
+                  src={EventBg}
+                  height={202}
+                  width={82}
+                  pos="absolute"
+                  top={0}
+                  left={114}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Event5}
+                  height={164}
+                  width={164}
+                  pos="absolute"
+                  top={20}
+                  left={135}
+                  w="100%"
+                  h="100%"
+                />
+                <Text color="#E4E8ED" size={12} ml={319}>
+                  22nd January, 2023.
+                </Text>
+                <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                  Mumbai ACE Tech Exhibition
+                </Text>
+              </Box>
+            </Grid.Col>
+            <Grid.Col span={4}>
+              <Box pos="relative" w={1200} h={280}>
+                <Image
+                  src={EventBg}
+                  height={202}
+                  width={82}
+                  pos="absolute"
+                  top={0}
+                  left={114}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Event6}
+                  height={164}
+                  width={164}
+                  pos="absolute"
+                  top={20}
+                  left={135}
+                  w="100%"
+                  h="100%"
+                />
+                <Text color="#E4E8ED" size={12} ml={319}>
+                  22nd January, 2023.
+                </Text>
+                <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                  Mumbai ACE Tech Exhibition
+                </Text>
+              </Box>
+            </Grid.Col>
+            <Grid.Col span={4}>
+              <Box pos="relative" w={1200} h={280}>
+                <Image
+                  src={EventBg}
+                  height={202}
+                  width={82}
+                  pos="absolute"
+                  top={0}
+                  left={114}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Event6}
+                  height={164}
+                  width={164}
+                  pos="absolute"
+                  top={20}
+                  left={135}
+                  w="100%"
+                  h="100%"
+                />
+                <Text color="#E4E8ED" size={12} ml={319}>
+                  22nd January, 2023.
+                </Text>
+                <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                  Mumbai ACE Tech Exhibition
+                </Text>
+              </Box>
+            </Grid.Col>
+            <Grid.Col span={4}>
+              <Box pos="relative" w={1200} h={280}>
+                <Image
+                  src={EventBg}
+                  height={202}
+                  width={82}
+                  pos="absolute"
+                  top={0}
+                  left={114}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Event6}
+                  height={164}
+                  width={164}
+                  pos="absolute"
+                  top={20}
+                  left={135}
+                  w="100%"
+                  h="100%"
+                />
+                <Text color="#E4E8ED" size={12} ml={319}>
+                  22nd January, 2023.
+                </Text>
+                <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                  Mumbai ACE Tech Exhibition
+                </Text>
+              </Box>
+            </Grid.Col>
+            <Grid.Col span={4}>
+              <Box pos="relative" w={1200} h={280}>
+                <Image
+                  src={EventBg}
+                  height={202}
+                  width={82}
+                  pos="absolute"
+                  top={0}
+                  left={114}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Event6}
+                  height={164}
+                  width={164}
+                  pos="absolute"
+                  top={20}
+                  left={135}
+                  w="100%"
+                  h="100%"
+                />
+                <Text color="#E4E8ED" size={12} ml={319}>
+                  22nd January, 2023.
+                </Text>
+                <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                  Mumbai ACE Tech Exhibition
+                </Text>
+              </Box>
+            </Grid.Col>
+          </Grid>
+          </Group>
+
+
+
+
+
+
+
       </Paper>
       <br />
       <br />
