@@ -22,6 +22,7 @@ import {
   Col,
   Text,
   UnstyledButton,
+  SimpleGrid,
 } from "@mantine/core";
 import BGImage from "./bgimage.png";
 //import LandingImage from "./Rectangle.png";
@@ -48,7 +49,14 @@ import Event5 from "./event5.png";
 import Event6 from "./event6.png";
 import EventBg from "./eventbg.png";
 import OurTeam from "./team.png";
-
+import Goal1 from "./goal1.png";
+import Goal2 from "./goal2.png";
+import Goal3 from "./goal3.png";
+import Goal4 from "./goal4.png";
+import Vision from "./vision.png";
+import RectangleGrey from "./Rectangle3683.png";
+import RectangleOmega from "./RectangleOmega.png";
+import BrandImg from "./brand.png";
 //import FooterBg from "./footerbg.png";
 //import FooterGrad from "./footergradient.png";
 import LandingMain from "./landing.svg";
@@ -844,7 +852,7 @@ function App() {
       <br />
 
       {/* Who are we Component*/}
-      <Paper w={1440} h={696} withBorder>
+      <Paper w={1440} h={696} withBorder bg={"black"}>
         <Container>
           <Grid gutter="lg">
             <Col span={6}>
@@ -858,6 +866,7 @@ function App() {
                 weight={600}
                 pt={16}
                 style={{ lineHeight: "51.2px" }}
+                color="#F6F6F6"
               >
                 How it all began: The Omega <br />
                 moment
@@ -865,10 +874,10 @@ function App() {
               <Text
                 h={110}
                 w={500}
-                color="#555459"
+                color="#E4E8ED"
                 size={14}
                 weight={400}
-                pt={26}
+                pt={36}
                 mb={40}
                 style={{ lineHeight: "22.4px" }}
               >
@@ -881,69 +890,26 @@ function App() {
               </Text>
             </Col>
             <Col span={6}>
-              <Paper shadow="xs" mt={126} ml={114}>
-                <img src={WHO} alt="Sample" width={493} height={451} />
-              </Paper>
-            </Col>
-          </Grid>
-        </Container>
-      </Paper>
-      <br />
-      <br />
-      <br />
-      <br />
+              <Image
+                src={RectangleOmega}
+                bg={"black"}
+                width={509}
+                height={696}
+                pos={"absolute"}
+                left={931}
+                pr={0}
+                mt={0}
+              />
 
-      {/**Our Specialization Component */}
-      <Paper w={1440} h={696} withBorder>
-        <Container>
-          <Grid gutter="lg">
-            <Col span={6}>
-              <Paper shadow="xs" mt={126} mr={833}>
-                <img
-                  src={Specialization}
-                  alt="Sample"
-                  width={493}
-                  height={451}
-                  style={{ flexShrink: "0" }}
-                />
-              </Paper>
-            </Col>
-            <Col span={6}>
-              <Text
-                size="32px"
-                w={596}
-                h={44}
-                weight={600}
-                pt={218}
-                ml={104}
-                style={{ lineHeight: "51.2px" }}
-              >
-                Our Specialization
-              </Text>
-              <Text
-                h={176}
-                w={606}
-                color="#555459"
-                size={16}
-                weight={400}
-                pt={26}
-                mb={40}
-                ml={104}
-                mt={34}
-                style={{ lineHeight: "24px" }}
-              >
-                We are specialized Temperature/Process Indicators, Large Display
-                Temperature/Process Indicators, Digital Portable Thermometer &
-                Hygro-Thermometer, Temperature/Process Controllers, PID
-                Temperature/Process Controllers, Ramp/Soak Programmable
-                Temperature/Processs Controllers
-                <br />
-                <br />
-                Multizone PID Ramp/Soak Programmable Temperature Controllers,
-                Temperature/Process Scanners, Temperature/Process Data Loggers,
-                Data Acquisition Software, Temperature & Humidity (T+Rh) Sensors
-                & Transmitters.
-              </Text>
+              <Image
+                src={WHO}
+                alt="Sample"
+                width={493}
+                height={451}
+                pos={"absolute"}
+                mt={126}
+                ml={114}
+              />
             </Col>
           </Grid>
         </Container>
@@ -1600,8 +1566,8 @@ function App() {
       <br />
 
       {/** Our team Component */}
-     
-      <Paper w={1440} h={748} withBorder style={{backgroundColor: "black"}}>
+
+      <Paper w={1440} h={748} withBorder style={{ backgroundColor: "black" }}>
         <Container>
           <Grid gutter="lg">
             <Col span={6}>
@@ -1617,7 +1583,6 @@ function App() {
                   ml={0}
                   pt={140}
                 />
-                
               </Paper>
             </Col>
 
@@ -1629,12 +1594,11 @@ function App() {
                 weight={600}
                 mt={140}
                 color="#FFF"
-               
               >
                 Our Team
               </Text>
               <Text h={44} w={596} color="#FFFFFF" size={16} weight={400}>
-              Our core team comprises of people having the skill, competency,
+                Our core team comprises of people having the skill, competency,
                 experience, and willingness with the zeal to excel in every
                 assignment keeping the focus on our core purpose and core
                 values.Our highly qualified and trained professionals assist us
@@ -1642,20 +1606,293 @@ function App() {
                 operations.
                 <br />
                 <br />
-           
-                We face every challenge to overcome the impediments
-                for successful execution and implementation of the designed
-                system within our company. We make sure to pass the benefits of
-                our skills, knowledge, experience, and wisdom to our employees
-                and the associates. The legacy of our vision will continue, in
-                spite of reaching the pinnacle of our growth and change of
-                generation. We will be committed to doing the business in the
-                right way.
+                We face every challenge to overcome the impediments for
+                successful execution and implementation of the designed system
+                within our company. We make sure to pass the benefits of our
+                skills, knowledge, experience, and wisdom to our employees and
+                the associates. The legacy of our vision will continue, in spite
+                of reaching the pinnacle of our growth and change of generation.
+                We will be committed to doing the business in the right way.
               </Text>
             </Col>
           </Grid>
         </Container>
       </Paper>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      {/** Our Goals Section */}
+      <Paper w={1440} h={696} withBorder bg={"black"}>
+        <Container>
+          <Grid gutter="380px">
+            <Col span={6}>
+              <Text
+                size="32px"
+                w={596}
+                h={44}
+                weight={600}
+                mt={145}
+                style={{ lineHeight: "51.2px" }}
+                color="#F6F6F6"
+                ml={-100}
+              >
+                Our Goal
+              </Text>
+              <Text
+                h={264}
+                w={596}
+                color="#E4E8ED"
+                size={16}
+                weight={400}
+                mt={24}
+                mb={40}
+                ml={-100}
+                style={{ lineHeight: "22.4px" }}
+              >
+                Libratherm has been catering to various industries by supplying
+                the standard and customized process control instruments and
+                systems to meet and satisfy their requirement.
+                <br />
+                <br />
+                <br />
+                Our products are widely used in Engineering Industries, Heat
+                Treatment Plants, Glass Industries, Furnace & Oven Industries,
+                Pharmaceutical Industries, Jewellery Industries, Power
+                Generating Industries, Sponge Iron Industries, Environmental
+                Chambers, Petroleum Industries, Steel Industries, Textile
+                Industries, BOD Incubators, HVAC Industries, AHU Industries,
+                APFC Industries, Packaging Industries, Automation Industries,
+                Plastic Industries, Food Industries, Pollution Control
+                Industries, Petrochemical Industries, Water Treatment Plants,
+                Research and Defence Institutes.
+              </Text>
+            </Col>
+            <SimpleGrid cols={2} pl={750} mt={-590}>
+              <div style={{ marginLeft: 25 }}>
+                <Image src={Goal1} height={189} width={234} />
+              </div>
+              <div>
+                <Image src={Goal2} height={189} width={234} />
+              </div>
+              <div style={{ marginLeft: 25, marginTop: -190 }}>
+                <Image src={Goal3} height={189} width={234} />
+              </div>
+              <div style={{ marginTop: -190 }}>
+                <Image src={Goal4} height={189} width={234} />
+              </div>
+            </SimpleGrid>
+          </Grid>
+        </Container>
+      </Paper>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      {/**Our Specialization Component */}
+      <Paper w={1440} h={696} withBorder bg={"black"}>
+        <Container>
+          <Grid gutter="lg">
+            <Col span={6}>
+              <Image
+                src={RectangleGrey}
+                alt="Vision"
+                height={694}
+                width={505}
+                pos="absolute"
+                pl={0}
+                left={0}
+              />
+              <Image
+                src={Specialization}
+                alt="Vision"
+                width={493}
+                height={451}
+                pos={"absolute"}
+                left={114}
+                mt={114}
+              />
+            </Col>
+            <Col span={6}>
+              <Text
+                size="32px"
+                w={596}
+                h={44}
+                weight={600}
+                mr={114}
+                mt={241}
+                style={{ lineHeight: "51.2px" }}
+                color="#F6F6F6"
+              >
+                Our Specialisation
+              </Text>
+              <Text
+                h={176}
+                w={696}
+                color="#E4E8ED"
+                size={16}
+                weight={400}
+                mb={40}
+                left={730}
+                mt={24}
+              >
+                We are specialized Temperature/Process Indicators, Large Display
+                Temperature/Process Indicators, Digital Portable Thermometer &
+                Hygro-Thermometer, Temperature/Process Controllers, PID
+                Temperature/Process Controllers, Ramp/Soak Programmable
+                Temperature/Processs Controllers
+                <br />
+                <br />
+                Multizone PID Ramp/Soak Programmable Temperature Controllers,
+                Temperature/Process Scanners, Temperature/Process Data Loggers,
+                Data Acquisition Software, Temperature & Humidity (T+Rh) Sensors
+                & Transmitters.
+              </Text>
+            </Col>
+          </Grid>
+        </Container>
+      </Paper>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      {/**Our Brand Component */}
+      <Paper w={1440} h={696} withBorder bg={"black"}>
+        <Container>
+          <Grid gutter="lg">
+            <Col span={6}>
+              <Text
+                size="32px"
+                w={558}
+                h={102}
+                weight={600}
+                pt={206}
+                style={{ lineHeight: "51.2px" }}
+                color="#F6F6F6"
+                ml={-100}
+              >
+                Our Brand
+              </Text>
+              <Text
+                h={110}
+                w={596}
+                color="#E4E8ED"
+                size={14}
+                weight={400}
+                pt={96}
+                
+                ml={-100}
+                style={{ lineHeight: "22.4px" }}
+              >
+                Our systems and instruments are developed and designed by a team
+                of skilled engineers, who hold expertise in their respective
+                field. We offer our clients with modernized development and
+                design services for both software and hardware.
+                <br />
+                <br />
+                Our extensive range of products is closely inspected by
+                industrial experts on stringent quality parameters to ensure its
+                smooth functioning, durability, reliability, sturdy construction
+                and long service life. We are currently supported by 1,50,000
+                instruments, enabling us with an outstanding range of output.
+              </Text>
+            </Col>
+            <Col span={6}>
+              <Image
+                src={RectangleGrey}
+                bg={"black"}
+                width={509}
+                height={696}
+                pos={"absolute"}
+                left={931}
+                pr={0}
+                mt={0}
+              />
+
+              <Image
+                src={BrandImg}
+                alt="Sample"
+                width={493}
+                height={451}
+                pos={"absolute"}
+                mt={126}
+                ml={114}
+              />
+            </Col>
+          </Grid>
+        </Container>
+      </Paper>
+      <br />
+      <br />
+      <br />
+      <br />
+      {/**Our Vision Component */}
+      <Paper w={1440} h={696} withBorder bg={"black"}>
+        <Container>
+          <Grid gutter="lg">
+            <Col span={6}>
+              <Image
+                src={RectangleGrey}
+                alt="Vision"
+                height={694}
+                width={505}
+                pos="absolute"
+                pl={0}
+                left={0}
+              />
+              <Image
+                src={Vision}
+                alt="Vision"
+                width={493}
+                height={451}
+                pos={"absolute"}
+                left={114}
+                mt={114}
+              />
+            </Col>
+            <Col span={6}>
+              <Text
+                size="32px"
+                w={596}
+                h={44}
+                weight={600}
+                mr={114}
+                mt={251}
+                style={{ lineHeight: "51.2px" }}
+                color="#F6F6F6"
+              >
+                Our Vision
+              </Text>
+              <Text
+                h={110}
+                w={596}
+                color="#E4E8ED"
+                size={16}
+                weight={400}
+                mb={40}
+                mr={114}
+                mt={24}
+                style={{ lineHeight: "24px" }}
+              >
+                Libratherm will always thrive to be one of the best companies
+                manufacturing the most rugged and reliable Electronic Process
+                Control Instruments, using the latest available and accessible
+                technology for the long lasting and trouble-free field
+                performance. While designing and manufacturing our products, we
+                will sustain the way in which our services benefit the
+                customers.
+              </Text>
+            </Col>
+          </Grid>
+        </Container>
+      </Paper>
+      <br />
+      <br />
+      <br />
+      <br />
 
       {/* Button components */}
       <Paper>
