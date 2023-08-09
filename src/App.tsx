@@ -2724,10 +2724,10 @@ function App() {
           </Card>
         </Group>
 
-        <Group position="center" spacing="lg">
-          <Grid gutter="lg">
+        <Group position="center" spacing="sm" >
+          <Grid gutter="sm">
             <Grid.Col span={4}>
-              <Box pos="relative" w={1200} h={280}>
+              <Box pos="relative" w={1440} h={280}>
                 <Image
                   src={EventBg}
                   height={202}
@@ -2749,10 +2749,10 @@ function App() {
                   h="100%"
                 />
                 <Text color="#E4E8ED" size={12} ml={319}>
-                  22nd January, 2023.
+                  PRC 300
                 </Text>
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
-                  Mumbai ACE Tech Exhibition
+                  Ramp Soak PID Temperature Controller
                 </Text>
                 <UnstyledButton>
                 <Group>
@@ -2786,10 +2786,10 @@ function App() {
                   h="100%"
                 />
                 <Text color="#E4E8ED" size={12} ml={319}>
-                  22nd January, 2023.
+                  PRC 300
                 </Text>
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
-                  Mumbai ACE Tech Exhibition
+                 Ramp Soak PID Temperature Controller
                 </Text>
                 <UnstyledButton>
                 <Group>
@@ -2823,10 +2823,10 @@ function App() {
                   h="100%"
                 />
                 <Text color="#E4E8ED" size={12} ml={319}>
-                  22nd January, 2023.
+                  PRC 300
                 </Text>
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
-                  Mumbai ACE Tech Exhibition
+                  Ramp Soak PID Temperature Controller
                 </Text>
                 <UnstyledButton>
                 <Group>
@@ -2860,10 +2860,10 @@ function App() {
                   h="100%"
                 />
                 <Text color="#E4E8ED" size={12} ml={319}>
-                  22nd January, 2023.
+                  PRC 300
                 </Text>
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
-                  Mumbai ACE Tech Exhibition
+                  Ramp Soak PID Temperature Controller
                 </Text>
                 <UnstyledButton>
                 <Group>
@@ -2897,10 +2897,10 @@ function App() {
                   h="100%"
                 />
                 <Text color="#E4E8ED" size={12} ml={319}>
-                  22nd January, 2023.
+                 PRC 300
                 </Text>
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
-                  Mumbai ACE Tech Exhibition
+                  Ramp Soak PID Temperature Controller
                 </Text>
                 <UnstyledButton>
                 <Group>
@@ -2934,10 +2934,10 @@ function App() {
                   h="100%"
                 />
                 <Text color="#E4E8ED" size={12} ml={319}>
-                  22nd January, 2023.
+                  PRC 300
                 </Text>
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
-                  Mumbai ACE Tech Exhibition
+                  Ramp Soak PID Temperature Controller
                 </Text>
                 <UnstyledButton>
                 <Group>
@@ -2971,10 +2971,10 @@ function App() {
                   h="100%"
                 />
                 <Text color="#E4E8ED" size={12} ml={319}>
-                  22nd January, 2023.
+                  PRC 300
                 </Text>
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
-                  Mumbai ACE Tech Exhibition
+                  Ramp Soak PID Temperature Controller
                 </Text>
                 <UnstyledButton>
                 <Group>
@@ -3008,10 +3008,10 @@ function App() {
                   h="100%"
                 />
                 <Text color="#E4E8ED" size={12} ml={319}>
-                  22nd January, 2023.
+                  PRC 300
                 </Text>
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
-                  Mumbai ACE Tech Exhibition
+                  Ramp Soak PID Temperature Controller
                 </Text>
                 <UnstyledButton>
                 <Group>
@@ -3045,10 +3045,10 @@ function App() {
                   h="100%"
                 />
                 <Text color="#E4E8ED" size={12} ml={319}>
-                  22nd January, 2023.
+                  PRC 300
                 </Text>
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
-                  Mumbai ACE Tech Exhibition
+                  Ramp Soak PID Temperature Controller
                 </Text>
                 <UnstyledButton>
                 <Group>
