@@ -2754,6 +2754,13 @@ function App() {
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
                   Mumbai ACE Tech Exhibition
                 </Text>
+                <UnstyledButton>
+                <Group>
+                  <Text size="16px" color="white" ml={315} mt={32} weight={400}>
+                    View
+                  </Text>
+                </Group>
+              </UnstyledButton>
               </Box>
             </Grid.Col>
             <Grid.Col span={4}>
@@ -2784,6 +2791,13 @@ function App() {
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
                   Mumbai ACE Tech Exhibition
                 </Text>
+                <UnstyledButton>
+                <Group>
+                  <Text size="16px" color="white" ml={315} mt={32} weight={400}>
+                    View
+                  </Text>
+                </Group>
+              </UnstyledButton>
               </Box>
             </Grid.Col>
             <Grid.Col span={4}>
@@ -2814,6 +2828,13 @@ function App() {
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
                   Mumbai ACE Tech Exhibition
                 </Text>
+                <UnstyledButton>
+                <Group>
+                  <Text size="16px" color="white" ml={315} mt={32} weight={400}>
+                    View
+                  </Text>
+                </Group>
+              </UnstyledButton>
               </Box>
             </Grid.Col>
             <Grid.Col span={4}>
@@ -2844,6 +2865,13 @@ function App() {
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
                   Mumbai ACE Tech Exhibition
                 </Text>
+                <UnstyledButton>
+                <Group>
+                  <Text size="16px" color="white" ml={315} mt={32} weight={400}>
+                    View
+                  </Text>
+                </Group>
+              </UnstyledButton>
               </Box>
             </Grid.Col>
             <Grid.Col span={4}>
@@ -2874,6 +2902,13 @@ function App() {
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
                   Mumbai ACE Tech Exhibition
                 </Text>
+                <UnstyledButton>
+                <Group>
+                  <Text size="16px" color="white" ml={315} mt={32} weight={400}>
+                    View
+                  </Text>
+                </Group>
+              </UnstyledButton>
               </Box>
             </Grid.Col>
             <Grid.Col span={4}>
@@ -2904,6 +2939,13 @@ function App() {
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
                   Mumbai ACE Tech Exhibition
                 </Text>
+                <UnstyledButton>
+                <Group>
+                  <Text size="16px" color="white" ml={315} mt={32} weight={400}>
+                    View
+                  </Text>
+                </Group>
+              </UnstyledButton>
               </Box>
             </Grid.Col>
             <Grid.Col span={4}>
@@ -2934,6 +2976,13 @@ function App() {
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
                   Mumbai ACE Tech Exhibition
                 </Text>
+                <UnstyledButton>
+                <Group>
+                  <Text size="16px" color="white" ml={315} mt={32} weight={400}>
+                    View
+                  </Text>
+                </Group>
+              </UnstyledButton>
               </Box>
             </Grid.Col>
             <Grid.Col span={4}>
@@ -2949,7 +2998,7 @@ function App() {
                   h="100%"
                 />
                 <Image
-                  src={Event6}
+                  src={Event3}
                   height={164}
                   width={164}
                   pos="absolute"
@@ -2964,6 +3013,13 @@ function App() {
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
                   Mumbai ACE Tech Exhibition
                 </Text>
+                <UnstyledButton>
+                <Group>
+                  <Text size="16px" color="white" ml={315} mt={32} weight={400}>
+                    View
+                  </Text>
+                </Group>
+              </UnstyledButton>
               </Box>
             </Grid.Col>
             <Grid.Col span={4}>
@@ -2979,7 +3035,7 @@ function App() {
                   h="100%"
                 />
                 <Image
-                  src={Event6}
+                  src={Event1}
                   height={164}
                   width={164}
                   pos="absolute"
@@ -2994,6 +3050,13 @@ function App() {
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
                   Mumbai ACE Tech Exhibition
                 </Text>
+                <UnstyledButton>
+                <Group>
+                  <Text size="16px" color="white" ml={315} mt={32} weight={400}>
+                    View
+                  </Text>
+                </Group>
+              </UnstyledButton>
               </Box>
             </Grid.Col>
           </Grid>
