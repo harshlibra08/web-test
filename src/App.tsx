@@ -2492,20 +2492,19 @@ function App() {
                 22nd January, 2023
               </Text>
               <Box>
-
-              <Text
-                size="32px"
-                w={558}
-                h={102}
-                weight={600}
-                pt={16}
-                style={{ lineHeight: "51.2px" }}
-                color="#F6F6F6"
-                ml={-160}
+                <Text
+                  size="32px"
+                  w={558}
+                  h={102}
+                  weight={600}
+                  pt={16}
+                  style={{ lineHeight: "51.2px" }}
+                  color="#F6F6F6"
+                  ml={-160}
                 >
-                Glass Manufacture
-              </Text>
-                </Box>
+                  Glass Manufacture
+                </Text>
+              </Box>
               <Text
                 h={154}
                 w={590}
@@ -2554,74 +2553,72 @@ function App() {
           <Card h={700} w={391} bg={"black"}>
             <Card.Section>
               <Box pos="relative" w={391} h={450} bg={"black"}>
-              <Text
+                <Text
                   weight={400}
                   h={92}
                   w={347}
                   size={24}
-                 
                   mt={0}
                   color="#F6F6F6"
-                  >
-                  Glass Bending
-                <Divider size="lg" mr={22} my={14}/>
-                </Text>
-                  </Box>
-                <Image
-                  src={RectangleJournal}
-                  height={172}
-                  width={325}
-                  alt="Client"
-                  pos="absolute"
-                  top={55}
-                  left={0}
-                  w="100%"
-                  h="100%"
-                />
-                <Image
-                  src={Journal1}
-                  height={292}
-                  width={293}
-                  alt="Client"
-                  pos="absolute"
-                  top={73}
-                  left={16}
-                  w="100%"
-                  h="100%"
-                />
-                
-                <Text
-                  size="14px"
-                  weight={400}
-                  w={325}
-                  h={136}
-                  pos="absolute"
-                  top={414}
-                  color="#E4E8ED"
-                  lineClamp={5}
                 >
-                  Libratherm offers Ramp Soak PID Temperature Controller -
-                  PRC-300, High Temperature Ramp Soak PID Controller - PRC-309
-                  and Three Phase Thyristor Power Controller - POW-3-PA-CL for
-                  the Glass Bending Process.
+                  Glass Bending
+                  <Divider size="lg" mr={22} my={14} />
                 </Text>
+              </Box>
+              <Image
+                src={RectangleJournal}
+                height={172}
+                width={325}
+                alt="Client"
+                pos="absolute"
+                top={55}
+                left={0}
+                w="100%"
+                h="100%"
+              />
+              <Image
+                src={Journal1}
+                height={292}
+                width={293}
+                alt="Client"
+                pos="absolute"
+                top={73}
+                left={16}
+                w="100%"
+                h="100%"
+              />
+
+              <Text
+                size="14px"
+                weight={400}
+                w={325}
+                h={136}
+                pos="absolute"
+                top={414}
+                color="#E4E8ED"
+                lineClamp={5}
+              >
+                Libratherm offers Ramp Soak PID Temperature Controller -
+                PRC-300, High Temperature Ramp Soak PID Controller - PRC-309 and
+                Three Phase Thyristor Power Controller - POW-3-PA-CL for the
+                Glass Bending Process.
+              </Text>
             </Card.Section>
           </Card>
 
           <Card h={700} w={391} bg={"black"}>
             <Card.Section>
               <Box pos="relative" w={391} h={450} bg={"black"}>
-              <Text
+                <Text
                   weight={400}
                   h={92}
                   w={347}
                   size={24}
-                 
                   mt={0}
                   color="#F6F6F6"
                 >
                   Glass Toughening
-                  <Divider size="lg" mr={22} my={14}/>
+                  <Divider size="lg" mr={22} my={14} />
                 </Text>
                 <Image
                   src={RectangleJournal}
@@ -2645,7 +2642,6 @@ function App() {
                   w="100%"
                   h="100%"
                 />
-                
 
                 <Text
                   size="14px"
@@ -2668,17 +2664,16 @@ function App() {
           <Card h={700} w={391} bg={"black"}>
             <Card.Section>
               <Box pos="relative" w={391} h={450} bg={"black"}>
-              <Text
+                <Text
                   weight={400}
                   h={92}
                   w={347}
                   size={24}
-                 
                   mt={0}
                   color="#F6F6F6"
                 >
                   Glass Melting
-                  <Divider size="lg" mr={22} my={14}/>
+                  <Divider size="lg" mr={22} my={14} />
                 </Text>
                 <Image
                   src={RectangleJournal}
@@ -2702,7 +2697,6 @@ function App() {
                   w="100%"
                   h="100%"
                 />
-                
 
                 <Text
                   size="14px"
@@ -2724,7 +2718,7 @@ function App() {
           </Card>
         </Group>
 
-        <Group position="center" spacing="sm" >
+        <Group position="center" spacing="sm">
           <Grid gutter="sm">
             <Grid.Col span={4}>
               <Box pos="relative" w={1440} h={280}>
@@ -2755,12 +2749,18 @@ function App() {
                   Ramp Soak PID Temperature Controller
                 </Text>
                 <UnstyledButton>
-                <Group>
-                  <Text size="16px" color="white" ml={315} mt={32} weight={400}>
-                    View
-                  </Text>
-                </Group>
-              </UnstyledButton>
+                  <Group>
+                    <Text
+                      size="16px"
+                      color="white"
+                      ml={315}
+                      mt={32}
+                      weight={400}
+                    >
+                      View
+                    </Text>
+                  </Group>
+                </UnstyledButton>
               </Box>
             </Grid.Col>
             <Grid.Col span={4}>
@@ -2789,15 +2789,21 @@ function App() {
                   PRC 300
                 </Text>
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
-                 Ramp Soak PID Temperature Controller
+                  Ramp Soak PID Temperature Controller
                 </Text>
                 <UnstyledButton>
-                <Group>
-                  <Text size="16px" color="white" ml={315} mt={32} weight={400}>
-                    View
-                  </Text>
-                </Group>
-              </UnstyledButton>
+                  <Group>
+                    <Text
+                      size="16px"
+                      color="white"
+                      ml={315}
+                      mt={32}
+                      weight={400}
+                    >
+                      View
+                    </Text>
+                  </Group>
+                </UnstyledButton>
               </Box>
             </Grid.Col>
             <Grid.Col span={4}>
@@ -2829,12 +2835,18 @@ function App() {
                   Ramp Soak PID Temperature Controller
                 </Text>
                 <UnstyledButton>
-                <Group>
-                  <Text size="16px" color="white" ml={315} mt={32} weight={400}>
-                    View
-                  </Text>
-                </Group>
-              </UnstyledButton>
+                  <Group>
+                    <Text
+                      size="16px"
+                      color="white"
+                      ml={315}
+                      mt={32}
+                      weight={400}
+                    >
+                      View
+                    </Text>
+                  </Group>
+                </UnstyledButton>
               </Box>
             </Grid.Col>
             <Grid.Col span={4}>
@@ -2866,12 +2878,18 @@ function App() {
                   Ramp Soak PID Temperature Controller
                 </Text>
                 <UnstyledButton>
-                <Group>
-                  <Text size="16px" color="white" ml={315} mt={32} weight={400}>
-                    View
-                  </Text>
-                </Group>
-              </UnstyledButton>
+                  <Group>
+                    <Text
+                      size="16px"
+                      color="white"
+                      ml={315}
+                      mt={32}
+                      weight={400}
+                    >
+                      View
+                    </Text>
+                  </Group>
+                </UnstyledButton>
               </Box>
             </Grid.Col>
             <Grid.Col span={4}>
@@ -2897,18 +2915,24 @@ function App() {
                   h="100%"
                 />
                 <Text color="#E4E8ED" size={12} ml={319}>
-                 PRC 300
+                  PRC 300
                 </Text>
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
                   Ramp Soak PID Temperature Controller
                 </Text>
                 <UnstyledButton>
-                <Group>
-                  <Text size="16px" color="white" ml={315} mt={32} weight={400}>
-                    View
-                  </Text>
-                </Group>
-              </UnstyledButton>
+                  <Group>
+                    <Text
+                      size="16px"
+                      color="white"
+                      ml={315}
+                      mt={32}
+                      weight={400}
+                    >
+                      View
+                    </Text>
+                  </Group>
+                </UnstyledButton>
               </Box>
             </Grid.Col>
             <Grid.Col span={4}>
@@ -2940,12 +2964,18 @@ function App() {
                   Ramp Soak PID Temperature Controller
                 </Text>
                 <UnstyledButton>
-                <Group>
-                  <Text size="16px" color="white" ml={315} mt={32} weight={400}>
-                    View
-                  </Text>
-                </Group>
-              </UnstyledButton>
+                  <Group>
+                    <Text
+                      size="16px"
+                      color="white"
+                      ml={315}
+                      mt={32}
+                      weight={400}
+                    >
+                      View
+                    </Text>
+                  </Group>
+                </UnstyledButton>
               </Box>
             </Grid.Col>
             <Grid.Col span={4}>
@@ -2977,12 +3007,18 @@ function App() {
                   Ramp Soak PID Temperature Controller
                 </Text>
                 <UnstyledButton>
-                <Group>
-                  <Text size="16px" color="white" ml={315} mt={32} weight={400}>
-                    View
-                  </Text>
-                </Group>
-              </UnstyledButton>
+                  <Group>
+                    <Text
+                      size="16px"
+                      color="white"
+                      ml={315}
+                      mt={32}
+                      weight={400}
+                    >
+                      View
+                    </Text>
+                  </Group>
+                </UnstyledButton>
               </Box>
             </Grid.Col>
             <Grid.Col span={4}>
@@ -3014,12 +3050,18 @@ function App() {
                   Ramp Soak PID Temperature Controller
                 </Text>
                 <UnstyledButton>
-                <Group>
-                  <Text size="16px" color="white" ml={315} mt={32} weight={400}>
-                    View
-                  </Text>
-                </Group>
-              </UnstyledButton>
+                  <Group>
+                    <Text
+                      size="16px"
+                      color="white"
+                      ml={315}
+                      mt={32}
+                      weight={400}
+                    >
+                      View
+                    </Text>
+                  </Group>
+                </UnstyledButton>
               </Box>
             </Grid.Col>
             <Grid.Col span={4}>
@@ -3051,23 +3093,22 @@ function App() {
                   Ramp Soak PID Temperature Controller
                 </Text>
                 <UnstyledButton>
-                <Group>
-                  <Text size="16px" color="white" ml={315} mt={32} weight={400}>
-                    View
-                  </Text>
-                </Group>
-              </UnstyledButton>
+                  <Group>
+                    <Text
+                      size="16px"
+                      color="white"
+                      ml={315}
+                      mt={32}
+                      weight={400}
+                    >
+                      View
+                    </Text>
+                  </Group>
+                </UnstyledButton>
               </Box>
             </Grid.Col>
           </Grid>
-          </Group>
-
-
-
-
-
-
-
+        </Group>
       </Paper>
       <br />
       <br />
