@@ -863,7 +863,7 @@ function App() {
         <Container>
           <Grid gutter="lg">
             <Col span={6}>
-              <Text size={14} weight={600} color="#E4E8ED" pt={191}>
+              <Text size={14} weight={600} color="#E4E8ED" pt={191} ml={-100}>
                 WHO ARE WE?
               </Text>
               <Text
@@ -874,6 +874,7 @@ function App() {
                 pt={16}
                 style={{ lineHeight: "51.2px" }}
                 color="#F6F6F6"
+                ml={-100}
               >
                 How it all began: The Omega <br />
                 moment
@@ -886,6 +887,7 @@ function App() {
                 weight={400}
                 pt={36}
                 mb={40}
+                ml={-100}
                 style={{ lineHeight: "22.4px" }}
               >
                 Launching a business isn't easy, which is why having a
@@ -2128,8 +2130,8 @@ function App() {
       <br />
       <br />
 
-      {/** Journal page - industry*/}
-      <Paper w={1440} h={3140} withBorder bg={"black"}>
+       {/** Journal page - industry full list*/}
+       <Paper w={1440} h={3140} withBorder bg={"black"}>
         <Group noWrap spacing={0}>
           <Box w="100%">
             <Text size={"32px"} mt={91} ml={114} color="#F6F6F6">
@@ -2460,6 +2462,302 @@ function App() {
             </Box>
           </Grid.Col>
         </Grid>
+      </Paper>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      {/** Journal page - industry*/}
+      <Paper w={1440} h={3140} withBorder bg={"black"}>
+        <Group noWrap spacing={0}>
+          <Box w="100%">
+            <Text size={"32px"} mt={91} ml={114} color="#F6F6F6">
+              Industry
+            </Text>
+            <Divider size="md" my={23} mr={114} ml={114} pb={40} />
+          </Box>
+        </Group>
+        <Container mt={-73}>
+          <Grid gutter="lg">
+            <Col span={6}>
+              <Text
+                size={14}
+                weight={600}
+                color="#E4E8ED"
+                pt={191}
+                ml={-160}
+                mt={10}
+              >
+                22nd January, 2023
+              </Text>
+              <Text
+                size="32px"
+                w={558}
+                h={102}
+                weight={600}
+                pt={16}
+                style={{ lineHeight: "51.2px" }}
+                color="#F6F6F6"
+                ml={-160}
+              >
+                Glass Manufacture
+              </Text>
+              <Text
+                h={154}
+                w={590}
+                color="#E4E8ED"
+                size={16}
+                weight={400}
+                mb={40}
+                ml={-160}
+              >
+                Libratherm is an innovation-driven manufacturer of Process
+                Control Instruments and Systems since 1991. We cater to a wide
+                range of industries, by providing accurate measurement, precise
+                control, and implementing modern standards in data logging and
+                industrial communication. Glass is one of the industries where
+                we have been supplying numerous process control instruments and
+                control panels for various processes such as Glass Bending,
+                Glass Toughening, and Glass Melting.
+              </Text>
+            </Col>
+            <Col span={6}>
+              <Image
+                src={RectangleOmega}
+                bg={"black"}
+                width={509}
+                height={696}
+                pos={"absolute"}
+                left={931}
+                pr={0}
+                mt={0}
+              />
+
+              <Image
+                src={Industry1}
+                alt="Sample"
+                width={493}
+                height={451}
+                pos={"absolute"}
+                mt={126}
+                mr={112}
+              />
+            </Col>
+          </Grid>
+        </Container>
+
+        <Group position="center" spacing="lg" pt={308}>
+          <Card h={700} w={391} bg={"black"}>
+            <Card.Section>
+              <Box pos="relative" w={391} h={450} bg={"black"}>
+                <Image
+                  src={RectangleJournal}
+                  height={172}
+                  width={325}
+                  alt="Client"
+                  pos="absolute"
+                  top={10}
+                  left={0}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Journal1}
+                  height={292}
+                  width={293}
+                  alt="Client"
+                  pos="absolute"
+                  top={26}
+                  left={16}
+                  w="100%"
+                  h="100%"
+                />
+                <Text
+                  weight={400}
+                  h={92}
+                  w={347}
+                  size={32}
+                  pos="absolute"
+                  mt={350}
+                  color="#F6F6F6"
+                >
+                  Industries
+                </Text>
+
+                <Text
+                  size="16px"
+                  weight={400}
+                  w={325}
+                  h={46}
+                  pos="absolute"
+                  top={414}
+                  color="#E4E8ED"
+                  lineClamp={2}
+                >
+                  Libratherm has supplied various types of temperature
+                  controllers, thyristor power controllers and control panels to
+                  the industries manufacturing Files, Diamond Tools, Machine
+                  Tools, Automobile parts, Hack saw blades, Stone cutting tools
+                  and circular blades etc… The temperature of the electrical or
+                  fuel fired heating systems, used for annealing, hardening,
+                  steam bluing and similar such processes, has been in use for
+                  precise control up to 1200-C, using our models PRC-300,
+                  PRC-309, PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with
+                  the sensor input from thermocouples or infrared non contact
+                  sensors.
+                </Text>
+              </Box>
+              <UnstyledButton>
+                <Group>
+                  <Text size="20px" color="white" mt={32} weight={400}>
+                    Know more
+                  </Text>
+                </Group>
+              </UnstyledButton>
+            </Card.Section>
+          </Card>
+
+          <Card h={700} w={391} bg={"black"}>
+            <Card.Section>
+              <Box pos="relative" w={391} h={450} bg={"black"}>
+                <Image
+                  src={RectangleJournal}
+                  height={172}
+                  width={325}
+                  alt="Client"
+                  pos="absolute"
+                  top={10}
+                  left={0}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={Journal2}
+                  height={292}
+                  width={293}
+                  alt="Client"
+                  pos="absolute"
+                  top={26}
+                  left={16}
+                  w="100%"
+                  h="100%"
+                />
+                <Text
+                  weight={400}
+                  h={92}
+                  w={347}
+                  size={32}
+                  pos="absolute"
+                  mt={350}
+                  color="#F6F6F6"
+                >
+                  Services
+                </Text>
+
+                <Text
+                  size="16px"
+                  weight={400}
+                  w={325}
+                  h={46}
+                  pos="absolute"
+                  top={414}
+                  color="#E4E8ED"
+                  lineClamp={2}
+                >
+                  Libratherm has supplied various types of temperature
+                  controllers, thyristor power controllers and control panels to
+                  the industries manufacturing Files, Diamond Tools, Machine
+                  Tools, Automobile parts, Hack saw blades, Stone cutting tools
+                  and circular blades etc… The temperature of the electrical or
+                  fuel fired heating systems, used for annealing, hardening,
+                  steam bluing and similar such processes, has been in use for
+                  precise control up to 1200-C, using our models PRC-300,
+                  PRC-309, PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with
+                  the sensor input from thermocouples or infrared non contact
+                  sensors.
+                </Text>
+              </Box>
+              <UnstyledButton>
+                <Group>
+                  <Text size="20px" color="white" mt={32} weight={400}>
+                    Know more
+                  </Text>
+                </Group>
+              </UnstyledButton>
+            </Card.Section>
+          </Card>
+
+          <Card h={700} w={391} bg={"black"}>
+            <Card.Section>
+              <Box pos="relative" w={391} h={450} bg={"black"}>
+                <Image
+                  src={RectangleJournal}
+                  height={172}
+                  width={325}
+                  alt="Client"
+                  pos="absolute"
+                  top={10}
+                  left={0}
+                  w="100%"
+                  h="100%"
+                />
+                <Image
+                  src={WHO}
+                  height={292}
+                  width={293}
+                  alt="Client"
+                  pos="absolute"
+                  top={26}
+                  left={16}
+                  w="100%"
+                  h="100%"
+                />
+                <Text
+                  weight={400}
+                  h={92}
+                  w={347}
+                  size={32}
+                  pos="absolute"
+                  mt={350}
+                  color="#F6F6F6"
+                >
+                  Applications
+                </Text>
+
+                <Text
+                  size="16px"
+                  weight={400}
+                  w={325}
+                  h={46}
+                  pos="absolute"
+                  top={414}
+                  color="#E4E8ED"
+                  lineClamp={2}
+                >
+                  Libratherm has supplied various types of temperature
+                  controllers, thyristor power controllers and control panels to
+                  the industries manufacturing Files, Diamond Tools, Machine
+                  Tools, Automobile parts, Hack saw blades, Stone cutting tools
+                  and circular blades etc… The temperature of the electrical or
+                  fuel fired heating systems, used for annealing, hardening,
+                  steam bluing and similar such processes, has been in use for
+                  precise control up to 1200-C, using our models PRC-300,
+                  PRC-309, PID-300, PID-723, DLC-301, POW-3/S and POW-3/D with
+                  the sensor input from thermocouples or infrared non contact
+                  sensors.
+                </Text>
+              </Box>
+              <UnstyledButton>
+                <Group>
+                  <Text size="20px" color="white" mt={32} weight={400}>
+                    Know more
+                  </Text>
+                </Group>
+              </UnstyledButton>
+            </Card.Section>
+          </Card>
+        </Group>
       </Paper>
       <br />
       <br />
