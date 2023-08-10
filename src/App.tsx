@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   MantineProvider,
   Button,
@@ -69,6 +69,9 @@ import Industry3 from "./ind3.png";
 import Industry4 from "./ind4.png";
 import DAQ from "./dataacc.png";
 import IOT from "./iot.png";
+import IOT1 from "./iot1.png";
+import IOTApp from "./IotApp.png";
+import PWHT from "./pwht.png";
 
 import {
   IconSearch,
@@ -81,7 +84,7 @@ import {
   IconChevronDown,
 } from "@tabler/icons-react";
 
-import { Carousel } from "@mantine/carousel";
+import { Carousel, Embla } from "@mantine/carousel";
 
 const OptionsButton = ({ ...props }: ButtonProps) => (
   <Button
@@ -294,6 +297,8 @@ function App() {
       </Header>
     );
   }
+
+  const [embla, setEmbla] = useState<Embla | null>(null);
 
   return (
     <MantineProvider
@@ -1107,6 +1112,7 @@ function App() {
               height={37}
               stroke={1}
               color="#FFFFFF"
+              onClick={() => embla?.scrollNext()}
             />
           }
           {
@@ -1115,10 +1121,12 @@ function App() {
               height={37}
               stroke={1}
               color="#FFFFFF"
+              onClick={() => embla?.scrollPrev()}
             />
           }
         </Group>
         <Carousel
+        withControls={false}
           height={417}
           slideSize="33.333333%"
           slideGap={64}
@@ -1132,6 +1140,7 @@ function App() {
             { maxWidth: "md", slideSize: "50%" },
             { maxWidth: "sm", slideSize: "100%", slideGap: 0 },
           ]}
+          getEmblaApi={setEmbla}
         >
           <Carousel.Slide>
             <Card
@@ -3690,6 +3699,134 @@ function App() {
               </List.Item>
             </List>
           </Text>
+        </Container>
+        <Paper w={1440} h={1014} withBorder bg={"white"} mt={128}>
+          <Grid>
+            <Grid.Col span={4}>
+              <Image src={IOT1} width={437} height={258} pt={128} pl={164} />
+            </Grid.Col>
+            <Grid.Col span={4}>
+              <Image src={IOT1} width={437} height={258} pt={128} pl={185} />
+            </Grid.Col>
+          </Grid>
+
+          <Text size={24} weight={600} pt={64} pl={217}>
+            Description
+          </Text>
+          <Text size={16} weight={"400"} w={"85%"} pl={217} pt={32}>
+            Libratherm offers IoT modules, which allow the user to remotely
+            monitor and control the Industrial process directly on the Internet
+            via an Ethernet/Wi-Fi network.
+            <br />
+            LSD-01 can be used to interface any process controller having an
+            RS485 MODBUS interface to capture all the process parameters, which
+            can be monitored using Customized Web-App on smart devices like
+            Computer, Tablet or Mobile Phones. <br />
+            LSD-02 can be used to directly connect the Industrial sensors such
+            as Pt-100 or T+RH sensor/transmitter generating Voltage or Current
+            Signal. The analog process value is then monitored through WebApp on
+            the smart devices like Computer, Tablet or Mobile Phones. <br />
+            At the user end, Internet connectivity must be available preferably
+            over Wi-Fi or over an Ethernet for the functioning of these modules.
+          </Text>
+
+          <Text size={24} weight={"600"} pt={64} pl={217}>
+            Key Features
+          </Text>
+          <Text size={16} w={"85%"} pl={217} pt={32}>
+            <li>
+              Direct Interface to Internet via Wi-Fi / Ethernet. No expensive
+              gateways required.
+            </li>
+            <li>
+              Monitor and Control Devices over the Internet in near real time.
+            </li>
+            <li>
+              Easy to Use customizable WebApp available on PC, Smartphone, and
+              Tablet for viewing current and historical trends.
+            </li>
+
+            <li>SMS and Email alerts for events and fault conditions.</li>
+          </Text>
+        </Paper>
+
+        <Text size={24} weight={"600"} pt={64} pl={217} color="#F6F6F6">
+          IOT App Screen
+        </Text>
+        <Image src={IOTApp} width={1006} height={484} pt={64} pl={217} />
+        <Text
+          size={16}
+          weight={"400"}
+          w={"85%"}
+          pl={217}
+          pt={64}
+          color="#F6F6F6"
+        >
+          Libratherm offers IoT modules, which allow the user to remotely
+          monitor and control the Industrial process directly on the Internet
+          via an Ethernet/Wi-Fi network. <br />
+          LSD-01 can be used to interface any process controller having an RS485
+          MODBUS interface to capture all the process parameters, which can be
+          monitored using Customized Web-App on smart devices like Computer,
+          Tablet or Mobile Phones. <br />
+          LSD-02 can be used to directly connect the Industrial sensors such as
+          Pt-100 or T+RH sensor/transmitter generating Voltage or Current
+          Signal. The analog process value is then monitored through WebApp on
+          the smart devices like Computer, Tablet or Mobile Phones. <br />
+          At the user end, Internet connectivity must be available preferably
+          over Wi-Fi or over an Ethernet for the functioning of these modules.{" "}
+          <br />
+        </Text>
+      </Paper>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      {/** Post Weld Heat Treatment Component */}
+      <Paper w={1440} h={3500} withBorder bg={"black"}>
+        <Group noWrap spacing={0}>
+          <Box w="100%">
+            <Text size={"32px"} mt={91} ml={114} color="#F6F6F6">
+              Services
+            </Text>
+            <Divider size="md" my={23} mr={114} ml={114} pb={40} />
+          </Box>
+        </Group>
+        <Container>
+          <Text color="#F6F6F6" align="center" size={32} pt={64}>
+            Post Weld Heat Treatment (PWHT)
+          </Text>
+
+          <Text
+            color="#E4E8ED"
+            align="left"
+            size={16}
+            pt={34}
+            w={1000}
+            weight="normal"
+          >
+            Welding is the process of joining metals or thermoplastics by using
+            high heat or pressure and fusing the parent material with weld
+            metal. Welding has many applications in industries like automotive,
+            shipping, construction, mechanical, and many more. The major
+            drawback of welding is the residual stress formed by the rapid
+            cooling of the weld material. The sudden shrinking of the joint
+            material weakens the equipment, thus impacting the metal's quality
+            and structure. For dense materials, these stresses can even exceed
+            the specified design stress. <br />
+            Post Weld Heat Treatment (PWHT)/Stress Relief helps retain the
+            material strength of the part subjected to welding by reducing and
+            redistributing the residual stress. PWHT not only reduces residual
+            stress but also controls the material's hardness and enhances
+            mechanical strength. This treatment can be performed after any
+            welding process, but it has a specific meaning for few industries.
+            Current design codes such as ASME and BSI Pressure vessels and
+            Piping codes specify that PWHT is required to ensure safe and
+            desired design with optimum mechanical and metallurgic properties.
+          </Text>
+
+          <Image src={PWHT} />
         </Container>
       </Paper>
 
