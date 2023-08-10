@@ -67,6 +67,8 @@ import Industry1 from "./ind1.png";
 import Industry2 from "./ind2.png";
 import Industry3 from "./ind3.png";
 import Industry4 from "./ind4.png";
+import DAQ from "./dataacc.png";
+import IOT from "./iot.png";
 
 import {
   IconSearch,
@@ -2786,7 +2788,7 @@ function App() {
                   h="100%"
                 />
                 <Text color="#E4E8ED" size={12} ml={319}>
-                  PRC 300
+                  PRC 300 2
                 </Text>
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
                   Ramp Soak PID Temperature Controller
@@ -2829,7 +2831,7 @@ function App() {
                   h="100%"
                 />
                 <Text color="#E4E8ED" size={12} ml={319}>
-                  PRC 300
+                  PRC 300 3
                 </Text>
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
                   Ramp Soak PID Temperature Controller
@@ -2872,7 +2874,7 @@ function App() {
                   h="100%"
                 />
                 <Text color="#E4E8ED" size={12} ml={319}>
-                  PRC 300
+                  PRC 300 4
                 </Text>
                 <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
                   Ramp Soak PID Temperature Controller
@@ -3125,8 +3127,571 @@ function App() {
             <Divider size="md" my={23} mr={114} ml={114} pb={40} />
           </Box>
         </Group>
-        
-        </Paper>
+        <Container>
+          <Text color="#F6F6F6" align="center" size={32} pt={64}>
+            Data Acquisition Software (DAQ)
+          </Text>
+          <Text
+            color="#E4E8ED"
+            align="left"
+            size={16}
+            pt={34}
+            w={1006}
+            weight="normal"
+          >
+            Libratherm offers Data Acquisition Software - which uploads the
+            stored data from Libratherm devices and it saves on the computer. We
+            offer customized software to meet the user's specific requirement of
+            acquiring the process data for further analysis and record logging.
+          </Text>
+          <Image src={DAQ} width={802} height={501} pt={64} mx={"auto"} />
+
+          <Text color="#F6F6F6" align="left" size={24} pt={128}>
+            Salient Features of the Standard Software
+          </Text>
+          <Text
+            color="#E4E8ED"
+            align="left"
+            size={16}
+            pt={32}
+            w={1006}
+            weight="normal"
+          >
+            <li>
+              The PC software version EDATALOG is available on a single CD. This
+              software is to be loaded on to the computer's hard disk, and it
+              allows interfacing of DATALOG to the computer.
+            </li>
+            <br />
+            <li>
+              The interfacing with the computer is made either on serial com
+              port or on USB port.
+            </li>
+            <br />
+            <li>
+              The front panel screen GUI (Graphical User Interface), in general,
+              allows the user to configure:
+            </li>
+            <ol type="a">
+              <li>COM port settings</li>
+              <li> DATALOG input selection</li>
+              <li> Setting of log interval</li>
+              <li> Setting of security passwords</li>
+              <li>
+                Viewing of current data and historical data in the tabular and
+                graphical format.
+              </li>
+            </ol>
+            <br />
+
+            <li>
+              {" "}
+              The data of all channels are stored on the computer's hard disk by
+              start date and time, continuously at the rate of programmed log
+              interval.
+            </li>
+            <br />
+
+            <li>
+              Print out of the report and graph can be taken for the selected
+              channel, with the real date and time.{" "}
+            </li>
+            <br />
+
+            <li>
+              {" "}
+              The X and Y coordinates of the graph are automatically adjusted
+              based on the process value so that the pattern is visible on the
+              center of the screen. This is called auto-scaling which applies to
+              all the channel.{" "}
+            </li>
+            <br />
+
+            <li>
+              Customer or user can enter their own desired alphanumeric field,
+              such as company name, operator name, channel nomenclature, unit of
+              measurement, process name, etc. to customize the software as per
+              their requirements while generating the report or graph on-screen
+              or on the hard copy.{" "}
+            </li>
+            <br />
+
+            <li>
+              Any other software facility can be customized as per the user's
+              requirements.{" "}
+            </li>
+          </Text>
+
+          <Text color="#F6F6F6" align="left" size={24} pt={128} mb={86}>
+            Products with Data Aquisition Software
+          </Text>
+          <Group position="center" spacing="sm">
+            <Grid gutter="sm">
+              <Grid.Col span={4}>
+                <Box pos="relative" w={1440} h={280}>
+                  <Image
+                    src={EventBg}
+                    height={202}
+                    width={82}
+                    pos="absolute"
+                    top={0}
+                    left={114}
+                    w="100%"
+                    h="100%"
+                  />
+                  <Image
+                    src={Event1}
+                    height={164}
+                    width={164}
+                    pos="absolute"
+                    top={20}
+                    left={135}
+                    w="100%"
+                    h="100%"
+                  />
+                  <Text color="#E4E8ED" size={12} ml={319}>
+                    PRC 300
+                  </Text>
+                  <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                    Ramp Soak PID Temperature Controller
+                  </Text>
+                  <UnstyledButton>
+                    <Group>
+                      <Text
+                        size="16px"
+                        color="white"
+                        ml={315}
+                        mt={32}
+                        weight={400}
+                      >
+                        View
+                      </Text>
+                    </Group>
+                  </UnstyledButton>
+                </Box>
+              </Grid.Col>
+              <Grid.Col span={4}>
+                <Box pos="relative" w={1200} h={280}>
+                  <Image
+                    src={EventBg}
+                    height={202}
+                    width={82}
+                    pos="absolute"
+                    top={0}
+                    left={114}
+                    w="100%"
+                    h="100%"
+                  />
+                  <Image
+                    src={Event2}
+                    height={164}
+                    width={164}
+                    pos="absolute"
+                    top={20}
+                    left={135}
+                    w="100%"
+                    h="100%"
+                  />
+                  <Text color="#E4E8ED" size={12} ml={319}>
+                    PRC 300 2
+                  </Text>
+                  <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                    Ramp Soak PID Temperature Controller
+                  </Text>
+                  <UnstyledButton>
+                    <Group>
+                      <Text
+                        size="16px"
+                        color="white"
+                        ml={315}
+                        mt={32}
+                        weight={400}
+                      >
+                        View
+                      </Text>
+                    </Group>
+                  </UnstyledButton>
+                </Box>
+              </Grid.Col>
+              <Grid.Col span={4}>
+                <Box pos="relative" w={1200} h={280}>
+                  <Image
+                    src={EventBg}
+                    height={202}
+                    width={82}
+                    pos="absolute"
+                    top={0}
+                    left={114}
+                    w="100%"
+                    h="100%"
+                  />
+                  <Image
+                    src={Event3}
+                    height={164}
+                    width={164}
+                    pos="absolute"
+                    top={20}
+                    left={135}
+                    w="100%"
+                    h="100%"
+                  />
+                  <Text color="#E4E8ED" size={12} ml={319}>
+                    PRC 300 3
+                  </Text>
+                  <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                    Ramp Soak PID Temperature Controller
+                  </Text>
+                  <UnstyledButton>
+                    <Group>
+                      <Text
+                        size="16px"
+                        color="white"
+                        ml={315}
+                        mt={32}
+                        weight={400}
+                      >
+                        View
+                      </Text>
+                    </Group>
+                  </UnstyledButton>
+                </Box>
+              </Grid.Col>
+              <Grid.Col span={4}>
+                <Box pos="relative" w={1200} h={280}>
+                  <Image
+                    src={EventBg}
+                    height={202}
+                    width={82}
+                    pos="absolute"
+                    top={0}
+                    left={114}
+                    w="100%"
+                    h="100%"
+                  />
+                  <Image
+                    src={Event4}
+                    height={164}
+                    width={164}
+                    pos="absolute"
+                    top={20}
+                    left={135}
+                    w="100%"
+                    h="100%"
+                  />
+                  <Text color="#E4E8ED" size={12} ml={319}>
+                    PRC 300 4
+                  </Text>
+                  <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                    Ramp Soak PID Temperature Controller
+                  </Text>
+                  <UnstyledButton>
+                    <Group>
+                      <Text
+                        size="16px"
+                        color="white"
+                        ml={315}
+                        mt={32}
+                        weight={400}
+                      >
+                        View
+                      </Text>
+                    </Group>
+                  </UnstyledButton>
+                </Box>
+              </Grid.Col>
+              <Grid.Col span={4}>
+                <Box pos="relative" w={1200} h={280}>
+                  <Image
+                    src={EventBg}
+                    height={202}
+                    width={82}
+                    pos="absolute"
+                    top={0}
+                    left={114}
+                    w="100%"
+                    h="100%"
+                  />
+                  <Image
+                    src={Event5}
+                    height={164}
+                    width={164}
+                    pos="absolute"
+                    top={20}
+                    left={135}
+                    w="100%"
+                    h="100%"
+                  />
+                  <Text color="#E4E8ED" size={12} ml={319}>
+                    PRC 300
+                  </Text>
+                  <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                    Ramp Soak PID Temperature Controller
+                  </Text>
+                  <UnstyledButton>
+                    <Group>
+                      <Text
+                        size="16px"
+                        color="white"
+                        ml={315}
+                        mt={32}
+                        weight={400}
+                      >
+                        View
+                      </Text>
+                    </Group>
+                  </UnstyledButton>
+                </Box>
+              </Grid.Col>
+              <Grid.Col span={4}>
+                <Box pos="relative" w={1200} h={280}>
+                  <Image
+                    src={EventBg}
+                    height={202}
+                    width={82}
+                    pos="absolute"
+                    top={0}
+                    left={114}
+                    w="100%"
+                    h="100%"
+                  />
+                  <Image
+                    src={Event6}
+                    height={164}
+                    width={164}
+                    pos="absolute"
+                    top={20}
+                    left={135}
+                    w="100%"
+                    h="100%"
+                  />
+                  <Text color="#E4E8ED" size={12} ml={319}>
+                    PRC 300
+                  </Text>
+                  <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                    Ramp Soak PID Temperature Controller
+                  </Text>
+                  <UnstyledButton>
+                    <Group>
+                      <Text
+                        size="16px"
+                        color="white"
+                        ml={315}
+                        mt={32}
+                        weight={400}
+                      >
+                        View
+                      </Text>
+                    </Group>
+                  </UnstyledButton>
+                </Box>
+              </Grid.Col>
+              <Grid.Col span={4}>
+                <Box pos="relative" w={1200} h={280}>
+                  <Image
+                    src={EventBg}
+                    height={202}
+                    width={82}
+                    pos="absolute"
+                    top={0}
+                    left={114}
+                    w="100%"
+                    h="100%"
+                  />
+                  <Image
+                    src={Event6}
+                    height={164}
+                    width={164}
+                    pos="absolute"
+                    top={20}
+                    left={135}
+                    w="100%"
+                    h="100%"
+                  />
+                  <Text color="#E4E8ED" size={12} ml={319}>
+                    PRC 300
+                  </Text>
+                  <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                    Ramp Soak PID Temperature Controller
+                  </Text>
+                  <UnstyledButton>
+                    <Group>
+                      <Text
+                        size="16px"
+                        color="white"
+                        ml={315}
+                        mt={32}
+                        weight={400}
+                      >
+                        View
+                      </Text>
+                    </Group>
+                  </UnstyledButton>
+                </Box>
+              </Grid.Col>
+              <Grid.Col span={4}>
+                <Box pos="relative" w={1200} h={280}>
+                  <Image
+                    src={EventBg}
+                    height={202}
+                    width={82}
+                    pos="absolute"
+                    top={0}
+                    left={114}
+                    w="100%"
+                    h="100%"
+                  />
+                  <Image
+                    src={Event3}
+                    height={164}
+                    width={164}
+                    pos="absolute"
+                    top={20}
+                    left={135}
+                    w="100%"
+                    h="100%"
+                  />
+                  <Text color="#E4E8ED" size={12} ml={319}>
+                    PRC 300
+                  </Text>
+                  <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                    Ramp Soak PID Temperature Controller
+                  </Text>
+                  <UnstyledButton>
+                    <Group>
+                      <Text
+                        size="16px"
+                        color="white"
+                        ml={315}
+                        mt={32}
+                        weight={400}
+                      >
+                        View
+                      </Text>
+                    </Group>
+                  </UnstyledButton>
+                </Box>
+              </Grid.Col>
+              <Grid.Col span={4}>
+                <Box pos="relative" w={1200} h={280}>
+                  <Image
+                    src={EventBg}
+                    height={202}
+                    width={82}
+                    pos="absolute"
+                    top={0}
+                    left={114}
+                    w="100%"
+                    h="100%"
+                  />
+                  <Image
+                    src={Event1}
+                    height={164}
+                    width={164}
+                    pos="absolute"
+                    top={20}
+                    left={135}
+                    w="100%"
+                    h="100%"
+                  />
+                  <Text color="#E4E8ED" size={12} ml={319}>
+                    PRC 300
+                  </Text>
+                  <Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+                    Ramp Soak PID Temperature Controller
+                  </Text>
+                  <UnstyledButton>
+                    <Group>
+                      <Text
+                        size="16px"
+                        color="white"
+                        ml={315}
+                        mt={32}
+                        weight={400}
+                      >
+                        View
+                      </Text>
+                    </Group>
+                  </UnstyledButton>
+                </Box>
+              </Grid.Col>
+            </Grid>
+          </Group>
+        </Container>
+      </Paper>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      {/**IOT  Components*/}
+      <Paper w={1440} h={4450} withBorder bg={"black"}>
+        <Group noWrap spacing={0}>
+          <Box w="100%">
+            <Text size={"32px"} mt={91} ml={114} color="#F6F6F6">
+              Services
+            </Text>
+            <Divider size="md" my={23} mr={114} ml={114} pb={40} />
+          </Box>
+        </Group>
+        <Container>
+          <Text color="#F6F6F6" align="center" size={32} pt={64}>
+            IoT (Internet of Things)
+          </Text>
+          <Text
+            color="#E4E8ED"
+            align="left"
+            size={16}
+            pt={34}
+            w={1006}
+            weight="normal"
+          >
+            The Internet of Things is a system of interrelated devices that are
+            provided with the ability to transfer data over a network without
+            requiring human-to-human or human-to-computer interaction.
+          </Text>
+          <Image src={IOT} width={822} height={456} pt={64} mx={"auto"} />
+
+          <Text color="#F6F6F6" align="left" size={24} pt={128}>
+            What we offer?
+          </Text>
+          <Text
+            color="#E4E8ED"
+            align="left"
+            size={16}
+            pt={34}
+            w={1006}
+            weight={400}
+          >
+            IoT for Process Monitor, Control and Data Logging
+            <List>
+              <List.Item
+                style={{
+                  fontSize: "16px",
+                  fontWeight: "400",
+                  color: "#E4E8ED",
+                  lineHeight: "30px",
+                }}
+              >
+                Introducing Wi-Fi / Ethernet based interfaceable or stand alone
+                IoT modules for monitoring, controlling, and Data logging
+                industrial processes. Libratherm offers a fully managed back end
+                service along with a customizable WebApp available on PC,
+                Smartphones, and Tablets.
+              </List.Item>
+              <List.Item
+                style={{
+                  fontSize: "16px",
+                  fontWeight: "400",
+                  color: "#E4E8ED",
+                }}
+              >
+                These modules can capture data from RS-485 enabled hardware or
+                various Analog & Digital Sources.
+              </List.Item>
+            </List>
+          </Text>
+        </Container>
+      </Paper>
 
       {/* Button components */}
       <Paper>
