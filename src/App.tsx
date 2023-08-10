@@ -3115,6 +3115,19 @@ function App() {
       <br />
       <br />
 
+      {/** Journal page - industry*/}
+      <Paper w={1440} h={3500} withBorder bg={"black"}>
+        <Group noWrap spacing={0}>
+          <Box w="100%">
+            <Text size={"32px"} mt={91} ml={114} color="#F6F6F6">
+              Services
+            </Text>
+            <Divider size="md" my={23} mr={114} ml={114} pb={40} />
+          </Box>
+        </Group>
+        
+        </Paper>
+
       {/* Button components */}
       <Paper>
         <Stack align="center">
