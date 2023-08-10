@@ -1112,7 +1112,7 @@ function App() {
               height={37}
               stroke={1}
               color="#FFFFFF"
-              onClick={() => embla?.scrollNext()}
+              onClick={() => embla?.scrollPrev()}
             />
           }
           {
@@ -1121,7 +1121,7 @@ function App() {
               height={37}
               stroke={1}
               color="#FFFFFF"
-              onClick={() => embla?.scrollPrev()}
+              onClick={() => embla?.scrollNext()}
             />
           }
         </Group>
