@@ -120,7 +120,7 @@ const OptionsButton = ({ ...props }: ButtonProps) => (
   />
 );
 
-const PrimaryButton = ({ ...props }) => (
+const PrimaryButton = ({ ...props }:ButtonProps)  => (
   <Button
     styles={{
       root: {
@@ -5010,6 +5010,7 @@ function App() {
       <br />
 
       {/** Get in touch component */}
+      
       <Paper w={1440} h={2141} withBorder>
         <Container>
           <Text color="#262728" size={16} weight={600} mt={77} align="center">
@@ -5024,6 +5025,11 @@ function App() {
           Instruments and Systems since 1991. We cater to a wide range of
           industries, by providing accurate measurement, precise control
         </Text>
+        <MantineProvider
+				theme={{
+					colorScheme: "dark",
+				}}
+			>
 
         <Paper w={1440} h={1236} withBorder bg={"black"} mt={77}>
           <Group>
@@ -5040,20 +5046,82 @@ function App() {
               </Text>
 
               <SimpleGrid cols={2} mt={"xl"}>
-                <TextInput label="Name" radius={"xs"} />
-                <TextInput label="Company" radius={"xs"} />
+              <TextInput
+										w={288}
+										variant="filled"
+										styles={{
+											input: {
+												background: "black",
+												borderColor: "#777",
+												borderStyle: "solid",
+											},
+										}}
+										label="Name"
+										radius={"xs"}
+									/>
+                <TextInput 
+                w={288}
+                variant="filled"
+                styles={{
+                  input: {
+                    background: "black",
+                    borderColor: "#777",
+                    borderStyle: "solid",
+                  },
+                }}
+                label="Company" radius={"xs"} />
               </SimpleGrid>
-              <TextInput label="Email Address" radius={"xs"} />
+              <TextInput
+              w={596}
+              variant="filled"
+              styles={{
+                input: {
+                  background: "black",
+                  borderColor: "#777",
+                  borderStyle: "solid",
+                },
+              }}
+              label="Email Address" radius={"xs"} />
 
               <SimpleGrid cols={2}>
-                <TextInput label="Name" radius={"xs"} />
-                <TextInput label="Company" radius={"xs"} />
+                <TextInput 
+                w={288}
+                variant="filled"
+                styles={{
+                  input: {
+                    background: "black",
+                    borderColor: "#777",
+                    borderStyle: "solid",
+                  },
+                }}
+                label="Name" radius={"xs"} />
+                <TextInput 
+                w={288}
+                variant="filled"
+                styles={{
+                  input: {
+                    background: "black",
+                    borderColor: "#777",
+                    borderStyle: "solid",
+                  },
+                }}
+                label="Company" radius={"xs"} />
               </SimpleGrid>
-              <Textarea label="Message" radius={"xs"} />
+              <Textarea 
+              w={596}
+              variant="filled"
+              styles={{
+                input: {
+                  background: "black",
+                  borderColor: "#777",
+                  borderStyle: "solid",
+                },
+              }}
+              label="Message" radius={"xs"} />
+              <PrimaryButton w={138}> SEND</PrimaryButton>
             </Stack>
-            <Stack spacing="xs" align="stretch" pt={756}>
-              <PrimaryButton> SEND</PrimaryButton>
-            </Stack>
+            
+            
             <Stack>
               <Box w="100%">
                 <Divider size="md" ml={123} mt={180} w={300} />
@@ -5101,6 +5169,7 @@ function App() {
             </Stack>
           </Group>
         </Paper>
+      </MantineProvider>
       </Paper>
       <br />
       <br />
