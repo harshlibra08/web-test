@@ -5186,20 +5186,16 @@ function App() {
           </Paper>
         </MantineProvider>
       </Paper>
-      <br />
-      <br />
-      <br />
-      <br />
-
+      
       {/** Footer Component  */}
-      <Paper w={1440} h={824} withBorder>
+      <Paper w={1440} h={824} withBorder >
         <Box
           style={{
             backgroundColor: "#F5C44E",
             height: 312,
             width: 1312,
             marginLeft: 64,
-            marginTop: 56,
+            marginTop: -750,
           }}
         >
           <Text color="#292929" size={32} weight={600} pt={40} ml={80}>
