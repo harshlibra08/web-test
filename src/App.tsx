@@ -24,6 +24,8 @@ import {
   UnstyledButton,
   SimpleGrid,
   Textarea,
+  Checkbox,
+  Anchor,
 } from "@mantine/core";
 import BGImage from "./bgimage.png";
 //import LandingImage from "./Rectangle.png";
@@ -83,6 +85,7 @@ import WhiteBG from "./Group 1000003515.png";
 import SCR from "./scr.png";
 import PhaseAngel from "./Phaseangle.png";
 import TPC from "./TPC.png";
+import Footer from "./footer.png";
 
 import {
   IconSearch,
@@ -93,6 +96,11 @@ import {
   IconCircleChevronLeft,
   IconCircleChevronRight,
   IconChevronDown,
+  IconBrandWhatsapp,
+  IconBrandFacebookFilled,
+  IconBrandLinkedin,
+  IconBrandTwitterFilled,
+  IconBrandYoutubeFilled,
 } from "@tabler/icons-react";
 
 import { Carousel, Embla } from "@mantine/carousel";
@@ -120,7 +128,7 @@ const OptionsButton = ({ ...props }: ButtonProps) => (
   />
 );
 
-const PrimaryButton = ({ ...props }:ButtonProps)  => (
+const PrimaryButton = ({ ...props }: ButtonProps) => (
   <Button
     styles={{
       root: {
@@ -136,7 +144,6 @@ const PrimaryButton = ({ ...props }:ButtonProps)  => (
       },
       label: {
         color: "#555459",
-        textTransform: "uppercase",
       },
     }}
     {...props}
@@ -5010,7 +5017,7 @@ function App() {
       <br />
 
       {/** Get in touch component */}
-      
+
       <Paper w={1440} h={2141} withBorder>
         <Container>
           <Text color="#262728" size={16} weight={600} mt={77} align="center">
@@ -5026,150 +5033,331 @@ function App() {
           industries, by providing accurate measurement, precise control
         </Text>
         <MantineProvider
-				theme={{
-					colorScheme: "dark",
-				}}
-			>
+          theme={{
+            colorScheme: "dark",
+          }}
+        >
+          <Paper w={1440} h={1236} withBorder bg={"black"} mt={77}>
+            <Group>
+              <Stack ml={109} mt={140}>
+                <Text size={16} color="#E4E8ED">
+                  GET IN TOUCH
+                </Text>
+                <Text size={32} color="#FFF">
+                  Interested in something?
+                </Text>
+                <Text size={16} color="#E4E8ED" w={601}>
+                  Please get in touch below if you have a product enquiry or
+                  would like to know more information
+                </Text>
 
-        <Paper w={1440} h={1236} withBorder bg={"black"} mt={77}>
-          <Group>
-            <Stack ml={109} mt={140}>
-              <Text size={16} color="#E4E8ED">
-                GET IN TOUCH
-              </Text>
-              <Text size={32} color="#FFF">
-                Interested in something?
-              </Text>
-              <Text size={16} color="#E4E8ED" w={601}>
-                Please get in touch below if you have a product enquiry or would
-                like to know more information
-              </Text>
+                <SimpleGrid cols={2} mt={"xl"}>
+                  <TextInput
+                    w={288}
+                    variant="filled"
+                    styles={{
+                      input: {
+                        background: "black",
+                        borderColor: "#777",
+                        borderStyle: "solid",
+                      },
+                    }}
+                    label="Name"
+                    radius={"xs"}
+                  />
+                  <TextInput
+                    w={288}
+                    variant="filled"
+                    styles={{
+                      input: {
+                        background: "black",
+                        borderColor: "#777",
+                        borderStyle: "solid",
+                      },
+                    }}
+                    label="Company"
+                    radius={"xs"}
+                  />
+                </SimpleGrid>
+                <TextInput
+                  w={596}
+                  variant="filled"
+                  styles={{
+                    input: {
+                      background: "black",
+                      borderColor: "#777",
+                      borderStyle: "solid",
+                    },
+                  }}
+                  label="Email Address"
+                  radius={"xs"}
+                />
 
-              <SimpleGrid cols={2} mt={"xl"}>
-              <TextInput
-										w={288}
-										variant="filled"
-										styles={{
-											input: {
-												background: "black",
-												borderColor: "#777",
-												borderStyle: "solid",
-											},
-										}}
-										label="Name"
-										radius={"xs"}
-									/>
-                <TextInput 
-                w={288}
-                variant="filled"
+                <SimpleGrid cols={2}>
+                  <TextInput
+                    w={288}
+                    variant="filled"
+                    styles={{
+                      input: {
+                        background: "black",
+                        borderColor: "#777",
+                        borderStyle: "solid",
+                      },
+                    }}
+                    label="Name"
+                    radius={"xs"}
+                  />
+                  <TextInput
+                    w={288}
+                    variant="filled"
+                    styles={{
+                      input: {
+                        background: "black",
+                        borderColor: "#777",
+                        borderStyle: "solid",
+                      },
+                    }}
+                    label="Company"
+                    radius={"xs"}
+                  />
+                </SimpleGrid>
+                <Textarea
+                  w={596}
+                  variant="filled"
+                  styles={{
+                    input: {
+                      background: "black",
+                      borderColor: "#777",
+                      borderStyle: "solid",
+                    },
+                  }}
+                  label="Message"
+                  radius={"xs"}
+                />
+                <PrimaryButton w={138}> SEND</PrimaryButton>
+              </Stack>
+
+              <Stack>
+                <Box w="100%">
+                  <Divider size="md" ml={123} mt={180} w={300} />
+                  <Text size={"32px"} ml={123} mt={6} color="#F6F6F6">
+                    Useful Information
+                  </Text>
+                  <Text size={"20px"} ml={123} mt={35} color="#F6F6F6">
+                    Statutory Details:
+                  </Text>
+                  <Text size={"16px"} ml={123} mt={22} color="#E4E8ED">
+                    GST No : 27AABCL1732A1Z5
+                  </Text>
+                  <Text size={"16px"} ml={123} mt={22} color="#E4E8ED">
+                    CIN No : U31909MH2006PTC159638
+                  </Text>
+                  <Text size={"20px"} ml={123} mt={35} color="#F6F6F6">
+                    Address :
+                  </Text>
+                  <Text size={"16px"} ml={123} mt={22} w={488} color="#E4E8ED">
+                    401-403, Diamond Industrial Estate, Ketkipada Road, Dahisar
+                    (East), Mumbai 400068, Maharashtra, India.
+                  </Text>
+                  <Text size={"20px"} ml={123} mt={22} color="#F6F6F6">
+                    Contact Us:
+                  </Text>
+                  <Text size={"16px"} ml={123} mt={35} color="#E4E8ED">
+                    Email: enquiry@libratherm.com, libratherm@libratherm.com
+                  </Text>
+                  <Text size={"16px"} ml={123} color="#E4E8ED">
+                    Landline: +91-22-42555334
+                  </Text>
+                  <Text size={"20px"} ml={123} mt={22} color="#F6F6F6">
+                    Mobile:
+                  </Text>
+                  <Text size={"16px"} ml={123} mt={22} color="#E4E8ED">
+                    Customer Care : +91-8104971152
+                  </Text>
+                  <Text size={"16px"} ml={123} color="#E4E8ED">
+                    Sales : +91-8104971154
+                  </Text>
+                  <Text size={"16px"} ml={123} color="#E4E8ED">
+                    Marketing : +91-9082687279
+                  </Text>
+                </Box>
+              </Stack>
+            </Group>
+          </Paper>
+        </MantineProvider>
+      </Paper>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      {/** Footer Component  */}
+      <Paper w={1440} h={824} withBorder>
+        <Box
+          style={{
+            backgroundColor: "#F5C44E",
+            height: 312,
+            width: 1312,
+            marginLeft: 64,
+            marginTop: 56,
+          }}
+        >
+          <Text color="#292929" size={32} weight={600} pt={40} ml={80}>
+            REQUEST A CALL BACK
+          </Text>
+
+          <Text color="#292929" size={14} weight={400} pt={12} ml={80}>
+            Connect with us to know more about our new products, sales and
+            launches!
+          </Text>
+          <Container pos={"absolute"} pl={80} pt={12}>
+            <Grid>
+              <Col span={3}>
+                <TextInput
+                  label="First name"
+                  variant="unstyled"
+                  style={{
+                    border: "none",
+                    borderBottom: "1px solid #000",
+                  }}
+                />
+              </Col>
+              <Col span={3}>
+                <TextInput
+                  label="Last name"
+                  variant="unstyled"
+                  style={{
+                    border: "none",
+                    borderBottom: "1px solid #000",
+                  }}
+                />
+              </Col>
+              <Col span={3}>
+                <TextInput
+                  label="Email"
+                  variant="unstyled"
+                  style={{
+                    border: "none",
+                    borderBottom: "1px solid #000",
+                  }}
+                />
+              </Col>
+            </Grid>
+            <Grid>
+              <Checkbox
+                mt={32}
                 styles={{
                   input: {
-                    background: "black",
-                    borderColor: "#777",
-                    borderStyle: "solid",
+                    border: " 2px solid",
+                    borderColor: "#000",
+                    borderRadius: "0px",
+                    backgroundColor: "#F5C44E",
                   },
                 }}
-                label="Company" radius={"xs"} />
-              </SimpleGrid>
-              <TextInput
-              w={596}
-              variant="filled"
-              styles={{
-                input: {
-                  background: "black",
-                  borderColor: "#777",
-                  borderStyle: "solid",
-                },
-              }}
-              label="Email Address" radius={"xs"} />
+                label="I’m happy to recieve marketing communications and agree to the data policy"
+                w={403}
+                color="dark"
+              />
+              <OptionsButton w={138} mt={28} ml={98}>
+                SEND
+              </OptionsButton>
+              <Image src={Footer} width={454} height={368} ml={702} mt={-327} />
+            </Grid>
+          </Container>
+        </Box>
 
-              <SimpleGrid cols={2}>
-                <TextInput 
-                w={288}
-                variant="filled"
-                styles={{
-                  input: {
-                    background: "black",
-                    borderColor: "#777",
-                    borderStyle: "solid",
-                  },
-                }}
-                label="Name" radius={"xs"} />
-                <TextInput 
-                w={288}
-                variant="filled"
-                styles={{
-                  input: {
-                    background: "black",
-                    borderColor: "#777",
-                    borderStyle: "solid",
-                  },
-                }}
-                label="Company" radius={"xs"} />
-              </SimpleGrid>
-              <Textarea 
-              w={596}
-              variant="filled"
-              styles={{
-                input: {
-                  background: "black",
-                  borderColor: "#777",
-                  borderStyle: "solid",
-                },
-              }}
-              label="Message" radius={"xs"} />
-              <PrimaryButton w={138}> SEND</PrimaryButton>
-            </Stack>
-            
-            
-            <Stack>
-              <Box w="100%">
-                <Divider size="md" ml={123} mt={180} w={300} />
-                <Text size={"32px"} ml={123} mt={6} color="#F6F6F6">
-                  Useful Information
-                </Text>
-                <Text size={"20px"} ml={123} mt={35} color="#F6F6F6">
-                  Statutory Details:
-                </Text>
-                <Text size={"16px"} ml={123} mt={22} color="#E4E8ED">
-                  GST No : 27AABCL1732A1Z5
-                </Text>
-                <Text size={"16px"} ml={123} mt={22} color="#E4E8ED">
-                  CIN No : U31909MH2006PTC159638
-                </Text>
-                <Text size={"20px"} ml={123} mt={35} color="#F6F6F6">
-                  Address :
-                </Text>
-                <Text size={"16px"} ml={123} mt={22} w={488} color="#E4E8ED">
-                  401-403, Diamond Industrial Estate, Ketkipada Road, Dahisar
-                  (East), Mumbai 400068, Maharashtra, India.
-                </Text>
-                <Text size={"20px"} ml={123} mt={22} color="#F6F6F6">
-                  Contact Us:
-                </Text>
-                <Text size={"16px"} ml={123} mt={35} color="#E4E8ED">
-                  Email: enquiry@libratherm.com, libratherm@libratherm.com
-                </Text>
-                <Text size={"16px"} ml={123} color="#E4E8ED">
-                  Landline: +91-22-42555334
-                </Text>
-                <Text size={"20px"} ml={123} mt={22} color="#F6F6F6">
-                  Mobile:
-                </Text>
-                <Text size={"16px"} ml={123} mt={22} color="#E4E8ED">
-                  Customer Care : +91-8104971152
-                </Text>
-                <Text size={"16px"} ml={123} color="#E4E8ED">
-                  Sales : +91-8104971154
-                </Text>
-                <Text size={"16px"} ml={123} color="#E4E8ED">
-                  Marketing : +91-9082687279
-                </Text>
-              </Box>
-            </Stack>
-          </Group>
-        </Paper>
-      </MantineProvider>
+        <Group>
+          <Stack>
+            <Text size={14} weight={700} mt={64} ml={144}>
+              USEFUL LINKS
+            </Text>
+            <Text size={14} weight={400} mt={30} ml={144} color="#555459">
+              Careers
+            </Text>
+            <Text size={14} weight={400} mt={14} ml={144} color="#555459">
+              Terms of Service
+            </Text>
+            <Text size={14} weight={700} mt={30} ml={144}>
+              WE ARE SOCIAL!
+            </Text>
+            <Text size={14} weight={400} mt={30} ml={144} color="#555459">
+              <Group>
+                <IconBrandFacebookFilled size={24} color="#555459" />
+                <IconBrandLinkedin size={24} color="#555459" />
+                <IconBrandTwitterFilled size={24} color="#555459" />
+                <IconBrandYoutubeFilled size={24} color="#555459" />
+                <IconBrandWhatsapp size={24} color="#555459" />
+              </Group>
+            </Text>
+          </Stack>
+          <Stack>
+            <Text size={14} weight={700} mt={64} ml={144}>
+              POLICIES
+            </Text>
+            <Text size={14} weight={400} mt={30} ml={144} color="#555459">
+              Quality Policy
+            </Text>
+            <Text size={14} weight={400} mt={10} ml={144} color="#555459">
+              Privacy Policy
+            </Text>
+            <Text size={14} weight={400} mt={10} ml={144} color="#555459">
+              Shipping Policy
+            </Text>
+            <Text size={14} weight={400} mt={10} ml={144} color="#555459">
+              Cancellation Policy
+            </Text>
+
+            <Text size={14} weight={400} mt={10} ml={144} color="#555459">
+              Return & Refund Policy
+            </Text>
+          </Stack>
+          <Stack>
+            <Text size={14} weight={700} mt={64} ml={144}>
+              WAYS TO CONNECT
+            </Text>
+            <Text size={14} weight={400} mt={30} ml={144} color="#555459">
+              Email: <br />
+              <Anchor>
+                enquiry@libratherm.com, <br />
+                libratherm@libratherm.com
+              </Anchor>
+            </Text>
+            <Text size={14} weight={400} mt={10} ml={144} color="#555459">
+              Mobile: <br />
+              <Anchor>
+                +91-8104971152 +91-8104971154, <br />
+                +91-9082687279, +91-9821136685
+              </Anchor>
+            </Text>
+
+            <Text size={14} weight={400} mt={10} ml={144} color="#555459">
+              Landline: <br />
+              <Anchor>+91-22-42555334</Anchor>
+            </Text>
+          </Stack>
+          <Stack>
+            <Text size={14} weight={700} mt={64} ml={102}>
+              OFFICE ADDRESS
+            </Text>
+            <Text size={14} weight={400} mt={30} ml={102} color="#555459">
+              401-403, Diamond Industrial <br /> Estate,Ketki Pada Road, Dahisar{" "}
+              <br /> (East), Mumbai 400068, <br /> Maharashtra, India.
+            </Text>
+            <OptionsButton ml={102} mt={26}>
+              DOWNLOAD BROCHURE
+            </OptionsButton>
+            <PrimaryButton 
+            ml={102} mt={14}
+            leftIcon = {<IconBrandWhatsapp color="#25D366" size={24} />}
+            style={{
+              
+              paddingRight: "8px"
+            }}
+            >
+              Get it on Whatsapp
+            </PrimaryButton>
+          </Stack>
+        </Group>
       </Paper>
       <br />
       <br />
