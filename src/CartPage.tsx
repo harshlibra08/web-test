@@ -12,7 +12,6 @@ import {
 	Container,
 	Col,
 	TextInput,
-	Footer,
 	Anchor,
 	Text,
 	Image,
