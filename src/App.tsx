@@ -1,4 +1,8 @@
 import { useRef, useState } from "react";
+
+import Landing from "./Landing";
+import Industries from "./Industries";
+import Products from "./Products";
 import {
 	MantineProvider,
 	Button,
@@ -35,84 +39,84 @@ import {
 	ScrollArea,
 	px,
 } from "@mantine/core";
-import BGImage from "./bgimage.png";
+import BGImage from "./Assets/bgimage.png";
 //import LandingImage from "./Rectangle.png";
-import WHO from "./who.png";
-import Strength1 from "./strength1.png";
-import Strength2 from "./strength2.png";
-import Strength3 from "./strength3.png";
-import Gradient from "./gradient1.png";
-import Specialization from "./specialization.png";
-import Worldmap from "./WorldMap.png";
-import PRC from "./prc.png";
-import PRCBg from "./prcbg.png";
-import Tifr from "./tifr.png";
-import Quote from "./quote.png";
-import Bhel from "./bhel.png";
-import Avatar1 from "./avatar1.png";
-import Avatar2 from "./avatar2.png";
-import Avatar3 from "./avatar3.png";
-import Event1 from "./event1.png";
-import Event2 from "./event2.png";
-import Event3 from "./event3.png";
-import Event4 from "./event4.png";
-import Event5 from "./event5.png";
-import Event6 from "./event6.png";
-import EventBg from "./eventbg.png";
-import OurTeam from "./team.png";
-import Goal1 from "./goal1.png";
-import Goal2 from "./goal2.png";
-import Goal3 from "./goal3.png";
-import Goal4 from "./goal4.png";
-import Vision from "./vision.png";
-import RectangleGrey from "./Rectangle3683.png";
-import RectangleOmega from "./RectangleOmega.png";
-import RectangleJournal from "./RectangleJournal.png";
-import BrandImg from "./brand.png";
+import WHO from "./Assets/who.png";
+import Strength1 from "./Assets/strength1.png";
+import Strength2 from "./Assets/strength2.png";
+import Strength3 from "./Assets/strength3.png";
+import Gradient from "./Assets/gradient1.png";
+import Specialization from "./Assets/specialization.png";
+import Worldmap from "./Assets/WorldMap.png";
+import PRC from "./Assets/prc.png";
+import PRCBg from "./Assets/prcbg.png";
+import Tifr from "./Assets/tifr.png";
+import Quote from "./Assets/quote.png";
+import Bhel from "./Assets/bhel.png";
+import Avatar1 from "./Assets/avatar1.png";
+import Avatar2 from "./Assets/avatar2.png";
+import Avatar3 from "./Assets/avatar3.png";
+import Event1 from "./Assets/event1.png";
+import Event2 from "./Assets/event2.png";
+import Event3 from "./Assets/event3.png";
+import Event4 from "./Assets/event4.png";
+import Event5 from "./Assets/event5.png";
+import Event6 from "./Assets/event6.png";
+import EventBg from "./Assets/eventbg.png";
+import OurTeam from "./Assets/team.png";
+import Goal1 from "./Assets/goal1.png";
+import Goal2 from "./Assets/goal2.png";
+import Goal3 from "./Assets/goal3.png";
+import Goal4 from "./Assets/goal4.png";
+import Vision from "./Assets/vision.png";
+import RectangleGrey from "./Assets/Rectangle3683.png";
+import RectangleOmega from "./Assets/RectangleOmega.png";
+import RectangleJournal from "./Assets/RectangleJournal.png";
+import BrandImg from "./Assets/brand.png";
 //import FooterBg from "./footerbg.png";
 //import FooterGrad from "./footergradient.png";
-import LandingMain from "./landing.svg";
-import Journal1 from "./journal1.png";
-import Journal2 from "./journal2.png";
-import Industry1 from "./ind1.png";
-import Industry2 from "./ind2.png";
-import Industry3 from "./ind3.png";
-import Industry4 from "./ind4.png";
-import DAQ from "./dataacc.png";
-import IOT from "./iot.png";
-import IOT1 from "./iot1.png";
-import IOTApp from "./IotApp.png";
-import PWHT from "./image 426.png";
-import PWHT2 from "./pwht2.png";
-import PWHT3 from "./pwht3.png";
-import Rect3715 from "./Rectangle 3715.png";
-import Rect3716 from "./Rectangle 3716.png";
-import SixZone from "./sixzone.png";
-import Img440 from "./image 440.png";
-import WhiteBG from "./Group 1000003515.png";
-import SCR from "./scr.png";
-import PhaseAngel from "./Phaseangle.png";
-import TPC from "./TPC.png";
-import Footer from "./footer.png";
-import LibraLogo from "./LibraLogo.png";
-import Category from "./category.png";
-import Rect16 from "./Rectangle 16.png";
-import Rectangle70 from "./Rectangle70x70.png";
-import bgdigitalindicator from "./digitalIndicator.png";
-import BluerectangleBg from "./BlueRectangleBg.png";
-import DigitalClock from "./image 375.png";
-import GlassManufacturing from "./glass-manufacturing.png";
-import YellowBg from "./yellowBg.png";
-import GreyBg from "./greyBg.png";
-import GreyBgLeft from "./GreyBgLeft.png";
-import YellowBgLeft from "./YellowBgLeft.png";
-import RectangleGreyLeft from "./Rectangle1027Grey.png";
-import Panel from "./panel.png";
-import PanelFront from "./panelfront1.png";
-import Panel2 from "./panel2.png";
-import PanelBg from "./panelbg.png";
-import Model2 from "./modl2.png";
-import CartBg from "./cartrectangle.png";
+import LandingMain from "./Assets/landing.svg";
+import Journal1 from "./Assets/journal1.png";
+import Journal2 from "./Assets/journal2.png";
+import Industry1 from "./Assets/ind1.png";
+import Industry2 from "./Assets/ind2.png";
+import Industry3 from "./Assets/ind3.png";
+import Industry4 from "./Assets/ind4.png";
+import DAQ from "./Assets/dataacc.png";
+import IOT from "./Assets/iot.png";
+import IOT1 from "./Assets/iot1.png";
+import IOTApp from "./Assets/IotApp.png";
+import PWHT from "./Assets/image 426.png";
+import PWHT2 from "./Assets/pwht2.png";
+import PWHT3 from "./Assets/pwht3.png";
+import Rect3715 from "./Assets/Rectangle 3715.png";
+import Rect3716 from "./Assets/Rectangle 3716.png";
+import SixZone from "./Assets/sixzone.png";
+import Img440 from "./Assets/image 440.png";
+import WhiteBG from "./Assets/Group 1000003515.png";
+import SCR from "./Assets/scr.png";
+import PhaseAngel from "./Assets/Phaseangle.png";
+import TPC from "./Assets/TPC.png";
+import Footer from "./Assets/footer.png";
+import LibraLogo from "./Assets/LibraLogo.png";
+import Category from "./Assets/category.png";
+import Rect16 from "./Assets/Rectangle 16.png";
+import Rectangle70 from "./Assets/Rectangle70x70.png";
+import bgdigitalindicator from "./Assets/digitalIndicator.png";
+import BluerectangleBg from "./Assets/BlueRectangleBg.png";
+import DigitalClock from "./Assets/image 375.png";
+import GlassManufacturing from "./Assets/glass-manufacturing.png";
+import YellowBg from "./Assets/yellowBg.png";
+import GreyBg from "./Assets/greyBg.png";
+import GreyBgLeft from "./Assets/GreyBgLeft.png";
+import YellowBgLeft from "./Assets/YellowBgLeft.png";
+import RectangleGreyLeft from "./Assets/Rectangle1027Grey.png";
+import Panel from "./Assets/panel.png";
+import PanelFront from "./Assets/panelfront1.png";
+import Panel2 from "./Assets/panel2.png";
+import PanelBg from "./Assets/panelbg.png";
+import Model2 from "./Assets/modl2.png";
+import CartBg from "./Assets/cartrectangle.png";
 
 import {
 	IconSearch,
@@ -374,284 +378,9 @@ function App() {
 		>
 			<HeaderSearch links={links} />
 
-			{/* Landingpage hero */}
-			<Paper w={1400} h={688} withBorder>
-				<Container>
-					<Grid gutter="lg">
-						<Col span={6} style={{ zIndex: 2, position: "relative" }}>
-							<Text
-								size="32px"
-								w={374}
-								h={102}
-								weight={600}
-								mb={26}
-								mt={123}
-								style={{ lineHeight: "51.2px" }}
-							>
-								Partners in <br /> Measurement & Control
-							</Text>
-							<Text
-								h={44}
-								w={592}
-								color="#555459"
-								size={14}
-								weight={400}
-								style={{ lineHeight: "22.4px" }}
-							>
-								Libratherm Instruments Pvt. Ltd. is an ISO 9001:2015 Certified Indian Company
-								engaged in the manufacturing of Electronic Process Control Instruments and Systems
-								since 1991.
-							</Text>
-							<List mt={24}>
-								<List.Item
-									style={{
-										fontSize: "14px",
-										fontWeight: "400",
-										color: "#555459",
-										lineHeight: "28px",
-									}}
-								>
-									Field Proven Products : Certified Indian Company engaged in the manufacturing of
-									Electronic Process Control
-								</List.Item>
-								<List.Item
-									pt={8}
-									style={{
-										fontSize: "14px",
-										fontWeight: "400",
-										color: "#555459",
-										lineHeight: "28px",
-										marginBottom: "37px",
-									}}
-								>
-									Latest Technology : Certified Indian Company engaged in the manufacturing of
-									Electronic Process Control
-								</List.Item>
-							</List>
-							<SecondaryButton>
-								Get Started {<IconChevronsDown size="20px" color="#1D1D1B" />}{" "}
-							</SecondaryButton>
-						</Col>
-						<Col span={6}>
-							<Paper shadow="xs">
-								<img
-									src={LandingMain}
-									alt="Sample"
-									width={1446}
-									height={688}
-									style={{ marginLeft: "-600px" }}
-								/>
-							</Paper>
-						</Col>
-					</Grid>
-				</Container>
-			</Paper>
-
-			{/* Industries we serve  */}
-			<Paper w={1500} withBorder>
-				<Group noWrap spacing={0}>
-					<Box w="100%">
-						<Divider
-							size="md"
-							my={"60px"}
-							label={
-								<Text size={"32px"} ml={140}>
-									Industries we serve
-								</Text>
-							}
-							labelPosition="left"
-						/>
-					</Box>
-					<TertiaryButton>View All</TertiaryButton>
-				</Group>
-
-				<Group position="center" spacing="lg">
-					<Card h={500} w={391}>
-						<Card.Section>
-							<Image
-								src="https://generation-sessions.s3.amazonaws.com/af17357d9cd2ae9855b4d3ee104d414b/img/rectangle-6096.png"
-								height={391}
-								width={391}
-								alt="Glass"
-							/>
-
-							<Text weight={600} pt={16}>
-								Glass Manufacture
-							</Text>
-
-							<Text size="sm" color="dimmed" lineClamp={5} pt={4}>
-								Libratherm has supplied various types of temperature controllers, thyristor power
-								controllers and control panels to the industries manufacturing Files, Diamond Tools,
-								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
-								blades etc… The temperature of the electrical or fuel fired heating systems, used
-								for annealing, hardening, steam bluing and similar such processes, has been in use
-								for precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300,
-								PID-723, DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or
-								infrared non contact sensors.
-							</Text>
-						</Card.Section>
-					</Card>
-
-					<Card h={500} w={391}>
-						<Card.Section>
-							<Image
-								src="https://generation-sessions.s3.amazonaws.com/af17357d9cd2ae9855b4d3ee104d414b/img/unsplash-mjwgkmwkdda-1@2x.png"
-								height={391}
-								width={391}
-								alt="Norway"
-							/>
-
-							<Text weight={600} pt={16}>
-								Jewelry Manufacture
-							</Text>
-
-							<Text size="sm" color="dimmed" lineClamp={5} pt={4}>
-								Libratherm has supplied various types of temperature controllers, thyristor power
-								controllers and control panels to the industries manufacturing Files, Diamond Tools,
-								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
-								blades etc… The temperature of the electrical or fuel fired heating systems, used
-								for annealing, hardening, steam bluing and similar such processes, has been in use
-								for precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300,
-								PID-723, DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or
-								infrared non contact sensors.
-							</Text>
-						</Card.Section>
-					</Card>
-
-					<Card h={500} w={391}>
-						<Card.Section>
-							<Image
-								src="https://generation-sessions.s3.amazonaws.com/af17357d9cd2ae9855b4d3ee104d414b/img/unsplash-mjwgkmwkdda@2x.png"
-								height={391}
-								width={391}
-								alt="Norway"
-							/>
-
-							<Text weight={600} pt={16}>
-								Steel Plants
-							</Text>
-
-							<Text size="sm" color="dimmed" lineClamp={5} pt={4}>
-								Libratherm has supplied various types of temperature controllers, thyristor power
-								controllers and control panels to the industries manufacturing Files, Diamond Tools,
-								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
-								blades etc… The temperature of the electrical or fuel fired heating systems, used
-								for annealing, hardening, steam bluing and similar such processes, has been in use
-								for precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300,
-								PID-723, DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or
-								infrared non contact sensors.
-							</Text>
-						</Card.Section>
-					</Card>
-				</Group>
-			</Paper>
-
-			<br />
-			<br />
-			<br />
-			<br />
-
-			{/* Our Products components */}
-			<Paper w={1500} withBorder>
-				<Group noWrap spacing={0}>
-					<Box w="100%">
-						<Divider
-							size="md"
-							my={"60px"}
-							label={
-								<Text size={"32px"} ml={140}>
-									Our Products
-								</Text>
-							}
-							labelPosition="left"
-						/>
-					</Box>
-					<TertiaryButton>View All</TertiaryButton>
-				</Group>
-
-				<Group position="center" spacing="lg">
-					<Card withBorder radius={8} h={364} w={288}>
-						<Card.Section>
-							<Text mt="xs" color="#555459" size="sm" weight={600} ml={18} mr={10}>
-								Three Phase Thyristor Power Controller – POW-3-PA
-							</Text>
-							<Image
-								src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/image-273-3@2x.png"
-								height={207}
-								width={207}
-								pt={15}
-								ml={41}
-							/>
-						</Card.Section>
-
-						<Text weight={400} size="20px" mt="md" color="#414141" ml={40}>
-							₹12,600 – ₹14,700
-						</Text>
-					</Card>
-
-					<Card withBorder radius={8} h={364} w={288}>
-						<Card.Section>
-							<Text mt="xs" color="#555459" size="sm" weight={600} ml={18} mr={10}>
-								Three Phase Thyristor Power Controller – POW-3-PA
-							</Text>
-							<Image
-								src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/pow-3-pa-cl-50a-2@2x.png"
-								height={180}
-								width={140}
-								pt={35}
-								ml={70}
-							/>
-						</Card.Section>
-
-						<Text weight={400} size="20px" mt="lg" color="#414141" ml={40}>
-							₹12,600 – ₹14,700
-						</Text>
-					</Card>
-
-					<Card withBorder radius={8} h={364} w={288}>
-						<Card.Section>
-							<Text mt="xs" color="#555459" size="sm" weight={600} ml={18} mr={10}>
-								Three Phase Thyristor Power Controller – POW-3-PA
-							</Text>
-							<Image
-								src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/image-277-1@2x.png"
-								height={207}
-								width={207}
-								pt={15}
-								ml={41}
-							/>
-						</Card.Section>
-
-						<Text weight={400} size="20px" mt="md" color="#414141" ml={40}>
-							₹12,600 – ₹14,700
-						</Text>
-					</Card>
-
-					<Card withBorder radius={8} h={364} w={288}>
-						<Card.Section>
-							<Text mt="xs" color="#555459" size="sm" weight={600} ml={18} mr={10}>
-								Three Phase Thyristor Power Controller – POW-3-PA
-							</Text>
-							<Image
-								src="https://generation-sessions.s3.amazonaws.com/ec9bdc3f6e5f9cc40d9e2683bb9c9447/img/image-273-3@2x.png"
-								height={207}
-								width={207}
-								pt={15}
-								ml={41}
-							/>
-						</Card.Section>
-
-						<Text weight={400} size="20px" mt="md" color="#414141" ml={40}>
-							₹12,600 – ₹14,700
-						</Text>
-					</Card>
-				</Group>
-			</Paper>
-
-			<br />
-			<br />
-			<br />
-			<br />
+			<Landing />
+			<Industries />
+			<Products />
 
 			{/* Providing excellence image components */}
 			<Paper w={1441} h={600} withBorder>
@@ -6787,6 +6516,7 @@ function App() {
 								<ActionIcon variant="default" size="xs" aria-label="Plus" mt={67}>
 									<IconPlus style={{ width: rem(12) }} stroke={1.5} />
 								</ActionIcon>
+
 								<Text color="#262728" weight={700} size={14} ml={30} mt={68}>
 									₹12,600
 								</Text>
@@ -7533,6 +7263,144 @@ function App() {
 					</Group>
 				</Paper>
 			</MantineProvider>
+
+			<Paper w={1440} h={1440} withBorder mt={30} maw={1440} m={0} px={64}>
+				<Box w="100%" mt={89}>
+					<Text size={"32px"} mt={128} ml={50} color="#292929" weight={600}>
+						Categories{" "}
+					</Text>
+				</Box>
+				<Grid columns={8} gutter={0} mt={24}>
+					<Grid.Col span={1} h={154} px={47} py={24}>
+						<Stack h={106} w={70} spacing={2}>
+							<Box w={70} h={70} bg={"gray"}>
+								<Image src={Panel} width={70} height={70} />
+							</Box>
+							<Text>Digital Indicator</Text>
+						</Stack>
+					</Grid.Col>
+					<Grid.Col span={1} h={154} px={47} py={24}>
+						<Stack h={106} w={70} spacing={2}>
+							<Box w={70} h={70} bg={"gray"}>
+								<Image src={Panel} width={70} height={70} />
+							</Box>
+							<Text>Digital Indicator</Text>
+						</Stack>
+					</Grid.Col>
+					<Grid.Col span={1} h={154} px={47} py={24}>
+						<Stack h={106} w={70} spacing={2}>
+							<Box w={70} h={70} bg={"gray"}>
+								<Image src={Panel} width={70} height={70} />
+							</Box>
+							<Text>Digital Indicator</Text>
+						</Stack>
+					</Grid.Col>
+					<Grid.Col span={1} h={154} px={47} py={24}>
+						<Stack h={106} w={70} spacing={2}>
+							<Box w={70} h={70} bg={"gray"}>
+								<Image src={Panel} width={70} height={70} />
+							</Box>
+							<Text>Digital Indicator</Text>
+						</Stack>
+					</Grid.Col>
+					<Grid.Col span={1} h={154} px={47} py={24}>
+						<Stack h={106} w={70} spacing={2}>
+							<Box w={70} h={70} bg={"gray"}>
+								<Image src={Panel} width={70} height={70} />
+							</Box>
+							<Text>Digital Indicator</Text>
+						</Stack>
+					</Grid.Col>
+					<Grid.Col span={1} h={154} px={47} py={24}>
+						<Stack h={106} w={70} spacing={2}>
+							<Box w={70} h={70} bg={"gray"}>
+								<Image src={Panel} width={70} height={70} />
+							</Box>
+							<Text>Digital Indicator</Text>
+						</Stack>
+					</Grid.Col>
+					<Grid.Col span={1} h={154} px={47} py={24}>
+						<Stack h={106} w={70} spacing={2}>
+							<Box w={70} h={70} bg={"gray"}>
+								<Image src={Panel} width={70} height={70} />
+							</Box>
+							<Text>Digital Indicator</Text>
+						</Stack>
+					</Grid.Col>
+					<Grid.Col span={1} h={154} px={47} py={24}>
+						<Stack h={106} w={70} spacing={2}>
+							<Box w={70} h={70} bg={"gray"}>
+								<Image src={Panel} width={70} height={70} />
+							</Box>
+							<Text>Digital Indicator</Text>
+						</Stack>
+					</Grid.Col>
+					<Grid.Col span={1} h={154} px={47} py={24}>
+						<Stack h={106} w={70} spacing={2}>
+							<Box w={70} h={70} bg={"gray"}>
+								<Image src={Panel} width={70} height={70} />
+							</Box>
+							<Text>Digital Indicator</Text>
+						</Stack>
+					</Grid.Col>
+					<Grid.Col span={1} h={154} px={47} py={24}>
+						<Stack h={106} w={70} spacing={2}>
+							<Box w={70} h={70} bg={"gray"}>
+								<Image src={Panel} width={70} height={70} />
+							</Box>
+							<Text>Digital Indicator</Text>
+						</Stack>
+					</Grid.Col>
+					<Grid.Col span={1} h={154} px={47} py={24}>
+						<Stack h={106} w={70} spacing={2}>
+							<Box w={70} h={70} bg={"gray"}>
+								<Image src={Panel} width={70} height={70} />
+							</Box>
+							<Text>Digital Indicator</Text>
+						</Stack>
+					</Grid.Col>
+					<Grid.Col span={1} h={154} px={47} py={24}>
+						<Stack h={106} w={70} spacing={2}>
+							<Box w={70} h={70} bg={"gray"}>
+								<Image src={Panel} width={70} height={70} />
+							</Box>
+							<Text>Digital Indicator</Text>
+						</Stack>
+					</Grid.Col>
+					<Grid.Col span={1} h={154} px={47} py={24}>
+						<Stack h={106} w={70} spacing={2}>
+							<Box w={70} h={70} bg={"gray"}>
+								<Image src={Panel} width={70} height={70} />
+							</Box>
+							<Text>Digital Indicator</Text>
+						</Stack>
+					</Grid.Col>
+					<Grid.Col span={1} h={154} px={47} py={24}>
+						<Stack h={106} w={70} spacing={2}>
+							<Box w={70} h={70} bg={"gray"}>
+								<Image src={Panel} width={70} height={70} />
+							</Box>
+							<Text>Digital Indicator</Text>
+						</Stack>
+					</Grid.Col>
+					<Grid.Col span={1} h={154} px={47} py={24}>
+						<Stack h={106} w={70} spacing={2}>
+							<Box w={70} h={70} bg={"gray"}>
+								<Image src={Panel} width={70} height={70} />
+							</Box>
+							<Text>Digital Indicator</Text>
+						</Stack>
+					</Grid.Col>
+					<Grid.Col span={1} h={154} px={47} py={24}>
+						<Stack h={106} w={70} spacing={2}>
+							<Box w={70} h={70} bg={"gray"}>
+								<Image src={Panel} width={70} height={70} />
+							</Box>
+							<Text>Digital Indicator</Text>
+						</Stack>
+					</Grid.Col>
+				</Grid>
+			</Paper>
 		</MantineProvider>
 	);
 }
