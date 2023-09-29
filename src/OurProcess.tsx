@@ -1,4 +1,4 @@
-import { Paper, Container, Grid, Col, Text, Image } from "@mantine/core";
+import { Paper, Container, Grid, Text, Image } from "@mantine/core";
 import React from "react";
 import PRC from "./Assets/prc.png";
 import PRCBg from "./Assets/prcbg.png";
@@ -9,7 +9,7 @@ const OurProcess = (props: Props) => {
 		<Paper w={1440} h={696} withBorder>
 			<Container>
 				<Grid gutter="lg">
-					<Col span={6}>
+					<Grid.Col span={6}>
 						<Paper pos={"initial"}>
 							<Image
 								src={PRC}
@@ -32,20 +32,13 @@ const OurProcess = (props: Props) => {
 								pos="absolute"
 							/>
 						</Paper>
-					</Col>
+					</Grid.Col>
 
-					<Col span={6}>
-						<Text
-							size="32px"
-							w={374}
-							h={102}
-							weight={600}
-							mt={123}
-							style={{ lineHeight: "51.2px" }}
-						>
+					<Grid.Col span={6}>
+						<Text size="32px" w={374} h={102} fw={600} mt={123} style={{ lineHeight: "51.2px" }}>
 							Our Process
 						</Text>
-						<Text h={44} w={592} color="#555459" size={16} weight={400}>
+						<Text h={44} w={592} color="#555459" size="sm" fw={400}>
 							Our systems and instruments are developed and designed by a team of skilled engineers,
 							who hold expertise in their respective field. We offer our clients with modernized
 							development and design services for both software and hardware.
@@ -57,7 +50,7 @@ const OurProcess = (props: Props) => {
 							reliability, sturdy construction and long service life. We are currently supported by
 							1,50,000 instruments, enabling us with an outstanding range of output.
 						</Text>
-					</Col>
+					</Grid.Col>
 				</Grid>
 			</Container>
 		</Paper>

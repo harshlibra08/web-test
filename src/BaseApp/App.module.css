@@ -1,0 +1,25 @@
+.header {
+	padding-left: var(--mantine-spacing-md);
+	padding-right: var(--mantine-spacing-md);
+}
+
+.inner {
+	display: flex;
+}
+
+.links {
+	margin-left: var(--mantine-spacing-xl);
+	padding-right: var(--mantine-spacing-md);
+	font-size: var(--mantine-font-size-md);
+	line-height: var(--mantine-line-height-md);
+}
+
+.link {
+	display: block;
+	line-height: normal;
+	padding: 0 64px;
+	border-radius: var(--mantine-radius-md);
+	text-decoration: none;
+	font-size: var(--mantine-font-size-md);
+	font-weight: 500;
+}

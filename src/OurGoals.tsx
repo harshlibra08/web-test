@@ -1,4 +1,4 @@
-import { Paper, Container, Grid, Col, SimpleGrid, Image, Text } from "@mantine/core";
+import { Paper, Container, Grid, SimpleGrid, Image, Text } from "@mantine/core";
 import React from "react";
 import Goal1 from "./Assets/goal1.png";
 import Goal2 from "./Assets/goal2.png";
@@ -11,12 +11,12 @@ const OurGoals = (props: Props) => {
 		<Paper w={1440} h={696} withBorder bg={"black"}>
 			<Container>
 				<Grid gutter="380px">
-					<Col span={6}>
+					<Grid.Col span={6}>
 						<Text
 							size="32px"
 							w={596}
 							h={44}
-							weight={600}
+							fw={600}
 							mt={145}
 							style={{ lineHeight: "51.2px" }}
 							color="#F6F6F6"
@@ -28,8 +28,8 @@ const OurGoals = (props: Props) => {
 							h={264}
 							w={596}
 							color="#E4E8ED"
-							size={16}
-							weight={400}
+							size="sm"
+							fw={400}
 							mt={24}
 							mb={40}
 							ml={-100}
@@ -49,7 +49,7 @@ const OurGoals = (props: Props) => {
 							Industries, Plastic Industries, Food Industries, Pollution Control Industries,
 							Petrochemical Industries, Water Treatment Plants, Research and Defence Institutes.
 						</Text>
-					</Col>
+					</Grid.Col>
 					<SimpleGrid cols={2} pl={750} mt={-590}>
 						<div style={{ marginLeft: 25 }}>
 							<Image src={Goal1} height={189} width={234} />

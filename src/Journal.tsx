@@ -7,7 +7,7 @@ import {
 	UnstyledButton,
 	Grid,
 	Container,
-	Col,
+	// Col,
 	Image,
 	Text,
 } from "@mantine/core";
@@ -40,7 +40,7 @@ const Journal = (props: Props) => {
 	return (
 		<>
 			<Paper w={1440} h={964} withBorder bg={"black"}>
-				<Group noWrap spacing={0}>
+				<Group wrap="nowrap" gap={0}>
 					<Box w="100%">
 						<Text size={"32px"} mt={40} ml={114} color="#F6F6F6">
 							Journal
@@ -49,7 +49,7 @@ const Journal = (props: Props) => {
 					</Box>
 				</Group>
 
-				<Group position="center" spacing="lg">
+				<Group justify="center" gap="lg">
 					<Card h={700} w={391} bg={"black"}>
 						<Card.Section>
 							<Box pos="relative" w={391} h={450} bg={"black"}>
@@ -75,13 +75,13 @@ const Journal = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text weight={400} h={92} w={347} size={32} pos="absolute" mt={350} color="#F6F6F6">
+								<Text fw={400} h={92} w={347} size="xl" pos="absolute" mt={350} color="#F6F6F6">
 									Industries
 								</Text>
 
 								<Text
 									size="16px"
-									weight={400}
+									fw={400}
 									w={325}
 									h={46}
 									pos="absolute"
@@ -101,7 +101,7 @@ const Journal = (props: Props) => {
 							</Box>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" mt={32} weight={400}>
+									<Text size="20px" color="white" mt={32} fw={400}>
 										Know more
 									</Text>
 								</Group>
@@ -134,13 +134,13 @@ const Journal = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text weight={400} h={92} w={347} size={32} pos="absolute" mt={350} color="#F6F6F6">
+								<Text fw={400} h={92} w={347} size="xl" pos="absolute" mt={350} color="#F6F6F6">
 									Services
 								</Text>
 
 								<Text
 									size="16px"
-									weight={400}
+									fw={400}
 									w={325}
 									h={46}
 									pos="absolute"
@@ -160,7 +160,7 @@ const Journal = (props: Props) => {
 							</Box>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" mt={32} weight={400}>
+									<Text size="20px" color="white" mt={32} fw={400}>
 										Know more
 									</Text>
 								</Group>
@@ -193,13 +193,13 @@ const Journal = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text weight={400} h={92} w={347} size={32} pos="absolute" mt={350} color="#F6F6F6">
+								<Text fw={400} h={92} w={347} size="xl" pos="absolute" mt={350} color="#F6F6F6">
 									Applications
 								</Text>
 
 								<Text
 									size="16px"
-									weight={400}
+									fw={400}
 									w={325}
 									h={46}
 									pos="absolute"
@@ -219,7 +219,7 @@ const Journal = (props: Props) => {
 							</Box>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" mt={32} weight={400}>
+									<Text size="20px" color="white" mt={32} fw={400}>
 										Know more
 									</Text>
 								</Group>
@@ -229,7 +229,7 @@ const Journal = (props: Props) => {
 				</Group>
 			</Paper>
 			<Paper w={1440} h={3140} withBorder bg={"black"}>
-				<Group noWrap spacing={0}>
+				<Group wrap="nowrap" gap={0}>
 					<Box w="100%">
 						<Text size={"32px"} mt={91} ml={114} color="#F6F6F6">
 							Industry
@@ -241,13 +241,13 @@ const Journal = (props: Props) => {
 					<Grid.Col span={4}>
 						<Box pos="relative" w={1200} h={280}>
 							<Image src={Industry1} height={327} width={358} pos="absolute" top={64} left={116} />
-							<Text color="#E4E8ED" size={16} ml={530} pt={128}>
+							<Text color="#E4E8ED" size="sm" ml={530} pt={128}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={32} ml={530} mt={16}>
+							<Text color="#F6F6F6" size="xl" ml={530} mt={16}>
 								Glass Manufacture
 							</Text>
-							<Text color="#E4E8ED" size={16} ml={530} mt={16} w={868} lineClamp={2}>
+							<Text color="#E4E8ED" size="sm" ml={530} mt={16} w={868} lineClamp={2}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -259,7 +259,7 @@ const Journal = (props: Props) => {
 							</Text>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" ml={530} mt={32} weight={400}>
+									<Text size="20px" color="white" ml={530} mt={32} fw={400}>
 										Read more
 									</Text>
 								</Group>
@@ -271,13 +271,13 @@ const Journal = (props: Props) => {
 					<Grid.Col span={4} pt={120}>
 						<Box pos="relative" w={1200} h={280}>
 							<Image src={Industry2} height={327} width={358} pos="absolute" top={64} left={116} />
-							<Text color="#E4E8ED" size={16} ml={530} pt={128}>
+							<Text color="#E4E8ED" size="sm" ml={530} pt={128}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={32} ml={530} mt={16}>
+							<Text color="#F6F6F6" size="xl" ml={530} mt={16}>
 								Jewelry Manufacture
 							</Text>
-							<Text color="#E4E8ED" size={16} ml={530} mt={16} w={868} lineClamp={2}>
+							<Text color="#E4E8ED" size="sm" ml={530} mt={16} w={868} lineClamp={2}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -289,7 +289,7 @@ const Journal = (props: Props) => {
 							</Text>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" ml={530} mt={32} weight={400}>
+									<Text size="20px" color="white" ml={530} mt={32} fw={400}>
 										Read more
 									</Text>
 								</Group>
@@ -301,13 +301,13 @@ const Journal = (props: Props) => {
 					<Grid.Col span={4} pt={120}>
 						<Box pos="relative" w={1200} h={280}>
 							<Image src={Industry3} height={327} width={358} pos="absolute" top={64} left={116} />
-							<Text color="#E4E8ED" size={16} ml={530} pt={128}>
+							<Text color="#E4E8ED" size="sm" ml={530} pt={128}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={32} ml={530} mt={16}>
+							<Text color="#F6F6F6" size="xl" ml={530} mt={16}>
 								Pharmaceuticals
 							</Text>
-							<Text color="#E4E8ED" size={16} ml={530} mt={16} w={868} lineClamp={2}>
+							<Text color="#E4E8ED" size="sm" ml={530} mt={16} w={868} lineClamp={2}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -319,7 +319,7 @@ const Journal = (props: Props) => {
 							</Text>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" ml={530} mt={32} weight={400}>
+									<Text size="20px" color="white" ml={530} mt={32} fw={400}>
 										Read more
 									</Text>
 								</Group>
@@ -331,13 +331,13 @@ const Journal = (props: Props) => {
 					<Grid.Col span={4} pt={120}>
 						<Box pos="relative" w={1200} h={280}>
 							<Image src={Industry4} height={327} width={358} pos="absolute" top={64} left={116} />
-							<Text color="#E4E8ED" size={16} ml={530} pt={128}>
+							<Text color="#E4E8ED" size="sm" ml={530} pt={128}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={32} ml={530} mt={16}>
+							<Text color="#F6F6F6" size="xl" ml={530} mt={16}>
 								Steel Plants
 							</Text>
-							<Text color="#E4E8ED" size={16} ml={530} mt={16} w={868} lineClamp={2}>
+							<Text color="#E4E8ED" size="sm" ml={530} mt={16} w={868} lineClamp={2}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -349,7 +349,7 @@ const Journal = (props: Props) => {
 							</Text>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" ml={530} mt={32} weight={400}>
+									<Text size="20px" color="white" ml={530} mt={32} fw={400}>
 										Read more
 									</Text>
 								</Group>
@@ -361,13 +361,13 @@ const Journal = (props: Props) => {
 					<Grid.Col span={4} pt={120}>
 						<Box pos="relative" w={1200} h={280}>
 							<Image src={Industry2} height={327} width={358} pos="absolute" top={64} left={116} />
-							<Text color="#E4E8ED" size={16} ml={530} pt={128}>
+							<Text color="#E4E8ED" size="sm" ml={530} pt={128}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={32} ml={530} mt={16}>
+							<Text color="#F6F6F6" size="xl" ml={530} mt={16}>
 								Jewelry Manufacture
 							</Text>
-							<Text color="#E4E8ED" size={16} ml={530} mt={16} w={868} lineClamp={2}>
+							<Text color="#E4E8ED" size="sm" ml={530} mt={16} w={868} lineClamp={2}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -379,7 +379,7 @@ const Journal = (props: Props) => {
 							</Text>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" ml={530} mt={32} weight={400}>
+									<Text size="20px" color="white" ml={530} mt={32} fw={400}>
 										Read more
 									</Text>
 								</Group>
@@ -391,13 +391,13 @@ const Journal = (props: Props) => {
 					<Grid.Col span={4} pt={120}>
 						<Box pos="relative" w={1200} h={280}>
 							<Image src={Industry3} height={327} width={358} pos="absolute" top={64} left={116} />
-							<Text color="#E4E8ED" size={16} ml={530} pt={128}>
+							<Text color="#E4E8ED" size="sm" ml={530} pt={128}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={32} ml={530} mt={16}>
+							<Text color="#F6F6F6" size="xl" ml={530} mt={16}>
 								Pharmaceuticals
 							</Text>
-							<Text color="#E4E8ED" size={16} ml={530} mt={16} w={868} lineClamp={2}>
+							<Text color="#E4E8ED" size="sm" ml={530} mt={16} w={868} lineClamp={2}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -409,7 +409,7 @@ const Journal = (props: Props) => {
 							</Text>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" ml={530} mt={32} weight={400}>
+									<Text size="20px" color="white" ml={530} mt={32} fw={400}>
 										Read more
 									</Text>
 								</Group>
@@ -421,13 +421,13 @@ const Journal = (props: Props) => {
 					<Grid.Col span={4} pt={120}>
 						<Box pos="relative" w={1200} h={280}>
 							<Image src={Industry4} height={327} width={358} pos="absolute" top={64} left={116} />
-							<Text color="#E4E8ED" size={16} ml={530} pt={128}>
+							<Text color="#E4E8ED" size="sm" ml={530} pt={128}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={32} ml={530} mt={16}>
+							<Text color="#F6F6F6" size="xl" ml={530} mt={16}>
 								Steel Plants
 							</Text>
-							<Text color="#E4E8ED" size={16} ml={530} mt={16} w={868} lineClamp={2}>
+							<Text color="#E4E8ED" size="sm" ml={530} mt={16} w={868} lineClamp={2}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -439,7 +439,7 @@ const Journal = (props: Props) => {
 							</Text>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" ml={530} mt={32} weight={400}>
+									<Text size="20px" color="white" ml={530} mt={32} fw={400}>
 										Read more
 									</Text>
 								</Group>
@@ -453,7 +453,7 @@ const Journal = (props: Props) => {
 			<br />
 			<br />
 			<Paper w={1440} h={3140} withBorder bg={"black"}>
-				<Group noWrap spacing={0}>
+				<Group wrap="nowrap" gap={0}>
 					<Box w="100%">
 						<Text size={"32px"} mt={91} ml={114} color="#F6F6F6">
 							Industry
@@ -463,8 +463,8 @@ const Journal = (props: Props) => {
 				</Group>
 				<Container mt={-73}>
 					<Grid gutter="lg">
-						<Col span={6}>
-							<Text size={14} weight={600} color="#E4E8ED" pt={191} ml={-160} mt={10}>
+						<Grid.Col span={6}>
+							<Text size="sm" fw={600} color="#E4E8ED" pt={191} ml={-160} mt={10}>
 								22nd January, 2023
 							</Text>
 							<Box>
@@ -472,7 +472,7 @@ const Journal = (props: Props) => {
 									size="32px"
 									w={558}
 									h={102}
-									weight={600}
+									fw={600}
 									pt={16}
 									style={{ lineHeight: "51.2px" }}
 									color="#F6F6F6"
@@ -481,7 +481,7 @@ const Journal = (props: Props) => {
 									Glass Manufacture
 								</Text>
 							</Box>
-							<Text h={154} w={590} color="#E4E8ED" size={16} weight={400} mb={40} ml={-160}>
+							<Text h={154} w={590} color="#E4E8ED" size="sm" fw={400} mb={40} ml={-160}>
 								Libratherm is an innovation-driven manufacturer of Process Control Instruments and
 								Systems since 1991. We cater to a wide range of industries, by providing accurate
 								measurement, precise control, and implementing modern standards in data logging and
@@ -489,8 +489,8 @@ const Journal = (props: Props) => {
 								supplying numerous process control instruments and control panels for various
 								processes such as Glass Bending, Glass Toughening, and Glass Melting.
 							</Text>
-						</Col>
-						<Col span={6}>
+						</Grid.Col>
+						<Grid.Col span={6}>
 							<Image
 								src={RectangleOmega}
 								bg={"black"}
@@ -511,15 +511,15 @@ const Journal = (props: Props) => {
 								mt={126}
 								mr={112}
 							/>
-						</Col>
+						</Grid.Col>
 					</Grid>
 				</Container>
 
-				<Group position="center" spacing="lg" pt={308}>
+				<Group justify="center" gap="lg" pt={308}>
 					<Card h={700} w={391} bg={"black"}>
 						<Card.Section>
 							<Box pos="relative" w={391} h={450} bg={"black"}>
-								<Text weight={400} h={92} w={347} size={24} mt={0} color="#F6F6F6">
+								<Text fw={400} h={92} w={347} size="md" mt={0} color="#F6F6F6">
 									Glass Bending
 									<Divider size="lg" mr={22} my={14} />
 								</Text>
@@ -549,7 +549,7 @@ const Journal = (props: Props) => {
 
 							<Text
 								size="14px"
-								weight={400}
+								fw={400}
 								w={325}
 								h={136}
 								pos="absolute"
@@ -567,7 +567,7 @@ const Journal = (props: Props) => {
 					<Card h={700} w={391} bg={"black"}>
 						<Card.Section>
 							<Box pos="relative" w={391} h={450} bg={"black"}>
-								<Text weight={400} h={92} w={347} size={24} mt={0} color="#F6F6F6">
+								<Text fw={400} h={92} w={347} size="md" mt={0} color="#F6F6F6">
 									Glass Toughening
 									<Divider size="lg" mr={22} my={14} />
 								</Text>
@@ -594,15 +594,7 @@ const Journal = (props: Props) => {
 									h="100%"
 								/>
 
-								<Text
-									size="14px"
-									weight={400}
-									w={325}
-									h={136}
-									pos="absolute"
-									top={414}
-									color="#E4E8ED"
-								>
+								<Text size="14px" fw={400} w={325} h={136} pos="absolute" top={414} color="#E4E8ED">
 									Libratherm offers Multizone (upto 72 zones) Ramp Soak Temperature Controller -
 									PRC-8000 with Three Phase Thyristor Power Controller - POW-3-PA-CL for the Glass
 									Toughening Process.
@@ -614,7 +606,7 @@ const Journal = (props: Props) => {
 					<Card h={700} w={391} bg={"black"}>
 						<Card.Section>
 							<Box pos="relative" w={391} h={450} bg={"black"}>
-								<Text weight={400} h={92} w={347} size={24} mt={0} color="#F6F6F6">
+								<Text fw={400} h={92} w={347} size="md" mt={0} color="#F6F6F6">
 									Glass Melting
 									<Divider size="lg" mr={22} my={14} />
 								</Text>
@@ -643,7 +635,7 @@ const Journal = (props: Props) => {
 
 								<Text
 									size="14px"
-									weight={400}
+									fw={400}
 									w={325}
 									h={136}
 									pos="absolute"
@@ -660,7 +652,7 @@ const Journal = (props: Props) => {
 					</Card>
 				</Group>
 
-				<Group position="center" spacing="sm">
+				<Group justify="center" gap="sm">
 					<Grid gutter="sm">
 						<Grid.Col span={4}>
 							<Box pos="relative" w={1440} h={280}>
@@ -684,15 +676,15 @@ const Journal = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text color="#E4E8ED" size={12} ml={319}>
+								<Text color="#E4E8ED" size="xs" ml={319}>
 									PRC 300
 								</Text>
-								<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+								<Text color="#F6F6F6" size="sm" ml={319} mt={15} w={186}>
 									Ramp Soak PID Temperature Controller
 								</Text>
 								<UnstyledButton>
 									<Group>
-										<Text size="16px" color="white" ml={315} mt={32} weight={400}>
+										<Text size="16px" color="white" ml={315} mt={32} fw={400}>
 											View
 										</Text>
 									</Group>
@@ -721,15 +713,15 @@ const Journal = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text color="#E4E8ED" size={12} ml={319}>
+								<Text color="#E4E8ED" size="xs" ml={319}>
 									PRC 300 2
 								</Text>
-								<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+								<Text color="#F6F6F6" size="sm" ml={319} mt={15} w={186}>
 									Ramp Soak PID Temperature Controller
 								</Text>
 								<UnstyledButton>
 									<Group>
-										<Text size="16px" color="white" ml={315} mt={32} weight={400}>
+										<Text size="16px" color="white" ml={315} mt={32} fw={400}>
 											View
 										</Text>
 									</Group>
@@ -758,15 +750,15 @@ const Journal = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text color="#E4E8ED" size={12} ml={319}>
+								<Text color="#E4E8ED" size="xs" ml={319}>
 									PRC 300 3
 								</Text>
-								<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+								<Text color="#F6F6F6" size="sm" ml={319} mt={15} w={186}>
 									Ramp Soak PID Temperature Controller
 								</Text>
 								<UnstyledButton>
 									<Group>
-										<Text size="16px" color="white" ml={315} mt={32} weight={400}>
+										<Text size="16px" color="white" ml={315} mt={32} fw={400}>
 											View
 										</Text>
 									</Group>
@@ -795,15 +787,15 @@ const Journal = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text color="#E4E8ED" size={12} ml={319}>
+								<Text color="#E4E8ED" size="xs" ml={319}>
 									PRC 300 4
 								</Text>
-								<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+								<Text color="#F6F6F6" size="sm" ml={319} mt={15} w={186}>
 									Ramp Soak PID Temperature Controller
 								</Text>
 								<UnstyledButton>
 									<Group>
-										<Text size="16px" color="white" ml={315} mt={32} weight={400}>
+										<Text size="16px" color="white" ml={315} mt={32} fw={400}>
 											View
 										</Text>
 									</Group>
@@ -832,15 +824,15 @@ const Journal = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text color="#E4E8ED" size={12} ml={319}>
+								<Text color="#E4E8ED" size="xs" ml={319}>
 									PRC 300
 								</Text>
-								<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+								<Text color="#F6F6F6" size="sm" ml={319} mt={15} w={186}>
 									Ramp Soak PID Temperature Controller
 								</Text>
 								<UnstyledButton>
 									<Group>
-										<Text size="16px" color="white" ml={315} mt={32} weight={400}>
+										<Text size="16px" color="white" ml={315} mt={32} fw={400}>
 											View
 										</Text>
 									</Group>
@@ -869,15 +861,15 @@ const Journal = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text color="#E4E8ED" size={12} ml={319}>
+								<Text color="#E4E8ED" size="xs" ml={319}>
 									PRC 300
 								</Text>
-								<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+								<Text color="#F6F6F6" size="sm" ml={319} mt={15} w={186}>
 									Ramp Soak PID Temperature Controller
 								</Text>
 								<UnstyledButton>
 									<Group>
-										<Text size="16px" color="white" ml={315} mt={32} weight={400}>
+										<Text size="16px" color="white" ml={315} mt={32} fw={400}>
 											View
 										</Text>
 									</Group>
@@ -906,15 +898,15 @@ const Journal = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text color="#E4E8ED" size={12} ml={319}>
+								<Text color="#E4E8ED" size="xs" ml={319}>
 									PRC 300
 								</Text>
-								<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+								<Text color="#F6F6F6" size="sm" ml={319} mt={15} w={186}>
 									Ramp Soak PID Temperature Controller
 								</Text>
 								<UnstyledButton>
 									<Group>
-										<Text size="16px" color="white" ml={315} mt={32} weight={400}>
+										<Text size="16px" color="white" ml={315} mt={32} fw={400}>
 											View
 										</Text>
 									</Group>
@@ -943,15 +935,15 @@ const Journal = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text color="#E4E8ED" size={12} ml={319}>
+								<Text color="#E4E8ED" size="xs" ml={319}>
 									PRC 300
 								</Text>
-								<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+								<Text color="#F6F6F6" size="sm" ml={319} mt={15} w={186}>
 									Ramp Soak PID Temperature Controller
 								</Text>
 								<UnstyledButton>
 									<Group>
-										<Text size="16px" color="white" ml={315} mt={32} weight={400}>
+										<Text size="16px" color="white" ml={315} mt={32} fw={400}>
 											View
 										</Text>
 									</Group>
@@ -980,15 +972,15 @@ const Journal = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text color="#E4E8ED" size={12} ml={319}>
+								<Text color="#E4E8ED" size="xs" ml={319}>
 									PRC 300
 								</Text>
-								<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+								<Text color="#F6F6F6" size="sm" ml={319} mt={15} w={186}>
 									Ramp Soak PID Temperature Controller
 								</Text>
 								<UnstyledButton>
 									<Group>
-										<Text size="16px" color="white" ml={315} mt={32} weight={400}>
+										<Text size="16px" color="white" ml={315} mt={32} fw={400}>
 											View
 										</Text>
 									</Group>
@@ -999,7 +991,7 @@ const Journal = (props: Props) => {
 				</Group>
 			</Paper>
 			<Paper w={1440} h={3500} withBorder bg={"black"}>
-				<Group noWrap spacing={0}>
+				<Group wrap="nowrap" gap={0}>
 					<Box w="100%">
 						<Text size={"32px"} mt={91} ml={114} color="#F6F6F6">
 							Services
@@ -1008,10 +1000,10 @@ const Journal = (props: Props) => {
 					</Box>
 				</Group>
 				<Container>
-					<Text color="#F6F6F6" align="center" size={32} pt={64}>
+					<Text color="#F6F6F6" ta="center" size="xl" pt={64}>
 						Data Acquisition Software (DAQ)
 					</Text>
-					<Text color="#E4E8ED" align="left" size={16} pt={34} w={1006} weight="normal">
+					<Text color="#E4E8ED" ta="left" size="sm" pt={34} w={1006} fw="normal">
 						Libratherm offers Data Acquisition Software - which uploads the stored data from
 						Libratherm devices and it saves on the computer. We offer customized software to meet
 						the user's specific requirement of acquiring the process data for further analysis and
@@ -1019,10 +1011,10 @@ const Journal = (props: Props) => {
 					</Text>
 					<Image src={DAQ} width={802} height={501} pt={64} mx={"auto"} />
 
-					<Text color="#F6F6F6" align="left" size={24} pt={128}>
+					<Text color="#F6F6F6" ta="left" size="md" pt={128}>
 						Salient Features of the Standard Software
 					</Text>
-					<Text color="#E4E8ED" align="left" size={16} pt={32} w={1006} weight="normal">
+					<Text color="#E4E8ED" ta="left" size="sm" pt={32} w={1006} fw="normal">
 						<li>
 							The PC software version EDATALOG is available on a single CD. This software is to be
 							loaded on to the computer's hard disk, and it allows interfacing of DATALOG to the
@@ -1080,10 +1072,10 @@ const Journal = (props: Props) => {
 						<li>Any other software facility can be customized as per the user's requirements. </li>
 					</Text>
 
-					<Text color="#F6F6F6" align="left" size={24} pt={128} mb={86}>
+					<Text color="#F6F6F6" ta="left" size="md" pt={128} mb={86}>
 						Products with Data Aquisition Software
 					</Text>
-					<Group position="center" spacing="sm">
+					<Group justify="center" gap="sm">
 						<Grid gutter="sm">
 							<Grid.Col span={4}>
 								<Box pos="relative" w={1440} h={280}>
@@ -1107,15 +1099,15 @@ const Journal = (props: Props) => {
 										w="100%"
 										h="100%"
 									/>
-									<Text color="#E4E8ED" size={12} ml={319}>
+									<Text color="#E4E8ED" size="xs" ml={319}>
 										PRC 300
 									</Text>
-									<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+									<Text color="#F6F6F6" size="sm" ml={319} mt={15} w={186}>
 										Ramp Soak PID Temperature Controller
 									</Text>
 									<UnstyledButton>
 										<Group>
-											<Text size="16px" color="white" ml={315} mt={32} weight={400}>
+											<Text size="16px" color="white" ml={315} mt={32} fw={400}>
 												View
 											</Text>
 										</Group>
@@ -1144,15 +1136,15 @@ const Journal = (props: Props) => {
 										w="100%"
 										h="100%"
 									/>
-									<Text color="#E4E8ED" size={12} ml={319}>
+									<Text color="#E4E8ED" size="xs" ml={319}>
 										PRC 300 2
 									</Text>
-									<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+									<Text color="#F6F6F6" size="sm" ml={319} mt={15} w={186}>
 										Ramp Soak PID Temperature Controller
 									</Text>
 									<UnstyledButton>
 										<Group>
-											<Text size="16px" color="white" ml={315} mt={32} weight={400}>
+											<Text size="16px" color="white" ml={315} mt={32} fw={400}>
 												View
 											</Text>
 										</Group>
@@ -1181,15 +1173,15 @@ const Journal = (props: Props) => {
 										w="100%"
 										h="100%"
 									/>
-									<Text color="#E4E8ED" size={12} ml={319}>
+									<Text color="#E4E8ED" size="xs" ml={319}>
 										PRC 300 3
 									</Text>
-									<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+									<Text color="#F6F6F6" size="sm" ml={319} mt={15} w={186}>
 										Ramp Soak PID Temperature Controller
 									</Text>
 									<UnstyledButton>
 										<Group>
-											<Text size="16px" color="white" ml={315} mt={32} weight={400}>
+											<Text size="16px" color="white" ml={315} mt={32} fw={400}>
 												View
 											</Text>
 										</Group>
@@ -1218,15 +1210,15 @@ const Journal = (props: Props) => {
 										w="100%"
 										h="100%"
 									/>
-									<Text color="#E4E8ED" size={12} ml={319}>
+									<Text color="#E4E8ED" size="xs" ml={319}>
 										PRC 300 4
 									</Text>
-									<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+									<Text color="#F6F6F6" size="sm" ml={319} mt={15} w={186}>
 										Ramp Soak PID Temperature Controller
 									</Text>
 									<UnstyledButton>
 										<Group>
-											<Text size="16px" color="white" ml={315} mt={32} weight={400}>
+											<Text size="16px" color="white" ml={315} mt={32} fw={400}>
 												View
 											</Text>
 										</Group>
@@ -1255,15 +1247,15 @@ const Journal = (props: Props) => {
 										w="100%"
 										h="100%"
 									/>
-									<Text color="#E4E8ED" size={12} ml={319}>
+									<Text color="#E4E8ED" size="xs" ml={319}>
 										PRC 300
 									</Text>
-									<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+									<Text color="#F6F6F6" size="sm" ml={319} mt={15} w={186}>
 										Ramp Soak PID Temperature Controller
 									</Text>
 									<UnstyledButton>
 										<Group>
-											<Text size="16px" color="white" ml={315} mt={32} weight={400}>
+											<Text size="16px" color="white" ml={315} mt={32} fw={400}>
 												View
 											</Text>
 										</Group>
@@ -1292,15 +1284,15 @@ const Journal = (props: Props) => {
 										w="100%"
 										h="100%"
 									/>
-									<Text color="#E4E8ED" size={12} ml={319}>
+									<Text color="#E4E8ED" size="xs" ml={319}>
 										PRC 300
 									</Text>
-									<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+									<Text color="#F6F6F6" size="sm" ml={319} mt={15} w={186}>
 										Ramp Soak PID Temperature Controller
 									</Text>
 									<UnstyledButton>
 										<Group>
-											<Text size="16px" color="white" ml={315} mt={32} weight={400}>
+											<Text size="16px" color="white" ml={315} mt={32} fw={400}>
 												View
 											</Text>
 										</Group>
@@ -1329,15 +1321,15 @@ const Journal = (props: Props) => {
 										w="100%"
 										h="100%"
 									/>
-									<Text color="#E4E8ED" size={12} ml={319}>
+									<Text color="#E4E8ED" size="xs" ml={319}>
 										PRC 300
 									</Text>
-									<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+									<Text color="#F6F6F6" size="sm" ml={319} mt={15} w={186}>
 										Ramp Soak PID Temperature Controller
 									</Text>
 									<UnstyledButton>
 										<Group>
-											<Text size="16px" color="white" ml={315} mt={32} weight={400}>
+											<Text size="16px" color="white" ml={315} mt={32} fw={400}>
 												View
 											</Text>
 										</Group>
@@ -1366,15 +1358,15 @@ const Journal = (props: Props) => {
 										w="100%"
 										h="100%"
 									/>
-									<Text color="#E4E8ED" size={12} ml={319}>
+									<Text color="#E4E8ED" size="xs" ml={319}>
 										PRC 300
 									</Text>
-									<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+									<Text color="#F6F6F6" size="sm" ml={319} mt={15} w={186}>
 										Ramp Soak PID Temperature Controller
 									</Text>
 									<UnstyledButton>
 										<Group>
-											<Text size="16px" color="white" ml={315} mt={32} weight={400}>
+											<Text size="16px" color="white" ml={315} mt={32} fw={400}>
 												View
 											</Text>
 										</Group>
@@ -1403,15 +1395,15 @@ const Journal = (props: Props) => {
 										w="100%"
 										h="100%"
 									/>
-									<Text color="#E4E8ED" size={12} ml={319}>
+									<Text color="#E4E8ED" size="xs" ml={319}>
 										PRC 300
 									</Text>
-									<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+									<Text color="#F6F6F6" size="sm" ml={319} mt={15} w={186}>
 										Ramp Soak PID Temperature Controller
 									</Text>
 									<UnstyledButton>
 										<Group>
-											<Text size="16px" color="white" ml={315} mt={32} weight={400}>
+											<Text size="16px" color="white" ml={315} mt={32} fw={400}>
 												View
 											</Text>
 										</Group>

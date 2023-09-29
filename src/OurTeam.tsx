@@ -1,4 +1,4 @@
-import { Paper, Container, Grid, Col, Text, Image } from "@mantine/core";
+import { Paper, Container, Grid, Text, Image } from "@mantine/core";
 import React from "react";
 import OurTeams from "./Assets/team.png";
 type Props = {};
@@ -8,7 +8,7 @@ const OurTeam = (props: Props) => {
 		<Paper w={1440} h={748} withBorder style={{ backgroundColor: "black" }}>
 			<Container>
 				<Grid gutter="lg">
-					<Col span={6}>
+					<Grid.Col span={6}>
 						<Paper pos={"initial"}>
 							<Image
 								src={OurTeams}
@@ -22,13 +22,13 @@ const OurTeam = (props: Props) => {
 								pt={140}
 							/>
 						</Paper>
-					</Col>
+					</Grid.Col>
 
-					<Col span={6}>
-						<Text size="32px" w={374} h={102} weight={600} mt={140} color="#FFF">
+					<Grid.Col span={6}>
+						<Text size="32px" w={374} h={102} fw={600} mt={140} color="#FFF">
 							Our Team
 						</Text>
-						<Text h={44} w={596} color="#FFFFFF" size={16} weight={400}>
+						<Text h={44} w={596} color="#FFFFFF" size="sm" fw={400}>
 							Our core team comprises of people having the skill, competency, experience, and
 							willingness with the zeal to excel in every assignment keeping the focus on our core
 							purpose and core values.Our highly qualified and trained professionals assist us in
@@ -42,7 +42,7 @@ const OurTeam = (props: Props) => {
 							of our growth and change of generation. We will be committed to doing the business in
 							the right way.
 						</Text>
-					</Col>
+					</Grid.Col>
 				</Grid>
 			</Container>
 		</Paper>

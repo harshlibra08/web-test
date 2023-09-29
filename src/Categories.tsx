@@ -2,7 +2,7 @@ import {
 	Paper,
 	Container,
 	Grid,
-	Col,
+	// Col,
 	Box,
 	Group,
 	UnstyledButton,
@@ -47,16 +47,16 @@ const OptionsButton = ({ ...props }: ButtonProps) => (
 				fontWeight: 600,
 				lineHeight: "22.4px",
 				border: "1px solid",
-				"&:hover": {
-					backgroundColor: "#5B5B5B",
-					color: "#555459",
-				},
+				// "&:hover": {
+				// 	backgroundColor: "#5B5B5B",
+				// 	color: "#555459",
+				// },
 			},
 			label: {
 				color: "#FFFFFF",
 			},
 		}}
-		uppercase={true}
+		// uppercase={true}
 		{...props}
 	/>
 );
@@ -70,10 +70,10 @@ const PrimaryButton = ({ ...props }: ButtonProps) => (
 				fontWeight: 600,
 				lineHeight: "22.4px",
 				border: "1px solid",
-				"&:hover": {
-					backgroundColor: "#f4f4f4",
-					color: "#555459",
-				},
+				// "&:hover": {
+				// 	backgroundColor: "#f4f4f4",
+				// 	color: "#555459",
+				// },
 			},
 			label: {
 				color: "#555459",
@@ -88,13 +88,13 @@ const Categories = (props: Props) => {
 		<Paper w={1440} h={5535} withBorder>
 			<Container mt={-73}>
 				<Grid gutter="lg">
-					<Col span={6}>
+					<Grid.Col span={6}>
 						<Box>
 							<Text
 								size="32px"
 								w={558}
 								h={102}
-								weight={600}
+								fw={600}
 								pt={105}
 								style={{ lineHeight: "51.2px" }}
 								color="#292929"
@@ -103,7 +103,7 @@ const Categories = (props: Props) => {
 								Explore Our Products{" "}
 							</Text>
 						</Box>
-						<Text h={331} w={595} color="#555459" size={16} weight={400} mb={40} ml={-160} pt={85}>
+						<Text h={331} w={595} color="#555459" size="sm" fw={400} mb={40} ml={-160} pt={85}>
 							We are one of the most prominent manufacturers and exporters of a broad range of
 							microprocessors and digital-based electronic process control instruments. Our product
 							range includes Temperature and Process Indicators, Large/Jumbo Display Indicators,
@@ -121,8 +121,8 @@ const Categories = (props: Props) => {
 							Motor Soft Starters, IoT Modules, Instrumentation Control Panels, Data Acquisition
 							Software, Customized Instruments, and many more services.
 						</Text>
-					</Col>
-					<Col span={6}>
+					</Grid.Col>
+					<Grid.Col span={6}>
 						<Image
 							src={Rect16}
 							bg={"white"}
@@ -143,18 +143,18 @@ const Categories = (props: Props) => {
 							mt={160}
 							mr={112}
 						/>
-					</Col>
+					</Grid.Col>
 				</Grid>
 			</Container>
-			<Group noWrap spacing={0}>
+			<Group wrap="nowrap" gap={0}>
 				<Box w="100%" mt={89}>
-					<Text size={"32px"} mt={128} ml={100} color="#292929" weight={600}>
+					<Text size={"32px"} mt={128} ml={100} color="#292929" fw={600}>
 						Categories{" "}
 					</Text>
 				</Box>
 			</Group>
 			<Box w="100%" mt={24}>
-				<Group position="center">
+				<Group justify="center">
 					<Grid columns={8}>
 						<Grid.Col span={1}>
 							<Box pos="relative" w={1440} h={280}>
@@ -178,7 +178,7 @@ const Categories = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text w={55} size={10} align="center" ml={121} pt={126}>
+								<Text w={55} size="xs" ta="center" ml={121} pt={126}>
 									Digital Indicator
 								</Text>
 							</Box>
@@ -205,7 +205,7 @@ const Categories = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text w={55} size={10} align="center" ml={121} pt={126}>
+								<Text w={55} size="xs" ta="center" ml={121} pt={126}>
 									Thyristor Power Controller{" "}
 								</Text>
 							</Box>
@@ -232,7 +232,7 @@ const Categories = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text w={55} size={10} align="center" ml={121} pt={126}>
+								<Text w={55} size="xs" ta="center" ml={121} pt={126}>
 									Data Loggers & Scanners{" "}
 								</Text>
 							</Box>
@@ -259,7 +259,7 @@ const Categories = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text w={55} size={10} align="center" ml={121} pt={126}>
+								<Text w={55} size="xs" ta="center" ml={121} pt={126}>
 									Humidity Instruments{" "}
 								</Text>
 							</Box>
@@ -286,7 +286,7 @@ const Categories = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text w={55} size={10} align="center" ml={121} pt={126}>
+								<Text w={55} size="xs" ta="center" ml={121} pt={126}>
 									Temperature & Humidity Instruments{" "}
 								</Text>
 							</Box>
@@ -313,7 +313,7 @@ const Categories = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text w={55} size={10} align="center" ml={121} pt={126}>
+								<Text w={55} size="xs" ta="center" ml={121} pt={126}>
 									Temperature Controller{" "}
 								</Text>
 							</Box>
@@ -340,7 +340,7 @@ const Categories = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text w={55} size={10} align="center" ml={121} pt={126}>
+								<Text w={55} size="xs" ta="center" ml={121} pt={126}>
 									Digital Indicator{" "}
 								</Text>
 							</Box>
@@ -367,7 +367,7 @@ const Categories = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text w={55} size={10} align="center" ml={121} pt={126}>
+								<Text w={55} size="xs" ta="center" ml={121} pt={126}>
 									Temperature & Humidity Instruments{" "}
 								</Text>
 							</Box>
@@ -394,7 +394,7 @@ const Categories = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text w={55} size={10} align="center" ml={121} pt={126}>
+								<Text w={55} size="xs" ta="center" ml={121} pt={126}>
 									Digital Indicator
 								</Text>
 							</Box>
@@ -421,7 +421,7 @@ const Categories = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text w={55} size={10} align="center" ml={121} pt={126}>
+								<Text w={55} size="xs" ta="center" ml={121} pt={126}>
 									Temperature & Humidity Instruments{" "}
 								</Text>
 							</Box>
@@ -448,7 +448,7 @@ const Categories = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text w={55} size={10} align="center" ml={121} pt={126}>
+								<Text w={55} size="xs" ta="center" ml={121} pt={126}>
 									Temperature Controller{" "}
 								</Text>
 							</Box>
@@ -475,7 +475,7 @@ const Categories = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text w={55} size={10} align="center" ml={121} pt={126}>
+								<Text w={55} size="xs" ta="center" ml={121} pt={126}>
 									Temperature & Humidity Instruments{" "}
 								</Text>
 							</Box>
@@ -502,7 +502,7 @@ const Categories = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text w={55} size={10} align="center" ml={121} pt={126}>
+								<Text w={55} size="xs" ta="center" ml={121} pt={126}>
 									Temperature Controller{" "}
 								</Text>
 							</Box>
@@ -529,7 +529,7 @@ const Categories = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text w={55} size={10} align="center" ml={121} pt={126}>
+								<Text w={55} size="xs" ta="center" ml={121} pt={126}>
 									Digital Indicator
 								</Text>
 							</Box>
@@ -556,7 +556,7 @@ const Categories = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text w={55} size={10} align="center" ml={121} pt={126}>
+								<Text w={55} size="xs" ta="center" ml={121} pt={126}>
 									Digital Indicator
 								</Text>
 							</Box>
@@ -583,7 +583,7 @@ const Categories = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text w={55} size={10} align="center" ml={121} pt={126}>
+								<Text w={55} size="xs" ta="center" ml={121} pt={126}>
 									Temperature & Humidity Instruments{" "}
 								</Text>
 							</Box>
@@ -594,7 +594,7 @@ const Categories = (props: Props) => {
 
 			<Container>
 				<Grid gutter="lg">
-					<Col span={6}>
+					<Grid.Col span={6}>
 						<Image
 							src={GreyBg}
 							alt="Vision"
@@ -613,13 +613,13 @@ const Categories = (props: Props) => {
 							left={114}
 							mt={114}
 						/>
-					</Col>
-					<Col span={6}>
+					</Grid.Col>
+					<Grid.Col span={6}>
 						<Text
 							size="32px"
 							w={596}
 							h={44}
-							weight={600}
+							fw={600}
 							mr={114}
 							mt={134}
 							style={{ lineHeight: "51.2px" }}
@@ -631,8 +631,8 @@ const Categories = (props: Props) => {
 							h={110}
 							w={596}
 							color="#555459"
-							size={16}
-							weight={400}
+							size="sm"
+							fw={400}
 							mb={40}
 							mr={114}
 							mt={24}
@@ -651,24 +651,24 @@ const Categories = (props: Props) => {
 						</Text>
 						<UnstyledButton>
 							<Group>
-								<Text size="20px" color="black" mt={102} weight={400}>
+								<Text size="20px" color="black" mt={102} fw={400}>
 									View
 								</Text>
 							</Group>
 						</UnstyledButton>
-					</Col>
+					</Grid.Col>
 				</Grid>
 			</Container>
 
 			<Container mt={138}>
 				<Grid gutter="lg">
-					<Col span={6}>
+					<Grid.Col span={6}>
 						<Box>
 							<Text
 								size="32px"
 								w={558}
 								h={102}
-								weight={600}
+								fw={600}
 								pt={105}
 								style={{ lineHeight: "51.2px" }}
 								color="#292929"
@@ -677,7 +677,7 @@ const Categories = (props: Props) => {
 								Thyristor Power Controller
 							</Text>
 						</Box>
-						<Text h={331} w={595} color="#555459" size={16} weight={400} mb={40} ml={-160} pt={85}>
+						<Text h={331} w={595} color="#555459" size="sm" fw={400} mb={40} ml={-160} pt={85}>
 							Libratherm offers ready to use SCR Power Controller for electrical heating loads
 							ranging from 5 KW (Single Phase) to 360KW (Three Phase). This Thyristor Power
 							Regulator Module comprises of suitable triggering card model LTC-12 or LTC-13 or
@@ -690,12 +690,12 @@ const Categories = (props: Props) => {
 							easily mounted inside the closed control panel as desired.
 						</Text>
 						<UnstyledButton>
-							<Text size="20px" color="black" mt={24} weight={400} ml={-155}>
+							<Text size="20px" color="black" mt={24} fw={400} ml={-155}>
 								Shop Now
 							</Text>
 						</UnstyledButton>
-					</Col>
-					<Col span={6}>
+					</Grid.Col>
+					<Grid.Col span={6}>
 						<Image
 							src={YellowBg}
 							bg={"white"}
@@ -716,13 +716,13 @@ const Categories = (props: Props) => {
 							mt={160}
 							mr={112}
 						/>
-					</Col>
+					</Grid.Col>
 				</Grid>
 			</Container>
 
 			<Container mt={137}>
 				<Grid gutter="lg">
-					<Col span={6}>
+					<Grid.Col span={6}>
 						<Image
 							src={BluerectangleBg}
 							alt="Vision"
@@ -741,13 +741,13 @@ const Categories = (props: Props) => {
 							left={114}
 							mt={114}
 						/>
-					</Col>
-					<Col span={6}>
+					</Grid.Col>
+					<Grid.Col span={6}>
 						<Text
 							size="32px"
 							w={596}
 							h={44}
-							weight={600}
+							fw={600}
 							mr={114}
 							mt={134}
 							style={{ lineHeight: "51.2px" }}
@@ -759,8 +759,8 @@ const Categories = (props: Props) => {
 							h={110}
 							w={596}
 							color="#555459"
-							size={16}
-							weight={400}
+							size="sm"
+							fw={400}
 							mb={40}
 							mr={114}
 							mt={24}
@@ -779,24 +779,24 @@ const Categories = (props: Props) => {
 						</Text>
 						<UnstyledButton>
 							<Group>
-								<Text size="20px" color="black" mt={102} weight={400}>
+								<Text size="20px" color="black" mt={102} fw={400}>
 									Shop Now
 								</Text>
 							</Group>
 						</UnstyledButton>
-					</Col>
+					</Grid.Col>
 				</Grid>
 			</Container>
 
 			<Container mt={138}>
 				<Grid gutter="lg">
-					<Col span={6}>
+					<Grid.Col span={6}>
 						<Box>
 							<Text
 								size="32px"
 								w={558}
 								h={102}
-								weight={600}
+								fw={600}
 								pt={105}
 								style={{ lineHeight: "51.2px" }}
 								color="#292929"
@@ -805,7 +805,7 @@ const Categories = (props: Props) => {
 								Humidity Instruments
 							</Text>
 						</Box>
-						<Text h={331} w={595} color="#555459" size={16} weight={400} mb={40} ml={-160} pt={85}>
+						<Text h={331} w={595} color="#555459" size="sm" fw={400} mb={40} ml={-160} pt={85}>
 							Experts in lighting, we’ve been creating task lights, desk lamps and table lamps for
 							over 80 years. All our lamps uphold the original Anglepoise design concept whilst
 							incorporating essential modern features. You’ll probably recognise some of the classic
@@ -818,12 +818,12 @@ const Categories = (props: Props) => {
 							you’ll find the right table and desk lamp for you.
 						</Text>
 						<UnstyledButton>
-							<Text size="20px" color="black" mt={24} weight={400} ml={-155}>
+							<Text size="20px" color="black" mt={24} fw={400} ml={-155}>
 								Shop Now
 							</Text>
 						</UnstyledButton>
-					</Col>
-					<Col span={6}>
+					</Grid.Col>
+					<Grid.Col span={6}>
 						<Image
 							src={GreyBgLeft}
 							bg={"white"}
@@ -844,13 +844,13 @@ const Categories = (props: Props) => {
 							mt={160}
 							mr={112}
 						/>
-					</Col>
+					</Grid.Col>
 				</Grid>
 			</Container>
 
 			<Container mt={137}>
 				<Grid gutter="lg">
-					<Col span={6}>
+					<Grid.Col span={6}>
 						<Image
 							src={YellowBgLeft}
 							alt="Vision"
@@ -869,13 +869,13 @@ const Categories = (props: Props) => {
 							left={114}
 							mt={114}
 						/>
-					</Col>
-					<Col span={6}>
+					</Grid.Col>
+					<Grid.Col span={6}>
 						<Text
 							size="32px"
 							w={596}
 							h={44}
-							weight={600}
+							fw={600}
 							mr={114}
 							mt={134}
 							style={{ lineHeight: "51.2px" }}
@@ -887,8 +887,8 @@ const Categories = (props: Props) => {
 							h={110}
 							w={596}
 							color="#555459"
-							size={16}
-							weight={400}
+							size="sm"
+							fw={400}
 							mb={40}
 							mr={114}
 							mt={24}
@@ -907,12 +907,12 @@ const Categories = (props: Props) => {
 						</Text>
 						<UnstyledButton>
 							<Group>
-								<Text size="20px" color="black" mt={102} weight={400}>
+								<Text size="20px" color="black" mt={102} fw={400}>
 									Shop Now
 								</Text>
 							</Group>
 						</UnstyledButton>
-					</Col>
+					</Grid.Col>
 				</Grid>
 			</Container>
 			<Paper w={1440} h={824} withBorder mt={1035}>
@@ -925,16 +925,16 @@ const Categories = (props: Props) => {
 						marginTop: -750,
 					}}
 				>
-					<Text color="#292929" size={32} weight={600} pt={40} ml={80}>
+					<Text color="#292929" size="lg" fw={600} pt={40} ml={80}>
 						REQUEST A CALL BACK
 					</Text>
 
-					<Text color="#292929" size={14} weight={400} pt={12} ml={80}>
+					<Text color="#292929" size="sm" fw={400} pt={12} ml={80}>
 						Connect with us to know more about our new products, sales and launches!
 					</Text>
 					<Container pos={"absolute"} pl={80} pt={12}>
 						<Grid>
-							<Col span={3}>
+							<Grid.Col span={3}>
 								<TextInput
 									label="First name"
 									variant="unstyled"
@@ -943,8 +943,8 @@ const Categories = (props: Props) => {
 										borderBottom: "1px solid #000",
 									}}
 								/>
-							</Col>
-							<Col span={3}>
+							</Grid.Col>
+							<Grid.Col span={3}>
 								<TextInput
 									label="Last name"
 									variant="unstyled"
@@ -953,8 +953,8 @@ const Categories = (props: Props) => {
 										borderBottom: "1px solid #000",
 									}}
 								/>
-							</Col>
-							<Col span={3}>
+							</Grid.Col>
+							<Grid.Col span={3}>
 								<TextInput
 									label="Email"
 									variant="unstyled"
@@ -963,7 +963,7 @@ const Categories = (props: Props) => {
 										borderBottom: "1px solid #000",
 									}}
 								/>
-							</Col>
+							</Grid.Col>
 						</Grid>
 						<Grid>
 							<Checkbox
@@ -990,19 +990,19 @@ const Categories = (props: Props) => {
 
 				<Group>
 					<Stack>
-						<Text size={14} weight={700} mt={64} ml={144}>
+						<Text size="sm" fw={700} mt={64} ml={144}>
 							USEFUL LINKS
 						</Text>
-						<Text size={14} weight={400} mt={30} ml={144} color="#555459">
+						<Text size="sm" fw={400} mt={30} ml={144} color="#555459">
 							Careers
 						</Text>
-						<Text size={14} weight={400} mt={14} ml={144} color="#555459">
+						<Text size="sm" fw={400} mt={14} ml={144} color="#555459">
 							Terms of Service
 						</Text>
-						<Text size={14} weight={700} mt={30} ml={144}>
+						<Text size="sm" fw={700} mt={30} ml={144}>
 							WE ARE SOCIAL!
 						</Text>
-						<Text size={14} weight={400} mt={30} ml={144} color="#555459">
+						<Text size="sm" fw={400} mt={30} ml={144} color="#555459">
 							<Group>
 								<IconBrandFacebookFilled size={24} color="#555459" />
 								<IconBrandLinkedin size={24} color="#555459" />
@@ -1013,38 +1013,38 @@ const Categories = (props: Props) => {
 						</Text>
 					</Stack>
 					<Stack>
-						<Text size={14} weight={700} mt={64} ml={144}>
+						<Text size="sm" fw={700} mt={64} ml={144}>
 							POLICIES
 						</Text>
-						<Text size={14} weight={400} mt={30} ml={144} color="#555459">
+						<Text size="sm" fw={400} mt={30} ml={144} color="#555459">
 							Quality Policy
 						</Text>
-						<Text size={14} weight={400} mt={10} ml={144} color="#555459">
+						<Text size="sm" fw={400} mt={10} ml={144} color="#555459">
 							Privacy Policy
 						</Text>
-						<Text size={14} weight={400} mt={10} ml={144} color="#555459">
+						<Text size="sm" fw={400} mt={10} ml={144} color="#555459">
 							Shipping Policy
 						</Text>
-						<Text size={14} weight={400} mt={10} ml={144} color="#555459">
+						<Text size="sm" fw={400} mt={10} ml={144} color="#555459">
 							Cancellation Policy
 						</Text>
 
-						<Text size={14} weight={400} mt={10} ml={144} color="#555459">
+						<Text size="sm" fw={400} mt={10} ml={144} color="#555459">
 							Return & Refund Policy
 						</Text>
 					</Stack>
 					<Stack>
-						<Text size={14} weight={700} mt={64} ml={144}>
+						<Text size="sm" fw={700} mt={64} ml={144}>
 							WAYS TO CONNECT
 						</Text>
-						<Text size={14} weight={400} mt={30} ml={144} color="#555459">
+						<Text size="sm" fw={400} mt={30} ml={144} color="#555459">
 							Email: <br />
 							<Anchor>
 								enquiry@libratherm.com, <br />
 								libratherm@libratherm.com
 							</Anchor>
 						</Text>
-						<Text size={14} weight={400} mt={10} ml={144} color="#555459">
+						<Text size="sm" fw={400} mt={10} ml={144} color="#555459">
 							Mobile: <br />
 							<Anchor>
 								+91-8104971152 +91-8104971154, <br />
@@ -1052,16 +1052,16 @@ const Categories = (props: Props) => {
 							</Anchor>
 						</Text>
 
-						<Text size={14} weight={400} mt={10} ml={144} color="#555459">
+						<Text size="sm" fw={400} mt={10} ml={144} color="#555459">
 							Landline: <br />
 							<Anchor>+91-22-42555334</Anchor>
 						</Text>
 					</Stack>
 					<Stack>
-						<Text size={14} weight={700} mt={64} ml={102}>
+						<Text size="sm" fw={700} mt={64} ml={102}>
 							OFFICE ADDRESS
 						</Text>
-						<Text size={14} weight={400} mt={30} ml={102} color="#555459">
+						<Text size="sm" fw={400} mt={30} ml={102} color="#555459">
 							401-403, Diamond Industrial <br /> Estate,Ketki Pada Road, Dahisar <br /> (East),
 							Mumbai 400068, <br /> Maharashtra, India.
 						</Text>
@@ -1071,7 +1071,7 @@ const Categories = (props: Props) => {
 						<PrimaryButton
 							ml={102}
 							mt={14}
-							leftIcon={<IconBrandWhatsapp color="#25D366" size={24} />}
+							leftSection={<IconBrandWhatsapp color="#25D366" size={24} />}
 							style={{
 								paddingRight: "8px",
 							}}

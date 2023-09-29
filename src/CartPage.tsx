@@ -10,7 +10,7 @@ import {
 	ActionIcon,
 	rem,
 	Container,
-	Col,
+	// Col,
 	TextInput,
 	Anchor,
 	Text,
@@ -43,16 +43,16 @@ const OptionsButton = ({ ...props }: ButtonProps) => (
 				fontWeight: 600,
 				lineHeight: "22.4px",
 				border: "1px solid",
-				"&:hover": {
-					backgroundColor: "#5B5B5B",
-					color: "#555459",
-				},
+				// "&:hover": {
+				// 	backgroundColor: "#5B5B5B",
+				// 	color: "#555459",
+				// },
 			},
 			label: {
 				color: "#FFFFFF",
 			},
 		}}
-		uppercase={true}
+		// uppercase={true}
 		{...props}
 	/>
 );
@@ -66,10 +66,10 @@ const PrimaryButton = ({ ...props }: ButtonProps) => (
 				fontWeight: 600,
 				lineHeight: "22.4px",
 				border: "1px solid",
-				"&:hover": {
-					backgroundColor: "#f4f4f4",
-					color: "#555459",
-				},
+				// "&:hover": {
+				// 	backgroundColor: "#f4f4f4",
+				// 	color: "#555459",
+				// },
 			},
 			label: {
 				color: "#555459",
@@ -83,11 +83,11 @@ const CartPage = (props: Props) => {
 	return (
 		<Paper w={1440} h={1784} withBorder mt={50}>
 			<Box ml={114}>
-				<Text color="#262728" size={34} weight={600} mt={123}>
+				<Text color="#262728" size="xl" fw={600} mt={123}>
 					Cart
 				</Text>
 				<Group>
-					<Checkbox defaultChecked label="3/3 Items Selected" mt={27} color="#212121" size={16} />
+					<Checkbox defaultChecked label="3/3 Items Selected" mt={27} color="#212121" size="sm" />
 					<UnstyledButton mt={27} ml={274}>
 						<Text color="#777">REMOVE</Text>
 					</UnstyledButton>
@@ -108,34 +108,34 @@ const CartPage = (props: Props) => {
 			<Divider orientation="horizontal" size={"md"} ml={875} mr={114} />
 			<Grid mt={-52}>
 				<Grid.Col span={7}>
-					<Group ml={114} mt={82} spacing={"lg"}>
-						<Text size={12} color="#424242" weight={600}>
+					<Group ml={114} mt={82} gap={"lg"}>
+						<Text size="xs" color="#424242" fw={600}>
 							PRODUCT
 						</Text>
-						<Text size={12} color="#424242" weight={600} ml={310}>
+						<Text size="xs" color="#424242" fw={600} ml={310}>
 							PRICE
 						</Text>
-						<Text size={12} color="#424242" weight={600} ml={64}>
+						<Text size="xs" color="#424242" fw={600} ml={64}>
 							QUANTITY
 						</Text>
-						<Text size={12} color="#424242" weight={600} ml={34}>
+						<Text size="xs" color="#424242" fw={600} ml={34}>
 							SUBTOTAL
 						</Text>
 					</Group>
 					<Paper w={713} h={155} withBorder ml={114} mt={14}>
-						<Group align="flex-start" ml={8} spacing={"lg"}>
-							<Checkbox defaultChecked ml={8} color="#212121" size={16} mt={66} />
+						<Group align="flex-start" ml={8} gap={"lg"}>
+							<Checkbox defaultChecked ml={8} color="#212121" size="sm" mt={66} />
 							<Image src={CartBg} height={106} width={106} mt={23} ml={10} />
 							<Image src={Panel} height={98} width={75} mt={27} ml={-106} />
-							<Stack spacing={"xs"} mt={52}>
-								<Text w={164} color="#414141" size={14} weight={600} ml={11}>
+							<Stack gap={"xs"} mt={52}>
+								<Text w={164} color="#414141" size="sm" fw={600} ml={11}>
 									Three Phase Thyristor Power Controller
 								</Text>
-								<Text color="#e83214" size={12} weight={600} ml={11}>
+								<Text color="#e83214" size="xs" fw={600} ml={11}>
 									POW-3-PA-CL
 								</Text>
 							</Stack>
-							<Text color="#262728" weight={700} size={14} ml={30} mt={68}>
+							<Text color="#262728" fw={700} size="sm" ml={30} mt={68}>
 								₹12,600
 							</Text>
 
@@ -146,25 +146,25 @@ const CartPage = (props: Props) => {
 							<ActionIcon variant="default" size="xs" aria-label="Plus" mt={67}>
 								<IconPlus style={{ width: rem(12) }} stroke={1.5} />
 							</ActionIcon>
-							<Text color="#262728" weight={700} size={14} ml={30} mt={68}>
+							<Text color="#262728" fw={700} size="sm" ml={30} mt={68}>
 								₹12,600
 							</Text>
 						</Group>
 					</Paper>
 					<Paper w={713} h={155} withBorder ml={114} mt={24}>
-						<Group align="flex-start" ml={8} spacing={"lg"}>
-							<Checkbox defaultChecked ml={8} color="#212121" size={16} mt={66} />
+						<Group align="flex-start" ml={8} gap={"lg"}>
+							<Checkbox defaultChecked ml={8} color="#212121" size="sm" mt={66} />
 							<Image src={CartBg} height={106} width={106} mt={23} ml={10} />
 							<Image src={Panel} height={98} width={75} mt={27} ml={-106} />
-							<Stack spacing={"xs"} mt={52}>
-								<Text w={164} color="#414141" size={14} weight={600} ml={11}>
+							<Stack gap={"xs"} mt={52}>
+								<Text w={164} color="#414141" size="sm" fw={600} ml={11}>
 									Three Phase Thyristor Power Controller
 								</Text>
-								<Text color="#e83214" size={12} weight={600} ml={11}>
+								<Text color="#e83214" size="xs" fw={600} ml={11}>
 									POW-3-PA-CL
 								</Text>
 							</Stack>
-							<Text color="#262728" weight={700} size={14} ml={30} mt={68}>
+							<Text color="#262728" fw={700} size="sm" ml={30} mt={68}>
 								₹12,600
 							</Text>
 
@@ -176,25 +176,25 @@ const CartPage = (props: Props) => {
 								<IconPlus style={{ width: rem(12) }} stroke={1.5} />
 							</ActionIcon>
 
-							<Text color="#262728" weight={700} size={14} ml={30} mt={68}>
+							<Text color="#262728" fw={700} size="sm" ml={30} mt={68}>
 								₹12,600
 							</Text>
 						</Group>
 					</Paper>
 					<Paper w={713} h={155} withBorder ml={114} mt={24}>
-						<Group align="flex-start" ml={8} spacing={"lg"}>
-							<Checkbox defaultChecked ml={8} color="#212121" size={16} mt={66} />
+						<Group align="flex-start" ml={8} gap={"lg"}>
+							<Checkbox defaultChecked ml={8} color="#212121" size="sm" mt={66} />
 							<Image src={CartBg} height={106} width={106} mt={23} ml={10} />
 							<Image src={Panel} height={98} width={75} mt={27} ml={-106} />
-							<Stack spacing={"xs"} mt={52}>
-								<Text w={164} color="#414141" size={14} weight={600} ml={11}>
+							<Stack gap={"xs"} mt={52}>
+								<Text w={164} color="#414141" size="sm" fw={600} ml={11}>
 									Three Phase Thyristor Power Controller
 								</Text>
-								<Text color="#e83214" size={12} weight={600} ml={11}>
+								<Text color="#e83214" size="xs" fw={600} ml={11}>
 									POW-3-PA-CL
 								</Text>
 							</Stack>
-							<Text color="#262728" weight={700} size={14} ml={30} mt={68}>
+							<Text color="#262728" fw={700} size="sm" ml={30} mt={68}>
 								₹12,600
 							</Text>
 
@@ -205,7 +205,7 @@ const CartPage = (props: Props) => {
 							<ActionIcon variant="default" size="xs" aria-label="Plus" mt={67}>
 								<IconPlus style={{ width: rem(12) }} stroke={1.5} />
 							</ActionIcon>
-							<Text color="#262728" weight={700} size={14} ml={30} mt={68}>
+							<Text color="#262728" fw={700} size="sm" ml={30} mt={68}>
 								₹12,600
 							</Text>
 						</Group>
@@ -214,43 +214,43 @@ const CartPage = (props: Props) => {
 				<Grid.Col span={3}>
 					<Paper w={451} h={310} withBorder mt={86} ml={48} bg={"#f4f4f4"}>
 						<Stack>
-							<Text color="#212121" size={16} weight={600} ml={24} mt={24}>
+							<Text color="#212121" size="sm" fw={600} ml={24} mt={24}>
 								Cart Summary
 							</Text>
 							<Group>
-								<Text color="#616161" size={14} weight={600} ml={24} w={57}>
+								<Text color="#616161" size="sm" fw={600} ml={24} w={57}>
 									Subtotal
 								</Text>
-								<Text color="#3E3E3E" size={14} weight={700} ml={280} w={51}>
+								<Text color="#3E3E3E" size="sm" fw={700} ml={280} w={51}>
 									₹37000
 								</Text>
 							</Group>
 							<Group mt={20}>
-								<Text color="#616161" size={14} weight={600} ml={24} w={57}>
+								<Text color="#616161" size="sm" fw={600} ml={24} w={57}>
 									Shipping:
 								</Text>
-								<Text color="#3E3E3E" size={14} weight={700} ml={280} w={51}>
+								<Text color="#3E3E3E" size="sm" fw={700} ml={280} w={51}>
 									₹500
 								</Text>
 							</Group>
 							<Divider></Divider>
 							<Group>
-								<Text color="#212121" size={16} weight={600} ml={24}>
+								<Text color="#212121" size="sm" fw={600} ml={24}>
 									Total Amount
 								</Text>
-								<Text color="#3E3E3E" size={14} weight={700} ml={235}>
+								<Text color="#3E3E3E" size="sm" fw={700} ml={235}>
 									₹37500
 								</Text>
 							</Group>
 						</Stack>
 						<Stack align="stretch" ml={16} mr={16}>
 							<OptionsButton mt={18}>
-								<Text color="#fff" size={12} weight={600}>
+								<Text color="#fff" size="xs" fw={600}>
 									proceed to checkout
 								</Text>
 							</OptionsButton>
 							<UnstyledButton>
-								<Text color="#3e3e3e" size={12} weight={600} ml={145}>
+								<Text color="#3e3e3e" size="xs" fw={600} ml={145}>
 									CONTINUE SHOPPING
 								</Text>
 							</UnstyledButton>
@@ -267,16 +267,16 @@ const CartPage = (props: Props) => {
 					marginTop: 150,
 				}}
 			>
-				<Text color="#292929" size={32} weight={600} pt={40} ml={80}>
+				<Text color="#292929" size="xl" fw={600} pt={40} ml={80}>
 					REQUEST A CALL BACK
 				</Text>
 
-				<Text color="#292929" size={14} weight={400} pt={12} ml={80}>
+				<Text color="#292929" size="sm" fw={400} pt={12} ml={80}>
 					Connect with us to know more about our new products, sales and launches!
 				</Text>
 				<Container pos={"absolute"} pl={80} pt={12}>
 					<Grid>
-						<Col span={3}>
+						<Grid.Col span={3}>
 							<TextInput
 								label="First name"
 								variant="unstyled"
@@ -285,8 +285,8 @@ const CartPage = (props: Props) => {
 									borderBottom: "1px solid #000",
 								}}
 							/>
-						</Col>
-						<Col span={3}>
+						</Grid.Col>
+						<Grid.Col span={3}>
 							<TextInput
 								label="Last name"
 								variant="unstyled"
@@ -295,8 +295,8 @@ const CartPage = (props: Props) => {
 									borderBottom: "1px solid #000",
 								}}
 							/>
-						</Col>
-						<Col span={3}>
+						</Grid.Col>
+						<Grid.Col span={3}>
 							<TextInput
 								label="Email"
 								variant="unstyled"
@@ -305,7 +305,7 @@ const CartPage = (props: Props) => {
 									borderBottom: "1px solid #000",
 								}}
 							/>
-						</Col>
+						</Grid.Col>
 					</Grid>
 					<Grid>
 						<Checkbox
@@ -332,19 +332,19 @@ const CartPage = (props: Props) => {
 
 			<Group>
 				<Stack>
-					<Text size={14} weight={700} mt={64} ml={144}>
+					<Text size="sm" fw={700} mt={64} ml={144}>
 						USEFUL LINKS
 					</Text>
-					<Text size={14} weight={400} mt={30} ml={144} color="#555459">
+					<Text size="sm" fw={400} mt={30} ml={144} color="#555459">
 						Careers
 					</Text>
-					<Text size={14} weight={400} mt={14} ml={144} color="#555459">
+					<Text size="sm" fw={400} mt={14} ml={144} color="#555459">
 						Terms of Service
 					</Text>
-					<Text size={14} weight={700} mt={30} ml={144}>
+					<Text size="sm" fw={700} mt={30} ml={144}>
 						WE ARE SOCIAL!
 					</Text>
-					<Text size={14} weight={400} mt={30} ml={144} color="#555459">
+					<Text size="sm" fw={400} mt={30} ml={144} color="#555459">
 						<Group>
 							<IconBrandFacebookFilled size={24} color="#555459" />
 							<IconBrandLinkedin size={24} color="#555459" />
@@ -355,38 +355,38 @@ const CartPage = (props: Props) => {
 					</Text>
 				</Stack>
 				<Stack>
-					<Text size={14} weight={700} mt={64} ml={144}>
+					<Text size="sm" fw={700} mt={64} ml={144}>
 						POLICIES
 					</Text>
-					<Text size={14} weight={400} mt={30} ml={144} color="#555459">
+					<Text size="sm" fw={400} mt={30} ml={144} color="#555459">
 						Quality Policy
 					</Text>
-					<Text size={14} weight={400} mt={10} ml={144} color="#555459">
+					<Text size="sm" fw={400} mt={10} ml={144} color="#555459">
 						Privacy Policy
 					</Text>
-					<Text size={14} weight={400} mt={10} ml={144} color="#555459">
+					<Text size="sm" fw={400} mt={10} ml={144} color="#555459">
 						Shipping Policy
 					</Text>
-					<Text size={14} weight={400} mt={10} ml={144} color="#555459">
+					<Text size="sm" fw={400} mt={10} ml={144} color="#555459">
 						Cancellation Policy
 					</Text>
 
-					<Text size={14} weight={400} mt={10} ml={144} color="#555459">
+					<Text size="sm" fw={400} mt={10} ml={144} color="#555459">
 						Return & Refund Policy
 					</Text>
 				</Stack>
 				<Stack>
-					<Text size={14} weight={700} mt={64} ml={144}>
+					<Text size="sm" fw={700} mt={64} ml={144}>
 						WAYS TO CONNECT
 					</Text>
-					<Text size={14} weight={400} mt={30} ml={144} color="#555459">
+					<Text size="sm" fw={400} mt={30} ml={144} color="#555459">
 						Email: <br />
 						<Anchor>
 							enquiry@libratherm.com, <br />
 							libratherm@libratherm.com
 						</Anchor>
 					</Text>
-					<Text size={14} weight={400} mt={10} ml={144} color="#555459">
+					<Text size="sm" fw={400} mt={10} ml={144} color="#555459">
 						Mobile: <br />
 						<Anchor>
 							+91-8104971152 +91-8104971154, <br />
@@ -394,16 +394,16 @@ const CartPage = (props: Props) => {
 						</Anchor>
 					</Text>
 
-					<Text size={14} weight={400} mt={10} ml={144} color="#555459">
+					<Text size="sm" fw={400} mt={10} ml={144} color="#555459">
 						Landline: <br />
 						<Anchor>+91-22-42555334</Anchor>
 					</Text>
 				</Stack>
 				<Stack>
-					<Text size={14} weight={700} mt={64} ml={102}>
+					<Text size="sm" fw={700} mt={64} ml={102}>
 						OFFICE ADDRESS
 					</Text>
-					<Text size={14} weight={400} mt={30} ml={102} color="#555459">
+					<Text size="sm" fw={400} mt={30} ml={102} color="#555459">
 						401-403, Diamond Industrial <br /> Estate,Ketki Pada Road, Dahisar <br /> (East), Mumbai
 						400068, <br /> Maharashtra, India.
 					</Text>
@@ -413,7 +413,7 @@ const CartPage = (props: Props) => {
 					<PrimaryButton
 						ml={102}
 						mt={14}
-						leftIcon={<IconBrandWhatsapp color="#25D366" size={24} />}
+						leftSection={<IconBrandWhatsapp color="#25D366" size={24} />}
 						style={{
 							paddingRight: "8px",
 						}}

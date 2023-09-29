@@ -6,7 +6,6 @@ import {
 	Container,
 	List,
 	Grid,
-	Col,
 	Button,
 	Text,
 	Image,
@@ -24,7 +23,7 @@ type Props = {};
 const Services = (props: Props) => {
 	return (
 		<Paper w={1440} h={6097} withBorder bg={"black"}>
-			<Group noWrap spacing={0}>
+			<Group wrap="nowrap" gap={0}>
 				<Box w="100%">
 					<Text size={"32px"} mt={91} ml={114} color="#F6F6F6">
 						Services
@@ -33,11 +32,11 @@ const Services = (props: Props) => {
 				</Box>
 			</Group>
 			<Container>
-				<Text color="#F6F6F6" align="center" size={32} pt={64}>
+				<Text color="#F6F6F6" ta="center" size="lg" pt={64}>
 					Post Weld Heat Treatment (PWHT)
 				</Text>
 
-				<Text color="#E4E8ED" align="left" size={16} pt={34} w={1000} weight="normal">
+				<Text color="#E4E8ED" ta="left" size="md" pt={34} w={1000} fw="normal">
 					Welding is the process of joining metals or thermoplastics by using high heat or pressure
 					and fusing the parent material with weld metal. Welding has many applications in
 					industries like automotive, shipping, construction, mechanical, and many more. The major
@@ -55,11 +54,11 @@ const Services = (props: Props) => {
 				</Text>
 
 				<Image src={PWHT} width={670} height={372} pl={168} pt={64} />
-				<Text color="#F6F6F6" align="left" size={24} pt={64}>
+				<Text color="#F6F6F6" ta="left" size="md" pt={64}>
 					Post Weld Heat Treatment (PWHT)
 				</Text>
 
-				<Text color="#E4E8ED" align="left" size={16} pt={34} w={1000} weight="normal" mb={128}>
+				<Text color="#E4E8ED" ta="left" size="md" pt={34} w={1000} fw="normal" mb={128}>
 					Post Weld Heat Treatment (PWHT) reheats the welded material using a controlled ramp-soak
 					profile with a temperature below its initial transformation temperature. The temperature
 					ranges from 595˚C to 775˚C depending upon the properties of the metal/material. The
@@ -83,7 +82,7 @@ const Services = (props: Props) => {
 				<Image src={PWHT2} width={1006} height={404} alt="pwht" pt={128} pl={218} />
 				<Image src={PWHT3} width={1006} height={404} alt="pwht3" pt={103} pl={218} />
 				<Container>
-					<Text align="left" size={24} pt={128} color="#262728">
+					<Text ta="left" size="md" pt={128} color="#262728">
 						Advantages of PWHT
 					</Text>
 					<Text pt={32}>
@@ -140,7 +139,7 @@ const Services = (props: Props) => {
 					</Text>
 				</Container>
 				<Container>
-					<Text align="left" size={24} pt={64} color="#262728">
+					<Text ta="left" size="md" pt={64} color="#262728">
 						Safety and Precautions
 					</Text>
 					<Text pt={32}>
@@ -202,7 +201,7 @@ const Services = (props: Props) => {
 
 			<Container>
 				<Grid gutter="lg">
-					<Col span={6}>
+					<Grid.Col span={6}>
 						<Image
 							src={Rect3715}
 							alt="Vision"
@@ -224,7 +223,7 @@ const Services = (props: Props) => {
 						<Button
 							variant="default"
 							color="#FFF"
-							uppercase
+							// uppercase
 							mt={646}
 							left={288}
 							radius={0}
@@ -238,7 +237,7 @@ const Services = (props: Props) => {
 								size="24px"
 								w={514}
 								h={44}
-								weight={600}
+								fw={600}
 								mt={999}
 								ml={-200}
 								mb={32}
@@ -247,7 +246,7 @@ const Services = (props: Props) => {
 							>
 								Ramp/Soak Programmable PID Temperature Controller – PRC-489
 							</Text>
-							<Text h={110} w={596} color="#E4E8ED" size={16} weight={400} ml={-200} mt={98}>
+							<Text h={110} w={596} color="#E4E8ED" size="md" fw={400} ml={-200} mt={98}>
 								Libratherm offers Ramp/Soak Programmable PID Temperature Controller – PRC-489 which
 								is designed to improve reliability, accuracy, and control for all temperature
 								control applications. It features Ramp and Soak functions. The single pattern of a
@@ -260,7 +259,7 @@ const Services = (props: Props) => {
 								size="24px"
 								w={514}
 								h={44}
-								weight={600}
+								fw={600}
 								mt={64}
 								ml={-200}
 								style={{ lineHeight: "51.2px" }}
@@ -269,7 +268,7 @@ const Services = (props: Props) => {
 								Features
 							</Text>
 
-							<Text h={308} w={552} color="#E4E8ED" size={16} weight={400} ml={-200} mt={22}>
+							<Text h={308} w={552} color="#E4E8ED" size="md" fw={400} ml={-200} mt={22}>
 								<List>
 									<List.Item
 										style={{
@@ -358,13 +357,13 @@ const Services = (props: Props) => {
 								</List>
 							</Text>
 						</Container>
-					</Col>
-					<Col span={6}>
+					</Grid.Col>
+					<Grid.Col span={6}>
 						<Text
 							size="24px"
 							w={514}
 							h={44}
-							weight={600}
+							fw={600}
 							mt={128}
 							ml={50}
 							style={{ lineHeight: "51.2px" }}
@@ -372,7 +371,7 @@ const Services = (props: Props) => {
 						>
 							PWHT Temperature Controller - PRC 6000
 						</Text>
-						<Text h={110} w={596} color="#E4E8ED" size={16} weight={400} ml={50} mt={24}>
+						<Text h={110} w={596} color="#E4E8ED" size="md" fw={400} ml={50} mt={24}>
 							Libratherm offers Ramp/Soak Programmable PID Temperature Controller – PRC-489 which is
 							designed to improve reliability, accuracy, and control for all temperature control
 							applications. It features Ramp and Soak functions. The single pattern of a total of 16
@@ -385,7 +384,7 @@ const Services = (props: Props) => {
 							size="24px"
 							w={514}
 							h={44}
-							weight={600}
+							fw={600}
 							mt={64}
 							ml={50}
 							style={{ lineHeight: "51.2px" }}
@@ -394,7 +393,7 @@ const Services = (props: Props) => {
 							Features
 						</Text>
 
-						<Text h={308} w={552} color="#E4E8ED" size={16} weight={400} ml={50} mt={22}>
+						<Text h={308} w={552} color="#E4E8ED" size="md" fw={400} ml={50} mt={22}>
 							<List>
 								<List.Item
 									style={{
@@ -490,7 +489,7 @@ const Services = (props: Props) => {
 						<Button
 							variant="default"
 							color="#FFF"
-							uppercase
+							// uppercase
 							mt={802}
 							left={1012}
 							radius={0}
@@ -498,7 +497,7 @@ const Services = (props: Props) => {
 						>
 							visit prc 6000
 						</Button>
-					</Col>
+					</Grid.Col>
 				</Grid>
 			</Container>
 		</Paper>

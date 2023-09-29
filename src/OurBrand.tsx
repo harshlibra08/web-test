@@ -1,4 +1,4 @@
-import { Paper, Container, Grid, Col, Text, Image } from "@mantine/core";
+import { Paper, Container, Grid, Text, Image } from "@mantine/core";
 import React from "react";
 import RectangleGrey from "./Assets/Rectangle3683.png";
 import BrandImg from "./Assets/brand.png";
@@ -9,12 +9,12 @@ const OurBrand = (props: Props) => {
 		<Paper w={1440} h={696} withBorder bg={"black"}>
 			<Container>
 				<Grid gutter="lg">
-					<Col span={6}>
+					<Grid.Col span={6}>
 						<Text
 							size="32px"
 							w={558}
 							h={102}
-							weight={600}
+							fw={600}
 							pt={206}
 							style={{ lineHeight: "51.2px" }}
 							color="#F6F6F6"
@@ -26,8 +26,8 @@ const OurBrand = (props: Props) => {
 							h={110}
 							w={596}
 							color="#E4E8ED"
-							size={14}
-							weight={400}
+							size="sm"
+							fw={400}
 							pt={96}
 							ml={-100}
 							style={{ lineHeight: "22.4px" }}
@@ -42,8 +42,8 @@ const OurBrand = (props: Props) => {
 							reliability, sturdy construction and long service life. We are currently supported by
 							1,50,000 instruments, enabling us with an outstanding range of output.
 						</Text>
-					</Col>
-					<Col span={6}>
+					</Grid.Col>
+					<Grid.Col span={6}>
 						<Image
 							src={RectangleGrey}
 							bg={"black"}
@@ -64,7 +64,7 @@ const OurBrand = (props: Props) => {
 							mt={126}
 							ml={114}
 						/>
-					</Col>
+					</Grid.Col>
 				</Grid>
 			</Container>
 		</Paper>

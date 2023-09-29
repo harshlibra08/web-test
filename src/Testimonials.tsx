@@ -16,7 +16,7 @@ const Testimonials = (props: Props) => {
 	const [embla, setEmbla] = useState<Embla | null>(null);
 	return (
 		<Paper w={1440} h={696} withBorder style={{ backgroundColor: "black" }}>
-			<Group noWrap spacing={0}>
+			<Group wrap="nowrap" gap={0}>
 				<Box w="100%">
 					<Divider
 						size="md"
@@ -61,10 +61,10 @@ const Testimonials = (props: Props) => {
 				style={{
 					alignContent: "center",
 				}}
-				breakpoints={[
-					{ maxWidth: "md", slideSize: "50%" },
-					{ maxWidth: "sm", slideSize: "100%", slideGap: 0 },
-				]}
+				// breakpoints={[
+				// 	{ maxWidth: "md", slideSize: "50%" },
+				// 	{ maxWidth: "sm", slideSize: "100%", slideGap: 0 },
+				// ]}
 				getEmblaApi={setEmbla}
 			>
 				<Carousel.Slide>
@@ -80,17 +80,17 @@ const Testimonials = (props: Props) => {
 					>
 						<Image src={Tifr} width={127} height={61} pos={"absolute"} top={32} left={32} />
 						<Image src={Quote} width={36.014} height={32} pos={"absolute"} top={31} right={29} />
-						<Text color="#FFFFFF" size={16} w={368} h={110} mt={112} ml={32} mr={23} weight={400}>
+						<Text color="#FFFFFF" size="sm" w={368} h={110} mt={112} ml={32} mr={23} fw={400}>
 							Libratherm products are performing in nearly all the states in the country and in more
 							than 25 countries around the world. While designing and manufacturing their products,
 							they sustain a way in which their services benefit us.
 						</Text>
 
 						<Image src={Avatar1} width={56} height={56} pos={"absolute"} top={329} left={32} />
-						<Text pos={"absolute"} color="#FFF" top={329} left={98} size={18} weight={400}>
+						<Text pos={"absolute"} color="#FFF" top={329} left={98} size="sm" fw={400}>
 							Varuni Vij
 						</Text>
-						<Text pos={"absolute"} color="#FFF" top={361} left={98} size={12} weight={400}>
+						<Text pos={"absolute"} color="#FFF" top={361} left={98} size="xs" fw={400}>
 							Former Media Planning & Content Lead, Reckitt India
 						</Text>
 					</Card>
@@ -109,16 +109,16 @@ const Testimonials = (props: Props) => {
 					>
 						<Image src={Bhel} width={83} height={79} pos={"absolute"} top={15} left={26} />
 						<Image src={Quote} width={36.014} height={32} pos={"absolute"} top={31} right={29} />
-						<Text color="#FFFFFF" size={16} w={368} h={110} mt={112} ml={32} mr={23} weight={400}>
+						<Text color="#FFFFFF" size="sm" w={368} h={110} mt={112} ml={32} mr={23} fw={400}>
 							Libratherm products are performing in nearly all the states in the country and in more
 							than 25 countries around the world. While designing and manufacturing their products,
 							they sustain a way in which their services benefit us.
 						</Text>
 						<Image src={Avatar2} width={56} height={56} pos={"absolute"} top={329} left={32} />
-						<Text pos={"absolute"} color="#FFF" top={329} left={98} size={18} weight={400}>
+						<Text pos={"absolute"} color="#FFF" top={329} left={98} size="sm" fw={400}>
 							Varuni Vij
 						</Text>
-						<Text pos={"absolute"} color="#FFF" top={361} left={98} size={12} weight={400}>
+						<Text pos={"absolute"} color="#FFF" top={361} left={98} size="xs" fw={400}>
 							Former Media Planning & Content Lead, Reckitt India
 						</Text>
 					</Card>
@@ -136,16 +136,16 @@ const Testimonials = (props: Props) => {
 					>
 						<Image src={Tifr} width={127} height={61} pos={"absolute"} top={32} left={32} />
 						<Image src={Quote} width={36.014} height={32} pos={"absolute"} top={31} right={29} />
-						<Text color="#FFFFFF" size={16} w={368} h={110} mt={112} ml={32} mr={23} weight={400}>
+						<Text color="#FFFFFF" size="sm" w={368} h={110} mt={112} ml={32} mr={23} fw={400}>
 							Libratherm products are performing in nearly all the states in the country and in more
 							than 25 countries around the world. While designing and manufacturing their products,
 							they sustain a way in which their services benefit us.
 						</Text>
 						<Image src={Avatar3} width={56} height={56} pos={"absolute"} top={329} left={32} />
-						<Text pos={"absolute"} color="#FFF" top={329} left={98} size={18} weight={400}>
+						<Text pos={"absolute"} color="#FFF" top={329} left={98} size="sm" fw={400}>
 							Varuni Vij
 						</Text>
-						<Text pos={"absolute"} color="#FFF" top={361} left={98} size={12} weight={400}>
+						<Text pos={"absolute"} color="#FFF" top={361} left={98} size="xs" fw={400}>
 							Former Media Planning & Content Lead, Reckitt India
 						</Text>
 					</Card>

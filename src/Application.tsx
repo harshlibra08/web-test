@@ -22,7 +22,7 @@ const Application = (props: Props) => {
 	return (
 		<>
 			<Paper w={1440} h={3547} withBorder bg={"black"}>
-				<Group noWrap spacing={0}>
+				<Group wrap="nowrap" gap={0}>
 					<Box w="100%">
 						<Text size={"32px"} mt={91} ml={114} color="#F6F6F6">
 							Application
@@ -34,13 +34,13 @@ const Application = (props: Props) => {
 					<Grid.Col span={4}>
 						<Box pos="relative" w={1200} h={280}>
 							<Image src={WhiteBG} height={327} width={358} pos="absolute" top={64} left={116} />
-							<Text color="#E4E8ED" size={16} ml={530} pt={128}>
+							<Text color="#E4E8ED" size="md" ml={530} pt={128}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={32} ml={530} mt={16}>
+							<Text color="#F6F6F6" size="lg" ml={530} mt={16}>
 								SCR Power Regulators{" "}
 							</Text>
-							<Text color="#E4E8ED" size={16} ml={530} mt={16} w={868} lineClamp={2}>
+							<Text color="#E4E8ED" size="md" ml={530} mt={16} w={868} lineClamp={2}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -52,7 +52,7 @@ const Application = (props: Props) => {
 							</Text>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" ml={530} mt={32} weight={400}>
+									<Text size="20px" color="white" ml={530} mt={32} fw={400}>
 										Read more
 									</Text>
 								</Group>
@@ -64,13 +64,13 @@ const Application = (props: Props) => {
 					<Grid.Col span={4} pt={120}>
 						<Box pos="relative" w={1200} h={280}>
 							<Image src={WhiteBG} height={327} width={358} pos="absolute" top={64} left={116} />
-							<Text color="#E4E8ED" size={16} ml={530} pt={128}>
+							<Text color="#E4E8ED" size="md" ml={530} pt={128}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={32} ml={530} mt={16}>
+							<Text color="#F6F6F6" size="lg" ml={530} mt={16}>
 								SCR Triggering Cards for OEM{" "}
 							</Text>
-							<Text color="#E4E8ED" size={16} ml={530} mt={16} w={868} lineClamp={2}>
+							<Text color="#E4E8ED" size="md" ml={530} mt={16} w={868} lineClamp={2}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -82,7 +82,7 @@ const Application = (props: Props) => {
 							</Text>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" ml={530} mt={32} weight={400}>
+									<Text size="20px" color="white" ml={530} mt={32} fw={400}>
 										Read more
 									</Text>
 								</Group>
@@ -94,13 +94,13 @@ const Application = (props: Props) => {
 					<Grid.Col span={4} pt={120}>
 						<Box pos="relative" w={1200} h={280}>
 							<Image src={WhiteBG} height={327} width={358} pos="absolute" top={64} left={116} />
-							<Text color="#E4E8ED" size={16} ml={530} pt={128}>
+							<Text color="#E4E8ED" size="md" ml={530} pt={128}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={32} ml={530} mt={16}>
+							<Text color="#F6F6F6" size="lg" ml={530} mt={16}>
 								Thyristor Power Switches{" "}
 							</Text>
-							<Text color="#E4E8ED" size={16} ml={530} mt={16} w={868} lineClamp={2}>
+							<Text color="#E4E8ED" size="md" ml={530} mt={16} w={868} lineClamp={2}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -112,7 +112,7 @@ const Application = (props: Props) => {
 							</Text>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" ml={530} mt={32} weight={400}>
+									<Text size="20px" color="white" ml={530} mt={32} fw={400}>
 										Read more
 									</Text>
 								</Group>
@@ -124,13 +124,13 @@ const Application = (props: Props) => {
 					<Grid.Col span={4} pt={120}>
 						<Box pos="relative" w={1200} h={280}>
 							<Image src={WhiteBG} height={327} width={358} pos="absolute" top={64} left={116} />
-							<Text color="#E4E8ED" size={16} ml={530} pt={128}>
+							<Text color="#E4E8ED" size="md" ml={530} pt={128}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={32} ml={530} mt={16}>
+							<Text color="#F6F6F6" size="lg" ml={530} mt={16}>
 								Phase Angle Control vs Zero Crossover{" "}
 							</Text>
-							<Text color="#E4E8ED" size={16} ml={530} mt={16} w={868} lineClamp={2}>
+							<Text color="#E4E8ED" size="md" ml={530} mt={16} w={868} lineClamp={2}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -142,7 +142,7 @@ const Application = (props: Props) => {
 							</Text>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" ml={530} mt={32} weight={400}>
+									<Text size="20px" color="white" ml={530} mt={32} fw={400}>
 										Read more
 									</Text>
 								</Group>
@@ -154,13 +154,13 @@ const Application = (props: Props) => {
 					<Grid.Col span={4} pt={120}>
 						<Box pos="relative" w={1200} h={280}>
 							<Image src={WhiteBG} height={327} width={358} pos="absolute" top={64} left={116} />
-							<Text color="#E4E8ED" size={16} ml={530} pt={128}>
+							<Text color="#E4E8ED" size="md" ml={530} pt={128}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={32} ml={530} mt={16}>
+							<Text color="#F6F6F6" size="lg" ml={530} mt={16}>
 								Multizone Heating System{" "}
 							</Text>
-							<Text color="#E4E8ED" size={16} ml={530} mt={16} w={868} lineClamp={2}>
+							<Text color="#E4E8ED" size="md" ml={530} mt={16} w={868} lineClamp={2}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -172,7 +172,7 @@ const Application = (props: Props) => {
 							</Text>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" ml={530} mt={32} weight={400}>
+									<Text size="20px" color="white" ml={530} mt={32} fw={400}>
 										Read more
 									</Text>
 								</Group>
@@ -184,13 +184,13 @@ const Application = (props: Props) => {
 					<Grid.Col span={4} pt={120}>
 						<Box pos="relative" w={1200} h={280}>
 							<Image src={WhiteBG} height={327} width={358} pos="absolute" top={64} left={116} />
-							<Text color="#E4E8ED" size={16} ml={530} pt={128}>
+							<Text color="#E4E8ED" size="md" ml={530} pt={128}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={32} ml={530} mt={16}>
+							<Text color="#F6F6F6" size="lg" ml={530} mt={16}>
 								Multizone Heating System{" "}
 							</Text>
-							<Text color="#E4E8ED" size={16} ml={530} mt={16} w={868} lineClamp={2}>
+							<Text color="#E4E8ED" size="md" ml={530} mt={16} w={868} lineClamp={2}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -202,7 +202,7 @@ const Application = (props: Props) => {
 							</Text>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" ml={530} mt={32} weight={400}>
+									<Text size="20px" color="white" ml={530} mt={32} fw={400}>
 										Read more
 									</Text>
 								</Group>
@@ -214,13 +214,13 @@ const Application = (props: Props) => {
 					<Grid.Col span={4} pt={120}>
 						<Box pos="relative" w={1200} h={280}>
 							<Image src={WhiteBG} height={327} width={358} pos="absolute" top={64} left={116} />
-							<Text color="#E4E8ED" size={16} ml={530} pt={128}>
+							<Text color="#E4E8ED" size="md" ml={530} pt={128}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={32} ml={530} mt={16}>
+							<Text color="#F6F6F6" size="lg" ml={530} mt={16}>
 								Temperature Controller{" "}
 							</Text>
-							<Text color="#E4E8ED" size={16} ml={530} mt={16} w={868} lineClamp={2}>
+							<Text color="#E4E8ED" size="md" ml={530} mt={16} w={868} lineClamp={2}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -232,7 +232,7 @@ const Application = (props: Props) => {
 							</Text>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" ml={530} mt={32} weight={400}>
+									<Text size="20px" color="white" ml={530} mt={32} fw={400}>
 										Read more
 									</Text>
 								</Group>
@@ -242,7 +242,7 @@ const Application = (props: Props) => {
 				</Grid>
 			</Paper>
 			<Paper w={1440} h={4450} withBorder bg={"black"}>
-				<Group noWrap spacing={0}>
+				<Group wrap="nowrap" gap={0}>
 					<Box w="100%">
 						<Text size={"32px"} mt={91} ml={114} color="#F6F6F6">
 							Application
@@ -253,10 +253,10 @@ const Application = (props: Props) => {
 				<Container>
 					<Image src={SCR} width={1000} height={422} mx={"auto"} />
 
-					<Text color="#F6F6F6" align="left" size={32} pt={64}>
+					<Text color="#F6F6F6" ta="left" size="lg" pt={64}>
 						SCR Power Regulators
 					</Text>
-					<Text color="#E4E8ED" align="left" size={16} pt={34} w={1006} weight={400}>
+					<Text color="#E4E8ED" ta="left" size="md" pt={34} w={1006} fw={400}>
 						Power Controllers for Precise Voltage and Current Control : SCR Power Regulators, also
 						known as Thyristor Power Controllers are devices that control power delivery. They are
 						designed to vary the AC voltage across resistive and inductive loads. The primary
@@ -271,10 +271,10 @@ const Application = (props: Props) => {
 				<Paper w={1440} h={1612} withBorder bg={"white"} mt={128}>
 					<Image src={PhaseAngel} width={1000} height={171} mx={"auto"} pt={128} />
 
-					<Text size={32} weight={600} pt={64} pl={217} color="#262728">
+					<Text size="lg" fw={600} pt={64} pl={217} color="#262728">
 						Why use Thyristor Power Controllers?
 					</Text>
-					<Text size={16} weight={"400"} w={"85%"} pl={217} pt={32}>
+					<Text size="md" fw={"400"} w={"85%"} pl={217} pt={32}>
 						The Thyristor Power Controller can accurately and consistently control the process
 						proportional to the control signal. They provide a smooth way of controlling the power
 						delivered to the load. Unlike Contactors, thyristors don’t have any electromechanical
@@ -289,7 +289,7 @@ const Application = (props: Props) => {
 
 					<Image src={TPC} width={979} height={409} mx={"auto"} pt={64} />
 
-					<Text size={16} pl={217} pt={64} color="#555459">
+					<Text size="md" pl={217} pt={64} color="#555459">
 						Some of the applications where Libratherm's Power Controllers are successfully
 						implemented:
 						<li>Aluminium Melting Furnaces</li>
@@ -315,7 +315,7 @@ const Application = (props: Props) => {
 					</Text>
 				</Paper>
 
-				<Group noWrap spacing={0}>
+				<Group wrap="nowrap" gap={0}>
 					<Box w="100%">
 						<Text size={"32px"} mt={128} ml={114} color="#F6F6F6">
 							Related Post
@@ -323,7 +323,7 @@ const Application = (props: Props) => {
 					</Box>
 				</Group>
 
-				<Group position="center" spacing="lg">
+				<Group justify="center" gap="lg">
 					<Card h={700} w={391} bg={"black"}>
 						<Card.Section>
 							<Box pos="relative" w={391} h={450} bg={"black"}>
@@ -337,13 +337,13 @@ const Application = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text weight={400} h={92} w={347} size={32} pos="absolute" mt={350} color="#F6F6F6">
+								<Text fw={400} h={92} w={347} size="lg" pos="absolute" mt={350} color="#F6F6F6">
 									Signal Isolation
 								</Text>
 
 								<Text
 									size="16px"
-									weight={400}
+									fw={400}
 									w={325}
 									h={46}
 									pos="absolute"
@@ -363,7 +363,7 @@ const Application = (props: Props) => {
 							</Box>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" mt={32} weight={400}>
+									<Text size="20px" color="white" mt={32} fw={400}>
 										Know more
 									</Text>
 								</Group>
@@ -384,13 +384,13 @@ const Application = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text weight={400} h={92} w={347} size={32} pos="absolute" mt={350} color="#F6F6F6">
+								<Text fw={400} h={92} w={347} size="lg" pos="absolute" mt={350} color="#F6F6F6">
 									Signal Isolation
 								</Text>
 
 								<Text
 									size="16px"
-									weight={400}
+									fw={400}
 									w={325}
 									h={46}
 									pos="absolute"
@@ -410,7 +410,7 @@ const Application = (props: Props) => {
 							</Box>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" mt={32} weight={400}>
+									<Text size="20px" color="white" mt={32} fw={400}>
 										Know more
 									</Text>
 								</Group>
@@ -431,13 +431,13 @@ const Application = (props: Props) => {
 									w="100%"
 									h="100%"
 								/>
-								<Text weight={400} h={92} w={347} size={32} pos="absolute" mt={350} color="#F6F6F6">
+								<Text fw={400} h={92} w={347} size="lg" pos="absolute" mt={350} color="#F6F6F6">
 									Signal Isolation
 								</Text>
 
 								<Text
 									size="16px"
-									weight={400}
+									fw={400}
 									w={325}
 									h={46}
 									pos="absolute"
@@ -457,7 +457,7 @@ const Application = (props: Props) => {
 							</Box>
 							<UnstyledButton>
 								<Group>
-									<Text size="20px" color="white" mt={32} weight={400}>
+									<Text size="20px" color="white" mt={32} fw={400}>
 										Know more
 									</Text>
 								</Group>

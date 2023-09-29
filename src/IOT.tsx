@@ -8,7 +8,7 @@ type Props = {};
 const IOT = (props: Props) => {
 	return (
 		<Paper w={1440} h={4450} withBorder bg={"black"}>
-			<Group noWrap spacing={0}>
+			<Group wrap="nowrap" gap={0}>
 				<Box w="100%">
 					<Text size={"32px"} mt={91} ml={114} color="#F6F6F6">
 						Services
@@ -17,20 +17,20 @@ const IOT = (props: Props) => {
 				</Box>
 			</Group>
 			<Container>
-				<Text color="#F6F6F6" align="center" size={32} pt={64}>
+				<Text color="#F6F6F6" ta="center" size="lg" pt={64}>
 					IoT (Internet of Things)
 				</Text>
-				<Text color="#E4E8ED" align="left" size={16} pt={34} w={1006} weight="normal">
+				<Text color="#E4E8ED" ta="left" size="sm" pt={34} w={1006} fw="normal">
 					The Internet of Things is a system of interrelated devices that are provided with the
 					ability to transfer data over a network without requiring human-to-human or
 					human-to-computer interaction.
 				</Text>
 				<Image src={Iot} width={822} height={456} pt={64} mx={"auto"} />
 
-				<Text color="#F6F6F6" align="left" size={24} pt={128}>
+				<Text color="#F6F6F6" ta="left" size="md" pt={128}>
 					What we offer?
 				</Text>
-				<Text color="#E4E8ED" align="left" size={16} pt={34} w={1006} weight={400}>
+				<Text color="#E4E8ED" ta="left" size="sm" pt={34} w={1006} fw={400}>
 					IoT for Process Monitor, Control and Data Logging
 					<List>
 						<List.Item
@@ -69,10 +69,10 @@ const IOT = (props: Props) => {
 					</Grid.Col>
 				</Grid>
 
-				<Text size={24} weight={600} pt={64} pl={217}>
+				<Text size="md" fw={600} pt={64} pl={217}>
 					Description
 				</Text>
-				<Text size={16} weight={"400"} w={"85%"} pl={217} pt={32}>
+				<Text size="sm" fw={"400"} w={"85%"} pl={217} pt={32}>
 					Libratherm offers IoT modules, which allow the user to remotely monitor and control the
 					Industrial process directly on the Internet via an Ethernet/Wi-Fi network.
 					<br />
@@ -87,10 +87,10 @@ const IOT = (props: Props) => {
 					Ethernet for the functioning of these modules.
 				</Text>
 
-				<Text size={24} weight={"600"} pt={64} pl={217}>
+				<Text size="md" fw={"600"} pt={64} pl={217}>
 					Key Features
 				</Text>
-				<Text size={16} w={"85%"} pl={217} pt={32}>
+				<Text size="sm" w={"85%"} pl={217} pt={32}>
 					<li>
 						Direct Interface to Internet via Wi-Fi / Ethernet. No expensive gateways required.
 					</li>
@@ -104,11 +104,11 @@ const IOT = (props: Props) => {
 				</Text>
 			</Paper>
 
-			<Text size={24} weight={"600"} pt={64} pl={217} color="#F6F6F6">
+			<Text size="md" fw={"600"} pt={64} pl={217} color="#F6F6F6">
 				IOT App Screen
 			</Text>
 			<Image src={IOTApp} width={1006} height={484} pt={64} pl={217} />
-			<Text size={16} weight={"400"} w={"85%"} pl={217} pt={64} color="#F6F6F6">
+			<Text size="sm" fw={"400"} w={"85%"} pl={217} pt={64} color="#F6F6F6">
 				Libratherm offers IoT modules, which allow the user to remotely monitor and control the
 				Industrial process directly on the Internet via an Ethernet/Wi-Fi network. <br />
 				LSD-01 can be used to interface any process controller having an RS485 MODBUS interface to

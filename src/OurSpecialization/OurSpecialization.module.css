@@ -1,0 +1,45 @@
+.outline {
+	background-color: black;
+	max-width: 1440px;
+	height: 679px;
+	margin-top: 45%;
+}
+
+.bgimage {
+	margin-left: 0px;
+	position: absolute;
+	margin-top: 0px;
+	width: 505px;
+	height: 679px;
+}
+
+.fgimage {
+	margin-left: 114px;
+	position: absolute;
+	margin-top: 114px;
+	width: 493px;
+	height: 451px;
+	background-color: #666;
+}
+
+.title {
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	color: #f6f6f6;
+	margin-left: 730px;
+	padding-top: 218px;
+}
+
+.body {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	width: 686px;
+	color: #e4e8ed;
+	margin-left: 730px;
+	padding-top: 21px;
+	text-align: start;
+}

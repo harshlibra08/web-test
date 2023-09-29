@@ -13,10 +13,10 @@ type Props = {};
 const Events = (props: Props) => {
 	return (
 		<Paper w={1440} h={1046} withBorder style={{ backgroundColor: "black" }}>
-			<Text color="#E4E8ED" size={14} mt={106} ml={140}>
+			<Text color="#E4E8ED" size="xs" mt={106} ml={140}>
 				WHAT HAVE WE BEEN DOING
 			</Text>
-			<Group noWrap spacing={0}>
+			<Group wrap="nowrap" gap={0}>
 				<Box w="100%">
 					<Divider
 						size="md"
@@ -31,7 +31,7 @@ const Events = (props: Props) => {
 					/>
 				</Box>
 			</Group>
-			<Group position="center" spacing="lg">
+			<Group justify="center" gap="lg">
 				<Grid gutter="lg">
 					<Grid.Col span={4}>
 						<Box pos="relative" w={1200} h={280}>
@@ -55,10 +55,10 @@ const Events = (props: Props) => {
 								w="100%"
 								h="100%"
 							/>
-							<Text color="#E4E8ED" size={12} ml={319}>
+							<Text color="#E4E8ED" size="xs" ml={319}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+							<Text color="#F6F6F6" size="md" ml={319} mt={15} w={186}>
 								Mumbai ACE Tech Exhibition
 							</Text>
 						</Box>
@@ -85,10 +85,10 @@ const Events = (props: Props) => {
 								w="100%"
 								h="100%"
 							/>
-							<Text color="#E4E8ED" size={12} ml={319}>
+							<Text color="#E4E8ED" size="xs" ml={319}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+							<Text color="#F6F6F6" size="md" ml={319} mt={15} w={186}>
 								Mumbai ACE Tech Exhibition
 							</Text>
 						</Box>
@@ -115,10 +115,10 @@ const Events = (props: Props) => {
 								w="100%"
 								h="100%"
 							/>
-							<Text color="#E4E8ED" size={12} ml={319}>
+							<Text color="#E4E8ED" size="xs" ml={319}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+							<Text color="#F6F6F6" size="md" ml={319} mt={15} w={186}>
 								Mumbai ACE Tech Exhibition
 							</Text>
 						</Box>
@@ -145,10 +145,10 @@ const Events = (props: Props) => {
 								w="100%"
 								h="100%"
 							/>
-							<Text color="#E4E8ED" size={12} ml={319}>
+							<Text color="#E4E8ED" size="xs" ml={319}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+							<Text color="#F6F6F6" size="md" ml={319} mt={15} w={186}>
 								Mumbai ACE Tech Exhibition
 							</Text>
 						</Box>
@@ -175,10 +175,10 @@ const Events = (props: Props) => {
 								w="100%"
 								h="100%"
 							/>
-							<Text color="#E4E8ED" size={12} ml={319}>
+							<Text color="#E4E8ED" size="xs" ml={319}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+							<Text color="#F6F6F6" size="md" ml={319} mt={15} w={186}>
 								Mumbai ACE Tech Exhibition
 							</Text>
 						</Box>
@@ -205,10 +205,10 @@ const Events = (props: Props) => {
 								w="100%"
 								h="100%"
 							/>
-							<Text color="#E4E8ED" size={12} ml={319}>
+							<Text color="#E4E8ED" size="xs" ml={319}>
 								22nd January, 2023.
 							</Text>
-							<Text color="#F6F6F6" size={16} ml={319} mt={15} w={186}>
+							<Text color="#F6F6F6" size="md" ml={319} mt={15} w={186}>
 								Mumbai ACE Tech Exhibition
 							</Text>
 						</Box>

@@ -24,16 +24,16 @@ const OptionsButton = ({ ...props }: ButtonProps) => (
 				fontWeight: 600,
 				lineHeight: "22.4px",
 				border: "1px solid",
-				"&:hover": {
-					backgroundColor: "#5B5B5B",
-					color: "#555459",
-				},
+				// "&:hover": {
+				// 	backgroundColor: "#5B5B5B",
+				// 	color: "#555459",
+				// },
 			},
 			label: {
 				color: "#FFFFFF",
 			},
 		}}
-		uppercase={true}
+		// uppercase={true}
 		{...props}
 	/>
 );
@@ -47,10 +47,10 @@ const PrimaryButton = ({ ...props }: ButtonProps) => (
 				fontWeight: 600,
 				lineHeight: "22.4px",
 				border: "1px solid",
-				"&:hover": {
-					backgroundColor: "#f4f4f4",
-					color: "#555459",
-				},
+				// "&:hover": {
+				// 	backgroundColor: "#f4f4f4",
+				// 	color: "#555459",
+				// },
 			},
 			label: {
 				color: "#555459",
@@ -68,9 +68,9 @@ const SecondaryButton = ({ ...props }) => (
 				color: "#292929",
 				fontWeight: 600,
 				lineHeight: "22.4px",
-				"&:hover": {
-					backgroundColor: "#FFFFFF", // Override hover background color to match default state
-				},
+				// "&:hover": {
+				// 	backgroundColor: "#FFFFFF", // Override hover background color to match default state
+				// },
 			},
 			label: {
 				color: "#292929",
@@ -90,9 +90,9 @@ const TertiaryButton = ({ ...props }) => (
 				lineHeight: "22.4px",
 				fontSize: "12px",
 
-				"&:hover": {
-					backgroundColor: "#FFFFFF", // Override hover background color to match default state
-				},
+				// "&:hover": {
+				// 	backgroundColor: "#FFFFFF", // Override hover background color to match default state
+				// },
 			},
 			label: {
 				color: "#555459",
@@ -134,19 +134,19 @@ const Buttons = (props: Props) => {
 							</Paper>
 							<Paper w={400} px="lg">
 								<Text
-									weight={600}
+									fw={600}
 									size={"18px"}
 									style={{ lineHeight: "22.77px", marginBottom: 8 }}
 									color="#414141"
 								>
 									Three Phase Thyristor Power Controller
 								</Text>
-								<Text weight={600} size={"14px"} color="#E83214">
+								<Text fw={600} size={"14px"} color="#E83214">
 									POW-3-PA-CL
 								</Text>
 								<Text
 									top={128}
-									weight={400}
+									fw={400}
 									size={"12px"}
 									style={{ lineHeight: "19.2px", marginTop: 26 }}
 									color="#555459"
@@ -179,7 +179,7 @@ const Buttons = (props: Props) => {
 							<Paper>
 								<Text
 									left={852}
-									weight={400}
+									fw={400}
 									size={"10px"}
 									style={{ top: 47, letterSpacing: 0, marginRight: 100 }}
 									color="#707070"
@@ -187,7 +187,7 @@ const Buttons = (props: Props) => {
 									Prices are inclusive of Delivery Charges.
 								</Text>
 								<Text
-									weight={400}
+									fw={400}
 									size={"20px"}
 									style={{ top: 0, marginRight: 112, marginBottom: 8 }}
 									color="#414141"
@@ -212,7 +212,7 @@ const Buttons = (props: Props) => {
 											top={"3px"}
 											style={{ marginRight: "4px" }}
 										/>
-										<Text weight={700} size={"12px"} color="#414141">
+										<Text fw={700} size={"12px"} color="#414141">
 											In Stock
 										</Text>
 									</div>
@@ -224,7 +224,7 @@ const Buttons = (props: Props) => {
 											width={"16px"}
 											style={{ marginRight: "8px" }}
 										/>
-										<Text weight={400} size={"12px"} color="#555459">
+										<Text fw={400} size={"12px"} color="#555459">
 											Get 5% Instant Discount Up to ₹1250 On Lea...
 										</Text>
 									</div>
@@ -236,13 +236,13 @@ const Buttons = (props: Props) => {
 											width={"16px"}
 											style={{ marginRight: "8px" }}
 										/>
-										<Text weight={400} size={"12px"} color="#555459">
+										<Text fw={400} size={"12px"} color="#555459">
 											Get 10% Instant Discount Up to ₹2250
 										</Text>
 									</div>
 								</div>
 
-								<Stack spacing="xs" align="stretch" py={15}>
+								<Stack gap="xs" align="stretch" py={15}>
 									<OptionsButton>Select Options</OptionsButton>
 									<PrimaryButton>Add to Wishlist</PrimaryButton>
 								</Stack>

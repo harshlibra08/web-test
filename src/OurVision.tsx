@@ -1,4 +1,4 @@
-import { Paper, Container, Grid, Col, Text, Image } from "@mantine/core";
+import { Paper, Container, Grid, Text, Image } from "@mantine/core";
 import React from "react";
 import Vision from "./Assets/vision.png";
 import RectangleGrey from "./Assets/Rectangle3683.png";
@@ -9,7 +9,7 @@ const OurVision = (props: Props) => {
 		<Paper w={1440} h={696} withBorder bg={"black"}>
 			<Container>
 				<Grid gutter="lg">
-					<Col span={6}>
+					<Grid.Col span={6}>
 						<Image
 							src={RectangleGrey}
 							alt="Vision"
@@ -28,13 +28,13 @@ const OurVision = (props: Props) => {
 							left={114}
 							mt={114}
 						/>
-					</Col>
-					<Col span={6}>
+					</Grid.Col>
+					<Grid.Col span={6}>
 						<Text
 							size="32px"
 							w={596}
 							h={44}
-							weight={600}
+							fw={600}
 							mr={114}
 							mt={251}
 							style={{ lineHeight: "51.2px" }}
@@ -46,8 +46,8 @@ const OurVision = (props: Props) => {
 							h={110}
 							w={596}
 							color="#E4E8ED"
-							size={16}
-							weight={400}
+							size="md"
+							fw={400}
 							mb={40}
 							mr={114}
 							mt={24}
@@ -59,7 +59,7 @@ const OurVision = (props: Props) => {
 							While designing and manufacturing our products, we will sustain the way in which our
 							services benefit the customers.
 						</Text>
-					</Col>
+					</Grid.Col>
 				</Grid>
 			</Container>
 		</Paper>
