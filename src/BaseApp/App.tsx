@@ -23,6 +23,7 @@ import OurProcess from "../OurProcess";
 import OurSpecialization from "../OurSpecialization/OurSpecialization";
 import World from "../World/World";
 import "@mantine/core/styles.css";
+import Testimonials from "../Testimonials";
 
 // const OptionsButton = ({ ...props }: ButtonProps) => (
 // 	<Button
@@ -165,13 +166,12 @@ function App() {
 			<WhoAreWe />
 			<Excellence />
 			<OurStrengths />
+			<OurSpecialization />
+			<World />
+			<Testimonials />
 
 			{/*
-			
-			<OurSpecialization />
-			<World /> */}
 			{/*
-			<Testimonials />
 			<OurProcess />
 			<Events />
 			<OurTeam />

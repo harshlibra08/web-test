@@ -9,7 +9,7 @@ type Props = {};
 
 const OurStrengths = (props: Props) => {
 	return (
-		<Paper w={1440} bg={"#000"}>
+		<Paper w={1440} bg={"#000"} h={952}>
 			<Group wrap="nowrap" gap={0}>
 				<Box w={1270}>
 					<Divider
@@ -33,7 +33,7 @@ const OurStrengths = (props: Props) => {
 				<Grid.Col span={4}>
 					<Card w={329} h={417} bg={"#000"}>
 						<Card.Section>
-							<Image src={Strength1} w={329} h={417} />
+							<Image src={Strength1} w={329} h={417} style={{ opacity: 0.5 }} />
 						</Card.Section>
 					</Card>
 					<Text
@@ -55,7 +55,7 @@ const OurStrengths = (props: Props) => {
 				<Grid.Col span={4}>
 					<Card w={329} h={417} bg={"#000"}>
 						<Card.Section>
-							<Image src={Strength2} w={329} h={417} />
+							<Image src={Strength2} w={329} h={417} style={{ opacity: 0.5 }} />
 						</Card.Section>
 					</Card>
 					<Text
@@ -67,7 +67,7 @@ const OurStrengths = (props: Props) => {
 						style={{ color: "#f6f6f6" }}
 						pos={"absolute"}
 					>
-						Latest Technology
+						Global Standards
 					</Text>
 					<Text mt={14} w={288} ml={-50} fz={14} fw={400} style={{ color: "#f6f6f6" }}>
 						We use the latest available and accessible technology for long lasting and trouble-free
@@ -77,7 +77,7 @@ const OurStrengths = (props: Props) => {
 				<Grid.Col span={4}>
 					<Card w={329} h={417} bg={"#000"}>
 						<Card.Section>
-							<Image src={Strength3} w={329} h={417} />
+							<Image src={Strength3} w={329} h={417} style={{ opacity: 0.5 }} />
 						</Card.Section>
 					</Card>
 					<Text
@@ -89,7 +89,7 @@ const OurStrengths = (props: Props) => {
 						style={{ color: "#f6f6f6" }}
 						pos={"absolute"}
 					>
-						Latest Technology
+						Client Centered Approach{" "}
 					</Text>
 					<Text mt={14} w={288} ml={-50} fz={14} fw={400} style={{ color: "#f6f6f6" }}>
 						We use the latest available and accessible technology for long lasting and trouble-free
