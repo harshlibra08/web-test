@@ -24,6 +24,15 @@ import OurSpecialization from "../OurSpecialization/OurSpecialization";
 import World from "../World/World";
 import "@mantine/core/styles.css";
 import Testimonials from "../Testimonials";
+import Events from "../Events";
+import OurTeam from "../OurTeam";
+import OurGoals from "../OurGoals";
+import OurVision from "../OurVision";
+import OurBrand from "../OurBrand";
+import Journal from "../Journal";
+import JournalOne from "../Journal-1";
+import JournalTwo from "../Journal-2";
+import JournalThree from "../Journal-3";
 
 // const OptionsButton = ({ ...props }: ButtonProps) => (
 // 	<Button
@@ -155,7 +164,6 @@ function App() {
 				defaultRadius: "xs",
 			}}
 		>
-			{/* <HeaderSearch links={links} /> */}
 			<Navbar />
 
 			<Landing />
@@ -168,16 +176,17 @@ function App() {
 			<OurStrengths />
 			<OurSpecialization />
 			<World />
-			<Testimonials />
-
-			{/*
-			{/*
 			<OurProcess />
 			<Events />
 			<OurTeam />
 			<OurGoals />
-			<OurBrand />
 			<OurVision />
+			<OurBrand />
+			<JournalOne />
+			<JournalTwo />
+			<JournalThree />
+
+			{/*
 			<Journal />
 			<Categories />
 			<CategoryGrid />
@@ -188,6 +197,7 @@ function App() {
 			<InnerProduct />
 			<CartPage />
 			<CareersPage />
+			</Testimonials/>
 			<Buttons /> */}
 		</MantineProvider>
 	);

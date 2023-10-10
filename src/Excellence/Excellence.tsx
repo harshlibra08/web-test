@@ -6,7 +6,7 @@ type Props = {};
 const Excellence = (props: Props) => {
 	return (
 		<Paper w={1440}>
-			<BackgroundImage src={BGImage} w={1441} h={600}>
+			<BackgroundImage src={BGImage} w={1440} h={600}>
 				<Divider size="sm" w={1014} ml={223} />
 				<Text fz={48} fw={400} mt={217} ml={375} style={{ color: "#F6F6F6" }}>
 					Providing Excellence Since 1991
