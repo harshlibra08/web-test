@@ -1,4 +1,4 @@
-import { Paper, Group, Box, Divider, Grid, Text, Image, Stack } from "@mantine/core";
+import { Paper, Group, Box, Divider, Grid, Text, Image } from "@mantine/core";
 import React from "react";
 import Event1 from "./Assets/event1.png";
 import EventBg from "./Assets/eventbg.png";
@@ -7,14 +7,7 @@ import RectangleOmega from "./Assets/RectangleOmega.png";
 import RectangleJournal from "./Assets/RectangleJournal.png";
 import Journal1 from "./Assets/journal1.png";
 import Journal2 from "./Assets/journal2.png";
-// import Industry1 from "./Assets/ind1.png";
-// import Event1 from "./Assets/event1.png";
-// import Event2 from "./Assets/event2.png";
-// import Event3 from "./Assets/event3.png";
-// import Event4 from "./Assets/event4.png";
-// import Event5 from "./Assets/event5.png";
-// import Event6 from "./Assets/event6.png";
-// import EventBg from "./Assets/eventbg.png";
+
 type Props = {};
 
 const JournalThree = (props: Props) => {

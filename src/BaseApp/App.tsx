@@ -1,20 +1,7 @@
-// import { useRef, useState } from "react";
-
 import Landing from "../Landing/Landing";
 import Industries from "../Industries/Industries";
 import Products from "../Products/Products";
-
-import {
-	MantineProvider,
-	// Button,
-
-	// createStyles,
-	// ButtonProps,
-	// AppShellHeader,
-
-	// NumberInputHandlers,
-} from "@mantine/core";
-
+import { MantineProvider } from "@mantine/core";
 import Navbar from "../Navbar/Navbar";
 import WhoAreWe from "../Whoarewe/WhoAreWe";
 import Excellence from "../Excellence/Excellence";
@@ -29,10 +16,13 @@ import OurTeam from "../OurTeam";
 import OurGoals from "../OurGoals";
 import OurVision from "../OurVision";
 import OurBrand from "../OurBrand";
-import Journal from "../Journal";
 import JournalOne from "../Journal-1";
 import JournalTwo from "../Journal-2";
 import JournalThree from "../Journal-3";
+import JournalFour from "../Journal-4";
+import Categories from "../Categories";
+import IOT from "../IOT";
+import Services from "../Services";
 
 // const OptionsButton = ({ ...props }: ButtonProps) => (
 // 	<Button
@@ -185,13 +175,13 @@ function App() {
 			<JournalOne />
 			<JournalTwo />
 			<JournalThree />
-
-			{/*
-			<Journal />
-			<Categories />
-			<CategoryGrid />
+			<JournalFour />
 			<IOT />
 			<Services />
+
+			{/*
+			<Categories />
+			<CategoryGrid />
 			<Application />
 			<ContactUs />
 			<InnerProduct />
