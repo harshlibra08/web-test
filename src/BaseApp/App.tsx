@@ -1,7 +1,7 @@
 import Landing from "../Landing/Landing";
 import Industries from "../Industries/Industries";
 import Products from "../Products/Products";
-import { MantineProvider } from "@mantine/core";
+import { Button, ButtonProps, MantineProvider } from "@mantine/core";
 import Navbar from "../Navbar/Navbar";
 import WhoAreWe from "../Whoarewe/WhoAreWe";
 import Excellence from "../Excellence/Excellence";
@@ -23,95 +23,103 @@ import JournalFour from "../Journal-4";
 import Categories from "../Categories";
 import IOT from "../IOT";
 import Services from "../Services";
+import Application from "../Application";
+import ContactUs from "../ContactUs";
+import Footer from "../Footer";
+import InnerProduct from "../InnerProduct";
+import CartPage from "../CartPage";
+import Checkout from "../Checkout";
+import CareersPage from "../CareersPage";
+import ProductsList from "../ProductsList";
 
-// const OptionsButton = ({ ...props }: ButtonProps) => (
-// 	<Button
-// 		styles={{
-// 			root: {
-// 				backgroundColor: "#3E3E3E",
-// 				color: "#555459",
-// 				fontWeight: 600,
-// 				lineHeight: "22.4px",
-// 				border: "1px solid",
-// 				// "&:hover": {
-// 				// 	backgroundColor: "#5B5B5B",
-// 				// 	color: "#555459",
-// 				// },
-// 			},
+export const OptionsButton = ({ ...props }: ButtonProps) => (
+	<Button
+		styles={{
+			root: {
+				backgroundColor: "#3E3E3E",
+				color: "#555459",
+				fontWeight: 600,
+				lineHeight: "22.4px",
+				border: "1px solid",
+				// "&:hover": {
+				// 	backgroundColor: "#5B5B5B",
+				// 	color: "#555459",
+				// },
+			},
 
-// 			label: {
-// 				color: "#FFFFFF",
-// 			},
-// 		}}
-// 		// uppercase={true}
-// 		{...props}
-// 	/>
-// );
+			label: {
+				color: "#FFFFFF",
+			},
+		}}
+		// uppercase={true}
+		{...props}
+	/>
+);
 
-// const PrimaryButton = ({ ...props }: ButtonProps) => (
-// 	<Button
-// 		styles={{
-// 			root: {
-// 				backgroundColor: "#FFFFFF",
-// 				color: "#555459",
-// 				fontWeight: 600,
-// 				lineHeight: "22.4px",
-// 				border: "1px solid",
-// 				// "&:hover": {
-// 				// 	backgroundColor: "#f4f4f4",
-// 				// 	color: "#555459",
-// 				// },
-// 			},
-// 			label: {
-// 				color: "#555459",
-// 			},
-// 		}}
-// 		{...props}
-// 	/>
-// );
+export const PrimaryButton = ({ ...props }: ButtonProps) => (
+	<Button
+		styles={{
+			root: {
+				backgroundColor: "#FFFFFF",
+				color: "#555459",
+				fontWeight: 600,
+				lineHeight: "22.4px",
+				border: "1px solid",
+				// "&:hover": {
+				// 	backgroundColor: "#f4f4f4",
+				// 	color: "#555459",
+				// },
+			},
+			label: {
+				color: "#555459",
+			},
+		}}
+		{...props}
+	/>
+);
 
-// const SecondaryButton = ({ ...props }) => (
-// 	<Button
-// 		styles={{
-// 			root: {
-// 				backgroundColor: "#FFFFFF",
-// 				color: "#292929",
-// 				fontWeight: 600,
-// 				lineHeight: "22.4px",
-// 				// "&:hover": {
-// 				// 	backgroundColor: "#FFFFFF", // Override hover background color to match default state
-// 				// },
-// 			},
-// 			label: {
-// 				color: "#292929",
-// 			},
-// 		}}
-// 		{...props}
-// 	/>
-// );
+export const SecondaryButton = ({ ...props }) => (
+	<Button
+		styles={{
+			root: {
+				backgroundColor: "#FFFFFF",
+				color: "#292929",
+				fontWeight: 600,
+				lineHeight: "22.4px",
+				// "&:hover": {
+				// 	backgroundColor: "#FFFFFF", // Override hover background color to match default state
+				// },
+			},
+			label: {
+				color: "#292929",
+			},
+		}}
+		{...props}
+	/>
+);
 
-// const TertiaryButton = ({ ...props }) => (
-// 	<Button
-// 		styles={{
-// 			root: {
-// 				backgroundColor: "#FFFFFF",
+export const TertiaryButton = ({ ...props }) => (
+	<Button
+		styles={{
+			root: {
+				backgroundColor: "#FFFFFF",
 
-// 				fontWeight: 700,
-// 				lineHeight: "22.4px",
-// 				fontSize: "12px",
+				fontWeight: 700,
+				lineHeight: "22.4px",
+				fontSize: "12px",
 
-// 				// "&:hover": {
-// 				// 	backgroundColor: "#FFFFFF", // Override hover background color to match default state
-// 				// },
-// 			},
-// 			label: {
-// 				color: "#555459",
-// 				textTransform: "uppercase",
-// 			},
-// 		}}
-// 		{...props}
-// 	/>
-// );
+				// "&:hover": {
+				// 	backgroundColor: "#FFFFFF", // Override hover background color to match default state
+				// },
+			},
+			label: {
+				color: "#555459",
+				textTransform: "uppercase",
+			},
+		}}
+		{...props}
+	/>
+);
 
 function App() {
 	const links = [
@@ -178,17 +186,20 @@ function App() {
 			<JournalFour />
 			<IOT />
 			<Services />
-
-			{/*
-			<Categories />
-			<CategoryGrid />
 			<Application />
 			<ContactUs />
-			<InnerProduct />
+			<Categories />
 			<CartPage />
+			<Checkout />
 			<CareersPage />
+			<InnerProduct />
+			<ProductsList />
+
+			{/*
+			<CategoryGrid />
 			</Testimonials/>
-			<Buttons /> */}
+			<Footer />
+			 */}
 		</MantineProvider>
 	);
 }

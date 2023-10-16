@@ -229,7 +229,7 @@ const Services = (props: Props) => {
 						w={514}
 						h={44}
 						fw={600}
-						mt={128}
+						mt={228}
 						mb={32}
 						ml={114}
 						style={{ color: "#F6F6F6" }}
