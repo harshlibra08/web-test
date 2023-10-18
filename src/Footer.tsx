@@ -1,7 +1,6 @@
 import {
 	Paper,
 	Box,
-	Container,
 	Grid,
 	TextInput,
 	Checkbox,
@@ -9,8 +8,6 @@ import {
 	Stack,
 	Anchor,
 	Text,
-	Button,
-	ButtonProps,
 	Image,
 } from "@mantine/core";
 import {
@@ -22,117 +19,95 @@ import {
 } from "@tabler/icons-react";
 import React from "react";
 import footer from "./Assets/footer.png";
+import { OptionsButton, PrimaryButton } from "./BaseApp/App";
 type Props = {};
 
 const Footer = (props: Props) => {
-	const OptionsButton = ({ ...props }: ButtonProps) => (
-		<Button
-			styles={{
-				root: {
-					backgroundColor: "#3E3E3E",
-					color: "#555459",
-					fontWeight: 600,
-					lineHeight: "22.4px",
-					border: "1px solid",
-				},
-				label: {
-					color: "#FFFFFF",
-				},
-			}}
-			{...props}
-		/>
-	);
-
-	const PrimaryButton = ({ ...props }: ButtonProps) => (
-		<Button
-			styles={{
-				root: {
-					backgroundColor: "#FFFFFF",
-					color: "#555459",
-					fontWeight: 600,
-					lineHeight: "22.4px",
-					border: "1px solid",
-				},
-				label: {
-					color: "#555459",
-				},
-			}}
-			{...props}
-		/>
-	);
-
 	return (
-		<Paper w={1440} h={824}>
-			<Box
-				style={{
-					backgroundColor: "#F5C44E",
-					height: 312,
-					width: 1312,
-					marginLeft: 64,
-					marginTop: -750,
-				}}
-			>
-				<Text style={{ color: "#292929" }} fz={32} fw={600} pt={40} ml={80}>
-					REQUEST A CALL BACK
-				</Text>
+		<Paper w={1440} h={824} mt={220}>
+			<Box h={312} w={1312} ml={64} mt={130} bg={"#F5C44E"}>
+				<Grid>
+					<Grid.Col span={8}>
+						<Text style={{ color: "#292929" }} fz={32} fw={600} pt={40} ml={80}>
+							REQUEST A CALL BACK
+						</Text>
 
-				<Text style={{ color: "#292929" }} fz={14} fw={400} pt={12} ml={80}>
-					Connect with us to know more about our new products, sales and launches!
-				</Text>
-				<Container pos={"absolute"} pl={80} pt={12}>
-					<Grid>
-						<Grid.Col span={3}>
+						<Text style={{ color: "#292929" }} fz={14} fw={400} pt={12} ml={80}>
+							Connect with us to know more about our new products, sales and launches!
+						</Text>
+
+						<Group gap={0}>
 							<TextInput
+								fz={14}
+								w={174}
+								fw={700}
+								ml={80}
+								mt={24}
+								c={"#292929"}
 								label="First name"
 								variant="unstyled"
 								style={{
 									border: "none",
 									borderBottom: "1px solid #000",
+									width: "184px",
 								}}
 							/>
-						</Grid.Col>
-						<Grid.Col span={3}>
 							<TextInput
+								fz={14}
+								w={174}
+								fw={700}
+								ml={40}
+								mt={24}
 								label="Last name"
 								variant="unstyled"
 								style={{
 									border: "none",
 									borderBottom: "1px solid #000",
+									width: "184px",
 								}}
 							/>
-						</Grid.Col>
-						<Grid.Col span={3}>
 							<TextInput
+								w={174}
+								fz={14}
+								fw={700}
+								ml={40}
+								mt={24}
 								label="Email"
 								variant="unstyled"
 								style={{
 									border: "none",
 									borderBottom: "1px solid #000",
+									width: "184px",
 								}}
 							/>
-						</Grid.Col>
-					</Grid>
-					<Grid>
-						<Checkbox
-							mt={32}
-							styles={{
-								input: {
-									border: " 2px solid",
-									borderColor: "#000",
-									borderRadius: "0px",
-									backgroundColor: "#F5C44E",
-								},
-							}}
-							label="I’m happy to recieve marketing communications and agree to the data policy"
-							w={403}
-							color="dark"
-						/>
-						<OptionsButton w={138} mt={28} ml={98}>
-							SEND
-						</OptionsButton>
-						<Image src={footer} w={454} h={368} ml={702} />
-					</Grid>
-				</Container>
+						</Group>
+						<Group>
+							<Checkbox
+								size={"12px"}
+								fw={400}
+								label="I’m happy to recieve marketing communications and agree to the data policy"
+								w={303}
+								ml={80}
+								mt={27}
+								c="#292929"
+								styles={{
+									input: {
+										border: " 2px solid",
+										borderColor: "#000",
+										borderRadius: "0px",
+										backgroundColor: "#F5C44E",
+									},
+								}}
+							/>
+							<OptionsButton w={138} mt={28} ml={113}>
+								SEND
+							</OptionsButton>
+						</Group>
+					</Grid.Col>
+					<Grid.Col span={4}>
+						<Image src={footer} w={454} h={368} ml={-100} mt={-57} pos={"absolute"} />
+					</Grid.Col>
+				</Grid>
 			</Box>
 
 			<Group>

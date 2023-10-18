@@ -31,6 +31,8 @@ import CartPage from "../CartPage";
 import Checkout from "../Checkout";
 import CareersPage from "../CareersPage";
 import ProductsList from "../ProductsList";
+import Wishlist from "../Wishlist";
+import Login from "../Login";
 
 export const OptionsButton = ({ ...props }: ButtonProps) => (
 	<Button
@@ -122,13 +124,6 @@ export const TertiaryButton = ({ ...props }) => (
 );
 
 function App() {
-	const links = [
-		{ link: "#", label: "About us" },
-		{ link: "#", label: "Products" },
-		{ link: "#", label: "Journal" },
-		{ link: "#", label: "Contact us" },
-	];
-
 	// const [embla, setEmbla] = useState<Embla | null>(null);
 
 	// const [value, setValue] = useState<number | "">(0);
@@ -194,11 +189,13 @@ function App() {
 			<CareersPage />
 			<InnerProduct />
 			<ProductsList />
+			<Wishlist />
+			<Login />
 
+			<Footer />
 			{/*
 			<CategoryGrid />
 			</Testimonials/>
-			<Footer />
 			 */}
 		</MantineProvider>
 	);
