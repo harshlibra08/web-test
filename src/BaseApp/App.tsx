@@ -1,7 +1,7 @@
 import Landing from "../Landing/Landing";
 import Industries from "../Industries/Industries";
 import Products from "../Products/Products";
-import { Button, ButtonProps, MantineProvider } from "@mantine/core";
+import { Button, ButtonProps, MantineProvider, createTheme } from "@mantine/core";
 import Navbar from "../Navbar/Navbar";
 import WhoAreWe from "../Whoarewe/WhoAreWe";
 import Excellence from "../Excellence/Excellence";
@@ -33,6 +33,18 @@ import CareersPage from "../CareersPage";
 import ProductsList from "../ProductsList";
 import Wishlist from "../Wishlist";
 import Login from "../Login";
+import ResponsiveDemo from "../ResponsiveDemo";
+import CategoryGrid from "../CategoryGrid";
+
+const theme = createTheme({
+	breakpoints: {
+		xs: "576px",
+		sm: "768px",
+		md: "992px",
+		lg: "1200px",
+		xl: "1408px",
+	},
+});
 
 export const OptionsButton = ({ ...props }: ButtonProps) => (
 	<Button
@@ -43,17 +55,12 @@ export const OptionsButton = ({ ...props }: ButtonProps) => (
 				fontWeight: 600,
 				lineHeight: "22.4px",
 				border: "1px solid",
-				// "&:hover": {
-				// 	backgroundColor: "#5B5B5B",
-				// 	color: "#555459",
-				// },
 			},
 
 			label: {
 				color: "#FFFFFF",
 			},
 		}}
-		// uppercase={true}
 		{...props}
 	/>
 );
@@ -67,10 +74,6 @@ export const PrimaryButton = ({ ...props }: ButtonProps) => (
 				fontWeight: 600,
 				lineHeight: "22.4px",
 				border: "1px solid",
-				// "&:hover": {
-				// 	backgroundColor: "#f4f4f4",
-				// 	color: "#555459",
-				// },
 			},
 			label: {
 				color: "#555459",
@@ -88,9 +91,6 @@ export const SecondaryButton = ({ ...props }) => (
 				color: "#292929",
 				fontWeight: 600,
 				lineHeight: "22.4px",
-				// "&:hover": {
-				// 	backgroundColor: "#FFFFFF", // Override hover background color to match default state
-				// },
 			},
 			label: {
 				color: "#292929",
@@ -109,10 +109,6 @@ export const TertiaryButton = ({ ...props }) => (
 				fontWeight: 700,
 				lineHeight: "22.4px",
 				fontSize: "12px",
-
-				// "&:hover": {
-				// 	backgroundColor: "#FFFFFF", // Override hover background color to match default state
-				// },
 			},
 			label: {
 				color: "#555459",
@@ -124,18 +120,10 @@ export const TertiaryButton = ({ ...props }) => (
 );
 
 function App() {
-	// const [embla, setEmbla] = useState<Embla | null>(null);
-
-	// const [value, setValue] = useState<number | "">(0);
-	// const handlers = useRef<NumberInputHandlers>();
-
-	// const [scrollPosition, onScrollPositionChange] = useState({ x: 0, y: 0 });
 	return (
 		<MantineProvider
-			// withGlobalStyles
-			// withNormalizeCSS
 			theme={{
-				fontFamily: "sans-serif",
+				fontFamily: "Poppins, sans-serif",
 				colors: {
 					"libra-gray": [
 						"#f8f9fa",
@@ -158,18 +146,17 @@ function App() {
 			}}
 		>
 			<Navbar />
-
 			<Landing />
-
 			<Products />
-
 			<Industries />
 			<WhoAreWe />
 			<Excellence />
 			<OurStrengths />
+
 			<OurSpecialization />
 			<World />
-			<OurProcess />
+			{/* <OurProcess /> */}
+			<Testimonials />
 			<Events />
 			<OurTeam />
 			<OurGoals />
@@ -184,6 +171,7 @@ function App() {
 			<Application />
 			<ContactUs />
 			<Categories />
+			<CategoryGrid />
 			<CartPage />
 			<Checkout />
 			<CareersPage />
@@ -191,12 +179,7 @@ function App() {
 			<ProductsList />
 			<Wishlist />
 			<Login />
-
 			<Footer />
-			{/*
-			<CategoryGrid />
-			</Testimonials/>
-			 */}
 		</MantineProvider>
 	);
 }
