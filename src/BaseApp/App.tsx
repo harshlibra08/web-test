@@ -155,8 +155,8 @@ function App() {
 
 			<OurSpecialization />
 			<World />
-			{/* <OurProcess /> */}
 			<Testimonials />
+			<OurProcess />
 			<Events />
 			<OurTeam />
 			<OurGoals />
