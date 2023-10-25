@@ -1,4 +1,4 @@
-import { Paper, Grid, Text, Image, UnstyledButton } from "@mantine/core";
+import { Paper, Grid, Text, Image } from "@mantine/core";
 import React from "react";
 import Specialization from "../Assets/specialization.png";
 import RectangleGrey from "../Assets/Rectangle3683.png";
@@ -9,7 +9,7 @@ type Props = {};
 const OurSpecialization = (props: Props) => {
 	return (
 		<>
-			<Paper w={1440} h={679} bg={"#000"} mt={50} visibleFrom="xs">
+			<Paper w={1440} h={679} bg={"#000"} visibleFrom="xs">
 				<Grid gutter="sm">
 					<Grid.Col span={6}>
 						<Image src={RectangleGrey} w={505} h={679} />

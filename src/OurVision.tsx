@@ -6,7 +6,7 @@ type Props = {};
 
 const OurVision = (props: Props) => {
 	return (
-		<Paper w={1440} h={679} bg={"#000"} mt={5}>
+		<Paper w={1440} h={679} bg={"#000"} visibleFrom="xs">
 			<Grid gutter="sm">
 				<Grid.Col span={6}>
 					<Image src={RectangleGrey} w={505} h={679} />

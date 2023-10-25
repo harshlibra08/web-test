@@ -42,7 +42,7 @@ const InnerProduct = (props: Props) => {
 
 	return (
 		<>
-			<Paper w={1440} h={3686} mt={30}>
+			<Paper w={1440} h={3686} mt={30} visibleFrom="xs">
 				<Grid>
 					<Grid.Col span={6}>
 						<Image
@@ -635,7 +635,7 @@ const InnerProduct = (props: Props) => {
 					</Table>
 				</Group>
 			</Paper>
-			<Paper bg={"#f4f4f4"} w={1440} h={1040}>
+			<Paper bg={"#f4f4f4"} w={1440} h={1040} visibleFrom="xs">
 				<Box>
 					<Text ta="center" c="#292929" fz={32} fw={600} pt={69}>
 						Compare the models
@@ -805,7 +805,7 @@ const InnerProduct = (props: Props) => {
 					</Group>
 				</ScrollArea>
 			</Paper>
-			<Paper w={1440} h={864}>
+			<Paper w={1440} h={864} visibleFrom="xs">
 				<Box>
 					<Text c="#292929" size="xl" fw={600} ta="center" pt={81}>
 						Related Products

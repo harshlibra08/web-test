@@ -11,7 +11,7 @@ type Props = {};
 const Events = (props: Props) => {
 	return (
 		<>
-			<Paper w={1440} h={1046} bg={"#000"} mt={300} visibleFrom="xs">
+			<Paper w={1440} h={1046} bg={"#000"} visibleFrom="xs">
 				<Text c={"#e4e8ed"} fz={14} pt={106} ml={140}>
 					WHAT HAVE WE BEEN DOING
 				</Text>

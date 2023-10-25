@@ -20,7 +20,7 @@ type Props = {};
 const CareersPage = (props: Props) => {
 	return (
 		<>
-			<Paper bg={"black"} w={1440} h={439} withBorder mt={50}>
+			<Paper bg={"black"} w={1440} h={439} withBorder mt={50} visibleFrom="xs">
 				<Box>
 					<Text ta="center" c="#F6F6F6" fz={16} fw={600} mt={103}>
 						WORK WITH US
@@ -40,7 +40,7 @@ const CareersPage = (props: Props) => {
 					</Text>
 				</Box>
 			</Paper>
-			<Paper w={1440} h={914} withBorder>
+			<Paper w={1440} h={914} withBorder visibleFrom="xs">
 				<Grid ml={264} mt={90}>
 					<Grid.Col span={6}>
 						<Stack>
@@ -144,7 +144,7 @@ const CareersPage = (props: Props) => {
 				</Grid>
 			</Paper>
 
-			<Paper withBorder w={1440} h={1440} mt={30} bg={"#000"}>
+			<Paper withBorder w={1440} h={1440} mt={30} bg={"#000"} visibleFrom="xs">
 				{/* <Group ml={119} mt={48}>
 					<Stack>
 						<Box w="100%">

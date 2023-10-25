@@ -1,4 +1,4 @@
-import { Paper, Grid, Text, Image, UnstyledButton } from "@mantine/core";
+import { Grid, Text, Image, UnstyledButton } from "@mantine/core";
 import React from "react";
 import PRC from "./Assets/prc.png";
 type Props = {};

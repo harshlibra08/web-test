@@ -6,7 +6,7 @@ type Props = {};
 
 const OurBrand = (props: Props) => {
 	return (
-		<Paper w={1440} h={696} withBorder bg={"black"}>
+		<Paper w={1440} h={696} bg={"black"} visibleFrom="xs">
 			<Grid>
 				<Grid.Col span={6}>
 					<Text

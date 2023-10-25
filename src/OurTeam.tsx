@@ -5,7 +5,7 @@ type Props = {};
 
 const OurTeam = (props: Props) => {
 	return (
-		<Paper w={1440} h={679} mt={15} bg={"#000"}>
+		<Paper w={1440} h={679} bg={"#000"} visibleFrom="xs">
 			<Grid>
 				<Grid.Col span={6}>
 					<Image src={OurTeams} pos={"absolute"} left={0} ml={114} mt={140} w={493} h={389} />

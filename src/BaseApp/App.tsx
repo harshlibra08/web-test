@@ -179,7 +179,7 @@ function App() {
 			<ProductsList />
 			<Wishlist />
 			<Login />
-			<Footer />
+			{/* <Footer /> */}
 		</MantineProvider>
 	);
 }

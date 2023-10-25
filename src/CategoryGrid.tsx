@@ -7,10 +7,10 @@ type Props = {};
 const CategoryGrid = (props: Props) => {
 	return (
 		<>
-			<Text ml={114} fz={24} fw={600} c={"#292929"} mt={89}>
+			<Text ml={114} fz={24} fw={600} c={"#292929"} mt={89} visibleFrom="xs">
 				Categories
 			</Text>
-			<Grid columns={8} ml={111}>
+			<Grid columns={8} ml={111} visibleFrom="xs">
 				<Grid.Col span={1} mt={48}>
 					<Card w={70} h={70} bg={"#f7f7f7"}>
 						<Image src={Panel} />

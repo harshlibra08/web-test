@@ -45,7 +45,7 @@ export function Login(props: PaperProps) {
 
 	return (
 		<>
-			<Paper w={1440} h={1720} bg={"#f4f4f4"} mt={40}>
+			<Paper w={1440} h={1720} bg={"#f4f4f4"} mt={40} visibleFrom="xs">
 				<Box pt={40}>
 					<Tabs
 						color="rgba(0, 0, 0, 1)"

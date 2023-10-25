@@ -25,7 +25,7 @@ type Props = {};
 const ProductsList = (props: Props) => {
 	return (
 		<>
-			<Paper w={1440}>
+			<Paper w={1440} visibleFrom="xs">
 				<Grid>
 					<Grid.Col span={6}>
 						<Box>
@@ -58,7 +58,7 @@ const ProductsList = (props: Props) => {
 					</Grid.Col>
 				</Grid>
 			</Paper>
-			<Paper w={1440} bg={"#F4F4F4"} h={2543} mt={200}>
+			<Paper w={1440} bg={"#F4F4F4"} h={2543} mt={200} visibleFrom="xs">
 				<Card w={1212} h={384} bg={"#FFF"} top={39} ml={114} withBorder>
 					<Group>
 						<Image src={Panel} w={284} h={284} ml={47} mt={49} />

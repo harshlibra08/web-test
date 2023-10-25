@@ -16,7 +16,7 @@ const Testimonials = (props: Props) => {
 	const [embla, setEmbla] = useState<Embla | null>(null);
 	return (
 		<>
-			<Paper w={1440} h={840} bg={"#000"} mt={506} visibleFrom="xs">
+			<Paper w={1440} h={840} bg={"#000"} mt={200} visibleFrom="xs">
 				<Text fz={14} c={"#FFF"} ml={116} pt={64} bg={"#000"}>
 					WHAT PEOPLE ARE SAYING
 				</Text>

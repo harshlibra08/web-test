@@ -19,7 +19,7 @@ type Props = {};
 
 const Checkout = (props: Props) => {
 	return (
-		<Paper w={1440} h={1500}>
+		<Paper w={1440} h={1500} visibleFrom="xs">
 			<Text fz={34} fw={600} c={"#262728"} mt={123} ml={114}>
 				Checkout
 			</Text>

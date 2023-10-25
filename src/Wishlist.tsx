@@ -8,7 +8,7 @@ type Props = {};
 
 const Wishlist = (props: Props) => {
 	return (
-		<Paper w={1440} h={1720} bg={"#f4f4f4"} mt={40}>
+		<Paper w={1440} h={1720} bg={"#f4f4f4"} mt={40} visibleFrom="xs">
 			<Text fz={32} fw={600} pt={56} ml={114}>
 				My Wishlist (3 items)
 			</Text>

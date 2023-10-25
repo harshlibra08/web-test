@@ -8,7 +8,7 @@ type Props = {};
 
 const OurGoals = (props: Props) => {
 	return (
-		<Paper w={1440} h={696} bg={"#000"} mt={15}>
+		<Paper w={1440} h={696} bg={"#000"} visibleFrom="xs">
 			<Grid>
 				<Grid.Col span={6}>
 					<Text
