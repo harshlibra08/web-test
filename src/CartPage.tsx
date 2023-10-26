@@ -338,45 +338,43 @@ const CartPage = (props: Props) => {
 					</Group>
 				</Paper>
 
-				<Paper withBorder w={451} mt={24} h={301} ml={16} bg={"#f4f4f4"}>
+				<Paper withBorder w={328} mt={24} h={301} ml={16} bg={"#f4f4f4"}>
 					<Stack>
-						<Text c="#212121" fz={16} fw={600} ml={24} mt={24}>
+						<Text c="#212121" fz={14} fw={600} ml={16} mt={16}>
 							Cart Summary
 						</Text>
-						<Group>
-							<Text c="#616161" fz={14} fw={600} ml={24} w={57}>
+						<Group justify="flex-start">
+							<Text c="#616161" fz={12} fw={600} ml={16} w={49}>
 								Subtotal
 							</Text>
-							<Text c="#3E3E3E" fz={14} fw={700} ml={280} w={51}>
+							<Text c="#3E3E3E" fz={12} ml={180} fw={700} w={24}>
 								₹37000
 							</Text>
 						</Group>
-						<Group mt={20}>
-							<Text c="#616161" fz={14} fw={600} ml={24} w={57}>
+						<Group>
+							<Text c="#616161" fz={12} fw={600} ml={16}>
 								Shipping:
 							</Text>
-							<Text c="#3E3E3E" fz={14} fw={700} ml={280} w={51}>
-								₹500
+							<Text c="#3E3E3E" fz={12} fw={700} ml={30} w={191} ta={"end"}>
+								Shipping costs are calculated during the checkout
 							</Text>
 						</Group>
-						<Divider size={"md"} mx={20}></Divider>
+						<Divider size={"sm"} mx={20}></Divider>
 						<Group>
-							<Text c="#212121" fz={16} fw={600} ml={24}>
+							<Text c="#212121" fz={16} fw={600} ml={16}>
 								Total Amount
 							</Text>
-							<Text c="#3E3E3E" size="sm" fw={700} ml={235}>
+							<Text c="#3E3E3E" fz={14} ml={110} fw={700}>
 								₹37500
 							</Text>
 						</Group>
-					</Stack>
-					<Stack align="stretch" ml={16} mr={16}>
-						<OptionsButton mt={18} tt={"uppercase"}>
+						<OptionsButton mt={18} tt={"uppercase"} mx={16}>
 							<Text c="#fff" size="xs" fw={600}>
 								proceed to checkout
 							</Text>
 						</OptionsButton>
-						<UnstyledButton>
-							<Text c="#3e3e3e" size="xs" fw={600} ml={145}>
+						<UnstyledButton ml={102}>
+							<Text c="#3e3e3e" size="xs" fw={600}>
 								CONTINUE SHOPPING
 							</Text>
 						</UnstyledButton>

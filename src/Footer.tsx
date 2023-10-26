@@ -208,7 +208,7 @@ const Footer = (props: Props) => {
 
 			{/**Mobile View */}
 
-			<Box w={328} h={435} bg={"#F5C44E"} pos={"absolute"} ml={16} mt={-230} hiddenFrom="xs">
+			<Box w={328} h={435} bg={"#F5C44E"} pos={"absolute"} ml={16} mt={-500} hiddenFrom="xs">
 				<Stack>
 					<Text fz={20} ml={24} mt={24} fw={600} c={"#292929"}>
 						REQUEST A CALL BACK
