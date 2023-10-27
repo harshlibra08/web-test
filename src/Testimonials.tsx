@@ -16,7 +16,7 @@ const Testimonials = (props: Props) => {
 	const [embla, setEmbla] = useState<Embla | null>(null);
 	return (
 		<>
-			<Paper w={1440} h={840} bg={"#000"} mt={200} visibleFrom="xs">
+			<Paper w={1440} h={840} bg={"#000"} mt={200} visibleFrom="md">
 				<Text fz={14} c={"#FFF"} ml={116} pt={64} bg={"#000"}>
 					WHAT PEOPLE ARE SAYING
 				</Text>
@@ -163,7 +163,7 @@ const Testimonials = (props: Props) => {
 			</Paper>
 
 			{/**Mobile View */}
-			<Paper w={1440} h={840} bg={"#000"} mt={56} hiddenFrom="xs">
+			<Paper w={360} h={840} bg={"#000"} mt={56} hiddenFrom="xs">
 				<Text fz={10} c={"#FFF"} ml={17} pt={64} bg={"#000"}>
 					WHAT PEOPLE ARE SAYING ?
 				</Text>
@@ -181,6 +181,133 @@ const Testimonials = (props: Props) => {
 					slideGap="16px"
 					loop
 					pl={16}
+					align="start"
+					style={{
+						alignContent: "center",
+					}}
+					getEmblaApi={setEmbla}
+				>
+					<Carousel.Slide>
+						<Card w={312} radius={20} h={308} bg="#222222">
+							<Group mt={19} ml={27}>
+								<Image src={Tifr} w={85} h={41} />
+								<Image src={Quote} w={36.014} h={32} mt={14} ml={108} />
+							</Group>
+							<Text c={"#FFF"} fz={10} w={270} ml={14} fw={400} mt={43}>
+								Libratherm products are performing in nearly all the states in the country and in
+								more than 25 countries around the world. While designing and manufacturing their
+								products, they sustain a way in which their services benefit us.
+							</Text>
+							<Grid mt={35}>
+								<Grid.Col span={2}>
+									<Image src={Avatar1} w={48} h={48} />
+								</Grid.Col>
+								<Grid.Col span={10}>
+									<Text c={"#FFF"} fz={16} fw={400} ml={10}>
+										Varuni Vij
+									</Text>
+									<Text c={"#FFF"} fz={10} fw={400} ml={10}>
+										Former Media Planning & Content Lead, Reckitt India
+									</Text>
+								</Grid.Col>
+							</Grid>
+						</Card>
+					</Carousel.Slide>
+
+					<Carousel.Slide>
+						<Card w={312} radius={20} h={308} bg="#222222">
+							<Group mt={19} ml={27}>
+								<Image src={Tifr} w={85} h={41} />
+								<Image src={Quote} w={36.014} h={32} mt={14} ml={108} />
+							</Group>
+							<Text c={"#FFF"} fz={10} w={270} ml={14} fw={400} mt={43}>
+								Libratherm products are performing in nearly all the states in the country and in
+								more than 25 countries around the world. While designing and manufacturing their
+								products, they sustain a way in which their services benefit us.
+							</Text>
+							<Grid mt={35}>
+								<Grid.Col span={2}>
+									<Image src={Avatar1} w={48} h={48} />
+								</Grid.Col>
+								<Grid.Col span={10}>
+									<Text c={"#FFF"} fz={16} fw={400} ml={10}>
+										Varuni Vij
+									</Text>
+									<Text c={"#FFF"} fz={10} fw={400} ml={10}>
+										Former Media Planning & Content Lead, Reckitt India
+									</Text>
+								</Grid.Col>
+							</Grid>
+						</Card>
+					</Carousel.Slide>
+					<Carousel.Slide>
+						<Card w={312} radius={20} h={308} bg="#222222">
+							<Group mt={19} ml={27}>
+								<Image src={Tifr} w={85} h={41} />
+								<Image src={Quote} w={36.014} h={32} mt={14} ml={108} />
+							</Group>
+							<Text c={"#FFF"} fz={10} w={270} ml={14} fw={400} mt={43}>
+								Libratherm products are performing in nearly all the states in the country and in
+								more than 25 countries around the world. While designing and manufacturing their
+								products, they sustain a way in which their services benefit us.
+							</Text>
+							<Grid mt={35}>
+								<Grid.Col span={2}>
+									<Image src={Avatar1} w={48} h={48} />
+								</Grid.Col>
+								<Grid.Col span={10}>
+									<Text c={"#FFF"} fz={16} fw={400} ml={10}>
+										Varuni Vij
+									</Text>
+									<Text c={"#FFF"} fz={10} fw={400} ml={10}>
+										Former Media Planning & Content Lead, Reckitt India
+									</Text>
+								</Grid.Col>
+							</Grid>
+						</Card>
+					</Carousel.Slide>
+				</Carousel>
+			</Paper>
+
+			{/**Tablet View */}
+			<Paper w={768} h={580} bg={"#000"} pt={69} hiddenFrom="md" visibleFrom="xs">
+				<Text fz={14} c={"#FFF"} ml={90} bg={"#000"}>
+					WHAT PEOPLE ARE SAYING ??
+				</Text>
+				<Group mt={12}>
+					<Text fz={32} ml={90} c={"#FFF"}>
+						Client Testimonals
+					</Text>
+					<Divider size={"sm"} w={183} ml={18} mr={11} />
+					{
+						<IconCircleChevronLeft
+							width={37}
+							height={37}
+							stroke={1}
+							color="#FFFFFF"
+							onClick={() => embla?.scrollPrev()}
+						/>
+					}
+					{
+						<IconCircleChevronRight
+							width={37}
+							height={37}
+							stroke={1}
+							color="#FFFFFF"
+							onClick={() => embla?.scrollNext()}
+						/>
+					}
+				</Group>
+
+				<Carousel
+					bg={"#000"}
+					mt={32}
+					withControls={false}
+					height={308}
+					slideSize="1%"
+					slideGap="16px"
+					loop
+					ml={90}
 					align="start"
 					style={{
 						alignContent: "center",

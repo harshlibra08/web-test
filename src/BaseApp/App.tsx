@@ -152,8 +152,7 @@ function App() {
 			<WhoAreWe />
 			<Excellence />
 			<OurStrengths />
-
-			<OurSpecialization />
+			{/* <OurSpecialization /> */}
 			<World />
 			<Testimonials />
 			<OurProcess />

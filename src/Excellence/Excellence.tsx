@@ -6,7 +6,7 @@ type Props = {};
 const Excellence = (props: Props) => {
 	return (
 		<>
-			<BackgroundImage src={BGImage} w={1440} h={600} visibleFrom="xs">
+			<BackgroundImage src={BGImage} w={1440} h={600} visibleFrom="md">
 				<Stack>
 					<Divider size="sm" w={1014} ml={223} mt={152} />
 					<Text fz={48} fw={400} mt={67} c={"#f6f6f6"} ta={"center"}>
@@ -39,6 +39,25 @@ const Excellence = (props: Props) => {
 					</Text>
 
 					<Divider size="xs" mt={16} w={327} mx={16} />
+				</Stack>
+			</BackgroundImage>
+
+			{/**Tablet view */}
+
+			<BackgroundImage src={BGImage} w={768} h={460} hiddenFrom="md" visibleFrom="xs">
+				<Stack>
+					<Divider size="xs" w={588} mt={100} mx={90} />
+					<Text fz={32} fw={400} mt={55} c={"#f6f6f6"} ta={"center"}>
+						Providing Excellence Since 1991
+					</Text>
+
+					<Text c={"#f6f6f6"} px={90} fz={12} w={768} mt={24} ta={"center"} ff={"Open Sans"}>
+						We offer complete solutions for accurate measurement and control of Humidity, Pressure,
+						Flow, Level, pH, Speed, etc. Our products are reliable and excellent in quality and are
+						conforming to EN61010 International Safety Standards.
+					</Text>
+
+					<Divider size="xs" mt={55} w={588} mx={90} />
 				</Stack>
 			</BackgroundImage>
 		</>

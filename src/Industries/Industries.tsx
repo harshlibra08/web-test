@@ -20,7 +20,7 @@ type Props = {};
 const Industries = (props: Props) => {
 	return (
 		<>
-			<Group gap={0} visibleFrom="xs">
+			<Group gap={0} visibleFrom="md">
 				<Box w={1270}>
 					<Divider
 						size="sm"
@@ -37,7 +37,7 @@ const Industries = (props: Props) => {
 
 				{<UnstyledButton ml={0}>View All</UnstyledButton>}
 			</Group>
-			<Grid w={1212} mx={114} mt={30} justify="space-between" visibleFrom="xs">
+			<Grid w={1212} mx={114} mt={30} justify="space-between" visibleFrom="md">
 				<Grid.Col span={4}>
 					<Card w={391} h={593}>
 						<Card.Section>
@@ -45,13 +45,7 @@ const Industries = (props: Props) => {
 							<Text pt={16} fz={18} fw={600} c={"#262728"}>
 								Glass Manufacture
 							</Text>
-							<Text
-								pt={4}
-								fz={14}
-								fw={400}
-								lineClamp={5}
-								style={{ color: "#555459", flexShrink: 0 }}
-							>
+							<Text pt={4} fz={14} fw={400} lineClamp={5} c={"#555459"}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -71,13 +65,7 @@ const Industries = (props: Props) => {
 							<Text pt={16} fz={18} fw={600} c={"#262728"}>
 								Jewelry Manufacture
 							</Text>
-							<Text
-								pt={4}
-								fz={14}
-								fw={400}
-								lineClamp={5}
-								style={{ color: "#555459", flexShrink: 0 }}
-							>
+							<Text pt={4} fz={14} fw={400} lineClamp={5} c={"#555459"}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -97,13 +85,7 @@ const Industries = (props: Props) => {
 							<Text pt={16} fz={18} fw={600} c={"#262728"}>
 								Steel Plants
 							</Text>
-							<Text
-								pt={4}
-								fz={14}
-								fw={400}
-								lineClamp={5}
-								style={{ color: "#555459", flexShrink: 0 }}
-							>
+							<Text pt={4} fz={14} fw={400} lineClamp={5} c={"#555459"}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -134,13 +116,7 @@ const Industries = (props: Props) => {
 							<Text pt={16} fz={18} fw={600} c={"#262728"}>
 								Glass Manufacture
 							</Text>
-							<Text
-								pt={4}
-								fz={12}
-								fw={400}
-								lineClamp={3}
-								style={{ color: "#555459", flexShrink: 0 }}
-							>
+							<Text pt={4} fz={12} fw={400} lineClamp={3} c={"#555459"}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -160,13 +136,7 @@ const Industries = (props: Props) => {
 							<Text pt={16} fz={18} fw={600} c={"#262728"}>
 								Jewelry Manufacture
 							</Text>
-							<Text
-								pt={4}
-								fz={12}
-								fw={400}
-								lineClamp={3}
-								style={{ color: "#555459", flexShrink: 0 }}
-							>
+							<Text pt={4} fz={12} fw={400} lineClamp={3} c={"#555459"}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -186,13 +156,7 @@ const Industries = (props: Props) => {
 							<Text pt={16} fz={18} fw={600} c={"#262728"}>
 								Steel Plants
 							</Text>
-							<Text
-								pt={4}
-								fz={12}
-								fw={400}
-								lineClamp={3}
-								style={{ color: "#555459", flexShrink: 0 }}
-							>
+							<Text pt={4} fz={12} fw={400} lineClamp={3} c={"#555459"}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -208,6 +172,88 @@ const Industries = (props: Props) => {
 				<Button variant="outline" color="#555459" w={176} mt={40}>
 					View All
 				</Button>
+			</Grid>
+
+			{/**Tablet View */}
+
+			<Group wrap="nowrap" gap={0} w={768} hiddenFrom="md" visibleFrom="xs" ml={90} mt={64}>
+				<Text fz={26} fw={600} c={"#262728"}>
+					Our Product
+				</Text>
+				<Divider orientation="horizontal" size={"sm"} w={302} ml={15} />
+
+				{<UnstyledButton ml={21}>View All</UnstyledButton>}
+			</Group>
+			<Grid
+				w={768}
+				mx={90}
+				mt={30}
+				hiddenFrom="md"
+				visibleFrom="xs"
+				justify="center"
+				align="flex-start"
+				pb={56}
+			>
+				<Grid.Col span={12}>
+					<Card w={588} h={500}>
+						<Card.Section>
+							<Image src={Industries1} w={588} h={355} />
+							<Text pt={16} fz={18} fw={600} c={"#262728"}>
+								Glass Manufacture
+							</Text>
+							<Text pt={4} fz={14} fw={400} lineClamp={3} c={"#555459"}>
+								Libratherm has supplied various types of temperature controllers, thyristor power
+								controllers and control panels to the industries manufacturing Files, Diamond Tools,
+								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+								blades etc. The temperature of the electrical or fuel fired heating systems, used
+								for annealing, hardening, steam bluing and similar such processes, has been in use
+								for precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300,
+								PID-723, DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or
+								infrared non contact sensors.
+							</Text>
+						</Card.Section>
+					</Card>
+				</Grid.Col>
+				<Grid.Col span={12}>
+					<Card w={588} h={500}>
+						<Card.Section>
+							<Image src={Industries2} w={588} h={355} />
+							<Text pt={16} fz={18} fw={600} c={"#262728"}>
+								Jewelry Manufacture
+							</Text>
+							<Text pt={4} fz={14} fw={400} lineClamp={3} c={"#555459"}>
+								Libratherm has supplied various types of temperature controllers, thyristor power
+								controllers and control panels to the industries manufacturing Files, Diamond Tools,
+								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+								blades etc. The temperature of the electrical or fuel fired heating systems, used
+								for annealing, hardening, steam bluing and similar such processes, has been in use
+								for precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300,
+								PID-723, DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or
+								infrared non contact sensors.
+							</Text>
+						</Card.Section>
+					</Card>
+				</Grid.Col>
+				<Grid.Col span={12}>
+					<Card w={588} h={500}>
+						<Card.Section>
+							<Image src={Industries3} w={588} h={355} />
+							<Text pt={16} fz={18} fw={600} c={"#262728"}>
+								Steel Plants
+							</Text>
+							<Text pt={4} fz={14} fw={400} lineClamp={3} c={"#555459"}>
+								Libratherm has supplied various types of temperature controllers, thyristor power
+								controllers and control panels to the industries manufacturing Files, Diamond Tools,
+								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+								blades etc. The temperature of the electrical or fuel fired heating systems, used
+								for annealing, hardening, steam bluing and similar such processes, has been in use
+								for precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300,
+								PID-723, DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or
+								infrared non contact sensors.
+							</Text>
+						</Card.Section>
+					</Card>
+				</Grid.Col>
 			</Grid>
 		</>
 	);

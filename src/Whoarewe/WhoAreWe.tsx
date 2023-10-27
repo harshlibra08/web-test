@@ -9,7 +9,7 @@ type Props = {};
 const WhoAreWe = (props: Props) => {
 	return (
 		<>
-			<Grid justify="flex-start" bg={"#000"} visibleFrom="xs">
+			<Grid justify="flex-start" bg={"#000"} visibleFrom="md">
 				<Grid.Col span={6}>
 					<Text fz={14} fw={600} ml={114} mt={191} c={"#E4E8ED"}>
 						WHO ARE WE ?
@@ -58,6 +58,34 @@ const WhoAreWe = (props: Props) => {
 					</Text>
 					<UnstyledButton ml={16} mt={32}>
 						<Text fz={20} fw={400} c={"#f6f6f6"} ff={"Fjalla One"}>
+							About Libratherm
+						</Text>
+					</UnstyledButton>
+				</Grid.Col>
+			</Grid>
+
+			{/**Tablet view */}
+			<Grid justify="flex-start" bg={"#000"} hiddenFrom="md" visibleFrom="xs" pb={56} w={768}>
+				<Grid.Col span={12}>
+					<Image src={WHO} w={550} h={441} pos={"absolute"} mt={30} ml={90} />
+					<Image src={RectangleOmegaMob} h={506} w={511} ml={235} />
+				</Grid.Col>
+				<Grid.Col span={12}>
+					<Text fz={14} fw={600} ml={90} mt={36} c={"#E4E8ED"}>
+						WHO ARE WE ?
+					</Text>
+					<Text fz={32} fw={600} ml={90} mt={8} c={"#f6f6f6"}>
+						How it all began: <br />
+						The Omega moment
+					</Text>
+					<Text fz={12} fw={400} w={588} ml={90} mt={16} c={"#E4E8ED"}>
+						Launching a business isn't easy, which is why having a co-founder can often make things
+						a little smoother, especially if that co-founder is your best friend. While many
+						professionals warn against choosing a close friend as your business partner, there are
+						plenty of examples that prove it can work. The best example is of Airbnb..
+					</Text>
+					<UnstyledButton ml={90} mt={32}>
+						<Text fz={24} fw={400} c={"#f6f6f6"} ff={"Fjalla One"}>
 							About Libratherm
 						</Text>
 					</UnstyledButton>

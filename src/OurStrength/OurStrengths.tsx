@@ -14,7 +14,7 @@ const OurStrengths = (props: Props) => {
 
 	return (
 		<>
-			<Group wrap="nowrap" gap={0} bg={"#000"} maw={1440} visibleFrom="xs">
+			<Group wrap="nowrap" gap={0} bg={"#000"} maw={1440} visibleFrom="md">
 				<Box w={1270}>
 					<Divider
 						size="sm"
@@ -61,7 +61,7 @@ const OurStrengths = (props: Props) => {
 				getEmblaApi={setEmbla}
 				withControls={false}
 				maw={1440}
-				visibleFrom="xs"
+				visibleFrom="md"
 			>
 				<Carousel.Slide w={329}>
 					<Card w={329} h={517} bg={"#000"}>
@@ -179,6 +179,127 @@ const OurStrengths = (props: Props) => {
 						</Card.Section>
 					</Card>
 				</Carousel.Slide>
+			</Carousel>
+
+			{/**Tablet View */}
+
+			<Box w={768} bg={"#000"} hiddenFrom="md" visibleFrom="xs">
+				<Text fw={600} fz={14} pt={69} ml={90} c={"#f6f6f6"}>
+					WHO ARE WE ?
+				</Text>
+				<Group wrap="nowrap" gap={10} w={768}>
+					<Text fz={26} fw={600} c={"#f6f6f6"} ml={90} mt={12}>
+						Our Strengths
+					</Text>
+					<Divider orientation="horizontal" size={"sm"} w={252} ml={10} mt={4} />
+					{
+						<IconCircleChevronLeft
+							width={37}
+							height={37}
+							stroke={1}
+							color="#FFF"
+							onClick={() => embla?.scrollPrev()}
+						/>
+					}
+					{
+						<IconCircleChevronRight
+							width={37}
+							height={37}
+							stroke={1}
+							color="#FFF"
+							onClick={() => embla?.scrollNext()}
+						/>
+					}
+				</Group>
+			</Box>
+			<Carousel
+				h={600}
+				slideSize={"33.3%"}
+				loop
+				align={"start"}
+				slidesToScroll={3}
+				orientation="horizontal"
+				bg={"#000"}
+				pl={90}
+				pt={40}
+				getEmblaApi={setEmbla}
+				withControls={false}
+				w={768}
+				hiddenFrom="md"
+				visibleFrom="xs"
+			>
+				<Carousel.Slide>
+					<Card w={270} h={517} bg={"#000"}>
+						<Card.Section>
+							<Image src={Strength1} w={239} h={303} style={{ opacity: 0.5 }} ml={48} />
+							<Text fz={32} mt={-100} w={249} fw={600} c={"#f6f6f6"} pos={"absolute"}>
+								Latest Technology
+							</Text>
+							<Text w={288} mt={24} fz={12} fw={400} c={"#f6f6f6"}>
+								We use the latest available and accessible technology for long lasting and
+								trouble-free field performance.
+							</Text>
+						</Card.Section>
+					</Card>
+				</Carousel.Slide>
+				<Carousel.Slide ml={40}>
+					<Card w={270} h={517} bg={"#000"}>
+						<Card.Section>
+							<Image src={Strength2} w={239} h={303} style={{ opacity: 0.5 }} ml={48} />
+							<Text fz={32} mt={-100} w={249} fw={600} c={"#f6f6f6"} pos={"absolute"}>
+								Global Standards
+							</Text>
+							<Text w={288} mt={24} fz={12} fw={400} c={"#f6f6f6"}>
+								Our products are performing in nearly all the states in the country and in more than
+								25 countries around the world
+							</Text>
+						</Card.Section>
+					</Card>
+				</Carousel.Slide>
+				<Carousel.Slide ml={40}>
+					<Card w={270} h={517} bg={"#000"}>
+						<Card.Section>
+							<Image src={Strength3} w={239} h={303} style={{ opacity: 0.5 }} ml={48} />
+							<Text fz={32} mt={-100} w={281} fw={600} c={"#f6f6f6"} pos={"absolute"}>
+								Client Centered Approach
+							</Text>
+							<Text w={288} mt={24} fz={12} fw={400} c={"#f6f6f6"}>
+								Our products are performing in nearly all the states in the country and in more than
+								25 countries around the world
+							</Text>
+						</Card.Section>
+					</Card>
+				</Carousel.Slide>
+
+				{/* <Carousel.Slide >
+					<Card w={329} h={517} bg={"#000"} ml={85}>
+						<Card.Section>
+							<Image src={Strength2} w={239} h={303} style={{ opacity: 0.5 }} ml={48} />
+							<Text fz={20} mt={-43} w={200} fw={600} c={"#f6f6f6"} pos={"absolute"}>
+								Global Standards
+							</Text>
+							<Text w={195} mt={-8} fz={10} fw={400} c={"#e4e8ed"}>
+								We use the latest available and accessible technology for long lasting and
+								trouble-free field performance.
+							</Text>
+						</Card.Section>
+					</Card>
+				</Carousel.Slide>
+
+				<Carousel.Slide >
+					<Card w={329} h={517} bg={"#000"} ml={85}>
+						<Card.Section>
+							<Image src={Strength3} w={239} h={303} style={{ opacity: 0.5 }} ml={48} />
+							<Text fz={20} h={60} mt={-43} w={200} fw={600} c={"#f6f6f6"} pos={"absolute"}>
+								Client Centered Approach{" "}
+							</Text>
+							<Text w={195} fz={10} fw={400} c={"#e4e8ed"}>
+								We use the latest available and accessible technology for long lasting and
+								trouble-free field performance.
+							</Text>
+						</Card.Section>
+					</Card>
+				</Carousel.Slide> */}
 			</Carousel>
 		</>
 	);

@@ -10,7 +10,7 @@ export function Navbar() {
 	const [opened, { toggle }] = useDisclosure();
 	return (
 		<>
-			<Group wrap="nowrap" visibleFrom="xs">
+			<Group wrap="nowrap" visibleFrom="md">
 				<Image src={Libralogo} h={40} ml={64} mt={12} w={134} />
 				<Text fz={14} ml={34} mt={12}>
 					About Us
@@ -60,6 +60,20 @@ export function Navbar() {
 				<Image src={LogoMobile} w={68} h={41} mt={10} />
 				<IconShoppingCart width={20} height={20} style={{ marginTop: "10px" }} color="#555459" />
 			</Group>
+
+			{/**Tablet View */}
+			<Paper h={84} w={768}>
+				<Group hiddenFrom="md" visibleFrom="xs" mt={15} ml={36}>
+					<Burger opened={opened} onClick={toggle} size={"lg"} mt={20} />
+					<Image src={Libralogo} h={40} ml={264} mt={12} w={134} />
+					<IconShoppingCart
+						width={40}
+						height={40}
+						style={{ marginTop: "20px", marginLeft: "204px" }}
+						color="#555459"
+					/>
+				</Group>
+			</Paper>
 		</>
 	);
 }

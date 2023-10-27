@@ -11,7 +11,7 @@ type Props = {};
 const Events = (props: Props) => {
 	return (
 		<>
-			<Paper w={1440} h={1046} bg={"#000"} visibleFrom="xs">
+			<Paper w={1440} h={1046} bg={"#000"} visibleFrom="md">
 				<Text c={"#e4e8ed"} fz={14} pt={106} ml={140}>
 					WHAT HAVE WE BEEN DOING
 				</Text>
@@ -113,6 +113,8 @@ const Events = (props: Props) => {
 					{<IconChevronDown size="20px" color="#FFF" />}
 				</Group>
 			</Paper>
+
+			{/**Mobile View */}
 			<Paper w={1440} h={1046} bg={"#000"} mt={64} hiddenFrom="xs">
 				<Text c={"#e4e8ed"} fz={10} pt={64} ml={17}>
 					LOREM IPSUM
@@ -173,6 +175,100 @@ const Events = (props: Props) => {
 					</Grid.Col>
 				</Grid>
 				<Group justify="flex-start" ml={127} mt={57}>
+					<UnstyledButton>
+						<Text size="md" c={"#ffffff"}>
+							Show more
+						</Text>
+					</UnstyledButton>
+					{<IconChevronDown size="20px" color="#FFF" />}
+				</Group>
+			</Paper>
+
+			{/**Tablet View */}
+			<Paper w={768} h={946} bg={"#000"} mt={64} hiddenFrom="md" visibleFrom="xs">
+				<Text c={"#e4e8ed"} fz={12} pt={64} ml={30}>
+					WHAT HAVE WE BEEN DOING
+				</Text>
+
+				<Text fz={28} ml={30} c={"#FFF"}>
+					Events
+				</Text>
+
+				<Grid maw={768} mt={87}>
+					<Grid.Col span={4}>
+						<Box pos="relative" w={768} h={280}>
+							<Image src={EventBg} h={152} w={52} pos="absolute" top={0} left={30} />
+							<Image src={Event1} h={114} w={114} pos="absolute" top={20} left={51} />
+							<Text c={"#e4e8ed"} fz={8} ml={169}>
+								22nd January, 2023.
+							</Text>
+							<Text c={"#ffffff"} fz={10} ml={169} mt={15} w={100}>
+								Mumbai ACE Tech Exhibition
+							</Text>
+						</Box>
+					</Grid.Col>
+					<Grid.Col span={4}>
+						<Box pos="relative" w={768} h={280}>
+							<Image src={EventBg} h={152} w={52} pos="absolute" top={0} left={30} />
+							<Image src={Event1} h={114} w={114} pos="absolute" top={20} left={51} />
+							<Text c={"#e4e8ed"} fz={8} ml={169}>
+								22nd January, 2023.
+							</Text>
+							<Text c={"#ffffff"} fz={10} ml={169} mt={15} w={100}>
+								Mumbai ACE Tech Exhibition
+							</Text>
+						</Box>
+					</Grid.Col>
+					<Grid.Col span={4}>
+						<Box pos="relative" w={768} h={280}>
+							<Image src={EventBg} h={152} w={52} pos="absolute" top={0} left={30} />
+							<Image src={Event1} h={114} w={114} pos="absolute" top={20} left={51} />
+							<Text c={"#e4e8ed"} fz={8} ml={169}>
+								22nd January, 2023.
+							</Text>
+							<Text c={"#ffffff"} fz={10} ml={169} mt={15} w={100}>
+								Mumbai ACE Tech Exhibition
+							</Text>
+						</Box>
+					</Grid.Col>
+					<Grid.Col span={4}>
+						<Box pos="relative" w={768} h={280}>
+							<Image src={EventBg} h={152} w={52} pos="absolute" top={0} left={30} />
+							<Image src={Event1} h={114} w={114} pos="absolute" top={20} left={51} />
+							<Text c={"#e4e8ed"} fz={8} ml={169}>
+								22nd January, 2023.
+							</Text>
+							<Text c={"#ffffff"} fz={10} ml={169} mt={15} w={100}>
+								Mumbai ACE Tech Exhibition
+							</Text>
+						</Box>
+					</Grid.Col>
+					<Grid.Col span={4}>
+						<Box pos="relative" w={768} h={280}>
+							<Image src={EventBg} h={152} w={52} pos="absolute" top={0} left={30} />
+							<Image src={Event1} h={114} w={114} pos="absolute" top={20} left={51} />
+							<Text c={"#e4e8ed"} fz={8} ml={169}>
+								22nd January, 2023.
+							</Text>
+							<Text c={"#ffffff"} fz={10} ml={169} mt={15} w={100}>
+								Mumbai ACE Tech Exhibition
+							</Text>
+						</Box>
+					</Grid.Col>
+					<Grid.Col span={4}>
+						<Box pos="relative" w={768} h={280}>
+							<Image src={EventBg} h={152} w={52} pos="absolute" top={0} left={30} />
+							<Image src={Event1} h={114} w={114} pos="absolute" top={20} left={51} />
+							<Text c={"#e4e8ed"} fz={8} ml={169}>
+								22nd January, 2023.
+							</Text>
+							<Text c={"#ffffff"} fz={10} ml={169} mt={15} w={100}>
+								Mumbai ACE Tech Exhibition
+							</Text>
+						</Box>
+					</Grid.Col>
+				</Grid>
+				<Group justify="flex-start" ml={350}>
 					<UnstyledButton>
 						<Text size="md" c={"#ffffff"}>
 							Show more

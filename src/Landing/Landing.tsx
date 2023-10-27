@@ -9,7 +9,7 @@ type Props = {};
 const Landing = (props: Props) => {
 	return (
 		<>
-			<Paper w={1400} h={688} visibleFrom="xs">
+			<Paper w={1400} h={688} visibleFrom="md">
 				<Divider my="sm" mb={-1} />
 				<Grid>
 					<Grid.Col span={6}>
@@ -82,15 +82,10 @@ const Landing = (props: Props) => {
 			</Paper>
 
 			{/**Mobile View */}
-			<Paper w={1400} h={688} hiddenFrom="xs">
+			<Paper w={360} h={688} hiddenFrom="xs">
 				<Grid>
 					<Grid.Col span={12}>
-						<Image
-							style={{ height: "688px", width: "1209px" }}
-							src={LandingMobile}
-							w={437}
-							h={282}
-						/>
+						<Image src={LandingMobile} w={437} h={282} />
 					</Grid.Col>
 					<Grid.Col span={12}>
 						<Title fz={20} fw={600} ml={16} mt={24} c={"#262728"}>
@@ -108,6 +103,35 @@ const Landing = (props: Props) => {
 								Electronic Process Control
 							</List.Item>
 							<List.Item ml={20} w={275} fz={12} c={"#555459"} fw={400} pt={16}>
+								Latest Technology : Certified Indian Company engaged in the manufacturing of
+								Electronic Process Control
+							</List.Item>
+						</List>
+					</Grid.Col>
+				</Grid>
+			</Paper>
+
+			{/**Tablet View */}
+			<Paper w={768} h={888} hiddenFrom="md" visibleFrom="xs">
+				<Grid>
+					<Grid.Col span={12}>
+						<Image src={LandingMobile} w={840} h={482} />
+					</Grid.Col>
+					<Grid.Col span={12}>
+						<Title fz={32} fw={600} ml={90} mt={24} c={"#262728"}>
+							Partnersss in Measurement & Control
+						</Title>
+						<Text fz={14} fw={400} ml={90} mt={26} c={"#555459"} w={592} ta={"justify"}>
+							Libratherm Instruments Pvt. Ltd. is an ISO 9001:2015 Certified Indian Company engaged
+							in the manufacturing of Electronic Process Control Instruments and Systems since 1991.
+						</Text>
+
+						<List>
+							<List.Item ml={90} w={592} fz={14} c={"#555459"} fw={400} mt={24}>
+								Field Proven Products : Certified Indian Company engaged in the manufacturing of
+								Electronic Process Control
+							</List.Item>
+							<List.Item ml={90} w={592} fz={14} c={"#555459"} fw={400} mt={24}>
 								Latest Technology : Certified Indian Company engaged in the manufacturing of
 								Electronic Process Control
 							</List.Item>

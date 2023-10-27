@@ -33,15 +33,12 @@ const OurSpecialization = (props: Props) => {
 					</Grid.Col>
 				</Grid>
 			</Paper>
-			<Grid justify="flex-start" bg={"#000"} hiddenFrom="xs" pb={56} maw={360}>
+			<Grid justify="flex-start" bg={"#000"} visibleFrom="xs" pb={56} maw={360}>
 				<Grid.Col span={12}>
 					<Image src={Specialization} w={327} h={241} pos={"absolute"} mt={70} ml={17} />
 					<Image src={RectangleGrey} h={289} w={258} ml={102} mt={46} />
 				</Grid.Col>
 				<Grid.Col span={12}>
-					<Text fz={10} fw={600} ml={17} mt={24} c={"#E4E8ED"}>
-						WHO ARE WE ?
-					</Text>
 					<Text fz={18} w={199} fw={600} ml={17} mt={8} c={"#f6f6f6"}>
 						How it all began: <br />
 						The Omega moment
