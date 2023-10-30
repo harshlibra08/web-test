@@ -35,7 +35,7 @@ const PrimaryButton = ({ ...props }: ButtonProps) => (
 const ContactUs = (props: Props) => {
 	return (
 		<>
-			<Paper w={1440} h={1541} visibleFrom="xs">
+			<Paper w={1440} h={1541} visibleFrom="md">
 				<Container>
 					<Text c={"#262728"} fz={16} fw={600} mt={77} ta="center">
 						LETS CONNECT
@@ -205,7 +205,6 @@ const ContactUs = (props: Props) => {
 						</Stack>
 					</Group>
 				</Paper>
-				{/* </MantineProvider> */}
 			</Paper>
 			{/**Moble View */}
 			<Paper w={1440} h={1541} hiddenFrom="xs">
@@ -374,6 +373,179 @@ const ContactUs = (props: Props) => {
 					</Stack>
 				</Paper>
 				{/* </MantineProvider> */}
+			</Paper>
+
+			{/**Tablet */}
+			<Paper w={768} h={1841} visibleFrom="xs" hiddenFrom="md">
+				<Container>
+					<Text c={"#262728"} fz={16} fw={600} mt={77} ta="center">
+						LETS CONNECT
+					</Text>
+					<Text c={"#262728"} fz={32} fw={600} mt={18} ta="center">
+						Get in touch with us
+					</Text>
+				</Container>
+				<Text c={"#555459"} w={588} fz={16} fw={400} mt={18} ml={90}>
+					Libratherm is an innovation-driven manufacturer of Process Control Instruments and Systems
+					since 1991. We cater to a wide range of industries, by providing accurate measurement,
+					precise control
+				</Text>
+
+				<Paper w={768} h={1436} bg={"black"} visibleFrom="xs" mt={40}>
+					<Stack ml={90} pt={70}>
+						<Text fz={16} c={"#e4e8ed"}>
+							GET IN TOUCH
+						</Text>
+						<Text fz={32} c={"#ffffff"}>
+							Interested in something?
+						</Text>
+						<Text fz={16} c={"#e4e8ed"} w={601}>
+							Please get in touch below if you have a product enquiry or would like to know more
+							information
+						</Text>
+
+						<Group>
+							<TextInput
+								w={288}
+								variant="filled"
+								styles={{
+									input: {
+										background: "black",
+										borderColor: "#777",
+										borderStyle: "solid",
+									},
+								}}
+								label="Name"
+								c={"#FFF"}
+								radius={"xs"}
+							/>
+							<TextInput
+								w={288}
+								variant="filled"
+								styles={{
+									input: {
+										background: "black",
+										borderColor: "#777",
+										borderStyle: "solid",
+									},
+								}}
+								label="Company"
+								c={"#FFF"}
+								radius={"xs"}
+							/>
+						</Group>
+
+						<TextInput
+							w={596}
+							variant="filled"
+							styles={{
+								input: {
+									background: "black",
+									borderColor: "#777",
+									borderStyle: "solid",
+								},
+							}}
+							label="Email Address"
+							c={"#FFF"}
+							radius={"xs"}
+						/>
+						<Group>
+							<TextInput
+								w={288}
+								variant="filled"
+								styles={{
+									input: {
+										background: "black",
+										borderColor: "#777",
+										borderStyle: "solid",
+									},
+								}}
+								label="Name"
+								c={"#FFF"}
+								radius={"xs"}
+							/>
+							<TextInput
+								w={288}
+								variant="filled"
+								styles={{
+									input: {
+										background: "black",
+										borderColor: "#777",
+										borderStyle: "solid",
+									},
+								}}
+								label="Company"
+								radius={"xs"}
+								c={"#FFF"}
+							/>
+						</Group>
+
+						<Textarea
+							w={596}
+							variant="filled"
+							styles={{
+								input: {
+									background: "black",
+									borderColor: "#777",
+									borderStyle: "solid",
+								},
+							}}
+							label="Message"
+							radius={"xs"}
+							c={"#FFF"}
+						/>
+						<Stack align="flex-end">
+							<PrimaryButton w={138} mr={90}>
+								{" "}
+								SEND
+							</PrimaryButton>
+						</Stack>
+					</Stack>
+
+					<Stack ml={90} gap={0}>
+						<Divider size="md" mt={40} w={588} />
+						<Text size={"32px"} c={"#f6f6f6"} mt={8}>
+							Useful Information
+						</Text>
+						<Text fz={20} c={"#f6f6f6"} mt={35}>
+							Statutory Details:
+						</Text>
+						<Text fz={16} c={"#e4e8ed"} mt={20}>
+							GST No : 27AABCL1732A1Z5
+						</Text>
+						<Text fz={16} c={"#e4e8ed"} mt={15}>
+							CIN No : U31909MH2006PTC159638
+						</Text>
+						<Text fz={20} c={"#f6f6f6"} mt={35}>
+							Address :
+						</Text>
+						<Text fz={16} w={488} c={"#e4e8ed"} mt={20}>
+							401-403, Diamond Industrial Estate, Ketkipada Road, Dahisar (East), Mumbai 400068,
+							Maharashtra, India.
+						</Text>
+						<Text fz={20} c={"#f6f6f6"} mt={35}>
+							Contact Us:
+						</Text>
+						<Text fz={16} c={"#e4e8ed"} mt={20}>
+							Email: enquiry@libratherm.com, libratherm@libratherm.com
+						</Text>
+						<Text fz={16} c={"#e4e8ed"} mt={10}>
+							Landline: +91-22-42555334
+						</Text>
+						<Text fz={20} c={"#f6f6f6"} mt={35}>
+							Mobile:
+						</Text>
+						<Text fz={16} c={"#e4e8ed"} mt={20}>
+							Customer Care : +91-8104971152
+						</Text>
+						<Text fz={16} c={"#e4e8ed"} mt={10}>
+							Sales : +91-8104971154
+						</Text>
+						<Text fz={16} c={"#e4e8ed"} mt={10}>
+							Marketing : +91-9082687279
+						</Text>
+					</Stack>
+				</Paper>
 			</Paper>
 		</>
 	);

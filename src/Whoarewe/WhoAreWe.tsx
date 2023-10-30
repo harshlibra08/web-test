@@ -1,4 +1,4 @@
-import { Paper, Grid, Text, Image, UnstyledButton } from "@mantine/core";
+import { Grid, Text, Image, UnstyledButton } from "@mantine/core";
 import React from "react";
 import WHO from "../Assets/who.png";
 import RectangleOmega from "../Assets/RectangleOmega.png";

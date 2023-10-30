@@ -115,7 +115,7 @@ const Events = (props: Props) => {
 			</Paper>
 
 			{/**Mobile View */}
-			<Paper w={1440} h={1046} bg={"#000"} mt={64} hiddenFrom="xs">
+			<Paper w={360} h={780} bg={"#000"} mt={64} hiddenFrom="xs">
 				<Text c={"#e4e8ed"} fz={10} pt={64} ml={17}>
 					LOREM IPSUM
 				</Text>

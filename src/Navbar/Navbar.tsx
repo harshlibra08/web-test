@@ -55,15 +55,17 @@ export function Navbar() {
 			</Group>
 
 			{/**Mobile View */}
-			<Group wrap="nowrap" hiddenFrom="xs" justify="center" gap={100}>
-				<Burger opened={opened} onClick={toggle} aria-label="Toggle navigation" />
-				<Image src={LogoMobile} w={68} h={41} mt={10} />
-				<IconShoppingCart width={20} height={20} style={{ marginTop: "10px" }} color="#555459" />
-			</Group>
+			<Paper w={360} hiddenFrom="xs">
+				<Group wrap="nowrap" justify="center" gap={100}>
+					<Burger opened={opened} onClick={toggle} />
+					<Image src={LogoMobile} w={68} h={41} />
+					<IconShoppingCart width={20} height={20} style={{ marginTop: "10px" }} color="#555459" />
+				</Group>
+			</Paper>
 
 			{/**Tablet View */}
-			<Paper h={84} w={768}>
-				<Group hiddenFrom="md" visibleFrom="xs" mt={15} ml={36}>
+			<Paper h={84} w={768} hiddenFrom="md" visibleFrom="xs">
+				<Group mt={15} ml={36}>
 					<Burger opened={opened} onClick={toggle} size={"lg"} mt={20} />
 					<Image src={Libralogo} h={40} ml={264} mt={12} w={134} />
 					<IconShoppingCart

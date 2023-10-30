@@ -18,7 +18,7 @@ type Props = {};
 const Categories = (props: Props) => {
 	return (
 		<>
-			<Paper w={1440} h={4035} visibleFrom="xs">
+			<Paper w={1440} h={4035} visibleFrom="md">
 				<Grid>
 					<Grid.Col span={6}>
 						<Box>
@@ -252,7 +252,7 @@ const Categories = (props: Props) => {
 				</Grid>
 			</Paper>
 			{/**MOBILE VIEW */}
-			<Paper w={1440} h={2335} hiddenFrom="xs" mt={30}>
+			<Paper w={360} h={2200} hiddenFrom="xs" mt={30}>
 				<Grid>
 					<Grid.Col span={12}>
 						<Image src={Rect17} w={260} h={289} mt={51} ml={100} pos={"absolute"} />
@@ -403,6 +403,146 @@ const Categories = (props: Props) => {
 					</Grid.Col>
 				</Grid>
 			</Paper>
+
+			{/**Tablet */}
+			<Grid justify="flex-start" hiddenFrom="md" visibleFrom="xs" pb={56} w={768}>
+				<Grid.Col span={12}>
+					<Image src={category} w={550} h={441} pos={"absolute"} mt={30} ml={90} />
+					<Image src={Rect17} h={506} w={511} ml={235} />
+				</Grid.Col>
+				<Grid.Col span={12}>
+					<Text fz={32} fw={600} ml={90} mt={54} c={"#292929"}>
+						Explore Our Products
+					</Text>
+					<Text fz={12} fw={400} w={588} ml={90} mt={16} c={"#555459"} lineClamp={5}>
+						We are one of the most prominent manufacturers and exporters of a broad range of
+						microprocessors and digital-based electronic process control instruments. Our product
+						range includes Temperature and Process Indicators, Large/Jumbo Display Indicators,
+						Portable Thermometers, Process Controllers such as On-Off Controllers, PID Controllers,
+						Ramp/Soak Controllers, and Multi Zone Controllers, Temperature and Process Data Loggers
+						and Scanners, Temperature, Humidity Sensors and Transmitters. We also have Indicators,
+						and Controllers, Clean Room Monitoring Systems for Environment, Cold Storage, Data
+						Centre, Server Room, Greenhouse, Warehouse to measure Temperature, Humidity, and
+						Differential Pressure. Thyristor Triggering Cards, Thyristor Power Controllers, Signal
+						Converters/Conditioners and Isolators, Molten Metal Pyrometers, DC Motor Controllers,
+						Motor Soft Starters, IoT Modules, Instrumentation Control Panels, Data Acquisition
+						Software, Customized Instruments, and many more services.
+					</Text>
+					<UnstyledButton ml={90} mt={32}>
+						<Text fz={20} fw={400} c={"#555459"}>
+							Read More
+						</Text>
+					</UnstyledButton>
+				</Grid.Col>
+			</Grid>
+
+			<Grid justify="flex-start" hiddenFrom="md" visibleFrom="xs" pb={56} w={768}>
+				<Grid.Col span={12}>
+					<Image src={GlassManufacturing} w={550} h={441} pos={"absolute"} mt={30} ml={130} />
+					<Image src={Rect17} h={506} w={511} ml={0} />
+				</Grid.Col>
+				<Grid.Col span={12}>
+					<Text fz={32} fw={600} ml={90} mt={54} c={"#292929"}>
+						Digital Indicators{" "}
+					</Text>
+					<Text fz={12} fw={400} w={588} ml={90} mt={16} c={"#555459"} lineClamp={5}>
+						Experts in lighting, we’ve been creating task lights, desk lamps and table lamps for
+						over 80 years. All our lamps uphold the original Anglepoise design concept whilst
+						incorporating essential modern features. You’ll probably recognise some of the classic
+						profiles when browsing our wide range. You’ll probably recognise some of the classic
+						profiles when browsing our wide range. Whether you’re looking to add style to your
+						workspace with a modern office desk lamp, a small desk lamp for tight spaces or, a
+						reading lamp for an ambient study glow, you’ll find the right table and desk lamp for
+						you.
+					</Text>
+					<UnstyledButton ml={90} mt={32}>
+						<Text fz={20} fw={400} c={"#555459"}>
+							Read More
+						</Text>
+					</UnstyledButton>
+				</Grid.Col>
+			</Grid>
+
+			<Grid justify="flex-start" hiddenFrom="md" visibleFrom="xs" pb={56} w={768}>
+				<Grid.Col span={12}>
+					<Image src={category} w={550} h={441} pos={"absolute"} mt={30} ml={90} />
+					<Image src={Rect17} h={506} w={511} ml={235} />
+				</Grid.Col>
+				<Grid.Col span={12}>
+					<Text fz={32} fw={600} ml={90} mt={54} c={"#292929"}>
+						Thyristor Power Controller
+					</Text>
+					<Text fz={12} fw={400} w={588} ml={90} mt={16} c={"#555459"} lineClamp={5}>
+						Libratherm offers ready to use SCR Power Controller for electrical heating loads ranging
+						from 5 KW (Single Phase) to 360KW (Three Phase). This Thyristor Power Regulator Module
+						comprises of suitable triggering card model LTC-12 or LTC-13 or LTC-15 or LTC-18,
+						suitably rated back to back connected SCR Modules (with electrically isolated base,
+						mounted on the heat sink, input and output clip-on type heavy-duty connectors or
+						aluminum/copper bus bars, semiconductor fuses and thermal cutouts. The entire assembly
+						is mounted on an MS powder-coated enclosure, which in turn can be easily mounted inside
+						the closed control panel as desired.
+					</Text>
+					<UnstyledButton ml={90} mt={32}>
+						<Text fz={20} fw={400} c={"#555459"}>
+							Read More
+						</Text>
+					</UnstyledButton>
+				</Grid.Col>
+			</Grid>
+
+			<Grid justify="flex-start" hiddenFrom="md" visibleFrom="xs" pb={56} w={768}>
+				<Grid.Col span={12}>
+					<Image src={GlassManufacturing} w={550} h={441} pos={"absolute"} mt={30} ml={130} />
+					<Image src={Rect17} h={506} w={511} ml={0} />
+				</Grid.Col>
+				<Grid.Col span={12}>
+					<Text fz={32} fw={600} ml={90} mt={54} c={"#292929"}>
+						Data Loggers & Scanners
+					</Text>
+					<Text fz={12} fw={400} w={588} ml={90} mt={16} c={"#555459"} lineClamp={5}>
+						Experts in lighting, we’ve been creating task lights, desk lamps and table lamps for
+						over 80 years. All our lamps uphold the original Anglepoise design concept whilst
+						incorporating essential modern features. You’ll probably recognise some of the classic
+						profiles when browsing our wide range. You’ll probably recognise some of the classic
+						profiles when browsing our wide range. Whether you’re looking to add style to your
+						workspace with a modern office desk lamp, a small desk lamp for tight spaces or, a
+						reading lamp for an ambient study glow, you’ll find the right table and desk lamp for
+						you.
+					</Text>
+					<UnstyledButton ml={90} mt={32}>
+						<Text fz={20} fw={400} c={"#555459"}>
+							Read More
+						</Text>
+					</UnstyledButton>
+				</Grid.Col>
+			</Grid>
+
+			<Grid justify="flex-start" hiddenFrom="md" visibleFrom="xs" pb={56} w={768}>
+				<Grid.Col span={12}>
+					<Image src={category} w={550} h={441} pos={"absolute"} mt={30} ml={90} />
+					<Image src={Rect17} h={506} w={511} ml={235} />
+				</Grid.Col>
+				<Grid.Col span={12}>
+					<Text fz={32} fw={600} ml={90} mt={54} c={"#292929"}>
+						Humidity Instruments
+					</Text>
+					<Text fz={12} fw={400} w={588} ml={90} mt={16} c={"#555459"} lineClamp={5}>
+						Experts in lighting, we’ve been creating task lights, desk lamps and table lamps for
+						over 80 years. All our lamps uphold the original Anglepoise design concept whilst
+						incorporating essential modern features. You’ll probably recognise some of the classic
+						profiles when browsing our wide range. You’ll probably recognise some of the classic
+						profiles when browsing our wide range. Whether you’re looking to add style to your
+						workspace with a modern office desk lamp, a small desk lamp for tight spaces or, a
+						reading lamp for an ambient study glow, you’ll find the right table and desk lamp for
+						you.
+					</Text>
+					<UnstyledButton ml={90} mt={32}>
+						<Text fz={20} fw={400} c={"#555459"}>
+							Read More
+						</Text>
+					</UnstyledButton>
+				</Grid.Col>
+			</Grid>
 		</>
 	);
 };

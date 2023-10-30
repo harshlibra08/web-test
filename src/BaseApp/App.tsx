@@ -33,7 +33,6 @@ import CareersPage from "../CareersPage";
 import ProductsList from "../ProductsList";
 import Wishlist from "../Wishlist";
 import Login from "../Login";
-import ResponsiveDemo from "../ResponsiveDemo";
 import CategoryGrid from "../CategoryGrid";
 
 const theme = createTheme({

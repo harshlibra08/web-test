@@ -45,7 +45,7 @@ export function Login(props: PaperProps) {
 
 	return (
 		<>
-			<Paper w={1440} h={1720} bg={"#f4f4f4"} mt={40} visibleFrom="xs">
+			<Paper w={1440} h={1720} bg={"#f4f4f4"} mt={40} visibleFrom="md">
 				<Box pt={40}>
 					<Tabs
 						color="rgba(0, 0, 0, 1)"
@@ -146,7 +146,7 @@ export function Login(props: PaperProps) {
 				>
 					<Tabs.List>
 						<Tabs.Tab value="login" fz={16} w={164} lh={"normal"}>
-							Already have <br /> an account ?
+							Already have <br /> an account ??
 						</Tabs.Tab>
 						<Tabs.Tab value="register" fz={16} lh={"normal"}>
 							Need to register <br /> an account ?
@@ -176,7 +176,7 @@ export function Login(props: PaperProps) {
 				</Card>
 			</Paper>
 
-			<Paper w={360} h={720} mb={500}>
+			<Paper w={360} h={720} mb={500} hiddenFrom="xs">
 				<Tabs
 					color="rgba(0, 0, 0, 1)"
 					styles={{
@@ -218,6 +218,92 @@ export function Login(props: PaperProps) {
 						</OptionsButton>
 					</Stack>
 				</Card>
+			</Paper>
+
+			{/**Tablet */}
+			<Paper w={768} h={1720} bg={"#f4f4f4"} mt={40} visibleFrom="xs" hiddenFrom="md">
+				<Box pt={40}>
+					<Tabs
+						color="rgba(0, 0, 0, 1)"
+						radius="xs"
+						defaultValue="login"
+						w={620}
+						h={85}
+						bg={"white"}
+						ml={90}
+					>
+						<Tabs.List grow mt={136}>
+							<Tabs.Tab py={30} value="login" fz={16}>
+								Already have an account ?
+							</Tabs.Tab>
+							<Tabs.Tab py={25} value="register" bg={"#f4f4f4"} fz={16}>
+								Need to register an account ?
+							</Tabs.Tab>
+						</Tabs.List>
+					</Tabs>
+					<Card w={620} h={482} ml={90} shadow="md">
+						<Stack>
+							<Text ml={60} mt={61} fz={16} c={"#262728"} fw={600}>
+								ACCOUNT LOGIN
+							</Text>
+							<Text fz={32} fw={600} c={"#262728"} ml={61}>
+								Existing User Login
+							</Text>
+							<TextInput label="Username or Email Address" w={499} ml={61} withAsterisk></TextInput>
+							<TextInput label="Password" w={499} ml={61} withAsterisk></TextInput>
+							<Group>
+								<Checkbox size={"16px"} label="Remember Me" ml={61} mt={21} c="#292929" />
+								<Anchor mt={21} ml={245} component="button" type="button" c="dimmed" size="xs">
+									Forgot Password ?
+								</Anchor>
+							</Group>
+							<OptionsButton w={499} ml={61} mt={18}>
+								LOGIN
+							</OptionsButton>
+						</Stack>
+					</Card>
+				</Box>
+				<Box pt={40}>
+					<Tabs
+						color="rgba(0, 0, 0, 1)"
+						radius="xs"
+						defaultValue="login"
+						w={620}
+						h={85}
+						bg={"white"}
+						ml={90}
+					>
+						<Tabs.List grow mt={136}>
+							<Tabs.Tab py={30} value="login" fz={16} bg={"#f4f4f4"}>
+								Already have an account ?
+							</Tabs.Tab>
+							<Tabs.Tab py={25} value="register" fz={16}>
+								Need to register an account ?
+							</Tabs.Tab>
+						</Tabs.List>
+					</Tabs>
+					<Card w={620} h={656} ml={90} shadow="md">
+						<Stack>
+							<Text ml={60} mt={61} fz={16} c={"#262728"} fw={600}>
+								NEW USERS
+							</Text>
+							<Text fz={32} fw={600} c={"#262728"} ml={61}>
+								Create Your User Account
+							</Text>
+							<TextInput label="Username " w={499} ml={61} withAsterisk></TextInput>
+							<TextInput label="Email Address " w={499} ml={61} withAsterisk></TextInput>
+							<TextInput label="Password" w={499} ml={61} withAsterisk></TextInput>
+							<Text fz={16} c={"#555459"} w={500} ml={60} mt={32}>
+								Your personal data will be used to support your experience throughout this website,
+								to manage access to your account, and for other purposes described in our privacy
+								policy.
+							</Text>
+							<OptionsButton w={499} ml={61} mt={18}>
+								REGISTER
+							</OptionsButton>
+						</Stack>
+					</Card>
+				</Box>
 			</Paper>
 		</>
 	);

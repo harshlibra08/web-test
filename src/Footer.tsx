@@ -208,204 +208,206 @@ const Footer = (props: Props) => {
 
 			{/**Mobile View */}
 
-			<Box w={328} h={435} bg={"#F5C44E"} pos={"absolute"} ml={16} mt={-500} hiddenFrom="xs">
-				<Stack>
-					<Text fz={20} ml={24} mt={24} fw={600} c={"#292929"}>
-						REQUEST A CALL BACK
-					</Text>
-					<Text fz={12} fw={400} ml={24}>
-						Connect with us to know more about our new products, sales and launches!
-					</Text>
-					<TextInput
-						w={279}
-						ml={24}
-						placeholder="First name"
-						variant="unstyled"
-						h={32}
-						style={{
-							border: "none",
-							borderBottom: "1px solid #000",
-						}}
-						styles={{
-							label: {
-								color: "#292929",
-								fontWeight: 700,
-								fontSize: 12,
-							},
-						}}
-					/>
-					<TextInput
-						w={279}
-						h={32}
-						ml={24}
-						placeholder="Last Name"
-						variant="unstyled"
-						style={{
-							border: "none",
-							borderBottom: "1px solid #000",
-						}}
-						styles={{
-							label: {
-								color: "#292929",
-								fontWeight: 700,
-								fontSize: 12,
-							},
-						}}
-					/>
-					<TextInput
-						w={279}
-						h={32}
-						ml={24}
-						placeholder="Email"
-						variant="unstyled"
-						style={{
-							border: "none",
-							borderBottom: "1px solid #000",
-						}}
-						styles={{
-							label: {
-								color: "#292929",
-								fontWeight: 700,
-								fontSize: 12,
-							},
-						}}
-					/>
-					<Checkbox
-						fz={12}
-						fw={400}
-						label="I’m happy to recieve marketing communications and agree to the data policy"
-						w={255}
-						ml={24}
-						mt={17}
-						c="#292929"
-						styles={{
-							input: {
-								border: " 2px solid",
-								borderColor: "#000",
-								borderRadius: "0px",
-								backgroundColor: "#F5C44E",
-							},
-						}}
-					/>
-					<OptionsButton w={279} ml={24} mt={10}>
-						<Group>
-							<Text>JOIN</Text>
-							{<IconBrandGooglePlay size={16} />}
-						</Group>
-					</OptionsButton>
-				</Stack>
-			</Box>
-
-			<Grid mt={249}>
-				<Grid.Col span={6}>
-					<Stack ml={16}>
-						<Text fz={14} fw={700}>
-							USEFUL LINKS
+			<Paper w={360} hiddenFrom="xs" h={1500}>
+				<Box w={328} h={435} bg={"#F5C44E"} pos={"absolute"} ml={16} mt={-500}>
+					<Stack>
+						<Text fz={20} ml={24} mt={24} fw={600} c={"#292929"}>
+							REQUEST A CALL BACK
 						</Text>
-						<Text fz={12} c={"#555459"} fw={400}>
-							Careers
+						<Text fz={12} fw={400} ml={24}>
+							Connect with us to know more about our new products, sales and launches!
 						</Text>
-						<Text fz={12} c={"#555459"} fw={400}>
-							Terms of Service
-						</Text>
-						<Text fz={12} c={"#555459"} fw={400}>
-							Careers
-						</Text>
-						<Text fz={12} c={"#555459"} fw={400}>
-							Terms of Service
-						</Text>
+						<TextInput
+							w={279}
+							ml={24}
+							placeholder="First name"
+							variant="unstyled"
+							h={32}
+							style={{
+								border: "none",
+								borderBottom: "1px solid #000",
+							}}
+							styles={{
+								label: {
+									color: "#292929",
+									fontWeight: 700,
+									fontSize: 12,
+								},
+							}}
+						/>
+						<TextInput
+							w={279}
+							h={32}
+							ml={24}
+							placeholder="Last Name"
+							variant="unstyled"
+							style={{
+								border: "none",
+								borderBottom: "1px solid #000",
+							}}
+							styles={{
+								label: {
+									color: "#292929",
+									fontWeight: 700,
+									fontSize: 12,
+								},
+							}}
+						/>
+						<TextInput
+							w={279}
+							h={32}
+							ml={24}
+							placeholder="Email"
+							variant="unstyled"
+							style={{
+								border: "none",
+								borderBottom: "1px solid #000",
+							}}
+							styles={{
+								label: {
+									color: "#292929",
+									fontWeight: 700,
+									fontSize: 12,
+								},
+							}}
+						/>
+						<Checkbox
+							fz={12}
+							fw={400}
+							label="I’m happy to recieve marketing communications and agree to the data policy"
+							w={255}
+							ml={24}
+							mt={17}
+							c="#292929"
+							styles={{
+								input: {
+									border: " 2px solid",
+									borderColor: "#000",
+									borderRadius: "0px",
+									backgroundColor: "#F5C44E",
+								},
+							}}
+						/>
+						<OptionsButton w={279} ml={24} mt={10}>
+							<Group>
+								<Text>JOIN</Text>
+								{<IconBrandGooglePlay size={16} />}
+							</Group>
+						</OptionsButton>
 					</Stack>
-				</Grid.Col>
-				<Grid.Col span={6}>
-					<Stack ml={20}>
-						<Text fz={14} fw={700}>
-							POLICIES
-						</Text>
-						<Text fz={12} c={"#555459"} fw={400}>
-							Quality Policy
-						</Text>
-						<Text fz={12} c={"#555459"} fw={400}>
-							Privacy Policy
-						</Text>
-						<Text fz={12} c={"#555459"} fw={400}>
-							Shipping Policy
-						</Text>
-						<Text fz={12} c={"#555459"} fw={400}>
-							Cancellation Policy
-						</Text>
-						<Text fz={12} c={"#555459"} fw={400}>
-							Return & Refund Policy
-						</Text>
-					</Stack>
-				</Grid.Col>
-			</Grid>
+				</Box>
 
-			<Text fz={14} fw={700} mt={70} ml={15}>
-				OFFICE ADDRESS
-			</Text>
-			<Text w={311} fz={12} fw={400} mt={14} ml={16} lh={"19.6px"}>
-				401-403, Diamond Industrial Estate,Ketki Pada Road, Dahisar (East), Mumbai 400068,
-				Maharashtra, India.
-			</Text>
+				<Grid mt={249}>
+					<Grid.Col span={6}>
+						<Stack ml={16}>
+							<Text fz={14} fw={700}>
+								USEFUL LINKS
+							</Text>
+							<Text fz={12} c={"#555459"} fw={400}>
+								Careers
+							</Text>
+							<Text fz={12} c={"#555459"} fw={400}>
+								Terms of Service
+							</Text>
+							<Text fz={12} c={"#555459"} fw={400}>
+								Careers
+							</Text>
+							<Text fz={12} c={"#555459"} fw={400}>
+								Terms of Service
+							</Text>
+						</Stack>
+					</Grid.Col>
+					<Grid.Col span={6}>
+						<Stack ml={20}>
+							<Text fz={14} fw={700}>
+								POLICIES
+							</Text>
+							<Text fz={12} c={"#555459"} fw={400}>
+								Quality Policy
+							</Text>
+							<Text fz={12} c={"#555459"} fw={400}>
+								Privacy Policy
+							</Text>
+							<Text fz={12} c={"#555459"} fw={400}>
+								Shipping Policy
+							</Text>
+							<Text fz={12} c={"#555459"} fw={400}>
+								Cancellation Policy
+							</Text>
+							<Text fz={12} c={"#555459"} fw={400}>
+								Return & Refund Policy
+							</Text>
+						</Stack>
+					</Grid.Col>
+				</Grid>
 
-			<Text mt={40} ml={16} fw={700}>
-				WAYS TO CONNECT
-			</Text>
-
-			<Grid>
-				<Grid.Col span={6}>
-					<Stack ml={15}>
-						<Text fz={12} fw={400} mt={11} c={"#555459"}>
-							Email: <br />
-							<Anchor fz={12}>
-								enquiry@libratherm.com, <br />
-								libratherm@libratherm.com
-							</Anchor>
-						</Text>
-					</Stack>
-				</Grid.Col>
-				<Grid.Col span={6}>
-					<Stack ml={35}>
-						<Text fz={12} fw={400} mt={11} c={"#555459"}>
-							Mobile: <br />
-							<Anchor fz={12}>
-								+91-8104971152 <br />
-								+91-8104971154 <br />
-								+91-9082687279
-								<br />
-								+91-9821136685
-								<br />
-							</Anchor>
-						</Text>
-					</Stack>
-				</Grid.Col>
-			</Grid>
-
-			<Stack mt={40} align="center" mb={90}>
-				<OptionsButton w={279} mt={40}>
-					DOWNLOAD BROCHURE
-				</OptionsButton>
-				<PrimaryButton
-					w={279}
-					mt={24}
-					leftSection={<IconBrandWhatsapp color="#25D366" size={24} />}
-					style={{
-						paddingRight: "8px",
-					}}
-				>
-					Get it on Whatsapp
-				</PrimaryButton>
-				<Text fz={14} fw={700} mt={32}>
-					WE ARE SOCIAL !
+				<Text fz={14} fw={700} mt={70} ml={15}>
+					OFFICE ADDRESS
 				</Text>
-				<Group mt={25}>
-					<IconBrandFacebookFilled size={24} style={{ color: "#555459" }} />
-					<IconBrandLinkedin size={24} style={{ color: "#555459" }} />
-					<IconBrandTwitterFilled size={24} style={{ color: "#555459" }} />
-					<IconBrandYoutubeFilled size={24} style={{ color: "#555459" }} />
-					<IconBrandWhatsapp size={24} style={{ color: "#555459" }} />
-				</Group>
-			</Stack>
+				<Text w={311} fz={12} fw={400} mt={14} ml={16} lh={"19.6px"}>
+					401-403, Diamond Industrial Estate,Ketki Pada Road, Dahisar (East), Mumbai 400068,
+					Maharashtra, India.
+				</Text>
+
+				<Text mt={40} ml={16} fw={700}>
+					WAYS TO CONNECT
+				</Text>
+
+				<Grid>
+					<Grid.Col span={6}>
+						<Stack ml={15}>
+							<Text fz={12} fw={400} mt={11} c={"#555459"}>
+								Email: <br />
+								<Anchor fz={12}>
+									enquiry@libratherm.com, <br />
+									libratherm@libratherm.com
+								</Anchor>
+							</Text>
+						</Stack>
+					</Grid.Col>
+					<Grid.Col span={6}>
+						<Stack ml={35}>
+							<Text fz={12} fw={400} mt={11} c={"#555459"}>
+								Mobile: <br />
+								<Anchor fz={12}>
+									+91-8104971152 <br />
+									+91-8104971154 <br />
+									+91-9082687279
+									<br />
+									+91-9821136685
+									<br />
+								</Anchor>
+							</Text>
+						</Stack>
+					</Grid.Col>
+				</Grid>
+
+				<Stack mt={40} align="center" mb={90}>
+					<OptionsButton w={279} mt={40}>
+						DOWNLOAD BROCHURE
+					</OptionsButton>
+					<PrimaryButton
+						w={279}
+						mt={24}
+						leftSection={<IconBrandWhatsapp color="#25D366" size={24} />}
+						style={{
+							paddingRight: "8px",
+						}}
+					>
+						Get it on Whatsapp
+					</PrimaryButton>
+					<Text fz={14} fw={700} mt={32}>
+						WE ARE SOCIAL !
+					</Text>
+					<Group mt={25}>
+						<IconBrandFacebookFilled size={24} style={{ color: "#555459" }} />
+						<IconBrandLinkedin size={24} style={{ color: "#555459" }} />
+						<IconBrandTwitterFilled size={24} style={{ color: "#555459" }} />
+						<IconBrandYoutubeFilled size={24} style={{ color: "#555459" }} />
+						<IconBrandWhatsapp size={24} style={{ color: "#555459" }} />
+					</Group>
+				</Stack>
+			</Paper>
 		</>
 	);
 };

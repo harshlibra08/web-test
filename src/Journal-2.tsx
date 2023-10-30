@@ -9,7 +9,7 @@ type Props = {};
 const JournalTwo = (props: Props) => {
 	return (
 		<>
-			<Paper w={1440} h={3140} bg={"black"} visibleFrom="xs">
+			<Paper w={1440} h={3140} bg={"black"} visibleFrom="md">
 				<Group wrap="nowrap" gap={0}>
 					<Box w="100%">
 						<Text fz={20} mt={91} ml={114} c={"#f6f6f6"}>
@@ -191,7 +191,7 @@ const JournalTwo = (props: Props) => {
 				</Grid>
 			</Paper>
 			{/**Mobile View */}
-			<Paper w={1440} h={2540} withBorder bg={"black"} hiddenFrom="xs">
+			<Paper w={360} h={2540} withBorder bg={"black"} hiddenFrom="xs">
 				<Group wrap="nowrap" gap={0}>
 					<Box w="100%">
 						<Text fz={20} mt={59} ml={16} c={"#f6f6f6"}>
@@ -309,6 +309,133 @@ const JournalTwo = (props: Props) => {
 						<UnstyledButton>
 							<Group>
 								<Text fz={15} c={"#ffffff"} mt={8} fw={400} ml={16}>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
+					</Grid.Col>
+				</Grid>
+			</Paper>
+
+			{/**Tablet view */}
+			<Paper w={768} h={1340} bg={"black"} visibleFrom="xs" hiddenFrom="md">
+				<Group wrap="nowrap" gap={0} ml={90}>
+					<Box w="100%">
+						<Text fz={28} mt={91} c={"#f6f6f6"}>
+							Industry
+						</Text>
+						<Divider size="md" my={23} mr={114} pb={40} />
+					</Box>
+				</Group>
+
+				<Grid mx={90}>
+					<Grid.Col span={4}>
+						<Image src={Industry1} h={194} w={206} />
+					</Grid.Col>
+					<Grid.Col span={8}>
+						<Text c={"#e4e8ed"} fz={12} mt={10} ml={30}>
+							22nd January, 2023.
+						</Text>
+						<Text c={"#f6f6f6"} fz={24} mt={8} ml={30}>
+							Glass Manufacture
+						</Text>
+						<Text c={"#e4e8ed"} fz={12} lineClamp={2} w={388} mt={14} ml={30}>
+							Libratherm has supplied various types of temperature controllers, thyristor power
+							controllers and control panels to the industries manufacturing Files, Diamond Tools,
+							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+							blades etc… The temperature of the electrical or fuel fired heating systems, used for
+							annealing, hardening, steam bluing and similar such processes, has been in use for
+							precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723,
+							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
+							contact sensors.
+						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text fz={14} c={"#ffffff"} mt={32} ml={30} fw={400}>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
+					</Grid.Col>
+					<Grid.Col span={4} mt={60}>
+						<Image src={Industry2} h={194} w={206} />
+					</Grid.Col>
+					<Grid.Col span={8} mt={60}>
+						<Text c={"#e4e8ed"} fz={12} mt={10} ml={30}>
+							22nd January, 2023.
+						</Text>
+						<Text c={"#f6f6f6"} fz={24} mt={8} ml={30}>
+							Glass Manufacture
+						</Text>
+						<Text c={"#e4e8ed"} fz={12} lineClamp={2} w={388} mt={14} ml={30}>
+							Libratherm has supplied various types of temperature controllers, thyristor power
+							controllers and control panels to the industries manufacturing Files, Diamond Tools,
+							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+							blades etc… The temperature of the electrical or fuel fired heating systems, used for
+							annealing, hardening, steam bluing and similar such processes, has been in use for
+							precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723,
+							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
+							contact sensors.
+						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text fz={14} c={"#ffffff"} mt={32} ml={30} fw={400}>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
+					</Grid.Col>
+					<Grid.Col span={4} mt={60}>
+						<Image src={Industry3} h={194} w={206} />
+					</Grid.Col>
+					<Grid.Col span={8} mt={60}>
+						<Text c={"#e4e8ed"} fz={12} mt={10} ml={30}>
+							22nd January, 2023.
+						</Text>
+						<Text c={"#f6f6f6"} fz={24} mt={8} ml={30}>
+							Glass Manufacture
+						</Text>
+						<Text c={"#e4e8ed"} fz={12} lineClamp={2} w={388} mt={14} ml={30}>
+							Libratherm has supplied various types of temperature controllers, thyristor power
+							controllers and control panels to the industries manufacturing Files, Diamond Tools,
+							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+							blades etc… The temperature of the electrical or fuel fired heating systems, used for
+							annealing, hardening, steam bluing and similar such processes, has been in use for
+							precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723,
+							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
+							contact sensors.
+						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text fz={14} c={"#ffffff"} mt={32} ml={30} fw={400}>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
+					</Grid.Col>
+					<Grid.Col span={4} mt={60}>
+						<Image src={Industry4} h={194} w={206} />
+					</Grid.Col>
+					<Grid.Col span={8} mt={60}>
+						<Text c={"#e4e8ed"} fz={12} mt={10} ml={30}>
+							22nd January, 2023.
+						</Text>
+						<Text c={"#f6f6f6"} fz={24} mt={8} ml={30}>
+							Glass Manufacture
+						</Text>
+						<Text c={"#e4e8ed"} fz={12} lineClamp={2} w={388} mt={14} ml={30}>
+							Libratherm has supplied various types of temperature controllers, thyristor power
+							controllers and control panels to the industries manufacturing Files, Diamond Tools,
+							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+							blades etc… The temperature of the electrical or fuel fired heating systems, used for
+							annealing, hardening, steam bluing and similar such processes, has been in use for
+							precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723,
+							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
+							contact sensors.
+						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text fz={14} c={"#ffffff"} mt={32} ml={30} fw={400}>
 									Read more
 								</Text>
 							</Group>

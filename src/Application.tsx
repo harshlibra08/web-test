@@ -8,6 +8,7 @@ import {
 	Text,
 	Image,
 	Container,
+	Stack,
 } from "@mantine/core";
 import React from "react";
 import WhiteBG from "./Assets/Group 1000003515.png";
@@ -20,7 +21,7 @@ type Props = {};
 const Application = (props: Props) => {
 	return (
 		<>
-			<Paper w={1440} h={3847} bg={"black"} visibleFrom="xs">
+			<Paper w={1440} h={3847} bg={"black"} visibleFrom="md">
 				<Group wrap="nowrap" gap={0}>
 					<Box w="100%">
 						<Text fz={32} mt={91} ml={114} c={"#f6f6f6"}>
@@ -37,7 +38,7 @@ const Application = (props: Props) => {
 								22nd January, 2023.
 							</Text>
 							<Text c={"#f6f6f6"} fz={32} ml={530} mt={16}>
-								SCR Power Regulators{" "}
+								SCR Power Regulators
 							</Text>
 							<Text c={"#e4e8ed"} fz={16} ml={530} mt={16} w={868} lineClamp={2}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
@@ -240,7 +241,7 @@ const Application = (props: Props) => {
 					</Grid.Col>
 				</Grid>
 			</Paper>
-			<Paper w={1440} h={3850} bg={"black"} visibleFrom="xs">
+			<Paper w={1440} h={3850} bg={"black"} visibleFrom="md">
 				<Group wrap="nowrap" gap={0}>
 					<Box w="100%">
 						<Text fz={32} mt={91} ml={114} c={"#f6f6f6"}>
@@ -395,7 +396,7 @@ const Application = (props: Props) => {
 			</Paper>
 
 			{/**Mobile view */}
-			<Paper w={1440} h={2347} bg={"black"} hiddenFrom="xs">
+			<Paper w={360} h={2347} bg={"black"} hiddenFrom="xs">
 				<Group wrap="nowrap" gap={0}>
 					<Box w="100%">
 						<Text fz={20} mt={60} ml={16} c={"#f6f6f6"}>
@@ -519,7 +520,7 @@ const Application = (props: Props) => {
 					</Grid.Col>
 				</Grid>
 			</Paper>
-			<Paper w={1440} h={2850} bg={"black"} hiddenFrom="xs">
+			<Paper w={360} h={2850} bg={"black"} hiddenFrom="xs">
 				<Group wrap="nowrap" gap={0}>
 					<Box w="100%">
 						<Text fz={20} mt={60} ml={16} c={"#f6f6f6"}>
@@ -616,6 +617,338 @@ const Application = (props: Props) => {
 						Read more
 					</Text>
 				</UnstyledButton>
+			</Paper>
+
+			{/**Tablet View */}
+			<Paper w={768} h={2340} bg={"black"} visibleFrom="xs" hiddenFrom="md">
+				<Text fz={28} ml={90} pt={91} c={"#f6f6f6"}>
+					Industry
+				</Text>
+				<Divider size="md" my={23} mx={90} pb={40} />
+
+				<Grid mx={90}>
+					<Grid.Col span={4}>
+						<Image src={WhiteBG} h={194} w={206} />
+					</Grid.Col>
+					<Grid.Col span={8}>
+						<Text c={"#e4e8ed"} fz={12} mt={10} ml={30}>
+							22nd January, 2023.
+						</Text>
+						<Text c={"#f6f6f6"} fz={20} mt={8} ml={30}>
+							SCR Power Regulators
+						</Text>
+						<Text c={"#e4e8ed"} fz={12} lineClamp={2} w={388} mt={14} ml={30}>
+							Libratherm has supplied various types of temperature controllers, thyristor power
+							controllers and control panels to the industries manufacturing Files, Diamond Tools,
+							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+							blades etc… The temperature of the electrical or fuel fired heating systems, used for
+							annealing, hardening, steam bluing and similar such processes, has been in use for
+							precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723,
+							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
+							contact sensors.
+						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text fz={14} c={"#ffffff"} mt={32} ml={30} fw={400}>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
+					</Grid.Col>
+					<Grid.Col span={4} mt={60}>
+						<Image src={WhiteBG} h={194} w={206} />
+					</Grid.Col>
+					<Grid.Col span={8} mt={60}>
+						<Text c={"#e4e8ed"} fz={12} mt={10} ml={30}>
+							22nd January, 2023.
+						</Text>
+						<Text c={"#f6f6f6"} fz={20} mt={8} ml={30}>
+							SCR Triggering Cards for OEM{" "}
+						</Text>
+						<Text c={"#e4e8ed"} fz={12} lineClamp={2} w={388} mt={14} ml={30}>
+							Libratherm has supplied various types of temperature controllers, thyristor power
+							controllers and control panels to the industries manufacturing Files, Diamond Tools,
+							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+							blades etc… The temperature of the electrical or fuel fired heating systems, used for
+							annealing, hardening, steam bluing and similar such processes, has been in use for
+							precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723,
+							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
+							contact sensors.
+						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text fz={14} c={"#ffffff"} mt={32} ml={30} fw={400}>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
+					</Grid.Col>
+					<Grid.Col span={4} mt={60}>
+						<Image src={WhiteBG} h={194} w={206} />
+					</Grid.Col>
+					<Grid.Col span={8} mt={60}>
+						<Text c={"#e4e8ed"} fz={12} mt={10} ml={30}>
+							22nd January, 2023.
+						</Text>
+						<Text c={"#f6f6f6"} fz={20} mt={8} ml={30}>
+							Thyristor Power Switches
+						</Text>
+						<Text c={"#e4e8ed"} fz={12} lineClamp={2} w={388} mt={14} ml={30}>
+							Libratherm has supplied various types of temperature controllers, thyristor power
+							controllers and control panels to the industries manufacturing Files, Diamond Tools,
+							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+							blades etc… The temperature of the electrical or fuel fired heating systems, used for
+							annealing, hardening, steam bluing and similar such processes, has been in use for
+							precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723,
+							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
+							contact sensors.
+						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text fz={14} c={"#ffffff"} mt={32} ml={30} fw={400}>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
+					</Grid.Col>
+					<Grid.Col span={4} mt={60}>
+						<Image src={WhiteBG} h={194} w={206} />
+					</Grid.Col>
+					<Grid.Col span={8} mt={60}>
+						<Text c={"#e4e8ed"} fz={12} mt={10} ml={30}>
+							22nd January, 2023.
+						</Text>
+						<Text c={"#f6f6f6"} fz={20} mt={8} ml={30}>
+							Phase Angle Control vs Zero Crossover
+						</Text>
+						<Text c={"#e4e8ed"} fz={12} lineClamp={2} w={388} mt={14} ml={30}>
+							Libratherm has supplied various types of temperature controllers, thyristor power
+							controllers and control panels to the industries manufacturing Files, Diamond Tools,
+							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+							blades etc… The temperature of the electrical or fuel fired heating systems, used for
+							annealing, hardening, steam bluing and similar such processes, has been in use for
+							precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723,
+							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
+							contact sensors.
+						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text fz={14} c={"#ffffff"} mt={32} ml={30} fw={400}>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
+					</Grid.Col>
+					<Grid.Col span={4} mt={60}>
+						<Image src={WhiteBG} h={194} w={206} />
+					</Grid.Col>
+					<Grid.Col span={8} mt={60}>
+						<Text c={"#e4e8ed"} fz={12} mt={10} ml={30}>
+							22nd January, 2023.
+						</Text>
+						<Text c={"#f6f6f6"} fz={20} mt={8} ml={30}>
+							Multizone Heating System
+						</Text>
+						<Text c={"#e4e8ed"} fz={12} lineClamp={2} w={388} mt={14} ml={30}>
+							Libratherm has supplied various types of temperature controllers, thyristor power
+							controllers and control panels to the industries manufacturing Files, Diamond Tools,
+							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+							blades etc… The temperature of the electrical or fuel fired heating systems, used for
+							annealing, hardening, steam bluing and similar such processes, has been in use for
+							precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723,
+							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
+							contact sensors.
+						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text fz={14} c={"#ffffff"} mt={32} ml={30} fw={400}>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
+					</Grid.Col>
+					<Grid.Col span={4} mt={60}>
+						<Image src={WhiteBG} h={194} w={206} />
+					</Grid.Col>
+					<Grid.Col span={8} mt={60}>
+						<Text c={"#e4e8ed"} fz={12} mt={10} ml={30}>
+							22nd January, 2023.
+						</Text>
+						<Text c={"#f6f6f6"} fz={20} mt={8} ml={30}>
+							Signal Isolation
+						</Text>
+						<Text c={"#e4e8ed"} fz={12} lineClamp={2} w={388} mt={14} ml={30}>
+							Libratherm has supplied various types of temperature controllers, thyristor power
+							controllers and control panels to the industries manufacturing Files, Diamond Tools,
+							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+							blades etc… The temperature of the electrical or fuel fired heating systems, used for
+							annealing, hardening, steam bluing and similar such processes, has been in use for
+							precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723,
+							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
+							contact sensors.
+						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text fz={14} c={"#ffffff"} mt={32} ml={30} fw={400}>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
+					</Grid.Col>
+					<Grid.Col span={4} mt={60}>
+						<Image src={WhiteBG} h={194} w={206} />
+					</Grid.Col>
+					<Grid.Col span={8} mt={60}>
+						<Text c={"#e4e8ed"} fz={12} mt={10} ml={30}>
+							22nd January, 2023.
+						</Text>
+						<Text c={"#f6f6f6"} fz={20} mt={8} ml={30}>
+							Temperature Controller
+						</Text>
+						<Text c={"#e4e8ed"} fz={12} lineClamp={2} w={388} mt={14} ml={30}>
+							Libratherm has supplied various types of temperature controllers, thyristor power
+							controllers and control panels to the industries manufacturing Files, Diamond Tools,
+							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+							blades etc… The temperature of the electrical or fuel fired heating systems, used for
+							annealing, hardening, steam bluing and similar such processes, has been in use for
+							precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723,
+							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
+							contact sensors.
+						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text fz={14} c={"#ffffff"} mt={32} ml={30} fw={400}>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
+					</Grid.Col>
+				</Grid>
+			</Paper>
+			<Paper w={768} h={2850} bg={"black"} hiddenFrom="md" visibleFrom="xs">
+				<Text fz={28} ml={90} pt={91} c={"#f6f6f6"}>
+					Industry
+				</Text>
+				<Divider size="md" my={23} mx={90} pb={40} />
+				<Image src={SCR} w={588} h={355} mt={20} ml={90} />
+
+				<Text ml={90} c={"#f6f6f6"} fz={20} mt={64}>
+					SCR Power Regulators
+				</Text>
+				<Text ml={90} c={"#e4e8ed"} fz={12} mt={24} w={588} fw={400}>
+					Power Controllers for Precise Voltage and Current Control : SCR Power Regulators, also
+					known as Thyristor Power Controllers are devices that control power delivery. They are
+					designed to vary the AC voltage across resistive and inductive loads. The primary
+					controlling device is a back-to-back connected Silicon Rectifier (SCR) or Thyristor. They
+					are coupled with the triggering electronics from Libratherm which provide gate cathode
+					triggering pulses proportional to the control signal. This controls the conduction angle
+					of the thyristor which controls the average AC voltage across the load. Regulating the AC
+					voltage controls the AC current drawn by the load and thereby controls the power delivered
+					to the load.
+				</Text>
+
+				<Paper w={768} h={1280} bg={"white"}>
+					<Image src={PhaseAngel} w={680} h={168} ml={50} mt={30} pt={50} />
+
+					<Text ml={90} fz={20} fw={600} pt={82} c={"#262728"}>
+						Why use Thyristor Power Controllers?
+					</Text>
+					<Text ml={90} fz={12} mt={24} w={588} fw={400} c={"#555459"}>
+						The Thyristor Power Controller can accurately and consistently control the process
+						proportional to the control signal. They provide a smooth way of controlling the power
+						delivered to the load. Unlike Contactors, thyristors don’t have any electromechanical
+						movement which may cause arcing/sparking and carbon formation. They gradually deliver
+						power to the load and prevent electrical surges, and transients, thereby enhancing the
+						operational life of the load. Libratherm offers Thyristor Power Controllers ranging from
+						10A to 1000A load. Select models have a built-in current limit and current trip feature
+						which safeguards against overload damages. They can be paired with Libratherm PID
+						Controllers and Ramp Soak Controllers for precise temperature control for various
+						applications.
+					</Text>
+
+					<Image src={TPC} w={600} h={268} mt={40} ml={90} />
+
+					<Text ml={90} fz={12} mt={24} w={588} fw={400} c={"#555459"}>
+						Some of the applications where Libratherm's Power Controllers are successfully
+						implemented:
+						<li>Aluminium Melting Furnaces</li>
+						<li>Holding Furnaces</li>
+						<li>Air Handling Units</li>
+						<li>Dehumidifiers</li>
+						<li>Boilers</li>
+						<li>Hot Air Generators and Hot Air Dryers</li>
+						<li>
+							Very high temperature furnaces built using Silicon Carbide/MoSi2 heating elements
+						</li>
+						<li>Microwave dryers</li>
+						<li>Multi-zone Drying and Curing Ovens</li>
+						<li>Heat Transfer Printing Machines</li>
+						<li>
+							Food Grains, Paper and Printing Drying Ovens made using Quartz tube Medium wave IR and
+							Ceramic coated IR heaters
+						</li>
+						<li>Pet bottles Pre Forms preheating tunnel ovens made using IR heaters</li>
+						<li>Plastic Injection moulding requiring multi-zone heating for manifold moulds</li>
+						<li>Plastic Pipes and Sheets extrusion</li>
+						<li>Metal sheets welding systems</li>
+					</Text>
+				</Paper>
+
+				<Text fz={20} mt={64} ml={90} c={"#f6f6f6"}>
+					Related Post
+				</Text>
+
+				<Grid ml={90} mt={30}>
+					<Grid.Col span={6}>
+						<Stack>
+							<Image src={WhiteBG} h={200} w={280} mt={44} />
+
+							<Text c={"#e4e8ed"} fz={20}>
+								Signal Isolation
+							</Text>
+							<Text w={280} c={"#ffffff"} fz={14} lineClamp={2}>
+								Libratherm has supplied various types of temp - erature controllers, thyristor power
+								controllers and control panels to the industries manufacturing Files, Diamond Tools,
+								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+								blades etc… The temperature of the electrical or fuel fired heating systems, used
+								for annealing, hardening, steam bluing and similar such processes, has been in use
+								for precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300,
+								PID-723, DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or
+								infrared non contact sensors.
+							</Text>
+							<UnstyledButton>
+								<Text fz={18} c={"#f6f6f6"}>
+									Read More
+								</Text>
+							</UnstyledButton>
+						</Stack>
+					</Grid.Col>
+
+					<Grid.Col span={6}>
+						<Stack>
+							<Image src={WhiteBG} h={200} w={280} mt={44} />
+
+							<Text c={"#e4e8ed"} fz={20}>
+								Signal Isolation
+							</Text>
+							<Text w={280} c={"#ffffff"} fz={14} lineClamp={2}>
+								Libratherm has supplied various types of temp - erature controllers, thyristor power
+								controllers and control panels to the industries manufacturing Files, Diamond Tools,
+								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+								blades etc… The temperature of the electrical or fuel fired heating systems, used
+								for annealing, hardening, steam bluing and similar such processes, has been in use
+								for precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300,
+								PID-723, DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or
+								infrared non contact sensors.
+							</Text>
+							<UnstyledButton>
+								<Text fz={18} c={"#f6f6f6"}>
+									Read More
+								</Text>
+							</UnstyledButton>
+						</Stack>
+					</Grid.Col>
+				</Grid>
 			</Paper>
 		</>
 	);
