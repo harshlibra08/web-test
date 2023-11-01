@@ -207,7 +207,7 @@ const ContactUs = (props: Props) => {
 				</Paper>
 			</Paper>
 			{/**Moble View */}
-			<Paper w={1440} h={1541} hiddenFrom="xs">
+			<Paper w={360} h={1541} hiddenFrom="xs">
 				<Text c={"#262728"} fz={10} fw={600} mt={56} ml={143}>
 					WORK WITH US
 				</Text>
@@ -221,7 +221,7 @@ const ContactUs = (props: Props) => {
 					precise control
 				</Text>
 
-				<Paper w={1440} h={1636} bg={"black"} mt={77} hiddenFrom="xs">
+				<Paper w={360} h={1636} bg={"black"} mt={77} hiddenFrom="xs">
 					<Stack ml={16} pt={28} maw={360}>
 						<Text fz={10} c={"#e4e8ed"}>
 							GET IN TOUCH
