@@ -57,7 +57,7 @@ const PrimaryButton = ({ ...props }: ButtonProps) => (
 const CartPage = (props: Props) => {
 	return (
 		<>
-			<Paper w={1440} h={784} mt={30} visibleFrom="xs">
+			<Paper w={1440} h={784} mt={30} visibleFrom="md">
 				<Text fz={34} fw={600} c={"#262728"} mt={123} ml={114}>
 					Cart
 				</Text>
@@ -263,7 +263,7 @@ const CartPage = (props: Props) => {
 			</Paper>
 
 			{/**Mobile View */}
-			<Paper w={1440} h={784} mt={30} hiddenFrom="xs">
+			<Paper w={360} h={784} mt={30} hiddenFrom="xs">
 				<Text fz={20} fw={600} c={"#262728"} mt={24} ml={16}>
 					Cart
 				</Text>
@@ -380,6 +380,204 @@ const CartPage = (props: Props) => {
 						</UnstyledButton>
 					</Stack>
 				</Paper>
+			</Paper>
+
+			{/**Tablet */}
+			<Paper w={768} h={1084} mt={30} visibleFrom="xs" hiddenFrom="md">
+				<Text fz={34} fw={600} c={"#262728"} mt={123} ml={90}>
+					Cart
+				</Text>
+				<Group>
+					<Checkbox
+						fz={16}
+						fw={600}
+						defaultChecked
+						label="3/3 Items Selected"
+						ml={90}
+						mt={27}
+						c="#212121"
+					/>
+					<UnstyledButton mt={27} ml={200}>
+						<Text fz={12} c="#777" fw={400}>
+							REMOVE
+						</Text>
+					</UnstyledButton>
+					<Divider orientation="vertical" size={"md"} mt={27} />
+					<UnstyledButton mt={27}>
+						<Text c="#777" fz={12} fw={400}>
+							MOVE TO WISHLIST
+						</Text>
+					</UnstyledButton>
+				</Group>
+				<Divider orientation="horizontal" size={"sm"} mt={18} ml={90} w={588} />
+
+				<Group>
+					<Stack>
+						<Group ml={90} mt={17}>
+							<Text fz={12} fw={600} c={"#424242"}>
+								PRODUCT
+							</Text>
+							<Text fz={12} fw={600} c={"#424242"} ml={230}>
+								PRICE
+							</Text>
+							<Text fz={12} fw={600} c={"#424242"} ml={50}>
+								QUANTITY
+							</Text>
+							<Text fz={12} fw={600} c={"#424242"} ml={30}>
+								SUBTOTAL
+							</Text>
+						</Group>
+						<Paper withBorder w={588} h={155} ml={90} mt={14}>
+							<Group align="flex-start" ml={8} gap={0}>
+								<Checkbox defaultChecked c="#212121" size="16px" mt={66} ml={8} />
+								<Image
+									src={Panel}
+									h={98}
+									w={75}
+									mt={27}
+									ml={12}
+									style={{ background: "#F1F1F1" }}
+								/>
+								<Stack gap={"xs"} mt={27}>
+									<Text w={134} c="#414141" fz={14} fw={600} ml={30}>
+										Three Phase Thyristor Power Controller
+									</Text>
+									<Text c="#e83214" fz={12} fw={600} ml={30}>
+										POW-3-PA-CL
+									</Text>
+								</Stack>
+								<Text c="#262728" ml={16} fw={700} size="sm" mt={68}>
+									₹12,600
+								</Text>
+
+								<ActionIcon variant="default" size="xs" aria-label="Minus" mt={67} ml={60}>
+									<IconMinus style={{ width: rem(12) }} stroke={1.5} />
+								</ActionIcon>
+
+								<ActionIcon variant="default" size="xs" aria-label="Plus" mt={67}>
+									<IconPlus style={{ width: rem(12) }} stroke={1.5} />
+								</ActionIcon>
+								<Text c="#262728" fw={700} size="sm" ml={70} mt={68}>
+									₹12,600
+								</Text>
+							</Group>
+						</Paper>
+						<Paper withBorder w={588} h={155} ml={90} mt={14}>
+							<Group align="flex-start" ml={8} gap={0}>
+								<Checkbox defaultChecked c="#212121" size="16px" mt={66} ml={8} />
+								<Image
+									src={Panel}
+									h={98}
+									w={75}
+									mt={27}
+									ml={12}
+									style={{ background: "#F1F1F1" }}
+								/>
+								<Stack gap={"xs"} mt={27}>
+									<Text w={134} c="#414141" fz={14} fw={600} ml={30}>
+										Three Phase Thyristor Power Controller
+									</Text>
+									<Text c="#e83214" fz={12} fw={600} ml={30}>
+										POW-3-PA-CL
+									</Text>
+								</Stack>
+								<Text c="#262728" ml={16} fw={700} size="sm" mt={68}>
+									₹12,600
+								</Text>
+
+								<ActionIcon variant="default" size="xs" aria-label="Minus" mt={67} ml={60}>
+									<IconMinus style={{ width: rem(12) }} stroke={1.5} />
+								</ActionIcon>
+
+								<ActionIcon variant="default" size="xs" aria-label="Plus" mt={67}>
+									<IconPlus style={{ width: rem(12) }} stroke={1.5} />
+								</ActionIcon>
+								<Text c="#262728" fw={700} size="sm" ml={70} mt={68}>
+									₹12,600
+								</Text>
+							</Group>
+						</Paper>
+						<Paper withBorder w={588} h={155} ml={90} mt={14}>
+							<Group align="flex-start" ml={8} gap={0}>
+								<Checkbox defaultChecked c="#212121" size="16px" mt={66} ml={8} />
+								<Image
+									src={Panel}
+									h={98}
+									w={75}
+									mt={27}
+									ml={12}
+									style={{ background: "#F1F1F1" }}
+								/>
+								<Stack gap={"xs"} mt={27}>
+									<Text w={134} c="#414141" fz={14} fw={600} ml={30}>
+										Three Phase Thyristor Power Controller
+									</Text>
+									<Text c="#e83214" fz={12} fw={600} ml={30}>
+										POW-3-PA-CL
+									</Text>
+								</Stack>
+								<Text c="#262728" ml={16} fw={700} size="sm" mt={68}>
+									₹12,600
+								</Text>
+
+								<ActionIcon variant="default" size="xs" aria-label="Minus" mt={67} ml={60}>
+									<IconMinus style={{ width: rem(12) }} stroke={1.5} />
+								</ActionIcon>
+
+								<ActionIcon variant="default" size="xs" aria-label="Plus" mt={67}>
+									<IconPlus style={{ width: rem(12) }} stroke={1.5} />
+								</ActionIcon>
+								<Text c="#262728" fw={700} size="sm" ml={70} mt={68}>
+									₹12,600
+								</Text>
+							</Group>
+						</Paper>
+					</Stack>
+					<Paper withBorder w={588} mt={30} h={350} ml={90} bg={"#f4f4f4"}>
+						<Stack>
+							<Text c={"#212121"} fz={16} fw={600} ml={30} mt={24}>
+								Cart Summary
+							</Text>
+							<Group>
+								<Text c={"#616161"} fz={14} fw={600} mt={18} ml={30} w={57}>
+									Subtotal
+								</Text>
+								<Text c="#3E3E3E" fz={14} fw={700} mt={18} ml={391} w={51}>
+									₹37000
+								</Text>
+							</Group>
+							<Group mt={20}>
+								<Text c={"#616161"} fz={14} fw={600} ml={30} w={57}>
+									Shipping:
+								</Text>
+								<Text c={"#3E3E3E"} fz={14} fw={700} ml={391} w={51}>
+									₹500
+								</Text>
+							</Group>
+							<Divider size={"sm"} mx={20}></Divider>
+							<Group>
+								<Text c={"#212121"} fz={16} fw={600} ml={30}>
+									Total Amount
+								</Text>
+								<Text c={"#3E3E3E"} fz={16} fw={700} ml={340}>
+									₹37500
+								</Text>
+							</Group>
+						</Stack>
+						<Stack align="center">
+							<OptionsButton w={419} h={40} mt={30} tt={"uppercase"}>
+								<Text c="#fff" fz={12} fw={600}>
+									proceed to checkout
+								</Text>
+							</OptionsButton>
+							<UnstyledButton>
+								<Text c="#3e3e3e" fz={12} w={419} fw={600} mt={10} ml={290}>
+									CONTINUE SHOPPING
+								</Text>
+							</UnstyledButton>
+						</Stack>
+					</Paper>
+				</Group>
 			</Paper>
 		</>
 	);

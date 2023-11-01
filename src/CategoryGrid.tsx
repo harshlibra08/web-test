@@ -217,75 +217,11 @@ const CategoryGrid = (props: Props) => {
 			</Paper>
 
 			{/**Tablet */}
-			<Paper w={768} h={800} visibleFrom="xs" hiddenFrom="md">
+			<Paper w={768} h={400} visibleFrom="xs" hiddenFrom="md">
 				<Text ml={114} fz={24} fw={600} c={"#292929"} mt={89}>
 					Categories
 				</Text>
 				<Grid columns={4} ml={111}>
-					<Grid.Col span={1} mt={48}>
-						<Card w={70} h={70} bg={"#f7f7f7"}>
-							<Image src={Panel} />
-						</Card>
-						<Text fz={10} fw={600} c={"#555459"} w={55} ta={"center"} mt={8}>
-							Digital Indicator
-						</Text>
-					</Grid.Col>
-					<Grid.Col span={1} mt={48}>
-						<Card w={70} h={70} bg={"#f7f7f7"}>
-							<Image src={Panel} />
-						</Card>
-						<Text fz={10} fw={600} c={"#555459"} w={55} ta={"center"} mt={8}>
-							Digital Indicator
-						</Text>
-					</Grid.Col>
-					<Grid.Col span={1} mt={48}>
-						<Card w={70} h={70} bg={"#f7f7f7"}>
-							<Image src={Panel} />
-						</Card>
-						<Text fz={10} fw={600} c={"#555459"} w={55} ta={"center"} mt={8}>
-							Digital Indicator
-						</Text>
-					</Grid.Col>
-					<Grid.Col span={1} mt={48}>
-						<Card w={70} h={70} bg={"#f7f7f7"}>
-							<Image src={Panel} />
-						</Card>
-						<Text fz={10} fw={600} c={"#555459"} w={55} ta={"center"} mt={8}>
-							Digital Indicator
-						</Text>
-					</Grid.Col>
-					<Grid.Col span={1} mt={48}>
-						<Card w={70} h={70} bg={"#f7f7f7"}>
-							<Image src={Panel} />
-						</Card>
-						<Text fz={10} fw={600} c={"#555459"} w={55} ta={"center"} mt={8}>
-							Digital Indicator
-						</Text>
-					</Grid.Col>
-					<Grid.Col span={1} mt={48}>
-						<Card w={70} h={70} bg={"#f7f7f7"}>
-							<Image src={Panel} />
-						</Card>
-						<Text fz={10} fw={600} c={"#555459"} w={55} ta={"center"} mt={8}>
-							Digital Indicator
-						</Text>
-					</Grid.Col>
-					<Grid.Col span={1} mt={48}>
-						<Card w={70} h={70} bg={"#f7f7f7"}>
-							<Image src={Panel} />
-						</Card>
-						<Text fz={10} fw={600} c={"#555459"} w={55} ta={"center"} mt={8}>
-							Digital Indicator
-						</Text>
-					</Grid.Col>
-					<Grid.Col span={1} mt={48}>
-						<Card w={70} h={70} bg={"#f7f7f7"}>
-							<Image src={Panel} />
-						</Card>
-						<Text fz={10} fw={600} c={"#555459"} w={55} ta={"center"} mt={8}>
-							Digital Indicator
-						</Text>
-					</Grid.Col>
 					<Grid.Col span={1} mt={48}>
 						<Card w={70} h={70} bg={"#f7f7f7"}>
 							<Image src={Panel} />

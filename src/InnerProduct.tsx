@@ -41,7 +41,7 @@ const InnerProduct = (props: Props) => {
 
 	return (
 		<>
-			<Paper w={1440} h={3686} mt={30} visibleFrom="xs">
+			<Paper w={1440} h={3686} mt={30} visibleFrom="md">
 				<Grid>
 					<Grid.Col span={6}>
 						<Image
@@ -88,7 +88,7 @@ const InnerProduct = (props: Props) => {
 					</Grid.Col>
 					<Grid.Col span={6}>
 						<Text size="24px" w={468} fw={600} ml={98} mt={44} c="#292929">
-							Three Phase Thyristor Power Controller – POW-3-PA{" "}
+							Three Phase Thyristor Power Controller – POW-3-PA
 						</Text>
 						<Text c="#777" fz={10} fw={400} ml={98} mt={4}>
 							Digital Indicator : Category
@@ -634,7 +634,7 @@ const InnerProduct = (props: Props) => {
 					</Table>
 				</Group>
 			</Paper>
-			<Paper bg={"#f4f4f4"} w={1440} h={1040} visibleFrom="xs">
+			<Paper bg={"#f4f4f4"} w={1440} h={1040} visibleFrom="md">
 				<Box>
 					<Text ta="center" c="#292929" fz={32} fw={600} pt={69}>
 						Compare the models
@@ -804,7 +804,7 @@ const InnerProduct = (props: Props) => {
 					</Group>
 				</ScrollArea>
 			</Paper>
-			<Paper w={1440} h={864} visibleFrom="xs">
+			<Paper w={1440} h={864} visibleFrom="md">
 				<Box>
 					<Text c="#292929" size="xl" fw={600} ta="center" pt={81}>
 						Related Products
@@ -1856,6 +1856,850 @@ const InnerProduct = (props: Props) => {
 						</Table.Tr>
 					</Table.Tbody>
 				</Table>
+			</Paper>
+
+			{/**Tablet */}
+			<Paper w={768} h={4600} mt={30} visibleFrom="xs" hiddenFrom="md">
+				<Grid>
+					<Grid.Col span={12}>
+						<Image
+							src={RectangleGreyLeft}
+							alt="Vision"
+							h={639}
+							w={768}
+							pos="absolute"
+							pl={0}
+							left={0}
+						/>
+						<Image
+							src={Panel}
+							alt="Vision"
+							w={256.221}
+							h={327}
+							pos={"absolute"}
+							left={256}
+							mt={114}
+						/>
+						<Image src={PanelBg} alt="Vision" w={62} h={60} pos={"absolute"} left={282} mt={473} />
+						<Image
+							src={PanelFront}
+							alt="Vision"
+							w={62}
+							h={60}
+							pos={"absolute"}
+							left={282}
+							mt={473}
+						/>
+
+						<Image src={PanelBg} alt="Vision" w={53} h={60} pos={"absolute"} left={362} mt={473} />
+						<Image src={Panel2} alt="Vision" w={53} h={60} pos={"absolute"} left={362} mt={473} />
+						<Image src={PanelBg} alt="Vision" w={62} h={60} pos={"absolute"} left={432} mt={473} />
+						<Image
+							src={PanelFront}
+							alt="Vision"
+							w={62}
+							h={60}
+							pos={"absolute"}
+							left={432}
+							mt={473}
+						/>
+					</Grid.Col>
+					<Grid.Col span={12} mt={639}>
+						<Text fz={24} fw={600} ml={98} mt={44} c="#292929">
+							Three Phase Thyristor Power Controller – POW-3-PA{" "}
+						</Text>
+						<Text c="#777" fz={12} fw={400} ml={98} mt={4}>
+							Digital Indicator : Category
+						</Text>
+						<Text c="#262728" fz={20} fw={600} ml={98} mt={24}>
+							₹ 4000
+						</Text>
+						<Text c="#FF6951" fz={12} fw={400} ml={98} mt={4}>
+							Prices are inclusive of Delivery Charges.
+						</Text>
+						<Divider my={24} ml={98} w={558} h={0.5}></Divider>
+						<Text c="#555459" fz={12} fw={300} ml={98} mt={24}>
+							Configuration: (1 AI + 1 AO )<br /> Size: 96 x 96 x 75
+							<br /> Part No: 1304
+						</Text>
+						<Group ml={98} mt={24} w={550}>
+							<Select
+								label="Select Part Number"
+								placeholder="Choose an option"
+								data={[
+									{ value: "react", label: "React" },
+									{ value: "ng", label: "Angular" },
+									{ value: "svelte", label: "Svelte" },
+									{ value: "vue", label: "Vue" },
+								]}
+							></Select>
+							<Select
+								ml={24}
+								label="Select Relay Card"
+								placeholder="CPC"
+								data={[
+									{ value: "react", label: "React" },
+									{ value: "ng", label: "Angular" },
+									{ value: "svelte", label: "Svelte" },
+									{ value: "vue", label: "Vue" },
+								]}
+							></Select>
+						</Group>
+						<Group ml={98} mt={24} w={500}>
+							<Text c="#555459" fz={12}>
+								Quantity
+							</Text>
+							<ActionIcon size={42} variant="default">
+								–
+							</ActionIcon>
+							<NumberInput
+								hideControls
+								value={value}
+								// onChange={(val) => setValue(val)}
+								handlersRef={handlers}
+								max={10}
+								min={0}
+								step={1}
+								styles={{ input: { width: rem(20), textAlign: "center" } }}
+							/>
+							<ActionIcon size={42} variant="default">
+								+
+							</ActionIcon>
+							<PrimaryButton>Add to Cart</PrimaryButton>
+							<OptionsButton>Buy Now</OptionsButton>
+						</Group>
+						<Text fw={400} size={"16px"} c="#262728" ml={98} w={500} mt={33}>
+							{" "}
+							Key Features
+							<List mt={16}>
+								<List.Item
+									style={{
+										fontSize: "12px",
+										fontWeight: "400",
+										color: "#555459",
+									}}
+								>
+									Accepts thermocouple, RTD(Pt-100), Infrared pyrometer.
+								</List.Item>
+								<List.Item
+									style={{
+										fontSize: "12px",
+										fontWeight: "400",
+										color: "#555459",
+									}}
+								>
+									Both switching and linear PID control outputs.
+								</List.Item>
+								<List.Item
+									style={{
+										fontSize: "12px",
+										fontWeight: "400",
+										color: "#555459",
+									}}
+								>
+									Servo start from the process temperature.{" "}
+								</List.Item>
+								<List.Item
+									style={{
+										fontSize: "12px",
+										fontWeight: "400",
+										color: "#555459",
+									}}
+								>
+									User programmable 1-10 different patterns of ramp/soak steps.{" "}
+								</List.Item>
+								<List.Item
+									style={{
+										fontSize: "12px",
+										fontWeight: "400",
+										color: "#555459",
+									}}
+								>
+									Retention and auto-execution of program in case of power failure.{" "}
+								</List.Item>
+								<List.Item
+									style={{
+										fontSize: "12px",
+										fontWeight: "400",
+										color: "#555459",
+									}}
+								>
+									Facility to use as PID and ON / OFF controller.{" "}
+								</List.Item>
+							</List>
+						</Text>
+					</Grid.Col>
+				</Grid>
+				<Paper w={768} h={63} withBorder mt={15}>
+					<Group wrap="nowrap" ml={55} gap={72} pt={22}>
+						<UnstyledButton>
+							<Text fz={12} c="#292929" fw={400}>
+								Description
+							</Text>
+						</UnstyledButton>
+						<UnstyledButton>
+							{" "}
+							<Text fz={12} c="#292929" fw={400}>
+								Specifications
+							</Text>{" "}
+						</UnstyledButton>
+						<UnstyledButton>
+							{" "}
+							<Text fz={12} c="#292929" fw={400}>
+								Input and Output Range
+							</Text>
+						</UnstyledButton>
+						<UnstyledButton>
+							{" "}
+							<Text fz={12} c="#292929" fw={400}>
+								Ordering Information
+							</Text>
+						</UnstyledButton>
+					</Group>
+				</Paper>
+
+				<Grid>
+					<Grid.Col span={12}>
+						<Image src={InnerYellowBg} bg={"white"} w={475} h={554} pos={"absolute"} ml={293} />
+
+						<Image src={Category} alt="Sample" w={588} h={433} pos={"absolute"} mt={61} ml={90} />
+					</Grid.Col>
+					<Grid.Col span={12} mt={463}>
+						<Text
+							fz={32}
+							fw={600}
+							ml={90}
+							mt={105}
+							style={{ lineHeight: "51.2px", color: "#292929" }}
+						>
+							Three Phase Thyristor Power Controller – POW-3-PA
+						</Text>
+
+						<Text
+							h={331}
+							w={664}
+							style={{ color: "#555459" }}
+							fz={14}
+							fw={400}
+							mb={40}
+							mt={32}
+							ml={90}
+						>
+							Libratherm offers Microcontroller based multiple Ramp/Soak Programmable PID
+							Temperature Controller Model PRC-967 which is designed to improve reliability,
+							accuracy, and control for all processing applications. It features Ramp and Soak
+							functions (the capability to control the temperature and its rate of change over a
+							predetermined time span).
+							<br />
+							<br />
+							This PID Programme Controller PRC-967 offers a single profile of 16 steps that can be
+							programmed into the memory with the user-friendly membrane keyboard. Separate displays
+							are provided to monitor simultaneously; the Process temperature, Set temperature, and
+							the Program number. They can also be used as single set point control when the profile
+							control is not desired. They accept user-selectable standard temperature sensors like
+							K, R, S, and B type thermocouples
+							<br />
+							<br />
+							The Profile Controller offers both switching outputs in the form of SSR driver or
+							Triac to drive external single or three-phase Solid-state relays or load contactors
+							and linear analog control outputs in the form of (4-20)mA or (0-5)volt or (0-10)VDC,
+							which can be used to control heater power through Thyristor Power Regulators (for an
+							electrical heating system) or to control the position of a modulating motor valve (for
+							oil or gas-fired heating systems). The analog outputs can be directly connected to
+							Libratherm make single-phase/three-phase SCR based phase angle fired power
+							controllers, which are ideally suitable for both resistive and inductive heating load.
+						</Text>
+					</Grid.Col>
+				</Grid>
+
+				<Paper mt={144} ml={90} w={768}>
+					<Text fz={24} w={768} h={33} fw={600} c="#292929">
+						Specifications
+					</Text>
+					<Table w={588} withRowBorders={false} mt={30}>
+						<Table.Thead>
+							<Table.Tr>
+								<Table.Th fz={12} c={"#555459"} fw={600} w={139}>
+									Paramenters
+								</Table.Th>
+								<Table.Th fz={12} c={"#555459"} fw={600}>
+									Description{" "}
+								</Table.Th>
+							</Table.Tr>
+						</Table.Thead>
+						<Table.Tbody>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									Item
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									(T + RH) Sensor (OEM version)
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									Model
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									HS – 440 (Only For Humidity)
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									Input Sensor
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									For Temp.: Class A RTD Pt-100 element (Hayashi Denko – Japan)For %Rh: Honeywell
+									make Humidity sensor HIH-4000
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									Sensor Output
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									For Temperature Pt-100: 84.27 Ohms to 123.24 Ohms (-40 to 60 °C) (Alpha =
+									0.00385)For %Rh: 0.0Volt @ 0% Rh and 3.33Vdc @ 100%Rh or0 to 1Vdc Linear
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									Sensor Supply
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									+/- 1 °C for Thermocouple throughout the range (Software linearized)
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									Humidity Range
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									0 to 100% Rh @ 0 to 50 °C0 to 90% @ 0 to 60 °C0 to 90% @ -10 to 50 °C
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									Humidity Accuracy
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									+/- 3% @ 25 °C / 50 %Rh
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									Type
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									+/- 3% @ 25 °C / 50 %Rh
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									Size
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									20 mm dia. x 75 mm long
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									Cable / Enclosure
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									2 to 5 meter PVC/PVC insulated multi-core cable with pin lugs / SS plastic.
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									Precautions for use
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									Avoid condensation and drench. Avoid exposure to Saline, Inorganic and Organic
+									Gas.g
+								</Table.Td>
+							</Table.Tr>
+						</Table.Tbody>
+					</Table>
+					<Group mt={102} justify="space-between">
+						<Text fz={24} h={33} fw={600} c="#292929">
+							Input and Output Range
+						</Text>
+						<Autocomplete
+							placeholder="Search for technical Info"
+							leftSection={<IconSearch size="10px" stroke={1.5} color="#555459" />}
+							data={[]}
+							radius={32}
+							w={202}
+							h={36}
+							mr={180}
+							styles={{
+								input: {
+									backgroundColor: "#F0F0F0",
+									fontSize: 10,
+									border: "none",
+								},
+							}}
+						/>
+					</Group>
+					<Table striped withTableBorder w={588} mt={32} h={405} verticalSpacing={"sm"}>
+						<Table.Thead>
+							<Table.Tr>
+								<Table.Th fz={14} c={"#555459"} fw={600}>
+									Type
+								</Table.Th>
+								<Table.Th fz={14} c={"#555459"} fw={600}>
+									Input
+								</Table.Th>
+								<Table.Th fz={14} c={"#555459"} fw={600} ta={"end"} pr={32}>
+									Range (°C)
+								</Table.Th>
+							</Table.Tr>
+						</Table.Thead>
+						<Table.Tbody>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									A0
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									User selectable K,R,S,B,
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"} ta={"end"} pr={45}>
+									As below
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									A1
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									K type : Cr/Al thermocouple
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"} pr={45} ta={"end"}>
+									0 to 1372
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									A2
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									R type : Pt/PtRh13% thermocouple
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"} pr={45} ta={"end"}>
+									0 to 1768
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									A3
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									S type : Pt/PtRh10% - thermocouple
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"} pr={45} ta={"end"}>
+									0 to 1768
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									A4
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									R type : Pt/PtRh13% thermocouple
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"} pr={45} ta={"end"}>
+									0 to 1768
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									A5
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									R type : Pt/PtRh13% thermocouple
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"} pr={45} ta={"end"}>
+									0 to 1768
+								</Table.Td>
+							</Table.Tr>
+						</Table.Tbody>
+					</Table>
+
+					<Group mt={102} justify="space-between">
+						<Text fz={24} h={33} fw={600} c="#292929">
+							Ordering Information
+						</Text>
+						<Autocomplete
+							placeholder="Search for technical Info"
+							leftSection={<IconSearch size="10px" stroke={1.5} color="#555459" />}
+							data={[]}
+							radius={32}
+							w={202}
+							h={36}
+							mr={180}
+							styles={{
+								input: {
+									backgroundColor: "#F0F0F0",
+									fontSize: 10,
+									border: "none",
+								},
+							}}
+						/>
+					</Group>
+					<Table
+						striped
+						withTableBorder
+						w={588}
+						h={405}
+						verticalSpacing={"sm"}
+						mt={29}
+						withColumnBorders
+					>
+						<Table.Thead>
+							<Table.Tr>
+								<Table.Th fz={14} c={"#555459"} fw={600}>
+									Type
+								</Table.Th>
+								<Table.Th fz={14} c={"#555459"} fw={600}>
+									Specifications
+								</Table.Th>
+								<Table.Th fz={14} c={"#555459"} fw={600} ta={"end"} pr={32}>
+									Part No.
+								</Table.Th>
+							</Table.Tr>
+						</Table.Thead>
+						<Table.Tbody>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									A0
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									Input from R, S, B t/c with (SSR + 0-5V or (4-20)mA) control output + High or Low
+									and End of Profile Relay outputs.For High Temperature Furnace control (up to 1700
+									°C).
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"} ta={"end"} pr={45}>
+									1703-1
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									A1
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									Input from R, S, B t/c with (SSR + 0-5V or (4-20)mA) control output + High or Low
+									and End of Profile Relay outputs.For High Temperature Furnace control (up to 1700
+									°C).
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"} pr={45} ta={"end"}>
+									1703-1
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									A2
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									Input from R, S, B t/c with (SSR + 0-5V or (4-20)mA) control output + High or Low
+									and End of Profile Relay outputs.For High Temperature Furnace control (up to 1700
+									°C).
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"} pr={45} ta={"end"}>
+									1703-1
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									A3
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									Input from R, S, B t/c with (SSR + 0-5V or (4-20)mA) control output + High or Low
+									and End of Profile Relay outputs.For High Temperature Furnace control (up to 1700
+									°C).
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"} pr={45} ta={"end"}>
+									1703-1
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									A4
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"}>
+									Input from R, S, B t/c with (SSR + 0-5V or (4-20)mA) control output + High or Low
+									and End of Profile Relay outputs.For High Temperature Furnace control (up to 1700
+									°C).
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"} pr={45} ta={"end"}>
+									1703-1
+								</Table.Td>
+							</Table.Tr>
+							<Table.Tr>
+								<Table.Td fz={12} c={"#555459"} fw={600}>
+									A5
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"} w={877}>
+									Input from R, S, B t/c with (SSR + 0-5V or (4-20)mA) control output + High or Low
+									and End of Profile Relay outputs.For High Temperature Furnace control (up to 1700
+									°C).
+								</Table.Td>
+								<Table.Td fz={12} fw={400} c={"#828282"} pr={45} ta={"end"}>
+									1703-1
+								</Table.Td>
+							</Table.Tr>
+						</Table.Tbody>
+					</Table>
+				</Paper>
+			</Paper>
+			<Paper bg={"#f4f4f4"} w={768} h={1040} visibleFrom="xs" hiddenFrom="md">
+				<Box>
+					<Text ta="center" c="#292929" fz={32} fw={600} pt={69}>
+						Compare the models
+					</Text>
+					<Text ta="center" c="#828282" fz={16} fw={400}>
+						Compare with similar items
+					</Text>
+				</Box>
+				<ScrollArea w={768} h={860} onScrollPositionChange={onScrollPositionChange}>
+					<Group wrap="nowrap" ta="center">
+						<Card bg={"#FFF"} w={273} h={709} ml={90} mt={64}>
+							<Text ta="left" fz={12} c="#555459" fw={700}>
+								Three Phase Thyristor Power Controller – POW-3-PA
+							</Text>
+							<Divider mt={5}></Divider>
+							<Image src={Panel} w={131} h={167} mt={32} ml={70} />
+							<Stack ta={"left"}>
+								<Text c="#555459" fz={12} fw={600} mt={32}>
+									Key Features
+								</Text>
+								<Text c="#555459" fz={12} fw={600}>
+									Design
+								</Text>
+								<Text c="#828282" fz={12} fw={400} mt={-10}>
+									Microcontroller based with 12 bit ADC and dual 12 bit DAC
+								</Text>
+								<Divider></Divider>
+								<Text c="#555459" fz={12} fw={600}>
+									Input
+								</Text>
+								<Text c="#828282" fz={12} fw={400} mt={-10}>
+									Microcontroller based with 12 bit ADC
+								</Text>
+								<Divider></Divider>
+								<Text c="#555459" fz={12} fw={600}>
+									Range
+								</Text>
+								<Text c="#828282" fz={12} fw={400} mt={-10}>
+									Microcontroller based with 12 bit ADC and dual 12 bit DAC
+								</Text>
+								<Divider></Divider>
+								<Text c="#555459" fz={12} fw={600}>
+									Resolution
+								</Text>
+								<Text c="#828282" fz={12} fw={400} mt={-10}>
+									Microcontroller based with 12 bit ADC and dual 12 bit DAC
+								</Text>
+							</Stack>
+						</Card>
+						<Card bg={"#FFF"} w={273} h={709} ml={20} mt={64}>
+							<Text ta="left" fz={12} c="#555459" fw={700}>
+								Three Phase Thyristor Power Controller – POW-3-PA
+							</Text>
+							<Divider mt={5}></Divider>
+							<Image src={Model2} w={167} h={167} mt={32} ml={50} />
+							<Stack ta={"left"}>
+								<Text c="#555459" fz={12} fw={600} mt={32}>
+									Key Features
+								</Text>
+								<Text c="#555459" fz={12} fw={600}>
+									Design
+								</Text>
+								<Text c="#828282" fz={12} fw={400} mt={-10}>
+									Microcontroller based with 12 bit ADC and dual 12 bit DAC
+								</Text>
+								<Divider></Divider>
+								<Text c="#555459" fz={12} fw={600}>
+									Input
+								</Text>
+								<Text c="#828282" fz={12} fw={400} mt={-10}>
+									Microcontroller based with 12 bit ADC
+								</Text>
+								<Divider></Divider>
+								<Text c="#555459" fz={12} fw={600}>
+									Range
+								</Text>
+								<Text c="#828282" fz={12} fw={400} mt={-10}>
+									Microcontroller based with 12 bit ADC and dual 12 bit DAC
+								</Text>
+								<Divider></Divider>
+								<Text c="#555459" fz={12} fw={600}>
+									Resolution
+								</Text>
+								<Text c="#828282" fz={12} fw={400} mt={-10}>
+									Microcontroller based with 12 bit ADC and dual 12 bit DAC
+								</Text>
+							</Stack>
+						</Card>
+						<Card bg={"#FFF"} w={273} h={709} ml={20} mt={64}>
+							<Text ta="left" fz={12} c="#555459" fw={700}>
+								Three Phase Thyristor Power Controller – POW-3-PA
+							</Text>
+							<Divider mt={5}></Divider>
+							<Image src={Panel} w={131} h={167} mt={32} ml={70} />
+							<Stack ta={"left"}>
+								<Text c="#555459" fz={12} fw={600} mt={32}>
+									Key Features
+								</Text>
+								<Text c="#555459" fz={12} fw={600}>
+									Design
+								</Text>
+								<Text c="#828282" fz={12} fw={400} mt={-10}>
+									Microcontroller based with 12 bit ADC and dual 12 bit DAC
+								</Text>
+								<Divider></Divider>
+								<Text c="#555459" fz={12} fw={600}>
+									Input
+								</Text>
+								<Text c="#828282" fz={12} fw={400} mt={-10}>
+									Microcontroller based with 12 bit ADC
+								</Text>
+								<Divider></Divider>
+								<Text c="#555459" fz={12} fw={600}>
+									Range
+								</Text>
+								<Text c="#828282" fz={12} fw={400} mt={-10}>
+									Microcontroller based with 12 bit ADC and dual 12 bit DAC
+								</Text>
+								<Divider></Divider>
+								<Text c="#555459" fz={12} fw={600}>
+									Resolution
+								</Text>
+								<Text c="#828282" fz={12} fw={400} mt={-10}>
+									Microcontroller based with 12 bit ADC and dual 12 bit DAC
+								</Text>
+							</Stack>
+						</Card>
+						<Card bg={"#FFF"} w={273} h={709} ml={20} mt={64}>
+							<Text ta="left" fz={12} c="#555459" fw={700}>
+								Three Phase Thyristor Power Controller – POW-3-PA
+							</Text>
+							<Divider mt={5}></Divider>
+							<Image src={Model2} w={167} h={167} mt={32} ml={50} />
+							<Stack ta={"left"}>
+								<Text c="#555459" fz={12} fw={600} mt={32}>
+									Key Features
+								</Text>
+								<Text c="#555459" fz={12} fw={600}>
+									Design
+								</Text>
+								<Text c="#828282" fz={12} fw={400} mt={-10}>
+									Microcontroller based with 12 bit ADC and dual 12 bit DAC
+								</Text>
+								<Divider></Divider>
+								<Text c="#555459" fz={12} fw={600}>
+									Input
+								</Text>
+								<Text c="#828282" fz={12} fw={400} mt={-10}>
+									Microcontroller based with 12 bit ADC
+								</Text>
+								<Divider></Divider>
+								<Text c="#555459" fz={12} fw={600}>
+									Range
+								</Text>
+								<Text c="#828282" fz={12} fw={400} mt={-10}>
+									Microcontroller based with 12 bit ADC and dual 12 bit DAC
+								</Text>
+								<Divider></Divider>
+								<Text c="#555459" fz={12} fw={600}>
+									Resolution
+								</Text>
+								<Text c="#828282" fz={12} fw={400} mt={-10}>
+									Microcontroller based with 12 bit ADC and dual 12 bit DAC
+								</Text>
+							</Stack>
+						</Card>
+					</Group>
+				</ScrollArea>
+			</Paper>
+			<Paper w={768} h={1164} visibleFrom="xs" hiddenFrom="md">
+				<Text c="#292929" size="xl" fw={600} ta="center" pt={81}>
+					Related Products
+				</Text>
+				<Grid w={592} mt={24} hiddenFrom="md" visibleFrom="xs" ml={90}>
+					<Grid.Col span={6}>
+						<Card withBorder bg={"#f7f7f7"} h={460} w={273}>
+							<Card.Section>
+								<Text fz={14} fw={600} c={"#555459"} w={261} mt={24} ml={16}>
+									Three Phase Thyristor Power Controller – POW-3-PAA
+								</Text>
+								<Image src={Panel} w={137} h={173} ml={75} mt={35} />
+							</Card.Section>
+
+							<Text c={"#414141"} fz={20} mt={30} ta={"center"}>
+								₹12,600 – ₹14,700
+							</Text>
+							<Stack gap="xs" align="stretch" py={15}>
+								<OptionsButton tt={"uppercase"}>Select Options</OptionsButton>
+								<PrimaryButton>ADD TO WISHLIST</PrimaryButton>
+							</Stack>
+						</Card>
+					</Grid.Col>
+					<Grid.Col span={6}>
+						<Card withBorder bg={"#f7f7f7"} h={460} w={273}>
+							<Card.Section>
+								<Text fz={14} fw={600} c={"#555459"} w={261} mt={24} ml={16}>
+									Three Phase Thyristor Power Controller – POW-3-PAA
+								</Text>
+								<Image src={Panel} w={137} h={173} ml={75} mt={35} />
+							</Card.Section>
+
+							<Text c={"#414141"} fz={20} mt={30} ta={"center"}>
+								₹12,600 – ₹14,700
+							</Text>
+							<Stack gap="xs" align="stretch" py={15}>
+								<OptionsButton tt={"uppercase"}>Select Options</OptionsButton>
+								<PrimaryButton>ADD TO WISHLIST</PrimaryButton>
+							</Stack>
+						</Card>
+					</Grid.Col>
+					<Grid.Col span={6}>
+						<Card withBorder bg={"#f7f7f7"} h={460} w={273}>
+							<Card.Section>
+								<Text fz={14} fw={600} c={"#555459"} w={261} mt={24} ml={16}>
+									Three Phase Thyristor Power Controller – POW-3-PAA
+								</Text>
+								<Image src={Panel} w={137} h={173} ml={75} mt={35} />
+							</Card.Section>
+
+							<Text c={"#414141"} fz={20} mt={30} ta={"center"}>
+								₹12,600 – ₹14,700
+							</Text>
+							<Stack gap="xs" align="stretch" py={15}>
+								<OptionsButton tt={"uppercase"}>Select Options</OptionsButton>
+								<PrimaryButton>ADD TO WISHLIST</PrimaryButton>
+							</Stack>
+						</Card>
+					</Grid.Col>
+					<Grid.Col span={6}>
+						<Card withBorder bg={"#f7f7f7"} h={460} w={273}>
+							<Card.Section>
+								<Text fz={14} fw={600} c={"#555459"} w={261} mt={24} ml={16}>
+									Three Phase Thyristor Power Controller – POW-3-PAA
+								</Text>
+								<Image src={Panel} w={137} h={173} ml={75} mt={35} />
+							</Card.Section>
+
+							<Text c={"#414141"} fz={20} mt={30} ta={"center"}>
+								₹12,600 – ₹14,700
+							</Text>
+							<Stack gap="xs" align="stretch" py={15}>
+								<OptionsButton tt={"uppercase"}>Select Options</OptionsButton>
+								<PrimaryButton>ADD TO WISHLIST</PrimaryButton>
+							</Stack>
+						</Card>
+					</Grid.Col>
+				</Grid>
 			</Paper>
 		</>
 	);

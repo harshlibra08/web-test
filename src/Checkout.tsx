@@ -20,7 +20,7 @@ type Props = {};
 const Checkout = (props: Props) => {
 	return (
 		<>
-			<Paper w={1440} h={1500} visibleFrom="xs">
+			<Paper w={1440} h={1500} visibleFrom="md">
 				<Text fz={34} fw={600} c={"#262728"} mt={123} ml={114}>
 					Checkout
 				</Text>
@@ -106,16 +106,16 @@ const Checkout = (props: Props) => {
 						</Paper>
 					</Grid.Col>
 					<Grid.Col span={6}>
-						<Paper w={478} h={744} bg={"#F4F4F4"} ml={64}>
+						<Paper w={478} h={784} bg={"#F4F4F4"} ml={64}>
 							<Stack>
 								<Text fz={16} fw={600} ml={24} mt={24}>
 									Your Order
 								</Text>
-								<Group>
+								<Group justify="space-between">
 									<Text fz={14} fw={600} c={"#3e3e3e"} ml={24}>
 										Portable Thermometer - DTM-21 X1{" "}
 									</Text>
-									<Text fz={14} ml={143}>
+									<Text fz={14} mr={24}>
 										₹ 4,463
 									</Text>
 								</Group>
@@ -127,11 +127,11 @@ const Checkout = (props: Props) => {
 								</Text>
 								<Divider size={"sm"} mx={24}></Divider>
 
-								<Group>
+								<Group justify="space-between">
 									<Text fz={14} fw={600} c={"#3e3e3e"} ml={24}>
 										Portable Thermometer - DTM-21 X1{" "}
 									</Text>
-									<Text fz={14} ml={143}>
+									<Text fz={14} mr={24}>
 										₹ 4,463
 									</Text>
 								</Group>
@@ -142,29 +142,29 @@ const Checkout = (props: Props) => {
 									Select Probe: 1013
 								</Text>
 								<Divider size={"sm"} mx={24}></Divider>
-								<Group>
+								<Group justify="space-between">
 									<Text fz={14} fw={600} ml={24} c={"#616161"}>
 										Subtotal:
 									</Text>
-									<Text fz={14} ml={321}>
+									<Text fz={14} mr={24}>
 										₹ 4,463
 									</Text>
 								</Group>
 								<Divider size={"sm"} mx={24}></Divider>
-								<Group>
+								<Group justify="space-between">
 									<Text fz={14} fw={600} ml={24} c={"#616161"}>
 										Shipping:{" "}
 									</Text>
-									<Text fz={14} ml={321}>
+									<Text fz={14} mr={24}>
 										₹ 446
 									</Text>
 								</Group>
 								<Divider size={"sm"} mx={24}></Divider>
-								<Group>
+								<Group justify="space-between">
 									<Text fz={16} fw={600} ml={24}>
 										Total Amount
 									</Text>
-									<Text fz={16} ml={283} fw={700}>
+									<Text fz={16} mr={24} fw={700}>
 										₹ 446
 									</Text>
 								</Group>
@@ -178,17 +178,17 @@ const Checkout = (props: Props) => {
 									style={{ borderColor: "#02486B" }}
 								>
 									<Group>
-										<Image src={Paypal} w={27} h={38} ml={9.4} mt={12.8} />
-										<Stack gap={0} mt={16}>
-											<Text fz={12} fw={600} ml={5.5}>
+										<Image src={Paypal} w={27} h={38} ml={9.4} mt={8.8} />
+										<Stack gap={0}>
+											<Text fz={12} fw={600}>
 												Pay by Razorpay
 											</Text>
-											<Text fz={12} fw={400} c={"#828282"} ml={5.5}>
+											<Text fz={12} fw={400} c={"#828282"}>
 												Cards. Nonbanking, Wallet & UPI
 											</Text>
 										</Stack>
 									</Group>
-									<Text fz={12} c={"#555459"} fw={400} ml={8} mt={8}>
+									<Text fz={11} c={"#555459"} fw={400} w={412} ml={8} mt={11}>
 										Pay securely by Credit or Debit Card or Internet banking through Rzorpay.
 									</Text>
 								</Paper>
@@ -220,7 +220,7 @@ const Checkout = (props: Props) => {
 				</Grid>
 			</Paper>
 			{/**MOBILE VIEW */}
-			<Paper w={1440} h={1500} hiddenFrom="xs">
+			<Paper w={360} h={1500} hiddenFrom="xs">
 				<Text fz={20} fw={600} c={"#262728"} mt={24} ml={16}>
 					Checkout
 				</Text>
@@ -401,17 +401,224 @@ const Checkout = (props: Props) => {
 							}}
 						/>
 					</Stack>
-					<OptionsButton mt={18} tt={"uppercase"} mx={15} w={298}>
-						<Text c="#fff" size="xs" fw={600}>
-							place order
-						</Text>
-					</OptionsButton>
-					<UnstyledButton ml={114} mt={18}>
-						<Text c="#3e3e3e" size="xs" fw={600}>
-							RETURN TO CART
-						</Text>
-					</UnstyledButton>
+					<Stack align="stretch" ml={16} mr={16}>
+						<OptionsButton mt={18} tt={"uppercase"}>
+							<Text c="#fff" size="xs" fw={600}>
+								place order
+							</Text>
+						</OptionsButton>
+						<UnstyledButton tt={"uppercase"}>
+							<Text c="#3e3e3e" size="xs" fw={600} ta={"center"}>
+								return to cart
+							</Text>
+						</UnstyledButton>
+					</Stack>
 				</Paper>
+			</Paper>
+
+			{/**Tablet */}
+			<Paper w={768} h={2300} visibleFrom="xs" hiddenFrom="md">
+				<Text fz={32} fw={600} c={"#262728"} mt={123} ml={90}>
+					Checkout
+				</Text>
+				<Divider size={"lg"} color="#777" w={588} mx={90} mt={26}></Divider>
+				<Box bg={"#F8F9FA"} w={588} mx={90}>
+					<Group gap={0}>
+						<Text fz={12} mx={16} my={16}>
+							Returning Customer?{" "}
+						</Text>
+						<UnstyledButton>
+							<Text fz={12} td={"underline"}>
+								Click here to login
+							</Text>
+						</UnstyledButton>
+					</Group>
+				</Box>
+				<Divider size={"lg"} color="#777" mx={90} w={588} mt={24}></Divider>
+				<Box bg={"#F8F9FA"} mx={90} w={588}>
+					<Group gap={0}>
+						<Text fz={12} mx={16} my={16}>
+							Have a coupon?
+						</Text>
+						<UnstyledButton>
+							<Text fz={12} td={"underline"}>
+								Click here to enter your code
+							</Text>
+						</UnstyledButton>
+					</Group>
+				</Box>
+
+				<Grid mt={32} ml={90}>
+					<Grid.Col span={12}>
+						<Paper w={588} h={1100} withBorder>
+							<Text fz={16} fw={600} ml={16} mt={16} c={"#555459"}>
+								Personal Details
+							</Text>
+							<Stack>
+								<Group gap={24} mt={20} mx={16}>
+									<TextInput placeholder="First Name*" w={260}></TextInput>
+									<TextInput placeholder="Last Name*" w={260}></TextInput>
+								</Group>
+								<TextInput placeholder="Company Name (Optional)" w={544} ml={16}></TextInput>
+								<TextInput placeholder="Country" w={544} ml={16}></TextInput>
+							</Stack>
+							<Text fz={16} fw={600} ml={16} mt={32} c={"#555459"}>
+								Address
+							</Text>
+							<Stack>
+								<TextInput
+									placeholder="House number and street name"
+									w={544}
+									ml={16}
+									mt={20}
+								></TextInput>
+								<TextInput
+									placeholder="Apartment, suite, unit etc (optional)"
+									w={544}
+									ml={16}
+								></TextInput>
+								<TextInput placeholder="Town / City*" w={544} ml={16}></TextInput>
+								<TextInput placeholder="State / County*" w={544} ml={16}></TextInput>
+								<TextInput placeholder="Postal / Zip Code*" w={544} ml={16}></TextInput>
+							</Stack>
+							<Text fz={16} fw={600} ml={16} mt={32} c={"#555459"}>
+								Contact Details{" "}
+							</Text>
+							<Stack>
+								<TextInput placeholder="Phone*" w={544} ml={16} mt={20}></TextInput>
+								<TextInput placeholder="Email Address*" w={544} ml={16}></TextInput>
+								<TextInput placeholder="gst (optional)" w={544} ml={16}></TextInput>
+							</Stack>
+							<Text fz={16} fw={600} ml={16} mt={32} c={"#555459"}>
+								Account Details
+							</Text>
+							<Stack>
+								<TextInput placeholder="User Name*" w={544} ml={16} mt={20}></TextInput>
+								<TextInput placeholder="Create Password**" w={544} ml={16}></TextInput>
+								<Checkbox mt={24} label="Ship to a different address?" radius="xs" ml={16} />
+								<Textarea
+									ml={16}
+									mr={16}
+									mt={20}
+									variant="filled"
+									placeholder="Order notes (Optional)"
+								/>
+							</Stack>
+						</Paper>
+					</Grid.Col>
+					<Grid.Col span={12}>
+						<Paper w={588} h={784} bg={"#F4F4F4"}>
+							<Stack>
+								<Text fz={16} fw={600} ml={24} mt={24}>
+									Your Order
+								</Text>
+								<Group justify="space-between">
+									<Text fz={14} fw={600} c={"#3e3e3e"} ml={24}>
+										Portable Thermometer - DTM-21 X1{" "}
+									</Text>
+									<Text fz={14} mr={24}>
+										₹ 4,463
+									</Text>
+								</Group>
+								<Text fz={12} fw={600} ml={24}>
+									Select Part: 1001-1
+								</Text>
+								<Text fz={12} fw={600} ml={24}>
+									Select Probe: 1013
+								</Text>
+								<Divider size={"sm"} mx={24}></Divider>
+
+								<Group justify="space-between">
+									<Text fz={14} fw={600} c={"#3e3e3e"} ml={24}>
+										Portable Thermometer - DTM-21 X1{" "}
+									</Text>
+									<Text fz={14} mr={24}>
+										₹ 4,463
+									</Text>
+								</Group>
+								<Text fz={12} fw={600} ml={24}>
+									Select Part: 1001-1
+								</Text>
+								<Text fz={12} fw={600} ml={24}>
+									Select Probe: 1013
+								</Text>
+								<Divider size={"sm"} mx={24}></Divider>
+								<Group justify="space-between">
+									<Text fz={14} fw={600} ml={24} c={"#616161"}>
+										Subtotal:
+									</Text>
+									<Text fz={14} mr={24}>
+										₹ 4,463
+									</Text>
+								</Group>
+								<Divider size={"sm"} mx={24}></Divider>
+								<Group justify="space-between">
+									<Text fz={14} fw={600} ml={24} c={"#616161"}>
+										Shipping:{" "}
+									</Text>
+									<Text fz={14} mr={24}>
+										₹ 446
+									</Text>
+								</Group>
+								<Divider size={"sm"} mx={24}></Divider>
+								<Group justify="space-between">
+									<Text fz={16} fw={600} ml={24}>
+										Total Amount
+									</Text>
+									<Text fz={16} mr={24} fw={700}>
+										₹ 446
+									</Text>
+								</Group>
+								<Paper
+									withBorder
+									radius={"md"}
+									w={540}
+									h={92}
+									mx={24}
+									bg={"#F4F4F4"}
+									style={{ borderColor: "#02486B" }}
+								>
+									<Group>
+										<Image src={Paypal} w={27} h={38} ml={9.4} mt={8.8} />
+										<Stack gap={0}>
+											<Text fz={12} fw={600}>
+												Pay by Razorpay
+											</Text>
+											<Text fz={12} fw={400} c={"#828282"}>
+												Cards. Nonbanking, Wallet & UPI
+											</Text>
+										</Stack>
+									</Group>
+									<Text fz={11} c={"#555459"} fw={400} w={412} ml={8} mt={11}>
+										Pay securely by Credit or Debit Card or Internet banking through Rzorpay.
+									</Text>
+								</Paper>
+								<Text fz={12} ml={24} c={"#555459"}>
+									Your personal data will be used to process your order, support your experience
+									throughout this website, and for other purposes described in our privacy policy.
+								</Text>
+								<Checkbox
+									variant=""
+									label="I have read and agree to the website terms and conditions *"
+									radius="xs"
+									ml={24}
+								/>
+							</Stack>
+							<Stack align="stretch" ml={16} mr={16}>
+								<OptionsButton mt={18} tt={"uppercase"}>
+									<Text c="#fff" size="xs" fw={600}>
+										place order
+									</Text>
+								</OptionsButton>
+								<UnstyledButton tt={"uppercase"}>
+									<Text c="#3e3e3e" size="xs" fw={600} ta={"center"}>
+										return to cart
+									</Text>
+								</UnstyledButton>
+							</Stack>
+						</Paper>
+					</Grid.Col>
+				</Grid>
 			</Paper>
 		</>
 	);

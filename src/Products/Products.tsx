@@ -3,7 +3,6 @@ import {
 	Text,
 	Image,
 	Grid,
-	rem,
 	Group,
 	UnstyledButton,
 	Paper,
@@ -12,7 +11,6 @@ import {
 	Button,
 } from "@mantine/core";
 import React from "react";
-import { useMediaQuery } from "@mantine/hooks";
 import Panel from "../Assets/panel.png";
 
 const Products = () => {
