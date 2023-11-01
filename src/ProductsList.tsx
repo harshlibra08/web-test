@@ -25,6 +25,7 @@ import subcat3 from "../src/Assets/subcat3.png";
 import subcatbg from "../src/Assets/subcat5.png";
 import i from "../src/Assets/ipadRect.png";
 import ipaD from "../src/Assets/ipadcarousel.png";
+import CardIpad from "../src/Assets/cardipad.png";
 import { Carousel } from "@mantine/carousel";
 type Props = {};
 
@@ -549,7 +550,7 @@ const ProductsList = (props: Props) => {
 			</Paper>
 
 			{/**Tablet View */}
-			<Paper w={768} h={4000} visibleFrom="xs" hiddenFrom="md">
+			<Paper w={768} h={3250} visibleFrom="xs" hiddenFrom="md">
 				<Grid>
 					<Grid.Col span={12}>
 						<Image src={i} bg={"white"} w={475} h={554} pos={"absolute"} ml={293} />
@@ -575,16 +576,7 @@ const ProductsList = (props: Props) => {
 							Thyristor Power Controller
 						</Text>
 
-						<Text
-							h={331}
-							w={588}
-							style={{ color: "#555459" }}
-							fz={14}
-							fw={400}
-							mb={40}
-							mt={32}
-							ml={90}
-						>
+						<Text w={588} style={{ color: "#555459" }} fz={14} fw={400} mb={40} mt={32} ml={90}>
 							Libratherm offers ready to use SCR Power Controller for electrical heating loads
 							ranging from 5 KW (Single Phase) to 360KW (Three Phase). This Thyristor Power
 							Regulator Module comprises of suitable triggering card model LTC-12 or LTC-13 or
@@ -610,34 +602,266 @@ const ProductsList = (props: Props) => {
 						<Carousel.Slide ml={90} mt={31}>
 							<Group>
 								<Image src={ipaD} w={48} h={57} ml={90} />
-								<Text fz={10}>Digital Indicator</Text>
+								<Stack gap={0}>
+									<Text fz={10}>Ramp/Soak Temperature Controllers</Text>
+									<Text fz={10} mt={8}>
+										High Accuracy Thermometers
+									</Text>
+								</Stack>
 							</Group>
 						</Carousel.Slide>
 						<Carousel.Slide ml={37} mt={31}>
 							<Group>
 								<Image src={ipaD} w={48} h={57} />
-								<Text fz={10}>Digital Indicator</Text>
+								<Stack gap={0}>
+									<Text fz={10}>Ramp/Soak Temperature Controllers</Text>
+									<Text fz={10} mt={8}>
+										High Accuracy Thermometers
+									</Text>
+								</Stack>
 							</Group>
 						</Carousel.Slide>
 						<Carousel.Slide ml={37} mt={31}>
 							<Group>
 								<Image src={ipaD} w={48} h={57} />
-								<Text fz={10}>Digital Indicator</Text>
+								<Stack gap={0}>
+									<Text fz={10}>Ramp/Soak Temperature Controllers</Text>
+									<Text fz={10} mt={8}>
+										High Accuracy Thermometers
+									</Text>
+								</Stack>
 							</Group>
 						</Carousel.Slide>
 						<Carousel.Slide ml={37} mt={31}>
 							<Group>
 								<Image src={ipaD} w={48} h={57} />
-								<Text fz={10}>Digital Indicator</Text>
+								<Stack gap={0}>
+									<Text fz={10}>Ramp/Soak Temperature Controllers</Text>
+									<Text fz={10} mt={8}>
+										High Accuracy Thermometers
+									</Text>
+								</Stack>
 							</Group>
 						</Carousel.Slide>
 						<Carousel.Slide ml={37} mt={31}>
 							<Group>
 								<Image src={ipaD} w={48} h={57} />
-								<Text fz={10}>Digital Indicator</Text>
+								<Stack gap={0}>
+									<Text fz={10}>Ramp/Soak Temperature Controllers</Text>
+									<Text fz={10} mt={8}>
+										High Accuracy Thermometers
+									</Text>
+								</Stack>
 							</Group>
 						</Carousel.Slide>
 					</Carousel>
+				</Paper>
+				<Paper h={2337} w={768} bg={"#F4F4F4"} pt={30}>
+					<Card withBorder h={464} w={588} ml={90} mt={32}>
+						<Grid>
+							<Grid.Col span={6}>
+								<Text fz={16} c="#414141" mt={16} w={294} fw={600} ml={30}>
+									Three Phase Thyristor Power Controller
+								</Text>
+								<Text fz={16} c="#E83214" mt={4} w={294} fw={600} ml={30}>
+									POW-3-PA-CL{" "}
+								</Text>
+								<Text fz={10} ml={30} mt={16} c={"#828282"}>
+									Prices are inclusive of Delivery Charges.
+								</Text>
+								<Text ml={30} fz={24} fw={400} c="#414141">
+									₹12,600 – ₹14,700
+								</Text>
+							</Grid.Col>
+							<Grid.Col span={6}>
+								<Image src={CardIpad} mt={26} w={175} h={134} ml={42} />
+							</Grid.Col>
+						</Grid>
+						<Divider size={"xs"} ml={16} w={510} mt={40} />
+
+						<List w={518} c={"#555459"} fz={11} mt={16} fw={400} lh={"160%"} ml={16}>
+							<List.Item>
+								Three Phase SCR Power Regulator for Three Phase Heater connected in 3 or 4 Wire Star
+							</List.Item>
+							<List.Item>
+								3 Wire Close or Open Delta Configurations with Current Control/Current Limit and
+								Over Load Protection.
+							</List.Item>
+						</List>
+						<Text fw={700} fz={10} c={"#555459"} ta={"right"} mt={16} mr={36}>
+							{<IconCheck size="10px" />}
+							In Stock
+						</Text>
+						<Paper w={524} mt={8} withBorder h={57} ml={16}>
+							<Text fz={10} mt={8} ml={8} lineClamp={1} c={"#555459"}>
+								{<IconCoin size={12} />} Get 5% Instant Discount Up to ₹1250 On Leading Bank Cards
+								EMI{" "}
+							</Text>
+							<UnstyledButton ml={27} fz={10} c={"blue"} td={"underline"}>
+								View More
+							</UnstyledButton>
+						</Paper>
+						<Group ml={16} pt={25}>
+							<PrimaryButton w={258}>ADD TO WISHLIST</PrimaryButton>
+							<OptionsButton w={258}>Select Options</OptionsButton>
+						</Group>
+					</Card>
+					<Card withBorder h={464} w={588} ml={90} mt={32}>
+						<Grid>
+							<Grid.Col span={6}>
+								<Text fz={16} c="#414141" mt={16} w={294} fw={600} ml={30}>
+									Three Phase Thyristor Power Controller
+								</Text>
+								<Text fz={16} c="#E83214" mt={4} w={294} fw={600} ml={30}>
+									POW-3-PA-CL{" "}
+								</Text>
+								<Text fz={10} ml={30} mt={16} c={"#828282"}>
+									Prices are inclusive of Delivery Charges.
+								</Text>
+								<Text ml={30} fz={24} fw={400} c="#414141">
+									₹12,600 – ₹14,700
+								</Text>
+							</Grid.Col>
+							<Grid.Col span={6}>
+								<Image src={CardIpad} mt={26} w={175} h={134} ml={42} />
+							</Grid.Col>
+						</Grid>
+						<Divider size={"xs"} ml={16} w={510} mt={40} />
+
+						<List w={518} c={"#555459"} fz={11} mt={16} fw={400} lh={"160%"} ml={16}>
+							<List.Item>
+								Three Phase SCR Power Regulator for Three Phase Heater connected in 3 or 4 Wire Star
+							</List.Item>
+							<List.Item>
+								3 Wire Close or Open Delta Configurations with Current Control/Current Limit and
+								Over Load Protection.
+							</List.Item>
+						</List>
+						<Text fw={700} fz={10} c={"#555459"} ta={"right"} mt={16} mr={36}>
+							{<IconCheck size="10px" />}
+							In Stock
+						</Text>
+						<Paper w={524} mt={8} withBorder h={57} ml={16}>
+							<Text fz={10} mt={8} ml={8} lineClamp={1} c={"#555459"}>
+								{<IconCoin size={12} />} Get 5% Instant Discount Up to ₹1250 On Leading Bank Cards
+								EMI{" "}
+							</Text>
+							<UnstyledButton ml={27} fz={10} c={"blue"} td={"underline"}>
+								View More
+							</UnstyledButton>
+						</Paper>
+						<Group ml={16} pt={25}>
+							<PrimaryButton w={258}>ADD TO WISHLIST</PrimaryButton>
+							<OptionsButton w={258}>Select Options</OptionsButton>
+						</Group>
+					</Card>
+					<Card withBorder h={464} w={588} ml={90} mt={32}>
+						<Grid>
+							<Grid.Col span={6}>
+								<Text fz={16} c="#414141" mt={16} w={294} fw={600} ml={30}>
+									Three Phase Thyristor Power Controller
+								</Text>
+								<Text fz={16} c="#E83214" mt={4} w={294} fw={600} ml={30}>
+									POW-3-PA-CL{" "}
+								</Text>
+								<Text fz={10} ml={30} mt={16} c={"#828282"}>
+									Prices are inclusive of Delivery Charges.
+								</Text>
+								<Text ml={30} fz={24} fw={400} c="#414141">
+									₹12,600 – ₹14,700
+								</Text>
+							</Grid.Col>
+							<Grid.Col span={6}>
+								<Image src={CardIpad} mt={26} w={175} h={134} ml={42} />
+							</Grid.Col>
+						</Grid>
+						<Divider size={"xs"} ml={16} w={510} mt={40} />
+
+						<List w={518} c={"#555459"} fz={11} mt={16} fw={400} lh={"160%"} ml={16}>
+							<List.Item>
+								Three Phase SCR Power Regulator for Three Phase Heater connected in 3 or 4 Wire Star
+							</List.Item>
+							<List.Item>
+								3 Wire Close or Open Delta Configurations with Current Control/Current Limit and
+								Over Load Protection.
+							</List.Item>
+						</List>
+						<Text fw={700} fz={10} c={"#555459"} ta={"right"} mt={16} mr={36}>
+							{<IconCheck size="10px" />}
+							In Stock
+						</Text>
+						<Paper w={524} mt={8} withBorder h={57} ml={16}>
+							<Text fz={10} mt={8} ml={8} lineClamp={1} c={"#555459"}>
+								{<IconCoin size={12} />} Get 5% Instant Discount Up to ₹1250 On Leading Bank Cards
+								EMI{" "}
+							</Text>
+							<UnstyledButton ml={27} fz={10} c={"blue"} td={"underline"}>
+								View More
+							</UnstyledButton>
+						</Paper>
+						<Group ml={16} pt={25}>
+							<PrimaryButton w={258}>ADD TO WISHLIST</PrimaryButton>
+							<OptionsButton w={258}>Select Options</OptionsButton>
+						</Group>
+					</Card>
+					<Card withBorder h={464} w={588} ml={90} mt={32}>
+						<Grid>
+							<Grid.Col span={6}>
+								<Text fz={16} c="#414141" mt={16} w={294} fw={600} ml={30}>
+									Three Phase Thyristor Power Controller
+								</Text>
+								<Text fz={16} c="#E83214" mt={4} w={294} fw={600} ml={30}>
+									POW-3-PA-CL{" "}
+								</Text>
+								<Text fz={10} ml={30} mt={16} c={"#828282"}>
+									Prices are inclusive of Delivery Charges.
+								</Text>
+								<Text ml={30} fz={24} fw={400} c="#414141">
+									₹12,600 – ₹14,700
+								</Text>
+							</Grid.Col>
+							<Grid.Col span={6}>
+								<Image src={CardIpad} mt={26} w={175} h={134} ml={42} />
+							</Grid.Col>
+						</Grid>
+						<Divider size={"xs"} ml={16} w={510} mt={40} />
+
+						<List w={518} c={"#555459"} fz={11} mt={16} fw={400} lh={"160%"} ml={16}>
+							<List.Item>
+								Three Phase SCR Power Regulator for Three Phase Heater connected in 3 or 4 Wire Star
+							</List.Item>
+							<List.Item>
+								3 Wire Close or Open Delta Configurations with Current Control/Current Limit and
+								Over Load Protection.
+							</List.Item>
+						</List>
+						<Text fw={700} fz={10} c={"#555459"} ta={"right"} mt={16} mr={36}>
+							{<IconCheck size="10px" />}
+							In Stock
+						</Text>
+						<Paper w={524} mt={8} withBorder h={57} ml={16}>
+							<Text fz={10} mt={8} ml={8} lineClamp={1} c={"#555459"}>
+								{<IconCoin size={12} />} Get 5% Instant Discount Up to ₹1250 On Leading Bank Cards
+								EMI{" "}
+							</Text>
+							<UnstyledButton ml={27} fz={10} c={"blue"} td={"underline"}>
+								View More
+							</UnstyledButton>
+						</Paper>
+						<Group ml={16} pt={25}>
+							<PrimaryButton w={258}>ADD TO WISHLIST</PrimaryButton>
+							<OptionsButton w={258}>Select Options</OptionsButton>
+						</Group>
+					</Card>
+					<Pagination
+						gap={20}
+						total={10}
+						color="rgba(0, 0, 0, 1)"
+						size="sm"
+						radius="xs"
+						ml={182}
+						mt={40}
+					/>
 				</Paper>
 			</Paper>
 		</>

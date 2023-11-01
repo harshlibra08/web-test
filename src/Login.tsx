@@ -221,7 +221,7 @@ export function Login(props: PaperProps) {
 			</Paper>
 
 			{/**Tablet */}
-			<Paper w={768} h={1720} bg={"#f4f4f4"} mt={40} visibleFrom="xs" hiddenFrom="md">
+			<Paper w={768} h={2020} bg={"#f4f4f4"} mt={40} visibleFrom="xs" hiddenFrom="md">
 				<Box pt={40}>
 					<Tabs
 						color="rgba(0, 0, 0, 1)"
