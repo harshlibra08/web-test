@@ -9,6 +9,8 @@ import {
 	Box,
 	Divider,
 	Button,
+	rem,
+	Center,
 } from "@mantine/core";
 import React from "react";
 import Panel from "../Assets/panel.png";
@@ -33,74 +35,93 @@ const Products = () => {
 
 				{<UnstyledButton ml={0}>View All</UnstyledButton>}
 			</Group>
-			<Grid w={1440} px={114} mt={30} align="flex-start" visibleFrom="md">
-				<Grid.Col span={3}>
-					<Card withBorder h={364} w={288}>
-						<Card.Section>
-							<Text fz={14} fw={600} c={"#555459"} w={260} mt={24.66} ml={12.57}>
-								Three Phase Thyristor Power Controller – POW-3-PA
-							</Text>
-							<Image src={Panel} w={137} h={173} ml={75} mt={33} />
-						</Card.Section>
 
-						<Text px={59} c={"#414141"} mt={30}>
-							₹12,600 – ₹14,700
-						</Text>
-					</Card>
-				</Grid.Col>
-				<Grid.Col span={3}>
-					<Card withBorder h={364} w={288}>
-						<Card.Section>
-							<Text fz={14} fw={600} c={"#555459"} w={260} mt={24.66} ml={12.57}>
-								Three Phase Thyristor Power Controller – POW-3-PA
-							</Text>
-							<Image src={Panel} w={137} h={173} ml={75} mt={33} />
-						</Card.Section>
+			<Grid m={30}>
+				{Array.from({ length: 4 }, (_, index) => index).map((i) => {
+					return (
+						<Grid.Col key={i} span={{ base: 12, xs: 6, md: 3 }}>
+							<Card withBorder>
+								<Text fz={14} fw={600} c={"#555459"} maw={250}>
+									Three Phase Thyristor Power Controller – POW-3-PA
+								</Text>
 
-						<Text px={59} c={"#414141"} mt={30}>
-							₹12,600 – ₹14,700
-						</Text>
-					</Card>
-				</Grid.Col>
-				<Grid.Col span={3}>
-					<Card withBorder h={364} w={288}>
-						<Card.Section>
-							<Text fz={14} fw={600} c={"#555459"} w={260} mt={24.66} ml={12.57}>
-								Three Phase Thyristor Power Controller – POW-3-PA
-							</Text>
-							<Image src={Panel} w={137} h={173} ml={75} mt={33} />
-						</Card.Section>
+								<Image src={Panel} w={137} h={173} mx="auto" mt={33} />
 
-						<Text px={59} c={"#414141"} mt={30}>
-							₹12,600 – ₹14,700
-						</Text>
-					</Card>
-				</Grid.Col>
-				<Grid.Col span={3}>
-					<Card withBorder h={364} w={288}>
-						<Card.Section>
-							<Text fz={14} fw={600} c={"#555459"} w={260} mt={24.66} ml={12.57}>
-								Three Phase Thyristor Power Controller – POW-3-PA
-							</Text>
-							<Image src={Panel} w={137} h={173} ml={75} mt={33} />
-						</Card.Section>
-
-						<Text px={59} c={"#414141"} mt={30}>
-							₹12,600 – ₹14,700
-						</Text>
-					</Card>
-				</Grid.Col>
+								<Text ta="center" c={"#414141"} mt={30}>
+									₹12,600 – ₹14,700
+								</Text>
+							</Card>
+						</Grid.Col>
+					);
+				})}
 			</Grid>
+			{/* <Grid  mt={30} align="flex-start">
+				<Grid.Col span={{ base: 12, xs: 6, md: 3 }}>
+					<Card withBorder h={{ xs: 212, md: 364 }} maw={"9.75rem"}>
+						<Card.Section>
+							<Text fz={14} fw={600} c={"#555459"} w={260} mt={24.66} ml={12.57}>
+								Three Phase Thyristor Power Controller – POW-3-PA
+							</Text>
+							<Image src={Panel} w={137} h={173} ml={75} mt={33} />
+						</Card.Section>
+
+						<Text px={59} c={"#414141"} mt={30}>
+							₹12,600 – ₹14,700
+						</Text>
+					</Card>
+				</Grid.Col>
+				<Grid.Col span={{ base: 12, xs: 6, md: 3 }}>
+					<Card withBorder h={{ xs: 212, md: 364 }} w={{ xs: 156, md: 284 }}>
+						<Card.Section>
+							<Text fz={14} fw={600} c={"#555459"} w={260} mt={24.66} ml={12.57}>
+								Three Phase Thyristor Power Controller – POW-3-PA
+							</Text>
+							<Image src={Panel} w={137} h={173} ml={75} mt={33} />
+						</Card.Section>
+
+						<Text px={59} c={"#414141"} mt={30}>
+							₹12,600 – ₹14,700
+						</Text>
+					</Card>
+				</Grid.Col>
+				<Grid.Col span={{ base: 12, xs: 6, md: 3 }}>
+					<Card withBorder h={{ xs: 212, md: 364 }} w={{ xs: 156, md: 284 }}>
+						<Card.Section>
+							<Text fz={14} fw={600} c={"#555459"} w={260} mt={24.66} ml={12.57}>
+								Three Phase Thyristor Power Controller – POW-3-PA
+							</Text>
+							<Image src={Panel} w={137} h={173} ml={75} mt={33} />
+						</Card.Section>
+
+						<Text px={"3.6rem"} c={"#414141"} mt={30}>
+							₹12,600 – ₹14,700
+						</Text>
+					</Card>
+				</Grid.Col>
+				<Grid.Col span={{ base: 12, xs: 6, md: 3 }}>
+					<Card withBorder h={{ xs: 212, md: 364 }} w={{ xs: 156, md: 284 }}>
+						<Card.Section>
+							<Text fz={14} fw={600} c={"#555459"} w={260} mt={24.66} ml={12.57}>
+								Three Phase Thyristor Power Controller – POW-3-PA
+							</Text>
+							<Image src={Panel} w={137} h={173} ml={75} mt={33} />
+						</Card.Section>
+
+						<Text px={59} c={"#414141"} mt={30}>
+							₹12,600 – ₹14,700
+						</Text>
+					</Card>
+				</Grid.Col>
+			</Grid> */}
 
 			{/* Mobile view */}
-			<Group wrap="nowrap" gap={0} hiddenFrom="xs">
+			{/* <Group wrap="nowrap" gap={0} hiddenFrom="xs">
 				<Box w={360}>
 					<Text fw={600} fz={20} ml={16} style={{ color: "#262728", lineHeight: "40px" }}>
-						Our Productsmmm
+						Our Products
 					</Text>
 				</Box>
 
-				{/* {<UnstyledButton ml={0}>View All</UnstyledButton>} */}
 			</Group>
 			<Grid maw={360} px={16} pb={56} mt={24} hiddenFrom="xs" justify="center" align="flex-start">
 				<Grid.Col span={6}>
@@ -162,10 +183,10 @@ const Products = () => {
 				<Button variant="outline" color="#555459" w={176} mt={40}>
 					View All
 				</Button>
-			</Grid>
+			</Grid> */}
 
 			{/**Tablet View */}
-			<Paper w={768}>
+			{/* <Paper w={768}>
 				<Group wrap="nowrap" gap={0} w={768} hiddenFrom="md" visibleFrom="xs" ml={90}>
 					<Text fz={26} fw={600} c={"#262728"} w={190}>
 						Our Product
@@ -232,7 +253,7 @@ const Products = () => {
 						</Card>
 					</Grid.Col>
 				</Grid>
-			</Paper>
+			</Paper> */}
 		</>
 	);
 };
