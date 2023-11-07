@@ -14,7 +14,7 @@ type Props = {};
 const JournalThree = (props: Props) => {
 	return (
 		<>
-			<Paper w={1440} h={3140} bg={"black"} visibleFrom="md">
+			<Paper w={1440} h={3140} bg={"black"} visibleFrom="md" mt={30}>
 				<Group wrap="nowrap">
 					<Box w="100%">
 						<Text fz={20} mt={91} ml={114} c={"#f6f6f6"}>
@@ -205,7 +205,7 @@ const JournalThree = (props: Props) => {
 				</Grid>
 			</Paper>
 			{/**Mobile View */}
-			<Paper w={360} h={4540} bg={"black"} hiddenFrom="xs">
+			<Paper w={360} h={4540} bg={"black"} hiddenFrom="xs" mt={30}>
 				<Group wrap="nowrap">
 					<Box w="100%">
 						<Text fz={20} mt={60} ml={16} c={"#f6f6f6"}>
@@ -437,7 +437,7 @@ const JournalThree = (props: Props) => {
 			</Paper>
 
 			{/**Tavblet View */}
-			<Paper w={768} h={3640} bg={"black"} hiddenFrom="md" visibleFrom="xs">
+			<Paper w={768} h={3640} bg={"black"} hiddenFrom="md" visibleFrom="xs" mt={30}>
 				<Group wrap="nowrap" ml={90}>
 					<Box w="100%">
 						<Text fz={32} mt={60} c={"#f6f6f6"}>

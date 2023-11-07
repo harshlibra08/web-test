@@ -11,6 +11,7 @@ import {
 	Button,
 	rem,
 	Center,
+	SimpleGrid,
 } from "@mantine/core";
 import React from "react";
 import Panel from "../Assets/panel.png";
@@ -18,43 +19,41 @@ import Panel from "../Assets/panel.png";
 const Products = () => {
 	return (
 		<>
-			<Group wrap="nowrap" gap={0} visibleFrom="md">
-				<Box w={1270}>
-					<Divider
-						size="sm"
-						my={"60px"}
-						mr={"17px"}
-						label={
-							<Text fw={600} fz={32} ml={114} style={{ color: "#262728", lineHeight: "40px" }}>
-								Our Products1
-							</Text>
-						}
-						labelPosition="left"
-					/>
-				</Box>
+			<Group wrap="nowrap" gap={0}>
+				<Text
+					fw={600}
+					fz={{ base: 20, sm: 32 }}
+					ml={16}
+					style={{ color: "#262728", lineHeight: "40px" }}
+				>
+					Our Products
+				</Text>
+				<Divider size="sm" my={"60px"} mr={"17px"} />
 
 				{<UnstyledButton ml={0}>View All</UnstyledButton>}
 			</Group>
 
-			<Grid m={30}>
-				{Array.from({ length: 4 }, (_, index) => index).map((i) => {
-					return (
-						<Grid.Col key={i} span={{ base: 12, xs: 6, md: 3 }}>
-							<Card withBorder>
+			<Paper m="auto" w={{ base: 360, sm: 768, xl: 1400 }}>
+				<SimpleGrid cols={{ base: 2, xl: 4 }}>
+					{Array.from({ length: 4 }, (_, index) => index).map((i) => {
+						return (
+							// <Grid.Col key={i} span={{ base: 6, xl: 3 }}>
+							<Card withBorder w={{ sm: 288, base: 156 }}>
 								<Text fz={14} fw={600} c={"#555459"} maw={250}>
 									Three Phase Thyristor Power Controller – POW-3-PA
 								</Text>
 
-								<Image src={Panel} w={137} h={173} mx="auto" mt={33} />
+								<Image src={Panel} w={{ base: 111, sm: 207 }} h={173} mx="auto" mt={33} />
 
 								<Text ta="center" c={"#414141"} mt={30}>
 									₹12,600 – ₹14,700
 								</Text>
 							</Card>
-						</Grid.Col>
-					);
-				})}
-			</Grid>
+							// </Grid.Col>
+						);
+					})}
+				</SimpleGrid>
+			</Paper>
 			{/* <Grid  mt={30} align="flex-start">
 				<Grid.Col span={{ base: 12, xs: 6, md: 3 }}>
 					<Card withBorder h={{ xs: 212, md: 364 }} maw={"9.75rem"}>

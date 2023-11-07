@@ -7,43 +7,50 @@ type Props = {};
 const OurBrand = (props: Props) => {
 	return (
 		<>
-			<Paper w={1440} h={696} bg={"black"} visibleFrom="md">
+			<Paper w={{ base: 360 }} h={{ base: 555 }} bg={"#000"} mt={{ base: 30 }}>
 				<Grid>
-					<Grid.Col span={6}>
-						<Text fz={32} fw={600} mt={206} ml={114} c={"#f6f6f6"}>
+					<Grid.Col span={{ base: 12 }}>
+						<Image
+							src={BrandImg}
+							pos={"absolute"}
+							left={0}
+							ml={{ base: 17 }}
+							mt={{ base: 24 }}
+							w={{ base: 327 }}
+							h={{ base: 241 }}
+						/>
+					</Grid.Col>
+
+					<Grid.Col span={{ base: 12 }}>
+						<Text
+							fz={{ base: 20 }}
+							w={374}
+							fw={600}
+							ml={{ base: 16 }}
+							mt={{ base: 284 }}
+							style={{ color: "#FFFFFF" }}
+						>
 							Our Brand
 						</Text>
-						<Text fz={16} fw={700} mt={24} ml={114} c={"#e4e8ed"}>
-							Our systems and instruments are developed and designed by a team of skilled engineers,
-							who hold expertise in their respective field. We offer our clients with modernized
-							development and design services for both software and hardware.
+						<Text
+							c={"#e4e8ed"}
+							mt={24}
+							fz={{ base: 12 }}
+							fw={400}
+							ml={{ base: 16 }}
+							w={{ base: 328 }}
+						>
+							Launching a business isn't easy, which is why having a co-founder can often make
+							things a little smoother, especially if that co-founder is your best friend. While
+							many professionals warn against choosing a close friend as your business partner,
+							there are plenty of examples that prove it can work. The best example is of Airbnb..
 						</Text>
-						<Text fz={16} fw={400} mt={24} ml={114} c={"#e4e8ed"}>
-							Our extensive range of products is closely inspected by industrial experts on
-							stringent quality parameters to ensure its smooth functioning, durability,
-							reliability, sturdy construction and long service life. We are currently supported by
-							1,50,000 instruments, enabling us with an outstanding range of output.
-						</Text>
-					</Grid.Col>
-					<Grid.Col span={6}>
-						<Image
-							src={RectangleGrey}
-							bg={"black"}
-							w={509}
-							h={696}
-							pos={"absolute"}
-							left={931}
-							pr={0}
-							mt={0}
-						/>
-
-						<Image src={BrandImg} alt="Sample" w={493} h={451} pos={"absolute"} mt={126} ml={114} />
 					</Grid.Col>
 				</Grid>
 			</Paper>
 
 			{/**Mobile */}
-			<Paper w={360} h={696} bg={"black"} hiddenFrom="xs">
+			{/* <Paper w={360} h={696} bg={"black"} hiddenFrom="xs">
 				<Grid ml={16}>
 					<Grid.Col span={12}>
 						<Image src={BrandImg} alt="Sample" w={327} h={242} mt={126} />
@@ -65,10 +72,10 @@ const OurBrand = (props: Props) => {
 						</Text>
 					</Grid.Col>
 				</Grid>
-			</Paper>
+			</Paper> */}
 
 			{/**Tablet */}
-			<Paper w={768} h={720} bg={"black"} visibleFrom="xs">
+			{/* <Paper w={768} h={720} bg={"black"} visibleFrom="xs">
 				<Grid ml={90}>
 					<Grid.Col span={12}>
 						<Image src={BrandImg} w={588} h={355} mt={40} />
@@ -90,7 +97,7 @@ const OurBrand = (props: Props) => {
 						</Text>
 					</Grid.Col>
 				</Grid>
-			</Paper>
+			</Paper> */}
 		</>
 	);
 };

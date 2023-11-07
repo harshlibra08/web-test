@@ -9,28 +9,41 @@ type Props = {};
 const JournalTwo = (props: Props) => {
 	return (
 		<>
-			<Paper w={1440} h={3140} bg={"black"} visibleFrom="md">
+			<Paper w={{ base: 360 }} h={{ base: 4050 }} bg={"black"} mt={30}>
 				<Group wrap="nowrap" gap={0}>
 					<Box w="100%">
-						<Text fz={20} mt={91} ml={114} c={"#f6f6f6"}>
+						<Text fz={{ base: 15 }} mt={{ base: 59 }} ml={{ base: 16 }} c={"#f6f6f6"}>
 							Industry
 						</Text>
-						<Divider size="md" my={23} mr={114} ml={114} pb={40} />
+						<Divider size="xs" ml={{ base: 16 }} w={{ base: 328 }} mt={{ base: 16 }} />
 					</Box>
 				</Group>
 
 				<Grid>
-					<Grid.Col span={4}>
-						<Image src={Industry1} mt={64} ml={116} h={327} w={358} />
+					<Grid.Col span={{ base: 12 }}>
+						<Image
+							src={Industry1}
+							mt={{ base: 40 }}
+							ml={{ base: 16 }}
+							h={{ base: 300 }}
+							w={{ base: 328 }}
+						/>
 					</Grid.Col>
-					<Grid.Col span={8}>
-						<Text c={"#e4e8ed"} fz={16} ml={56} mt={128}>
+					<Grid.Col span={{ base: 12 }}>
+						<Text c={"#e4e8ed"} fz={{ base: 12 }} ml={{ base: 16 }} mt={16}>
 							22nd January, 2023.
 						</Text>
-						<Text c={"#f6f6f6"} fz={32} mt={16} ml={56}>
+						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={16} ml={{ base: 16 }}>
 							Glass Manufacture
 						</Text>
-						<Text c={"#e4e8ed"} fz={16} mt={16} lineClamp={2} ml={56} w={808}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12 }}
+							mt={16}
+							lineClamp={2}
+							ml={{ base: 16 }}
+							w={{ base: 325 }}
+						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
 							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -42,23 +55,30 @@ const JournalTwo = (props: Props) => {
 						</Text>
 						<UnstyledButton>
 							<Group>
-								<Text fz={20} c={"#ffffff"} mt={32} fw={400} ml={56}>
+								<Text fz={{ base: 15 }} c={"#ffffff"} mt={8} fw={400} ml={{ base: 16 }}>
 									Read more
 								</Text>
 							</Group>
 						</UnstyledButton>
 					</Grid.Col>
-					<Grid.Col span={4}>
-						<Image src={Industry2} mt={64} ml={116} h={327} w={358} />
+					<Grid.Col span={{ base: 12 }}>
+						<Image src={Industry2} mt={64} ml={{ base: 16 }} h={{ base: 300 }} w={{ base: 328 }} />
 					</Grid.Col>
-					<Grid.Col span={8}>
-						<Text c={"#e4e8ed"} fz={16} ml={56} mt={128}>
+					<Grid.Col span={{ base: 12 }}>
+						<Text c={"#e4e8ed"} fz={{ base: 12 }} ml={{ base: 16 }} mt={16}>
 							22nd January, 2023.
 						</Text>
-						<Text c={"#f6f6f6"} fz={32} mt={16} ml={56}>
+						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={16} ml={{ base: 16 }}>
 							Jewelry Manufacture{" "}
 						</Text>
-						<Text c={"#e4e8ed"} fz={16} mt={16} lineClamp={2} ml={56} w={808}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12 }}
+							mt={16}
+							lineClamp={2}
+							ml={{ base: 16 }}
+							w={{ base: 325 }}
+						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
 							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -70,23 +90,30 @@ const JournalTwo = (props: Props) => {
 						</Text>
 						<UnstyledButton>
 							<Group>
-								<Text fz={20} c={"#ffffff"} mt={32} fw={400} ml={56}>
+								<Text fz={{ base: 15 }} c={"#ffffff"} mt={32} fw={400} ml={{ base: 16 }}>
 									Read more
 								</Text>
 							</Group>
 						</UnstyledButton>
 					</Grid.Col>
-					<Grid.Col span={4}>
-						<Image src={Industry3} mt={64} ml={116} h={327} w={358} />
+					<Grid.Col span={{ base: 12 }}>
+						<Image src={Industry3} mt={64} ml={{ base: 16 }} h={{ base: 300 }} w={{ base: 328 }} />
 					</Grid.Col>
-					<Grid.Col span={8}>
-						<Text c={"#e4e8ed"} fz={16} ml={56} mt={128}>
+					<Grid.Col span={{ base: 12 }}>
+						<Text c={"#e4e8ed"} fz={{ base: 12 }} ml={{ base: 16 }} mt={16}>
 							22nd January, 2023.
 						</Text>
-						<Text c={"#f6f6f6"} fz={32} mt={16} ml={56}>
+						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={16} ml={{ base: 16 }}>
 							Pharmaceuticals{" "}
 						</Text>
-						<Text c={"#e4e8ed"} fz={16} mt={16} lineClamp={2} ml={56} w={808}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12 }}
+							mt={16}
+							lineClamp={2}
+							ml={{ base: 16 }}
+							w={{ base: 325 }}
+						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
 							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -98,23 +125,30 @@ const JournalTwo = (props: Props) => {
 						</Text>
 						<UnstyledButton>
 							<Group>
-								<Text fz={20} c={"#ffffff"} mt={32} fw={400} ml={56}>
+								<Text fz={{ base: 15 }} c={"#ffffff"} mt={32} fw={400} ml={{ base: 16 }}>
 									Read more
 								</Text>
 							</Group>
 						</UnstyledButton>
 					</Grid.Col>
-					<Grid.Col span={4}>
-						<Image src={Industry4} mt={64} ml={116} h={327} w={358} />
+					<Grid.Col span={{ base: 12 }}>
+						<Image src={Industry4} mt={64} ml={{ base: 16 }} h={{ base: 300 }} w={{ base: 328 }} />
 					</Grid.Col>
-					<Grid.Col span={8}>
-						<Text c={"#e4e8ed"} fz={16} ml={56} mt={128}>
+					<Grid.Col span={{ base: 12 }}>
+						<Text c={"#e4e8ed"} fz={{ base: 12 }} ml={{ base: 16 }} mt={16}>
 							22nd January, 2023.
 						</Text>
-						<Text c={"#f6f6f6"} fz={32} mt={16} ml={56}>
+						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={16} ml={{ base: 16 }}>
 							Steel Plants{" "}
 						</Text>
-						<Text c={"#e4e8ed"} fz={16} mt={16} ml={56} w={808}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12 }}
+							mt={16}
+							ml={{ base: 16 }}
+							w={{ base: 325 }}
+							lineClamp={2}
+						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
 							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -125,17 +159,24 @@ const JournalTwo = (props: Props) => {
 							contact sensors.
 						</Text>
 					</Grid.Col>
-					<Grid.Col span={4}>
-						<Image src={Industry2} mt={64} ml={116} h={327} w={358} />
+					<Grid.Col span={{ base: 12 }}>
+						<Image src={Industry2} mt={64} ml={{ base: 16 }} h={{ base: 300 }} w={{ base: 328 }} />
 					</Grid.Col>
-					<Grid.Col span={8}>
-						<Text c={"#e4e8ed"} fz={16} ml={56} mt={128}>
+					<Grid.Col span={{ base: 12 }}>
+						<Text c={"#e4e8ed"} fz={{ base: 12 }} ml={{ base: 16 }} mt={16}>
 							22nd January, 2023.
 						</Text>
-						<Text c={"#f6f6f6"} fz={32} mt={16} ml={56}>
+						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={16} ml={{ base: 16 }}>
 							Jewelry Manufacture{" "}
 						</Text>
-						<Text c={"#e4e8ed"} fz={16} mt={16} ml={56} w={808}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12 }}
+							mt={16}
+							ml={{ base: 16 }}
+							w={{ base: 325 }}
+							lineClamp={2}
+						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
 							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -146,17 +187,24 @@ const JournalTwo = (props: Props) => {
 							contact sensors.
 						</Text>
 					</Grid.Col>
-					<Grid.Col span={4}>
-						<Image src={Industry3} mt={64} ml={116} h={327} w={358} />
+					<Grid.Col span={{ base: 12 }}>
+						<Image src={Industry3} mt={64} ml={{ base: 16 }} h={{ base: 300 }} w={{ base: 328 }} />
 					</Grid.Col>
-					<Grid.Col span={8}>
-						<Text c={"#e4e8ed"} fz={16} ml={56} mt={128}>
+					<Grid.Col span={{ base: 12 }}>
+						<Text c={"#e4e8ed"} fz={{ base: 12 }} ml={{ base: 16 }} mt={16}>
 							22nd January, 2023.
 						</Text>
-						<Text c={"#f6f6f6"} fz={32} mt={16} ml={56}>
+						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={16} ml={{ base: 16 }}>
 							Pharmaceuticals{" "}
 						</Text>
-						<Text c={"#e4e8ed"} fz={16} mt={16} ml={56} w={808}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12 }}
+							mt={16}
+							ml={{ base: 16 }}
+							w={{ base: 325 }}
+							lineClamp={2}
+						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
 							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -167,17 +215,24 @@ const JournalTwo = (props: Props) => {
 							contact sensors.
 						</Text>
 					</Grid.Col>
-					<Grid.Col span={4}>
-						<Image src={Industry4} mt={64} ml={116} h={327} w={358} />
+					<Grid.Col span={{ base: 12 }}>
+						<Image src={Industry4} mt={64} ml={{ base: 16 }} h={{ base: 300 }} w={{ base: 328 }} />
 					</Grid.Col>
-					<Grid.Col span={8}>
-						<Text c={"#e4e8ed"} fz={16} ml={56} mt={128}>
+					<Grid.Col span={{ base: 12 }}>
+						<Text c={"#e4e8ed"} fz={{ base: 12 }} ml={{ base: 16 }} mt={16}>
 							22nd January, 2023.
 						</Text>
-						<Text c={"#f6f6f6"} fz={32} mt={16} ml={56}>
+						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={16} ml={{ base: 16 }}>
 							Steel Plants{" "}
 						</Text>
-						<Text c={"#e4e8ed"} fz={16} mt={16} ml={56} w={808}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12 }}
+							mt={16}
+							ml={{ base: 16 }}
+							w={{ base: 325 }}
+							lineClamp={2}
+						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
 							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -191,10 +246,10 @@ const JournalTwo = (props: Props) => {
 				</Grid>
 			</Paper>
 			{/**Mobile View */}
-			<Paper w={360} h={2540} withBorder bg={"black"} hiddenFrom="xs">
+			{/* <Paper w={360} h={2540} withBorder bg={"black"} hiddenFrom="xs">
 				<Group wrap="nowrap" gap={0}>
 					<Box w="100%">
-						<Text fz={20} mt={59} ml={16} c={"#f6f6f6"}>
+						<Text fz={{base: 15}} mt={59} ml={16} c={"#f6f6f6"}>
 							Industry
 						</Text>
 						<Divider size="xs" my={16} ml={16} w={328} />
@@ -315,10 +370,10 @@ const JournalTwo = (props: Props) => {
 						</UnstyledButton>
 					</Grid.Col>
 				</Grid>
-			</Paper>
+			</Paper> */}
 
 			{/**Tablet view */}
-			<Paper w={768} h={1340} bg={"black"} visibleFrom="xs" hiddenFrom="md">
+			{/* <Paper w={768} h={1340} bg={"black"} visibleFrom="xs" hiddenFrom="md">
 				<Group wrap="nowrap" gap={0} ml={90}>
 					<Box w="100%">
 						<Text fz={28} mt={91} c={"#f6f6f6"}>
@@ -442,7 +497,7 @@ const JournalTwo = (props: Props) => {
 						</UnstyledButton>
 					</Grid.Col>
 				</Grid>
-			</Paper>
+			</Paper> */}
 		</>
 	);
 };

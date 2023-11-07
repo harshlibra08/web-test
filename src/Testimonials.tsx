@@ -16,24 +16,15 @@ const Testimonials = (props: Props) => {
 	const [embla, setEmbla] = useState<Embla | null>(null);
 	return (
 		<>
-			<Paper w={1440} h={840} bg={"#000"} mt={200} visibleFrom="md">
-				<Text fz={14} c={"#FFF"} ml={116} pt={64} bg={"#000"}>
+			<Paper w={{ base: 360 }} h={{ base: 522 }} bg={"#000"} mt={200}>
+				<Text fz={{ base: 10 }} c={"#FFF"} ml={{ base: 17 }} pt={{ base: 64 }} bg={"#000"}>
 					WHAT PEOPLE ARE SAYING
 				</Text>
 				<Group wrap="nowrap" gap={0} bg={"#000"}>
-					<Box w="100%" bg={"#000"}>
-						<Divider
-							size="md"
-							mr={45}
-							mt={4}
-							label={
-								<Text fz={32} ml={116} c={"#FFF"}>
-									Client Testimonals
-								</Text>
-							}
-							labelPosition="left"
-						/>
-					</Box>
+					<Text fz={{ base: 20 }} ml={{ base: 12 }} c={"#FFF"}>
+						Client Testimonals
+					</Text>
+					<Divider size="md" mr={45} mt={4} />
 
 					{
 						<IconCircleChevronLeft
@@ -56,13 +47,13 @@ const Testimonials = (props: Props) => {
 				</Group>
 				<Carousel
 					bg={"#000"}
-					mt={64}
+					mt={{ base: 32 }}
 					withControls={false}
 					height={417}
-					slideSize="33.333333%"
-					slideGap={64}
+					slideSize="13.333333%"
+					slideGap={{ base: 16 }}
 					loop
-					pl={114}
+					pl={{ base: 16 }}
 					align="start"
 					style={{
 						alignContent: "center",
@@ -71,9 +62,9 @@ const Testimonials = (props: Props) => {
 				>
 					<Carousel.Slide>
 						<Card
-							w={423}
+							w={{ base: 312 }}
+							h={{ base: 308 }}
 							radius={20}
-							h={417}
 							bg="#222222"
 							style={{
 								position: "relative",
@@ -82,19 +73,55 @@ const Testimonials = (props: Props) => {
 								border: "#222222",
 							}}
 						>
-							<Image src={Tifr} w={127} h={61} pos={"absolute"} mt={22} ml={22} />
-							<Image src={Quote} w={36.014} h={32} pos={"absolute"} mt={31} ml={348} />
-							<Text c={"#FFF"} fz={14} w={368} h={110} mt={122} ml={22} mr={23} fw={400}>
+							<Image
+								src={Tifr}
+								w={{ base: 85 }}
+								h={{ base: 41 }}
+								pos={"absolute"}
+								mt={22}
+								ml={22}
+							/>
+							<Image src={Quote} w={36.014} h={32} pos={"absolute"} mt={31} ml={{ base: 228 }} />
+							<Text
+								c={"#FFF"}
+								fz={{ base: 11 }}
+								w={{ base: 280 }}
+								h={{ base: 80 }}
+								mt={{ base: 108 }}
+								ml={{ base: 10 }}
+								fw={400}
+							>
 								Libratherm products are performing in nearly all the states in the country and in
 								more than 25 countries around the world. While designing and manufacturing their
 								products, they sustain a way in which their services benefit us.
 							</Text>
 
-							<Image src={Avatar1} w={56} h={56} pos={"absolute"} mt={309} left={32} />
-							<Text pos={"absolute"} c={"#FFF"} mt={309} left={98} size="sm" fw={400}>
+							<Image
+								src={Avatar1}
+								w={{ base: 48 }}
+								h={{ base: 48 }}
+								pos={"absolute"}
+								mt={{ base: 219 }}
+								left={{ base: 16 }}
+							/>
+							<Text
+								pos={"absolute"}
+								c={"#FFF"}
+								mt={{ base: 219 }}
+								left={{ base: 80 }}
+								fz={{ base: 14 }}
+								fw={400}
+							>
 								Varuni Vij
 							</Text>
-							<Text pos={"absolute"} c={"#FFF"} mt={341} left={98} size="xs" fw={400}>
+							<Text
+								pos={"absolute"}
+								c={"#FFF"}
+								mt={{ base: 249 }}
+								left={{ base: 80 }}
+								fz={{ base: 8 }}
+								fw={400}
+							>
 								Former Media Planning & Content Lead, Reckitt India
 							</Text>
 						</Card>
@@ -102,9 +129,9 @@ const Testimonials = (props: Props) => {
 
 					<Carousel.Slide>
 						<Card
-							w={423}
+							w={{ base: 312 }}
+							h={{ base: 308 }}
 							radius={20}
-							h={417}
 							bg="#222222"
 							style={{
 								position: "relative",
@@ -113,27 +140,63 @@ const Testimonials = (props: Props) => {
 								border: "#222222",
 							}}
 						>
-							<Image src={Bhel} w={83} h={79} pos={"absolute"} mt={22} ml={22} />
-							<Image src={Quote} w={36.014} h={32} pos={"absolute"} mt={31} ml={348} />
-							<Text c={"#FFF"} fz={14} w={368} h={110} mt={122} ml={22} mr={23} fw={400}>
+							<Image
+								src={Bhel}
+								w={{ base: 85 }}
+								h={{ base: 41 }}
+								pos={"absolute"}
+								mt={22}
+								ml={22}
+							/>
+							<Image src={Quote} w={36.014} h={32} pos={"absolute"} mt={31} ml={{ base: 228 }} />
+							<Text
+								c={"#FFF"}
+								fz={{ base: 11 }}
+								w={{ base: 280 }}
+								h={{ base: 80 }}
+								mt={{ base: 108 }}
+								ml={{ base: 10 }}
+								fw={400}
+							>
 								Libratherm products are performing in nearly all the states in the country and in
 								more than 25 countries around the world. While designing and manufacturing their
 								products, they sustain a way in which their services benefit us.
 							</Text>
-							<Image src={Avatar2} w={56} h={56} pos={"absolute"} mt={309} left={32} />
-							<Text pos={"absolute"} c={"#FFF"} mt={309} left={98} size="sm" fw={400}>
+							<Image
+								src={Avatar2}
+								w={{ base: 48 }}
+								h={{ base: 48 }}
+								pos={"absolute"}
+								mt={{ base: 219 }}
+								left={{ base: 16 }}
+							/>
+							<Text
+								pos={"absolute"}
+								c={"#FFF"}
+								mt={{ base: 219 }}
+								left={{ base: 80 }}
+								fz={{ base: 14 }}
+								fw={400}
+							>
 								Varuni Vij
 							</Text>
-							<Text pos={"absolute"} c={"#FFF"} mt={341} left={98} size="xs" fw={400}>
+							<Text
+								pos={"absolute"}
+								c={"#FFF"}
+								mt={{ base: 249 }}
+								left={{ base: 80 }}
+								fz={{ base: 8 }}
+								fw={400}
+							>
 								Former Media Planning & Content Lead, Reckitt India
 							</Text>
 						</Card>
 					</Carousel.Slide>
 					<Carousel.Slide>
 						<Card
-							w={423}
+							w={{ base: 312 }}
+							h={{ base: 308 }}
 							radius={20}
-							h={417}
 							bg="#222222"
 							style={{
 								position: "relative",
@@ -142,19 +205,54 @@ const Testimonials = (props: Props) => {
 								border: "#222222",
 							}}
 						>
-							<Image src={Tifr} w={127} h={61} pos={"absolute"} mt={22} ml={22} />
-							<Image src={Quote} w={36.014} h={32} pos={"absolute"} mt={31} ml={348} />
-							<Text c={"#FFF"} fz={14} w={368} h={110} mt={122} ml={22} mr={23} fw={400}>
+							<Image
+								src={Bhel}
+								w={{ base: 85 }}
+								h={{ base: 41 }}
+								pos={"absolute"}
+								mt={22}
+								ml={22}
+							/>
+							<Image src={Quote} w={36.014} h={32} pos={"absolute"} mt={31} ml={{ base: 228 }} />
+							<Text
+								c={"#FFF"}
+								fz={{ base: 11 }}
+								w={{ base: 280 }}
+								h={{ base: 80 }}
+								mt={{ base: 108 }}
+								ml={{ base: 10 }}
+								fw={400}
+							>
 								Libratherm products are performing in nearly all the states in the country and in
 								more than 25 countries around the world. While designing and manufacturing their
 								products, they sustain a way in which their services benefit us.
 							</Text>
-
-							<Image src={Avatar3} w={56} h={56} pos={"absolute"} mt={309} left={32} />
-							<Text pos={"absolute"} c={"#FFF"} mt={309} left={98} size="sm" fw={400}>
+							<Image
+								src={Avatar3}
+								w={{ base: 48 }}
+								h={{ base: 48 }}
+								pos={"absolute"}
+								mt={{ base: 219 }}
+								left={{ base: 16 }}
+							/>
+							<Text
+								pos={"absolute"}
+								c={"#FFF"}
+								mt={{ base: 219 }}
+								left={{ base: 80 }}
+								fz={{ base: 14 }}
+								fw={400}
+							>
 								Varuni Vij
 							</Text>
-							<Text pos={"absolute"} c={"#FFF"} mt={341} left={98} size="xs" fw={400}>
+							<Text
+								pos={"absolute"}
+								c={"#FFF"}
+								mt={{ base: 249 }}
+								left={{ base: 80 }}
+								fz={{ base: 8 }}
+								fw={400}
+							>
 								Former Media Planning & Content Lead, Reckitt India
 							</Text>
 						</Card>
@@ -163,7 +261,7 @@ const Testimonials = (props: Props) => {
 			</Paper>
 
 			{/**Mobile View */}
-			<Paper w={360} h={840} bg={"#000"} mt={56} hiddenFrom="xs">
+			{/* <Paper w={360} h={840} bg={"#000"} mt={56} hiddenFrom="xs">
 				<Text fz={10} c={"#FFF"} ml={17} pt={64} bg={"#000"}>
 					WHAT PEOPLE ARE SAYING ?
 				</Text>
@@ -267,10 +365,10 @@ const Testimonials = (props: Props) => {
 						</Card>
 					</Carousel.Slide>
 				</Carousel>
-			</Paper>
+			</Paper> */}
 
 			{/**Tablet View */}
-			<Paper w={768} h={580} bg={"#000"} pt={69} hiddenFrom="md" visibleFrom="xs">
+			{/* <Paper w={768} h={580} bg={"#000"} pt={69} hiddenFrom="md" visibleFrom="xs">
 				<Text fz={14} c={"#FFF"} ml={90} bg={"#000"}>
 					WHAT PEOPLE ARE SAYING ??
 				</Text>
@@ -394,7 +492,7 @@ const Testimonials = (props: Props) => {
 						</Card>
 					</Carousel.Slide>
 				</Carousel>
-			</Paper>
+			</Paper> */}
 		</>
 	);
 };

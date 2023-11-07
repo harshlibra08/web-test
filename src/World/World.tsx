@@ -7,8 +7,44 @@ type Props = {};
 const World = (props: Props) => {
 	return (
 		<>
-			<Paper w={1440} h={485} visibleFrom="md">
-				<Grid ml={114}>
+			<Paper m="auto" w={{ base: 360, sm: 768, xl: 1400 }} mt={30}>
+				<Grid>
+					<Grid.Col span={{ base: 12, sm: 6, xl: 6 }} order={{ base: 2, sm: 1, lg: 1 }}>
+						<Text fz={{ base: 20 }} fw={600} mt={{ base: 24 }} ml={{ base: 16 }}>
+							The Global Impacts
+						</Text>
+						<Text fz={{ base: 12 }} fw={600} ml={{ base: 21 }} h={44} mt={16} w={298} c={"#555459"}>
+							The products we’ve manufactured have been used over
+						</Text>
+						<Text fz={{ base: 32 }} fw={700} ml={{ base: 39 }} c={"#555459"} w={306} mt={4}>
+							100 million
+						</Text>
+
+						<Text fz={{ base: 12 }} fw={600} ml={{ base: 39 }} c={"#555459"}>
+							users & has been exported
+						</Text>
+
+						<Text fz={{ base: 32 }} fw={700} ml={{ base: 85 }} c={"#555459"}>
+							8 countries
+						</Text>
+
+						<Text fz={{ base: 12 }} fw={600} ml={{ base: 85 }} w={81} c={"#555459"}>
+							worldwide
+						</Text>
+					</Grid.Col>
+					<Grid.Col span={3} order={{ base: 1, sm: 2, lg: 2 }}>
+						<Image
+							src={Worldmap}
+							w={{ base: 299 }}
+							h={{ base: 195 }}
+							mt={{ base: 32 }}
+							alt="World"
+						/>
+					</Grid.Col>
+				</Grid>
+			</Paper>
+
+			{/* <Grid ml={114}>
 					<Grid.Col span={5}>
 						<Text fz={32} fw={600} mt={205} ml={114}>
 							The Global Impacts
@@ -35,11 +71,10 @@ const World = (props: Props) => {
 					<Grid.Col span={7}>
 						<Image src={Worldmap} w={698} h={457} mt={135} alt="World" />
 					</Grid.Col>
-				</Grid>
-			</Paper>
+				</Grid> */}
 
 			{/**MOBILE VIEW */}
-			<Paper w={360} h={485} hiddenFrom="xs">
+			{/* <Paper w={360} h={485} hiddenFrom="xs">
 				<Grid>
 					<Grid.Col span={12}>
 						<Image src={Worldmap} w={299} h={195} mt={32} ml={31} alt="World" />
@@ -68,10 +103,10 @@ const World = (props: Props) => {
 						</Text>
 					</Grid.Col>
 				</Grid>
-			</Paper>
+			</Paper> */}
 
 			{/**TABLET VIEW */}
-			<Paper w={768} h={420} hiddenFrom="md" visibleFrom="xs">
+			{/* <Paper w={768} h={420} hiddenFrom="md" visibleFrom="xs">
 				<Grid ml={60}>
 					<Grid.Col span={4}>
 						<Text fz={18} w={280} fw={600} mt={100} c={"#292929"}>
@@ -100,7 +135,7 @@ const World = (props: Props) => {
 						<Image src={Worldmap} ml={20} w={400} h={300} mt={55} alt="World" />
 					</Grid.Col>
 				</Grid>
-			</Paper>
+			</Paper> */}
 		</>
 	);
 };

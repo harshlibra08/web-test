@@ -11,27 +11,146 @@ type Props = {};
 const Events = (props: Props) => {
 	return (
 		<>
-			<Paper w={1440} h={1046} bg={"#000"} visibleFrom="md">
-				<Text c={"#e4e8ed"} fz={14} pt={106} ml={140}>
+			<Paper w={{ base: 360 }} h={{ base: 887 }} bg={"#000"} mt={{ base: 30 }}>
+				<Text c={"#e4e8ed"} fz={{ base: 10 }} pt={{ base: 64 }} ml={{ base: 17 }}>
 					WHAT HAVE WE BEEN DOING
 				</Text>
-				<Group wrap="nowrap" gap={0}>
-					<Box w="100%">
-						<Divider
-							size="md"
-							my={"60px"}
-							mr={"157px"}
-							label={
-								<Text size={"32px"} ml={140} color="#FFF">
-									Events
-								</Text>
-							}
-							labelPosition="left"
-						/>
-					</Box>
-				</Group>
-				<Grid>
-					<Grid.Col span={4}>
+
+				<Text fz={{ base: 20 }} ml={{ base: 16 }} mt={{ base: 8 }} c="#FFF">
+					Events
+				</Text>
+				<Divider size="md" my={"60px"} mr={"157px"} visibleFrom="md" />
+
+				<Grid mt={{ base: 22 }}>
+					<Grid.Col span={{ base: 6 }}>
+						<Box pos="relative" w={1200} h={280}>
+							<Image
+								src={EventBg}
+								h={{ base: 147 }}
+								w={{ base: 60 }}
+								pos="absolute"
+								top={0}
+								left={{ base: 16 }}
+							/>
+							<Image
+								src={Event1}
+								h={{ base: 119 }}
+								w={{ base: 120 }}
+								pos="absolute"
+								top={{ base: 15 }}
+								left={{ base: 31 }}
+							/>
+							<Text c={"#e4e8ed"} fz={{ base: 10 }} ml={{ base: 23 }} pt={{ base: 157 }}>
+								22nd January, 2023.
+							</Text>
+							<Text
+								c={"#ffffff"}
+								fz={{ base: 12 }}
+								ml={{ base: 23 }}
+								mt={{ base: 9 }}
+								w={{ base: 149 }}
+							>
+								Mumbai ACE Tech Exhibition
+							</Text>
+						</Box>
+					</Grid.Col>
+					<Grid.Col span={{ base: 6 }}>
+						<Box pos="relative" w={1200} h={280}>
+							<Image
+								src={EventBg}
+								h={{ base: 147 }}
+								w={{ base: 60 }}
+								pos="absolute"
+								top={0}
+								left={{ base: 16 }}
+							/>
+							<Image
+								src={Event2}
+								h={{ base: 119 }}
+								w={{ base: 120 }}
+								pos="absolute"
+								top={{ base: 15 }}
+								left={{ base: 31 }}
+							/>
+							<Text c={"#e4e8ed"} fz={{ base: 10 }} ml={{ base: 23 }} pt={{ base: 157 }}>
+								22nd January, 2023.
+							</Text>
+							<Text
+								c={"#ffffff"}
+								fz={{ base: 12 }}
+								ml={{ base: 23 }}
+								mt={{ base: 9 }}
+								w={{ base: 149 }}
+							>
+								Mumbai ACE Tech Exhibition
+							</Text>
+						</Box>
+					</Grid.Col>
+					<Grid.Col span={{ base: 6 }}>
+						<Box pos="relative" w={1200} h={280}>
+							<Image
+								src={EventBg}
+								h={{ base: 147 }}
+								w={{ base: 60 }}
+								pos="absolute"
+								top={0}
+								left={{ base: 16 }}
+							/>
+							<Image
+								src={Event3}
+								h={{ base: 119 }}
+								w={{ base: 120 }}
+								pos="absolute"
+								top={{ base: 15 }}
+								left={{ base: 31 }}
+							/>
+							<Text c={"#e4e8ed"} fz={{ base: 10 }} ml={{ base: 23 }} pt={{ base: 157 }}>
+								22nd January, 2023.
+							</Text>
+							<Text
+								c={"#ffffff"}
+								fz={{ base: 12 }}
+								ml={{ base: 23 }}
+								mt={{ base: 9 }}
+								w={{ base: 149 }}
+							>
+								Mumbai ACE Tech Exhibition
+							</Text>
+						</Box>
+					</Grid.Col>
+					<Grid.Col span={{ base: 6 }}>
+						<Box pos="relative" w={1200} h={280}>
+							<Image
+								src={EventBg}
+								h={{ base: 147 }}
+								w={{ base: 60 }}
+								pos="absolute"
+								top={0}
+								left={{ base: 16 }}
+							/>
+							<Image
+								src={Event4}
+								h={{ base: 119 }}
+								w={{ base: 120 }}
+								pos="absolute"
+								top={{ base: 15 }}
+								left={{ base: 31 }}
+							/>
+							<Text c={"#e4e8ed"} fz={{ base: 10 }} ml={{ base: 23 }} pt={{ base: 157 }}>
+								22nd January, 2023.
+							</Text>
+							<Text
+								c={"#ffffff"}
+								fz={{ base: 12 }}
+								ml={{ base: 23 }}
+								mt={{ base: 9 }}
+								w={{ base: 149 }}
+							>
+								Mumbai ACE Tech Exhibition
+							</Text>
+						</Box>
+					</Grid.Col>
+					<Grid.Col span={4} visibleFrom="md">
 						<Box pos="relative" w={1200} h={280}>
 							<Image src={EventBg} h={202} w={82} pos="absolute" top={0} left={114} />
 							<Image src={Event1} h={164} w={164} pos="absolute" top={20} left={135} />
@@ -43,55 +162,7 @@ const Events = (props: Props) => {
 							</Text>
 						</Box>
 					</Grid.Col>
-					<Grid.Col span={4}>
-						<Box pos="relative" w={1200} h={280}>
-							<Image src={EventBg} h={202} w={82} pos="absolute" top={0} left={114} />
-							<Image src={Event1} h={164} w={164} pos="absolute" top={20} left={135} />
-							<Text c={"#e4e8ed"} fz={12} ml={319}>
-								22nd January, 2023.
-							</Text>
-							<Text c={"#ffffff"} fz={16} ml={319} mt={15} w={186}>
-								Mumbai ACE Tech Exhibition
-							</Text>
-						</Box>
-					</Grid.Col>
-					<Grid.Col span={4}>
-						<Box pos="relative" w={1200} h={280}>
-							<Image src={EventBg} h={202} w={82} pos="absolute" top={0} left={114} />
-							<Image src={Event1} h={164} w={164} pos="absolute" top={20} left={135} />
-							<Text c={"#e4e8ed"} fz={12} ml={319}>
-								22nd January, 2023.
-							</Text>
-							<Text c={"#ffffff"} fz={16} ml={319} mt={15} w={186}>
-								Mumbai ACE Tech Exhibition
-							</Text>
-						</Box>
-					</Grid.Col>
-					<Grid.Col span={4}>
-						<Box pos="relative" w={1200} h={280}>
-							<Image src={EventBg} h={202} w={82} pos="absolute" top={0} left={114} />
-							<Image src={Event1} h={164} w={164} pos="absolute" top={20} left={135} />
-							<Text c={"#e4e8ed"} fz={12} ml={319}>
-								22nd January, 2023.
-							</Text>
-							<Text c={"#ffffff"} fz={16} ml={319} mt={15} w={186}>
-								Mumbai ACE Tech Exhibition
-							</Text>
-						</Box>
-					</Grid.Col>
-					<Grid.Col span={4}>
-						<Box pos="relative" w={1200} h={280}>
-							<Image src={EventBg} h={202} w={82} pos="absolute" top={0} left={114} />
-							<Image src={Event1} h={164} w={164} pos="absolute" top={20} left={135} />
-							<Text c={"#e4e8ed"} fz={12} ml={319}>
-								22nd January, 2023.
-							</Text>
-							<Text c={"#ffffff"} fz={16} ml={319} mt={15} w={186}>
-								Mumbai ACE Tech Exhibition
-							</Text>
-						</Box>
-					</Grid.Col>
-					<Grid.Col span={4}>
+					<Grid.Col span={4} visibleFrom="md">
 						<Box pos="relative" w={1200} h={280}>
 							<Image src={EventBg} h={202} w={82} pos="absolute" top={0} left={114} />
 							<Image src={Event1} h={164} w={164} pos="absolute" top={20} left={135} />
@@ -106,7 +177,7 @@ const Events = (props: Props) => {
 				</Grid>
 				<Group justify="center">
 					<UnstyledButton>
-						<Text size="md" c={"#ffffff"}>
+						<Text fz={{ base: 14 }} c={"#ffffff"}>
 							Show more
 						</Text>
 					</UnstyledButton>
@@ -115,7 +186,7 @@ const Events = (props: Props) => {
 			</Paper>
 
 			{/**Mobile View */}
-			<Paper w={360} h={780} bg={"#000"} mt={64} hiddenFrom="xs">
+			{/* <Paper w={360} h={780} bg={"#000"} mt={64} hiddenFrom="xs">
 				<Text c={"#e4e8ed"} fz={10} pt={64} ml={17}>
 					LOREM IPSUM
 				</Text>
@@ -182,10 +253,10 @@ const Events = (props: Props) => {
 					</UnstyledButton>
 					{<IconChevronDown size="20px" color="#FFF" />}
 				</Group>
-			</Paper>
+			</Paper> */}
 
 			{/**Tablet View */}
-			<Paper w={768} h={946} bg={"#000"} mt={64} hiddenFrom="md" visibleFrom="xs">
+			{/* <Paper w={768} h={946} bg={"#000"} mt={64} hiddenFrom="md" visibleFrom="xs">
 				<Text c={"#e4e8ed"} fz={12} pt={64} ml={30}>
 					WHAT HAVE WE BEEN DOING
 				</Text>
@@ -276,7 +347,7 @@ const Events = (props: Props) => {
 					</UnstyledButton>
 					{<IconChevronDown size="20px" color="#FFF" />}
 				</Group>
-			</Paper>
+			</Paper> */}
 		</>
 	);
 };

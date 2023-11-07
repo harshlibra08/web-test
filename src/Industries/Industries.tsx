@@ -9,6 +9,7 @@ import {
 	Box,
 	Divider,
 	Button,
+	SimpleGrid,
 } from "@mantine/core";
 import React from "react";
 import Industries1 from "../Assets/Industries1.png";
@@ -20,7 +21,7 @@ type Props = {};
 const Industries = (props: Props) => {
 	return (
 		<>
-			<Group gap={0} visibleFrom="md">
+			{/* <Group gap={0}>
 				<Box w={1270}>
 					<Divider
 						size="sm"
@@ -36,10 +37,10 @@ const Industries = (props: Props) => {
 				</Box>
 
 				{<UnstyledButton ml={0}>View All</UnstyledButton>}
-			</Group>
-			<Grid w={1212} mx={114} mt={30} justify="space-between" visibleFrom="md">
-				<Grid.Col span={4}>
-					<Card w={391} h={593}>
+			</Group> */}
+			<Paper m="auto" w={{ base: 360, sm: 768, xl: 1400 }} mt={30}>
+				<SimpleGrid cols={{ base: 1, xl: 3 }}>
+					<Card w={{ sm: 391, base: 328 }}>
 						<Card.Section>
 							<Image src={Industries1} w={391} h={391} />
 							<Text pt={16} fz={18} fw={600} c={"#262728"}>
@@ -57,9 +58,8 @@ const Industries = (props: Props) => {
 							</Text>
 						</Card.Section>
 					</Card>
-				</Grid.Col>
-				<Grid.Col span={4}>
-					<Card w={391} h={593}>
+
+					<Card w={{ sm: 391, base: 328 }}>
 						<Card.Section>
 							<Image src={Industries2} w={391} h={391} />
 							<Text pt={16} fz={18} fw={600} c={"#262728"}>
@@ -77,9 +77,8 @@ const Industries = (props: Props) => {
 							</Text>
 						</Card.Section>
 					</Card>
-				</Grid.Col>
-				<Grid.Col span={4}>
-					<Card w={391} h={593}>
+
+					<Card w={{ sm: 391, base: 328 }}>
 						<Card.Section>
 							<Image src={Industries3} w={391} h={391} />
 							<Text pt={16} fz={18} fw={600} c={"#262728"}>
@@ -97,11 +96,11 @@ const Industries = (props: Props) => {
 							</Text>
 						</Card.Section>
 					</Card>
-				</Grid.Col>
-			</Grid>
+				</SimpleGrid>
+			</Paper>
 
 			{/**Mobile View */}
-			<Group gap={0} wrap="nowrap" hiddenFrom="xs">
+			{/* <Group gap={0} wrap="nowrap" hiddenFrom="xs">
 				<Box w={1270}>
 					<Text fw={600} fz={20} ml={16} c={"#262728"}>
 						Industries we serve
@@ -172,11 +171,11 @@ const Industries = (props: Props) => {
 				<Button variant="outline" color="#555459" w={176} mt={40}>
 					View All
 				</Button>
-			</Grid>
+			</Grid> */}
 
 			{/**Tablet View */}
 
-			<Group wrap="nowrap" gap={0} w={768} hiddenFrom="md" visibleFrom="xs" ml={90} mt={64}>
+			{/* <Group wrap="nowrap" gap={0} w={768} hiddenFrom="md" visibleFrom="xs" ml={90} mt={64}>
 				<Text fz={26} fw={600} c={"#262728"}>
 					Our Product
 				</Text>
@@ -254,7 +253,7 @@ const Industries = (props: Props) => {
 						</Card.Section>
 					</Card>
 				</Grid.Col>
-			</Grid>
+			</Grid> */}
 		</>
 	);
 };
