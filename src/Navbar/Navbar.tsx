@@ -10,50 +10,54 @@ export function Navbar() {
 	const [opened, { toggle }] = useDisclosure();
 	return (
 		<>
-			<Group wrap="nowrap" visibleFrom="md">
-				<Image src={Libralogo} h={40} ml={64} mt={12} w={134} />
-				<Text fz={14} ml={34} mt={12}>
-					About Us
-				</Text>
-				<Text fz={14} ml={62} mt={12}>
-					Products
-				</Text>
-				<Text fz={14} ml={64} mt={12}>
-					Journals
-				</Text>
-				<Text fz={14} ml={64} mt={12}>
-					Contact Us
-				</Text>
-				<Autocomplete
-					placeholder="Enter your search"
-					leftSection={<IconSearch size="20px" stroke={1.5} color="#555459" />}
-					radius={32}
-					w={308}
-					height={34}
-					mt={14}
-					ml={99}
-					styles={{
-						input: {
-							backgroundColor: "#F0F0F0",
+			<Paper w={{ base: 360, lg: 1440 }} visibleFrom="md">
+				<Group wrap="nowrap" visibleFrom="md" gap={0}>
+					<Image src={Libralogo} h={40} ml={64} mt={12} w={134} />
+					<Text fz={14} ml={64} mt={12}>
+						About Us
+					</Text>
+					<Text fz={14} ml={64} mt={12}>
+						Products
+					</Text>
+					<Text fz={14} ml={64} mt={12}>
+						Journals
+					</Text>
+					<Text fz={14} ml={64} w={95} mt={12}>
+						Contact Us
+					</Text>
+					<Autocomplete
+						placeholder="Enter your search"
+						leftSection={<IconSearch size="20px" stroke={1.5} color="#555459" />}
+						radius={32}
+						w={308}
+						height={34}
+						mt={14}
+						ml={69}
+						styles={{
+							input: {
+								backgroundColor: "#F0F0F0",
 
-							border: "none",
-						},
-					}}
-				/>
-				<IconUser
-					style={{ width: "20px", height: "20px", marginTop: "20px", marginLeft: "24px" }}
-					color="#555459"
-				/>
-				<IconHeart style={{ width: "20px", height: "20px", marginTop: "20px" }} color="#555459" />
-				<IconShoppingCart
-					style={{ width: "20px", height: "20px", marginTop: "20px" }}
-					color="#555459"
-				/>
-				<OptionsButton style={{ marginLeft: "11px", marginTop: "15px" }}>
-					We're Hiring
-				</OptionsButton>
-			</Group>
-
+								border: "none",
+							},
+						}}
+					/>
+					<IconUser
+						style={{ width: "20px", height: "20px", marginTop: "20px", marginLeft: "24px" }}
+						color="#555459"
+					/>
+					<IconHeart
+						style={{ width: "20px", height: "20px", marginTop: "20px", marginLeft: "24px" }}
+						color="#555459"
+					/>
+					<IconShoppingCart
+						style={{ width: "20px", height: "20px", marginTop: "20px", marginLeft: "24px" }}
+						color="#555459"
+					/>
+					<OptionsButton style={{ marginLeft: "24px", marginTop: "15px" }}>
+						We're Hiring
+					</OptionsButton>
+				</Group>
+			</Paper>
 			{/**Mobile View */}
 			<Paper w={360} hiddenFrom="xs">
 				<Group wrap="nowrap" justify="center" gap={100}>

@@ -1,15 +1,13 @@
 import {
 	Paper,
-	Group,
 	Card,
 	Text,
 	Image,
-	UnstyledButton,
-	Grid,
-	Box,
-	Divider,
-	Button,
 	SimpleGrid,
+	Divider,
+	Group,
+	UnstyledButton,
+	Button,
 } from "@mantine/core";
 import React from "react";
 import Industries1 from "../Assets/Industries1.png";
@@ -21,32 +19,32 @@ type Props = {};
 const Industries = (props: Props) => {
 	return (
 		<>
-			{/* <Group gap={0}>
-				<Box w={1270}>
-					<Divider
-						size="sm"
-						my={"60px"}
-						mr={"17px"}
-						label={
-							<Text fw={600} fz={32} ml={114} style={{ color: "#262728", lineHeight: "40px" }}>
-								Industries we serve
-							</Text>
-						}
-						labelPosition="left"
-					/>
-				</Box>
+			<Group wrap="nowrap" gap={0} mt={{ lg: 73, base: 56 }}>
+				<Text
+					fw={600}
+					fz={{ base: 20, lg: 32 }}
+					ml={{ base: 16, lg: 114 }}
+					style={{ color: "#262728", lineHeight: "40px" }}
+				>
+					Industries We Serve
+				</Text>
+				<Divider size="sm" w={{ lg: 801 }} ml={{ lg: 16 }} visibleFrom="md" />
 
-				{<UnstyledButton ml={0}>View All</UnstyledButton>}
-			</Group> */}
-			<Paper m="auto" w={{ base: 360, sm: 768, xl: 1400 }} mt={30}>
-				<SimpleGrid cols={{ base: 1, xl: 3 }}>
-					<Card w={{ sm: 391, base: 328 }}>
+				{
+					<UnstyledButton visibleFrom="md" ml={32}>
+						View All
+					</UnstyledButton>
+				}
+			</Group>
+			<Paper w={{ base: 360, sm: 768, xl: 1400 }} mt={30}>
+				<SimpleGrid cols={{ base: 1, xl: 3 }} mt={{ lg: 30, base: 24 }} ml={{ lg: 114, base: 16 }}>
+					<Card w={{ lg: 391, base: 328 }}>
 						<Card.Section>
-							<Image src={Industries1} w={391} h={391} />
+							<Image src={Industries1} w={{ lg: 391, base: 328 }} h={{ lg: 391, base: 284 }} />
 							<Text pt={16} fz={18} fw={600} c={"#262728"}>
 								Glass Manufacture
 							</Text>
-							<Text pt={4} fz={14} fw={400} lineClamp={5} c={"#555459"}>
+							<Text pt={4} fz={14} fw={400} lineClamp={3} c={"#555459"}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -61,11 +59,11 @@ const Industries = (props: Props) => {
 
 					<Card w={{ sm: 391, base: 328 }}>
 						<Card.Section>
-							<Image src={Industries2} w={391} h={391} />
+							<Image src={Industries2} w={{ lg: 391, base: 328 }} h={{ lg: 391, base: 284 }} />
 							<Text pt={16} fz={18} fw={600} c={"#262728"}>
 								Jewelry Manufacture
 							</Text>
-							<Text pt={4} fz={14} fw={400} lineClamp={5} c={"#555459"}>
+							<Text pt={4} fz={14} fw={400} lineClamp={3} c={"#555459"}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -80,11 +78,11 @@ const Industries = (props: Props) => {
 
 					<Card w={{ sm: 391, base: 328 }}>
 						<Card.Section>
-							<Image src={Industries3} w={391} h={391} />
+							<Image src={Industries3} w={{ lg: 391, base: 328 }} h={{ lg: 391, base: 284 }} />
 							<Text pt={16} fz={18} fw={600} c={"#262728"}>
 								Steel Plants
 							</Text>
-							<Text pt={4} fz={14} fw={400} lineClamp={5} c={"#555459"}>
+							<Text pt={4} fz={14} fw={400} lineClamp={3} c={"#555459"}>
 								Libratherm has supplied various types of temperature controllers, thyristor power
 								controllers and control panels to the industries manufacturing Files, Diamond Tools,
 								Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
@@ -97,6 +95,9 @@ const Industries = (props: Props) => {
 						</Card.Section>
 					</Card>
 				</SimpleGrid>
+				<Button variant="outline" color="#555459" w={176} ml={92} mt={40} hiddenFrom="xs">
+					View All
+				</Button>
 			</Paper>
 
 			{/**Mobile View */}

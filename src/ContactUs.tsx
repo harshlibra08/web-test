@@ -11,6 +11,7 @@ import {
 	Text,
 	Button,
 	ButtonProps,
+	Grid,
 } from "@mantine/core";
 import React from "react";
 
@@ -35,7 +36,7 @@ const PrimaryButton = ({ ...props }: ButtonProps) => (
 const ContactUs = (props: Props) => {
 	return (
 		<>
-			<Paper w={{ base: 360 }} h={{ base: 1541 }}>
+			<Paper w={{ base: 360 }} h={{ base: 1641 }}>
 				<Text c={"#262728"} fz={{ base: 10 }} fw={600} mt={{ base: 56 }} ml={{ base: 143 }}>
 					WORK WITH US
 				</Text>
@@ -57,163 +58,167 @@ const ContactUs = (props: Props) => {
 					precise control
 				</Text>
 
-				<Paper w={{ base: 360 }} h={{ base: 1636 }} bg={"black"} mt={{ base: 77 }}>
-					<Stack ml={{ base: 16 }} pt={{ base: 28 }} maw={360}>
-						<Text fz={{ base: 10 }} c={"#e4e8ed"}>
-							GET IN TOUCH
-						</Text>
-						<Text fz={{ base: 20 }} c={"#ffffff"}>
-							Interested in something?
-						</Text>
-						<Text fz={{ base: 12 }} c={"#e4e8ed"} w={{ base: 328 }}>
-							Please get in touch below if you have a product enquiry or would like to know more
-							information
-						</Text>
+				<Paper w={{ base: 360 }} h={{ base: 1400 }} bg={"black"} mt={{ base: 77 }}>
+					<Grid>
+						<Grid.Col span={{ base: 12 }}>
+							<Stack ml={{ base: 16 }} pt={{ base: 28 }} maw={360}>
+								<Text fz={{ base: 10 }} c={"#e4e8ed"}>
+									GET IN TOUCH
+								</Text>
+								<Text fz={{ base: 20 }} c={"#ffffff"}>
+									Interested in something?
+								</Text>
+								<Text fz={{ base: 12 }} c={"#e4e8ed"} w={{ base: 328 }}>
+									Please get in touch below if you have a product enquiry or would like to know more
+									information
+								</Text>
 
-						<TextInput
-							w={326}
-							variant="filled"
-							styles={{
-								input: {
-									background: "black",
-									borderColor: "#777",
-									height: 31,
-									borderStyle: "solid",
-								},
-							}}
-							label="Name"
-							c={"#FFF"}
-							radius={"xs"}
-						/>
-						<TextInput
-							w={326}
-							variant="filled"
-							styles={{
-								input: {
-									height: 31,
-									background: "black",
-									borderColor: "#777",
-									borderStyle: "solid",
-								},
-							}}
-							label="Company"
-							c={"#FFF"}
-							radius={"xs"}
-						/>
+								<TextInput
+									w={{ base: 326 }}
+									variant="filled"
+									styles={{
+										input: {
+											background: "black",
+											borderColor: "#777",
+											height: 31,
+											borderStyle: "solid",
+										},
+									}}
+									label="Name"
+									c={"#FFF"}
+									radius={"xs"}
+								/>
+								<TextInput
+									w={{ base: 326 }}
+									variant="filled"
+									styles={{
+										input: {
+											height: 31,
+											background: "black",
+											borderColor: "#777",
+											borderStyle: "solid",
+										},
+									}}
+									label="Company"
+									c={"#FFF"}
+									radius={"xs"}
+								/>
 
-						<TextInput
-							w={326}
-							variant="filled"
-							styles={{
-								input: {
-									height: 31,
-									background: "black",
-									borderColor: "#777",
-									borderStyle: "solid",
-								},
-							}}
-							label="Email Address"
-							c={"#FFF"}
-							radius={"xs"}
-						/>
+								<TextInput
+									w={{ base: 326 }}
+									variant="filled"
+									styles={{
+										input: {
+											height: 31,
+											background: "black",
+											borderColor: "#777",
+											borderStyle: "solid",
+										},
+									}}
+									label="Email Address"
+									c={"#FFF"}
+									radius={"xs"}
+								/>
 
-						<TextInput
-							w={326}
-							variant="filled"
-							styles={{
-								input: {
-									height: 31,
-									background: "black",
-									borderColor: "#777",
-									borderStyle: "solid",
-								},
-							}}
-							label="Phone Number"
-							c={"#FFF"}
-							radius={"xs"}
-						/>
-						<TextInput
-							w={326}
-							variant="filled"
-							styles={{
-								input: {
-									height: 31,
-									background: "black",
-									borderColor: "#777",
-									borderStyle: "solid",
-								},
-							}}
-							label="Country"
-							radius={"xs"}
-							c={"#FFF"}
-						/>
+								<TextInput
+									w={{ base: 326 }}
+									variant="filled"
+									styles={{
+										input: {
+											height: 31,
+											background: "black",
+											borderColor: "#777",
+											borderStyle: "solid",
+										},
+									}}
+									label="Phone Number"
+									c={"#FFF"}
+									radius={"xs"}
+								/>
+								<TextInput
+									w={{ base: 326 }}
+									variant="filled"
+									styles={{
+										input: {
+											height: 31,
+											background: "black",
+											borderColor: "#777",
+											borderStyle: "solid",
+										},
+									}}
+									label="Country"
+									radius={"xs"}
+									c={"#FFF"}
+								/>
 
-						<Textarea
-							w={326}
-							variant="filled"
-							styles={{
-								input: {
-									height: 93,
-									background: "black",
-									borderColor: "#777",
-									borderStyle: "solid",
-								},
-							}}
-							label="Message"
-							radius={"xs"}
-							c={"#FFF"}
-						/>
+								<Textarea
+									w={{ base: 326 }}
+									variant="filled"
+									styles={{
+										input: {
+											height: 93,
+											background: "black",
+											borderColor: "#777",
+											borderStyle: "solid",
+										},
+									}}
+									label="Message"
+									radius={"xs"}
+									c={"#FFF"}
+								/>
 
-						<PrimaryButton ml={185} w={138}>
-							SEND
-						</PrimaryButton>
-					</Stack>
-
-					<Stack ml={{ base: 16 }} w={323}>
-						<Divider size="md" mt={64} w={334} />
-						<Text fz={{ base: 20 }} mt={32} c={"#f6f6f6"}>
-							Useful Information
-						</Text>
-						<Text fz={{ base: 12 }} c={"#f6f6f6"}>
-							Statutory Details:
-						</Text>
-						<Text fz={{ base: 12 }} c={"#e4e8ed"}>
-							GST No : 27AABCL1732A1Z5
-						</Text>
-						<Text fz={{ base: 12 }} c={"#e4e8ed"}>
-							CIN No : U31909MH2006PTC159638
-						</Text>
-						<Text fz={{ base: 12 }} c={"#f6f6f6"}>
-							Address :
-						</Text>
-						<Text fz={{ base: 12 }} c={"#e4e8ed"}>
-							401-403, Diamond Industrial Estate, Ketkipada Road, Dahisar (East), Mumbai 400068,
-							Maharashtra, India.
-						</Text>
-						<Text fz={{ base: 12 }} c={"#f6f6f6"}>
-							Contact Us:
-						</Text>
-						<Text fz={{ base: 12 }} c={"#e4e8ed"}>
-							Email: enquiry@libratherm.com, libratherm@libratherm.com
-						</Text>
-						<Text fz={{ base: 12 }} c={"#e4e8ed"}>
-							Landline: +91-22-42555334
-						</Text>
-						<Text fz={{ base: 12 }} mt={22} c={"#f6f6f6"}>
-							Mobile:
-						</Text>
-						<Text fz={{ base: 12 }} c={"#e4e8ed"}>
-							Customer Care : +91-8104971152
-						</Text>
-						<Text fz={{ base: 12 }} c={"#e4e8ed"}>
-							Sales : +91-8104971154
-						</Text>
-						<Text fz={{ base: 12 }} c={"#e4e8ed"}>
-							Marketing : +91-9082687279
-						</Text>
-					</Stack>
+								<PrimaryButton ml={{ base: 186 }} w={{ base: 138 }}>
+									SEND
+								</PrimaryButton>
+							</Stack>
+						</Grid.Col>
+						<Grid.Col span={{ base: 12 }}>
+							<Stack ml={{ base: 16 }} w={{ base: 323 }}>
+								<Divider size="md" mt={64} w={{ base: 334 }} />
+								<Text fz={{ base: 20 }} mt={{ base: 32 }} c={"#f6f6f6"}>
+									Useful Information
+								</Text>
+								<Text fz={{ base: 12 }} c={"#f6f6f6"}>
+									Statutory Details:
+								</Text>
+								<Text fz={{ base: 12 }} c={"#e4e8ed"}>
+									GST No : 27AABCL1732A1Z5
+								</Text>
+								<Text fz={{ base: 12 }} c={"#e4e8ed"}>
+									CIN No : U31909MH2006PTC159638
+								</Text>
+								<Text fz={{ base: 12 }} c={"#f6f6f6"}>
+									Address :
+								</Text>
+								<Text fz={{ base: 12 }} c={"#e4e8ed"}>
+									401-403, Diamond Industrial Estate, Ketkipada Road, Dahisar (East), Mumbai 400068,
+									Maharashtra, India.
+								</Text>
+								<Text fz={{ base: 12 }} c={"#f6f6f6"}>
+									Contact Us:
+								</Text>
+								<Text fz={{ base: 12 }} c={"#e4e8ed"}>
+									Email: enquiry@libratherm.com, libratherm@libratherm.com
+								</Text>
+								<Text fz={{ base: 12 }} c={"#e4e8ed"}>
+									Landline: +91-22-42555334
+								</Text>
+								<Text fz={{ base: 12 }} mt={22} c={"#f6f6f6"}>
+									Mobile:
+								</Text>
+								<Text fz={{ base: 12 }} c={"#e4e8ed"}>
+									Customer Care : +91-8104971152
+								</Text>
+								<Text fz={{ base: 12 }} c={"#e4e8ed"}>
+									Sales : +91-8104971154
+								</Text>
+								<Text fz={{ base: 12 }} c={"#e4e8ed"}>
+									Marketing : +91-9082687279
+								</Text>
+							</Stack>
+						</Grid.Col>
+					</Grid>
 				</Paper>
-				{/* </MantineProvider> */}
 			</Paper>
 			{/**Moble View */}
 			{/* <Paper w={360} h={1541} hiddenFrom="xs">
@@ -244,7 +249,7 @@ const ContactUs = (props: Props) => {
 						</Text>
 
 						<TextInput
-							w={326}
+							w={{base:326}}
 							variant="filled"
 							styles={{
 								input: {
@@ -258,7 +263,7 @@ const ContactUs = (props: Props) => {
 							radius={"xs"}
 						/>
 						<TextInput
-							w={326}
+							w={{base:326}}
 							variant="filled"
 							styles={{
 								input: {
@@ -273,7 +278,7 @@ const ContactUs = (props: Props) => {
 						/>
 
 						<TextInput
-							w={326}
+							w={{base:326}}
 							variant="filled"
 							styles={{
 								input: {
@@ -288,7 +293,7 @@ const ContactUs = (props: Props) => {
 						/>
 
 						<TextInput
-							w={326}
+							w={{base:326}}
 							variant="filled"
 							styles={{
 								input: {
@@ -302,7 +307,7 @@ const ContactUs = (props: Props) => {
 							radius={"xs"}
 						/>
 						<TextInput
-							w={326}
+							w={{base:326}}
 							variant="filled"
 							styles={{
 								input: {
@@ -317,7 +322,7 @@ const ContactUs = (props: Props) => {
 						/>
 
 						<Textarea
-							w={326}
+							w={{base:326}}
 							h={93}
 							variant="filled"
 							styles={{
@@ -332,14 +337,14 @@ const ContactUs = (props: Props) => {
 							c={"#FFF"}
 						/>
 
-						<PrimaryButton ml={185} w={138}>
+						<PrimaryButton ml={{base:186}} w={{base:138}}>
 							SEND
 						</PrimaryButton>
 					</Stack>
 
-					<Stack ml={{base:16}} w={323}>
-						<Divider size="md" mt={64} w={334} />
-						<Text fz={{base:20}} mt={32} c={"#f6f6f6"}>
+					<Stack ml={{base:16}} w={{base:323}}>
+						<Divider size="md" mt={64} w={{base:334}} />
+						<Text fz={{base:20}} mt={{base:32}} c={"#f6f6f6"}>
 							Useful Information
 						</Text>
 						<Text fz={{base:12}} c={"#f6f6f6"}>
@@ -503,7 +508,7 @@ const ContactUs = (props: Props) => {
 							c={"#FFF"}
 						/>
 						<Stack align="flex-end">
-							<PrimaryButton w={138} mr={90}>
+							<PrimaryButton w={{base:138}} mr={90}>
 								{" "}
 								SEND
 							</PrimaryButton>

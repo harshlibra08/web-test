@@ -18,7 +18,221 @@ type Props = {};
 const Categories = (props: Props) => {
 	return (
 		<>
-			<Paper w={1440} h={4035} visibleFrom="md">
+			<Paper w={{ base: 360 }} h={{ base: 2200 }} mt={{ base: 30 }}>
+				<Grid>
+					<Grid.Col span={{ base: 12 }}>
+						<Image src={Rect17} w={260} h={289} mt={51} ml={100} pos={"absolute"} />
+
+						<Image src={category} w={328} h={241} mt={75} ml={{ base: 16 }} pos={"absolute"} />
+					</Grid.Col>
+
+					<Grid.Col span={{ base: 12 }}>
+						<Text fz={{ base: 20 }} w={374} fw={600} ml={{ base: 16 }} mt={{ base: 364 }}>
+							Explore Our Products
+						</Text>
+						<Text
+							c={"#555459"}
+							mt={24}
+							fz={{ base: 12 }}
+							fw={400}
+							ml={{ base: 16 }}
+							w={{ base: 328 }}
+							lineClamp={4}
+						>
+							We are one of the most prominent manufacturers and exporters of a broad range of
+							microprocessors and digital-based electronic process control instruments. Our product
+							range includes Temperature and Process Indicators, Large/Jumbo Display Indicators,
+							Portable Thermometers, Process Controllers such as On-Off Controllers, PID
+							Controllers, Ramp/Soak Controllers, and Multi Zone Controllers, Temperature and
+							Process Data Loggers and Scanners, Temperature, Humidity Sensors and Transmitters.
+							<br />
+							<br />
+							We also have Indicators, and Controllers, Clean Room Monitoring Systems for
+							Environment, Cold Storage, Data Centre, Server Room, Greenhouse, Warehouse to measure
+							Temperature, Humidity, and Differential Pressure. <br />
+							<br />
+							Thyristor Triggering Cards, Thyristor Power Controllers, Signal
+							Converters/Conditioners and Isolators, Molten Metal Pyrometers, DC Motor Controllers,
+							Motor Soft Starters, IoT Modules, Instrumentation Control Panels, Data Acquisition
+							Software, Customized Instruments, and many more services.
+						</Text>
+						<UnstyledButton ml={{ base: 16 }} mt={{ base: 12 }}>
+							<Text fz={{ base: 12 }} c={"#828282"}>
+								Read More
+							</Text>
+						</UnstyledButton>
+					</Grid.Col>
+				</Grid>
+				<Grid>
+					<Grid.Col span={{ base: 12 }}>
+						<Image
+							src={GlassManufacturing}
+							w={{ base: 344 }}
+							h={{ base: 166 }}
+							ml={{ base: 16 }}
+							mt={{ base: 67 }}
+						/>
+					</Grid.Col>
+					<Grid.Col span={{ base: 12 }}>
+						<Text fz={{ base: 20 }} ml={{ base: 16 }} fw={600} mt={{ base: 25 }} c={"#292929"}>
+							Thyristor Power Controller
+						</Text>
+
+						<Text
+							w={328}
+							c={"#555459"}
+							fz={{ base: 12 }}
+							fw={400}
+							ml={{ base: 16 }}
+							mt={{ base: 8 }}
+							lineClamp={2}
+						>
+							Libratherm offers ready to use SCR Power Controller for electrical heating loads
+							ranging from 5 KW (Single Phase) to 360KW (Three Phase). This Thyristor Power
+							Regulator Module comprises of suitable triggering card model LTC-12 or LTC-13 or
+							LTC-15 or LTC-18, suitably rated back to back connected SCR Modules (with electrically
+							isolated base, mounted on the heat sink, input and output clip-on type heavy-duty
+							connectors or aluminum/copper bus bars, semiconductor fuses and thermal cutouts.
+							<br />
+							<br />
+							The entire assembly is mounted on an MS powder-coated enclosure, which in turn can be
+							easily mounted inside the closed control panel as desired.
+						</Text>
+						<UnstyledButton>
+							<Text fz={{ base: 12 }} fw={400} ml={{ base: 16 }} mt={15}>
+								Shop Now
+							</Text>
+						</UnstyledButton>
+					</Grid.Col>
+				</Grid>
+				<Grid>
+					<Grid.Col span={{ base: 12 }}>
+						<Image
+							src={category}
+							w={{ base: 344 }}
+							h={{ base: 166 }}
+							ml={{ base: 16 }}
+							mt={{ base: 67 }}
+						/>
+					</Grid.Col>
+					<Grid.Col span={{ base: 12 }}>
+						<Text fz={{ base: 20 }} ml={{ base: 16 }} fw={600} mt={{ base: 25 }} c={"#292929"}>
+							Thyristor Power Controller
+						</Text>
+
+						<Text
+							w={328}
+							c={"#555459"}
+							fz={{ base: 12 }}
+							fw={400}
+							ml={{ base: 16 }}
+							mt={{ base: 8 }}
+							lineClamp={2}
+						>
+							Libratherm offers ready to use SCR Power Controller for electrical heating loads
+							ranging from 5 KW (Single Phase) to 360KW (Three Phase). This Thyristor Power
+							Regulator Module comprises of suitable triggering card model LTC-12 or LTC-13 or
+							LTC-15 or LTC-18, suitably rated back to back connected SCR Modules (with electrically
+							isolated base, mounted on the heat sink, input and output clip-on type heavy-duty
+							connectors or aluminum/copper bus bars, semiconductor fuses and thermal cutouts.
+							<br />
+							<br />
+							The entire assembly is mounted on an MS powder-coated enclosure, which in turn can be
+							easily mounted inside the closed control panel as desired.
+						</Text>
+						<UnstyledButton>
+							<Text fz={{ base: 12 }} fw={400} ml={{ base: 16 }} mt={15}>
+								Shop Now
+							</Text>
+						</UnstyledButton>
+					</Grid.Col>
+				</Grid>
+				<Grid>
+					<Grid.Col span={{ base: 12 }}>
+						<Image
+							src={GlassManufacturing}
+							w={{ base: 344 }}
+							h={{ base: 166 }}
+							ml={{ base: 16 }}
+							mt={{ base: 67 }}
+						/>
+					</Grid.Col>
+					<Grid.Col span={{ base: 12 }}>
+						<Text fz={{ base: 20 }} ml={{ base: 16 }} fw={600} mt={{ base: 25 }} c={"#292929"}>
+							Thyristor Power Controller
+						</Text>
+
+						<Text
+							w={328}
+							c={"#555459"}
+							fz={{ base: 12 }}
+							fw={400}
+							ml={{ base: 16 }}
+							mt={{ base: 8 }}
+							lineClamp={2}
+						>
+							Libratherm offers ready to use SCR Power Controller for electrical heating loads
+							ranging from 5 KW (Single Phase) to 360KW (Three Phase). This Thyristor Power
+							Regulator Module comprises of suitable triggering card model LTC-12 or LTC-13 or
+							LTC-15 or LTC-18, suitably rated back to back connected SCR Modules (with electrically
+							isolated base, mounted on the heat sink, input and output clip-on type heavy-duty
+							connectors or aluminum/copper bus bars, semiconductor fuses and thermal cutouts.
+							<br />
+							<br />
+							The entire assembly is mounted on an MS powder-coated enclosure, which in turn can be
+							easily mounted inside the closed control panel as desired.
+						</Text>
+						<UnstyledButton>
+							<Text fz={{ base: 12 }} fw={400} ml={{ base: 16 }} mt={15}>
+								Shop Now
+							</Text>
+						</UnstyledButton>
+					</Grid.Col>
+				</Grid>
+				<Grid>
+					<Grid.Col span={{ base: 12 }}>
+						<Image
+							src={category}
+							w={{ base: 344 }}
+							h={{ base: 166 }}
+							ml={{ base: 16 }}
+							mt={{ base: 67 }}
+						/>
+					</Grid.Col>
+					<Grid.Col span={{ base: 12 }}>
+						<Text fz={{ base: 20 }} ml={{ base: 16 }} fw={600} mt={{ base: 25 }} c={"#292929"}>
+							Thyristor Power Controller
+						</Text>
+
+						<Text
+							w={328}
+							c={"#555459"}
+							fz={{ base: 12 }}
+							fw={400}
+							ml={{ base: 16 }}
+							mt={{ base: 8 }}
+							lineClamp={2}
+						>
+							Libratherm offers ready to use SCR Power Controller for electrical heating loads
+							ranging from 5 KW (Single Phase) to 360KW (Three Phase). This Thyristor Power
+							Regulator Module comprises of suitable triggering card model LTC-12 or LTC-13 or
+							LTC-15 or LTC-18, suitably rated back to back connected SCR Modules (with electrically
+							isolated base, mounted on the heat sink, input and output clip-on type heavy-duty
+							connectors or aluminum/copper bus bars, semiconductor fuses and thermal cutouts.
+							<br />
+							<br />
+							The entire assembly is mounted on an MS powder-coated enclosure, which in turn can be
+							easily mounted inside the closed control panel as desired.
+						</Text>
+						<UnstyledButton>
+							<Text fz={{ base: 12 }} fw={400} ml={{ base: 16 }} mt={15}>
+								Shop Now
+							</Text>
+						</UnstyledButton>
+					</Grid.Col>
+				</Grid>
+			</Paper>
+			{/* <Paper w={1440} h={4035}>
 				<Grid>
 					<Grid.Col span={6}>
 						<Box>
@@ -92,7 +306,7 @@ const Categories = (props: Props) => {
 							</Text>
 							<UnstyledButton>
 								<Group>
-									<Text fz={20} color="black" mt={102} fw={400}>
+									<Text fz={{base:20}} color="black" mt={102} fw={400}>
 										View
 									</Text>
 								</Group>
@@ -121,7 +335,7 @@ const Categories = (props: Props) => {
 							easily mounted inside the closed control panel as desired.
 						</Text>
 						<UnstyledButton>
-							<Text fz={20} style={{ color: "#000" }} fw={400} ml={114} mt={24}>
+							<Text fz={{base:20}} style={{ color: "#000" }} fw={400} ml={114} mt={24}>
 								Shop Now
 							</Text>
 						</UnstyledButton>
@@ -172,7 +386,7 @@ const Categories = (props: Props) => {
 						</Text>
 						<UnstyledButton>
 							<Group>
-								<Text fz={20} mt={102} fw={400} style={{ color: "#000" }}>
+								<Text fz={{base:20}} mt={102} fw={400} style={{ color: "#000" }}>
 									Shop Now
 								</Text>
 							</Group>
@@ -200,7 +414,7 @@ const Categories = (props: Props) => {
 							you’ll find the right table and desk lamp for you.
 						</Text>
 						<UnstyledButton>
-							<Text fz={20} ml={114} fw={400} style={{ color: "#000" }}>
+							<Text fz={{base:20}} ml={114} fw={400} style={{ color: "#000" }}>
 								Shop Now
 							</Text>
 						</UnstyledButton>
@@ -243,28 +457,28 @@ const Categories = (props: Props) => {
 						</Text>
 						<UnstyledButton>
 							<Group>
-								<Text fz={20} color="black" mt={102} fw={400}>
+								<Text fz={{base:20}} color="black" mt={102} fw={400}>
 									Shop Now
 								</Text>
 							</Group>
 						</UnstyledButton>
 					</Grid.Col>
 				</Grid>
-			</Paper>
+			</Paper> */}
 			{/**MOBILE VIEW */}
-			<Paper w={360} h={2200} hiddenFrom="xs" mt={30}>
+			{/* <Paper w={360} h={2200} hiddenFrom="xs" mt={30}>
 				<Grid>
-					<Grid.Col span={12}>
+					<Grid.Col span={{base:12}}>
 						<Image src={Rect17} w={260} h={289} mt={51} ml={100} pos={"absolute"} />
 
-						<Image src={category} w={328} h={241} mt={75} ml={16} pos={"absolute"} />
+						<Image src={category} w={328} h={241} mt={75} ml={{base:16}} pos={"absolute"} />
 					</Grid.Col>
-					<Grid.Col span={12}>
-						<Text fz={20} fw={600} ml={16} mt={364} c={"#292929"}>
+					<Grid.Col span={{base:12}}>
+						<Text fz={{base:20}} fw={600} ml={{base:16}} mt={364} c={"#292929"}>
 							Explore Our Products{" "}
 						</Text>
 
-						<Text w={321} c={"#555459"} fz={12} fw={400} mt={16} ml={16} lineClamp={4}>
+						<Text w={321} c={"#555459"} fz={{base:12}} fw={400} mt={16} ml={{base:16}} lineClamp={4}>
 							We are one of the most prominent manufacturers and exporters of a broad range of
 							microprocessors and digital-based electronic process control instruments. Our product
 							range includes Temperature and Process Indicators, Large/Jumbo Display Indicators,
@@ -282,8 +496,8 @@ const Categories = (props: Props) => {
 							Motor Soft Starters, IoT Modules, Instrumentation Control Panels, Data Acquisition
 							Software, Customized Instruments, and many more services.
 						</Text>
-						<UnstyledButton ml={16} mt={12}>
-							<Text fz={12} c={"#828282"}>
+						<UnstyledButton ml={{base:16}} mt={{base:12}}>
+							<Text fz={{base:12}} c={"#828282"}>
 								Read More
 							</Text>
 						</UnstyledButton>
@@ -291,15 +505,15 @@ const Categories = (props: Props) => {
 				</Grid>
 
 				<Grid>
-					<Grid.Col span={12}>
-						<Image src={GlassManufacturing} w={344} h={166} ml={16} mt={67} />
+					<Grid.Col span={{base:12}}>
+						<Image src={GlassManufacturing} w={{base:344}} h={{base:166}} ml={{base:16}} mt={{base:67}} />
 					</Grid.Col>
-					<Grid.Col span={12}>
-						<Text fz={20} ml={16} fw={600} mt={25} c={"#292929"}>
+					<Grid.Col span={{base:12}}>
+						<Text fz={{base:20}} ml={{base:16}} fw={600} mt={{base:25}} c={"#292929"}>
 							Thyristor Power Controller
 						</Text>
 
-						<Text w={328} c={"#555459"} fz={12} fw={400} ml={16} mt={8} lineClamp={2}>
+						<Text w={328} c={"#555459"} fz={{base:12}} fw={400} ml={{base:16}} mt={{base:8}} lineClamp={2}>
 							Libratherm offers ready to use SCR Power Controller for electrical heating loads
 							ranging from 5 KW (Single Phase) to 360KW (Three Phase). This Thyristor Power
 							Regulator Module comprises of suitable triggering card model LTC-12 or LTC-13 or
@@ -312,22 +526,22 @@ const Categories = (props: Props) => {
 							easily mounted inside the closed control panel as desired.
 						</Text>
 						<UnstyledButton>
-							<Text fz={12} fw={400} ml={16} mt={15}>
+							<Text fz={{base:12}} fw={400} ml={{base:16}} mt={15}>
 								Shop Now
 							</Text>
 						</UnstyledButton>
 					</Grid.Col>
 				</Grid>
 				<Grid>
-					<Grid.Col span={12}>
-						<Image src={category} w={344} h={166} ml={16} mt={67} />
+					<Grid.Col span={{base:12}}>
+						<Image src={category} w={{base:344}} h={{base:166}} ml={{base:16}} mt={{base:67}} />
 					</Grid.Col>
-					<Grid.Col span={12}>
-						<Text fz={20} ml={16} fw={600} mt={25} c={"#292929"}>
+					<Grid.Col span={{base:12}}>
+						<Text fz={{base:20}} ml={{base:16}} fw={600} mt={{base:25}} c={"#292929"}>
 							Thyristor Power Controller
 						</Text>
 
-						<Text w={328} c={"#555459"} fz={12} fw={400} ml={16} mt={8} lineClamp={2}>
+						<Text w={328} c={"#555459"} fz={{base:12}} fw={400} ml={{base:16}} mt={{base:8}} lineClamp={2}>
 							Libratherm offers ready to use SCR Power Controller for electrical heating loads
 							ranging from 5 KW (Single Phase) to 360KW (Three Phase). This Thyristor Power
 							Regulator Module comprises of suitable triggering card model LTC-12 or LTC-13 or
@@ -340,22 +554,22 @@ const Categories = (props: Props) => {
 							easily mounted inside the closed control panel as desired.
 						</Text>
 						<UnstyledButton>
-							<Text fz={12} fw={400} ml={16} mt={15}>
+							<Text fz={{base:12}} fw={400} ml={{base:16}} mt={15}>
 								Shop Now
 							</Text>
 						</UnstyledButton>
 					</Grid.Col>
 				</Grid>
 				<Grid>
-					<Grid.Col span={12}>
-						<Image src={GlassManufacturing} w={344} h={166} ml={16} mt={67} />
+					<Grid.Col span={{base:12}}>
+						<Image src={GlassManufacturing} w={{base:344}} h={{base:166}} ml={{base:16}} mt={{base:67}} />
 					</Grid.Col>
-					<Grid.Col span={12}>
-						<Text fz={20} ml={16} fw={600} mt={25} c={"#292929"}>
+					<Grid.Col span={{base:12}}>
+						<Text fz={{base:20}} ml={{base:16}} fw={600} mt={{base:25}} c={"#292929"}>
 							Thyristor Power Controller
 						</Text>
 
-						<Text w={328} c={"#555459"} fz={12} fw={400} ml={16} mt={8} lineClamp={2}>
+						<Text w={328} c={"#555459"} fz={{base:12}} fw={400} ml={{base:16}} mt={{base:8}} lineClamp={2}>
 							Libratherm offers ready to use SCR Power Controller for electrical heating loads
 							ranging from 5 KW (Single Phase) to 360KW (Three Phase). This Thyristor Power
 							Regulator Module comprises of suitable triggering card model LTC-12 or LTC-13 or
@@ -368,22 +582,22 @@ const Categories = (props: Props) => {
 							easily mounted inside the closed control panel as desired.
 						</Text>
 						<UnstyledButton>
-							<Text fz={12} fw={400} ml={16} mt={15}>
+							<Text fz={{base:12}} fw={400} ml={{base:16}} mt={15}>
 								Shop Now
 							</Text>
 						</UnstyledButton>
 					</Grid.Col>
 				</Grid>
 				<Grid>
-					<Grid.Col span={12}>
-						<Image src={category} w={344} h={166} ml={16} mt={67} />
+					<Grid.Col span={{base:12}}>
+						<Image src={category} w={{base:344}} h={{base:166}} ml={{base:16}} mt={{base:67}} />
 					</Grid.Col>
-					<Grid.Col span={12}>
-						<Text fz={20} ml={16} fw={600} mt={25} c={"#292929"}>
+					<Grid.Col span={{base:12}}>
+						<Text fz={{base:20}} ml={{base:16}} fw={600} mt={{base:25}} c={"#292929"}>
 							Thyristor Power Controller
 						</Text>
 
-						<Text w={328} c={"#555459"} fz={12} fw={400} ml={16} mt={8} lineClamp={2}>
+						<Text w={328} c={"#555459"} fz={{base:12}} fw={400} ml={{base:16}} mt={{base:8}} lineClamp={2}>
 							Libratherm offers ready to use SCR Power Controller for electrical heating loads
 							ranging from 5 KW (Single Phase) to 360KW (Three Phase). This Thyristor Power
 							Regulator Module comprises of suitable triggering card model LTC-12 or LTC-13 or
@@ -396,25 +610,24 @@ const Categories = (props: Props) => {
 							easily mounted inside the closed control panel as desired.
 						</Text>
 						<UnstyledButton>
-							<Text fz={12} fw={400} ml={16} mt={15}>
+							<Text fz={{base:12}} fw={400} ml={{base:16}} mt={15}>
 								Shop Now
 							</Text>
 						</UnstyledButton>
 					</Grid.Col>
 				</Grid>
-			</Paper>
-
+			</Paper> */}
 			{/**Tablet */}
-			<Grid justify="flex-start" hiddenFrom="md" visibleFrom="xs" pb={56} w={768}>
-				<Grid.Col span={12}>
+			{/* <Grid justify="flex-start" hiddenFrom="md" visibleFrom="xs" pb={56} w={768}>
+				<Grid.Col span={{base:12}}>
 					<Image src={category} w={550} h={441} pos={"absolute"} mt={30} ml={90} />
 					<Image src={Rect17} h={506} w={511} ml={235} />
 				</Grid.Col>
-				<Grid.Col span={12}>
+				<Grid.Col span={{base:12}}>
 					<Text fz={32} fw={600} ml={90} mt={54} c={"#292929"}>
 						Explore Our Products
 					</Text>
-					<Text fz={12} fw={400} w={588} ml={90} mt={16} c={"#555459"} lineClamp={5}>
+					<Text fz={{base:12}} fw={400} w={588} ml={90} mt={16} c={"#555459"} lineClamp={5}>
 						We are one of the most prominent manufacturers and exporters of a broad range of
 						microprocessors and digital-based electronic process control instruments. Our product
 						range includes Temperature and Process Indicators, Large/Jumbo Display Indicators,
@@ -429,7 +642,7 @@ const Categories = (props: Props) => {
 						Software, Customized Instruments, and many more services.
 					</Text>
 					<UnstyledButton ml={90} mt={32}>
-						<Text fz={20} fw={400} c={"#555459"}>
+						<Text fz={{base:20}} fw={400} c={"#555459"}>
 							Read More
 						</Text>
 					</UnstyledButton>
@@ -437,15 +650,15 @@ const Categories = (props: Props) => {
 			</Grid>
 
 			<Grid justify="flex-start" hiddenFrom="md" visibleFrom="xs" pb={56} w={768}>
-				<Grid.Col span={12}>
+				<Grid.Col span={{base:12}}>
 					<Image src={GlassManufacturing} w={550} h={441} pos={"absolute"} mt={30} ml={130} />
 					<Image src={Rect17} h={506} w={511} ml={0} />
 				</Grid.Col>
-				<Grid.Col span={12}>
+				<Grid.Col span={{base:12}}>
 					<Text fz={32} fw={600} ml={90} mt={54} c={"#292929"}>
 						Digital Indicators{" "}
 					</Text>
-					<Text fz={12} fw={400} w={588} ml={90} mt={16} c={"#555459"} lineClamp={5}>
+					<Text fz={{base:12}} fw={400} w={588} ml={90} mt={16} c={"#555459"} lineClamp={5}>
 						Experts in lighting, we’ve been creating task lights, desk lamps and table lamps for
 						over 80 years. All our lamps uphold the original Anglepoise design concept whilst
 						incorporating essential modern features. You’ll probably recognise some of the classic
@@ -456,7 +669,7 @@ const Categories = (props: Props) => {
 						you.
 					</Text>
 					<UnstyledButton ml={90} mt={32}>
-						<Text fz={20} fw={400} c={"#555459"}>
+						<Text fz={{base:20}} fw={400} c={"#555459"}>
 							Read More
 						</Text>
 					</UnstyledButton>
@@ -464,15 +677,15 @@ const Categories = (props: Props) => {
 			</Grid>
 
 			<Grid justify="flex-start" hiddenFrom="md" visibleFrom="xs" pb={56} w={768}>
-				<Grid.Col span={12}>
+				<Grid.Col span={{base:12}}>
 					<Image src={category} w={550} h={441} pos={"absolute"} mt={30} ml={90} />
 					<Image src={Rect17} h={506} w={511} ml={235} />
 				</Grid.Col>
-				<Grid.Col span={12}>
+				<Grid.Col span={{base:12}}>
 					<Text fz={32} fw={600} ml={90} mt={54} c={"#292929"}>
 						Thyristor Power Controller
 					</Text>
-					<Text fz={12} fw={400} w={588} ml={90} mt={16} c={"#555459"} lineClamp={5}>
+					<Text fz={{base:12}} fw={400} w={588} ml={90} mt={16} c={"#555459"} lineClamp={5}>
 						Libratherm offers ready to use SCR Power Controller for electrical heating loads ranging
 						from 5 KW (Single Phase) to 360KW (Three Phase). This Thyristor Power Regulator Module
 						comprises of suitable triggering card model LTC-12 or LTC-13 or LTC-15 or LTC-18,
@@ -483,7 +696,7 @@ const Categories = (props: Props) => {
 						the closed control panel as desired.
 					</Text>
 					<UnstyledButton ml={90} mt={32}>
-						<Text fz={20} fw={400} c={"#555459"}>
+						<Text fz={{base:20}} fw={400} c={"#555459"}>
 							Read More
 						</Text>
 					</UnstyledButton>
@@ -491,15 +704,15 @@ const Categories = (props: Props) => {
 			</Grid>
 
 			<Grid justify="flex-start" hiddenFrom="md" visibleFrom="xs" pb={56} w={768}>
-				<Grid.Col span={12}>
+				<Grid.Col span={{base:12}}>
 					<Image src={GlassManufacturing} w={550} h={441} pos={"absolute"} mt={30} ml={130} />
 					<Image src={Rect17} h={506} w={511} ml={0} />
 				</Grid.Col>
-				<Grid.Col span={12}>
+				<Grid.Col span={{base:12}}>
 					<Text fz={32} fw={600} ml={90} mt={54} c={"#292929"}>
 						Data Loggers & Scanners
 					</Text>
-					<Text fz={12} fw={400} w={588} ml={90} mt={16} c={"#555459"} lineClamp={5}>
+					<Text fz={{base:12}} fw={400} w={588} ml={90} mt={16} c={"#555459"} lineClamp={5}>
 						Experts in lighting, we’ve been creating task lights, desk lamps and table lamps for
 						over 80 years. All our lamps uphold the original Anglepoise design concept whilst
 						incorporating essential modern features. You’ll probably recognise some of the classic
@@ -510,7 +723,7 @@ const Categories = (props: Props) => {
 						you.
 					</Text>
 					<UnstyledButton ml={90} mt={32}>
-						<Text fz={20} fw={400} c={"#555459"}>
+						<Text fz={{base:20}} fw={400} c={"#555459"}>
 							Read More
 						</Text>
 					</UnstyledButton>
@@ -518,15 +731,15 @@ const Categories = (props: Props) => {
 			</Grid>
 
 			<Grid justify="flex-start" hiddenFrom="md" visibleFrom="xs" pb={56} w={768}>
-				<Grid.Col span={12}>
+				<Grid.Col span={{base:12}}>
 					<Image src={category} w={550} h={441} pos={"absolute"} mt={30} ml={90} />
 					<Image src={Rect17} h={506} w={511} ml={235} />
 				</Grid.Col>
-				<Grid.Col span={12}>
+				<Grid.Col span={{base:12}}>
 					<Text fz={32} fw={600} ml={90} mt={54} c={"#292929"}>
 						Humidity Instruments
 					</Text>
-					<Text fz={12} fw={400} w={588} ml={90} mt={16} c={"#555459"} lineClamp={5}>
+					<Text fz={{base:12}} fw={400} w={588} ml={90} mt={16} c={"#555459"} lineClamp={5}>
 						Experts in lighting, we’ve been creating task lights, desk lamps and table lamps for
 						over 80 years. All our lamps uphold the original Anglepoise design concept whilst
 						incorporating essential modern features. You’ll probably recognise some of the classic
@@ -537,12 +750,12 @@ const Categories = (props: Props) => {
 						you.
 					</Text>
 					<UnstyledButton ml={90} mt={32}>
-						<Text fz={20} fw={400} c={"#555459"}>
+						<Text fz={{base:20}} fw={400} c={"#555459"}>
 							Read More
 						</Text>
 					</UnstyledButton>
 				</Grid.Col>
-			</Grid>
+			</Grid> */}
 		</>
 	);
 };

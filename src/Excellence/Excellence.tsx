@@ -6,24 +6,31 @@ type Props = {};
 const Excellence = (props: Props) => {
 	return (
 		<>
-			<BackgroundImage
-				src={BGImage}
-				w={{ base: 360, sm: 768, xl: 1400 }}
-				h={{ base: 318, sm: 456, xl: 600 }}
-			>
+			<BackgroundImage src={BGImage} w={{ base: 360, lg: 1440 }} h={{ base: 318, lg: 600 }} mt={30}>
 				<Stack>
-					<Divider size="xs" w={{ base: 327 }} ml={{ base: 16 }} mt={{ base: 69 }} />
-					<Text fz={{ base: 16 }} fw={400} mt={{ base: 17 }} c={"#f6f6f6"} ta={"center"}>
+					<Divider
+						size="xs"
+						w={{ base: 327, lg: 1014 }}
+						ml={{ base: 16, lg: 223 }}
+						mt={{ base: 69, lg: 150 }}
+					/>
+					<Text
+						fz={{ base: 16, lg: 48 }}
+						fw={400}
+						mt={{ base: 17, lg: 67 }}
+						c={"#f6f6f6"}
+						ta={"center"}
+					>
 						Providing Excellence Since 1991
 					</Text>
 
 					<Text
 						c={"#f6f6f6"}
-						ml={{ base: 32 }}
-						fz={{ base: 12 }}
+						ml={{ base: 32, lg: 223 }}
+						fz={{ base: 12, lg: 14 }}
 						fw={400}
-						h={{ base: 114 }}
-						w={{ base: 311 }}
+						h={{ base: 114, lg: 66 }}
+						w={{ base: 311, lg: 1014 }}
 						ta={"center"}
 					>
 						We offer complete solutions for accurate measurement and control of Humidity, Pressure,
@@ -31,7 +38,12 @@ const Excellence = (props: Props) => {
 						conforming to EN61010 International Safety Standards.
 					</Text>
 
-					<Divider size="xs" w={{ base: 327 }} ml={{ base: 16 }} mt={{ base: 7 }} />
+					<Divider
+						size="xs"
+						w={{ base: 327, lg: 1014 }}
+						ml={{ base: 16, lg: 223 }}
+						mt={{ base: 7, lg: 67 }}
+					/>
 				</Stack>
 			</BackgroundImage>
 

@@ -2,16 +2,12 @@ import {
 	Card,
 	Text,
 	Image,
-	Grid,
 	Group,
 	UnstyledButton,
 	Paper,
-	Box,
 	Divider,
-	Button,
-	rem,
-	Center,
 	SimpleGrid,
+	Button,
 } from "@mantine/core";
 import React from "react";
 import Panel from "../Assets/panel.png";
@@ -19,33 +15,43 @@ import Panel from "../Assets/panel.png";
 const Products = () => {
 	return (
 		<>
-			<Group wrap="nowrap" gap={0}>
+			<Group wrap="nowrap" gap={0} mt={{ lg: 73 }}>
 				<Text
 					fw={600}
-					fz={{ base: 20, sm: 32 }}
-					ml={16}
+					fz={{ base: 20, lg: 32 }}
+					ml={{ base: 16, lg: 114 }}
 					style={{ color: "#262728", lineHeight: "40px" }}
 				>
 					Our Products
 				</Text>
-				<Divider size="sm" my={"60px"} mr={"17px"} />
+				<Divider size="sm" w={{ lg: 904 }} ml={{ lg: 16 }} visibleFrom="md" />
 
-				{<UnstyledButton ml={0}>View All</UnstyledButton>}
+				{
+					<UnstyledButton visibleFrom="md" ml={32}>
+						View All
+					</UnstyledButton>
+				}
 			</Group>
 
-			<Paper m="auto" w={{ base: 360, sm: 768, xl: 1400 }}>
-				<SimpleGrid cols={{ base: 2, xl: 4 }}>
+			<Paper w={{ base: 360, lg: 1400 }}>
+				<SimpleGrid cols={{ base: 2, xl: 4 }} mt={{ lg: 30, base: 24 }} ml={{ lg: 114, base: 16 }}>
 					{Array.from({ length: 4 }, (_, index) => index).map((i) => {
 						return (
 							// <Grid.Col key={i} span={{ base: 6, xl: 3 }}>
-							<Card withBorder w={{ sm: 288, base: 156 }}>
-								<Text fz={14} fw={600} c={"#555459"} maw={250}>
+							<Card withBorder w={{ lg: 288, base: 156 }} h={{ lg: 364, base: 212 }}>
+								<Text fz={{ lg: 14, base: 10 }} fw={600} c={"#555459"} maw={250}>
 									Three Phase Thyristor Power Controller – POW-3-PA
 								</Text>
 
-								<Image src={Panel} w={{ base: 111, sm: 207 }} h={173} mx="auto" mt={33} />
+								<Image
+									src={Panel}
+									w={{ base: 73, lg: 137 }}
+									h={{ lg: 173, base: 91 }}
+									mx="auto"
+									mt={{ lg: 33, base: 15 }}
+								/>
 
-								<Text ta="center" c={"#414141"} mt={30}>
+								<Text ta="center" c={"#414141"} mt={{ lg: 30, base: 15 }} fz={{ base: 12, lg: 20 }}>
 									₹12,600 – ₹14,700
 								</Text>
 							</Card>
@@ -53,6 +59,9 @@ const Products = () => {
 						);
 					})}
 				</SimpleGrid>
+				<Button variant="outline" color="#555459" w={176} ml={92} mt={40} hiddenFrom="xs">
+					View All
+				</Button>
 			</Paper>
 			{/* <Grid  mt={30} align="flex-start">
 				<Grid.Col span={{ base: 12, xs: 6, md: 3 }}>

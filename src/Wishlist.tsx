@@ -22,128 +22,36 @@ type Props = {};
 const Wishlist = (props: Props) => {
 	return (
 		<>
-			<Paper w={1440} h={1720} bg={"#f4f4f4"} mt={40} visibleFrom="md">
-				<Text fz={32} fw={600} pt={56} ml={114}>
+			<Paper w={{ lg: 1440, base: 360 }} h={800} bg={"#f4f4f4"} mt={40}>
+				<Text fz={{ lg: 32, base: 20 }} fw={600} pt={50} ml={{ lg: 114, base: 16 }}>
 					My Wishlist (3 items)
 				</Text>
 
-				<Card w={1212} h={384} bg={"#FFF"} top={39} ml={114} withBorder mt={40}>
+				<Card
+					w={{ lg: 1212, base: 327 }}
+					h={{ lg: 384, base: 560 }}
+					bg={"#FFF"}
+					top={39}
+					ml={{ lg: 114, base: 18 }}
+					withBorder
+					mt={40}
+				>
 					<Group>
-						<Image src={Panel} w={284} h={284} ml={47} mt={49} />
+						<Image
+							src={Panel}
+							w={{ lg: 284, base: 153 }}
+							h={{ lg: 284, base: 153 }}
+							ml={{ lg: 47, base: 87 }}
+							mt={{ lg: 49 }}
+						/>
 						<Stack>
-							<Text fz={18} fw={600} c={"#414141"} ml={37}>
-								Three Phase Thyristor Power Controller
-							</Text>
-							<Text c={"#E83214"} ml={37} fz={14} fw={600}>
-								POW-3-PA-CL
-							</Text>
-							<List w={356} c={"#555459"} fz={12} fw={400} ml={37}>
-								<List.Item>
-									Three Phase SCR Power Regulator for Three Phase Heater connected in 3 or 4 Wire
-									Star
-								</List.Item>
-								<List.Item>
-									3 Wire Close or Open Delta Configurations with Current Control/Current Limit and
-									Over Load Protection.
-								</List.Item>
-							</List>
-						</Stack>
-						<Divider orientation="vertical" ml={64} my={38}></Divider>
-						<Stack justify="flex-start" w={290}>
-							<Text fz={10} c={"#828282"} fw={400} ml={64}>
-								Prices are inclusive of Delivery Charges.
-							</Text>
-							<Text fz={24} fw={400} c={"#555459"} ml={64}>
-								₹12,600 – ₹14,700
-							</Text>
-
-							<List ml={64}>
-								<List.Item fw={700} fz={12} c={"#555459"} icon={<IconCheck size="18px" />}>
-									In Stock
-								</List.Item>
-
-								<List.Item fw={700} fz={12} c={"#555459"} icon={<IconCheck size="18px" />}>
-									<Text lineClamp={1}>
-										Get 5% Instant Discount Up to ₹1250 On Leading Bank Cards EMI{" "}
-									</Text>
-								</List.Item>
-
-								<List.Item fw={700} fz={12} c={"#555459"} icon={<IconCheck size="18px" />}>
-									<Text lineClamp={1}>Get 10% Instant Discount Up to ₹2250</Text>
-								</List.Item>
-							</List>
-							<Stack>
-								<OptionsButton ml={66} w={290}>
-									Select Options
-								</OptionsButton>
-								<PrimaryButton ml={66} w={290}>
-									ADD TO WISHLIST
-								</PrimaryButton>
-							</Stack>
-						</Stack>
-					</Group>
-				</Card>
-				<Card w={1212} h={384} bg={"#FFF"} top={39} ml={114} withBorder mt={40}>
-					<Group>
-						<Image src={Panel} w={284} h={284} ml={47} mt={49} />
-						<Stack>
-							<Text fz={18} fw={600} c={"#414141"} ml={37}>
-								Three Phase Thyristor Power Controller
-							</Text>
-							<Text c={"#E83214"} ml={37} fz={14} fw={600}>
-								POW-3-PA-CL
-							</Text>
-							<List w={356} c={"#555459"} fz={12} fw={400} ml={37}>
-								<List.Item>
-									Three Phase SCR Power Regulator for Three Phase Heater connected in 3 or 4 Wire
-									Star
-								</List.Item>
-								<List.Item>
-									3 Wire Close or Open Delta Configurations with Current Control/Current Limit and
-									Over Load Protection.
-								</List.Item>
-							</List>
-						</Stack>
-						<Divider orientation="vertical" ml={64} my={38}></Divider>
-						<Stack justify="flex-start" w={290}>
-							<Text fz={10} c={"#828282"} fw={400} ml={64}>
-								Prices are inclusive of Delivery Charges.
-							</Text>
-							<Text fz={24} fw={400} c={"#555459"} ml={64}>
-								₹12,600 – ₹14,700
-							</Text>
-
-							<List ml={64}>
-								<List.Item fw={700} fz={12} c={"#555459"} icon={<IconCheck size="18px" />}>
-									In Stock
-								</List.Item>
-
-								<List.Item fw={700} fz={12} c={"#555459"} icon={<IconCheck size="18px" />}>
-									<Text lineClamp={1}>
-										Get 5% Instant Discount Up to ₹1250 On Leading Bank Cards EMI{" "}
-									</Text>
-								</List.Item>
-
-								<List.Item fw={700} fz={12} c={"#555459"} icon={<IconCheck size="18px" />}>
-									<Text lineClamp={1}>Get 10% Instant Discount Up to ₹2250</Text>
-								</List.Item>
-							</List>
-							<Stack>
-								<OptionsButton ml={66} w={290}>
-									Select Options
-								</OptionsButton>
-								<PrimaryButton ml={66} w={290}>
-									ADD TO WISHLIST
-								</PrimaryButton>
-							</Stack>
-						</Stack>
-					</Group>
-				</Card>
-				<Card w={1212} h={384} bg={"#FFF"} top={39} ml={114} withBorder mt={40}>
-					<Group>
-						<Image src={Panel} w={284} h={284} ml={47} mt={49} />
-						<Stack>
-							<Text fz={18} fw={600} c={"#414141"} ml={37}>
+							<Text
+								fz={{ lg: 18, base: 16 }}
+								fw={600}
+								c={"#414141"}
+								ml={{ lg: 37 }}
+								w={{ base: 296 }}
+							>
 								Three Phase Thyristor Power Controller
 							</Text>
 							<Text c={"#E83214"} ml={37} fz={14} fw={600}>
@@ -197,7 +105,7 @@ const Wishlist = (props: Props) => {
 				</Card>
 			</Paper>
 			{/**MOBILE VIEW */}
-			<Paper w={360} h={2720} bg={"#f4f4f4"} mt={40} hiddenFrom="xs">
+			{/* <Paper w={360} h={2720} bg={"#f4f4f4"} mt={40} hiddenFrom="xs">
 				<Text fz={20} fw={600} pt={75} ml={16}>
 					My Wishlist (3 items)
 				</Text>
@@ -309,10 +217,10 @@ const Wishlist = (props: Props) => {
 						</Stack>
 					</Card>
 				</Paper>
-			</Paper>
+			</Paper> */}
 
 			{/**Tablet view */}
-			<Paper h={2337} w={768} bg={"#F4F4F4"} pt={30} hiddenFrom="md" visibleFrom="xs">
+			{/* <Paper h={2337} w={768} bg={"#F4F4F4"} pt={30} hiddenFrom="md" visibleFrom="xs">
 				<Text fz={28} fw={600} pt={56} ml={90}>
 					My Wishlist (3 items)
 				</Text>
@@ -508,7 +416,7 @@ const Wishlist = (props: Props) => {
 						<OptionsButton w={258}>Select Options</OptionsButton>
 					</Group>
 				</Card>
-			</Paper>
+			</Paper> */}
 		</>
 	);
 };

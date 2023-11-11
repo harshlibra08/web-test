@@ -170,11 +170,11 @@ function App() {
 			<ContactUs />
 			<Categories />
 			<CategoryGrid />
+			<InnerProduct />
+			<ProductsList />
 			<CartPage />
 			<Checkout />
 			<CareersPage />
-			<InnerProduct />
-			<ProductsList />
 			<Wishlist />
 			<Login />
 			<Footer />

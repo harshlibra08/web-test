@@ -14,111 +14,187 @@ const OurStrengths = (props: Props) => {
 
 	return (
 		<>
-			<Group wrap="nowrap" gap={0} bg={"#000"} maw={1440} visibleFrom="md">
-				<Box w={1270}>
-					<Divider
-						size="sm"
-						my={"60px"}
-						mr={"17px"}
-						label={
-							<Text fw={600} fz={32} ml={114} style={{ color: "#F6F6F6", lineHeight: "40px" }}>
-								Our Strengths
-							</Text>
-						}
-						labelPosition="left"
-					/>
-				</Box>
-
-				{
-					<IconCircleChevronLeft
-						width={37}
-						height={37}
-						stroke={1}
-						color="#FFF"
-						onClick={() => embla?.scrollPrev()}
-					/>
-				}
-				{
-					<IconCircleChevronRight
-						width={37}
-						height={37}
-						stroke={1}
-						color="#FFF"
-						onClick={() => embla?.scrollNext()}
-					/>
-				}
-			</Group>
-			<Carousel
-				h={585}
-				slideSize={"33.3%"}
-				slideGap={184}
-				loop
-				align={"start"}
-				slidesToScroll={3}
-				orientation="horizontal"
-				bg={"#000"}
-				pl={114}
-				getEmblaApi={setEmbla}
-				withControls={false}
-				maw={1440}
-				visibleFrom="md"
-			>
-				<Carousel.Slide w={329}>
-					<Card w={329} h={517} bg={"#000"}>
-						<Card.Section>
-							<Image src={Strength1} w={329} h={417} style={{ opacity: 0.5 }} ml={62} />
-							<Text fz={32} mt={-100} w={249} fw={600} c={"#f6f6f6"} pos={"absolute"}>
-								Latest Technology
-							</Text>
-							<Text w={288} mt={29} fz={14} fw={400} c={"#f6f6f6"}>
-								We use the latest available and accessible technology for long lasting and
-								trouble-free field performance.
-							</Text>
-						</Card.Section>
-					</Card>
-				</Carousel.Slide>
-
-				<Carousel.Slide w={329}>
-					<Card w={329} h={517} bg={"#000"}>
-						<Card.Section>
-							<Image src={Strength2} w={329} h={417} style={{ opacity: 0.5 }} ml={62} />
-							<Text fz={32} mt={-100} w={249} fw={600} c={"#f6f6f6"} pos={"absolute"}>
-								Global Standards
-							</Text>
-							<Text mt={29} w={288} fz={14} fw={400} c={"#f6f6f6"}>
-								We use the latest available and accessible technology for long lasting and
-								trouble-free field performance.
-							</Text>
-						</Card.Section>
-					</Card>
-				</Carousel.Slide>
-
-				<Carousel.Slide>
-					<Card w={329} h={517} bg={"#000"}>
-						<Card.Section>
-							<Image src={Strength3} w={329} h={417} style={{ opacity: 0.5 }} ml={62} />
-							<Text fz={32} mt={-100} w={347} fw={600} c={"#f6f6f6"} pos={"absolute"}>
-								Client Centered Approach{" "}
-							</Text>
-							<Text mt={29} w={288} fz={14} fw={400} c={"#f6f6f6"}>
-								We use the latest available and accessible technology for long lasting and
-								trouble-free field performance.
-							</Text>
-						</Card.Section>
-					</Card>
-				</Carousel.Slide>
-			</Carousel>
-
-			{/**Mobile View */}
-
-			<Box maw={360} bg={"#000"} hiddenFrom="xs">
-				<Text fw={600} fz={10} pt={56} ml={16} c={"#f6f6f6"}>
+			<Paper h={{ base: 500, lg: 1064 }} w={{ base: 360, lg: 1440 }} bg={"#000"}>
+				<Text
+					fz={{ lg: 14, base: 10 }}
+					fw={600}
+					ml={{ lg: 114, base: 17 }}
+					pt={{ lg: 108, base: 56 }}
+					c={"#E4E8ED"}
+				>
 					WHO ARE WE ?
 				</Text>
-				<Text fw={600} fz={20} ml={17} mt={6} c={"#f6f6f6"}>
+				<Text
+					fz={{ lg: 32, base: 18 }}
+					w={{ lg: 562, base: 210 }}
+					fw={600}
+					ml={{ lg: 114, base: 17 }}
+					mt={{ lg: 16, base: 8 }}
+					c={"#E4E8ED"}
+					hiddenFrom="xs"
+				>
 					Our Strengths
 				</Text>
-			</Box>
+				<Group wrap="nowrap" gap={0} visibleFrom="md">
+					<Box w={1270}>
+						<Divider
+							size="sm"
+							my={30}
+							mr={17}
+							label={
+								<Text
+									fw={600}
+									fz={{ lg: 32, base: 20 }}
+									ml={{ lg: 114, base: 17 }}
+									style={{ color: "#F6F6F6", lineHeight: "40px" }}
+								>
+									Our Strengths
+								</Text>
+							}
+							labelPosition="left"
+						/>
+					</Box>
+
+					{
+						<IconCircleChevronLeft
+							width={37}
+							height={37}
+							stroke={1}
+							color="#FFF"
+							onClick={() => embla?.scrollPrev()}
+						/>
+					}
+					{
+						<IconCircleChevronRight
+							width={37}
+							height={37}
+							stroke={1}
+							color="#FFF"
+							onClick={() => embla?.scrollNext()}
+						/>
+					}
+				</Group>
+				<Carousel
+					h={{ lg: 585, base: 295 }}
+					slideSize={"33.3%"}
+					slideGap={{ lg: 184, base: 47 }}
+					loop
+					align={"start"}
+					slidesToScroll={3}
+					orientation="horizontal"
+					ml={{ base: 16, lg: 114 }}
+					pt={{ base: 17 }}
+					getEmblaApi={setEmbla}
+					withControls={false}
+					maw={{ lg: 1440, base: 360 }}
+				>
+					<Carousel.Slide w={{ lg: 329, base: 197 }} ml={{ lg: 114, base: 24 }}>
+						<Card w={329} bg={"#000"}>
+							<Card.Section>
+								<Image
+									src={Strength1}
+									w={{ lg: 329, base: 197 }}
+									h={{ lg: 417, base: 251 }}
+									style={{ opacity: 0.5 }}
+									ml={{ base: 24 }}
+								/>
+								<Text
+									fz={{ lg: 32, base: 20 }}
+									mt={{ lg: -100, base: -43 }}
+									w={{ lg: 249, base: 200 }}
+									fw={600}
+									c={"#f6f6f6"}
+									pos={"absolute"}
+								>
+									Latest Technology
+								</Text>
+								<Text
+									w={{ lg: 288, base: 195 }}
+									mt={{ lg: 12, base: -8 }}
+									fz={{ lg: 14, base: 10 }}
+									fw={400}
+									c={"#f6f6f6"}
+								>
+									We use the latest available and accessible technology for long lasting and
+									trouble-free field performance.
+								</Text>
+							</Card.Section>
+						</Card>
+					</Carousel.Slide>
+					<Carousel.Slide w={{ lg: 329, base: 197 }} ml={{ base: 24 }}>
+						<Card w={329} bg={"#000"}>
+							<Card.Section>
+								<Image
+									src={Strength2}
+									w={{ lg: 329, base: 197 }}
+									h={{ lg: 417, base: 251 }}
+									style={{ opacity: 0.5 }}
+									ml={{ base: 47 }}
+								/>
+								<Text
+									fz={{ lg: 32, base: 20 }}
+									mt={{ lg: -100, base: -43 }}
+									w={{ lg: 249, base: 200 }}
+									fw={600}
+									c={"#f6f6f6"}
+									pos={"absolute"}
+									ml={{ base: 24 }}
+								>
+									Global Standards
+								</Text>
+								<Text
+									w={{ lg: 288, base: 195 }}
+									mt={{ lg: 12, base: -8 }}
+									fz={{ lg: 14, base: 10 }}
+									fw={400}
+									c={"#f6f6f6"}
+									ml={{ base: 24 }}
+								>
+									We use the latest available and accessible technology for long lasting and
+									trouble-free field performance.
+								</Text>
+							</Card.Section>
+						</Card>
+					</Carousel.Slide>
+					<Carousel.Slide w={{ lg: 329, base: 197 }} ml={{ base: 24 }}>
+						<Card w={329} bg={"#000"}>
+							<Card.Section>
+								<Image
+									src={Strength3}
+									w={{ lg: 329, base: 197 }}
+									h={{ lg: 417, base: 251 }}
+									style={{ opacity: 0.5 }}
+									ml={{ base: 47 }}
+								/>
+								<Text
+									fz={{ lg: 32, base: 20 }}
+									mt={{ lg: -100, base: -43 }}
+									w={{ lg: 347, base: 200 }}
+									fw={600}
+									c={"#f6f6f6"}
+									pos={"absolute"}
+									ml={{ base: 24 }}
+								>
+									Client Centered Approach
+								</Text>
+								<Text
+									w={{ lg: 288, base: 195 }}
+									mt={{ base: 16 }}
+									fz={{ lg: 14, base: 10 }}
+									fw={400}
+									c={"#f6f6f6"}
+									ml={{ base: 24 }}
+								>
+									We use the latest available and accessible technology for long lasting and
+									trouble-free field performance.
+								</Text>
+							</Card.Section>
+						</Card>
+					</Carousel.Slide>
+				</Carousel>
+			</Paper>
+			{/**Mobile View */}
+			{/*
 			<Carousel
 				h={785}
 				slideSize={"33.3%"}
@@ -179,11 +255,11 @@ const OurStrengths = (props: Props) => {
 						</Card.Section>
 					</Card>
 				</Carousel.Slide>
-			</Carousel>
+			</Carousel> */}
 
 			{/**Tablet View */}
 
-			<Box w={768} bg={"#000"} hiddenFrom="md" visibleFrom="xs">
+			{/* <Box w={768} bg={"#000"} hiddenFrom="md" visibleFrom="xs">
 				<Text fw={600} fz={14} pt={69} ml={90} c={"#f6f6f6"}>
 					WHO ARE WE ?
 				</Text>
@@ -211,8 +287,8 @@ const OurStrengths = (props: Props) => {
 						/>
 					}
 				</Group>
-			</Box>
-			<Carousel
+			</Box> */}
+			{/* <Carousel
 				h={600}
 				slideSize={"33.3%"}
 				loop
@@ -269,9 +345,9 @@ const OurStrengths = (props: Props) => {
 							</Text>
 						</Card.Section>
 					</Card>
-				</Carousel.Slide>
+				</Carousel.Slide> */}
 
-				{/* <Carousel.Slide >
+			{/* <Carousel.Slide >
 					<Card w={329} h={517} bg={"#000"} ml={85}>
 						<Card.Section>
 							<Image src={Strength2} w={239} h={303} style={{ opacity: 0.5 }} ml={48} />
@@ -300,7 +376,7 @@ const OurStrengths = (props: Props) => {
 						</Card.Section>
 					</Card>
 				</Carousel.Slide> */}
-			</Carousel>
+			{/* </Carousel> */}
 		</>
 	);
 };
