@@ -17,7 +17,7 @@ const JournalThree = (props: Props) => {
 			<Paper w={1440} h={3140} bg={"black"} visibleFrom="md" mt={30}>
 				<Group wrap="nowrap">
 					<Box w="100%">
-						<Text fz={20} mt={91} ml={114} c={"#f6f6f6"}>
+						<Text fz={32} mt={91} ml={114} c={"#f6f6f6"}>
 							Industry
 						</Text>
 						<Divider size="md" mt={24} mr={114} ml={114} />

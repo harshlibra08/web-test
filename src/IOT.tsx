@@ -1,4 +1,4 @@
-import { Paper, Group, Box, Divider, List, Grid, Text, Image, Tabs } from "@mantine/core";
+import { Paper, Group, Box, Divider, List, Grid, Text, Image, Tabs, Stack } from "@mantine/core";
 import React from "react";
 import Iot from "./Assets/iot.png";
 import IOT1 from "./Assets/iot1.png";
@@ -8,57 +8,100 @@ type Props = {};
 const IOT = (props: Props) => {
 	return (
 		<>
-			<Paper w={{ base: 360 }} h={{ base: 2600 }} bg={"black"} mt={30}>
-				<Group wrap="nowrap" gap={0}>
-					<Box w="100%">
-						<Text fz={{ base: 15 }} mt={{ base: 59 }} ml={{ base: 16 }} c={"#f6f6f6"}>
-							Services{" "}
-						</Text>
-						<Divider size="xs" ml={{ base: 16 }} w={{ base: 328 }} mt={{ base: 16 }} />
-					</Box>
-				</Group>
-
-				<Tabs color="rgba(255, 255, 255, 1)" defaultValue="IOT" ml={{ base: 16 }}>
-					<Tabs.List>
+			<Paper w={{ base: 360, lg: 1440 }} h={{ base: 2600, lg: 3800 }} bg={"black"} mt={30}>
+				<Stack>
+					<Text
+						fz={{ base: 20, lg: 32 }}
+						mt={{ base: 40, lg: 91 }}
+						ml={{ base: 16, lg: 114 }}
+						c={"#F6F6F6"}
+					>
+						Services
+					</Text>
+					<Divider size="xs" w={{ base: 328, lg: 1212 }} ml={{ base: 16, lg: 114 }} />
+				</Stack>
+				<Tabs
+					color="rgba(255, 255, 255, 1)"
+					defaultValue="Data"
+					ml={{ base: 16, lg: 114 }}
+					maw={{ base: 360, lg: 1212 }}
+				>
+					<Tabs.List hiddenFrom="xs">
 						<Tabs.Tab value="Data">
-							<Text fz={{ base: 9 }} ta={"center"} c={"#FFF"}>
+							<Text fz={{ base: 9 }} c={"#FFF"} ta={"center"}>
 								Data Acquisition <br />
 								Software
 							</Text>
 						</Tabs.Tab>
 						<Tabs.Tab value="IOT">
-							<Text fz={{ base: 9 }} ta={"center"} c={"#FFF"}>
+							<Text fz={{ base: 9 }} c={"#FFF"} ta={"center"}>
 								IoT (Internet <br /> of Things)
 							</Text>
 						</Tabs.Tab>
 						<Tabs.Tab value="pwht">
-							<Text fz={{ base: 9 }} ta={"center"} c={"#FFF"}>
+							<Text fz={{ base: 9 }} c={"#FFF"} ta={"center"}>
 								Post Weld Heat <br /> Treatment (PWHT) Vision
 							</Text>
 						</Tabs.Tab>
 					</Tabs.List>
+					<Tabs.List visibleFrom="md">
+						<Tabs.Tab value="Data">
+							<Text fz={{ base: 9, lg: 14 }} c={"#FFF"} ta={"center"}>
+								Data Acquisition Software
+							</Text>
+						</Tabs.Tab>
+						<Tabs.Tab value="IOT">
+							<Text fz={{ base: 9, lg: 14 }} c={"#FFF"} ta={"center"}>
+								IoT (Internet of Things)
+							</Text>
+						</Tabs.Tab>
+						<Tabs.Tab value="pwht">
+							<Text fz={{ base: 9, lg: 14 }} c={"#FFF"} ta={"center"}>
+								Post Weld Heat Treatment (PWHT) Vision
+							</Text>
+						</Tabs.Tab>
+					</Tabs.List>
 				</Tabs>
-				<Text c={"#f6f6f6"} ml={{ base: 100 }} w={160} ta={"center"} fz={{ base: 14 }} pt={40}>
+
+				<Text c={"#f6f6f6"} ta="center" fz={{ base: 14, lg: 32 }} pt={{ base: 64 }}>
 					IoT (Internet of Things)
 				</Text>
-				<Text ml={{ base: 16 }} c={"#e4e8ed"} ta="left" fz={{ base: 12 }} mt={{ base: 16 }} w={328}>
+				<Text
+					ml={{ base: 16, lg: 217 }}
+					c={"#e4e8ed"}
+					ta="left"
+					fz={{ base: 12 }}
+					mt={16}
+					w={{ base: 328, lg: 1006 }}
+					fw={400}
+				>
 					The Internet of Things is a system of interrelated devices that are provided with the
 					ability to transfer data over a network without requiring human-to-human or
 					human-to-computer interaction.
 				</Text>
-				<Image src={Iot} ml={{ base: 17 }} w={326} h={203} mt={{ base: 24 }} />
+				<Image
+					src={Iot}
+					ml={{ base: 17, lg: 299 }}
+					w={{ base: 326, lg: 822 }}
+					h={{ base: 203, lg: 456 }}
+					mt={{ base: 24, lg: 64 }}
+				/>
 
-				<Text ml={{ base: 16 }} c={"#f6f6f6"} fz={{ base: 14 }} mt={{ base: 40 }}>
+				<Text
+					ml={{ base: 16, lg: 217 }}
+					c={"#f6f6f6"}
+					fz={{ base: 14, lg: 24 }}
+					mt={{ base: 40, lg: 128 }}
+				>
 					What we offer?
 				</Text>
 				<Text
-					ml={{ base: 16 }}
+					ml={{ base: 16, lg: 217 }}
 					c={"#e4e8ed"}
-					fz={{ base: 12 }}
-					mt={{ base: 24 }}
-					w={327}
+					fz={{ base: 12, lg: 16 }}
+					mt={{ base: 24, lg: 32 }}
+					w={{ base: 327, lg: 1006 }}
 					fw={400}
-					lh={"15.8px"}
 				>
 					IoT for Process Monitor, Control and Data Logging
 					<List>
@@ -75,20 +118,48 @@ const IOT = (props: Props) => {
 					</List>
 				</Text>
 
-				<Paper w={1440} h={1080} bg={"white"} mt={{ base: 48 }}>
+				<Paper
+					w={{ base: 360, lg: 1440 }}
+					h={{ base: 1000, lg: 1014 }}
+					bg={"white"}
+					mt={{ base: 48, lg: 128 }}
+				>
 					<Grid justify="flex-start">
-						<Grid.Col span={{ base: 12 }}>
-							<Image src={IOT1} ml={{ base: 58 }} w={243} h={144} mt={{ base: 32 }} />
+						<Grid.Col span={{ base: 12, lg: 6 }}>
+							<Image
+								src={IOT1}
+								ml={{ base: 58, lg: 164 }}
+								w={{ base: 243, lg: 437 }}
+								h={{ base: 144, lg: 258 }}
+								mt={{ base: 32, lg: 128 }}
+							/>
 						</Grid.Col>
-						<Grid.Col span={{ base: 12 }}>
-							<Image src={IOT1} ml={{ base: 58 }} w={243} h={144} mt={{ base: 40 }} />
+						<Grid.Col span={{ base: 12, lg: 6 }}>
+							<Image
+								src={IOT1}
+								ml={{ base: 58 }}
+								w={{ base: 243, lg: 437 }}
+								h={{ base: 144, lg: 258 }}
+								mt={{ base: 32, lg: 128 }}
+							/>
 						</Grid.Col>
 					</Grid>
 
-					<Text fz={{ base: 14 }} fw={600} mt={{ base: 40 }} pl={{ base: 17 }}>
+					<Text
+						fz={{ base: 14, lg: 24 }}
+						fw={600}
+						mt={{ base: 40, lg: 64 }}
+						pl={{ base: 17, lg: 217 }}
+					>
 						Description
 					</Text>
-					<Text fz={{ base: 12 }} w={327} c={"#555459"} ml={{ base: 17 }} mt={{ base: 16 }}>
+					<Text
+						fz={{ base: 12, lg: 16 }}
+						w={{ base: 327, lg: 1006 }}
+						c={"#555459"}
+						ml={{ base: 17, lg: 217 }}
+						mt={{ base: 16, lg: 32 }}
+					>
 						Libratherm offers IoT modules, which allow the user to remotely monitor and control the
 						Industrial process directly on the Internet via an Ethernet/Wi-Fi network.
 						<br />
@@ -98,15 +169,25 @@ const IOT = (props: Props) => {
 						LSD-02 can be used to directly connect the Industrial sensors such as Pt-100 or T+RH
 						sensor/transmitter generating Voltage or Current Signal. The analog process value is
 						then monitored through WebApp on the smart devices like Computer, Tablet or Mobile
-						Phones. <br />
-						At the user end, Internet connectivity must be available preferably over Wi-Fi or over
-						an Ethernet for the functioning of these modules.
+						Phones. At the user end, Internet connectivity must be available preferably over Wi-Fi
+						or over an Ethernet for the functioning of these modules.
 					</Text>
 
-					<Text fz={{ base: 14 }} fw={600} mt={{ base: 40 }} pl={{ base: 17 }}>
+					<Text
+						fz={{ base: 14, lg: 24 }}
+						fw={600}
+						mt={{ base: 40, lg: 64 }}
+						pl={{ base: 17, lg: 217 }}
+					>
 						Key Features
 					</Text>
-					<Text fz={{ base: 12 }} w={327} c={"#555459"} ml={{ base: 17 }} mt={{ base: 16 }}>
+					<Text
+						fz={{ base: 12, lg: 16 }}
+						w={{ base: 327, lg: 1006 }}
+						c={"#555459"}
+						ml={{ base: 17, lg: 217 }}
+						mt={{ base: 16, lg: 32 }}
+					>
 						<li>
 							Direct Interface to Internet via Wi-Fi / Ethernet. No expensive gateways required.
 						</li>
@@ -119,31 +200,44 @@ const IOT = (props: Props) => {
 						<li>SMS and Email alerts for events and fault conditions.</li>
 					</Text>
 				</Paper>
-
-				<Text
-					c={"#f6f6f6"}
-					ml={{ base: 16 }}
-					w={160}
-					ta={"center"}
-					fz={{ base: 14 }}
-					mt={{ base: 56 }}
-				>
-					IOT App Screen
-				</Text>
-				<Image src={IOTApp} w={328} h={158} ml={{ base: 16 }} mt={{ base: 32 }} />
-				<Text fz={{ base: 12 }} fw={400} w={327} ml={{ base: 16 }} mt={{ base: 24 }} c={"#f6f6f6"}>
-					Libratherm offers IoT modules, which allow the user to remotely monitor and control the
-					Industrial process directly on the Internet via an Ethernet/Wi-Fi network. <br />
-					LSD-01 can be used to interface any process controller having an RS485 MODBUS interface to
-					capture all the process parameters, which can be monitored using Customized Web-App on
-					smart devices like Computer, Tablet or Mobile Phones. <br />
-					LSD-02 can be used to directly connect the Industrial sensors such as Pt-100 or T+RH
-					sensor/transmitter generating Voltage or Current Signal. The analog process value is then
-					monitored through WebApp on the smart devices like Computer, Tablet or Mobile Phones.{" "}
-					<br />
-					At the user end, Internet connectivity must be available preferably over Wi-Fi or over an
-					Ethernet for the functioning of these modules. <br />
-				</Text>
+				<Paper w={{ base: 360, lg: 1440 }} h={{ base: 720, lg: 1176 }} bg={"#000"}>
+					<Text
+						c={"#f6f6f6"}
+						ml={{ base: 16, lg: 217 }}
+						w={300}
+						ta={"center"}
+						fz={{ base: 14, lg: 24 }}
+						mt={{ base: 56, lg: 128 }}
+					>
+						IOT App Screen
+					</Text>
+					<Image
+						src={IOTApp}
+						w={{ base: 328, lg: 1006 }}
+						h={{ base: 158, lg: 484 }}
+						ml={{ base: 16, lg: 217 }}
+						mt={{ base: 32, lg: 64 }}
+					/>
+					<Text
+						fz={{ base: 12, lg: 16 }}
+						w={{ base: 327, lg: 1006 }}
+						c={"#F6F6F6"}
+						ml={{ base: 17, lg: 217 }}
+						mt={{ base: 16, lg: 32 }}
+					>
+						Libratherm offers IoT modules, which allow the user to remotely monitor and control the
+						Industrial process directly on the Internet via an Ethernet/Wi-Fi network. <br />
+						LSD-01 can be used to interface any process controller having an RS485 MODBUS interface
+						to capture all the process parameters, which can be monitored using Customized Web-App
+						on smart devices like Computer, Tablet or Mobile Phones. <br />
+						LSD-02 can be used to directly connect the Industrial sensors such as Pt-100 or T+RH
+						sensor/transmitter generating Voltage or Current Signal. The analog process value is
+						then monitored through WebApp on the smart devices like Computer, Tablet or Mobile
+						Phones. <br />
+						At the user end, Internet connectivity must be available preferably over Wi-Fi or over
+						an Ethernet for the functioning of these modules. <br />
+					</Text>
+				</Paper>
 			</Paper>
 			{/**Mobile View */}
 			{/* <Paper w={360} h={2800} bg={"black"} hiddenFrom="xs">

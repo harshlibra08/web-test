@@ -10,6 +10,7 @@ import {
 	Text,
 	Image,
 	Tabs,
+	Stack,
 } from "@mantine/core";
 import React from "react";
 import PWHT from "./Assets/image 426.png";
@@ -24,32 +25,61 @@ type Props = {};
 const Services = (props: Props) => {
 	return (
 		<>
-			<Paper w={{ base: 360 }} h={{ base: 5000 }} mt={30} bg={"black"}>
-				<Group wrap="nowrap" gap={0}>
-					<Box w="100%">
-						<Text fz={{ base: 15 }} mt={{ base: 59 }} ml={{ base: 16 }} c={"#f6f6f6"}>
-							Services{" "}
-						</Text>
-						<Divider size="xs" ml={{ base: 16 }} w={{ base: 328 }} mt={{ base: 16 }} />
-					</Box>
-				</Group>
-
-				<Tabs color="rgba(255, 255, 255, 1)" defaultValue="pwht" ml={{ base: 16 }}>
-					<Tabs.List>
+			<Paper
+				w={{ base: 360, lg: 1440 }}
+				h={{ base: 5000, lg: 5340 }}
+				mt={{ base: 40, lg: 50 }}
+				bg={"black"}
+			>
+				<Stack>
+					<Text
+						fz={{ base: 20, lg: 32 }}
+						mt={{ base: 40, lg: 91 }}
+						ml={{ base: 16, lg: 114 }}
+						c={"#F6F6F6"}
+					>
+						Services
+					</Text>
+					<Divider size="xs" w={{ base: 328, lg: 1212 }} ml={{ base: 16, lg: 114 }} />
+				</Stack>
+				<Tabs
+					color="rgba(255, 255, 255, 1)"
+					defaultValue="Data"
+					ml={{ base: 16, lg: 114 }}
+					maw={{ base: 360, lg: 1212 }}
+				>
+					<Tabs.List hiddenFrom="xs">
 						<Tabs.Tab value="Data">
-							<Text fz={{ base: 9 }} ta={"center"} c={"#FFF"}>
+							<Text fz={{ base: 9 }} c={"#FFF"} ta={"center"}>
 								Data Acquisition <br />
 								Software
 							</Text>
 						</Tabs.Tab>
 						<Tabs.Tab value="IOT">
-							<Text fz={{ base: 9 }} ta={"center"} c={"#FFF"}>
+							<Text fz={{ base: 9 }} c={"#FFF"} ta={"center"}>
 								IoT (Internet <br /> of Things)
 							</Text>
 						</Tabs.Tab>
 						<Tabs.Tab value="pwht">
-							<Text fz={{ base: 9 }} ta={"center"} c={"#FFF"}>
+							<Text fz={{ base: 9 }} c={"#FFF"} ta={"center"}>
 								Post Weld Heat <br /> Treatment (PWHT) Vision
+							</Text>
+						</Tabs.Tab>
+					</Tabs.List>
+					<Tabs.List visibleFrom="md">
+						<Tabs.Tab value="Data">
+							<Text fz={{ base: 9, lg: 14 }} c={"#FFF"} ta={"center"}>
+								Data Acquisition Software
+							</Text>
+						</Tabs.Tab>
+						<Tabs.Tab value="IOT">
+							<Text fz={{ base: 9, lg: 14 }} c={"#FFF"} ta={"center"}>
+								IoT (Internet of Things)
+							</Text>
+						</Tabs.Tab>
+						<Tabs.Tab value="pwht">
+							<Text fz={{ base: 9, lg: 14 }} c={"#FFF"} ta={"center"}>
+								Post Weld Heat Treatment (PWHT) Vision
 							</Text>
 						</Tabs.Tab>
 					</Tabs.List>
@@ -57,22 +87,22 @@ const Services = (props: Props) => {
 
 				<Text
 					c={"#f6f6f6"}
-					ml={{ base: 100 }}
-					w={160}
+					ml={{ base: 100, lg: 455 }}
+					w={550}
 					ta={"center"}
-					fz={{ base: 14 }}
+					fz={{ base: 14, lg: 32 }}
 					pt={{ base: 40 }}
 				>
 					Post Weld Heat Treatment (PWHT)
 				</Text>
 
 				<Text
-					ml={{ base: 16 }}
+					ml={{ base: 16, lg: 217 }}
 					c={"#e4e8ed"}
 					ta="left"
 					fz={{ base: 12 }}
-					mt={{ base: 16 }}
-					w={{ base: 328 }}
+					mt={{ base: 16, lg: 34 }}
+					w={{ base: 328, lg: 1006 }}
 					fw={400}
 				>
 					Welding is the process of joining metals or thermoplastics by using high heat or pressure
@@ -91,17 +121,28 @@ const Services = (props: Props) => {
 					with optimum mechanical and metallurgic properties.
 				</Text>
 
-				<Image src={PWHT} ml={{ base: 16 }} w={{ base: 320 }} h={{ base: 181 }} mt={{ base: 24 }} />
-				<Text ml={{ base: 16 }} c={"#f6f6f6"} fz={{ base: 14 }} mt={{ base: 40 }}>
+				<Image
+					src={PWHT}
+					ml={{ base: 16, lg: 385 }}
+					w={{ base: 320, lg: 670 }}
+					h={{ base: 181, lg: 372 }}
+					mt={{ base: 24, lg: 64 }}
+				/>
+				<Text
+					ml={{ base: 16, lg: 217 }}
+					c={"#f6f6f6"}
+					fz={{ base: 14, lg: 24 }}
+					mt={{ base: 40, lg: 64 }}
+				>
 					What happens in PWHT?
 				</Text>
 
 				<Text
-					ml={{ base: 16 }}
+					ml={{ base: 16, lg: 217 }}
 					c={"#e4e8ed"}
-					fz={{ base: 12 }}
-					mt={{ base: 24 }}
-					w={{ base: 327 }}
+					fz={{ base: 12, lg: 16 }}
+					mt={{ base: 24, lg: 32 }}
+					w={{ base: 327, lg: 1006 }}
 					fw={400}
 				>
 					Post Weld Heat Treatment (PWHT) reheats the welded material using a controlled ramp-soak
@@ -122,90 +163,128 @@ const Services = (props: Props) => {
 					interface is also available for interfacing with SCADA, PLC or data logging systems.
 				</Text>
 
-				<Paper h={1073} w={{ base: 360 }} bg={"white"} radius={0} left={{ base: 0 }}>
-					<Image src={PWHT2} w={{ base: 328 }} h={{ base: 194 }} mt={{ base: 72 }} />
-					<Image src={PWHT3} w={{ base: 360 }} h={{ base: 162 }} ml={0} mt={{ base: 48 }} />
-					<Container>
-						<Text ml={{ base: 16 }} c={"#262728"} fz={{ base: 14 }} mt={{ base: 40 }} fw={600}>
-							Advantages of PWHT
-						</Text>
-						<Text pt={16} fz={{ base: 12 }}>
-							<List>
-								<List.Item fz={{ base: 12 }} c={"#555459"}>
-									PWHT uses a technique that reduces or redistributes the Residual Stress formed by
-									the welding Process by involving 4-step processes like Pre-Heating, Heating,
-									Soaking & Cooling the Welded Surface to controlled temperatures for a specified
-									amount of time. This enhances the properties of the welded surface.
-								</List.Item>
-								<List.Item fz={{ base: 12 }} c={"#555459"}>
-									Helps to improve the Metallurgical Structure.
-								</List.Item>
-								<List.Item fz={{ base: 12 }} c={"#555459"}>
-									Helps to improve the Ductility of the Material.
-								</List.Item>
-								<List.Item fz={{ base: 12 }} c={"#555459"}>
-									Reduces the risk of Brittle Fracture as the Ductility increases.
-								</List.Item>
-								<List.Item fz={{ base: 12 }} c={"#555459"}>
-									Relaxed Thermal Stress due to the redistribution of Residual Stresses.
-								</List.Item>
-							</List>
-						</Text>
-					</Container>
-					<Container>
-						<Text ml={{ base: 16 }} c={"#262728"} fz={{ base: 14 }} mt={{ base: 40 }} fw={600}>
-							Safety and Precautions
-						</Text>
-						<Text pt={16} fz={{ base: 12 }}>
-							<List>
-								<List.Item fz={{ base: 12 }} c={"#555459"}>
-									PWHT must be performed by certified experts with experience in this field.
-								</List.Item>
-								<List.Item fz={{ base: 12 }} c={"#555459"}>
-									The portion exposed to PWHT must be covered properly to protect it from rain or
-									wind.
-								</List.Item>
-								<List.Item fz={{ base: 12 }} c={"#555459"}>
-									A hardness test must be performed to check if Post weld heat treatment is
-									successfully performed.
-								</List.Item>
-								<List.Item fz={{ base: 12 }} c={"#555459"}>
-									Some metals and alloys can experience cracks during PWHT. Therefore, the alloy
-									system must be taken into account.
-								</List.Item>
-								<List.Item fz={{ base: 12 }} c={"#555459"}>
-									Thermocouples are used for monitoring PWHT to assure heating rates, cooling rates,
-									and hold temperature is within standard specifications. Along with thermocouples
-									computer software is used to provide documentation about PWHT.
-								</List.Item>
-							</List>
-						</Text>
-					</Container>
+				<Paper
+					h={{ base: 1043, lg: 1773 }}
+					w={{ base: 360, lg: 1440 }}
+					bg={"white"}
+					radius={0}
+					left={{ base: 0 }}
+				>
+					<Image
+						src={PWHT2}
+						w={{ base: 328, lg: 1006 }}
+						h={{ base: 194, lg: 404 }}
+						mt={{ base: 72, lg: 128 }}
+						ml={{ lg: 218 }}
+					/>
+					<Image
+						src={PWHT3}
+						w={{ base: 360, lg: 1006 }}
+						h={{ base: 162, lg: 402 }}
+						ml={{ lg: 218 }}
+						mt={{ base: 48, lg: 103 }}
+					/>
+
+					<Text
+						ml={{ base: 16, lg: 218 }}
+						c={"#262728"}
+						fz={{ base: 14, lg: 24 }}
+						mt={{ base: 40, lg: 128 }}
+						fw={600}
+					>
+						Advantages of PWHT
+					</Text>
+					<Text
+						pt={{ base: 16, lg: 32 }}
+						fz={{ base: 12, lg: 16 }}
+						ml={{ base: 16, lg: 218 }}
+						maw={{ base: 328, lg: 1006 }}
+					>
+						<List>
+							<List.Item fz={{ base: 12 }} c={"#555459"}>
+								PWHT uses a technique that reduces or redistributes the Residual Stress formed by
+								the welding Process by involving 4-step processes like Pre-Heating, Heating, Soaking
+								& Cooling the Welded Surface to controlled temperatures for a specified amount of
+								time. This enhances the properties of the welded surface.
+							</List.Item>
+							<List.Item fz={{ base: 12 }} c={"#555459"}>
+								Helps to improve the Metallurgical Structure.
+							</List.Item>
+							<List.Item fz={{ base: 12 }} c={"#555459"}>
+								Helps to improve the Ductility of the Material.
+							</List.Item>
+							<List.Item fz={{ base: 12 }} c={"#555459"}>
+								Reduces the risk of Brittle Fracture as the Ductility increases.
+							</List.Item>
+							<List.Item fz={{ base: 12 }} c={"#555459"}>
+								Relaxed Thermal Stress due to the redistribution of Residual Stresses.
+							</List.Item>
+						</List>
+					</Text>
+
+					<Text
+						ml={{ base: 16, lg: 218 }}
+						c={"#262728"}
+						fz={{ base: 14, lg: 24 }}
+						mt={{ base: 40, lg: 64 }}
+						fw={600}
+					>
+						Safety and Precautions
+					</Text>
+					<Text
+						pt={{ base: 16, lg: 32 }}
+						fz={{ base: 12, lg: 16 }}
+						ml={{ base: 16, lg: 218 }}
+						maw={{ base: 328, lg: 1006 }}
+					>
+						<List>
+							<List.Item fz={{ base: 12 }} c={"#555459"}>
+								PWHT must be performed by certified experts with experience in this field.
+							</List.Item>
+							<List.Item fz={{ base: 12 }} c={"#555459"}>
+								The portion exposed to PWHT must be covered properly to protect it from rain or
+								wind.
+							</List.Item>
+							<List.Item fz={{ base: 12 }} c={"#555459"}>
+								A hardness test must be performed to check if Post weld heat treatment is
+								successfully performed.
+							</List.Item>
+							<List.Item fz={{ base: 12 }} c={"#555459"}>
+								Some metals and alloys can experience cracks during PWHT. Therefore, the alloy
+								system must be taken into account.
+							</List.Item>
+							<List.Item fz={{ base: 12 }} c={"#555459"}>
+								Thermocouples are used for monitoring PWHT to assure heating rates, cooling rates,
+								and hold temperature is within standard specifications. Along with thermocouples
+								computer software is used to provide documentation about PWHT.
+							</List.Item>
+						</List>
+					</Text>
 				</Paper>
 
-				<Grid mt={33}>
-					<Grid.Col span={{ base: 12 }}>
+				<Grid>
+					<Grid.Col span={{ base: 12, lg: 6 }}>
 						<Image
 							src={Rect3715}
-							h={{ base: 360 }}
-							w={{ base: 360 }}
+							h={{ base: 360, lg: 871 }}
+							w={{ base: 360, lg: 720 }}
 							pos="absolute"
 							pl={{ base: 0 }}
 							left={{ base: 0 }}
 						/>
 						<Image
 							src={SixZone}
-							w={{ base: 308 }}
-							h={{ base: 283 }}
+							w={{ base: 308, lg: 444 }}
+							h={{ base: 283, lg: 407 }}
 							pos={"absolute"}
-							ml={{ base: 26 }}
-							mt={{ base: 15 }}
+							ml={{ base: 26, lg: 134 }}
+							mt={{ base: 15, lg: 175 }}
 						/>
 						<Button
 							variant="default"
 							color="#FFF"
-							mt={{ base: 298 }}
-							ml={{ base: 112 }}
+							mt={{ base: 298, lg: 646 }}
+							ml={{ base: 112, lg: 288 }}
 							radius={0}
 							pos={"absolute"}
 							tt={"uppercase"}
@@ -213,16 +292,22 @@ const Services = (props: Props) => {
 							visit prc 6000
 						</Button>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Text fz={{ base: 14 }} fw={600} mt={{ base: 400 }} ml={{ base: 17 }} c={"#f6f6f6"}>
+					<Grid.Col span={{ base: 12, lg: 6 }}>
+						<Text
+							fz={{ base: 14, lg: 24 }}
+							fw={600}
+							mt={{ base: 400, lg: 128 }}
+							ml={{ base: 17, lg: 50 }}
+							c={"#f6f6f6"}
+						>
 							PWHT Temperature Controller - PRC 6000
 						</Text>
 						<Text
-							w={{ base: 328 }}
+							w={{ base: 328, lg: 559 }}
 							c={"#e4e8ed"}
-							fz={{ base: 12 }}
+							fz={{ base: 12, lg: 16 }}
 							fw={400}
-							ml={{ base: 16 }}
+							ml={{ base: 17, lg: 50 }}
 							mt={{ base: 24 }}
 						>
 							Libratherm offers Ramp/Soak Programmable PID Temperature Controller – PRC-489 which is
@@ -233,11 +318,25 @@ const Services = (props: Props) => {
 							controllers are calibrated for a K-type thermocouple.
 						</Text>
 
-						<Text fz={{ base: 14 }} fw={600} mt={{ base: 48 }} ml={{ base: 17 }} c={"#f6f6f6"}>
+						<Text
+							fz={{ base: 14, lg: 24 }}
+							fw={600}
+							mt={{ base: 48, lg: 64 }}
+							ml={{ base: 17, lg: 50 }}
+							c={"#f6f6f6"}
+							maw={{ base: 328 }}
+						>
 							Features
 						</Text>
 
-						<Text c={"#e4e8ed"} fz={{ base: 12 }} w={{ base: 320 }} fw={400} mt={{ base: 24 }}>
+						<Text
+							w={{ base: 320, lg: 552 }}
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							fw={400}
+							ml={{ base: 16, lg: 50 }}
+							mt={14}
+						>
 							<List>
 								<List.Item>Accepts standard K type thermocouple</List.Item>
 								<List.Item>
@@ -266,28 +365,28 @@ const Services = (props: Props) => {
 							</List>
 						</Text>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
+					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 1, lg: 2 }}>
 						<Image
 							src={Rect3716}
-							w={{ base: 358 }}
-							h={{ base: 354 }}
+							w={{ base: 358, lg: 720 }}
+							h={{ base: 354, lg: 1207 }}
 							pos={"absolute"}
-							left={{ base: 0 }}
+							left={{ base: 0, lg: 719 }}
 						/>
 						<Image
 							src={Img440}
 							pos={"absolute"}
-							w={{ base: 281 }}
-							h={{ base: 229 }}
-							ml={{ base: 39 }}
-							mt={{ base: 35 }}
+							w={{ base: 281, lg: 449 }}
+							h={{ base: 229, lg: 449 }}
+							ml={{ base: 39, lg: 136 }}
+							mt={{ lg: 179 }}
 						/>
 
 						<Button
 							variant="default"
 							color="#FFF"
-							mt={{ base: 292 }}
-							ml={{ base: 112 }}
+							mt={{ base: 292, lg: 664 }}
+							ml={{ base: 112, lg: 293 }}
 							radius={0}
 							pos={"absolute"}
 							tt={"uppercase"}
@@ -295,24 +394,24 @@ const Services = (props: Props) => {
 							visit prc 6000
 						</Button>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
+					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 2, lg: 1 }}>
 						<Text
-							fz={{ base: 14 }}
+							fz={{ base: 14, lg: 24 }}
 							fw={600}
-							w={{ base: 327 }}
-							mt={394}
-							ml={{ base: 16 }}
+							w={{ base: 327, lg: 530 }}
+							mt={{ base: 394, lg: 128 }}
+							ml={{ base: 16, lg: 115 }}
 							c={"#f6f6f6"}
 						>
 							Ramp/Soak Programmable PID Temperature Controller – PRC-489
 						</Text>
 						<Text
-							w={{ base: 328 }}
+							w={{ base: 328, lg: 552 }}
 							c={"#e4e8ed"}
-							fz={{ base: 12 }}
+							fz={{ base: 12, lg: 14 }}
 							fw={400}
-							ml={{ base: 16 }}
-							mt={{ base: 24 }}
+							ml={{ base: 16, lg: 114 }}
+							mt={{ base: 24, lg: 32 }}
 						>
 							Libratherm offers Ramp/Soak Programmable PID Temperature Controller – PRC-489 which is
 							designed to improve reliability, accuracy, and control for all temperature control
@@ -323,18 +422,25 @@ const Services = (props: Props) => {
 						</Text>
 
 						<Text
-							fz={{ base: 14 }}
+							fz={{ base: 14, lg: 24 }}
 							w={514}
 							h={44}
 							fw={600}
-							mt={{ base: 48 }}
-							ml={{ base: 16 }}
+							mt={{ base: 48, lg: 64 }}
+							ml={{ base: 16, lg: 114 }}
 							c={"#f6f6f6"}
 						>
 							Features
 						</Text>
 
-						<Text w={{ base: 320 }} c={"#e4e8ed"} fz={{ base: 12 }} fw={400} mt={14}>
+						<Text
+							w={{ base: 320, lg: 556 }}
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							fw={400}
+							ml={{ base: 16, lg: 114 }}
+							mt={{ base: 14, lg: 32 }}
+						>
 							<List>
 								<List.Item>Accepts standard K type thermocouple</List.Item>
 								<List.Item>

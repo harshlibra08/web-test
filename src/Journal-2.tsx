@@ -1,4 +1,14 @@
-import { Paper, Group, Box, Divider, Grid, UnstyledButton, Text, Image } from "@mantine/core";
+import {
+	Paper,
+	Group,
+	Box,
+	Divider,
+	Grid,
+	UnstyledButton,
+	Text,
+	Image,
+	Stack,
+} from "@mantine/core";
 import React from "react";
 import Industry1 from "./Assets/ind1.png";
 import Industry2 from "./Assets/ind2.png";
@@ -9,40 +19,42 @@ type Props = {};
 const JournalTwo = (props: Props) => {
 	return (
 		<>
-			<Paper w={{ base: 360 }} h={{ base: 4050 }} bg={"black"} mt={30}>
-				<Group wrap="nowrap" gap={0}>
-					<Box w="100%">
-						<Text fz={{ base: 15 }} mt={{ base: 59 }} ml={{ base: 16 }} c={"#f6f6f6"}>
-							Industry
-						</Text>
-						<Divider size="xs" ml={{ base: 16 }} w={{ base: 328 }} mt={{ base: 16 }} />
-					</Box>
-				</Group>
-
+			<Paper w={{ base: 360, lg: 1440 }} h={{ base: 4050, lg: 3200 }} bg={"black"} mt={30}>
+				<Stack>
+					<Text fz={{ base: 20, lg: 32 }} mt={40} ml={{ base: 16, lg: 114 }} c={"#F6F6F6"}>
+						Journal
+					</Text>
+					<Divider size="xs" w={{ base: 328, lg: 1212 }} ml={{ base: 16, lg: 114 }} />
+				</Stack>
 				<Grid>
-					<Grid.Col span={{ base: 12 }}>
+					<Grid.Col span={{ base: 12, lg: 4 }}>
 						<Image
-							src={Industry1}
-							mt={{ base: 40 }}
-							ml={{ base: 16 }}
-							h={{ base: 300 }}
-							w={{ base: 328 }}
+							src={Industry4}
+							mt={{ base: 40, lg: 64 }}
+							ml={{ base: 16, lg: 116 }}
+							h={{ base: 300, lg: 327 }}
+							w={{ base: 328, lg: 358 }}
 						/>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Text c={"#e4e8ed"} fz={{ base: 12 }} ml={{ base: 16 }} mt={16}>
+					<Grid.Col span={{ base: 12, lg: 8 }}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							ml={{ base: 16, lg: 56 }}
+							mt={{ base: 16, lg: 128 }}
+						>
 							22nd January, 2023.
 						</Text>
-						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={16} ml={{ base: 16 }}>
+						<Text c={"#f6f6f6"} fz={{ base: 18, lg: 32 }} mt={16} ml={{ base: 16, lg: 56 }}>
 							Glass Manufacture
 						</Text>
 						<Text
 							c={"#e4e8ed"}
-							fz={{ base: 12 }}
+							fz={{ base: 12, lg: 16 }}
 							mt={16}
 							lineClamp={2}
-							ml={{ base: 16 }}
-							w={{ base: 325 }}
+							ml={{ base: 16, lg: 56 }}
+							w={{ base: 325, lg: 868 }}
 						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
@@ -55,29 +67,46 @@ const JournalTwo = (props: Props) => {
 						</Text>
 						<UnstyledButton>
 							<Group>
-								<Text fz={{ base: 15 }} c={"#ffffff"} mt={8} fw={400} ml={{ base: 16 }}>
+								<Text
+									fz={{ base: 15, lg: 20 }}
+									c={"#ffffff"}
+									mt={{ base: 8, lg: 24 }}
+									fw={400}
+									ml={{ base: 16, lg: 56 }}
+								>
 									Read more
 								</Text>
 							</Group>
 						</UnstyledButton>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Image src={Industry2} mt={64} ml={{ base: 16 }} h={{ base: 300 }} w={{ base: 328 }} />
+					<Grid.Col span={{ base: 12, lg: 4 }}>
+						<Image
+							src={Industry1}
+							mt={{ base: 40, lg: 64 }}
+							ml={{ base: 16, lg: 116 }}
+							h={{ base: 300, lg: 327 }}
+							w={{ base: 328, lg: 358 }}
+						/>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Text c={"#e4e8ed"} fz={{ base: 12 }} ml={{ base: 16 }} mt={16}>
+					<Grid.Col span={{ base: 12, lg: 8 }}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							ml={{ base: 16, lg: 56 }}
+							mt={{ base: 16, lg: 128 }}
+						>
 							22nd January, 2023.
 						</Text>
-						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={16} ml={{ base: 16 }}>
-							Jewelry Manufacture{" "}
+						<Text c={"#f6f6f6"} fz={{ base: 18, lg: 32 }} mt={16} ml={{ base: 16, lg: 56 }}>
+							Glass Manufacture
 						</Text>
 						<Text
 							c={"#e4e8ed"}
-							fz={{ base: 12 }}
+							fz={{ base: 12, lg: 16 }}
 							mt={16}
 							lineClamp={2}
-							ml={{ base: 16 }}
-							w={{ base: 325 }}
+							ml={{ base: 16, lg: 56 }}
+							w={{ base: 325, lg: 868 }}
 						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
@@ -90,29 +119,46 @@ const JournalTwo = (props: Props) => {
 						</Text>
 						<UnstyledButton>
 							<Group>
-								<Text fz={{ base: 15 }} c={"#ffffff"} mt={32} fw={400} ml={{ base: 16 }}>
+								<Text
+									fz={{ base: 15, lg: 20 }}
+									c={"#ffffff"}
+									mt={{ base: 8, lg: 24 }}
+									fw={400}
+									ml={{ base: 16, lg: 56 }}
+								>
 									Read more
 								</Text>
 							</Group>
 						</UnstyledButton>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Image src={Industry3} mt={64} ml={{ base: 16 }} h={{ base: 300 }} w={{ base: 328 }} />
+					<Grid.Col span={{ base: 12, lg: 4 }}>
+						<Image
+							src={Industry2}
+							mt={{ base: 40, lg: 64 }}
+							ml={{ base: 16, lg: 116 }}
+							h={{ base: 300, lg: 327 }}
+							w={{ base: 328, lg: 358 }}
+						/>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Text c={"#e4e8ed"} fz={{ base: 12 }} ml={{ base: 16 }} mt={16}>
+					<Grid.Col span={{ base: 12, lg: 8 }}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							ml={{ base: 16, lg: 56 }}
+							mt={{ base: 16, lg: 128 }}
+						>
 							22nd January, 2023.
 						</Text>
-						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={16} ml={{ base: 16 }}>
-							Pharmaceuticals{" "}
+						<Text c={"#f6f6f6"} fz={{ base: 18, lg: 32 }} mt={16} ml={{ base: 16, lg: 56 }}>
+							Glass Manufacture
 						</Text>
 						<Text
 							c={"#e4e8ed"}
-							fz={{ base: 12 }}
+							fz={{ base: 12, lg: 16 }}
 							mt={16}
 							lineClamp={2}
-							ml={{ base: 16 }}
-							w={{ base: 325 }}
+							ml={{ base: 16, lg: 56 }}
+							w={{ base: 325, lg: 868 }}
 						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
@@ -125,29 +171,46 @@ const JournalTwo = (props: Props) => {
 						</Text>
 						<UnstyledButton>
 							<Group>
-								<Text fz={{ base: 15 }} c={"#ffffff"} mt={32} fw={400} ml={{ base: 16 }}>
+								<Text
+									fz={{ base: 15, lg: 20 }}
+									c={"#ffffff"}
+									mt={{ base: 8, lg: 24 }}
+									fw={400}
+									ml={{ base: 16, lg: 56 }}
+								>
 									Read more
 								</Text>
 							</Group>
 						</UnstyledButton>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Image src={Industry4} mt={64} ml={{ base: 16 }} h={{ base: 300 }} w={{ base: 328 }} />
+					<Grid.Col span={{ base: 12, lg: 4 }}>
+						<Image
+							src={Industry3}
+							mt={{ base: 40, lg: 64 }}
+							ml={{ base: 16, lg: 116 }}
+							h={{ base: 300, lg: 327 }}
+							w={{ base: 328, lg: 358 }}
+						/>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Text c={"#e4e8ed"} fz={{ base: 12 }} ml={{ base: 16 }} mt={16}>
+					<Grid.Col span={{ base: 12, lg: 8 }}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							ml={{ base: 16, lg: 56 }}
+							mt={{ base: 16, lg: 128 }}
+						>
 							22nd January, 2023.
 						</Text>
-						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={16} ml={{ base: 16 }}>
-							Steel Plants{" "}
+						<Text c={"#f6f6f6"} fz={{ base: 18, lg: 32 }} mt={16} ml={{ base: 16, lg: 56 }}>
+							Glass Manufacture
 						</Text>
 						<Text
 							c={"#e4e8ed"}
-							fz={{ base: 12 }}
+							fz={{ base: 12, lg: 16 }}
 							mt={16}
-							ml={{ base: 16 }}
-							w={{ base: 325 }}
 							lineClamp={2}
+							ml={{ base: 16, lg: 56 }}
+							w={{ base: 325, lg: 868 }}
 						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
@@ -158,24 +221,48 @@ const JournalTwo = (props: Props) => {
 							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
 							contact sensors.
 						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text
+									fz={{ base: 15, lg: 20 }}
+									c={"#ffffff"}
+									mt={{ base: 8, lg: 24 }}
+									fw={400}
+									ml={{ base: 16, lg: 56 }}
+								>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Image src={Industry2} mt={64} ml={{ base: 16 }} h={{ base: 300 }} w={{ base: 328 }} />
+					<Grid.Col span={{ base: 12, lg: 4 }}>
+						<Image
+							src={Industry4}
+							mt={{ base: 40, lg: 64 }}
+							ml={{ base: 16, lg: 116 }}
+							h={{ base: 300, lg: 327 }}
+							w={{ base: 328, lg: 358 }}
+						/>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Text c={"#e4e8ed"} fz={{ base: 12 }} ml={{ base: 16 }} mt={16}>
+					<Grid.Col span={{ base: 12, lg: 8 }}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							ml={{ base: 16, lg: 56 }}
+							mt={{ base: 16, lg: 128 }}
+						>
 							22nd January, 2023.
 						</Text>
-						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={16} ml={{ base: 16 }}>
-							Jewelry Manufacture{" "}
+						<Text c={"#f6f6f6"} fz={{ base: 18, lg: 32 }} mt={16} ml={{ base: 16, lg: 56 }}>
+							Glass Manufacture
 						</Text>
 						<Text
 							c={"#e4e8ed"}
-							fz={{ base: 12 }}
+							fz={{ base: 12, lg: 16 }}
 							mt={16}
-							ml={{ base: 16 }}
-							w={{ base: 325 }}
 							lineClamp={2}
+							ml={{ base: 16, lg: 56 }}
+							w={{ base: 325, lg: 868 }}
 						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
@@ -186,24 +273,48 @@ const JournalTwo = (props: Props) => {
 							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
 							contact sensors.
 						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text
+									fz={{ base: 15, lg: 20 }}
+									c={"#ffffff"}
+									mt={{ base: 8, lg: 24 }}
+									fw={400}
+									ml={{ base: 16, lg: 56 }}
+								>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Image src={Industry3} mt={64} ml={{ base: 16 }} h={{ base: 300 }} w={{ base: 328 }} />
+					<Grid.Col span={{ base: 12, lg: 4 }}>
+						<Image
+							src={Industry3}
+							mt={{ base: 40, lg: 64 }}
+							ml={{ base: 16, lg: 116 }}
+							h={{ base: 300, lg: 327 }}
+							w={{ base: 328, lg: 358 }}
+						/>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Text c={"#e4e8ed"} fz={{ base: 12 }} ml={{ base: 16 }} mt={16}>
+					<Grid.Col span={{ base: 12, lg: 8 }}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							ml={{ base: 16, lg: 56 }}
+							mt={{ base: 16, lg: 128 }}
+						>
 							22nd January, 2023.
 						</Text>
-						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={16} ml={{ base: 16 }}>
-							Pharmaceuticals{" "}
+						<Text c={"#f6f6f6"} fz={{ base: 18, lg: 32 }} mt={16} ml={{ base: 16, lg: 56 }}>
+							Glass Manufacture
 						</Text>
 						<Text
 							c={"#e4e8ed"}
-							fz={{ base: 12 }}
+							fz={{ base: 12, lg: 16 }}
 							mt={16}
-							ml={{ base: 16 }}
-							w={{ base: 325 }}
 							lineClamp={2}
+							ml={{ base: 16, lg: 56 }}
+							w={{ base: 325, lg: 868 }}
 						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
@@ -214,24 +325,48 @@ const JournalTwo = (props: Props) => {
 							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
 							contact sensors.
 						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text
+									fz={{ base: 15, lg: 20 }}
+									c={"#ffffff"}
+									mt={{ base: 8, lg: 24 }}
+									fw={400}
+									ml={{ base: 16, lg: 56 }}
+								>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Image src={Industry4} mt={64} ml={{ base: 16 }} h={{ base: 300 }} w={{ base: 328 }} />
+					<Grid.Col span={{ base: 12, lg: 4 }}>
+						<Image
+							src={Industry4}
+							mt={{ base: 40, lg: 64 }}
+							ml={{ base: 16, lg: 116 }}
+							h={{ base: 300, lg: 327 }}
+							w={{ base: 328, lg: 358 }}
+						/>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Text c={"#e4e8ed"} fz={{ base: 12 }} ml={{ base: 16 }} mt={16}>
+					<Grid.Col span={{ base: 12, lg: 8 }}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							ml={{ base: 16, lg: 56 }}
+							mt={{ base: 16, lg: 128 }}
+						>
 							22nd January, 2023.
 						</Text>
-						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={16} ml={{ base: 16 }}>
-							Steel Plants{" "}
+						<Text c={"#f6f6f6"} fz={{ base: 18, lg: 32 }} mt={16} ml={{ base: 16, lg: 56 }}>
+							Glass Manufacture
 						</Text>
 						<Text
 							c={"#e4e8ed"}
-							fz={{ base: 12 }}
+							fz={{ base: 12, lg: 16 }}
 							mt={16}
-							ml={{ base: 16 }}
-							w={{ base: 325 }}
 							lineClamp={2}
+							ml={{ base: 16, lg: 56 }}
+							w={{ base: 325, lg: 868 }}
 						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
@@ -242,6 +377,19 @@ const JournalTwo = (props: Props) => {
 							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
 							contact sensors.
 						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text
+									fz={{ base: 15, lg: 20 }}
+									c={"#ffffff"}
+									mt={{ base: 8, lg: 24 }}
+									fw={400}
+									ml={{ base: 16, lg: 56 }}
+								>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
 					</Grid.Col>
 				</Grid>
 			</Paper>

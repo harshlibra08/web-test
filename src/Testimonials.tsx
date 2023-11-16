@@ -26,15 +26,7 @@ const Testimonials = (props: Props) => {
 				>
 					WHAT PEOPLE ARE SAYING
 				</Text>
-				<Text
-					fz={{ base: 20, lg: 32 }}
-					ml={{ base: 16, lg: 116 }}
-					mt={8}
-					c={"#FFF"}
-					hiddenFrom="xs"
-				>
-					Client Testimonals
-				</Text>
+
 				<Group wrap="nowrap" gap={0} bg={"#000"}>
 					<Text fz={{ lg: 32 }} ml={{ lg: 116, base: 16 }} c={"#FFF"} mt={{ lg: 12, base: 8 }}>
 						Client Testimonals

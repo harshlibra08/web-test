@@ -7,27 +7,26 @@ type Props = {};
 const OurBrand = (props: Props) => {
 	return (
 		<>
-			<Paper w={{ base: 360 }} h={{ base: 555 }} bg={"#000"} mt={{ base: 30 }}>
+			<Paper w={{ base: 360, lg: 1440 }} h={{ base: 555, lg: 748 }} bg={"#000"} mt={{ base: 30 }}>
 				<Grid>
-					<Grid.Col span={{ base: 12 }}>
+					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 1, lg: 2 }}>
 						<Image
 							src={BrandImg}
 							pos={"absolute"}
-							left={0}
-							ml={{ base: 17 }}
-							mt={{ base: 24 }}
-							w={{ base: 327 }}
-							h={{ base: 241 }}
+							ml={{ base: 17, lg: 113 }}
+							mt={{ base: 24, lg: 183 }}
+							w={{ base: 327, lg: 493 }}
+							h={{ base: 241, lg: 451 }}
 						/>
 					</Grid.Col>
 
-					<Grid.Col span={{ base: 12 }}>
+					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 2, lg: 1 }}>
 						<Text
-							fz={{ base: 20 }}
+							fz={{ base: 20, lg: 32 }}
 							w={374}
 							fw={600}
-							ml={{ base: 16 }}
-							mt={{ base: 284 }}
+							ml={{ base: 16, lg: 114 }}
+							mt={{ base: 284, lg: 276 }}
 							style={{ color: "#FFFFFF" }}
 						>
 							Our Brand
@@ -35,10 +34,10 @@ const OurBrand = (props: Props) => {
 						<Text
 							c={"#e4e8ed"}
 							mt={24}
-							fz={{ base: 12 }}
+							fz={{ base: 12, lg: 16 }}
 							fw={400}
-							ml={{ base: 16 }}
-							w={{ base: 328 }}
+							ml={{ base: 16, lg: 116 }}
+							w={{ base: 328, lg: 596 }}
 						>
 							Launching a business isn't easy, which is why having a co-founder can often make
 							things a little smoother, especially if that co-founder is your best friend. While

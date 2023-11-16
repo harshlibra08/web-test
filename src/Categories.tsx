@@ -18,49 +18,48 @@ type Props = {};
 const Categories = (props: Props) => {
 	return (
 		<>
-			<Paper w={{ base: 360 }} h={{ base: 2200 }} mt={{ base: 30 }}>
+			<Paper w={{ base: 360, lg: 1440 }} h={{ base: 2200, lg: 5235 }} mt={{ base: 50 }}>
 				<Grid>
-					<Grid.Col span={{ base: 12 }}>
-						<Image src={Rect17} w={260} h={289} mt={51} ml={100} pos={"absolute"} />
-
-						<Image src={category} w={328} h={241} mt={75} ml={{ base: 16 }} pos={"absolute"} />
-					</Grid.Col>
-
-					<Grid.Col span={{ base: 12 }}>
-						<Text fz={{ base: 20 }} w={374} fw={600} ml={{ base: 16 }} mt={{ base: 364 }}>
-							Explore Our Products
+					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 2, lg: 1 }}>
+						<Text
+							fz={{ lg: 32, base: 18 }}
+							w={{ lg: 562, base: 210 }}
+							fw={600}
+							ml={{ lg: 114, base: 17 }}
+							mt={{ lg: 105, base: 8 }}
+							c={"#292929"}
+						>
+							Explore Our Product
 						</Text>
 						<Text
-							c={"#555459"}
-							mt={24}
-							fz={{ base: 12 }}
+							fz={{ lg: 16, base: 12 }}
 							fw={400}
-							ml={{ base: 16 }}
-							w={{ base: 328 }}
-							lineClamp={4}
+							w={{ lg: 562, base: 328 }}
+							ml={{ lg: 118, base: 16 }}
+							mt={{ base: 16, lg: 32 }}
+							c={"#555459"}
 						>
-							We are one of the most prominent manufacturers and exporters of a broad range of
-							microprocessors and digital-based electronic process control instruments. Our product
-							range includes Temperature and Process Indicators, Large/Jumbo Display Indicators,
-							Portable Thermometers, Process Controllers such as On-Off Controllers, PID
-							Controllers, Ramp/Soak Controllers, and Multi Zone Controllers, Temperature and
-							Process Data Loggers and Scanners, Temperature, Humidity Sensors and Transmitters.
-							<br />
-							<br />
-							We also have Indicators, and Controllers, Clean Room Monitoring Systems for
-							Environment, Cold Storage, Data Centre, Server Room, Greenhouse, Warehouse to measure
-							Temperature, Humidity, and Differential Pressure. <br />
-							<br />
-							Thyristor Triggering Cards, Thyristor Power Controllers, Signal
-							Converters/Conditioners and Isolators, Molten Metal Pyrometers, DC Motor Controllers,
-							Motor Soft Starters, IoT Modules, Instrumentation Control Panels, Data Acquisition
-							Software, Customized Instruments, and many more services.
+							Launching a business isn't easy, which is why having a co-founder can often make
+							things a little smoother, especially if that co-founder is your best friend. While
+							many professionals warn against choosing a close friend as your business partner,
+							there are plenty of examples that prove it can work. The best example is of Airbnb..
 						</Text>
-						<UnstyledButton ml={{ base: 16 }} mt={{ base: 12 }}>
-							<Text fz={{ base: 12 }} c={"#828282"}>
-								Read More
+						<UnstyledButton ml={{ lg: 118, base: 16 }} mt={{ lg: 40, base: 32 }}>
+							<Text fz={{ lg: 20, base: 16 }} fw={400} style={{ color: "#F6F6F6" }}>
+								About Libratherm
 							</Text>
 						</UnstyledButton>
+					</Grid.Col>
+					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 1, lg: 2 }}>
+						<Image src={Rect17} h={{ lg: 696, base: 289 }} ml={{ lg: 209, base: 102 }} />
+						<Image
+							pos={"absolute"}
+							src={GlassManufacturing}
+							w={{ lg: 493, base: 327 }}
+							h={{ lg: 451, base: 241 }}
+							ml={{ lg: 123, base: 17 }}
+							mt={{ lg: -580, base: -265 }}
+						/>
 					</Grid.Col>
 				</Grid>
 				<Grid>

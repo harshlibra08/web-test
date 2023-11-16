@@ -7,27 +7,27 @@ type Props = {};
 const OurVision = (props: Props) => {
 	return (
 		<>
-			<Paper w={{ base: 360 }} h={{ base: 555 }} bg={"#000"} mt={{ base: 30 }}>
+			<Paper w={{ base: 360, lg: 1440 }} h={{ base: 555, lg: 748 }} bg={"#000"} mt={{ base: 30 }}>
 				<Grid>
-					<Grid.Col span={{ base: 12 }}>
+					<Grid.Col span={{ base: 12, lg: 6 }}>
 						<Image
 							src={Vision}
 							pos={"absolute"}
 							left={0}
-							ml={{ base: 17 }}
-							mt={{ base: 24 }}
-							w={{ base: 327 }}
-							h={{ base: 241 }}
+							ml={{ base: 17, lg: 114 }}
+							mt={{ base: 24, lg: 114 }}
+							w={{ base: 327, lg: 493 }}
+							h={{ base: 241, lg: 451 }}
 						/>
 					</Grid.Col>
 
-					<Grid.Col span={{ base: 12 }}>
+					<Grid.Col span={{ base: 12, lg: 6 }}>
 						<Text
-							fz={{ base: 20 }}
+							fz={{ base: 20, lg: 32 }}
 							w={374}
 							fw={600}
 							ml={{ base: 16 }}
-							mt={{ base: 284 }}
+							mt={{ base: 284, lg: 251 }}
 							style={{ color: "#FFFFFF" }}
 						>
 							Our Vision
@@ -35,15 +35,16 @@ const OurVision = (props: Props) => {
 						<Text
 							c={"#e4e8ed"}
 							mt={24}
-							fz={{ base: 12 }}
+							fz={{ base: 12, lg: 16 }}
 							fw={400}
 							ml={{ base: 16 }}
-							w={{ base: 328 }}
+							w={{ base: 328, lg: 596 }}
 						>
-							Launching a business isn't easy, which is why having a co-founder can often make
-							things a little smoother, especially if that co-founder is your best friend. While
-							many professionals warn against choosing a close friend as your business partner,
-							there are plenty of examples that prove it can work. The best example is of Airbnb..
+							Libratherm will always thrive to be one of the best companies manufacturing the most
+							rugged and reliable Electronic Process Control Instruments, using the latest available
+							and accessible technology for the long lasting and trouble-free field performance.
+							While designing and manufacturing our products, we will sustain the way in which our
+							services benefit the customers.
 						</Text>
 					</Grid.Col>
 				</Grid>

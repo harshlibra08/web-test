@@ -21,37 +21,48 @@ type Props = {};
 const Application = (props: Props) => {
 	return (
 		<>
-			<Paper w={{ base: 360 }} h={{ base: 2200 }} bg={"black"} mt={30}>
-				<Group wrap="nowrap" gap={0}>
-					<Box w="100%">
-						<Text fz={{ base: 15 }} mt={{ base: 59 }} ml={{ base: 16 }} c={"#f6f6f6"}>
-							Application
-						</Text>
-						<Divider size="xs" ml={{ base: 16 }} w={{ base: 328 }} mt={{ base: 16 }} />
-					</Box>
-				</Group>
+			<Paper w={{ base: 360, lg: 1440 }} h={{ base: 4200, lg: 3500 }} bg={"black"} mt={30}>
+				<Stack>
+					<Text
+						fz={{ base: 20, lg: 32 }}
+						mt={{ base: 40, lg: 91 }}
+						ml={{ base: 16, lg: 114 }}
+						c={"#F6F6F6"}
+					>
+						Applications
+					</Text>
+					<Divider size="xs" w={{ base: 328, lg: 1212 }} ml={{ base: 16, lg: 114 }} />
+				</Stack>
 
 				<Grid>
-					<Grid.Col span={{ base: 12 }}>
+					<Grid.Col span={{ base: 12, lg: 4 }}>
 						<Image
 							src={WhiteBG}
-							mt={{ base: 40 }}
-							ml={{ base: 16 }}
-							h={{ base: 300 }}
-							w={{ base: 328 }}
+							mt={{ base: 40, lg: 64 }}
+							ml={{ base: 16, lg: 116 }}
+							h={{ base: 300, lg: 327 }}
+							w={{ base: 328, lg: 358 }}
 						/>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={{ base: 16 }} ml={{ base: 16 }}>
-							Glass Manufacture
+					<Grid.Col span={{ base: 12, lg: 8 }}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							ml={{ base: 16, lg: 56 }}
+							mt={{ base: 16, lg: 128 }}
+						>
+							22nd January, 2023.
+						</Text>
+						<Text c={"#f6f6f6"} fz={{ base: 18, lg: 32 }} mt={16} ml={{ base: 16, lg: 56 }}>
+							SCR Power Regulators
 						</Text>
 						<Text
 							c={"#e4e8ed"}
-							fz={{ base: 12 }}
-							mt={{ base: 12 }}
+							fz={{ base: 12, lg: 16 }}
+							mt={16}
 							lineClamp={2}
-							ml={{ base: 16 }}
-							w={{ base: 325 }}
+							ml={{ base: 16, lg: 56 }}
+							w={{ base: 325, lg: 868 }}
 						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
@@ -64,32 +75,46 @@ const Application = (props: Props) => {
 						</Text>
 						<UnstyledButton>
 							<Group>
-								<Text fz={{ base: 15 }} c={"#ffffff"} mt={{ base: 8 }} fw={400} ml={{ base: 16 }}>
+								<Text
+									fz={{ base: 15, lg: 20 }}
+									c={"#ffffff"}
+									mt={{ base: 8, lg: 24 }}
+									fw={400}
+									ml={{ base: 16, lg: 56 }}
+								>
 									Read more
 								</Text>
 							</Group>
 						</UnstyledButton>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
+					<Grid.Col span={{ base: 12, lg: 4 }}>
 						<Image
 							src={WhiteBG}
-							mt={{ base: 40 }}
-							ml={{ base: 16 }}
-							h={{ base: 300 }}
-							w={{ base: 328 }}
+							mt={{ base: 40, lg: 64 }}
+							ml={{ base: 16, lg: 116 }}
+							h={{ base: 300, lg: 327 }}
+							w={{ base: 328, lg: 358 }}
 						/>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={{ base: 16 }} ml={{ base: 16 }}>
-							Glass Manufacture
+					<Grid.Col span={{ base: 12, lg: 8 }}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							ml={{ base: 16, lg: 56 }}
+							mt={{ base: 16, lg: 128 }}
+						>
+							22nd January, 2023.
+						</Text>
+						<Text c={"#f6f6f6"} fz={{ base: 18, lg: 32 }} mt={16} ml={{ base: 16, lg: 56 }}>
+							SCR Power Regulators
 						</Text>
 						<Text
 							c={"#e4e8ed"}
-							fz={{ base: 12 }}
-							mt={{ base: 12 }}
+							fz={{ base: 12, lg: 16 }}
+							mt={16}
 							lineClamp={2}
-							ml={{ base: 16 }}
-							w={{ base: 325 }}
+							ml={{ base: 16, lg: 56 }}
+							w={{ base: 325, lg: 868 }}
 						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
@@ -102,32 +127,46 @@ const Application = (props: Props) => {
 						</Text>
 						<UnstyledButton>
 							<Group>
-								<Text fz={{ base: 15 }} c={"#ffffff"} mt={{ base: 8 }} fw={400} ml={{ base: 16 }}>
+								<Text
+									fz={{ base: 15, lg: 20 }}
+									c={"#ffffff"}
+									mt={{ base: 8, lg: 24 }}
+									fw={400}
+									ml={{ base: 16, lg: 56 }}
+								>
 									Read more
 								</Text>
 							</Group>
 						</UnstyledButton>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
+					<Grid.Col span={{ base: 12, lg: 4 }}>
 						<Image
 							src={WhiteBG}
-							mt={{ base: 40 }}
-							ml={{ base: 16 }}
-							h={{ base: 300 }}
-							w={{ base: 328 }}
+							mt={{ base: 40, lg: 64 }}
+							ml={{ base: 16, lg: 116 }}
+							h={{ base: 300, lg: 327 }}
+							w={{ base: 328, lg: 358 }}
 						/>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={{ base: 16 }} ml={{ base: 16 }}>
-							Glass Manufacture
+					<Grid.Col span={{ base: 12, lg: 8 }}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							ml={{ base: 16, lg: 56 }}
+							mt={{ base: 16, lg: 128 }}
+						>
+							22nd January, 2023.
+						</Text>
+						<Text c={"#f6f6f6"} fz={{ base: 18, lg: 32 }} mt={16} ml={{ base: 16, lg: 56 }}>
+							SCR Power Regulators
 						</Text>
 						<Text
 							c={"#e4e8ed"}
-							fz={{ base: 12 }}
-							mt={{ base: 12 }}
+							fz={{ base: 12, lg: 16 }}
+							mt={16}
 							lineClamp={2}
-							ml={{ base: 16 }}
-							w={{ base: 325 }}
+							ml={{ base: 16, lg: 56 }}
+							w={{ base: 325, lg: 868 }}
 						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
@@ -140,32 +179,46 @@ const Application = (props: Props) => {
 						</Text>
 						<UnstyledButton>
 							<Group>
-								<Text fz={{ base: 15 }} c={"#ffffff"} mt={{ base: 8 }} fw={400} ml={{ base: 16 }}>
+								<Text
+									fz={{ base: 15, lg: 20 }}
+									c={"#ffffff"}
+									mt={{ base: 8, lg: 24 }}
+									fw={400}
+									ml={{ base: 16, lg: 56 }}
+								>
 									Read more
 								</Text>
 							</Group>
 						</UnstyledButton>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
+					<Grid.Col span={{ base: 12, lg: 4 }}>
 						<Image
 							src={WhiteBG}
-							mt={{ base: 40 }}
-							ml={{ base: 16 }}
-							h={{ base: 300 }}
-							w={{ base: 328 }}
+							mt={{ base: 40, lg: 64 }}
+							ml={{ base: 16, lg: 116 }}
+							h={{ base: 300, lg: 327 }}
+							w={{ base: 328, lg: 358 }}
 						/>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={{ base: 16 }} ml={{ base: 16 }}>
-							Glass Manufacture
+					<Grid.Col span={{ base: 12, lg: 8 }}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							ml={{ base: 16, lg: 56 }}
+							mt={{ base: 16, lg: 128 }}
+						>
+							22nd January, 2023.
+						</Text>
+						<Text c={"#f6f6f6"} fz={{ base: 18, lg: 32 }} mt={16} ml={{ base: 16, lg: 56 }}>
+							SCR Power Regulators
 						</Text>
 						<Text
 							c={"#e4e8ed"}
-							fz={{ base: 12 }}
-							mt={{ base: 12 }}
+							fz={{ base: 12, lg: 16 }}
+							mt={16}
 							lineClamp={2}
-							ml={{ base: 16 }}
-							w={{ base: 325 }}
+							ml={{ base: 16, lg: 56 }}
+							w={{ base: 325, lg: 868 }}
 						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
@@ -178,30 +231,369 @@ const Application = (props: Props) => {
 						</Text>
 						<UnstyledButton>
 							<Group>
-								<Text fz={{ base: 15 }} c={"#ffffff"} mt={{ base: 8 }} fw={400} ml={{ base: 16 }}>
+								<Text
+									fz={{ base: 15, lg: 20 }}
+									c={"#ffffff"}
+									mt={{ base: 8, lg: 24 }}
+									fw={400}
+									ml={{ base: 16, lg: 56 }}
+								>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
+					</Grid.Col>
+					<Grid.Col span={{ base: 12, lg: 4 }}>
+						<Image
+							src={WhiteBG}
+							mt={{ base: 40, lg: 64 }}
+							ml={{ base: 16, lg: 116 }}
+							h={{ base: 300, lg: 327 }}
+							w={{ base: 328, lg: 358 }}
+						/>
+					</Grid.Col>
+					<Grid.Col span={{ base: 12, lg: 8 }}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							ml={{ base: 16, lg: 56 }}
+							mt={{ base: 16, lg: 128 }}
+						>
+							22nd January, 2023.
+						</Text>
+						<Text c={"#f6f6f6"} fz={{ base: 18, lg: 32 }} mt={16} ml={{ base: 16, lg: 56 }}>
+							SCR Power Regulators
+						</Text>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							mt={16}
+							lineClamp={2}
+							ml={{ base: 16, lg: 56 }}
+							w={{ base: 325, lg: 868 }}
+						>
+							Libratherm has supplied various types of temperature controllers, thyristor power
+							controllers and control panels to the industries manufacturing Files, Diamond Tools,
+							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+							blades etc… The temperature of the electrical or fuel fired heating systems, used for
+							annealing, hardening, steam bluing and similar such processes, has been in use for
+							precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723,
+							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
+							contact sensors.
+						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text
+									fz={{ base: 15, lg: 20 }}
+									c={"#ffffff"}
+									mt={{ base: 8, lg: 24 }}
+									fw={400}
+									ml={{ base: 16, lg: 56 }}
+								>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
+					</Grid.Col>
+					<Grid.Col span={{ base: 12, lg: 4 }}>
+						<Image
+							src={WhiteBG}
+							mt={{ base: 40, lg: 64 }}
+							ml={{ base: 16, lg: 116 }}
+							h={{ base: 300, lg: 327 }}
+							w={{ base: 328, lg: 358 }}
+						/>
+					</Grid.Col>
+					<Grid.Col span={{ base: 12, lg: 8 }}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							ml={{ base: 16, lg: 56 }}
+							mt={{ base: 16, lg: 128 }}
+						>
+							22nd January, 2023.
+						</Text>
+						<Text c={"#f6f6f6"} fz={{ base: 18, lg: 32 }} mt={16} ml={{ base: 16, lg: 56 }}>
+							SCR Power Regulators
+						</Text>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							mt={16}
+							lineClamp={2}
+							ml={{ base: 16, lg: 56 }}
+							w={{ base: 325, lg: 868 }}
+						>
+							Libratherm has supplied various types of temperature controllers, thyristor power
+							controllers and control panels to the industries manufacturing Files, Diamond Tools,
+							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+							blades etc… The temperature of the electrical or fuel fired heating systems, used for
+							annealing, hardening, steam bluing and similar such processes, has been in use for
+							precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723,
+							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
+							contact sensors.
+						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text
+									fz={{ base: 15, lg: 20 }}
+									c={"#ffffff"}
+									mt={{ base: 8, lg: 24 }}
+									fw={400}
+									ml={{ base: 16, lg: 56 }}
+								>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
+					</Grid.Col>
+					<Grid.Col span={{ base: 12, lg: 4 }}>
+						<Image
+							src={WhiteBG}
+							mt={{ base: 40, lg: 64 }}
+							ml={{ base: 16, lg: 116 }}
+							h={{ base: 300, lg: 327 }}
+							w={{ base: 328, lg: 358 }}
+						/>
+					</Grid.Col>
+					<Grid.Col span={{ base: 12, lg: 8 }}>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							ml={{ base: 16, lg: 56 }}
+							mt={{ base: 16, lg: 128 }}
+						>
+							22nd January, 2023.
+						</Text>
+						<Text c={"#f6f6f6"} fz={{ base: 18, lg: 32 }} mt={16} ml={{ base: 16, lg: 56 }}>
+							SCR Power Regulators
+						</Text>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12, lg: 16 }}
+							mt={16}
+							lineClamp={2}
+							ml={{ base: 16, lg: 56 }}
+							w={{ base: 325, lg: 868 }}
+						>
+							Libratherm has supplied various types of temperature controllers, thyristor power
+							controllers and control panels to the industries manufacturing Files, Diamond Tools,
+							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+							blades etc… The temperature of the electrical or fuel fired heating systems, used for
+							annealing, hardening, steam bluing and similar such processes, has been in use for
+							precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723,
+							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
+							contact sensors.
+						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text
+									fz={{ base: 15, lg: 20 }}
+									c={"#ffffff"}
+									mt={{ base: 8, lg: 24 }}
+									fw={400}
+									ml={{ base: 16, lg: 56 }}
+								>
 									Read more
 								</Text>
 							</Group>
 						</UnstyledButton>
 					</Grid.Col>
 				</Grid>
-			</Paper>
-			<Paper w={{ base: 360 }} h={{ base: 2600 }} bg={"black"} mt={30}>
-				<Group wrap="nowrap" gap={0}>
-					<Box w="100%">
-						<Text fz={{ base: 20 }} mt={60} ml={{ base: 16 }} c={"#f6f6f6"}>
-							Application
+
+				{/* <Grid>
+					<Grid.Col span={{ base: 12 }}>
+						<Image
+							src={WhiteBG}
+							mt={{ base: 40 }}
+							ml={{ base: 16 }}
+							h={{ base: 300 }}
+							w={{ base: 328 }}
+						/>
+					</Grid.Col>
+					<Grid.Col span={{ base: 12 }}>
+						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={{ base: 16 }} ml={{ base: 16 }}>
+							Glass Manufacture
 						</Text>
-						<Divider ml={{ base: 16 }} size={"xs"} w={{ base: 328 }} mt={18} />
-					</Box>
-				</Group>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12 }}
+							mt={{ base: 12 }}
+							lineClamp={2}
+							ml={{ base: 16 }}
+							w={{ base: 325 }}
+						>
+							Libratherm has supplied various types of temperature controllers, thyristor power
+							controllers and control panels to the industries manufacturing Files, Diamond Tools,
+							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+							blades etc… The temperature of the electrical or fuel fired heating systems, used for
+							annealing, hardening, steam bluing and similar such processes, has been in use for
+							precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723,
+							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
+							contact sensors.
+						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text fz={{ base: 15 }} c={"#ffffff"} mt={{ base: 8 }} fw={400} ml={{ base: 16 }}>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
+					</Grid.Col>
+					<Grid.Col span={{ base: 12 }}>
+						<Image
+							src={WhiteBG}
+							mt={{ base: 40 }}
+							ml={{ base: 16 }}
+							h={{ base: 300 }}
+							w={{ base: 328 }}
+						/>
+					</Grid.Col>
+					<Grid.Col span={{ base: 12 }}>
+						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={{ base: 16 }} ml={{ base: 16 }}>
+							Glass Manufacture
+						</Text>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12 }}
+							mt={{ base: 12 }}
+							lineClamp={2}
+							ml={{ base: 16 }}
+							w={{ base: 325 }}
+						>
+							Libratherm has supplied various types of temperature controllers, thyristor power
+							controllers and control panels to the industries manufacturing Files, Diamond Tools,
+							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+							blades etc… The temperature of the electrical or fuel fired heating systems, used for
+							annealing, hardening, steam bluing and similar such processes, has been in use for
+							precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723,
+							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
+							contact sensors.
+						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text fz={{ base: 15 }} c={"#ffffff"} mt={{ base: 8 }} fw={400} ml={{ base: 16 }}>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
+					</Grid.Col>
+					<Grid.Col span={{ base: 12 }}>
+						<Image
+							src={WhiteBG}
+							mt={{ base: 40 }}
+							ml={{ base: 16 }}
+							h={{ base: 300 }}
+							w={{ base: 328 }}
+						/>
+					</Grid.Col>
+					<Grid.Col span={{ base: 12 }}>
+						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={{ base: 16 }} ml={{ base: 16 }}>
+							Glass Manufacture
+						</Text>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12 }}
+							mt={{ base: 12 }}
+							lineClamp={2}
+							ml={{ base: 16 }}
+							w={{ base: 325 }}
+						>
+							Libratherm has supplied various types of temperature controllers, thyristor power
+							controllers and control panels to the industries manufacturing Files, Diamond Tools,
+							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+							blades etc… The temperature of the electrical or fuel fired heating systems, used for
+							annealing, hardening, steam bluing and similar such processes, has been in use for
+							precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723,
+							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
+							contact sensors.
+						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text fz={{ base: 15 }} c={"#ffffff"} mt={{ base: 8 }} fw={400} ml={{ base: 16 }}>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
+					</Grid.Col>
+					<Grid.Col span={{ base: 12 }}>
+						<Image
+							src={WhiteBG}
+							mt={{ base: 40 }}
+							ml={{ base: 16 }}
+							h={{ base: 300 }}
+							w={{ base: 328 }}
+						/>
+					</Grid.Col>
+					<Grid.Col span={{ base: 12 }}>
+						<Text c={"#f6f6f6"} fz={{ base: 18 }} mt={{ base: 16 }} ml={{ base: 16 }}>
+							Glass Manufacture
+						</Text>
+						<Text
+							c={"#e4e8ed"}
+							fz={{ base: 12 }}
+							mt={{ base: 12 }}
+							lineClamp={2}
+							ml={{ base: 16 }}
+							w={{ base: 325 }}
+						>
+							Libratherm has supplied various types of temperature controllers, thyristor power
+							controllers and control panels to the industries manufacturing Files, Diamond Tools,
+							Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular
+							blades etc… The temperature of the electrical or fuel fired heating systems, used for
+							annealing, hardening, steam bluing and similar such processes, has been in use for
+							precise control up to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723,
+							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
+							contact sensors.
+						</Text>
+						<UnstyledButton>
+							<Group>
+								<Text fz={{ base: 15 }} c={"#ffffff"} mt={{ base: 8 }} fw={400} ml={{ base: 16 }}>
+									Read more
+								</Text>
+							</Group>
+						</UnstyledButton>
+					</Grid.Col>
+				</Grid> */}
+			</Paper>
 
-				<Image src={SCR} w={{ base: 277 }} h={{ base: 117 }} mt={{ base: 41 }} ml={{ base: 42 }} />
+			<Paper w={{ base: 360, lg: 1440 }} h={{ base: 3500, lg: 4000 }} bg={"black"} mt={30}>
+				<Stack>
+					<Text
+						fz={{ base: 20, lg: 32 }}
+						mt={{ base: 40, lg: 91 }}
+						ml={{ base: 16, lg: 114 }}
+						c={"#F6F6F6"}
+					>
+						Applications
+					</Text>
+					<Divider size="xs" w={{ base: 328, lg: 1212 }} ml={{ base: 16, lg: 114 }} />
+				</Stack>
 
-				<Text c={"#f6f6f6"} fz={{ base: 20 }} ml={{ base: 16 }} mt={24}>
+				<Image
+					src={SCR}
+					w={{ base: 277, lg: 1006 }}
+					h={{ base: 117, lg: 422 }}
+					mt={40}
+					ml={{ base: 42, lg: 217 }}
+				/>
+
+				<Text
+					c={"#f6f6f6"}
+					fz={{ base: 20, lg: 32 }}
+					ml={{ base: 16, lg: 217 }}
+					mt={{ base: 24, lg: 64 }}
+				>
 					SCR Power Regulators
 				</Text>
-				<Text c={"#e4e8ed"} fz={{ base: 12 }} pt={16} w={{ base: 328 }} ml={{ base: 16 }} fw={400}>
+				<Text
+					c={"#e4e8ed"}
+					fz={{ base: 12, lg: 16 }}
+					mt={{ lg: 34, base: 16 }}
+					w={{ base: 328, lg: 1006 }}
+					ml={{ base: 16, lg: 217 }}
+					fw={400}
+				>
 					Power Controllers for Precise Voltage and Current Control : SCR Power Regulators, also
 					known as Thyristor Power Controllers are devices that control power delivery. They are
 					designed to vary the AC voltage across resistive and inductive loads. The primary
@@ -214,29 +606,36 @@ const Application = (props: Props) => {
 				</Text>
 
 				<Paper
-					w={{ base: 360 }}
-					h={{ base: 1280 }}
+					w={{ base: 360, lg: 1440 }}
+					h={{ base: 1280, lg: 1718 }}
 					bg={"white"}
 					pt={{ base: 30 }}
-					mt={{ base: 30 }}
+					mt={{ base: 30, lg: 128 }}
 				>
 					<Image
 						src={PhaseAngel}
-						w={{ base: 329 }}
-						h={{ base: 57 }}
-						ml={{ base: 15 }}
-						mt={{ base: 64 }}
+						w={{ base: 329, lg: 1000 }}
+						h={{ base: 57, lg: 171 }}
+						ml={{ base: 15, lg: 221 }}
+						mt={{ base: 64, lg: 128 }}
 					/>
 
-					<Text fz={{ base: 20 }} w={{ base: 294 }} fw={600} mt={32} ml={28} c={"#262728"}>
+					<Text
+						fz={{ base: 20, lg: 32 }}
+						w={{ base: 294, lg: 650 }}
+						fw={600}
+						mt={{ base: 32, lg: 64 }}
+						ml={{ base: 28, lg: 218 }}
+						c={"#262728"}
+					>
 						Why use Thyristor Power Controllers?
 					</Text>
 					<Text
-						fz={{ base: 12 }}
+						fz={{ base: 12, lg: 16 }}
 						fw={400}
-						w={{ base: 305 }}
-						ml={28}
-						mt={{ base: 16 }}
+						w={{ base: 305, lg: 1006 }}
+						ml={{ base: 28, lg: 218 }}
+						mt={{ base: 16, lg: 34 }}
 						c={"#555459"}
 					>
 						The Thyristor Power Controller can accurately and consistently control the process
@@ -251,14 +650,21 @@ const Application = (props: Props) => {
 						applications.
 					</Text>
 
-					<Image src={TPC} w={{ base: 332 }} h={155} mt={{ base: 40 }} ml={{ base: 15 }} />
+					<Image
+						src={TPC}
+						w={{ base: 332, lg: 979 }}
+						h={{ base: 155, lg: 409 }}
+						mt={{ base: 40, lg: 64 }}
+						ml={{ base: 15, lg: 231 }}
+					/>
 
 					<Text
-						fz={{ base: 12 }}
-						ml={{ base: 16 }}
-						mt={{ base: 40 }}
+						fz={{ base: 12, lg: 16 }}
+						fw={400}
+						w={{ base: 305, lg: 1006 }}
+						ml={{ base: 28, lg: 218 }}
+						mt={{ base: 16, lg: 64 }}
 						c={"#555459"}
-						w={{ base: 328 }}
 					>
 						Some of the applications where Libratherm's Power Controllers are successfully
 						implemented:
@@ -285,68 +691,45 @@ const Application = (props: Props) => {
 					</Text>
 				</Paper>
 
-				<Text fz={{ base: 20 }} mt={{ base: 64 }} ml={{ base: 16 }} c={"#f6f6f6"}>
+				<Text
+					fz={{ base: 20, lg: 32 }}
+					mt={{ base: 40, lg: 91 }}
+					ml={{ base: 16, lg: 114 }}
+					c={"#F6F6F6"}
+				>
 					Related Post
 				</Text>
 
-				<Image src={WhiteBG} h={212} ml={32} w={{ base: 296 }} mt={{ base: 40 }} />
-				<Text
-					fw={400}
-					w={{ base: 347 }}
-					fz={{ base: 18 }}
-					mt={{ base: 48 }}
-					ml={{ base: 16 }}
-					c={"#f6f6f6"}
-				>
-					SCR Power Regulators
-				</Text>
-
-				<Text
-					fz={{ base: 12 }}
-					fw={400}
-					w={{ base: 325 }}
-					ml={{ base: 16 }}
-					c={"#e4e8ed"}
-					lineClamp={3}
-					mt={{ base: 12 }}
-				>
-					Libratherm has supplied various types of temperature controllers, thyristor power
-					controllers and control panels to the industries manufacturing Files, Diamond Tools,
-					Machine Tools, Automobile parts, Hack saw blades, Stone cutting tools and circular blades
-					etc… The temperature of the electrical or fuel fired heating systems, used for annealing,
-					hardening, steam bluing and similar such processes, has been in use for precise control up
-					to 1200-C, using our models PRC-300, PRC-309, PID-300, PID-723, DLC-301, POW-3/S and
-					POW-3/D with the sensor input from thermocouples or infrared non contact sensors.
-				</Text>
-				<UnstyledButton>
-					<Text fz={{ base: 15 }} c={"#FFFFFF"} mt={32} fw={400} ml={{ base: 16 }}>
-						Read more
-					</Text>
-				</UnstyledButton>
-
-				<Group wrap="nowrap" gap={0} visibleFrom="md">
-					<Box w="100%">
-						<Text fz={32} mt={128} ml={114} c={"#f6f6f6"}>
-							Related Post
-						</Text>
-					</Box>
-				</Group>
-
-				<Group justify="center" visibleFrom="md">
-					<Box pos="relative" w={{ base: 391 }} h={{ base: 650 }} bg={"black"}>
-						<Image src={WhiteBG} h={270} w={{ base: 391 }} pos="absolute" top={26} />
-						<Text fw={400} h={92} w={{ base: 347 }} fz={32} pos="absolute" mt={350} c={"#f6f6f6"}>
-							Industries
+				<Grid>
+					<Grid.Col
+						span={{ base: 12, lg: 4 }}
+						ml={{ base: 16, lg: 114 }}
+						mah={{ base: 480, lg: 650 }}
+						maw={{ lg: 325 }}
+					>
+						<Image
+							src={WhiteBG}
+							h={{ base: 284, lg: 270 }}
+							w={{ base: 296, lg: 391 }}
+							mt={{ lg: 45, base: 40 }}
+						/>
+						<Text
+							fw={400}
+							w={347}
+							fz={{ base: 18, lg: 32 }}
+							mt={{ base: 50, lg: 27 }}
+							c={"#F6F6F6"}
+						>
+							Signal Isolation
 						</Text>
 
 						<Text
-							size="16px"
+							fz={{ base: 12, lg: 16 }}
 							fw={400}
-							w={{ base: 391 }}
-							pos="absolute"
-							top={414}
+							w={325}
+							mt={{ base: 12, lg: 19 }}
 							c={"#e4e8ed"}
-							lineClamp={3}
+							lineClamp={2}
 						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
@@ -357,27 +740,41 @@ const Application = (props: Props) => {
 							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
 							contact sensors.
 						</Text>
-						<UnstyledButton pos={"absolute"} mt={463}>
-							<Text size="20px" style={{ color: "#FFFFFF" }} mt={32} fw={400}>
+						<UnstyledButton>
+							<Text fz={{ base: 15, lg: 20 }} c={"#ffffff"} mt={{ base: 8, lg: 16 }} fw={400}>
 								Know more
 							</Text>
 						</UnstyledButton>
-					</Box>
-
-					<Box pos="relative" w={{ base: 391 }} h={{ base: 650 }} bg={"black"}>
-						<Image src={WhiteBG} h={270} w={{ base: 391 }} pos="absolute" top={26} />
-						<Text fw={400} h={92} w={{ base: 347 }} fz={32} pos="absolute" mt={350} c={"#f6f6f6"}>
-							Services
+					</Grid.Col>
+					<Grid.Col
+						span={{ base: 12, lg: 4 }}
+						ml={{ base: 16, lg: 114 }}
+						mah={{ base: 480, lg: 650 }}
+						maw={{ lg: 325 }}
+					>
+						<Image
+							src={WhiteBG}
+							h={{ base: 284, lg: 270 }}
+							w={{ base: 296, lg: 391 }}
+							mt={{ lg: 45, base: 40 }}
+						/>
+						<Text
+							fw={400}
+							w={347}
+							fz={{ base: 18, lg: 32 }}
+							mt={{ base: 50, lg: 27 }}
+							c={"#F6F6F6"}
+						>
+							Signal Isolation
 						</Text>
 
 						<Text
-							size="16px"
+							fz={{ base: 12, lg: 16 }}
 							fw={400}
-							w={{ base: 391 }}
-							pos="absolute"
-							top={414}
+							w={325}
+							mt={{ base: 12, lg: 19 }}
 							c={"#e4e8ed"}
-							lineClamp={3}
+							lineClamp={2}
 						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
@@ -388,27 +785,41 @@ const Application = (props: Props) => {
 							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
 							contact sensors.
 						</Text>
-						<UnstyledButton pos={"absolute"} mt={463}>
-							<Text size="20px" style={{ color: "#FFFFFF" }} mt={32} fw={400}>
+						<UnstyledButton>
+							<Text fz={{ base: 15, lg: 20 }} c={"#ffffff"} mt={{ base: 8, lg: 16 }} fw={400}>
 								Know more
 							</Text>
 						</UnstyledButton>
-					</Box>
-
-					<Box pos="relative" w={{ base: 391 }} h={{ base: 650 }} bg={"black"}>
-						<Image src={WhiteBG} h={270} w={{ base: 391 }} pos="absolute" top={26} />
-						<Text fw={400} h={92} w={{ base: 347 }} fz={32} pos="absolute" mt={350} c={"#f6f6f6"}>
-							Applications
+					</Grid.Col>
+					<Grid.Col
+						span={{ base: 12, lg: 4 }}
+						ml={{ base: 16, lg: 114 }}
+						mah={{ base: 480, lg: 650 }}
+						maw={{ lg: 325 }}
+					>
+						<Image
+							src={WhiteBG}
+							h={{ base: 284, lg: 270 }}
+							w={{ base: 296, lg: 391 }}
+							mt={{ lg: 45, base: 40 }}
+						/>
+						<Text
+							fw={400}
+							w={347}
+							fz={{ base: 18, lg: 32 }}
+							mt={{ base: 50, lg: 27 }}
+							c={"#F6F6F6"}
+						>
+							Signal Isolation
 						</Text>
 
 						<Text
-							size="16px"
+							fz={{ base: 12, lg: 16 }}
 							fw={400}
-							w={{ base: 391 }}
-							pos="absolute"
-							top={414}
+							w={325}
+							mt={{ base: 12, lg: 19 }}
 							c={"#e4e8ed"}
-							lineClamp={3}
+							lineClamp={2}
 						>
 							Libratherm has supplied various types of temperature controllers, thyristor power
 							controllers and control panels to the industries manufacturing Files, Diamond Tools,
@@ -419,13 +830,13 @@ const Application = (props: Props) => {
 							DLC-301, POW-3/S and POW-3/D with the sensor input from thermocouples or infrared non
 							contact sensors.
 						</Text>
-						<UnstyledButton pos={"absolute"} mt={463}>
-							<Text size="20px" style={{ color: "#FFFFFF" }} mt={32} fw={400}>
+						<UnstyledButton>
+							<Text fz={{ base: 15, lg: 20 }} c={"#ffffff"} mt={{ base: 8, lg: 16 }} fw={400}>
 								Know more
 							</Text>
 						</UnstyledButton>
-					</Box>
-				</Group>
+					</Grid.Col>
+				</Grid>
 			</Paper>
 
 			{/**Mobile view */}

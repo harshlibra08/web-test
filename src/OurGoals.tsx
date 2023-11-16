@@ -9,31 +9,37 @@ type Props = {};
 const OurGoals = (props: Props) => {
 	return (
 		<>
-			<Paper w={{ base: 360 }} mt={{ base: 30 }} h={{ base: 555 }} bg={"#000"}>
-				<Grid pt={{ base: 30 }}>
-					<Grid.Col span={{ base: 12 }}>
-						<Stack ml={{ base: 20 }}>
+			<Paper w={{ base: 360, lg: 1440 }} mt={30} h={{ base: 555, lg: 748 }} bg={"#000"}>
+				<Grid pt={{ base: 30, lg: 109 }}>
+					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 1, lg: 2 }} mt={{ lg: 109 }}>
+						<Stack ml={{ base: 20, lg: 123 }}>
 							<Group>
-								<Image src={Goal1} h={{ base: 120 }} w={{ base: 150 }} />
-								<Image src={Goal2} h={{ base: 120 }} w={{ base: 150 }} />
+								<Image src={Goal1} h={{ base: 120, lg: 189 }} w={{ base: 150, lg: 234 }} />
+								<Image src={Goal2} h={{ base: 120, lg: 189 }} w={{ base: 150, lg: 234 }} />
 							</Group>
 							<Group>
-								<Image src={Goal3} h={{ base: 120 }} w={{ base: 150 }} />
-								<Image src={Goal4} h={{ base: 120 }} w={{ base: 150 }} />
+								<Image src={Goal3} h={{ base: 120, lg: 189 }} w={{ base: 150, lg: 234 }} />
+								<Image src={Goal4} h={{ base: 120, lg: 189 }} w={{ base: 150, lg: 234 }} />
 							</Group>
 						</Stack>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Text fz={{ base: 20 }} w={374} fw={600} ml={{ base: 16 }} style={{ color: "#FFFFFF" }}>
+					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 2, lg: 1 }} mt={{ lg: 147 }}>
+						<Text
+							fz={{ base: 20, lg: 32 }}
+							w={374}
+							fw={600}
+							ml={{ base: 16, lg: 114 }}
+							style={{ color: "#FFFFFF" }}
+						>
 							Our Goal
 						</Text>
 						<Text
 							c={"#e4e8ed"}
 							mt={24}
-							fz={{ base: 12 }}
+							fz={{ base: 12, lg: 16 }}
 							fw={400}
-							ml={{ base: 16 }}
-							w={{ base: 328 }}
+							ml={{ base: 16, lg: 114 }}
+							w={{ base: 328, lg: 596 }}
 						>
 							Launching a business isn't easy, which is why having a co-founder can often make
 							things a little smoother, especially if that co-founder is your best friend. While
