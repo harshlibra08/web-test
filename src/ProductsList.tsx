@@ -26,13 +26,13 @@ import subcatbg from "../src/Assets/subcat5.png";
 import i from "../src/Assets/ipadRect.png";
 import ipaD from "../src/Assets/ipadcarousel.png";
 import CardIpad from "../src/Assets/cardipad.png";
-import { Carousel } from "@mantine/carousel";
+import { Carousel, CarouselSlide } from "@mantine/carousel";
 type Props = {};
 
 const ProductsList = (props: Props) => {
 	return (
 		<>
-			<Paper w={{ base: 360, lg: 1440 }} h={2850} bg={"#f4f4f4"}>
+			<Paper w={{ base: 360, lg: 1440 }} h={{ base: 2950, lg: 2900 }} bg={"#fff"}>
 				<Grid>
 					<Grid.Col span={{ base: 12, lg: 6 }}>
 						<Image
@@ -54,24 +54,23 @@ const ProductsList = (props: Props) => {
 					</Grid.Col>
 					<Grid.Col span={{ base: 12 }}>
 						<Text
-							fz={{ base: 20 }}
+							fz={{ base: 20, lg: 32 }}
 							w={{ base: 558 }}
-							ml={{ base: 16 }}
+							ml={{ base: 16, lg: 114 }}
 							fw={600}
-							mt={{ base: 313 }}
+							mt={{ base: 313, lg: 90 }}
 							c={"#292929"}
 						>
 							Thyristor Power Controller
 						</Text>
 
 						<Text
-							w={{ base: 321 }}
+							w={{ base: 321, lg: 596 }}
 							c={"#555459"}
 							fz={{ base: 12 }}
 							fw={400}
-							ml={{ base: 16 }}
+							ml={{ base: 16, lg: 114 }}
 							mt={{ base: 16 }}
-							lineClamp={4}
 						>
 							Libratherm offers ready to use SCR Power Controller for electrical heating loads
 							ranging from 5 KW (Single Phase) to 360KW (Three Phase). This Thyristor Power
@@ -84,17 +83,17 @@ const ProductsList = (props: Props) => {
 							The entire assembly is mounted on an MS powder-coated enclosure, which in turn can be
 							easily mounted inside the closed control panel as desired.
 						</Text>
-						<UnstyledButton>
+						{/* <UnstyledButton>
 							<Text fz={{ base: 12 }} fw={400} ml={{ base: 16 }} mt={12}>
 								Read Moredd
 							</Text>
-						</UnstyledButton>
+						</UnstyledButton> */}
 					</Grid.Col>
 				</Grid>
-				<Text fz={{ base: 16 }} fw={600} c={"#292929"} ml={{ base: 16 }} mt={{ base: 24 }}>
+				{/* <Text fz={{ base: 16 }} fw={600} c={"#292929"} ml={{ base: 16 }} mt={{ base: 24 }}>
 					Sub Categories
-				</Text>
-				<Paper w={{ base: 360 }} h={{ base: 133 }} mt={{ base: 16 }}>
+				</Text> */}
+				<Paper w={{ base: 360, lg: 1440 }} h={{ base: 133 }} mt={{ base: 16, lg: 300 }}>
 					<Carousel
 						ml={{ base: 16 }}
 						height={133}
@@ -103,6 +102,7 @@ const ProductsList = (props: Props) => {
 						controlsOffset="xs"
 						withControls={false}
 						slideSize="32%"
+						hiddenFrom="xs"
 					>
 						<Carousel.Slide>
 							<Image src={subcatbg} w={{ base: 80 }} h={{ base: 80 }} pos={"absolute"} />
@@ -189,9 +189,180 @@ const ProductsList = (props: Props) => {
 							</Text>
 						</Carousel.Slide>
 					</Carousel>
+
+					{/**Desktop carousel */}
+
+					<Carousel
+						ml={16}
+						align="start"
+						slideGap={0}
+						slideSize={"25%"}
+						withControls={true}
+						visibleFrom="md"
+						controlsOffset={"xs"}
+					>
+						<Carousel.Slide>
+							{/* <Group> */}
+							<Grid w={328}>
+								<Grid.Col span={4} maw={80}>
+									<Image src={subcat3} w={48} h={57} style={{ background: "#f7f7f7" }} />
+								</Grid.Col>
+								<Grid.Col span={8}>
+									<Stack gap={8}>
+										<Text fz={12} w={253}>
+											{" "}
+											Ramp/Soak Temperature Controllers
+										</Text>
+										<Text fz={10}> High Accuracy Thermometers</Text>
+									</Stack>
+								</Grid.Col>
+							</Grid>
+						</Carousel.Slide>
+						<Carousel.Slide>
+							<Grid>
+								<Grid.Col span={4} maw={80}>
+									<Image src={subcat3} w={48} h={57} style={{ background: "#f7f7f7" }} />
+								</Grid.Col>
+								<Grid.Col span={8}>
+									<Stack gap={8}>
+										<Text fz={12} w={253}>
+											{" "}
+											Multi Zone Ramp/Soak Controllers
+										</Text>
+										<Text fz={10}> High Accuracy Thermometers</Text>
+									</Stack>
+								</Grid.Col>
+							</Grid>
+						</Carousel.Slide>
+						<Carousel.Slide>
+							<Grid>
+								<Grid.Col span={4} maw={80}>
+									<Image src={subcat3} w={48} h={57} style={{ background: "#f7f7f7" }} />
+								</Grid.Col>
+								<Grid.Col span={8}>
+									<Stack gap={8}>
+										<Text fz={12} w={253}>
+											{" "}
+											PWHT/SR Controllers
+										</Text>
+										<Text fz={10}> High Accuracy Thermometers</Text>
+									</Stack>
+								</Grid.Col>
+							</Grid>
+						</Carousel.Slide>
+						<Carousel.Slide>
+							<Grid>
+								<Grid.Col span={4} maw={80}>
+									<Image src={subcat3} w={48} h={57} style={{ background: "#f7f7f7" }} />
+								</Grid.Col>
+								<Grid.Col span={8}>
+									<Stack gap={8}>
+										<Text fz={12} w={253}>
+											{" "}
+											PID Temperature Controllers
+										</Text>
+										<Text fz={10}> High Accuracy Thermometers</Text>
+									</Stack>
+								</Grid.Col>
+							</Grid>
+						</Carousel.Slide>
+						<Carousel.Slide>
+							<Grid>
+								<Grid.Col span={4} maw={80}>
+									<Image src={subcat3} w={48} h={57} style={{ background: "#f7f7f7" }} />
+								</Grid.Col>
+								<Grid.Col span={8}>
+									<Stack gap={8}>
+										<Text fz={12} w={253}>
+											{" "}
+											PID Temperature Controllers
+										</Text>
+										<Text fz={10}> High Accuracy Thermometers</Text>
+									</Stack>
+								</Grid.Col>
+							</Grid>
+						</Carousel.Slide>
+						<Carousel.Slide>
+							<Grid>
+								<Grid.Col span={4} maw={80}>
+									<Image src={subcat3} w={48} h={57} style={{ background: "#f7f7f7" }} />
+								</Grid.Col>
+								<Grid.Col span={8}>
+									<Stack gap={8}>
+										<Text fz={12} w={253}>
+											{" "}
+											PID Temperature Controllers
+										</Text>
+										<Text fz={10}> High Accuracy Thermometers</Text>
+									</Stack>
+								</Grid.Col>
+							</Grid>
+						</Carousel.Slide>
+						<Carousel.Slide>
+							<Grid>
+								<Grid.Col span={4} maw={80}>
+									<Image src={subcat3} w={48} h={57} style={{ background: "#f7f7f7" }} />
+								</Grid.Col>
+								<Grid.Col span={8}>
+									<Stack gap={8}>
+										<Text fz={12} w={253}>
+											{" "}
+											PID Temperature Controllers
+										</Text>
+										<Text fz={10}> High Accuracy Thermometers</Text>
+									</Stack>
+								</Grid.Col>
+							</Grid>
+						</Carousel.Slide>
+						<Carousel.Slide>
+							<Grid>
+								<Grid.Col span={4} maw={80}>
+									<Image src={subcat3} w={48} h={57} style={{ background: "#f7f7f7" }} />
+								</Grid.Col>
+								<Grid.Col span={8}>
+									<Stack gap={8}>
+										<Text fz={12} w={253}>
+											{" "}
+											PID Temperature Controllers
+										</Text>
+										<Text fz={10}> High Accuracy Thermometers</Text>
+									</Stack>
+								</Grid.Col>
+							</Grid>
+						</Carousel.Slide>
+						<Carousel.Slide>
+							<Grid>
+								<Grid.Col span={4} maw={80}>
+									<Image src={subcat3} w={48} h={57} style={{ background: "#f7f7f7" }} />
+								</Grid.Col>
+								<Grid.Col span={8}>
+									<Stack gap={8}>
+										<Text fz={12} w={253}>
+											{" "}
+											PID Temperature Controllers
+										</Text>
+										<Text fz={10}> High Accuracy Thermometers</Text>
+									</Stack>
+								</Grid.Col>
+							</Grid>
+							{/* </Group> */}
+						</Carousel.Slide>
+					</Carousel>
 				</Paper>
-				<Paper w={{ base: 360 }} h={{ base: 650 }} bg={"#f7f7f7"}>
-					<Card withBorder h={{ base: 650 }} w={327} ml={18} mt={32}>
+
+				<Paper
+					w={{ base: 360, lg: 1440 }}
+					h={{ base: 650, lg: 3800 }}
+					bg={"#f7f7f7"}
+					pt={{ base: 16, lg: 30 }}
+				>
+					<Card
+						withBorder
+						h={{ base: 650, lg: 384 }}
+						w={{ base: 327, lg: 1212 }}
+						mt={{ base: 16, lg: 32 }}
+						ml={{ base: 16, lg: 114 }}
+					>
 						<Image src={Panel} w={{ base: 131 }} h={{ base: 166 }} ml={{ base: 87 }} />
 						<Text fz={{ base: 16 }} c="#414141" mt={{ base: 16 }} fw={600} ml={{ base: 16 }}>
 							Three Phase Thyristor Power Controller – POW-3-PA
@@ -232,8 +403,7 @@ const ProductsList = (props: Props) => {
 							<PrimaryButton>ADD TO WISHLIST</PrimaryButton>
 						</Stack>
 					</Card>
-				</Paper>
-				<Paper w={{ base: 360 }} h={{ base: 650 }} bg={"#f7f7f7"}>
+
 					<Card withBorder h={{ base: 650 }} w={327} ml={18} mt={{ base: 24 }}>
 						<Image src={Panel} w={{ base: 131 }} h={{ base: 166 }} ml={{ base: 87 }} />
 						<Text fz={{ base: 16 }} c="#414141" mt={{ base: 16 }} fw={600} ml={{ base: 16 }}>
@@ -275,8 +445,7 @@ const ProductsList = (props: Props) => {
 							<PrimaryButton>ADD TO WISHLIST</PrimaryButton>
 						</Stack>
 					</Card>
-				</Paper>
-				<Paper w={{ base: 360 }} h={864} bg={"#f7f7f7"}>
+
 					<Card withBorder h={{ base: 650 }} w={327} ml={18} mt={{ base: 24 }}>
 						<Image src={Panel} w={{ base: 131 }} h={{ base: 166 }} ml={{ base: 87 }} />
 						<Text fz={{ base: 16 }} c="#414141" mt={{ base: 16 }} fw={600} ml={{ base: 16 }}>

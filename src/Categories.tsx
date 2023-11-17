@@ -18,7 +18,7 @@ type Props = {};
 const Categories = (props: Props) => {
 	return (
 		<>
-			<Paper w={{ base: 360, lg: 1440 }} h={{ base: 2200, lg: 5235 }} mt={{ base: 50 }}>
+			<Paper w={{ base: 360, lg: 1440 }} h={{ base: 3200, lg: 3035 }} mt={{ base: 50 }}>
 				<Grid>
 					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 2, lg: 1 }}>
 						<Text
@@ -34,197 +34,253 @@ const Categories = (props: Props) => {
 						<Text
 							fz={{ lg: 16, base: 12 }}
 							fw={400}
-							w={{ lg: 562, base: 328 }}
+							w={{ lg: 595, base: 328 }}
 							ml={{ lg: 118, base: 16 }}
 							mt={{ base: 16, lg: 32 }}
 							c={"#555459"}
 						>
-							Launching a business isn't easy, which is why having a co-founder can often make
-							things a little smoother, especially if that co-founder is your best friend. While
-							many professionals warn against choosing a close friend as your business partner,
-							there are plenty of examples that prove it can work. The best example is of Airbnb..
+							We are one of the most prominent manufacturers and exporters of a broad range of
+							microprocessors and digital-based electronic process control instruments. Our product
+							range includes Temperature and Process Indicators, Large/Jumbo Display Indicators,
+							Portable Thermometers, Process Controllers such as On-Off Controllers, PID
+							Controllers, Ramp/Soak Controllers, and Multi Zone Controllers, Temperature and
+							Process Data Loggers and Scanners, Temperature, Humidity Sensors and Transmitters.
+							<br />
+							<br />
+							We also have Indicators, and Controllers, Clean Room Monitoring Systems for
+							Environment, Cold Storage, Data Centre, Server Room, Greenhouse, Warehouse to measure
+							Temperature, Humidity, and Differential Pressure.
+							<br />
+							<br />
+							Thyristor Triggering Cards, Thyristor Power Controllers, Signal
+							Converters/Conditioners and Isolators, Molten Metal Pyrometers, DC Motor Controllers,
+							Motor Soft Starters, IoT Modules, Instrumentation Control Panels, Data Acquisition
+							Software, Customized Instruments, and many more services.
 						</Text>
-						<UnstyledButton ml={{ lg: 118, base: 16 }} mt={{ lg: 40, base: 32 }}>
-							<Text fz={{ lg: 20, base: 16 }} fw={400} style={{ color: "#F6F6F6" }}>
-								About Libratherm
-							</Text>
-						</UnstyledButton>
 					</Grid.Col>
 					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 1, lg: 2 }}>
 						<Image src={Rect17} h={{ lg: 696, base: 289 }} ml={{ lg: 209, base: 102 }} />
 						<Image
 							pos={"absolute"}
 							src={GlassManufacturing}
-							w={{ lg: 493, base: 327 }}
-							h={{ lg: 451, base: 241 }}
+							w={{ lg: 543, base: 327 }}
+							h={{ lg: 424, base: 241 }}
 							ml={{ lg: 123, base: 17 }}
 							mt={{ lg: -580, base: -265 }}
 						/>
 					</Grid.Col>
 				</Grid>
+
 				<Grid>
-					<Grid.Col span={{ base: 12 }}>
+					<Grid.Col span={{ base: 12, lg: 6 }}>
 						<Image
 							src={GlassManufacturing}
-							w={{ base: 344 }}
-							h={{ base: 166 }}
-							ml={{ base: 16 }}
-							mt={{ base: 67 }}
+							w={{ base: 344, lg: 543 }}
+							h={{ lg: 424, base: 166 }}
+							ml={{ lg: 64, base: 16 }}
+							mt={{ lg: 106, base: 67 }}
 						/>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Text fz={{ base: 20 }} ml={{ base: 16 }} fw={600} mt={{ base: 25 }} c={"#292929"}>
+					<Grid.Col span={{ base: 12, lg: 6 }}>
+						<Text
+							fz={{ base: 20, lg: 32 }}
+							ml={{ base: 16 }}
+							fw={600}
+							mt={{ lg: 134, base: 25 }}
+							c={"#292929"}
+						>
 							Thyristor Power Controller
 						</Text>
 
 						<Text
-							w={328}
+							w={{ base: 328, lg: 596 }}
 							c={"#555459"}
-							fz={{ base: 12 }}
+							fz={{ base: 12, lg: 14 }}
 							fw={400}
 							ml={{ base: 16 }}
 							mt={{ base: 8 }}
-							lineClamp={2}
 						>
-							Libratherm offers ready to use SCR Power Controller for electrical heating loads
-							ranging from 5 KW (Single Phase) to 360KW (Three Phase). This Thyristor Power
-							Regulator Module comprises of suitable triggering card model LTC-12 or LTC-13 or
-							LTC-15 or LTC-18, suitably rated back to back connected SCR Modules (with electrically
-							isolated base, mounted on the heat sink, input and output clip-on type heavy-duty
-							connectors or aluminum/copper bus bars, semiconductor fuses and thermal cutouts.
+							Experts in lighting, we’ve been creating task lights, desk lamps and table lamps for
+							over 80 years. All our lamps uphold the original Anglepoise design concept whilst
+							incorporating essential modern features. You’ll probably recognise some of the classic
+							profiles when browsing our wide range.
 							<br />
 							<br />
-							The entire assembly is mounted on an MS powder-coated enclosure, which in turn can be
-							easily mounted inside the closed control panel as desired.
+							You’ll probably recognise some of the classic profiles when browsing our wide range.
+							Whether you’re looking to add style to your workspace with a modern office desk lamp,
+							a small desk lamp for tight spaces or, a reading lamp for an ambient study glow,
+							you’ll find the right table and desk lamp for you.
 						</Text>
 						<UnstyledButton>
-							<Text fz={{ base: 12 }} fw={400} ml={{ base: 16 }} mt={15}>
+							<Text
+								fz={{ base: 12, lg: 20 }}
+								fw={400}
+								ml={{ base: 16 }}
+								mt={{ base: 15, lg: 24 }}
+								c={"#292929"}
+							>
 								Shop Now
 							</Text>
 						</UnstyledButton>
 					</Grid.Col>
 				</Grid>
+
 				<Grid>
-					<Grid.Col span={{ base: 12 }}>
+					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 1, lg: 2 }}>
 						<Image
 							src={category}
-							w={{ base: 344 }}
-							h={{ base: 166 }}
-							ml={{ base: 16 }}
-							mt={{ base: 67 }}
+							w={{ base: 344, lg: 543 }}
+							h={{ lg: 424, base: 166 }}
+							ml={{ lg: 64, base: 16 }}
+							mt={{ lg: 106, base: 67 }}
 						/>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Text fz={{ base: 20 }} ml={{ base: 16 }} fw={600} mt={{ base: 25 }} c={"#292929"}>
+					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 2, lg: 1 }}>
+						<Text
+							fz={{ base: 20, lg: 32 }}
+							ml={{ base: 16, lg: 114 }}
+							fw={600}
+							mt={{ lg: 134, base: 25 }}
+							c={"#292929"}
+						>
 							Thyristor Power Controller
 						</Text>
 
 						<Text
-							w={328}
+							w={{ base: 328, lg: 596 }}
 							c={"#555459"}
-							fz={{ base: 12 }}
+							fz={{ base: 12, lg: 14 }}
 							fw={400}
-							ml={{ base: 16 }}
+							ml={{ base: 16, lg: 114 }}
 							mt={{ base: 8 }}
-							lineClamp={2}
 						>
-							Libratherm offers ready to use SCR Power Controller for electrical heating loads
-							ranging from 5 KW (Single Phase) to 360KW (Three Phase). This Thyristor Power
-							Regulator Module comprises of suitable triggering card model LTC-12 or LTC-13 or
-							LTC-15 or LTC-18, suitably rated back to back connected SCR Modules (with electrically
-							isolated base, mounted on the heat sink, input and output clip-on type heavy-duty
-							connectors or aluminum/copper bus bars, semiconductor fuses and thermal cutouts.
+							Experts in lighting, we’ve been creating task lights, desk lamps and table lamps for
+							over 80 years. All our lamps uphold the original Anglepoise design concept whilst
+							incorporating essential modern features. You’ll probably recognise some of the classic
+							profiles when browsing our wide range.
 							<br />
 							<br />
-							The entire assembly is mounted on an MS powder-coated enclosure, which in turn can be
-							easily mounted inside the closed control panel as desired.
+							You’ll probably recognise some of the classic profiles when browsing our wide range.
+							Whether you’re looking to add style to your workspace with a modern office desk lamp,
+							a small desk lamp for tight spaces or, a reading lamp for an ambient study glow,
+							you’ll find the right table and desk lamp for you.
 						</Text>
 						<UnstyledButton>
-							<Text fz={{ base: 12 }} fw={400} ml={{ base: 16 }} mt={15}>
+							<Text
+								fz={{ base: 12, lg: 20 }}
+								fw={400}
+								ml={{ base: 16, lg: 114 }}
+								mt={{ base: 15, lg: 24 }}
+								c={"#292929"}
+							>
 								Shop Now
 							</Text>
 						</UnstyledButton>
 					</Grid.Col>
 				</Grid>
+
 				<Grid>
-					<Grid.Col span={{ base: 12 }}>
+					<Grid.Col span={{ base: 12, lg: 6 }}>
 						<Image
 							src={GlassManufacturing}
-							w={{ base: 344 }}
-							h={{ base: 166 }}
-							ml={{ base: 16 }}
-							mt={{ base: 67 }}
+							w={{ base: 344, lg: 543 }}
+							h={{ lg: 424, base: 166 }}
+							ml={{ lg: 64, base: 16 }}
+							mt={{ lg: 106, base: 67 }}
 						/>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Text fz={{ base: 20 }} ml={{ base: 16 }} fw={600} mt={{ base: 25 }} c={"#292929"}>
+					<Grid.Col span={{ base: 12, lg: 6 }}>
+						<Text
+							fz={{ base: 20, lg: 32 }}
+							ml={{ base: 16 }}
+							fw={600}
+							mt={{ lg: 134, base: 25 }}
+							c={"#292929"}
+						>
 							Thyristor Power Controller
 						</Text>
 
 						<Text
-							w={328}
+							w={{ base: 328, lg: 596 }}
 							c={"#555459"}
-							fz={{ base: 12 }}
+							fz={{ base: 12, lg: 14 }}
 							fw={400}
 							ml={{ base: 16 }}
 							mt={{ base: 8 }}
-							lineClamp={2}
 						>
-							Libratherm offers ready to use SCR Power Controller for electrical heating loads
-							ranging from 5 KW (Single Phase) to 360KW (Three Phase). This Thyristor Power
-							Regulator Module comprises of suitable triggering card model LTC-12 or LTC-13 or
-							LTC-15 or LTC-18, suitably rated back to back connected SCR Modules (with electrically
-							isolated base, mounted on the heat sink, input and output clip-on type heavy-duty
-							connectors or aluminum/copper bus bars, semiconductor fuses and thermal cutouts.
+							Experts in lighting, we’ve been creating task lights, desk lamps and table lamps for
+							over 80 years. All our lamps uphold the original Anglepoise design concept whilst
+							incorporating essential modern features. You’ll probably recognise some of the classic
+							profiles when browsing our wide range.
 							<br />
 							<br />
-							The entire assembly is mounted on an MS powder-coated enclosure, which in turn can be
-							easily mounted inside the closed control panel as desired.
+							You’ll probably recognise some of the classic profiles when browsing our wide range.
+							Whether you’re looking to add style to your workspace with a modern office desk lamp,
+							a small desk lamp for tight spaces or, a reading lamp for an ambient study glow,
+							you’ll find the right table and desk lamp for you.
 						</Text>
 						<UnstyledButton>
-							<Text fz={{ base: 12 }} fw={400} ml={{ base: 16 }} mt={15}>
+							<Text
+								fz={{ base: 12, lg: 20 }}
+								fw={400}
+								ml={{ base: 16 }}
+								mt={{ base: 15, lg: 24 }}
+								c={"#292929"}
+							>
 								Shop Now
 							</Text>
 						</UnstyledButton>
 					</Grid.Col>
 				</Grid>
+
 				<Grid>
-					<Grid.Col span={{ base: 12 }}>
+					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 1, lg: 2 }}>
 						<Image
 							src={category}
-							w={{ base: 344 }}
-							h={{ base: 166 }}
-							ml={{ base: 16 }}
-							mt={{ base: 67 }}
+							w={{ base: 344, lg: 543 }}
+							h={{ lg: 424, base: 166 }}
+							ml={{ lg: 64, base: 16 }}
+							mt={{ lg: 106, base: 67 }}
 						/>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12 }}>
-						<Text fz={{ base: 20 }} ml={{ base: 16 }} fw={600} mt={{ base: 25 }} c={"#292929"}>
+					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 2, lg: 1 }}>
+						<Text
+							fz={{ base: 20, lg: 32 }}
+							ml={{ base: 16, lg: 114 }}
+							fw={600}
+							mt={{ lg: 134, base: 25 }}
+							c={"#292929"}
+						>
 							Thyristor Power Controller
 						</Text>
 
 						<Text
-							w={328}
+							w={{ base: 328, lg: 596 }}
 							c={"#555459"}
-							fz={{ base: 12 }}
+							fz={{ base: 12, lg: 14 }}
 							fw={400}
-							ml={{ base: 16 }}
+							ml={{ base: 16, lg: 114 }}
 							mt={{ base: 8 }}
-							lineClamp={2}
 						>
-							Libratherm offers ready to use SCR Power Controller for electrical heating loads
-							ranging from 5 KW (Single Phase) to 360KW (Three Phase). This Thyristor Power
-							Regulator Module comprises of suitable triggering card model LTC-12 or LTC-13 or
-							LTC-15 or LTC-18, suitably rated back to back connected SCR Modules (with electrically
-							isolated base, mounted on the heat sink, input and output clip-on type heavy-duty
-							connectors or aluminum/copper bus bars, semiconductor fuses and thermal cutouts.
+							Experts in lighting, we’ve been creating task lights, desk lamps and table lamps for
+							over 80 years. All our lamps uphold the original Anglepoise design concept whilst
+							incorporating essential modern features. You’ll probably recognise some of the classic
+							profiles when browsing our wide range.
 							<br />
 							<br />
-							The entire assembly is mounted on an MS powder-coated enclosure, which in turn can be
-							easily mounted inside the closed control panel as desired.
+							You’ll probably recognise some of the classic profiles when browsing our wide range.
+							Whether you’re looking to add style to your workspace with a modern office desk lamp,
+							a small desk lamp for tight spaces or, a reading lamp for an ambient study glow,
+							you’ll find the right table and desk lamp for you.
 						</Text>
 						<UnstyledButton>
-							<Text fz={{ base: 12 }} fw={400} ml={{ base: 16 }} mt={15}>
+							<Text
+								fz={{ base: 12, lg: 20 }}
+								fw={400}
+								ml={{ base: 16, lg: 114 }}
+								mt={{ base: 15, lg: 24 }}
+								c={"#292929"}
+							>
 								Shop Now
 							</Text>
 						</UnstyledButton>

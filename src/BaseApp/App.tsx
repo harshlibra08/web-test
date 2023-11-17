@@ -170,8 +170,8 @@ function App() {
 			<ContactUs />
 			<Categories />
 			<CategoryGrid />
-			<InnerProduct />
 			<ProductsList />
+			<InnerProduct />
 			<CartPage />
 			<Checkout />
 			<CareersPage />
