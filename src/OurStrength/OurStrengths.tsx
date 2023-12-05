@@ -14,12 +14,12 @@ const OurStrengths = (props: Props) => {
 
 	return (
 		<>
-			<Paper h={{ base: 500, lg: 1064 }} w={{ base: 360, lg: 1440 }} bg={"#000"}>
+			<Paper h={{ base: 500, lg: 1064, sm: 642 }} w={{ base: 360, lg: 1440, sm: 1024 }} bg={"#000"}>
 				<Text
-					fz={{ lg: 14, base: 10 }}
+					fz={{ lg: 14, base: 10, sm: 14 }}
 					fw={600}
-					ml={{ lg: 114, base: 17 }}
-					pt={{ lg: 108, base: 56 }}
+					ml={{ lg: 114, base: 17, sm: 144 }}
+					pt={{ lg: 108, base: 56, sm: 94 }}
 					c={"#E4E8ED"}
 				>
 					WHO ARE WE ?
@@ -75,33 +75,33 @@ const OurStrengths = (props: Props) => {
 					}
 				</Group>
 				<Carousel
-					h={{ lg: 585, base: 295 }}
+					h={{ lg: 585, base: 295, sm: 453 }}
 					slideSize={"33.3%"}
-					slideGap={{ lg: 184, base: 47 }}
+					slideGap={{ lg: 184, base: 47, sm: 40 }}
 					loop
 					align={"start"}
 					slidesToScroll={3}
 					orientation="horizontal"
-					ml={{ base: 16, lg: 114 }}
-					pt={{ base: 17 }}
+					ml={{ base: 16, lg: 114, sm: 144 }}
+					pt={{ base: 17, sm: 40 }}
 					getEmblaApi={setEmbla}
 					withControls={false}
-					maw={{ lg: 1440, base: 360 }}
+					maw={{ lg: 1440, base: 360, sm: 1024 }}
 				>
 					<Carousel.Slide w={{ lg: 329, base: 197 }} ml={{ lg: 114, base: 24 }}>
-						<Card w={329} bg={"#000"}>
+						<Card w={329} h={{ sm: 481 }} bg={"#000"}>
 							<Card.Section>
 								<Image
 									src={Strength1}
-									w={{ lg: 329, base: 197 }}
-									h={{ lg: 417, base: 251 }}
+									w={{ lg: 329, base: 197, sm: 300 }}
+									h={{ lg: 417, base: 251, sm: 381 }}
 									style={{ opacity: 0.5 }}
 									ml={{ base: 24 }}
 								/>
 								<Text
-									fz={{ lg: 32, base: 20 }}
-									mt={{ lg: -100, base: -43 }}
-									w={{ lg: 249, base: 200 }}
+									fz={{ lg: 32, base: 20, sm: 40 }}
+									mt={{ lg: -100, base: -43, sm: -140 }}
+									w={{ lg: 249, base: 200, sm: 227 }}
 									fw={600}
 									c={"#f6f6f6"}
 									pos={"absolute"}
@@ -109,9 +109,9 @@ const OurStrengths = (props: Props) => {
 									Latest Technology
 								</Text>
 								<Text
-									w={{ lg: 288, base: 195 }}
-									mt={{ lg: 12, base: -8 }}
-									fz={{ lg: 14, base: 10 }}
+									w={{ lg: 288, base: 195, sm: 288 }}
+									mt={{ lg: 12, base: -8, sm: -16 }}
+									fz={{ lg: 14, base: 10, sm: 14 }}
 									fw={400}
 									c={"#f6f6f6"}
 								>
@@ -126,15 +126,15 @@ const OurStrengths = (props: Props) => {
 							<Card.Section>
 								<Image
 									src={Strength2}
-									w={{ lg: 329, base: 197 }}
-									h={{ lg: 417, base: 251 }}
+									w={{ lg: 329, base: 197, sm: 300 }}
+									h={{ lg: 417, base: 251, sm: 381 }}
 									style={{ opacity: 0.5 }}
 									ml={{ base: 47 }}
 								/>
 								<Text
-									fz={{ lg: 32, base: 20 }}
-									mt={{ lg: -100, base: -43 }}
-									w={{ lg: 249, base: 200 }}
+									fz={{ lg: 32, base: 20, sm: 40 }}
+									mt={{ lg: -100, base: -43, sm: -140 }}
+									w={{ lg: 249, base: 200, sm: 227 }}
 									fw={600}
 									c={"#f6f6f6"}
 									pos={"absolute"}
@@ -143,9 +143,9 @@ const OurStrengths = (props: Props) => {
 									Global Standards
 								</Text>
 								<Text
-									w={{ lg: 288, base: 195 }}
-									mt={{ lg: 12, base: -8 }}
-									fz={{ lg: 14, base: 10 }}
+									w={{ lg: 288, base: 195, sm: 288 }}
+									mt={{ lg: 12, base: -8, sm: -16 }}
+									fz={{ lg: 14, base: 10, sm: 14 }}
 									fw={400}
 									c={"#f6f6f6"}
 									ml={{ base: 24 }}
@@ -161,15 +161,15 @@ const OurStrengths = (props: Props) => {
 							<Card.Section>
 								<Image
 									src={Strength3}
-									w={{ lg: 329, base: 197 }}
-									h={{ lg: 417, base: 251 }}
+									w={{ lg: 329, base: 197, sm: 300 }}
+									h={{ lg: 417, base: 251, sm: 381 }}
 									style={{ opacity: 0.5 }}
 									ml={{ base: 47 }}
 								/>
 								<Text
-									fz={{ lg: 32, base: 20 }}
-									mt={{ lg: -100, base: -43 }}
-									w={{ lg: 347, base: 200 }}
+									fz={{ lg: 32, base: 20, sm: 40 }}
+									mt={{ lg: -100, base: -85, sm: -140 }}
+									w={{ lg: 249, base: 200, sm: 397 }}
 									fw={600}
 									c={"#f6f6f6"}
 									pos={"absolute"}
@@ -178,9 +178,9 @@ const OurStrengths = (props: Props) => {
 									Client Centered Approach
 								</Text>
 								<Text
-									w={{ lg: 288, base: 195 }}
-									mt={{ base: 16 }}
-									fz={{ lg: 14, base: 10 }}
+									w={{ lg: 288, base: 195, sm: 288 }}
+									mt={{ lg: 12, base: -8, sm: -16 }}
+									fz={{ lg: 14, base: 10, sm: 14 }}
 									fw={400}
 									c={"#f6f6f6"}
 									ml={{ base: 24 }}

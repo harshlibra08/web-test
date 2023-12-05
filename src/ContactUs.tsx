@@ -36,33 +36,33 @@ const PrimaryButton = ({ ...props }: ButtonProps) => (
 const ContactUs = (props: Props) => {
 	return (
 		<>
-			<Paper w={{ base: 360, lg: 1440 }} h={{ base: 1641 }}>
+			<Paper w={{ base: 360, lg: 1440, sm: 1024 }} h={{ base: 1641, sm: 3610 }}>
 				<Text
 					c={"#262728"}
-					fz={{ base: 10, lg: 16 }}
+					fz={{ base: 10, lg: 16, sm: 16 }}
 					fw={600}
-					mt={{ base: 56, lg: 141 }}
-					ml={{ base: 143, lg: 662 }}
+					mt={{ base: 56, lg: 141, sm: 80 }}
+					ml={{ base: 143, lg: 662, sm: 454 }}
 				>
 					LETS CONNECT
 				</Text>
 				<Text
 					c={"#262728"}
-					fz={{ base: 20, lg: 32 }}
+					fz={{ base: 20, lg: 32, sm: 32 }}
 					fw={600}
-					mt={{ base: 8, lg: 18 }}
-					ml={{ base: 112, lg: 565 }}
+					mt={{ base: 8, lg: 18, sm: 18 }}
+					ml={{ base: 112, lg: 565, sm: 357 }}
 				>
 					Get in touch with us
 				</Text>
 
 				<Text
 					c={"#555459"}
-					w={{ base: 328, lg: 797 }}
-					fz={{ base: 12, lg: 16 }}
+					w={{ base: 328, lg: 797, sm: 588 }}
+					fz={{ base: 12, lg: 16, sm: 14 }}
 					fw={400}
-					mt={{ base: 16, lg: 18 }}
-					ml={{ base: 16, lg: 337 }}
+					mt={{ base: 16, lg: 18, sm: 18 }}
+					ml={{ base: 16, lg: 337, sm: 218 }}
 					ta={"justify"}
 				>
 					Libratherm is an innovation-driven manufacturer of Process Control Instruments and Systems
@@ -70,7 +70,12 @@ const ContactUs = (props: Props) => {
 					precise control
 				</Text>
 
-				<Paper w={{ base: 360, lg: 1440 }} h={{ base: 1500 }} bg={"black"} mt={{ base: 77 }}>
+				<Paper
+					w={{ base: 360, lg: 1440, sm: 1024 }}
+					h={{ base: 1500, sm: 3291 }}
+					bg={"black"}
+					mt={{ base: 77 }}
+				>
 					<Grid>
 						<Grid.Col span={{ base: 12, lg: 6 }}>
 							<Text

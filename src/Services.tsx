@@ -26,59 +26,45 @@ const Services = (props: Props) => {
 	return (
 		<>
 			<Paper
-				w={{ base: 360, lg: 1440 }}
-				h={{ base: 5000, lg: 5340 }}
-				mt={{ base: 40, lg: 50 }}
+				w={{ base: 360, lg: 1440, sm: 1024 }}
+				h={{ base: 5000, lg: 5340, sm: 5000 }}
+				mt={{ base: 40, lg: 50, sm: 30 }}
 				bg={"black"}
 			>
 				<Stack>
 					<Text
-						fz={{ base: 20, lg: 32 }}
-						mt={{ base: 40, lg: 91 }}
-						ml={{ base: 16, lg: 114 }}
+						fz={{ base: 20, lg: 32, sm: 32 }}
+						mt={{ base: 40, lg: 91, sm: 59 }}
+						ml={{ base: 16, lg: 114, sm: 144 }}
 						c={"#F6F6F6"}
 					>
 						Services
 					</Text>
-					<Divider size="xs" w={{ base: 328, lg: 1212 }} ml={{ base: 16, lg: 114 }} />
+					<Divider
+						size="xs"
+						w={{ base: 328, lg: 1212, sm: 736 }}
+						ml={{ base: 16, lg: 114, sm: 144 }}
+					/>
 				</Stack>
 				<Tabs
 					color="rgba(255, 255, 255, 1)"
 					defaultValue="Data"
-					ml={{ base: 16, lg: 114 }}
-					maw={{ base: 360, lg: 1212 }}
+					ml={{ base: 16, lg: 114, sm: 147 }}
+					maw={{ base: 360, lg: 1212, sm: 736 }}
 				>
-					<Tabs.List hiddenFrom="xs">
+					<Tabs.List>
 						<Tabs.Tab value="Data">
-							<Text fz={{ base: 9 }} c={"#FFF"} ta={"center"}>
-								Data Acquisition <br />
-								Software
-							</Text>
-						</Tabs.Tab>
-						<Tabs.Tab value="IOT">
-							<Text fz={{ base: 9 }} c={"#FFF"} ta={"center"}>
-								IoT (Internet <br /> of Things)
-							</Text>
-						</Tabs.Tab>
-						<Tabs.Tab value="pwht">
-							<Text fz={{ base: 9 }} c={"#FFF"} ta={"center"}>
-								Post Weld Heat <br /> Treatment (PWHT) Vision
-							</Text>
-						</Tabs.Tab>
-					</Tabs.List>
-					<Tabs.List visibleFrom="md">
-						<Tabs.Tab value="Data">
-							<Text fz={{ base: 9, lg: 14 }} c={"#FFF"} ta={"center"}>
+							<Text fz={{ base: 9, sm: 14, lg: 14 }} c={"#FFF"} ta={"center"}>
 								Data Acquisition Software
 							</Text>
 						</Tabs.Tab>
 						<Tabs.Tab value="IOT">
-							<Text fz={{ base: 9, lg: 14 }} c={"#FFF"} ta={"center"}>
+							<Text fz={{ base: 9, sm: 14, lg: 14 }} c={"#FFF"} ta={"center"}>
 								IoT (Internet of Things)
 							</Text>
 						</Tabs.Tab>
 						<Tabs.Tab value="pwht">
-							<Text fz={{ base: 9, lg: 14 }} c={"#FFF"} ta={"center"}>
+							<Text fz={{ base: 9, sm: 14, lg: 14 }} c={"#FFF"} ta={"center"}>
 								Post Weld Heat Treatment (PWHT) Vision
 							</Text>
 						</Tabs.Tab>
@@ -87,22 +73,21 @@ const Services = (props: Props) => {
 
 				<Text
 					c={"#f6f6f6"}
-					ml={{ base: 100, lg: 455 }}
-					w={550}
-					ta={"center"}
-					fz={{ base: 14, lg: 32 }}
+					ml={{ base: 100, lg: 455, sm: 144 }}
+					w={{ lg: 550, base: 160, sm: 551 }}
+					fz={{ base: 14, lg: 32, sm: 28 }}
 					pt={{ base: 40 }}
 				>
 					Post Weld Heat Treatment (PWHT)
 				</Text>
 
 				<Text
-					ml={{ base: 16, lg: 217 }}
+					ml={{ base: 16, lg: 217, sm: 144 }}
 					c={"#e4e8ed"}
 					ta="left"
-					fz={{ base: 12 }}
-					mt={{ base: 16, lg: 34 }}
-					w={{ base: 328, lg: 1006 }}
+					fz={{ base: 12, sm: 14 }}
+					mt={{ base: 16, lg: 34, sm: 16 }}
+					w={{ base: 328, lg: 1006, sm: 736 }}
 					fw={400}
 				>
 					Welding is the process of joining metals or thermoplastics by using high heat or pressure
@@ -123,26 +108,26 @@ const Services = (props: Props) => {
 
 				<Image
 					src={PWHT}
-					ml={{ base: 16, lg: 385 }}
-					w={{ base: 320, lg: 670 }}
-					h={{ base: 181, lg: 372 }}
-					mt={{ base: 24, lg: 64 }}
+					ml={{ base: 16, lg: 385, sm: 322 }}
+					w={{ base: 320, lg: 670, sm: 380 }}
+					h={{ base: 181, lg: 372, sm: 210 }}
+					mt={{ base: 24, lg: 64, sm: 80 }}
 				/>
 				<Text
-					ml={{ base: 16, lg: 217 }}
+					ml={{ base: 16, lg: 217, sm: 144 }}
 					c={"#f6f6f6"}
-					fz={{ base: 14, lg: 24 }}
-					mt={{ base: 40, lg: 64 }}
+					fz={{ base: 14, lg: 24, sm: 24 }}
+					mt={{ base: 40, lg: 64, sm: 80 }}
 				>
 					What happens in PWHT?
 				</Text>
 
 				<Text
-					ml={{ base: 16, lg: 217 }}
 					c={"#e4e8ed"}
-					fz={{ base: 12, lg: 16 }}
-					mt={{ base: 24, lg: 32 }}
-					w={{ base: 327, lg: 1006 }}
+					ml={{ base: 16, lg: 217, sm: 144 }}
+					fz={{ base: 12, lg: 16, sm: 14 }}
+					mt={{ base: 24, lg: 32, sm: 16 }}
+					w={{ base: 327, lg: 1006, sm: 736 }}
 					fw={400}
 				>
 					Post Weld Heat Treatment (PWHT) reheats the welded material using a controlled ramp-soak
@@ -164,41 +149,42 @@ const Services = (props: Props) => {
 				</Text>
 
 				<Paper
-					h={{ base: 1043, lg: 1773 }}
-					w={{ base: 360, lg: 1440 }}
+					h={{ base: 1043, lg: 1773, sm: 1264 }}
+					w={{ base: 360, lg: 1440, sm: 1024 }}
 					bg={"white"}
 					radius={0}
 					left={{ base: 0 }}
 				>
 					<Image
 						src={PWHT2}
-						w={{ base: 328, lg: 1006 }}
-						h={{ base: 194, lg: 404 }}
-						mt={{ base: 72, lg: 128 }}
-						ml={{ lg: 218 }}
+						w={{ base: 328, lg: 1006, sm: 589 }}
+						h={{ base: 194, lg: 404, sm: 237 }}
+						mt={{ base: 72, lg: 128, sm: 80 }}
+						ml={{ lg: 218, sm: 217 }}
 					/>
 					<Image
 						src={PWHT3}
-						w={{ base: 360, lg: 1006 }}
-						h={{ base: 162, lg: 402 }}
-						ml={{ lg: 218 }}
+						w={{ base: 360, lg: 1006, sm: 589 }}
+						h={{ base: 162, lg: 402, sm: 236 }}
+						ml={{ lg: 218, sm: 217 }}
 						mt={{ base: 48, lg: 103 }}
 					/>
 
 					<Text
-						ml={{ base: 16, lg: 218 }}
 						c={"#262728"}
-						fz={{ base: 14, lg: 24 }}
-						mt={{ base: 40, lg: 128 }}
+						ml={{ base: 16, lg: 217, sm: 144 }}
+						fz={{ base: 14, lg: 24, sm: 24 }}
+						mt={{ base: 40, lg: 64, sm: 80 }}
 						fw={600}
 					>
 						Advantages of PWHT
 					</Text>
 					<Text
-						pt={{ base: 16, lg: 32 }}
-						fz={{ base: 12, lg: 16 }}
-						ml={{ base: 16, lg: 218 }}
-						maw={{ base: 328, lg: 1006 }}
+						ml={{ base: 16, lg: 217, sm: 144 }}
+						fz={{ base: 12, lg: 16, sm: 14 }}
+						mt={{ base: 24, lg: 32, sm: 16 }}
+						w={{ base: 327, lg: 1006, sm: 736 }}
+						fw={400}
 					>
 						<List>
 							<List.Item fz={{ base: 12 }} c={"#555459"}>
@@ -223,19 +209,20 @@ const Services = (props: Props) => {
 					</Text>
 
 					<Text
-						ml={{ base: 16, lg: 218 }}
 						c={"#262728"}
-						fz={{ base: 14, lg: 24 }}
-						mt={{ base: 40, lg: 64 }}
+						ml={{ base: 16, lg: 217, sm: 144 }}
+						fz={{ base: 14, lg: 24, sm: 24 }}
+						mt={{ base: 40, lg: 64, sm: 80 }}
 						fw={600}
 					>
 						Safety and Precautions
 					</Text>
 					<Text
-						pt={{ base: 16, lg: 32 }}
-						fz={{ base: 12, lg: 16 }}
-						ml={{ base: 16, lg: 218 }}
-						maw={{ base: 328, lg: 1006 }}
+						ml={{ base: 16, lg: 217, sm: 144 }}
+						fz={{ base: 12, lg: 16, sm: 14 }}
+						mt={{ base: 24, lg: 32, sm: 16 }}
+						w={{ base: 327, lg: 1006, sm: 736 }}
+						fw={400}
 					>
 						<List>
 							<List.Item fz={{ base: 12 }} c={"#555459"}>
@@ -263,28 +250,27 @@ const Services = (props: Props) => {
 				</Paper>
 
 				<Grid>
-					<Grid.Col span={{ base: 12, lg: 6 }}>
+					<Grid.Col span={{ base: 12, lg: 6, sm: 12 }}>
 						<Image
-							src={Rect3715}
-							h={{ base: 360, lg: 871 }}
-							w={{ base: 360, lg: 720 }}
-							pos="absolute"
-							pl={{ base: 0 }}
-							left={{ base: 0 }}
+							src={Rect3716}
+							w={{ base: 358, lg: 720, sm: 1024 }}
+							h={{ base: 354, lg: 1207, sm: 519 }}
+							pos={"absolute"}
+							left={{ base: 0, lg: 719 }}
 						/>
 						<Image
 							src={SixZone}
-							w={{ base: 308, lg: 444 }}
-							h={{ base: 283, lg: 407 }}
-							pos={"absolute"}
-							ml={{ base: 26, lg: 134 }}
-							mt={{ base: 15, lg: 175 }}
+							w={{ base: 308, lg: 444, sm: 386 }}
+							h={{ base: 283, lg: 407, sm: 355 }}
+							pos="absolute"
+							ml={{ base: 26, lg: 134, sm: 319 }}
+							mt={{ base: 15, lg: 175, sm: 52 }}
 						/>
 						<Button
 							variant="default"
 							color="#FFF"
-							mt={{ base: 298, lg: 646 }}
-							ml={{ base: 112, lg: 288 }}
+							mt={{ base: 298, lg: 646, sm: 425 }}
+							ml={{ base: 112, lg: 288, sm: 437 }}
 							radius={0}
 							pos={"absolute"}
 							tt={"uppercase"}
@@ -292,23 +278,23 @@ const Services = (props: Props) => {
 							visit prc 6000
 						</Button>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12, lg: 6 }}>
+					<Grid.Col span={{ base: 12, lg: 6, sm: 12 }}>
 						<Text
-							fz={{ base: 14, lg: 24 }}
+							fz={{ base: 14, lg: 24, sm: 24 }}
 							fw={600}
-							mt={{ base: 400, lg: 128 }}
-							ml={{ base: 17, lg: 50 }}
+							mt={{ base: 400, lg: 128, sm: 550 }}
+							ml={{ base: 17, lg: 50, sm: 144 }}
 							c={"#f6f6f6"}
 						>
 							PWHT Temperature Controller - PRC 6000
 						</Text>
 						<Text
-							w={{ base: 328, lg: 559 }}
+							w={{ base: 328, lg: 559, sm: 736 }}
 							c={"#e4e8ed"}
 							fz={{ base: 12, lg: 16 }}
 							fw={400}
-							ml={{ base: 17, lg: 50 }}
-							mt={{ base: 24 }}
+							ml={{ base: 17, lg: 50, sm: 144 }}
+							mt={{ base: 24, sm: 16 }}
 						>
 							Libratherm offers Ramp/Soak Programmable PID Temperature Controller – PRC-489 which is
 							designed to improve reliability, accuracy, and control for all temperature control
@@ -319,10 +305,10 @@ const Services = (props: Props) => {
 						</Text>
 
 						<Text
-							fz={{ base: 14, lg: 24 }}
+							fz={{ base: 14, lg: 24, sm: 24 }}
 							fw={600}
-							mt={{ base: 48, lg: 64 }}
-							ml={{ base: 17, lg: 50 }}
+							mt={{ base: 48, lg: 64, sm: 62 }}
+							ml={{ base: 17, lg: 50, sm: 144 }}
 							c={"#f6f6f6"}
 							maw={{ base: 328 }}
 						>
@@ -330,11 +316,11 @@ const Services = (props: Props) => {
 						</Text>
 
 						<Text
-							w={{ base: 320, lg: 552 }}
+							w={{ base: 320, lg: 552, sm: 736 }}
 							c={"#e4e8ed"}
-							fz={{ base: 12, lg: 16 }}
+							fz={{ base: 12, lg: 16, sm: 14 }}
 							fw={400}
-							ml={{ base: 16, lg: 50 }}
+							ml={{ base: 16, lg: 50, sm: 144 }}
 							mt={14}
 						>
 							<List>
@@ -365,28 +351,28 @@ const Services = (props: Props) => {
 							</List>
 						</Text>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 1, lg: 2 }}>
+					<Grid.Col span={{ base: 12, lg: 6, sm: 12 }} order={{ base: 1, lg: 2 }}>
 						<Image
 							src={Rect3716}
-							w={{ base: 358, lg: 720 }}
-							h={{ base: 354, lg: 1207 }}
+							w={{ base: 358, lg: 720, sm: 1024 }}
+							h={{ base: 354, lg: 1207, sm: 519 }}
 							pos={"absolute"}
 							left={{ base: 0, lg: 719 }}
 						/>
 						<Image
 							src={Img440}
 							pos={"absolute"}
-							w={{ base: 281, lg: 449 }}
-							h={{ base: 229, lg: 449 }}
-							ml={{ base: 39, lg: 136 }}
-							mt={{ lg: 179 }}
+							w={{ base: 281, lg: 449, sm: 391 }}
+							h={{ base: 229, lg: 449, sm: 319 }}
+							ml={{ base: 39, lg: 136, sm: 329 }}
+							mt={{ lg: 179, sm: 52 }}
 						/>
 
 						<Button
 							variant="default"
 							color="#FFF"
-							mt={{ base: 292, lg: 664 }}
-							ml={{ base: 112, lg: 293 }}
+							mt={{ base: 292, lg: 664, sm: 425 }}
+							ml={{ base: 112, lg: 293, sm: 459 }}
 							radius={0}
 							pos={"absolute"}
 							tt={"uppercase"}
@@ -394,24 +380,24 @@ const Services = (props: Props) => {
 							visit prc 6000
 						</Button>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 2, lg: 1 }}>
+					<Grid.Col span={{ base: 12, lg: 6, sm: 12 }} order={{ base: 2, lg: 1 }}>
 						<Text
-							fz={{ base: 14, lg: 24 }}
+							fz={{ base: 14, lg: 24, sm: 24 }}
 							fw={600}
-							w={{ base: 327, lg: 530 }}
-							mt={{ base: 394, lg: 128 }}
-							ml={{ base: 16, lg: 115 }}
+							mt={{ base: 400, lg: 128, sm: 550 }}
+							ml={{ base: 17, lg: 50, sm: 144 }}
 							c={"#f6f6f6"}
+							w={{ sm: 588 }}
 						>
 							Ramp/Soak Programmable PID Temperature Controller – PRC-489
 						</Text>
 						<Text
-							w={{ base: 328, lg: 552 }}
+							w={{ base: 328, lg: 559, sm: 736 }}
 							c={"#e4e8ed"}
-							fz={{ base: 12, lg: 14 }}
+							fz={{ base: 12, lg: 16 }}
 							fw={400}
-							ml={{ base: 16, lg: 114 }}
-							mt={{ base: 24, lg: 32 }}
+							ml={{ base: 17, lg: 50, sm: 144 }}
+							mt={{ base: 24, sm: 16 }}
 						>
 							Libratherm offers Ramp/Soak Programmable PID Temperature Controller – PRC-489 which is
 							designed to improve reliability, accuracy, and control for all temperature control
@@ -422,24 +408,23 @@ const Services = (props: Props) => {
 						</Text>
 
 						<Text
-							fz={{ base: 14, lg: 24 }}
-							w={514}
-							h={44}
+							fz={{ base: 14, lg: 24, sm: 24 }}
 							fw={600}
-							mt={{ base: 48, lg: 64 }}
-							ml={{ base: 16, lg: 114 }}
+							mt={{ base: 48, lg: 64, sm: 62 }}
+							ml={{ base: 17, lg: 50, sm: 144 }}
 							c={"#f6f6f6"}
+							maw={{ base: 328 }}
 						>
 							Features
 						</Text>
 
 						<Text
-							w={{ base: 320, lg: 556 }}
+							w={{ base: 320, lg: 552, sm: 736 }}
 							c={"#e4e8ed"}
-							fz={{ base: 12, lg: 16 }}
+							fz={{ base: 12, lg: 16, sm: 14 }}
 							fw={400}
-							ml={{ base: 16, lg: 114 }}
-							mt={{ base: 14, lg: 32 }}
+							ml={{ base: 16, lg: 50, sm: 144 }}
+							mt={14}
 						>
 							<List>
 								<List.Item>Accepts standard K type thermocouple</List.Item>

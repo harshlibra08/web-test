@@ -11,6 +11,8 @@ import {
 	Image,
 	Button,
 	ButtonProps,
+	Card,
+	Grid,
 } from "@mantine/core";
 import { IconHeart, IconMinus, IconPlus, IconTag, IconTrash } from "@tabler/icons-react";
 import React from "react";
@@ -57,6 +59,101 @@ const PrimaryButton = ({ ...props }: ButtonProps) => (
 const CartPage = (props: Props) => {
 	return (
 		<>
+			{/* <Paper w={{ base: 360, lg: 1440 }} h={{ base: 900, lg: 778 }} mt={30}>
+				<Text fz={{ base: 20, lg: 34 }} fw={600} c={"#262728"} ml={{ base: 16, lg: 144 }}>
+					Cart
+				</Text>
+				<Group ml={{ base: 16, lg: 144 }}>
+					<Checkbox
+						size={"16px"}
+						fw={600}
+						defaultChecked
+						label="3/3 Items Selected"
+						mt={{ base: 23, lg: 27 }}
+						c="#212121"
+					/>
+					<UnstyledButton mt={27} ml={324} visibleFrom="md">
+						<Text fz={12} c="#777" fw={400}>
+							REMOVE
+						</Text>
+					</UnstyledButton>
+					<UnstyledButton mt={27} ml={70} hiddenFrom="xs">
+						<IconTrash />
+					</UnstyledButton>
+					<Divider orientation="vertical" size={"md"} mt={27} visibleFrom="md" />
+					<UnstyledButton mt={27} visibleFrom="md">
+						<Text c="#777" fz={12} fw={400}>
+							MOVE TO WISHLIST
+						</Text>
+					</UnstyledButton>
+					<UnstyledButton mt={27} hiddenFrom="xs">
+						<IconHeart />
+					</UnstyledButton>
+				</Group>
+				<Card
+					w={{ base: 328, lg: 713 }}
+					h={{ base: 244, lg: 155 }}
+					ml={{ base: 16, lg: 144 }}
+					mt={{ base: 24, lg: 48 }}
+					withBorder
+				>
+					<Grid>
+						<Grid.Col span={{ base: 12, lg: 3 }} w={370}>
+							<Group>
+								<Checkbox defaultChecked c="#212121" size="16px" />
+								<Image src={Panel} h={98} w={75} mt={18} style={{ background: "#F1F1F1" }} />
+								<Stack>
+									<Text w={104} c="#414141" fz={14} fw={600} ml={11} mt={20}>
+										Three Phase Thyristor Power Controller
+									</Text>
+									<Text c="#e83214" fz={12} fw={600} ml={11}>
+										POW-3-PA-CL
+									</Text>
+								</Stack>
+							</Group>
+						</Grid.Col>
+						<Grid.Col span={{ base: 12, lg: 3 }}>
+							<Stack>
+								<Text fz={12} fw={600} c={"#424242"} mt={20}>
+									PRICE
+								</Text>
+								<Text c="#262728" fw={700} size="sm">
+									₹12,600
+								</Text>
+							</Stack>
+						</Grid.Col>
+						<Grid.Col span={{ base: 12, lg: 3 }}>
+							<Stack>
+								<Text fz={12} fw={600} c={"#424242"} mt={20}>
+									PRICE
+								</Text>
+								<Text c="#262728" fw={700} size="sm">
+									₹12,600
+								</Text>
+							</Stack>
+						</Grid.Col>
+						<Grid.Col span={{ base: 12, lg: 3 }}>
+							<Stack>
+								<Text fz={12} fw={600} c={"#424242"} mt={20}>
+									PRICE
+								</Text>
+								<Text c="#262728" fw={700} size="sm">
+									₹12,600
+								</Text>
+							</Stack>
+						</Grid.Col>
+					</Grid>
+				</Card>
+
+				<Text fz={12} fw={600} c={"#424242"} mt={27} ml={49}>
+					APPLY COUPON
+				</Text>
+
+				<PrimaryButton h={27} mt={22} ml={257}>
+					<Text fz={12}>Apply</Text>
+				</PrimaryButton>
+			</Paper> */}
+
 			<Paper w={1440} h={784} mt={30} visibleFrom="md">
 				<Text fz={34} fw={600} c={"#262728"} mt={123} ml={114}>
 					Cart

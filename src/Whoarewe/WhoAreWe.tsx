@@ -9,34 +9,38 @@ type Props = {};
 const WhoAreWe = (props: Props) => {
 	return (
 		<>
-			<Paper maw={{ lg: 1440, base: 360 }} mt={30} bg={"#000"} h={{ base: 696 }}>
+			<Paper
+				maw={{ lg: 1440, base: 360, sm: 1024 }}
+				mt={30}
+				bg={"#000"}
+				h={{ base: 696, sm: 1042, lg: 696 }}
+			>
 				<Grid>
 					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 2, lg: 1 }}>
 						<Text
-							fz={{ lg: 14, base: 10 }}
+							fz={{ lg: 14, base: 10, sm: 14 }}
 							fw={600}
-							ml={{ lg: 114, base: 17 }}
-							mt={{ lg: 191, base: 48 }}
+							ml={{ lg: 114, base: 17, sm: 144 }}
+							mt={{ lg: 191, base: 48, sm: 30 }}
 							c={"#E4E8ED"}
 						>
 							WHO ARE WE ?
 						</Text>
 						<Text
-							fz={{ lg: 32, base: 18 }}
-							w={{ lg: 562, base: 210 }}
+							fz={{ lg: 32, base: 18, sm: 32 }}
+							w={{ lg: 562, base: 210, sm: 691 }}
 							fw={600}
-							ml={{ lg: 114, base: 17 }}
-							mt={{ lg: 16, base: 8 }}
+							ml={{ lg: 114, base: 17, sm: 144 }}
+							mt={{ lg: 16, base: 8, sm: 16 }}
 							c={"#E4E8ED"}
 						>
-							How it all began:
-							<br /> The Omega moment
+							How it all began: The Omega moment
 						</Text>
 						<Text
-							fz={{ lg: 16, base: 12 }}
+							fz={{ lg: 16, base: 12, sm: 14 }}
 							fw={400}
-							w={{ lg: 562, base: 328 }}
-							ml={{ lg: 118, base: 16 }}
+							w={{ lg: 562, base: 328, sm: 736 }}
+							ml={{ lg: 118, base: 16, sm: 144 }}
 							mt={16}
 							c={"#E4E8ED"}
 						>
@@ -45,21 +49,26 @@ const WhoAreWe = (props: Props) => {
 							many professionals warn against choosing a close friend as your business partner,
 							there are plenty of examples that prove it can work. The best example is of Airbnb..
 						</Text>
-						<UnstyledButton ml={{ lg: 118, base: 16 }} mt={{ lg: 40, base: 32 }}>
-							<Text fz={{ lg: 20, base: 16 }} fw={400} style={{ color: "#F6F6F6" }}>
+						<UnstyledButton ml={{ lg: 118, base: 16, sm: 144 }} mt={{ lg: 40, base: 32 }}>
+							<Text fz={{ lg: 20, base: 16, sm: 20 }} fw={400} style={{ color: "#F6F6F6" }}>
 								About Libratherm
 							</Text>
 						</UnstyledButton>
 					</Grid.Col>
 					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 1, lg: 2 }}>
-						<Image src={RectangleOmega} h={{ lg: 696, base: 289 }} ml={{ lg: 209, base: 102 }} />
+						<Image
+							src={RectangleOmega}
+							h={{ lg: 696, base: 289, sm: 696 }}
+							ml={{ lg: 209, base: 102, sm: 522 }}
+							w={{ sm: 508 }}
+						/>
 						<Image
 							pos={"absolute"}
 							src={WHO}
-							w={{ lg: 493, base: 327 }}
-							h={{ lg: 451, base: 241 }}
-							ml={{ lg: 123, base: 17 }}
-							mt={{ lg: -580, base: -265 }}
+							w={{ lg: 493, base: 327, sm: 736 }}
+							h={{ lg: 451, base: 241, sm: 541 }}
+							ml={{ lg: 123, base: 17, sm: 144 }}
+							mt={{ lg: -580, base: -265, sm: -600 }}
 						/>
 					</Grid.Col>
 				</Grid>

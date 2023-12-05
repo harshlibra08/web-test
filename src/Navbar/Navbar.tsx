@@ -68,14 +68,14 @@ export function Navbar() {
 			</Paper>
 
 			{/**Tablet View */}
-			<Paper h={84} w={768} hiddenFrom="md" visibleFrom="xs">
+			<Paper h={84} w={1024} hiddenFrom="md" visibleFrom="xs">
 				<Group mt={15} ml={36}>
 					<Burger opened={opened} onClick={toggle} size={"lg"} mt={20} />
-					<Image src={Libralogo} h={40} ml={264} mt={12} w={134} />
+					<Image src={Libralogo} h={60} ml={314} mt={12} w={224} />
 					<IconShoppingCart
 						width={40}
 						height={40}
-						style={{ marginTop: "20px", marginLeft: "204px" }}
+						style={{ marginTop: "20px", marginLeft: "244px" }}
 						color="#555459"
 					/>
 				</Group>

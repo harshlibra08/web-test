@@ -19,28 +19,48 @@ type Props = {};
 const Industries = (props: Props) => {
 	return (
 		<>
-			<Group wrap="nowrap" gap={0} mt={{ lg: 73, base: 56 }}>
+			<Group wrap="nowrap" gap={0} mt={{ lg: 73, base: 56, sm: 80 }}>
 				<Text
 					fw={600}
-					fz={{ base: 20, lg: 32 }}
-					ml={{ base: 16, lg: 114 }}
+					fz={{ base: 20, lg: 32, sm: 32 }}
+					ml={{ base: 16, lg: 114, sm: 144 }}
 					style={{ color: "#262728", lineHeight: "40px" }}
 				>
 					Industries We Serve
 				</Text>
 				<Divider size="sm" w={{ lg: 801 }} ml={{ lg: 16 }} visibleFrom="md" />
+				<Divider
+					size="sm"
+					w={{ lg: 801, sm: 356 }}
+					ml={{ lg: 16, sm: 14 }}
+					visibleFrom="xs"
+					hiddenFrom="md"
+				/>
 
 				{
 					<UnstyledButton visibleFrom="md" ml={32}>
 						View All
 					</UnstyledButton>
 				}
+				{
+					<UnstyledButton visibleFrom="xs" hiddenFrom="md" ml={15}>
+						View All
+					</UnstyledButton>
+				}
 			</Group>
-			<Paper w={{ base: 360, sm: 768, xl: 1400 }} mt={30}>
-				<SimpleGrid cols={{ base: 1, xl: 3 }} mt={{ lg: 30, base: 24 }} ml={{ lg: 114, base: 16 }}>
-					<Card w={{ lg: 391, base: 328 }}>
-						<Card.Section>
-							<Image src={Industries1} w={{ lg: 391, base: 328 }} h={{ lg: 391, base: 284 }} />
+			<Paper w={{ base: 360, sm: 1024, lg: 1440 }} mt={30}>
+				<SimpleGrid
+					cols={{ base: 1, sm: 1, lg: 3 }}
+					mt={{ lg: 30, base: 24, sm: 40 }}
+					ml={{ lg: 114, base: 16, sm: 144 }}
+				>
+					<Card w={{ lg: 391, base: 328, sm: 735 }}>
+						<Card.Section mt={{ lg: 30, base: 24, sm: 40 }}>
+							<Image
+								src={Industries1}
+								w={{ lg: 391, base: 328, sm: 735 }}
+								h={{ lg: 391, base: 284, sm: 449 }}
+							/>
 							<Text pt={16} fz={18} fw={600} c={"#262728"}>
 								Glass Manufacture
 							</Text>
@@ -57,9 +77,13 @@ const Industries = (props: Props) => {
 						</Card.Section>
 					</Card>
 
-					<Card w={{ sm: 391, base: 328 }}>
-						<Card.Section>
-							<Image src={Industries2} w={{ lg: 391, base: 328 }} h={{ lg: 391, base: 284 }} />
+					<Card w={{ lg: 391, base: 328, sm: 735 }}>
+						<Card.Section mt={{ lg: 30, base: 24, sm: 40 }}>
+							<Image
+								src={Industries2}
+								w={{ lg: 391, base: 328, sm: 735 }}
+								h={{ lg: 391, base: 284, sm: 449 }}
+							/>
 							<Text pt={16} fz={18} fw={600} c={"#262728"}>
 								Jewelry Manufacture
 							</Text>
@@ -76,9 +100,13 @@ const Industries = (props: Props) => {
 						</Card.Section>
 					</Card>
 
-					<Card w={{ sm: 391, base: 328 }}>
-						<Card.Section>
-							<Image src={Industries3} w={{ lg: 391, base: 328 }} h={{ lg: 391, base: 284 }} />
+					<Card w={{ lg: 391, base: 328, sm: 735 }}>
+						<Card.Section mt={{ lg: 30, base: 24, sm: 40 }}>
+							<Image
+								src={Industries3}
+								w={{ lg: 391, base: 328, sm: 735 }}
+								h={{ lg: 391, base: 284, sm: 449 }}
+							/>
 							<Text pt={16} fz={18} fw={600} c={"#262728"}>
 								Steel Plants
 							</Text>

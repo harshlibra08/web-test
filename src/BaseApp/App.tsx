@@ -11,7 +11,7 @@ import OurSpecialization from "../OurSpecialization/OurSpecialization";
 import World from "../World/World";
 import "@mantine/core/styles.css";
 import Testimonials from "../Testimonials";
-import Events from "../Events";
+// import Events from "../Events";
 import OurTeam from "../OurTeam";
 import OurGoals from "../OurGoals";
 import OurVision from "../OurVision";
@@ -155,7 +155,7 @@ function App() {
 			<World />
 			<Testimonials />
 			<OurProcess />
-			<Events />
+			{/* <Events /> */}
 			<OurTeam />
 			<OurGoals />
 			<OurVision />

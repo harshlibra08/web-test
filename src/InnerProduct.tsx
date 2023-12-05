@@ -24,7 +24,8 @@ import {
 import { IconSearch } from "@tabler/icons-react";
 import React, { useRef, useState } from "react";
 import Category from "./Assets/category.png";
-
+import GlassManufacturing from "./Assets/glass-manufacturing.png";
+import YellowMob from "../src/Assets/Rectangle yellow mob.png";
 import RectangleGreyLeft from "./Assets/Rectangle1027Grey.png";
 import Panel from "./Assets/panel.png";
 import PanelFront from "./Assets/panelfront1.png";
@@ -42,7 +43,7 @@ const InnerProduct = (props: Props) => {
 
 	return (
 		<>
-			<Paper w={{ base: 360, lg: 1440 }} h={{ base: 6855 }} pt={{ base: 30, lg: 100 }}>
+			<Paper w={{ base: 360, lg: 1440 }} h={{ base: 6855, lg: 5968 }} pt={{ base: 30, lg: 100 }}>
 				<Grid>
 					<Grid.Col span={{ base: 12, lg: 6 }}>
 						<Image
@@ -340,21 +341,19 @@ const InnerProduct = (props: Props) => {
 					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 1, lg: 2 }}>
 						<Image
 							src={InnerYellowBg}
-							bg={"white"}
-							w={{ base: 258, lg: 418 }}
+							w={{ base: 260, lg: 418 }}
 							h={{ base: 289, lg: 676 }}
 							pos={"absolute"}
-							ml={{ base: 102, lg: 215 }}
+							ml={{ base: 100, lg: 295 }}
 						/>
 
 						<Image
 							src={Category}
-							alt="Sample"
-							w={{ base: 328 }}
-							h={241}
+							w={{ base: 328, lg: 528 }}
+							h={{ base: 241, lg: 424 }}
 							pos={"absolute"}
-							mt={{ base: 24 }}
-							ml={{ base: 16, lg: 98 }}
+							ml={{ base: 16, lg: 154 }}
+							mt={{ base: 24, lg: 102 }}
 						/>
 					</Grid.Col>
 					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 2, lg: 1 }}>
@@ -363,20 +362,20 @@ const InnerProduct = (props: Props) => {
 							w={{ base: 328, lg: 598 }}
 							fw={600}
 							ml={{ base: 16, lg: 144 }}
-							mt={313}
+							mt={{ base: 313, lg: 99 }}
 							c={"#292929"}
 						>
 							Three Phase Thyristor Power Controller – POW-3-PA
 						</Text>
 
 						<Text
-							w={{ base: 328 }}
+							w={{ base: 328, lg: 664 }}
 							style={{ color: "#555459" }}
 							fz={{ base: 12, lg: 14 }}
 							fw={400}
 							mt={{ base: 12 }}
-							ml={{ base: 16, lg: 98 }}
-							lineClamp={5}
+							ml={{ base: 16, lg: 144 }}
+							// lineClamp={5}
 						>
 							Libratherm offers Microcontroller based multiple Ramp/Soak Programmable PID
 							Temperature Controller Model PRC-967 which is designed to improve reliability,
@@ -402,175 +401,263 @@ const InnerProduct = (props: Props) => {
 							Libratherm make single-phase/three-phase SCR based phase angle fired power
 							controllers, which are ideally suitable for both resistive and inductive heating load.
 						</Text>
-						<UnstyledButton ml={{ base: 16 }} mt={{ base: 16 }} c={"#555459"}>
+						<UnstyledButton ml={{ base: 16 }} mt={{ base: 16 }} c={"#555459"} hiddenFrom="xs">
 							<Text fz={{ base: 12, lg: 14 }}>Read More</Text>
 						</UnstyledButton>
 					</Grid.Col>
 				</Grid>
 
-				<Paper w={{ base: 360 }} bg={"#f1f1f1"} h={{ base: 716 }} mt={{ base: 36 }}>
-					<Text ta="center" c="#292929" fz={{ base: 16 }} fw={600} pt={36}>
+				<Paper
+					w={{ base: 360, lg: 1441 }}
+					bg={"#f1f1f1"}
+					h={{ base: 716, lg: 1038 }}
+					mt={{ base: 36, lg: 56 }}
+				>
+					<Text
+						ta="center"
+						c="#292929"
+						fz={{ base: 16, lg: 32 }}
+						fw={600}
+						pt={{ base: 36, lg: 69 }}
+					>
 						Compare the models
 					</Text>
 
 					<ScrollArea
-						w={{ base: 360 }}
-						h={{ base: 620 }}
+						w={{ base: 360, lg: 1440 }}
+						h={{ base: 620, lg: 820 }}
 						onScrollPositionChange={onScrollPositionChange}
 					>
-						<Group wrap="nowrap">
-							<Card bg={"#FFF"} w={156} h={{ base: 553 }} ml={{ base: 16 }} mt={20} radius={10}>
-								<Text w={132} fz={{ base: 12, lg: 14 }} c="#555459" fw={600}>
+						<Group wrap="nowrap" mt={{ lg: 89 }}>
+							<Card
+								bg={"#FFF"}
+								w={{ base: 156, lg: 273 }}
+								h={{ base: 553, lg: 709 }}
+								ml={{ base: 16, lg: 145 }}
+								mt={{ base: 20 }}
+								radius={10}
+							>
+								<Text
+									w={{ base: 132, lg: 249 }}
+									fz={{ base: 12, lg: 16 }}
+									c="#555459"
+									fw={700}
+									mt={{ lg: 24 }}
+									px={{ lg: 12 }}
+								>
 									Temperature Indicator – DPI-902
 								</Text>
-
-								<Image src={Panel} w={73} h={{ base: 93 }} mt={{ base: 16 }} ml={20} />
+								<Image
+									src={Panel}
+									w={{ base: 73, lg: 131 }}
+									h={{ base: 93, lg: 167 }}
+									mt={{ base: 16, lg: 32 }}
+									ml={{ base: 20, lg: 52 }}
+								/>{" "}
 								<Stack gap={8}>
-									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600} mt={22}>
+									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600} mt={32}>
 										Key Features
 									</Text>
-									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600}>
+									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600} mt={{ lg: 32 }}>
 										Design
 									</Text>
-									<Text c="#828282" fz={{ base: 10 }} fw={400} w={{ base: 140 }}>
+									<Text c="#828282" fz={{ base: 10, lg: 12 }} fw={400} w={{ base: 140, lg: 248 }}>
 										Microcontroller based with 12 bit ADC and dual 12 bit DAC
 									</Text>
 									<Divider></Divider>
 									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600}>
 										Input
 									</Text>
-									<Text c="#828282" fz={{ base: 10 }} fw={400} w={{ base: 140 }}>
+									<Text c="#828282" fz={{ base: 10, lg: 12 }} fw={400} w={{ base: 140, lg: 248 }}>
 										Microcontroller based with 12 bit ADC
 									</Text>
 									<Divider></Divider>
 									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600}>
 										Range
 									</Text>
-									<Text c="#828282" fz={{ base: 10 }} fw={400} w={{ base: 140 }}>
+									<Text c="#828282" fz={{ base: 10, lg: 12 }} fw={400} w={{ base: 140, lg: 248 }}>
 										Microcontroller based with 12 bit ADC and dual 12 bit DAC
 									</Text>
 									<Divider></Divider>
 									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600}>
 										Resolution
 									</Text>
-									<Text c="#828282" fz={{ base: 10 }} fw={400} w={{ base: 140 }}>
+									<Text c="#828282" fz={{ base: 10, lg: 12 }} fw={400} w={{ base: 140, lg: 248 }}>
 										Microcontroller based with 12 bit ADC and dual 12 bit DAC
 									</Text>
 								</Stack>
 							</Card>
-							<Card bg={"#FFF"} w={156} h={{ base: 553 }} ml={{ base: 16 }} mt={20} radius={10}>
-								<Text w={132} fz={{ base: 12, lg: 14 }} c="#555459" fw={600}>
+							<Card
+								bg={"#FFF"}
+								w={{ base: 156, lg: 273 }}
+								h={{ base: 553, lg: 709 }}
+								ml={{ base: 16 }}
+								mt={20}
+								radius={10}
+							>
+								<Text
+									w={{ base: 132, lg: 249 }}
+									fz={{ base: 12, lg: 16 }}
+									c="#555459"
+									fw={700}
+									mt={{ lg: 24 }}
+									px={{ lg: 12 }}
+								>
 									Temperature Indicator – DPI-902
 								</Text>
-
-								<Image src={Panel} w={73} h={{ base: 93 }} mt={{ base: 16 }} ml={20} />
+								<Image
+									src={Panel}
+									w={{ base: 73, lg: 131 }}
+									h={{ base: 93, lg: 167 }}
+									mt={{ base: 16, lg: 32 }}
+									ml={{ base: 20, lg: 52 }}
+								/>{" "}
 								<Stack gap={8}>
-									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600} mt={22}>
+									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600} mt={32}>
 										Key Features
 									</Text>
-									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600}>
+									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600} mt={{ lg: 32 }}>
 										Design
 									</Text>
-									<Text c="#828282" fz={{ base: 10 }} fw={400} w={{ base: 140 }}>
+									<Text c="#828282" fz={{ base: 10, lg: 12 }} fw={400} w={{ base: 140, lg: 248 }}>
 										Microcontroller based with 12 bit ADC and dual 12 bit DAC
 									</Text>
 									<Divider></Divider>
 									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600}>
 										Input
 									</Text>
-									<Text c="#828282" fz={{ base: 10 }} fw={400} w={{ base: 140 }}>
+									<Text c="#828282" fz={{ base: 10, lg: 12 }} fw={400} w={{ base: 140, lg: 248 }}>
 										Microcontroller based with 12 bit ADC
 									</Text>
 									<Divider></Divider>
 									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600}>
 										Range
 									</Text>
-									<Text c="#828282" fz={{ base: 10 }} fw={400} w={{ base: 140 }}>
+									<Text c="#828282" fz={{ base: 10, lg: 12 }} fw={400} w={{ base: 140, lg: 248 }}>
 										Microcontroller based with 12 bit ADC and dual 12 bit DAC
 									</Text>
 									<Divider></Divider>
 									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600}>
 										Resolution
 									</Text>
-									<Text c="#828282" fz={{ base: 10 }} fw={400} w={{ base: 140 }}>
+									<Text c="#828282" fz={{ base: 10, lg: 12 }} fw={400} w={{ base: 140, lg: 248 }}>
 										Microcontroller based with 12 bit ADC and dual 12 bit DAC
 									</Text>
 								</Stack>
 							</Card>
-							<Card bg={"#FFF"} w={156} h={{ base: 553 }} ml={{ base: 16 }} mt={20} radius={10}>
-								<Text w={132} fz={{ base: 12, lg: 14 }} c="#555459" fw={600}>
+							<Card
+								bg={"#FFF"}
+								w={{ base: 156, lg: 273 }}
+								h={{ base: 553, lg: 709 }}
+								ml={{ base: 16 }}
+								mt={20}
+								radius={10}
+							>
+								<Text
+									w={{ base: 132, lg: 249 }}
+									fz={{ base: 12, lg: 16 }}
+									c="#555459"
+									fw={700}
+									mt={{ lg: 24 }}
+									px={{ lg: 12 }}
+								>
 									Temperature Indicator – DPI-902
 								</Text>
-
-								<Image src={Panel} w={73} h={{ base: 93 }} mt={{ base: 16 }} ml={20} />
+								<Image
+									src={Panel}
+									w={{ base: 73, lg: 131 }}
+									h={{ base: 93, lg: 167 }}
+									mt={{ base: 16, lg: 32 }}
+									ml={{ base: 20, lg: 52 }}
+								/>{" "}
 								<Stack gap={8}>
-									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600} mt={22}>
+									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600} mt={32}>
 										Key Features
 									</Text>
-									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600}>
+									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600} mt={{ lg: 32 }}>
 										Design
 									</Text>
-									<Text c="#828282" fz={{ base: 10 }} fw={400} w={{ base: 140 }}>
+									<Text c="#828282" fz={{ base: 10, lg: 12 }} fw={400} w={{ base: 140, lg: 248 }}>
 										Microcontroller based with 12 bit ADC and dual 12 bit DAC
 									</Text>
 									<Divider></Divider>
 									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600}>
 										Input
 									</Text>
-									<Text c="#828282" fz={{ base: 10 }} fw={400} w={{ base: 140 }}>
+									<Text c="#828282" fz={{ base: 10, lg: 12 }} fw={400} w={{ base: 140, lg: 248 }}>
 										Microcontroller based with 12 bit ADC
 									</Text>
 									<Divider></Divider>
 									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600}>
 										Range
 									</Text>
-									<Text c="#828282" fz={{ base: 10 }} fw={400} w={{ base: 140 }}>
+									<Text c="#828282" fz={{ base: 10, lg: 12 }} fw={400} w={{ base: 140, lg: 248 }}>
 										Microcontroller based with 12 bit ADC and dual 12 bit DAC
 									</Text>
 									<Divider></Divider>
 									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600}>
 										Resolution
 									</Text>
-									<Text c="#828282" fz={{ base: 10 }} fw={400} w={{ base: 140 }}>
+									<Text c="#828282" fz={{ base: 10, lg: 12 }} fw={400} w={{ base: 140, lg: 248 }}>
 										Microcontroller based with 12 bit ADC and dual 12 bit DAC
 									</Text>
 								</Stack>
 							</Card>
-							<Card bg={"#FFF"} w={156} h={{ base: 553 }} ml={{ base: 16 }} mt={20} radius={10}>
-								<Text w={132} fz={{ base: 12, lg: 14 }} c="#555459" fw={600}>
+							<Card
+								bg={"#FFF"}
+								w={{ base: 156, lg: 273 }}
+								h={{ base: 553, lg: 709 }}
+								ml={{ base: 16 }}
+								mt={20}
+								radius={10}
+							>
+								<Text
+									w={{ base: 132, lg: 249 }}
+									fz={{ base: 12, lg: 16 }}
+									c="#555459"
+									fw={700}
+									mt={{ lg: 24 }}
+									px={{ lg: 12 }}
+								>
 									Temperature Indicator – DPI-902
 								</Text>
 
-								<Image src={Panel} w={73} h={{ base: 93 }} mt={{ base: 16 }} ml={20} />
+								<Image
+									src={Panel}
+									w={{ base: 73, lg: 131 }}
+									h={{ base: 93, lg: 167 }}
+									mt={{ base: 16, lg: 32 }}
+									ml={{ base: 20, lg: 52 }}
+								/>
 								<Stack gap={8}>
-									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600} mt={22}>
+									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600} mt={32}>
 										Key Features
 									</Text>
-									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600}>
+									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600} mt={{ lg: 32 }}>
 										Design
 									</Text>
-									<Text c="#828282" fz={{ base: 10 }} fw={400} w={{ base: 140 }}>
+									<Text c="#828282" fz={{ base: 10, lg: 12 }} fw={400} w={{ base: 140, lg: 248 }}>
 										Microcontroller based with 12 bit ADC and dual 12 bit DAC
 									</Text>
 									<Divider></Divider>
 									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600}>
 										Input
 									</Text>
-									<Text c="#828282" fz={{ base: 10 }} fw={400} w={{ base: 140 }}>
+									<Text c="#828282" fz={{ base: 10, lg: 12 }} fw={400} w={{ base: 140, lg: 248 }}>
 										Microcontroller based with 12 bit ADC
 									</Text>
 									<Divider></Divider>
 									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600}>
 										Range
 									</Text>
-									<Text c="#828282" fz={{ base: 10 }} fw={400} w={{ base: 140 }}>
+									<Text c="#828282" fz={{ base: 10, lg: 12 }} fw={400} w={{ base: 140, lg: 248 }}>
 										Microcontroller based with 12 bit ADC and dual 12 bit DAC
 									</Text>
 									<Divider></Divider>
 									<Text c="#555459" fz={{ base: 12, lg: 14 }} fw={600}>
 										Resolution
 									</Text>
-									<Text c="#828282" fz={{ base: 10 }} fw={400} w={{ base: 140 }}>
+									<Text c="#828282" fz={{ base: 10, lg: 12 }} fw={400} w={{ base: 140, lg: 248 }}>
 										Microcontroller based with 12 bit ADC and dual 12 bit DAC
 									</Text>
 								</Stack>
@@ -579,7 +666,7 @@ const InnerProduct = (props: Props) => {
 					</ScrollArea>
 				</Paper>
 
-				<Paper w={{ base: 360 }} h={864} hiddenFrom="xs">
+				<Paper w={{ base: 360 }} h={633} hiddenFrom="xs">
 					<Text c="#292929" size="xl" fw={600} ta="center" pt={81}>
 						Recently Viewed
 					</Text>
@@ -599,8 +686,67 @@ const InnerProduct = (props: Props) => {
 						</Card>
 					</Group>
 				</Paper>
+				<Paper w={1440} h={691} visibleFrom="md">
+					<Text c="#292929" fz={32} fw={600} mt={81} ta={"center"}>
+						Related Products
+					</Text>
+					<Group wrap="nowrap" ta="center" mx={144} gap={20}>
+						<Card h={440} w={273} mt={32} bg={"#f7f7f7"}>
+							<Text ta="left" fz={{ base: 14 }} c="#555459" fw={700}>
+								Three Phase Thyristor Power Controller – POW-3-PA
+							</Text>
+							<Image src={Panel} w={131} h={166} mt={32} ml={55} />
+							<Text ta="center" fz={20} fw={400} c="#414141" mt={34}>
+								₹12,600 – ₹14,700
+							</Text>
+							<Stack gap="xs" align="stretch" py={15}>
+								<OptionsButton>Select Options</OptionsButton>
+								<PrimaryButton>ADD TO WISHLIST</PrimaryButton>
+							</Stack>
+						</Card>
+						<Card h={440} w={273} mt={32} bg={"#f7f7f7"}>
+							<Text ta="left" fz={{ base: 14 }} c="#555459" fw={700}>
+								Three Phase Thyristor Power Controller – POW-3-PA
+							</Text>
+							<Image src={Panel} w={131} h={166} mt={32} ml={55} />
+							<Text ta="center" fz={20} fw={400} c="#414141" mt={34}>
+								₹12,600 – ₹14,700
+							</Text>
+							<Stack gap="xs" align="stretch" py={15}>
+								<OptionsButton>Select Options</OptionsButton>
+								<PrimaryButton>ADD TO WISHLIST</PrimaryButton>
+							</Stack>
+						</Card>
+						<Card h={440} w={273} mt={32} bg={"#f7f7f7"}>
+							<Text ta="left" fz={{ base: 14 }} c="#555459" fw={700}>
+								Three Phase Thyristor Power Controller – POW-3-PA
+							</Text>
+							<Image src={Panel} w={131} h={166} mt={32} ml={55} />
+							<Text ta="center" fz={20} fw={400} c="#414141" mt={34}>
+								₹12,600 – ₹14,700
+							</Text>
+							<Stack gap="xs" align="stretch" py={15}>
+								<OptionsButton>Select Options</OptionsButton>
+								<PrimaryButton>ADD TO WISHLIST</PrimaryButton>
+							</Stack>
+						</Card>
+						<Card h={440} w={273} mt={32} bg={"#f7f7f7"}>
+							<Text ta="left" fz={{ base: 14 }} c="#555459" fw={700}>
+								Three Phase Thyristor Power Controller – POW-3-PA
+							</Text>
+							<Image src={Panel} w={131} h={166} mt={32} ml={55} />
+							<Text ta="center" fz={20} fw={400} c="#414141" mt={34}>
+								₹12,600 – ₹14,700
+							</Text>
+							<Stack gap="xs" align="stretch" py={15}>
+								<OptionsButton>Select Options</OptionsButton>
+								<PrimaryButton>ADD TO WISHLIST</PrimaryButton>
+							</Stack>
+						</Card>
+					</Group>
+				</Paper>
 
-				<Paper w={{ base: 360 }} mt={{ base: 50 }}>
+				<Paper w={{ base: 360, lg: 1440 }} mt={{ base: 150, lg: 45 }} hiddenFrom="xs">
 					<Tabs c={"#555459"} ml={{ base: 16 }} defaultValue={"spec"}>
 						<Tabs.List h={{ base: 63 }}>
 							<Tabs.Tab value="desc">
@@ -622,10 +768,19 @@ const InnerProduct = (props: Props) => {
 					</Tabs>
 				</Paper>
 
-				<Table w={{ base: 360 }} withRowBorders={false}>
+				<Text fz={24} ml={144} mt={45} fw={600} visibleFrom="md">
+					Specifications
+				</Text>
+				<Table
+					w={{ base: 360, lg: 1152 }}
+					withRowBorders={false}
+					ml={{ base: 16, lg: 144 }}
+					verticalSpacing={"md"}
+					mt={{ lg: 34 }}
+				>
 					<Table.Thead>
 						<Table.Tr>
-							<Table.Th fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600} w={139}>
+							<Table.Th fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600} w={{ base: 139, lg: 239 }}>
 								Paramenters
 							</Table.Th>
 							<Table.Th fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
@@ -727,7 +882,7 @@ const InnerProduct = (props: Props) => {
 					</Table.Tbody>
 				</Table>
 
-				<Paper w={{ base: 360 }} mt={{ base: 50 }}>
+				<Paper w={{ base: 360 }} mt={{ base: 50 }} hiddenFrom="xs">
 					<Tabs c={"#555459"} ml={{ base: 16 }} defaultValue={"i/o"}>
 						<Tabs.List h={{ base: 63 }}>
 							<Tabs.Tab value="desc">
@@ -748,7 +903,9 @@ const InnerProduct = (props: Props) => {
 						</Tabs.List>
 					</Tabs>
 				</Paper>
+
 				<Autocomplete
+					hiddenFrom="xs"
 					ml={{ base: 16, lg: 98 }}
 					placeholder="Search for order Info"
 					leftSection={<IconSearch size="20px" stroke={1.5} color="#555459" />}
@@ -764,136 +921,120 @@ const InnerProduct = (props: Props) => {
 						},
 					}}
 				/>
-				<Table ml={{ base: 16 }} mt={{ base: 12 }} w={{ base: 328 }}>
+				<Group visibleFrom="md">
+					<Text fz={24} w={319} ml={144} mt={45} fw={600}>
+						Ordering Information
+					</Text>
+					<Autocomplete
+						placeholder="Search for order Info"
+						leftSection={<IconSearch size="20px" stroke={1.5} color="#555459" />}
+						data={[]}
+						mt={45}
+						ml={631}
+						radius={32}
+						w={202}
+						h={36}
+						styles={{
+							input: {
+								backgroundColor: "#F0F0F0",
+								border: "none",
+							},
+						}}
+					/>
+				</Group>
+
+				<Table
+					ml={{ base: 16, lg: 144 }}
+					mt={{ base: 12, lg: 29 }}
+					w={{ base: 328, lg: 1152 }}
+					striped
+					withTableBorder
+					withColumnBorders
+					verticalSpacing={"lg"}
+				>
 					<Table.Thead>
 						<Table.Tr>
-							<Table.Th c={"#555459"} fw={400} fz={{ base: 12, lg: 14 }}>
+							<Table.Th c={"#555459"} fw={400} fz={{ base: 12, lg: 14 }} ta={"center"}>
 								Type
 							</Table.Th>
 							<Table.Th c={"#555459"} fw={600} fz={{ base: 12, lg: 14 }}>
-								A0
+								Specifications
+							</Table.Th>
+							<Table.Th c={"#555459"} fw={600} fz={{ base: 12, lg: 14 }} ta={"center"}>
+								Part No.{" "}
 							</Table.Th>
 						</Table.Tr>
 					</Table.Thead>
 					<Table.Tbody>
 						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Specifications
+							<Table.Td fz={12} c={"#555459"} fw={600} ta={"center"}>
+								A0
 							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
+							<Table.Td fz={12} fw={400} c={"#828282"} w={{ lg: 877 }}>
 								Input from R, S, B t/c with (SSR + 0-5V or (4-20)mA) control output + High or Low
 								and End of Profile Relay outputs.For High Temperature Furnace control (up to 1700
 								°C).
 							</Table.Td>
-						</Table.Tr>
-						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Part No.
-							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
+							<Table.Td fz={12} fw={400} c={"#828282"} ta={"center"}>
 								1703-1
 							</Table.Td>
 						</Table.Tr>
-					</Table.Tbody>
-				</Table>
-				<Table ml={{ base: 16 }} mt={{ base: 12 }} w={{ base: 328 }} bg={"#f7f7f7"}>
-					<Table.Thead>
 						<Table.Tr>
-							<Table.Th c={"#555459"} fw={400} fz={{ base: 12, lg: 14 }}>
-								Type
-							</Table.Th>
-							<Table.Th c={"#555459"} fw={600} fz={{ base: 12, lg: 14 }}>
+							<Table.Td fz={12} c={"#555459"} fw={600} ta={"center"}>
 								A0
-							</Table.Th>
-						</Table.Tr>
-					</Table.Thead>
-					<Table.Tbody>
-						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Specifications
 							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
+							<Table.Td fz={12} fw={400} c={"#828282"} w={{ lg: 877 }}>
 								Input from R, S, B t/c with (SSR + 0-5V or (4-20)mA) control output + High or Low
 								and End of Profile Relay outputs.For High Temperature Furnace control (up to 1700
 								°C).
 							</Table.Td>
-						</Table.Tr>
-						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Part No.
-							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
+							<Table.Td fz={12} fw={400} c={"#828282"} ta={"center"}>
 								1703-1
 							</Table.Td>
 						</Table.Tr>
-					</Table.Tbody>
-				</Table>
-				<Table ml={{ base: 16 }} mt={{ base: 12 }} w={{ base: 328 }}>
-					<Table.Thead>
 						<Table.Tr>
-							<Table.Th c={"#555459"} fw={400} fz={{ base: 12, lg: 14 }}>
-								Type
-							</Table.Th>
-							<Table.Th c={"#555459"} fw={600} fz={{ base: 12, lg: 14 }}>
+							<Table.Td fz={12} c={"#555459"} fw={600} ta={"center"}>
 								A0
-							</Table.Th>
-						</Table.Tr>
-					</Table.Thead>
-					<Table.Tbody>
-						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Specifications
 							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
+							<Table.Td fz={12} fw={400} c={"#828282"} w={{ lg: 877 }}>
 								Input from R, S, B t/c with (SSR + 0-5V or (4-20)mA) control output + High or Low
 								and End of Profile Relay outputs.For High Temperature Furnace control (up to 1700
 								°C).
 							</Table.Td>
-						</Table.Tr>
-						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Part No.
-							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
+							<Table.Td fz={12} fw={400} c={"#828282"} ta={"center"}>
 								1703-1
 							</Table.Td>
 						</Table.Tr>
-					</Table.Tbody>
-				</Table>
-				<Table ml={{ base: 16 }} mt={{ base: 12 }} w={{ base: 328 }} bg={"#f7f7f7"}>
-					<Table.Thead>
 						<Table.Tr>
-							<Table.Th c={"#555459"} fw={400} fz={{ base: 12, lg: 14 }}>
-								Type
-							</Table.Th>
-							<Table.Th c={"#555459"} fw={600} fz={{ base: 12, lg: 14 }}>
+							<Table.Td fz={12} c={"#555459"} fw={600} ta={"center"}>
 								A0
-							</Table.Th>
-						</Table.Tr>
-					</Table.Thead>
-					<Table.Tbody>
-						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Specifications
 							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
+							<Table.Td fz={12} fw={400} c={"#828282"} w={{ lg: 877 }}>
 								Input from R, S, B t/c with (SSR + 0-5V or (4-20)mA) control output + High or Low
 								and End of Profile Relay outputs.For High Temperature Furnace control (up to 1700
 								°C).
 							</Table.Td>
+							<Table.Td fz={12} fw={400} c={"#828282"} ta={"center"}>
+								1703-1
+							</Table.Td>
 						</Table.Tr>
 						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Part No.
+							<Table.Td fz={12} c={"#555459"} fw={600} ta={"center"}>
+								A0
 							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
+							<Table.Td fz={12} fw={400} c={"#828282"} w={{ lg: 877 }}>
+								Input from R, S, B t/c with (SSR + 0-5V or (4-20)mA) control output + High or Low
+								and End of Profile Relay outputs.For High Temperature Furnace control (up to 1700
+								°C).
+							</Table.Td>
+							<Table.Td fz={12} fw={400} c={"#828282"} ta={"center"}>
 								1703-1
 							</Table.Td>
 						</Table.Tr>
 					</Table.Tbody>
 				</Table>
 
-				<Paper w={{ base: 360 }} mt={{ base: 50 }}>
+				<Paper w={{ base: 360 }} mt={{ base: 50 }} hiddenFrom="xs">
 					<Tabs c={"#555459"} ml={{ base: 16 }} defaultValue={"i/o"}>
 						<Tabs.List h={{ base: 63 }}>
 							<Tabs.Tab value="desc">
@@ -915,6 +1056,7 @@ const InnerProduct = (props: Props) => {
 					</Tabs>
 				</Paper>
 				<Autocomplete
+					hiddenFrom="xs"
 					ml={{ base: 16, lg: 98 }}
 					placeholder="Search for input and output"
 					leftSection={<IconSearch size="20px" stroke={1.5} color="#555459" />}
@@ -930,182 +1072,115 @@ const InnerProduct = (props: Props) => {
 						},
 					}}
 				/>
-				<Table ml={{ base: 16 }} mt={{ base: 12 }} w={{ base: 328 }}>
+
+				<Group visibleFrom="md">
+					<Text fz={24} w={319} ml={144} mt={105} fw={600}>
+						Input and Output Range
+					</Text>
+					<Autocomplete
+						placeholder="Search for technical Info"
+						leftSection={<IconSearch size="20px" stroke={1.5} color="#555459" />}
+						data={[]}
+						mt={105}
+						ml={611}
+						radius={32}
+						w={222}
+						h={36}
+						styles={{
+							input: {
+								backgroundColor: "#F0F0F0",
+								border: "none",
+							},
+						}}
+					/>
+				</Group>
+				<Table
+					ml={{ base: 16, lg: 144 }}
+					mt={{ base: 12, lg: 29 }}
+					w={{ base: 328, lg: 1152 }}
+					withTableBorder
+					withColumnBorders
+					striped
+					verticalSpacing={"lg"}
+				>
 					<Table.Thead>
 						<Table.Tr>
-							<Table.Th c={"#555459"} fw={400} fz={{ base: 12, lg: 14 }}>
+							<Table.Th c={"#555459"} fw={400} fz={{ base: 12, lg: 14 }} ta={"center"}>
 								Type
 							</Table.Th>
-							<Table.Th c={"#555459"} fw={600} fz={{ base: 12, lg: 14 }}>
-								A0
+							<Table.Th c={"#555459"} fw={600} fz={{ base: 12, lg: 14 }} w={{ lg: 924 }}>
+								Input
+							</Table.Th>
+							<Table.Th c={"#555459"} fw={600} fz={{ base: 12, lg: 14 }} ta={"center"}>
+								Range (°C)
 							</Table.Th>
 						</Table.Tr>
 					</Table.Thead>
 					<Table.Tbody>
 						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Input
-							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
-								User selectable K,R,S,B,
-							</Table.Td>
-						</Table.Tr>
-						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Range (°C)
-							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
-								1703-1
-							</Table.Td>
-						</Table.Tr>
-					</Table.Tbody>
-				</Table>
-				<Table ml={{ base: 16 }} mt={{ base: 12 }} w={{ base: 328 }} bg={"#f7f7f7"}>
-					<Table.Thead>
-						<Table.Tr>
-							<Table.Th c={"#555459"} fw={400} fz={{ base: 12, lg: 14 }}>
-								Type
-							</Table.Th>
-							<Table.Th c={"#555459"} fw={600} fz={{ base: 12, lg: 14 }}>
+							<Table.Td fz={12} c={"#555459"} fw={600} ta={"center"}>
 								A0
-							</Table.Th>
-						</Table.Tr>
-					</Table.Thead>
-					<Table.Tbody>
-						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Input
 							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
+							<Table.Td fz={12} fw={400} c={"#828282"}>
 								User selectable K,R,S,B,
 							</Table.Td>
-						</Table.Tr>
-						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Range (°C)
-							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
-								1703-1
+							<Table.Td fz={12} fw={400} c={"#828282"} ta={"center"}>
+								0 to 1372{" "}
 							</Table.Td>
 						</Table.Tr>
-					</Table.Tbody>
-				</Table>
-				<Table ml={{ base: 16 }} mt={{ base: 12 }} w={{ base: 328 }}>
-					<Table.Thead>
 						<Table.Tr>
-							<Table.Th c={"#555459"} fw={400} fz={{ base: 12, lg: 14 }}>
-								Type
-							</Table.Th>
-							<Table.Th c={"#555459"} fw={600} fz={{ base: 12, lg: 14 }}>
+							<Table.Td fz={12} c={"#555459"} fw={600} ta={"center"}>
 								A0
-							</Table.Th>
-						</Table.Tr>
-					</Table.Thead>
-					<Table.Tbody>
-						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Input
 							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
+							<Table.Td fz={12} fw={400} c={"#828282"}>
 								User selectable K,R,S,B,
 							</Table.Td>
-						</Table.Tr>
-						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Range (°C)
-							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
-								1703-1
+							<Table.Td fz={12} fw={400} c={"#828282"} ta={"center"}>
+								0 to 1372{" "}
 							</Table.Td>
 						</Table.Tr>
-					</Table.Tbody>
-				</Table>
-				<Table ml={{ base: 16 }} mt={{ base: 12 }} w={{ base: 328 }} bg={"#f7f7f7"}>
-					<Table.Thead>
 						<Table.Tr>
-							<Table.Th c={"#555459"} fw={400} fz={{ base: 12, lg: 14 }}>
-								Type
-							</Table.Th>
-							<Table.Th c={"#555459"} fw={600} fz={{ base: 12, lg: 14 }}>
+							<Table.Td fz={12} c={"#555459"} fw={600} ta={"center"}>
 								A0
-							</Table.Th>
-						</Table.Tr>
-					</Table.Thead>
-					<Table.Tbody>
-						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Input
 							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
+							<Table.Td fz={12} fw={400} c={"#828282"}>
 								User selectable K,R,S,B,
 							</Table.Td>
-						</Table.Tr>
-						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Range (°C)
-							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
-								1703-1
+							<Table.Td fz={12} fw={400} c={"#828282"} ta={"center"}>
+								0 to 1372{" "}
 							</Table.Td>
 						</Table.Tr>
-					</Table.Tbody>
-				</Table>
-				<Table ml={{ base: 16 }} mt={{ base: 12 }} w={{ base: 328 }}>
-					<Table.Thead>
 						<Table.Tr>
-							<Table.Th c={"#555459"} fw={400} fz={{ base: 12, lg: 14 }}>
-								Type
-							</Table.Th>
-							<Table.Th c={"#555459"} fw={600} fz={{ base: 12, lg: 14 }}>
+							<Table.Td fz={12} c={"#555459"} fw={600} ta={"center"}>
 								A0
-							</Table.Th>
-						</Table.Tr>
-					</Table.Thead>
-					<Table.Tbody>
-						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Input
 							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
+							<Table.Td fz={12} fw={400} c={"#828282"}>
 								User selectable K,R,S,B,
 							</Table.Td>
-						</Table.Tr>
-						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Range (°C)
-							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
-								1703-1
+							<Table.Td fz={12} fw={400} c={"#828282"} ta={"center"}>
+								0 to 1372{" "}
 							</Table.Td>
 						</Table.Tr>
-					</Table.Tbody>
-				</Table>
-				<Table ml={{ base: 16 }} mt={{ base: 12 }} w={{ base: 328 }} bg={"#f7f7f7"}>
-					<Table.Thead>
 						<Table.Tr>
-							<Table.Th c={"#555459"} fw={400} fz={{ base: 12, lg: 14 }}>
-								Type
-							</Table.Th>
-							<Table.Th c={"#555459"} fw={600} fz={{ base: 12, lg: 14 }}>
+							<Table.Td fz={12} c={"#555459"} fw={600} ta={"center"}>
 								A0
-							</Table.Th>
-						</Table.Tr>
-					</Table.Thead>
-					<Table.Tbody>
-						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Input
 							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
+							<Table.Td fz={12} fw={400} c={"#828282"}>
 								User selectable K,R,S,B,
 							</Table.Td>
+							<Table.Td fz={12} fw={400} c={"#828282"} ta={"center"}>
+								0 to 1372{" "}
+							</Table.Td>
 						</Table.Tr>
 						<Table.Tr>
-							<Table.Td fz={{ base: 12, lg: 14 }} c={"#555459"} fw={600}>
-								Range (°C)
+							<Table.Td fz={12} c={"#555459"} fw={600} ta={"center"}>
+								A0
 							</Table.Td>
-							<Table.Td fz={{ base: 12, lg: 14 }} fw={400} c={"#828282"}>
-								1703-1
+							<Table.Td fz={12} fw={400} c={"#828282"}>
+								User selectable K,R,S,B,
+							</Table.Td>
+							<Table.Td fz={12} fw={400} c={"#828282"} ta={"center"}>
+								0 to 1372{" "}
 							</Table.Td>
 						</Table.Tr>
 					</Table.Tbody>

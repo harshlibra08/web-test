@@ -23,71 +23,57 @@ type Props = {};
 const JournalFour = (props: Props) => {
 	return (
 		<>
-			<Paper w={{ base: 360, lg: 1440 }} h={2600} bg={"black"} mt={30}>
+			<Paper w={{ base: 360, lg: 1440, sm: 1024 }} h={2600} bg={"black"} mt={30}>
 				<Stack>
 					<Text
-						fz={{ base: 20, lg: 32 }}
-						mt={{ base: 40, lg: 91 }}
-						ml={{ base: 16, lg: 114 }}
+						fz={{ base: 20, lg: 32, sm: 32 }}
+						mt={{ base: 40, lg: 91, sm: 59 }}
+						ml={{ base: 16, lg: 114, sm: 144 }}
 						c={"#F6F6F6"}
 					>
 						Services
 					</Text>
-					<Divider size="xs" w={{ base: 328, lg: 1212 }} ml={{ base: 16, lg: 114 }} />
+					<Divider
+						size="xs"
+						w={{ base: 328, lg: 1212, sm: 736 }}
+						ml={{ base: 16, lg: 114, sm: 144 }}
+					/>
 				</Stack>
 				<Tabs
 					color="rgba(255, 255, 255, 1)"
 					defaultValue="Data"
-					ml={{ base: 16, lg: 114 }}
-					maw={{ base: 360, lg: 1212 }}
+					ml={{ base: 16, lg: 114, sm: 147 }}
+					maw={{ base: 360, lg: 1212, sm: 736 }}
 				>
-					<Tabs.List hiddenFrom="xs">
+					<Tabs.List>
 						<Tabs.Tab value="Data">
-							<Text fz={{ base: 9 }} c={"#FFF"} ta={"center"}>
-								Data Acquisition <br />
-								Software
-							</Text>
-						</Tabs.Tab>
-						<Tabs.Tab value="IOT">
-							<Text fz={{ base: 9 }} c={"#FFF"} ta={"center"}>
-								IoT (Internet <br /> of Things)
-							</Text>
-						</Tabs.Tab>
-						<Tabs.Tab value="pwht">
-							<Text fz={{ base: 9 }} c={"#FFF"} ta={"center"}>
-								Post Weld Heat <br /> Treatment (PWHT) Vision
-							</Text>
-						</Tabs.Tab>
-					</Tabs.List>
-					<Tabs.List visibleFrom="md">
-						<Tabs.Tab value="Data">
-							<Text fz={{ base: 9, lg: 14 }} c={"#FFF"} ta={"center"}>
+							<Text fz={{ base: 9, sm: 14, lg: 14 }} c={"#FFF"} ta={"center"}>
 								Data Acquisition Software
 							</Text>
 						</Tabs.Tab>
 						<Tabs.Tab value="IOT">
-							<Text fz={{ base: 9, lg: 14 }} c={"#FFF"} ta={"center"}>
+							<Text fz={{ base: 9, sm: 14, lg: 14 }} c={"#FFF"} ta={"center"}>
 								IoT (Internet of Things)
 							</Text>
 						</Tabs.Tab>
 						<Tabs.Tab value="pwht">
-							<Text fz={{ base: 9, lg: 14 }} c={"#FFF"} ta={"center"}>
+							<Text fz={{ base: 9, sm: 14, lg: 14 }} c={"#FFF"} ta={"center"}>
 								Post Weld Heat Treatment (PWHT) Vision
 							</Text>
 						</Tabs.Tab>
 					</Tabs.List>
 				</Tabs>
-				<Text c={"#f6f6f6"} ta="center" fz={{ base: 14, lg: 32 }} pt={{ base: 64 }}>
+				<Text c={"#f6f6f6"} ta="center" fz={{ base: 14, lg: 32, sm: 28 }} pt={{ base: 64 }}>
 					Data Acquisition Software (DAQ)
 				</Text>
 
 				<Text
-					ml={{ base: 16, lg: 217 }}
+					ml={{ base: 16, lg: 217, sm: 144 }}
 					c={"#e4e8ed"}
 					ta="left"
 					fz={{ base: 12 }}
 					mt={16}
-					w={{ base: 328, lg: 1006 }}
+					w={{ base: 328, lg: 1006, sm: 736 }}
 					fw={400}
 				>
 					Libratherm offers Data Acquisition Software - which uploads the stored data from
@@ -96,27 +82,27 @@ const JournalFour = (props: Props) => {
 					logging.
 				</Text>
 				<Image
-					ml={{ base: 17, lg: 319 }}
 					src={DAQ}
-					w={{ base: 326, lg: 802 }}
-					h={{ base: 203, lg: 501 }}
-					mt={{ base: 24, lg: 64 }}
+					ml={{ base: 17, lg: 319, sm: 322 }}
+					w={{ base: 326, lg: 802, sm: 380 }}
+					h={{ base: 203, lg: 501, sm: 210 }}
+					mt={{ base: 24, lg: 64, sm: 80 }}
 				/>
 
 				<Text
-					ml={{ base: 16, lg: 217 }}
+					ml={{ base: 16, lg: 217, sm: 144 }}
 					c={"#f6f6f6"}
-					fz={{ base: 14, lg: 24 }}
-					mt={{ base: 40, lg: 128 }}
+					fz={{ base: 14, lg: 24, sm: 24 }}
+					mt={{ base: 40, lg: 128, sm: 80 }}
 				>
 					Salient Features of the Standard Software
 				</Text>
 				<Text
-					ml={{ base: 16, lg: 217 }}
+					ml={{ base: 16, lg: 217, sm: 144 }}
 					c={"#e4e8ed"}
-					fz={{ base: 12, lg: 16 }}
-					mt={{ base: 24, lg: 32 }}
-					w={{ base: 327, lg: 1006 }}
+					fz={{ base: 12, lg: 16, sm: 14 }}
+					mt={{ base: 24, lg: 32, sm: 24 }}
+					w={{ base: 327, lg: 1006, sm: 736 }}
 					fw={400}
 				>
 					<li>
@@ -176,90 +162,21 @@ const JournalFour = (props: Props) => {
 					<li>Any other software facility can be customized as per the user's requirements. </li>
 				</Text>
 
-				{/* <Text c={"#f6f6f6"} ta="center" fz={32} pt={{ base: 64}}>
-					Data Acquisition Software (DAQ)
-				</Text>
-				<Text ml={217} c={"#e4e8ed"} ta="left" fz={16} pt={34} w={1006} fw={400}>
-					Libratherm offers Data Acquisition Software - which uploads the stored data from
-					Libratherm devices and it saves on the computer. We offer customized software to meet the
-					user's specific requirement of acquiring the process data for further analysis and record
-					logging.
-				</Text>
-				<Image ml={319} src={DAQ} w={802} h={501} mt={64} />
-
-				<Text ml={217} c={"#f6f6f6"} ta="left" fz={24} pt={128}>
-					Salient Features of the Standard Software
-				</Text>
-				<Text ml={217} c={"#e4e8ed"} ta="left" fz={16} pt={32} w={1006} fw={400}>
-					<li>
-						The PC software version EDATALOG is available on a single CD. This software is to be
-						loaded on to the computer's hard disk, and it allows interfacing of DATALOG to the
-						computer.
-					</li>
-					<br />
-					<li>
-						The interfacing with the computer is made either on serial com port or on USB port.
-					</li>
-					<br />
-					<li>
-						The front panel screen GUI (Graphical User Interface), in general, allows the user to
-						configure:
-					</li>
-					<ol type="a">
-						<li>COM port settings</li>
-						<li> DATALOG input selection</li>
-						<li> Setting of log interval</li>
-						<li> Setting of security passwords</li>
-						<li>
-							Viewing of current data and historical data in the tabular and graphical format.
-						</li>
-					</ol>
-					<br />
-
-					<li>
-						{" "}
-						The data of all channels are stored on the computer's hard disk by start date and time,
-						continuously at the rate of programmed log interval.
-					</li>
-					<br />
-
-					<li>
-						Print out of the report and graph can be taken for the selected channel, with the real
-						date and time.{" "}
-					</li>
-					<br />
-
-					<li>
-						{" "}
-						The X and Y coordinates of the graph are automatically adjusted based on the process
-						value so that the pattern is visible on the center of the screen. This is called
-						auto-scaling which applies to all the channel.{" "}
-					</li>
-					<br />
-
-					<li>
-						Customer or user can enter their own desired alphanumeric field, such as company name,
-						operator name, channel nomenclature, unit of measurement, process name, etc. to
-						customize the software as per their requirements while generating the report or graph
-						on-screen or on the hard copy.{" "}
-					</li>
-					<br />
-
-					<li>Any other software facility can be customized as per the user's requirements. </li>
-				</Text>
-*/}
-
 				<Text
-					ml={{ base: 16, lg: 217 }}
+					ml={{ base: 16, lg: 217, sm: 144 }}
 					c={"#ffffff"}
 					ta="left"
-					fz={{ base: 14, lg: 24 }}
-					pt={{ base: 48, lg: 128 }}
+					fz={{ base: 14, lg: 24, sm: 24 }}
+					pt={{ base: 48, lg: 128, sm: 80 }}
 				>
 					Products with Data Aquisition Software
 				</Text>
-				<Grid ml={{ lg: 217 }}>
-					<Grid.Col span={{ base: 12, lg: 6 }} mah={{ base: 250 }} maw={{ lg: 450 }}>
+				<Grid ml={{ lg: 217, sm: 144 }}>
+					<Grid.Col
+						span={{ base: 12, lg: 6, sm: 6 }}
+						mah={{ base: 250 }}
+						maw={{ lg: 450, sm: 300 }}
+					>
 						<Box pos="relative" maw={{ base: 360, lg: 450 }} h={280}>
 							<Image src={EventBg} h={202} w={82} pos="absolute" ml={{ base: 16 }} />
 							<Image src={Event1} h={164} w={164} pos="absolute" mt={20} ml={{ base: 37 }} />
@@ -291,10 +208,10 @@ const JournalFour = (props: Props) => {
 						</Box>
 					</Grid.Col>
 					<Grid.Col
-						maw={{ lg: 450 }}
+						maw={{ lg: 450, sm: 300 }}
 						span={{ base: 12, lg: 6 }}
 						mah={{ base: 250 }}
-						ml={{ lg: 42 }}
+						ml={{ lg: 42, sm: 42 }}
 					>
 						<Box pos="relative" w={{ base: 360 }} h={280}>
 							<Image src={EventBg} h={202} w={82} pos="absolute" ml={{ base: 16 }} />
@@ -326,7 +243,7 @@ const JournalFour = (props: Props) => {
 							</UnstyledButton>
 						</Box>
 					</Grid.Col>
-					<Grid.Col maw={{ lg: 450 }} span={{ base: 12, lg: 6 }} mah={{ base: 250 }}>
+					<Grid.Col maw={{ lg: 450, sm: 300 }} span={{ base: 12, lg: 6 }} mah={{ base: 250 }}>
 						<Box pos="relative" w={{ base: 360 }} h={280}>
 							<Image src={EventBg} h={202} w={82} pos="absolute" ml={{ base: 16 }} />
 							<Image src={Event1} h={164} w={164} pos="absolute" mt={20} ml={{ base: 37 }} />
@@ -358,10 +275,10 @@ const JournalFour = (props: Props) => {
 						</Box>
 					</Grid.Col>
 					<Grid.Col
-						maw={{ lg: 450 }}
+						maw={{ lg: 450, sm: 300 }}
 						span={{ base: 12, lg: 6 }}
 						mah={{ base: 250 }}
-						ml={{ lg: 42 }}
+						ml={{ lg: 42, sm: 42 }}
 					>
 						<Box pos="relative" w={{ base: 360 }} h={280}>
 							<Image src={EventBg} h={202} w={82} pos="absolute" ml={{ base: 16 }} />

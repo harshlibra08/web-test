@@ -76,7 +76,7 @@ const Landing = (props: Props) => {
 						</UnstyledButton>
 					</Grid.Col>
 					<Grid.Col span={6}>
-						<Image style={{ height: "688px", width: "1209px" }} src={LandingBg} />
+						<Image h={688} w={1209} src={LandingBg} />
 					</Grid.Col>
 				</Grid>
 			</Paper>
@@ -112,26 +112,26 @@ const Landing = (props: Props) => {
 			</Paper>
 
 			{/**Tablet View */}
-			<Paper w={768} h={888} hiddenFrom="md" visibleFrom="xs">
+			<Paper w={1024} h={988} hiddenFrom="md" visibleFrom="xs">
 				<Grid>
 					<Grid.Col span={12}>
-						<Image src={LandingMobile} w={840} h={482} />
+						<Image src={LandingMobile} w={1024} h={568} />
 					</Grid.Col>
 					<Grid.Col span={12}>
-						<Title fz={32} fw={600} ml={90} mt={24} c={"#262728"}>
-							Partnersss in Measurement & Control
+						<Title fz={32} fw={600} w={424} ml={144} mt={40} c={"#262728"}>
+							Partnersss in Measurement & Controlz
 						</Title>
-						<Text fz={14} fw={400} ml={90} mt={26} c={"#555459"} w={592} ta={"justify"}>
+						<Text fz={14} fw={400} ml={144} mt={26} c={"#555459"} w={731} ta={"justify"}>
 							Libratherm Instruments Pvt. Ltd. is an ISO 9001:2015 Certified Indian Company engaged
 							in the manufacturing of Electronic Process Control Instruments and Systems since 1991.
 						</Text>
 
 						<List>
-							<List.Item ml={90} w={592} fz={14} c={"#555459"} fw={400} mt={24}>
+							<List.Item ml={144} w={592} fz={14} c={"#555459"} fw={400} mt={24}>
 								Field Proven Products : Certified Indian Company engaged in the manufacturing of
 								Electronic Process Control
 							</List.Item>
-							<List.Item ml={90} w={592} fz={14} c={"#555459"} fw={400} mt={24}>
+							<List.Item ml={144} w={592} fz={14} c={"#555459"} fw={400} mt={24}>
 								Latest Technology : Certified Indian Company engaged in the manufacturing of
 								Electronic Process Control
 							</List.Item>

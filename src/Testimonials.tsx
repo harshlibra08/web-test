@@ -16,7 +16,12 @@ const Testimonials = (props: Props) => {
 	const [embla, setEmbla] = useState<Embla | null>(null);
 	return (
 		<>
-			<Paper w={{ base: 360, lg: 1440 }} h={{ base: 522, lg: 853 }} bg={"#000"} mt={200}>
+			<Paper
+				w={{ base: 360, lg: 1440, sm: 1024 }}
+				h={{ base: 522, lg: 853, sm: 688 }}
+				bg={"#000"}
+				mt={200}
+			>
 				<Text
 					fz={{ base: 10, lg: 14 }}
 					c={"#FFF"}
@@ -28,7 +33,12 @@ const Testimonials = (props: Props) => {
 				</Text>
 
 				<Group wrap="nowrap" gap={0} bg={"#000"}>
-					<Text fz={{ lg: 32 }} ml={{ lg: 116, base: 16 }} c={"#FFF"} mt={{ lg: 12, base: 8 }}>
+					<Text
+						fz={{ lg: 32, sm: 32 }}
+						ml={{ lg: 116, base: 16 }}
+						c={"#FFF"}
+						mt={{ lg: 12, base: 8 }}
+					>
 						Client Testimonals
 					</Text>
 					<Divider size="sm" w={821} ml={20} mr={45} mt={4} visibleFrom="md" />

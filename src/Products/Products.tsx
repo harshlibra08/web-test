@@ -18,40 +18,66 @@ const Products = () => {
 			<Group wrap="nowrap" gap={0} mt={{ lg: 73 }}>
 				<Text
 					fw={600}
-					fz={{ base: 20, lg: 32 }}
-					ml={{ base: 16, lg: 114 }}
-					style={{ color: "#262728", lineHeight: "40px" }}
+					fz={{ base: 20, lg: 32, sm: 32 }}
+					ml={{ base: 16, lg: 114, sm: 144 }}
+					c={"#262728"}
 				>
 					Our Products
 				</Text>
 				<Divider size="sm" w={{ lg: 904 }} ml={{ lg: 16 }} visibleFrom="md" />
+				<Divider size="sm" w={455} ml={15} visibleFrom="xs" hiddenFrom="md" />
 
 				{
 					<UnstyledButton visibleFrom="md" ml={32}>
 						View All
 					</UnstyledButton>
 				}
+				{
+					<UnstyledButton visibleFrom="xs" hiddenFrom="md" ml={15}>
+						View All
+					</UnstyledButton>
+				}
 			</Group>
 
-			<Paper w={{ base: 360, lg: 1400 }}>
-				<SimpleGrid cols={{ base: 2, xl: 4 }} mt={{ lg: 30, base: 24 }} ml={{ lg: 114, base: 16 }}>
+			<Paper w={{ base: 360, lg: 1400, sm: 1024 }}>
+				<SimpleGrid
+					cols={{ base: 2, xl: 4, sm: 2 }}
+					mt={{ lg: 30, base: 24, sm: 30 }}
+					ml={{ lg: 114, base: 16, sm: 144 }}
+					maw={{ sm: 735, lg: 1440 }}
+				>
 					{Array.from({ length: 4 }, (_, index) => index).map((i) => {
 						return (
 							// <Grid.Col key={i} span={{ base: 6, xl: 3 }}>
-							<Card withBorder w={{ lg: 288, base: 156 }} h={{ lg: 364, base: 212 }}>
-								<Text fz={{ lg: 14, base: 10 }} fw={600} c={"#555459"} maw={250}>
+							<Card
+								withBorder
+								w={{ lg: 288, base: 156, sm: 358 }}
+								h={{ lg: 364, base: 212, sm: 364 }}
+							>
+								<Text
+									fz={{ lg: 14, base: 10, sm: 16 }}
+									fw={600}
+									c={"#555459"}
+									w={{ sm: 326, lg: 260 }}
+									ml={{ sm: 16 }}
+								>
 									Three Phase Thyristor Power Controller – POW-3-PA
 								</Text>
 
 								<Image
 									src={Panel}
-									w={{ base: 73, lg: 137 }}
-									h={{ lg: 173, base: 91 }}
+									w={{ base: 73, lg: 137, sm: 137 }}
+									h={{ lg: 173, base: 91, sm: 173 }}
 									mx="auto"
-									mt={{ lg: 33, base: 15 }}
+									mt={{ lg: 33, base: 15, sm: 24 }}
 								/>
 
-								<Text ta="center" c={"#414141"} mt={{ lg: 30, base: 15 }} fz={{ base: 12, lg: 20 }}>
+								<Text
+									ta="center"
+									c={"#414141"}
+									mt={{ lg: 30, base: 15, sm: 24 }}
+									fz={{ base: 12, lg: 20, sm: 20 }}
+								>
 									₹12,600 – ₹14,700
 								</Text>
 							</Card>

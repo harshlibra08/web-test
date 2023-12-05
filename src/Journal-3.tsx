@@ -437,7 +437,7 @@ const JournalThree = (props: Props) => {
 			</Paper>
 
 			{/**Tavblet View */}
-			<Paper w={768} h={3640} bg={"black"} hiddenFrom="md" visibleFrom="xs" mt={30}>
+			{/* <Paper w={768} h={3640} bg={"black"} hiddenFrom="md" visibleFrom="xs" mt={30}>
 				<Group wrap="nowrap" ml={90}>
 					<Box w="100%">
 						<Text fz={32} mt={60} c={"#f6f6f6"}>
@@ -636,7 +636,7 @@ const JournalThree = (props: Props) => {
 						</UnstyledButton>
 					</Grid.Col>
 				</Grid>
-			</Paper>
+			</Paper> */}
 		</>
 	);
 };

@@ -13,8 +13,8 @@ import {
 	Pagination,
 } from "@mantine/core";
 import React from "react";
-import GlassManufacturing from "./Assets/glass-manufacturing.png";
 import YellowBg from "./Assets/yellowBg.png";
+import GlassManufacturing from "./Assets/glass-manufacturing.png";
 import YellowMob from "../src/Assets/Rectangle yellow mob.png";
 import Panel from "./Assets/panel.png";
 import { IconCheck, IconCoin } from "@tabler/icons-react";

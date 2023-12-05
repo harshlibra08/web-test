@@ -7,21 +7,21 @@ type Props = {};
 const World = (props: Props) => {
 	return (
 		<>
-			<Paper w={{ base: 360, lg: 1440 }} h={{ base: 360, lg: 520 }} mt={30}>
+			<Paper w={{ base: 360, lg: 1440, sm: 1024 }} h={{ base: 360, lg: 520 }} mt={30}>
 				<Grid>
-					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 2, lg: 1 }}>
+					<Grid.Col span={{ base: 12, lg: 6, sm: 6 }} order={{ base: 2, lg: 1 }}>
 						<Text
-							fz={{ base: 20, lg: 32 }}
+							fz={{ base: 20, lg: 32, sm: 32 }}
 							fw={600}
-							mt={{ base: 24, lg: 205 }}
-							ml={{ base: 16, lg: 114 }}
+							mt={{ base: 24, lg: 205, sm: 80 }}
+							ml={{ base: 16, lg: 114, sm: 144 }}
 						>
 							The Global Impacts
 						</Text>
 						<Text
-							fz={{ base: 12, lg: 16 }}
+							fz={{ base: 12, lg: 16, sm: 16 }}
 							fw={600}
-							ml={{ base: 21, lg: 114 }}
+							ml={{ base: 21, lg: 114, sm: 144 }}
 							h={44}
 							mt={16}
 							w={298}
@@ -30,41 +30,52 @@ const World = (props: Props) => {
 							The products we’ve manufactured have been used over
 						</Text>
 						<Text
-							fz={{ base: 32, lg: 56 }}
+							fz={{ base: 32, lg: 56, sm: 48 }}
 							fw={700}
-							ml={{ base: 39, lg: 154 }}
+							ml={{ base: 39, lg: 154, sm: 184 }}
 							c={"#555459"}
 							w={306}
-							mt={4}
+							mt={{ lg: 4, sm: 14 }}
 						>
 							100 million
 						</Text>
 
-						<Text fz={{ base: 12, lg: 16 }} fw={600} ml={{ base: 39, lg: 154 }} c={"#555459"}>
+						<Text
+							fz={{ base: 12, lg: 16, sm: 16 }}
+							fw={600}
+							ml={{ base: 39, lg: 154, sm: 184 }}
+							c={"#555459"}
+						>
 							users & has been exported
 						</Text>
 
-						<Text fz={{ base: 32, lg: 56 }} fw={700} ml={{ base: 85, lg: 194 }} c={"#555459"}>
+						<Text
+							fz={{ base: 32, lg: 56, sm: 48 }}
+							fw={700}
+							ml={{ base: 85, lg: 194, sm: 224 }}
+							mt={{ sm: 14 }}
+							c={"#555459"}
+						>
 							8 countries
 						</Text>
 
 						<Text
-							fz={{ base: 12, lg: 16 }}
+							fz={{ base: 12, lg: 16, sm: 16 }}
 							fw={600}
-							ml={{ base: 85, lg: 194 }}
+							ml={{ base: 85, lg: 194, sm: 224 }}
 							w={81}
 							c={"#555459"}
 						>
 							worldwide
 						</Text>
 					</Grid.Col>
-					<Grid.Col span={{ base: 12, lg: 6 }} order={{ base: 1, sm: 2, lg: 2 }}>
+					<Grid.Col span={{ base: 12, lg: 6, sm: 6 }} order={{ base: 1, sm: 2, lg: 2 }}>
 						<Image
 							src={Worldmap}
-							w={{ base: 299, lg: 698 }}
-							h={{ base: 195, lg: 457 }}
-							mt={{ base: 32, lg: 135 }}
-							ml={{ base: 31, lg: -120 }}
+							w={{ base: 299, lg: 698, sm: 450 }}
+							h={{ base: 195, lg: 457, sm: 300 }}
+							mt={{ base: 32, lg: 135, sm: 120 }}
+							ml={{ base: 31, lg: -120, sm: -40 }}
 							alt="World"
 						/>
 					</Grid.Col>
